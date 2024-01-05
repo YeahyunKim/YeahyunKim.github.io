@@ -23,35 +23,19 @@ const resource = [
   /* --- Favicons & compressed JS --- */
   
   
-    '/_javascript/categories.js',
-    '/_javascript/commons.js',
-    '/_javascript/home.js',
-    '/_javascript/misc.js',
-    '/_javascript/modules/components/back-to-top.js',
-    '/_javascript/modules/components/category-collapse.js',
-    '/_javascript/modules/components/clipboard.js',
-    '/_javascript/modules/components/img-loading.js',
-    '/_javascript/modules/components/img-popup.js',
-    '/_javascript/modules/components/locale-datetime.js',
-    '/_javascript/modules/components/mode-watcher.js',
-    '/_javascript/modules/components/search-display.js',
-    '/_javascript/modules/components/sidebar.js',
-    '/_javascript/modules/components/toc.js',
-    '/_javascript/modules/components/tooltip-loader.js',
-    '/_javascript/modules/layouts.js',
-    '/_javascript/modules/layouts/basic.js',
-    '/_javascript/modules/layouts/sidebar.js',
-    '/_javascript/modules/layouts/topbar.js',
-    '/_javascript/modules/plugins.js',
-    '/_javascript/page.js',
-    '/_javascript/post.js',
     '/assets/img/favicons/android-chrome-192x192.png',
     '/assets/img/favicons/android-chrome-512x512.png',
     '/assets/img/favicons/apple-touch-icon.png',
     '/assets/img/favicons/favicon-16x16.png',
     '/assets/img/favicons/favicon-32x32.png',
     '/assets/img/favicons/favicon.ico',
-    '/assets/img/favicons/mstile-150x150.png'
+    '/assets/img/favicons/mstile-150x150.png',
+    '/assets/js/dist/categories.min.js',
+    '/assets/js/dist/commons.min.js',
+    '/assets/js/dist/home.min.js',
+    '/assets/js/dist/misc.min.js',
+    '/assets/js/dist/page.min.js',
+    '/assets/js/dist/post.min.js'
 ];
 
 /* The request url with below domain will be cached */

@@ -1,52 +1,39 @@
 {
   "main": {
-    "id": "9b957a79299a1716",
+    "id": "74790dfcbfa58c1e",
     "type": "split",
     "children": [
       {
-        "id": "50b487bf19fcfe0f",
+        "id": "71fede9026016316",
         "type": "tabs",
         "children": [
           {
-            "id": "a715644f1c24982d",
+            "id": "cd3381a31aca176b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-01-04-깃헙 블로그 생성하기 (1).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c7177b105369c2af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-01-04 _ 깃헙 블로그 생성하기/2019-08-08-write-a-new-post 1123123.md",
+                "file": "2019-08-08-write-a-new-post.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "eeefefbe6fab9a5d",
+    "id": "b1a051502d9b7c97",
     "type": "split",
     "children": [
       {
-        "id": "8bb88141cb00f2b7",
+        "id": "7a94403dfb010283",
         "type": "tabs",
         "children": [
           {
-            "id": "ae89be732c425357",
+            "id": "c0f3930f82a8c6b2",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -56,7 +43,7 @@
             }
           },
           {
-            "id": "f293cfaa9032673e",
+            "id": "799552c44183f99c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -71,7 +58,7 @@
             }
           },
           {
-            "id": "64e160c1431769f7",
+            "id": "13045471a3b5e422",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -85,20 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "0fd72ecbd7adcc88",
+    "id": "8a9eea698fc9a3df",
     "type": "split",
     "children": [
       {
-        "id": "188b2b053753e4da",
+        "id": "3ae51825c50c20c1",
         "type": "tabs",
         "children": [
           {
-            "id": "b11f195ea64a3b56",
+            "id": "af7c91ef9c01850a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-01-04 _ 깃헙 블로그 생성하기/2019-08-08-write-a-new-post 1123123.md",
+                "file": "2019-08-08-write-a-new-post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,19 +97,19 @@
             }
           },
           {
-            "id": "be92a181b6f5c82c",
+            "id": "a05412bc784eb723",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-01-04 _ 깃헙 블로그 생성하기/2019-08-08-write-a-new-post 1123123.md",
+                "file": "2019-08-08-write-a-new-post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "a3aa607278427d1d",
+            "id": "22e04d6f5ffac659",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -133,12 +120,12 @@
             }
           },
           {
-            "id": "22a147fcf5675d28",
+            "id": "1505f102e043b87b",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-01-04 _ 깃헙 블로그 생성하기/2019-08-08-write-a-new-post 1123123.md"
+                "file": "2019-08-08-write-a-new-post.md"
               }
             }
           }
@@ -159,15 +146,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "c7177b105369c2af",
+  "active": "cd3381a31aca176b",
   "lastOpenFiles": [
-    "2023-01-04 _ 깃헙 블로그 생성하기/안녕하세요..md",
-    "2023-01-04 _ 깃헙 블로그 생성하기/2019-08-08-write-a-new-post 1123123.md",
-    "2019-08-08-write-a-new-post.md",
-    "2023-01-04-깃헙 블로그 생성하기 (1).md",
-    "2023-01-04 _ 깃헙 블로그 생성하기",
-    "2019-08-08-text-and-typography2.md",
-    "2019-08-09-getting-started.md",
-    "2019-08-11-customize-the-favicon.md"
+    "2019-08-11-customize-the-favicon.md",
+    "2020-01-11 안녕하세요.md",
+    "무제 폴더"
   ]
 }
