@@ -28,7 +28,9 @@ const resource = [
     '/assets/img/favicons/apple-touch-icon.png',
     '/assets/img/favicons/favicon-16x16.png',
     '/assets/img/favicons/favicon-32x32.png',
+    '/assets/img/favicons/favicon-96x96.png',
     '/assets/img/favicons/favicon.ico',
+    '/assets/img/favicons/img-profile.png',
     '/assets/img/favicons/mstile-150x150.png',
     '/assets/js/dist/categories.min.js',
     '/assets/js/dist/commons.min.js',
@@ -45,8 +47,6 @@ const allowedDomains = [
 
   'localhost:4000',
 
-  
-    'chirpy-img.netlify.app',
   
 
   'fonts.gstatic.com',

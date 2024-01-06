@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-05T14:23:56+09:00</updated>
+  <updated>2024-01-05T21:30:28+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,44 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>깃 블로그 생성하기 (1)</title>
+    <link href="http://localhost:4000/posts/%EA%B9%83-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-(1)/" rel="alternate" type="text/html" title="깃 블로그 생성하기 (1)" />
+    <published>2024-01-05T00:00:00+09:00</published>
+  
+    <updated>2024-01-05T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%EA%B9%83-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-(1)/</id>
+    <content src="http://localhost:4000/posts/%EA%B9%83-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-(1)/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Github blog" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      깃허브 블로그
+
+Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilisis ac. Phasellus semper dui non purus ultrices sodales. Aliquam ante lorem, ornare a feugiat ac, finibus nec mauris. Vivamus ut tristique nisi. Sed vel leo vulputate, efficitur risus non, posuere mi. Nullam tincidunt biben...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
