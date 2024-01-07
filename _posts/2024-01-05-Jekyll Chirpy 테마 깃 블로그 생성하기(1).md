@@ -18,7 +18,28 @@ image:
 ---
 ## 깃허브 블로그
 
-Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilisis ac. Phasellus semper dui non purus ultrices sodales. Aliquam ante lorem, ornare a feugiat ac, finibus nec mauris. Vivamus ut tristique nisi. Sed vel leo vulputate, efficitur risus non, posuere mi. Nullam tincidunt bibendum rutrum. Proin commodo ornare sapien. Vivamus interdum diam sed sapien blandit, sit amet aliquam risus mattis. Nullam arcu turpis, mollis quis laoreet at, placerat id nibh. Suspendisse venenatis eros eros.
+깃헙 블로그(Github blog)의 정식 명칭은 깃헙 페이지(Github page)입니다. 전 세계 개발자들이 이용하는 오픈소스 라이브러리 Github에서 제공하는 웹 호스팅 서비스로 유저가 **무료**로 자유롭게 사이트(블로그)를 제작하고 운영할 수 있는 서비스입니다. Github이 개발자들을 위한 서비스인만큼, 깃헙 블로그 역시 많은 개발자가 즐겨 사용하고 있습니다.
+
+`notion` , `velog` , `tistory` 등 다양한 무료 블로그 플랫폼을 이용할 수 있지만, 제가 깃 허브 블로그를 활용하는 이유는 아래와 같습니다.
+
+   개발자들 및 디자이너들을 포트폴리오를 만들때 Github + 블로그를 동시에 관리하는 경우가 많습니다. 특히나 개발자의 경우 본인의 코드를 매일 커밋하여 자신이 공부했던 기록과 활동들을 증명해야 하고, 이에대한 상세한 내용들을 블로그에 정리하는 경우가 많습니다.
+   
+   깃허브 블로그를 이용하면 기존 블로그와 따로 작성하는 느낌이 아닌, `commit & push` 로 블로그를 관리해야 하기에, 본인의 깃허브 페이지에 블로그 활동또한 동시에 기록되는 장점이 있습니다.
+   
+
+---
+
+## 01 Ruby 설치하기
+
+깃허브 블로그를 사용하기 위해서는 ruby를 필수적으로 설치해야 합니다.
+ruby를 설치하는 이유는 지킬(jekyll)을 통해 환경설정 및 컴퓨터 로그 기록을 나타나게 해야하기 때문입니다.
+아래 명령어를 터미널에 입력하여 루비를 설치합니다.
+
+```
+brew install ruby
+```
+
+
 
 ## Lists
 

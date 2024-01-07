@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-05T21:30:28+09:00</updated>
+  <updated>2024-01-07T19:30:54+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,75 @@
 
   
   <entry>
+    <title>프로그래머스 Swift 코테준비 (1) - 문자열 출력하기</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (1) - 문자열 출력하기" />
+    <published>2024-01-07T00:00:00+09:00</published>
+  
+    <updated>2024-01-07T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/" />
+    <author>
+      <name>Yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      ![[Pasted image 20240107192947.png]]
+
+01 문자열 출력하기
+
+import Foundation
+
+let s1 = readLine()!
+
+
+제시된 내용을 보면,
+현재 변수 s1 에는 “HelloWorld” 라는 string 형태의 값이 들어가 있다.
+따라서 해당 String 값을 출력하기 위해서는
+
+print(s1) 을 입력하면 된다.
+
+
+
+Answer
+
+import Foundation
+
+let s1 = readLine()!
+
+print(s1)
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>깃 블로그 생성하기 (1)</title>
-    <link href="http://localhost:4000/posts/%EA%B9%83-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-(1)/" rel="alternate" type="text/html" title="깃 블로그 생성하기 (1)" />
+    <link href="http://localhost:4000/posts/Jekyll-Chirpy-%ED%85%8C%EB%A7%88-%EA%B9%83-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0(1)/" rel="alternate" type="text/html" title="깃 블로그 생성하기 (1)" />
     <published>2024-01-05T00:00:00+09:00</published>
   
     <updated>2024-01-05T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/%EA%B9%83-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-(1)/</id>
-    <content src="http://localhost:4000/posts/%EA%B9%83-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0-(1)/" />
+    <id>http://localhost:4000/posts/Jekyll-Chirpy-%ED%85%8C%EB%A7%88-%EA%B9%83-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0(1)/</id>
+    <content src="http://localhost:4000/posts/Jekyll-Chirpy-%ED%85%8C%EB%A7%88-%EA%B9%83-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0(1)/" />
     <author>
       <name>cotes</name>
     </author>
@@ -50,7 +111,11 @@
 
       깃허브 블로그
 
-Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilisis ac. Phasellus semper dui non purus ultrices sodales. Aliquam ante lorem, ornare a feugiat ac, finibus nec mauris. Vivamus ut tristique nisi. Sed vel leo vulputate, efficitur risus non, posuere mi. Nullam tincidunt biben...
+깃헙 블로그(Github blog)의 정식 명칭은 깃헙 페이지(Github page)입니다. 전 세계 개발자들이 이용하는 오픈소스 라이브러리 Github에서 제공하는 웹 호스팅 서비스로 유저가 무료로 자유롭게 사이트(블로그)를 제작하고 운영할 수 있는 서비스입니다. Github이 개발자들을 위한 서비스인만큼, 깃헙 블로그 역시 많은 개발자가 즐겨 사용하고 있습니다.
+
+notion , velog , tistory 등 다양한 무료 블로그 플랫폼을 이용할 수 있지만, 제가 깃 허브 블로그를 활용하는 이유는 아래와 같습니다.
+
+개발자들 및 디자이너들을 포트폴리오를 만들때 Github + 블로그를 동시에 관리하는 경우가 많습니다. 특히나 개발자의 경우 본인의 코드를 매일 커밋하여 자신이 공부했던...
     </summary>
   
 
@@ -62,7 +127,7 @@ Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas int
     <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
     <published>2019-08-11T01:34:00+09:00</published>
   
-    <updated>2024-01-05T13:55:44+09:00</updated>
+    <updated>2024-01-06T21:32:10+09:00</updated>
   
     <id>http://localhost:4000/posts/customize-the-favicon/</id>
     <content src="http://localhost:4000/posts/customize-the-favicon/" />
@@ -73,8 +138,6 @@ Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas int
   
     
     <category term="Blogging" />
-    
-    <category term="Tutorial" />
     
   
 
@@ -102,7 +165,7 @@ Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and th
     <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
     <published>2019-08-09T21:55:00+09:00</published>
   
-    <updated>2019-08-09T21:55:00+09:00</updated>
+    <updated>2024-01-06T21:32:10+09:00</updated>
   
     <id>http://localhost:4000/posts/getting-started/</id>
     <content src="http://localhost:4000/posts/getting-started/" />
@@ -113,8 +176,6 @@ Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and th
   
     
     <category term="Blogging" />
-    
-    <category term="Tutorial" />
     
   
 
@@ -150,7 +211,7 @@ There are two ways to create a new repository for this theme:
     <link href="http://localhost:4000/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
     <published>2019-08-08T15:10:00+09:00</published>
   
-    <updated>2024-01-05T13:55:44+09:00</updated>
+    <updated>2024-01-06T21:32:10+09:00</updated>
   
     <id>http://localhost:4000/posts/write-a-new-post/</id>
     <content src="http://localhost:4000/posts/write-a-new-post/" />
@@ -161,8 +222,6 @@ There are two ways to create a new repository for this theme:
   
     
     <category term="Blogging" />
-    
-    <category term="Tutorial" />
     
   
 
@@ -179,56 +238,6 @@ There are two ways to create a new repository for this theme:
 Naming and Path
 
 Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Text and Typography</title>
-    <link href="http://localhost:4000/posts/text-and-typography/" rel="alternate" type="text/html" title="Text and Typography" />
-    <published>2019-08-08T12:33:00+09:00</published>
-  
-    <updated>2024-01-05T13:55:44+09:00</updated>
-  
-    <id>http://localhost:4000/posts/text-and-typography/</id>
-    <content src="http://localhost:4000/posts/text-and-typography/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Demo" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      This post is to show Markdown syntax rendering on Chirpy, you can also use it as an example of writing. Now, let’s start looking at text and typography.
-
-Headings
-
-H1 - heading
-
-H2 - heading
-
-H3 - heading
-
-H4 - heading
-
-Paragraph
-
-Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilis...
     </summary>
   
 
