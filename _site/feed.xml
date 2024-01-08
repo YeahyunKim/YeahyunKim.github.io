@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-08T16:53:11+09:00</updated>
+  <updated>2024-01-08T21:49:02+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,177 @@
 
   
   <entry>
+    <title>프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기" />
+    <published>2024-01-08T00:00:00+09:00</published>
+  
+    <updated>2024-01-08T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 : 문자열 반복해서 출력하기
+
+
+문제 설명
+
+
+  문자열 str과 정수 n이 주어집니다.
+str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.
+
+
+
+제한사항
+
+
+  
+    1 ≤ str의 길이 ≤ 10
+    1 ≤ n ≤ 5
+  
+
+
+
+입출력 예
+
+입력 #1
+string 5
+
+
+출력 #1
+stringstringstringstringstring
+
+
+
+
+제시 코드
+
+import Foundation
+
+let inp = readLine()!.components(separatedBy: [" "]).map { $0 }
+let (s1, a) = (inp[0], Int(inp[1])!)
+
+
+
+
+02 풀이
+
+
+  제시된 내용을 보면,
+let (a, b) = (n[0], n[1]) 은 튜...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (2) - a와 b 출력하기</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (2) - a와 b 출력하기" />
+    <published>2024-01-08T00:00:00+09:00</published>
+  
+    <updated>2024-01-08T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 : a 와 b 출력하기
+
+
+문제 설명
+
+
+  정수 a와 b가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.
+
+
+
+제한사항
+
+
+  
+    100,000 ≤ a, b ≤ 100,000
+  
+
+
+
+입출력 예
+
+입력 #1
+4 5
+
+
+출력 #1
+a = 4
+b = 5
+
+
+
+
+제시 코드
+
+import Foundation
+
+let n = readLine()!.components(separatedBy: [" "]).map { Int($0)! }
+let (a, b) = (n[0], n[1])
+
+
+
+
+02 풀이
+
+
+  제시된 내용을 보면,
+let (a, b) = (n[0], n[1]) 은 튜플의 구조분해할당으로 인해, 
+현재 변수 a 에는 4 , b 에는 5라는 n...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>프로그래머스 Swift 코테준비 (1) - 문자열 출력하기</title>
     <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (1) - 문자열 출력하기" />
     <published>2024-01-07T00:00:00+09:00</published>
   
-    <updated>2024-01-07T00:00:00+09:00</updated>
+    <updated>2024-01-08T16:53:46+09:00</updated>
   
     <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/</id>
     <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/" />
@@ -136,128 +302,6 @@ let s1 = readLine()!
 notion , velog , tistory 등 다양한 무료 블로그 플랫폼을 이용할 수 있지만, 제가 깃 허브 블로그를 활용하는 이유는 아래와 같습니다.
 
 개발자들 및 디자이너들을 포트폴리오를 만들때 Github + 블로그를 동시에 관리하는 경우가 많습니다. 특히나 개발자의 경우 본인의 코드를 매일 커밋하여 자신이 공부했던...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Customize the Favicon</title>
-    <link href="http://localhost:4000/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-11T01:34:00+09:00</published>
-  
-    <updated>2024-01-06T21:32:10+09:00</updated>
-  
-    <id>http://localhost:4000/posts/customize-the-favicon/</id>
-    <content src="http://localhost:4000/posts/customize-the-favicon/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
-
-Generate the favicon
-
-Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Getting Started</title>
-    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T21:55:00+09:00</published>
-  
-    <updated>2024-01-06T21:32:10+09:00</updated>
-  
-    <id>http://localhost:4000/posts/getting-started/</id>
-    <content src="http://localhost:4000/posts/getting-started/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Prerequisites
-
-Follow the instructions in the Jekyll Docs to complete the installation of the basic environment. Git also needs to be installed.
-
-Installation
-
-Creating a New Site
-
-There are two ways to create a new repository for this theme:
-
-
-  Using the Chirpy Starter - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
-  GitHub Fork - Convenient for custom devel...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Writing a New Post</title>
-    <link href="http://localhost:4000/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T15:10:00+09:00</published>
-  
-    <updated>2024-01-06T21:32:10+09:00</updated>
-  
-    <id>http://localhost:4000/posts/write-a-new-post/</id>
-    <content src="http://localhost:4000/posts/write-a-new-post/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
-
-Naming and Path
-
-Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...
     </summary>
   
 
