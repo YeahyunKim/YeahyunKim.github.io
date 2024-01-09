@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-01-08- 프로그래머스 Swift 코테준비 (3).md",
+                "file": "2024-01-08- 프로그래머스 Swift 코테준비 (5).md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 390.5
   },
   "right": {
     "id": "8a9eea698fc9a3df",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-01-08- 프로그래머스 Swift 코테준비 (3).md",
+                "file": "2024-01-08- 프로그래머스 Swift 코테준비 (5).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-01-08- 프로그래머스 Swift 코테준비 (3).md",
+                "file": "2024-01-08- 프로그래머스 Swift 코테준비 (5).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-01-08- 프로그래머스 Swift 코테준비 (3).md"
+                "file": "2024-01-08- 프로그래머스 Swift 코테준비 (5).md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "cd3381a31aca176b",
   "lastOpenFiles": [
-    "2024-01-08- 프로그래머스 Swift 코테준비 (4).md",
     "2024-01-08- 프로그래머스 Swift 코테준비 (3).md",
+    "2024-01-08- 프로그래머스 Swift 코테준비 (5).md",
+    "2024-01-08- 프로그래머스 Swift 코테준비 (4).md",
     "2024-01-08- 프로그래머스 Swift 코테준비 (2).md",
     "2024-01-07- 프로그래머스 Swift 코테준비 (1).md",
     "2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
