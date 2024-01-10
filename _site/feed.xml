@@ -3,8 +3,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
-  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-09T17:59:13+09:00</updated>
+  <subtitle>소소한 개발 일지</subtitle>
+  <updated>2024-01-10T20:42:12+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,187 @@
 
   
   <entry>
-    <title>프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기" />
+    <title>프로그래머스 Swift 코테준비 (7) -홀짝 구분하기</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (7) -홀짝 구분하기" />
+    <published>2024-01-10T00:00:00+09:00</published>
+  
+    <updated>2024-01-10T20:40:53+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 : 덧셈식 출력하기
+
+
+문제 설명
+
+
+  자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 “n is even”을, 홀수이면 “n is odd”를 출력하는 코드를 작성해 보세요.
+
+
+
+제한사항
+
+  
+    1 ≤ n ≤ 1,000
+  
+
+
+
+
+입출력 예
+
+입력 #1
+100
+
+
+출력 #1
+100 is even
+
+
+입력 #2
+1
+
+
+출력 #2
+1 is odd
+
+
+
+
+제시 코드
+
+import Foundation
+
+let inp = readLine()!.components(separatedBy: [" "]).map { $0 }
+let (s1, s2) = (inp[0], inp[1])
+
+
+
+
+
+02 풀이
+
+
+  함수와 나머지를 통해서 풀 수 있다.
+홀수인지 짝수인지를 판단해주는 함수를 하나 ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기" />
+    <published>2024-01-10T00:00:00+09:00</published>
+  
+    <updated>2024-01-10T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 : 덧셈식 출력하기
+
+
+문제 설명
+
+
+  두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.
+
+
+a + b = c
+
+
+제한사항
+
+  
+    1 ≤ a, b ≤ 100
+  
+
+
+
+
+입출력 예
+
+입력 #1
+4 5
+
+
+출력 #1
+4 + 5 = 9
+
+
+
+제시 코드
+
+import Foundation
+
+let n = readLine()!.components(separatedBy: [" "]).map { Int($0)! }
+let (a, b) = (n[0], n[1])
+
+
+
+
+
+02 풀이
+
+콘솔창에 원하는 값을 출력하기 위해선 print(출력할 값) 을 활용하면 된다.
+(아래 포스트 참고)
+# 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기
+
+
+  ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기" />
     <published>2024-01-09T00:00:00+09:00</published>
   
-    <updated>2024-01-09T00:00:00+09:00</updated>
+    <updated>2024-01-10T19:32:14+09:00</updated>
   
     <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)/</id>
     <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)/" />
@@ -48,7 +224,7 @@
 
 
 
-      01 문제 : 특수문자 출력하기
+      01 문제 : 특수문자 출력하기
 
 
 문제 설명
@@ -88,7 +264,7 @@ print("!@#$%^&amp;amp;*(\'"&amp;lt;&amp;gt;?:;")
 출력이 되지 않는다. 왜일까?
 
 
-  그 이유는 대표적인 예로, 따옴표 (“) 때문...
+  그 이유는 대표적인 예로, 따옴표 (“) 때문이...
     </summary>
   
 
@@ -251,174 +427,6 @@ let (s1, a) = (inp[0], Int(inp[1])!)
 
   제시된 내용을 보면,
 let (s1, b) = (inp[0], Int(in...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (2) - a와 b 출력하기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (2) - a와 b 출력하기" />
-    <published>2024-01-08T00:00:00+09:00</published>
-  
-    <updated>2024-01-08T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : a 와 b 출력하기
-
-
-문제 설명
-
-
-  정수 a와 b가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-
-  
-    100,000 ≤ a, b ≤ 100,000
-  
-
-
-
-입출력 예
-
-입력 #1
-4 5
-
-
-출력 #1
-a = 4
-b = 5
-
-
-
-
-제시 코드
-
-import Foundation
-
-let n = readLine()!.components(separatedBy: [" "]).map { Int($0)! }
-let (a, b) = (n[0], n[1])
-
-
-
-
-02 풀이
-
-
-  제시된 내용을 보면,
-let (a, b) = (n[0], n[1]) 은 튜플의 구조분해할당으로 인해, 
-현재 변수 a 에는 4 , b 에는 5라는 n...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (1) - 문자열 출력하기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (1) - 문자열 출력하기" />
-    <published>2024-01-07T00:00:00+09:00</published>
-  
-    <updated>2024-01-08T16:53:46+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 문자열 출력하기
-
-
-문제 설명
-
-  문자열 str이 주어질 때, str을 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-  1 ≤ str의 길이 ≤ 1,000,000
-  str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.
-
-
-
-입출력 예
-
-입력 #1
-
-HelloWorld!
-
-
-출력 #1
-HelloWorld!
-
-
-
-
-제시 코드
-
-import Foundation
-
-let s1 = readLine()!
-
-
-
-
-02 풀이
-
-
-  제시된 내용을 보면,
-현재 변수 s1 에는 “HelloWorld” 라는 string 형태의 값이 들어가 있다.
-해당 String 값을 콘솔창에 출력하기 위해서는 print(출력할 값) 을 활용하면 된다.
-따라서  print(s1) 을 입력하면 된다.
-
-
-
-
-💡...
     </summary>
   
 
