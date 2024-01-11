@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (8) -\b문자열 겹쳐쓰기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-10 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : \b\b홀짝 구분하기문제 설명  문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항      my_strin...",
+    "content": "01 문제 : \b\b홀짝 구분하기문제 설명  문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항      my_string와 overwrite_string은 숫자와 알파벳으로 이루어져 있습니다.    1 ≤ overwrite_string의 길이 ≤ my_string의 길이 ≤ 1,000    0 ≤ s ≤ my_string의 길이 - overwrite_string의 길이  입출력 예| my_string | overwrite_string | s | result || —- | —- | —- | —- || “He11oWor1d” | “lloWorl” | 2 | “HelloWorld” || “Program29b8UYP” | “merS123” | 7 | “ProgramerS123” |입출력 예 설명입출력 예 #1  예제 1번의 my_string 에서 인덱스 2부터 overwrite_string 의 길이만큼에 해당하는 부분은 “11oWor1” 이고 이를 “lloWorl” 로 바꾼 “HelloWorld” 를 return 합니다.입출력 예 #2  예제 2번의 my_string 에서 인덱스 7부터 overwrite_string 의 길이만큼에 해당하는 부분은 “29b8UYP” 이고 이를 “merS123” 로 바꾼 “ProgrammerS123”를 return 합니다.02 풀이  함수와 나머지를 통해서 풀 수 있다.홀수인지 짝수인지를 판단해주는 함수를 하나 작성하고,이 함수를 print(함수) 로 출력할 수 있다.💡Answerimport Foundationfunc solution(_ my_string:String, _ overwrite_string:String, _ s:Int) -&gt; String {    let a = my_string.prefix(s)    let b = overwrite_string    let c = my_string.suffix(my_string.count - overwrite_string.count - s)    return a + b + c}// 1 is odd해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (7) -\b홀짝 구분하기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)/",
     "categories": "Programmers, 기초",
@@ -13,8 +30,8 @@
 
 
     
-    "snippet": "01 문제 : \b\b덧셈식 출력하기문제 설명  자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 “n is even”을, 홀수이면 “n is odd”를 출력하는 코드를 작성해 보세요.제한사항      1 ≤ n ≤ 1,000  입출력 예입력 #1100출력 #1100 is even입력 #21출력 #21 is odd제시 코드import Foundatio...",
-    "content": "01 문제 : \b\b덧셈식 출력하기문제 설명  자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 “n is even”을, 홀수이면 “n is odd”를 출력하는 코드를 작성해 보세요.제한사항      1 ≤ n ≤ 1,000  입출력 예입력 #1100출력 #1100 is even입력 #21출력 #21 is odd제시 코드import Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, s2) = (inp[0], inp[1])02 풀이  함수와 나머지를 통해서 풀 수 있다.홀수인지 짝수인지를 판단해주는 함수를 하나 작성하고,이 함수를 print(함수) 로 출력할 수 있다.💡Answerimport Foundationfunc isOddEven(_ number : Int) -&gt; String {    if number % 2 == 0 {        return \"even\"       }    else {        return \"odd\"    }}print(\"\\(a) is \\(isOddEven(a))\")// 1 is odd해당문제 풀러가보기"
+    "snippet": "01 문제 : \b\b홀짝 구분하기문제 설명  자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 “n is even”을, 홀수이면 “n is odd”를 출력하는 코드를 작성해 보세요.제한사항      1 ≤ n ≤ 1,000  입출력 예입력 #1100출력 #1100 is even입력 #21출력 #21 is odd제시 코드import Foundation...",
+    "content": "01 문제 : \b\b홀짝 구분하기문제 설명  자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 “n is even”을, 홀수이면 “n is odd”를 출력하는 코드를 작성해 보세요.제한사항      1 ≤ n ≤ 1,000  입출력 예입력 #1100출력 #1100 is even입력 #21출력 #21 is odd제시 코드import Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, s2) = (inp[0], inp[1])02 풀이  함수와 나머지를 통해서 풀 수 있다.홀수인지 짝수인지를 판단해주는 함수를 하나 작성하고,이 함수를 print(함수) 로 출력할 수 있다.💡Answerimport Foundationfunc isOddEven(_ number : Int) -&gt; String {    if number % 2 == 0 {        return \"even\"       }    else {        return \"odd\"    }}print(\"\\(a) is \\(isOddEven(a))\")// 1 is odd해당문제 풀러가보기"
   },
   
   {
