@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-01-11T22:35:54+09:00</updated>
+  <updated>2024-01-13T22:36:48+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,50 @@
 
   
   <entry>
+    <title>2024-01-12- Swift 문법 (1)</title>
+    <link href="http://localhost:4000/posts/Swift-%EB%AC%B8%EB%B2%95-(1)/" rel="alternate" type="text/html" title="2024-01-12- Swift 문법 (1)" />
+    <published>2024-01-11T00:00:00+09:00</published>
+  
+    <updated>2024-01-11T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Swift-%EB%AC%B8%EB%B2%95-(1)/</id>
+    <content src="http://localhost:4000/posts/Swift-%EB%AC%B8%EB%B2%95-(1)/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 스위프트의 역사 : 첫단락
+
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>프로그래머스 Swift 코테준비 (8) -문자열 겹쳐쓰기</title>
     <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (8) -문자열 겹쳐쓰기" />
-    <published>2024-01-10T00:00:00+09:00</published>
+    <published>2024-01-11T00:00:00+09:00</published>
   
-    <updated>2024-01-10T00:00:00+09:00</updated>
+    <updated>2024-01-11T22:39:15+09:00</updated>
   
     <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/</id>
     <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/" />
@@ -48,7 +87,7 @@
 
 
 
-      01 문제 : 홀짝 구분하기
+      01 문제 : 문자열 겹쳐쓰기
 
 문제 설명
 
@@ -69,7 +108,7 @@
 
 
 입출력 예
-| my_string | overwrite_string ...
+| my_string | overwrite_string...
     </summary>
   
 
@@ -321,85 +360,6 @@ print("!@#$%^&amp;amp;*(\'"&amp;lt;&amp;gt;?:;")
 
 
   그 이유는 대표적인 예로, 따옴표 (“) 때문이...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기" />
-    <published>2024-01-08T00:00:00+09:00</published>
-  
-    <updated>2024-01-08T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 대소문자 바꿔서 출력하기
-
-
-문제 설명
-
-
-  영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-
-  -1 ≤ str의 길이 ≤ 20
-	-str은 알파벳으로 이루어진 문자열입니다.
-
-
-
-입출력 예
-
-입력 #1
-aBcDeFg
-
-
-출력 #1
-AbCdEfG
-
-
-
-
-제시 코드
-
-import Foundation
-
-let s1 = readLine()!
-
-
-
-
-02 풀이
-
-제시된 내용을 보면, 현재 s1 에는 aBcDeFg 라는 값이 들어가 있다.
-소문자인 경우에는 대문자로, 대문자인 경우에는 소문자로 바꿔야하는 문제인것으로 보이는데,
-.map 을 활용하여 s1 에 값을 하나씩 받아, 조건...
     </summary>
   
 
