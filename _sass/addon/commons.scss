@@ -119,6 +119,9 @@ blockquote {
 
       @extend %rounded;
 
+      p {
+        white-space: pre-wrap;
+      }
   }
 
   @include prompt('tip', '\f0eb', 'regular');
