@@ -198,3 +198,9 @@
     }
   }
 }
+
+@mixin command($type, $fa-style: 'solid') {
+  &.command-#{$type} {
+    background-color: var(--command-#{$type}-bg);
+  }
+}

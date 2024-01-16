@@ -87,6 +87,7 @@ blockquote {
   color: var(--blockquote-text-color);
   display: flex;
 
+  
   &[class^='prompt-'] {
     border-left: 0;
     position: relative;
@@ -110,10 +111,21 @@ blockquote {
     }
   }
 
+    &[class^='command-'] {
+      border-left: 0;
+      position: relative;
+      padding: 1rem 1rem 1rem 1rem;
+      color: var(--command-text-color);
+
+      @extend %rounded;
+
+  }
+
   @include prompt('tip', '\f0eb', 'regular');
   @include prompt('info', '\f06a');
   @include prompt('warning', '\f06a');
   @include prompt('danger', '\f071');
+  @include command('text');
 }
 
 kbd {
@@ -1229,6 +1241,14 @@ search {
   main {
     .content {
       > blockquote[class^='prompt-'] {
+        @include ml-mr(-1rem);
+
+        border-radius: 0;
+        max-width: none;
+      }
+    }
+    .content {
+      > blockquote[class^='command'] {
         @include ml-mr(-1rem);
 
         border-radius: 0;

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-01-15- 프로그래머스 Swift 코테준비 (14).md",
+                "file": "2024-01-15- 프로그래머스 Swift 코테준비 (13).md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.5
+    "width": 200
   },
   "right": {
     "id": "8a9eea698fc9a3df",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-01-15- 프로그래머스 Swift 코테준비 (14).md",
+                "file": "2024-01-15- 프로그래머스 Swift 코테준비 (13).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-01-15- 프로그래머스 Swift 코테준비 (14).md",
+                "file": "2024-01-15- 프로그래머스 Swift 코테준비 (13).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-01-15- 프로그래머스 Swift 코테준비 (14).md"
+                "file": "2024-01-15- 프로그래머스 Swift 코테준비 (13).md"
               }
             }
           }
@@ -146,17 +146,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "cd3381a31aca176b",
+  "active": "c0f3930f82a8c6b2",
   "lastOpenFiles": [
+    "2024-01-15- 프로그래머스 Swift 코테준비 (12).md",
+    "2024-01-15- 프로그래머스 Swift 코테준비 (14).md",
     "2024-01-15- 프로그래머스 Swift 코테준비 (13).md",
-    "2024-01-15- 프로그래머스 Swift 코테준비 (14).md",
-    "2024-01-15- 프로그래머스 Swift 코테준비 (14).md",
+    "2024-01-14- Swift 문법 (1).md",
+    "2024-01-14- 프로그래머스 Swift 코테준비 (11).md",
     "2024-01-14- 프로그래머스 Swift 코테준비 (10).md",
     "2024-01-14- 프로그래머스 Swift 코테준비 (9).md",
     "2024-01-08- 프로그래머스 Swift 코테준비 (8).md",
-    "2024-01-15- 프로그래머스 Swift 코테준비 (12).md",
-    "2024-01-14- Swift 문법 (1).md",
-    "2024-01-14- 프로그래머스 Swift 코테준비 (11).md",
     "2024-01-07- 프로그래머스 Swift 코테준비 (1).md",
     "2024-01-08- 프로그래머스 Swift 코테준비 (4).md",
     "2024-01-08- 프로그래머스 Swift 코테준비 (7).md",
