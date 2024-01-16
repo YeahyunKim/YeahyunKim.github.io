@@ -1,11 +1,96 @@
 [
   
   {
-    "title": "2024-01-12- Swift 문법 (1)",
-    "url": "/posts/Swift-%EB%AC%B8%EB%B2%95-(1)/",
+    "title": "프로그래머스 Swift 코테준비 (14) -n의 배수",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)/",
     "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-15 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : n의 배수문제 설명  정수 num과 n이 매개 변수로 주어질 때, num이 n의 배수이면 1을 return n의 배수가 아니라면 0을 return하도록 solution 함수를 완성해주세요.제한사항      2 ≤ num ≤ 100    2 ≤ n ≤ 9  입출력 예            num      n      result       ...",
+    "content": "01 문제 : n의 배수문제 설명  정수 num과 n이 매개 변수로 주어질 때, num이 n의 배수이면 1을 return n의 배수가 아니라면 0을 return하도록 solution 함수를 완성해주세요.제한사항      2 ≤ num ≤ 100    2 ≤ n ≤ 9  입출력 예            num      n      result                  98      2      1              34      3      0                  num      n      result                  98      2      1              34      3      0      입출력 예 설명입출력 예 #1  98은 2의 배수이므로 1을 return합니다.입출력 예 #2  32는 3의 배수가 아니므로 0을 return합니다.제시 코드import Foundationfunc solution(_ num:Int, _ n:Int) -&gt; Int {        return 0    }02 풀이정수의 배수 찾기정수의 배수를 찾기 위해서는 나머지 값 remainder을 활용하여 찾을 수 있다.예를 들어, 50은 5의 배수일까? 50은 3의 배수일까? 를 생각해보자.  50 % 5 = 0  =&gt; 나머지 없음  50 % 3 = 2 =&gt; 나머지 있음여기서 5로 나누었을때는 나머지가 없으니, 50은 5의 배수임을 알 수 있고,3으로 나누었을대는 나머지가 있으니, 50은 3의 배수가 아님을 알 수 있다.위의 방식을 통해 문제를 해결할 수 있었다.💡Answerimport Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        if num % n == 0 {        return 1    } else {        return 0    }    }해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "프로그래머스 Swift 코테준비 (13) -\b두 수의 연산값 비교하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-15 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : \b\b두 수의 연산값 비교하기문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.      12 ⊕ 3 = 123    3 ⊕ 12 = 312    양의 정수 a와 b가 주어졌을 때, a ⊕ b와 2 * a * b 중 더 큰 값을 return하는 solution 함수를 완성해 ...",
+    "content": "01 문제 : \b\b두 수의 연산값 비교하기문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.      12 ⊕ 3 = 123    3 ⊕ 12 = 312    양의 정수 a와 b가 주어졌을 때, a ⊕ b와 2 * a * b 중 더 큰 값을 return하는 solution 함수를 완성해 주세요.    단, a ⊕ b와 2 * a * b가 같으면 a ⊕ b를 return 합니다.제한사항      1 ≤ a, b &lt; 10,000  입출력 예| \ba | b | result || —- | —- | —- || 2 | 91 | 364 || 91 | 2 | 912 |입출력 예 설명입출력 예 #1  a ⊕ b = 291 이고, 2 * a * b = 364 입니다. 둘 중 더 큰 값은 364 이므로 364를 return 합니다.입출력 예 #2  a ⊕ b = 912 이고, 2 * a * b = 364 입니다. 둘 중 더 큰 값은 912 이므로 912를 return 합니다.제시 코드import Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        return 0    }02 풀이앞에 있는 더 크게 합치기 와 동일한 문제풀이!정수를 붙이기정수 3 과 23 이 있다고 가정해보았을때, 두개를 붙인 323 을 만들기 위해선,정수를 string(3) string(23)으로 형 변환을 하고, \"3\" + \"23\" 을 처리하면 문자열 \"323\"을 만들 수 있다.여기서, 문자열 “323” 을 Int(\"323\") 로 다시 형 변환을 해주면 완성된다.최솟값과 최댓값더 큰 값을 반환하는 것이 문제의 포인트,최솟값과 최댓값을 구하는 방식을 활용해보기로 했다.  a 와 b 중 더 작은 값을 구할때는 min(a, b)  a 와 b 중 더 큰 값을 구할때에는 max(a, b)두개의 방식을 사용하여 문제를 해결 할 수 있었다.💡Answerimport Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        var result = 0        result = max(Int(String(a) + String(b))! , 2 * a * b)        return result    }해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "프로그래머스 Swift 코테준비 (12) -\b더 크게 합치기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(12)/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-15 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : \b\b더 크게 합치기문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.      12 ⊕ 3 = 123    3 ⊕ 12 = 312    양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중 더 큰 값을 return 하는 solution 함수를 완성해 주세요.  단,...",
+    "content": "01 문제 : \b\b더 크게 합치기문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.      12 ⊕ 3 = 123    3 ⊕ 12 = 312    양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중 더 큰 값을 return 하는 solution 함수를 완성해 주세요.  단, a ⊕ b와 b ⊕ a가 같다면 a ⊕ b를 return 합니다.제한사항      1 ≤ a, b &lt; 10,000  입출력 예| \ba | b | result || —- | —- | —- || 9 | 91 | 991 || 89 | 8 | 898 |입출력 예 설명입출력 예 #1  a ⊕ b = 991 이고, b ⊕ a = 919 입니다. 둘 중 더 큰 값은 991 이므로 991을 return 합니다.입출력 예 #2  a ⊕ b = 898 이고, b ⊕ a = 889 입니다. 둘 중 더 큰 값은 898 이므로 898을 return 합니다.제시 코드import Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        return 0}02 풀이정수를 붙이기정수 3 과 23 이 있다고 가정해보았을때, 두개를 붙인 323 을 만들기 위해선,정수를 string(3) string(23)으로 형 변환을 하고, \"3\" + \"23\" 을 처리하면 문자열 \"323\"을 만들 수 있다.여기서, 문자열 “323” 을 Int(\"323\") 로 다시 형 변환을 해주면 완성된다.최솟값과 최댓값더 큰 값을 반환하는 것이 문제의 포인트,최솟값과 최댓값을 구하는 방식을 활용해보기로 했다.  a 와 b 중 더 작은 값을 구할때는 min(a, b)  a 와 b 중 더 큰 값을 구할때에는 max(a, b)두개의 방식을 사용하여 문제를 해결 할 수 있었다.💡Answerimport Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        var result = 0        result = max(Int(String(a) + String(b))! , Int(String(b) + String(a))!)        return result}해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "프로그래머스 Swift 코테준비 (11) -\b문자열 곱하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(11)/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-14 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : \b\b문자열 곱하기문제 설명  문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항      1 ≤ my_string의 길이 ≤ 100    my_string은 영소문자로만 이루어져 있습니다.    1 ≤ k ≤ 100  입출력 예| my...",
+    "content": "01 문제 : \b\b문자열 곱하기문제 설명  문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항      1 ≤ my_string의 길이 ≤ 100    my_string은 영소문자로만 이루어져 있습니다.    1 ≤ k ≤ 100  입출력 예| my_string | k | result || —- | —- | —- || “string” | 3 | “stringstringstring” || “love” | 10 | “lovelovelovelovelovelovelovelovelovelove” |입출력 예 설명입출력 예 #1  예제 1번의 my_string은 “string” 이고 이를 3번 반복한 문자열은 “stringstringstring” 이므로 이를 return 합니다.입출력 예 #2  예제 2번의 my_string은 “love” 이고 이를 10번 반복한 문자열은 “lovelovelovelovelovelovelovelovelovelove” 이므로 이를 return 합니다.제시 코드import Foundationfunc solution(_ my_string:String, _ k:Int) -&gt; String {    }02 풀이  현재 my_string 에는 문자열 “love” 가 들어가 있고, k 에는 정수 10 이 들어가 있다.여기서, 값을 반환해줄 result 라는 새로운 변수를 생성하고 해당 변수에 10번 “love” 라는 문자 값을 넣어주면 될것으로 보인다.  그럼 for문을 통해 += 으로 result 에 “love” 값을 추가하면 된다.    💡Answerimport Foundationfunc solution(_ my_string:String, _ k:Int) -&gt; String {        var result = \"\"        for index in 0..&lt;k {        result += my_string    }        return result}// \"lovelovelovelovelovelovelovelovelovelove\"해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "프로그래머스 Swift 코테준비 (10) -\b문자 리스트를 문자열로 변환하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(10)/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-14 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : \b\b문자 리스트를 문자열로 변환하기문제 설명  문자들이 담겨있는 배열 arr가 주어집니다. arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 solution함수를 작성해 주세요.제한사항      1 ≤ arr의 길이 ≤ 200  arr의 원소는 전부 알파벳 소문자로 이루어진 길이가 1인 문자열입니다.  입출력 예| arr ...",
+    "content": "01 문제 : \b\b문자 리스트를 문자열로 변환하기문제 설명  문자들이 담겨있는 배열 arr가 주어집니다. arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 solution함수를 작성해 주세요.제한사항      1 ≤ arr의 길이 ≤ 200  arr의 원소는 전부 알파벳 소문자로 이루어진 길이가 1인 문자열입니다.  입출력 예| arr | result || —- | —- || [“a”,”b”,”c”]\t | “abc” |제시 코드import Foundationfunc solution(_ arr:[String]) -&gt; String {}02 풀이  현재 arr 라는 배열안에는 [“a”, “b”, “c”] 의 값이 들어가 있다.이를 첫번째 배열의 인덱스 값을 새로운 변수 result 의 값에 추가해주고,이를 return 하면 될 것으로 보인다.  따라서 for문을 통해 arr.count 의 개수 만큼 for문을 실행 시키고, 실행 되었을때의 for문의 index 값을 활용하여 arr[index] 의 값을 가져오면 될 것으로 보인다.💡Answerimport Foundationfunc solution(_ arr:[String]) -&gt; String {        var result = \"\"            for index in 0..&lt;arr.count {        result += arr[index]    }        return result}// \"ababababab\"해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "2024-01-14- Swift 문법 (1)",
+    "url": "/posts/Swift-%EB%AC%B8%EB%B2%95-(1)/",
+    "categories": "Swift, Grammar",
     "tags": "Swift, Grammar",
-    "date": "2024-01-11 00:00:00 +0900",
+    "date": "2024-01-14 00:00:00 +0900",
     
 
 
@@ -18,11 +103,28 @@
   },
   
   {
+    "title": "프로그래머스 Swift 코테준비 (9) -\b문자열 섞기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(9)/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-13 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : \b\b문자열 섞기문제 설명  길이가 같은 두 문자열 str1과 str2가 주어집니다.두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.제한사항      1 ≤ str1의 길이 = str2의 길이 ≤ 10              str1과 str2는 ...",
+    "content": "01 문제 : \b\b문자열 섞기문제 설명  길이가 같은 두 문자열 str1과 str2가 주어집니다.두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.제한사항      1 ≤ str1의 길이 = str2의 길이 ≤ 10              str1과 str2는 알파벳 소문자로 이루어진 문자열입니다.            입출력 예| str1 | str2 | result || —- | —- | —- || “aaaaa” | “bbbbb” | “ababababab” |02 풀이  for 문을 통해, 새로운 변수 result 를 생성해 풀수 있다.새로운 변수 result 를 Character 타입으로 만들고, 해당 변수 안에 str1 과 str2 의 값을 for문을 통해 하나씩 넣어주는 방식을 사용해 보았다.💡Answerimport Foundationfunc solution(_ str1:String, _ str2:String) -&gt; String {        var result = [Character]()    var a = Array(str1)    var b = Array(str2)        for i in 0..&lt;str1.count {        result.append(a[i])        result.append(b[i])            }        return String(result)}// \"ababababab\"해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (8) -\b문자열 겹쳐쓰기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
-    "date": "2024-01-11 00:00:00 +0900",
+    "date": "2024-01-12 00:00:00 +0900",
     
 
 
@@ -39,7 +141,7 @@
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
-    "date": "2024-01-10 00:00:00 +0900",
+    "date": "2024-01-11 00:00:00 +0900",
     
 
 
