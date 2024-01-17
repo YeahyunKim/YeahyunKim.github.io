@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-01-17T22:11:37+09:00</updated>
+  <updated>2024-01-17T22:17:17+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (14) -n의 배수" />
     <published>2024-01-15T00:00:00+09:00</published>
   
-    <updated>2024-01-16T17:31:14+09:00</updated>
+    <updated>2024-01-17T22:12:19+09:00</updated>
   
     <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)/</id>
     <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)/" />
@@ -114,7 +114,7 @@
     <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (13) - 두 수의 연산값 비교하기" />
     <published>2024-01-15T00:00:00+09:00</published>
   
-    <updated>2024-01-16T21:15:15+09:00</updated>
+    <updated>2024-01-17T22:12:19+09:00</updated>
   
     <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)/</id>
     <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)/" />
@@ -216,39 +216,41 @@
 
 
   연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.
-
-  
-    12 ⊕ 3 = 123
-    3 ⊕ 12 = 312
-  
-
-  양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중 더 큰 값을 return 하는 solution 함수를 완성해 주세요.
-
-  단, a ⊕ b와 b ⊕ a가 같다면 a ⊕ b를 return 합니다.
+	• 12 ⊕ 3 = 123
+	• 3 ⊕ 12 = 312
+양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중 더 큰 값을 return 하는 solution 함수를 완성해 주세요.
+단, a ⊕ b와 b ⊕ a가 같다면 a ⊕ b를 return 합니다.
 
 
 
 제한사항
 
-  
-    1 ≤ a, b &amp;lt; 10,000
-  
+  • 1 ≤ a, b &amp;lt; 10,000
 
 
 
 
 입출력 예
-| a | b | result |
-| —- | —- | —- |
-| 9 | 91 | 991 |
-| 89 | 8 | 898 |
 
 
-입출력 예 설명
-
-입출력 예 #1
-
-  a ⊕ b...
+  
+    
+      a
+      b
+      result
+    
+  
+  
+    
+      9
+      91
+      991
+    
+    
+      89
+      8
+      898
+ ...
     </summary>
   
 
