@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기" />
+<meta property="og:title" content="프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="01 문제 : 문자열 반복해서 출력하기" />
-<meta property="og:description" content="01 문제 : 문자열 반복해서 출력하기" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
+<meta name="description" content="01 문제 : flag에 따라 다른 값 반환하기 문제 설명" />
+<meta property="og:description" content="01 문제 : flag에 따라 다른 값 반환하기 문제 설명" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(20)-flag%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(20)-flag%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
-<meta property="og:image" content="https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB" />
+<meta property="og:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-08T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-01-22T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB" />
-<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기" />
+<meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
+<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-19T22:53:29+09:00","datePublished":"2024-01-08T00:00:00+09:00","description":"01 문제 : \b문자열 반복해서 출력하기","headline":"프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기","image":"https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-22T00:00:00+09:00","datePublished":"2024-01-22T00:00:00+09:00","description":"01 문제 : flag에 따라 다른 값 반환하기 문제 설명","headline":"프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(20)-flag%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(20)-flag%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기 | Yeahyun Kim
+  <title>프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기</span>
+              <span>프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기</span>
             
 
           
@@ -767,6 +767,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -774,6 +785,27 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
 
@@ -786,7 +818,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기</h1>
+    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -802,41 +834,18 @@
 
 <time
   
-  data-ts="1704639600"
+  data-ts="1705849200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan  8, 2024
+  Jan 22, 2024
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1705672409"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Jan 19, 2024
-</time>
-
-        </span>
       
 
       
@@ -847,7 +856,7 @@
         
 
         <div class="mt-3 mb-3">
-          <a href="https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB" class="popup img-link preview-img shimmer"><img src="https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
+          <a href="https://ifh.cc/g/wvbwro.png" class="popup img-link preview-img shimmer"><img src="https://ifh.cc/g/wvbwro.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -888,7 +897,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="297 words"
+  title="316 words"
 >
   <em>1 min</em> read</span>
 
@@ -899,40 +908,62 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제--문자열-반복해서-출력하기"><span class="me-2">01 문제 : 문자열 반복해서 출력하기</span><a href="#01-문제--문자열-반복해서-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
+    <h2 id="01-문제--flag에-따라-다른-값-반환하기"><span class="me-2">01 문제 : flag에 따라 다른 값 반환하기</span><a href="#01-문제--flag에-따라-다른-값-반환하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<h5 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
 <blockquote class="command-text">
-  <p>문자열 <code class="language-plaintext highlighter-rouge">str</code>과 정수 <code class="language-plaintext highlighter-rouge">n</code>이 주어집니다.<br />
-<code class="language-plaintext highlighter-rouge">str</code>이 <code class="language-plaintext highlighter-rouge">n</code>번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.</p>
+  <p>두 정수 <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>와 boolean 변수 <code class="language-plaintext highlighter-rouge">flag</code>가 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">flag</code>가 true면 <code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code>를 
+false면 <code class="language-plaintext highlighter-rouge">a</code> - <code class="language-plaintext highlighter-rouge">b</code>를 return 하는 solution 함수를 작성해 주세요.</p>
 </blockquote>
 
 <hr />
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str</code>의 길이 ≤ 10
-• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 5</p>
+  <p>• 1,000 ≤ <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code> ≤ 1,000</p>
 </blockquote>
 
 <hr />
 <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>입력 #1</p>
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">string</span> <span class="mi">5</span>
-</pre></td></tr></tbody></table></code></div></div>
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>a</th>
+      <th>b</th>
+      <th>flag</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-4</td>
+      <td>7</td>
+      <td>true</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>-4</td>
+      <td>7</td>
+      <td>false</td>
+      <td>-11</td>
+    </tr>
+  </tbody>
+</table></div>
 
-<p>출력 #1</p>
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">stringstringstringstringstring</span>
-</pre></td></tr></tbody></table></code></div></div>
+<hr />
+<h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<blockquote class="command-text">
+  <p>입출력 예 #1
+	• 예제 1번에서 <code class="language-plaintext highlighter-rouge">flag</code>가 true이므로 <code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code> = (-4) + 7 = 3을 return 합니다.</p>
+</blockquote>
+
+<blockquote class="command-text">
+  <p>입출력 예 #2
+	•   예제 2번에서 <code class="language-plaintext highlighter-rouge">flag</code>가 false이므로 <code class="language-plaintext highlighter-rouge">a</code> - <code class="language-plaintext highlighter-rouge">b</code> = (-4) - 7 = -11을 return 합니다.</p>
+</blockquote>
 
 <hr />
 
@@ -944,25 +975,39 @@
 2
 3
 4
+5
+6
+7
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">inp</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
-<span class="k">let</span> <span class="p">(</span><span class="nv">s1</span><span class="p">,</span> <span class="nv">a</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="kt">Int</span><span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">!</span><span class="p">)</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">flag</span><span class="p">:</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <hr />
-
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<blockquote class="prompt-tip">
-  <p>제시된 내용을 보면,
-let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인해, 
-현재 변수 <code class="language-plaintext highlighter-rouge">s1</code> 에는 <code class="language-plaintext highlighter-rouge">"string"</code> , <code class="language-plaintext highlighter-rouge">a</code> 에는 <code class="language-plaintext highlighter-rouge">5</code>라는 <code class="language-plaintext highlighter-rouge">number</code> 형태의 의 값이 들어가 있다.</p>
-</blockquote>
+<h4 id="삼항-연산자-활용하기"><span class="me-2">삼항 연산자 활용하기</span><a href="#삼항-연산자-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>주어진 <code class="language-plaintext highlighter-rouge">flag</code>의 값이 <code class="language-plaintext highlighter-rouge">true</code> / <code class="language-plaintext highlighter-rouge">false</code> 에 따라, 반환되는 값을 지정해야 한다.</p>
 
-<blockquote>
-  <p class="prompt-tip">string을 총 5번 출력하기 위해서는, 제시된 <code class="language-plaintext highlighter-rouge">5</code> 라는 값을 활용 해야한다.
-따라서 for문을 활용하고, 변수 <code class="language-plaintext highlighter-rouge">result</code> 를 생성하여, 해당 변수에 <code class="language-plaintext highlighter-rouge">"string"</code> 을 5번 넣어주면 될 것으로 보인다.</p>
+<ul>
+  <li>true 일 경우
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">a + b</code> 반환</li>
+    </ul>
+  </li>
+  <li>false 일 경우
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">a - b</code> 반환</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote class="prompt-tip">
+  <p>조건문이 길지 않고 간단한 경우에는,  삼항 연산자를 활용하는 것이 가독성에 좋다.</p>
 </blockquote>
 
 <hr />
@@ -981,25 +1026,20 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
 8
 9
 10
-11
-12
-13
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
 
-<span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
-
-<span class="k">for</span> <span class="n">count</span> <span class="k">in</span> <span class="mi">1</span><span class="o">...</span><span class="n">a</span> <span class="p">{</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="n">s1</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">flag</span><span class="p">:</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+<span class="k">return</span> <span class="n">flag</span> <span class="p">?</span> <span class="n">a</span> <span class="o">+</span> <span class="nv">b</span> <span class="p">:</span> <span class="n">a</span> <span class="o">-</span> <span class="n">b</span>
+    
 <span class="p">}</span>
+<span class="c1">// 0</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-
-<span class="c1">// stringstringstringstringstring</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181950">해당문제 풀러가보기</a></p>
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181933">해당문제 풀러가보기</a></p>
+
 
   </div>
 
@@ -1055,21 +1095,21 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(3)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%283%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B0%2598%25EB%25B3%25B5%25ED%2595%25B4%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(20)%20-%20flag%EC%97%90%20%EB%94%B0%EB%9D%BC%20%EB%8B%A4%EB%A5%B8%20%EA%B0%92%20%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2820%29-flag%25EC%2597%2590-%25EB%2594%25B0%25EB%259D%25BC-%25EB%258B%25A4%25EB%25A5%25B8-%25EA%25B0%2592-%25EB%25B0%2598%25ED%2599%2598%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(3)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%283%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B0%2598%25EB%25B3%25B5%25ED%2595%25B4%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(20)%20-%20flag%EC%97%90%20%EB%94%B0%EB%9D%BC%20%EB%8B%A4%EB%A5%B8%20%EA%B0%92%20%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2820%29-flag%25EC%2597%2590-%25EB%2594%25B0%25EB%259D%25BC-%25EB%258B%25A4%25EB%25A5%25B8-%25EA%25B0%2592-%25EB%25B0%2598%25ED%2599%2598%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%283%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B0%2598%25EB%25B3%25B5%25ED%2595%25B4%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(3)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2820%29-flag%25EC%2597%2590-%25EB%2594%25B0%25EB%259D%25BC-%25EB%258B%25A4%25EB%25A5%25B8-%25EA%25B0%2592-%25EB%25B0%2598%25ED%2599%2598%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(20)%20-%20flag%EC%97%90%20%EB%94%B0%EB%9D%BC%20%EB%8B%A4%EB%A5%B8%20%EA%B0%92%20%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1396,211 +1436,211 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1670,6 +1710,7 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
 
                   01 문제 : 문자열 섞기
 
+
 문제 설명
 
 
@@ -1678,10 +1719,11 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
 
 
 
+
 제한사항
 
   • 1 ≤ str1의 길이 = str2의 길이 ≤ 10
-    • str1과 str...
+    • str1과 s...
                 </p>
               </div>
             </div>
@@ -1719,6 +1761,7 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
 
                   01 문제 : 문자 리스트를 문자열로 변환하기
 
+
 문제 설명
 
 
@@ -1726,12 +1769,11 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
 
 
 
+
 제한사항
 
   • 1 ≤ arr의 길이 ≤ 200
-	• arr의 원소는 전부 알파벳 소문자로 이루어진 길이가 1인 문자열입니다.
-
-...
+	• arr의 원소는 전부 알파벳 소문자로 이루어진 길이가 1인 문자열입니다....
                 </p>
               </div>
             </div>
@@ -1769,10 +1811,12 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
 
                   01 문제 : 문자열 곱하기
 
+
 문제 설명
 
 
   문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.
+
 
 
 
@@ -1781,8 +1825,6 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
   • 1 ≤ my_string의 길이 ≤ 100
 • my_string은 영소문자로만 이루어져 있습니다.
 • 1 ≤ k ≤ 100
-
-
 
 ...
                 </p>
@@ -1806,22 +1848,18 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)-a%EC%99%80-b-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(19)-%EC%A1%B0%EA%B1%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Swift 코테준비 (2) - a와 b 출력하기</p>
+      <p>프로그래머스 Swift 코테준비 (19) - 조건 문자열</p>
     </a>
   
 
   
-    <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
