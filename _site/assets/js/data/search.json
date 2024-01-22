@@ -1,7 +1,24 @@
 [
   
   {
-    "title": "프로그래머스 Swift 코테준비 (16) - 공배수",
+    "title": "프로그래머스 Swift 코테준비 (18) - 홀짝에 따라 다른 값 반환하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(18)-%ED%99%80%EC%A7%9D%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-22 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 홀짝에 따라 다른 값 반환하기문제 설명  양의 정수 n이 매개변수로 주어질 때, n이 홀수라면 n 이하의 홀수인 모든 양의 정수의 합을 return 하고 n이 짝수라면 n 이하의 짝수인 모든 양의 정수의 제곱의 합을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ n ≤ 100입출력 예            n...",
+    "content": "01 문제 : 홀짝에 따라 다른 값 반환하기문제 설명  양의 정수 n이 매개변수로 주어질 때, n이 홀수라면 n 이하의 홀수인 모든 양의 정수의 합을 return 하고 n이 짝수라면 n 이하의 짝수인 모든 양의 정수의 제곱의 합을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ n ≤ 100입출력 예            n      result                  7      16              10      220      입출력 예 설명  입출력 예 #1\t• 예제 1번의 n은 7로 홀수입니다. 7 이하의 모든 양의 홀수는 1, 3, 5, 7이고 \t이들의 합인 1 + 3 + 5 + 7 = 16을 return 합니다.  입출력 예 #2\t• 예제 2번의 n은 10으로 짝수입니다. 10 이하의 모든 양의 짝수는 \t2, 4, 6, 8, 10이고 이들의 제곱의 합인 \t22 + 42 + 62 + 82 + 102 = 4 + 16 + 36 + 64 + 100 = 220을 \treturn 합니다.제시 코드import Foundationfunc solution(_ n:Int) -&gt; Int  {        return 0    }02 풀이나머지를 이용하여 짝수 홀수 찾기배수를 찾는 문제와 똑같은 문제이다. 나누는 값을 2로 하고, 나머지 값을 구하는 방식을활용하면 된다.  50 % 2 = 0  =&gt; 나머지 없음 =&gt; 짝수  51 % 2 = 1 =&gt; 나머지 있음  =&gt; 홀수\b반복문과 조건문 활용반복문을 활용하여, 양의 정수 n 이하의 모든 양의 정수를 구하고, 각각의 양의 정수에서 짝수와 홀수를 판별하는 조건문을 활용하면 된다.💡Answerimport Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        var result = 0    for index in 1...n {        if n % 2 == 0 {            //짝수            if index % 2 == 0 {                result += index * index                }             } else {            //홀수            if index % 2 != 0 {                result += index                }        }      }    return result}해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "프로그래머스 Swift 코테준비 (17) - 공배수",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(17)-%EA%B3%B5%EB%B0%B0%EC%88%98/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
