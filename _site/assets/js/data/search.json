@@ -1,8 +1,25 @@
 [
   
   {
-    "title": "프로그래머스 Swift 코테준비 (14) -n의 배수",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)/",
+    "title": "프로그래머스 Swift 코테준비 (16) - 공배수",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(17)-%EA%B3%B5%EB%B0%B0%EC%88%98/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-19 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 공배수문제 설명  정수 number와 n, m이 주어집니다. number가 n의 배수이면서 m의 배수이면 1을 아니라면 0을 return하도록 solution 함수를 완성해주세요.제한사항  • 10 ≤ number ≤ 100• 2 ≤ n, m &lt; 10입출력 예            number      n      m      res...",
+    "content": "01 문제 : 공배수문제 설명  정수 number와 n, m이 주어집니다. number가 n의 배수이면서 m의 배수이면 1을 아니라면 0을 return하도록 solution 함수를 완성해주세요.제한사항  • 10 ≤ number ≤ 100• 2 ≤ n, m &lt; 10입출력 예            number      n      m      result                  60      2      3      1              55      10      5      0      입출력 예 설명  입출력 예 #1\t• 60은 2의 배수이면서 3의 배수이기 때문에 1을 return합니다.  입출력 예 #2\t• 55는 5의 배수이지만 10의 배수가 아니기 때문에 0을 return합니다.제시 코드import Foundationfunc solution(_ number:Int, _ n:Int, _ m:Int) -&gt; Int {        return 0    }02 풀이정수의 배수 찾기정수의 배수를 찾기 위해서는 나머지 값 remainder을 활용하여 찾을 수 있다.예를 들어, 50은 5의 배수일까? 50은 3의 배수일까? 를 생각해보자.  50 % 5 = 0  =&gt; 나머지 없음  50 % 3 = 2 =&gt; 나머지 있음여기서 5로 나누었을때는 나머지가 없으니, 50은 5의 배수임을 알 수 있고,3으로 나누었을대는 나머지가 있으니, 50은 3의 배수가 아님을 알 수 있다.공배수 찾기공배수를 찾기 위해서는 &amp;&amp; 를 사용하여, 두개의 조건이 true 일 경우 값을 return 시키면 된다.위의 방식을 통해 문제를 해결할 수 있었다.💡Answerimport Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        if number % n == 0 &amp;&amp; number % m == 0 {        return 1    } else {        return 0    }        }해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "프로그래머스 Swift 코테준비 (16) - n의 배수",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(16)-n%EC%9D%98-%EB%B0%B0%EC%88%98/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-15 00:00:00 +0900",
@@ -18,8 +35,8 @@
   },
   
   {
-    "title": "프로그래머스 Swift 코테준비 (13) - 두 수의 연산값 비교하기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)/",
+    "title": "프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(15)-%EB%91%90-%EC%88%98%EC%9D%98-%EC%97%B0%EC%82%B0%EA%B0%92-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-15 00:00:00 +0900",
@@ -31,12 +48,12 @@
 
     
     "snippet": "01 문제 : 두 수의 연산값 비교하기문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.\t• 12 ⊕ 3 = 123\t• 3 ⊕ 12 = 312양의 정수 a와 b가 주어졌을 때, a ⊕ b와 2 * a *b 중 더 큰 값을 return하는 solution 함수를 완성해 주세요.단, a ⊕ ...",
-    "content": "01 문제 : 두 수의 연산값 비교하기문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.\t• 12 ⊕ 3 = 123\t• 3 ⊕ 12 = 312양의 정수 a와 b가 주어졌을 때, a ⊕ b와 2 * a *b 중 더 큰 값을 return하는 solution 함수를 완성해 주세요.단, a ⊕ b와 2 * a * b가 같으면 a ⊕ b를 return 합니다.제한사항  1 ≤ a, b &lt; 10,000입출력 예                    a        b        result                            2        91        364                    91        2        912            입출력 예 설명  입출력 예 #1      a ⊕ b = 291 이고, 2 * a * b = 364 입니다. 둘 중 더 큰 값은 364 이므로 364를 return 합니다.    입출력 예 #2      a ⊕ b = 912 이고, 2 * a * b = 364 입니다. 둘 중 더 큰 값은 912 이므로 912를 return 합니다.  제시 코드import Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        return 0    }02 풀이앞에 있는 더 크게 합치기 와 동일한 문제풀이!정수를 붙이기정수 3 과 23 이 있다고 가정해보았을때, 두개를 붙인 323 을 만들기 위해선,정수를 string(3) string(23)으로 형 변환을 하고, \"3\" + \"23\" 을 처리하면 문자열 \"323\"을 만들 수 있다.여기서, 문자열 “323” 을 Int(\"323\") 로 다시 형 변환을 해주면 완성된다.최솟값과 최댓값더 큰 값을 반환하는 것이 문제의 포인트,최솟값과 최댓값을 구하는 방식을 활용해보기로 했다.  a 와 b 중 더 작은 값을 구할때는 min(a, b)  a 와 b 중 더 큰 값을 구할때에는 max(a, b)두개의 방식을 사용하여 문제를 해결 할 수 있었다.💡Answerimport Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        var result = 0        result = max(Int(String(a) + String(b))! , 2 * a * b)        return result    }해당문제 풀러가보기"
+    "content": "01 문제 : 두 수의 연산값 비교하기문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.\t• 12 ⊕ 3 = 123\t• 3 ⊕ 12 = 312양의 정수 a와 b가 주어졌을 때, a ⊕ b와 2 * a *b 중 더 큰 값을 return하는 solution 함수를 완성해 주세요.단, a ⊕ b와 2 * a * b가 같으면 a ⊕ b를 return 합니다.제한사항  • 1 ≤ a, b &lt; 10,000입출력 예            a      b      result                  2      91      364              91      2      912      입출력 예 설명  입출력 예 #1• a ⊕ b = 291 이고, 2 * a * b = 364 입니다. 둘 중 더 큰 값은 364 이므로 364를 return 합니다.  입출력 예 #2•  a ⊕ b = 912 이고, 2 * a * b = 364 입니다. 둘 중 더 큰 값은 912 이므로 912를 return 합니다.제시 코드import Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        return 0    }02 풀이앞에 있는 더 크게 합치기 와 동일한 문제풀이!정수를 붙이기정수 3 과 23 이 있다고 가정해보았을때, 두개를 붙인 323 을 만들기 위해선,정수를 string(3) string(23)으로 형 변환을 하고, \"3\" + \"23\" 을 처리하면 문자열 \"323\"을 만들 수 있다.여기서, 문자열 “323” 을 Int(\"323\") 로 다시 형 변환을 해주면 완성된다.최솟값과 최댓값더 큰 값을 반환하는 것이 문제의 포인트,최솟값과 최댓값을 구하는 방식을 활용해보기로 했다.  a 와 b 중 더 작은 값을 구할때는 min(a, b)  a 와 b 중 더 큰 값을 구할때에는 max(a, b)두개의 방식을 사용하여 문제를 해결 할 수 있었다.💡Answerimport Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        var result = 0        result = max(Int(String(a) + String(b))! , 2 * a * b)        return result    }해당문제 풀러가보기"
   },
   
   {
-    "title": "프로그래머스 Swift 코테준비 (12) -\b더 크게 합치기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(12)/",
+    "title": "프로그래머스 Swift 코테준비 (14) -\b더 크게 합치기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-15 00:00:00 +0900",
@@ -48,12 +65,12 @@
 
     
     "snippet": "01 문제 : 더 크게 합치기문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.\t• 12 ⊕ 3 = 123\t• 3 ⊕ 12 = 312양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중 더 큰 값을 return 하는 solution 함수를 완성해 주세요.단, a ⊕ b와 b ⊕ ...",
-    "content": "01 문제 : 더 크게 합치기문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.\t• 12 ⊕ 3 = 123\t• 3 ⊕ 12 = 312양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중 더 큰 값을 return 하는 solution 함수를 완성해 주세요.단, a ⊕ b와 b ⊕ a가 같다면 a ⊕ b를 return 합니다.제한사항  • 1 ≤ a, b &lt; 10,000입출력 예            \ba      b      result                  9      91      991              89      8      898      입출력 예 설명입출력 예 #1  a ⊕ b = 991 이고, b ⊕ a = 919 입니다. 둘 중 더 큰 값은 991 이므로 991을 return 합니다.입출력 예 #2  a ⊕ b = 898 이고, b ⊕ a = 889 입니다. 둘 중 더 큰 값은 898 이므로 898을 return 합니다.제시 코드import Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        return 0}02 풀이정수를 붙이기정수 3 과 23 이 있다고 가정해보았을때, 두개를 붙인 323 을 만들기 위해선,정수를 string(3) string(23)으로 형 변환을 하고, \"3\" + \"23\" 을 처리하면 문자열 \"323\"을 만들 수 있다.여기서, 문자열 “323” 을 Int(\"323\") 로 다시 형 변환을 해주면 완성된다.최솟값과 최댓값더 큰 값을 반환하는 것이 문제의 포인트,최솟값과 최댓값을 구하는 방식을 활용해보기로 했다.  a 와 b 중 더 작은 값을 구할때는 min(a, b)  a 와 b 중 더 큰 값을 구할때에는 max(a, b)두개의 방식을 사용하여 문제를 해결 할 수 있었다.💡Answerimport Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        var result = 0        result = max(Int(String(a) + String(b))! , Int(String(b) + String(a))!)        return result}해당문제 풀러가보기"
+    "content": "01 문제 : 더 크게 합치기문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.\t• 12 ⊕ 3 = 123\t• 3 ⊕ 12 = 312양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중 더 큰 값을 return 하는 solution 함수를 완성해 주세요.단, a ⊕ b와 b ⊕ a가 같다면 a ⊕ b를 return 합니다.제한사항  • 1 ≤ a, b &lt; 10,000입출력 예            \ba      b      result                  9      91      991              89      8      898      입출력 예 설명  입출력 예 #1\t• a ⊕ b = 991 이고, b ⊕ a = 919 입니다. 둘 중 더 큰 값은 991 이므로 991을\treturn 합니다.  입출력 예 #2\t• a ⊕ b = 898 이고, b ⊕ a = 889 입니다. 둘 중 더 큰 값은 898 이므로 898\t을 return 합니다.제시 코드import Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        return 0}02 풀이정수를 붙이기정수 3 과 23 이 있다고 가정해보았을때, 두개를 붙인 323 을 만들기 위해선,정수를 string(3) string(23)으로 형 변환을 하고, \"3\" + \"23\" 을 처리하면 문자열 \"323\"을 만들 수 있다.여기서, 문자열 “323” 을 Int(\"323\") 로 다시 형 변환을 해주면 완성된다.최솟값과 최댓값더 큰 값을 반환하는 것이 문제의 포인트,최솟값과 최댓값을 구하는 방식을 활용해보기로 했다.  a 와 b 중 더 작은 값을 구할때는 min(a, b)  a 와 b 중 더 큰 값을 구할때에는 max(a, b)두개의 방식을 사용하여 문제를 해결 할 수 있었다.💡Answerimport Foundationfunc solution(_ a:Int, _ b:Int) -&gt; Int {        var result = 0        result = max(Int(String(a) + String(b))! , Int(String(b) + String(a))!)        return result}해당문제 풀러가보기"
   },
   
   {
-    "title": "프로그래머스 Swift 코테준비 (11) -\b문자열 곱하기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(11)/",
+    "title": "프로그래머스 Swift 코테준비 (13) -\b문자열 곱하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-14 00:00:00 +0900",
@@ -64,13 +81,13 @@
 
 
     
-    "snippet": "01 문제 : \b\b문자열 곱하기문제 설명  문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항      1 ≤ my_string의 길이 ≤ 100    my_string은 영소문자로만 이루어져 있습니다.    1 ≤ k ≤ 100  입출력 예| my...",
-    "content": "01 문제 : \b\b문자열 곱하기문제 설명  문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항      1 ≤ my_string의 길이 ≤ 100    my_string은 영소문자로만 이루어져 있습니다.    1 ≤ k ≤ 100  입출력 예| my_string | k | result || —- | —- | —- || “string” | 3 | “stringstringstring” || “love” | 10 | “lovelovelovelovelovelovelovelovelovelove” |입출력 예 설명입출력 예 #1  예제 1번의 my_string은 “string” 이고 이를 3번 반복한 문자열은 “stringstringstring” 이므로 이를 return 합니다.입출력 예 #2  예제 2번의 my_string은 “love” 이고 이를 10번 반복한 문자열은 “lovelovelovelovelovelovelovelovelovelove” 이므로 이를 return 합니다.제시 코드import Foundationfunc solution(_ my_string:String, _ k:Int) -&gt; String {    }02 풀이  현재 my_string 에는 문자열 “love” 가 들어가 있고, k 에는 정수 10 이 들어가 있다.여기서, 값을 반환해줄 result 라는 새로운 변수를 생성하고 해당 변수에 10번 “love” 라는 문자 값을 넣어주면 될것으로 보인다.  그럼 for문을 통해 += 으로 result 에 “love” 값을 추가하면 된다.    💡Answerimport Foundationfunc solution(_ my_string:String, _ k:Int) -&gt; String {        var result = \"\"        for index in 0..&lt;k {        result += my_string    }        return result}// \"lovelovelovelovelovelovelovelovelovelove\"해당문제 풀러가보기"
+    "snippet": "01 문제 : \b\b문자열 곱하기문제 설명  문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ my_string의 길이 ≤ 100• my_string은 영소문자로만 이루어져 있습니다.• 1 ≤ k ≤ 100입출력 예            ...",
+    "content": "01 문제 : \b\b문자열 곱하기문제 설명  문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ my_string의 길이 ≤ 100• my_string은 영소문자로만 이루어져 있습니다.• 1 ≤ k ≤ 100입출력 예            my_string      k      result                  “string”      3      “stringstringstring”              “love”      10      “lovelovelovelovelovelovelovelovelovelove”      입출력 예 설명  입출력 예 #1\t• 예제 1번의 my_string은 “string” 이고 이를 3번 반복한 문자열은 “stringstringstring” 이므로 이를 return 합니다.  입출력 예 #2\t• 예제 2번의 my_string은 “love” 이고 이를 10번 반복한 문자열은 “lovelovelovelovelovelovelovelovelovelove” 이므로 \t이를 return 합니다.제시 코드import Foundationfunc solution(_ my_string:String, _ k:Int) -&gt; String {    }02 풀이  현재 my_string 에는 문자열 “love” 가 들어가 있고, k 에는 정수 10 이 들어가 있다.여기서, 값을 반환해줄 result 라는 새로운 변수를 생성하고 해당 변수에 10번 “love” 라는 문자 값을 넣어주면 될것으로 보인다.그럼 for문을 통해 += 으로 result 에 “love” 값을 추가하면 된다.💡Answerimport Foundationfunc solution(_ my_string:String, _ k:Int) -&gt; String {        var result = \"\"        for index in 0..&lt;k {        result += my_string    }        return result}// \"lovelovelovelovelovelovelovelovelovelove\"해당문제 풀러가보기"
   },
   
   {
-    "title": "프로그래머스 Swift 코테준비 (10) -\b문자 리스트를 문자열로 변환하기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(10)/",
+    "title": "프로그래머스 Swift 코테준비 (12) -\b문자 리스트를 문자열로 변환하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(12)-%EB%AC%B8%EC%9E%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-14 00:00:00 +0900",
@@ -81,8 +98,8 @@
 
 
     
-    "snippet": "01 문제 : \b\b문자 리스트를 문자열로 변환하기문제 설명  문자들이 담겨있는 배열 arr가 주어집니다. arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 solution함수를 작성해 주세요.제한사항      1 ≤ arr의 길이 ≤ 200  arr의 원소는 전부 알파벳 소문자로 이루어진 길이가 1인 문자열입니다.  입출력 예| arr ...",
-    "content": "01 문제 : \b\b문자 리스트를 문자열로 변환하기문제 설명  문자들이 담겨있는 배열 arr가 주어집니다. arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 solution함수를 작성해 주세요.제한사항      1 ≤ arr의 길이 ≤ 200  arr의 원소는 전부 알파벳 소문자로 이루어진 길이가 1인 문자열입니다.  입출력 예| arr | result || —- | —- || [“a”,”b”,”c”]\t | “abc” |제시 코드import Foundationfunc solution(_ arr:[String]) -&gt; String {}02 풀이  현재 arr 라는 배열안에는 [“a”, “b”, “c”] 의 값이 들어가 있다.이를 첫번째 배열의 인덱스 값을 새로운 변수 result 의 값에 추가해주고,이를 return 하면 될 것으로 보인다.  따라서 for문을 통해 arr.count 의 개수 만큼 for문을 실행 시키고, 실행 되었을때의 for문의 index 값을 활용하여 arr[index] 의 값을 가져오면 될 것으로 보인다.💡Answerimport Foundationfunc solution(_ arr:[String]) -&gt; String {        var result = \"\"            for index in 0..&lt;arr.count {        result += arr[index]    }        return result}// \"ababababab\"해당문제 풀러가보기"
+    "snippet": "01 문제 : \b\b문자 리스트를 문자열로 변환하기문제 설명  문자들이 담겨있는 배열 arr가 주어집니다. arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 solution함수를 작성해 주세요.제한사항  • 1 ≤ arr의 길이 ≤ 200\t• arr의 원소는 전부 알파벳 소문자로 이루어진 길이가 1인 문자열입니다.입출력 예         ...",
+    "content": "01 문제 : \b\b문자 리스트를 문자열로 변환하기문제 설명  문자들이 담겨있는 배열 arr가 주어집니다. arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 solution함수를 작성해 주세요.제한사항  • 1 ≤ arr의 길이 ≤ 200\t• arr의 원소는 전부 알파벳 소문자로 이루어진 길이가 1인 문자열입니다.입출력 예            arr      result                  [“a”,”b”,”c”]      “abc”      제시 코드import Foundationfunc solution(_ arr:[String]) -&gt; String {}02 풀이  현재 arr 라는 배열안에는 [“a”, “b”, “c”] 의 값이 들어가 있다.이를 첫번째 배열의 인덱스 값을 새로운 변수 result 의 값에 추가해주고,이를 return 하면 될 것으로 보인다.  따라서 for문을 통해 arr.count 의 개수 만큼 for문을 실행 시키고, 실행 되었을때의 for문의 index 값을 활용하여 arr[index] 의 값을 가져오면 될 것으로 보인다.💡Answerimport Foundationfunc solution(_ arr:[String]) -&gt; String {        var result = \"\"            for index in 0..&lt;arr.count {        result += arr[index]    }        return result}// \"ababababab\"해당문제 풀러가보기"
   },
   
   {
@@ -103,8 +120,8 @@
   },
   
   {
-    "title": "프로그래머스 Swift 코테준비 (9) -\b문자열 섞기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(9)/",
+    "title": "프로그래머스 Swift 코테준비 (11) -\b문자열 섞기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-13 00:00:00 +0900",
@@ -115,13 +132,13 @@
 
 
     
-    "snippet": "01 문제 : \b\b문자열 섞기문제 설명  길이가 같은 두 문자열 str1과 str2가 주어집니다.두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.제한사항      1 ≤ str1의 길이 = str2의 길이 ≤ 10              str1과 str2는 ...",
-    "content": "01 문제 : \b\b문자열 섞기문제 설명  길이가 같은 두 문자열 str1과 str2가 주어집니다.두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.제한사항      1 ≤ str1의 길이 = str2의 길이 ≤ 10              str1과 str2는 알파벳 소문자로 이루어진 문자열입니다.            입출력 예| str1 | str2 | result || —- | —- | —- || “aaaaa” | “bbbbb” | “ababababab” |02 풀이  for 문을 통해, 새로운 변수 result 를 생성해 풀수 있다.새로운 변수 result 를 Character 타입으로 만들고, 해당 변수 안에 str1 과 str2 의 값을 for문을 통해 하나씩 넣어주는 방식을 사용해 보았다.💡Answerimport Foundationfunc solution(_ str1:String, _ str2:String) -&gt; String {        var result = [Character]()    var a = Array(str1)    var b = Array(str2)        for i in 0..&lt;str1.count {        result.append(a[i])        result.append(b[i])            }        return String(result)}// \"ababababab\"해당문제 풀러가보기"
+    "snippet": "01 문제 : \b\b문자열 섞기문제 설명  길이가 같은 두 문자열 str1과 str2가 주어집니다.두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.제한사항  • 1 ≤ str1의 길이 = str2의 길이 ≤ 10    • str1과 str2는 알파벳 소문자로 이...",
+    "content": "01 문제 : \b\b문자열 섞기문제 설명  길이가 같은 두 문자열 str1과 str2가 주어집니다.두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.제한사항  • 1 ≤ str1의 길이 = str2의 길이 ≤ 10    • str1과 str2는 알파벳 소문자로 이루어진 문자열입니다.입출력 예            str1      str2      result                  “aaaaa”      “bbbbb”      “ababababab”      02 풀이  for 문을 통해, 새로운 변수 result 를 생성해 풀수 있다.새로운 변수 result 를 Character 타입으로 만들고, 해당 변수 안에 str1 과 str2 의 값을 for문을 통해 하나씩 넣어주는 방식을 사용해 보았다.💡Answerimport Foundationfunc solution(_ str1:String, _ str2:String) -&gt; String {        var result = [Character]()    var a = Array(str1)    var b = Array(str2)        for i in 0..&lt;str1.count {        result.append(a[i])        result.append(b[i])            }        return String(result)}// \"ababababab\"해당문제 풀러가보기"
   },
   
   {
-    "title": "프로그래머스 Swift 코테준비 (8) -\b문자열 겹쳐쓰기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/",
+    "title": "프로그래머스 Swift 코테준비 (10) -\b문자열 겹쳐쓰기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-12 00:00:00 +0900",
@@ -132,13 +149,13 @@
 
 
     
-    "snippet": "01 문제 : \b\b문자열 겹쳐쓰기문제 설명  문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항      my_stri...",
-    "content": "01 문제 : \b\b문자열 겹쳐쓰기문제 설명  문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항      my_string와 overwrite_string은 숫자와 알파벳으로 이루어져 있습니다.    1 ≤ overwrite_string의 길이 ≤ my_string의 길이 ≤ 1,000    0 ≤ s ≤ my_string의 길이 - overwrite_string의 길이  입출력 예| my_string | overwrite_string | s | result || —- | —- | —- | —- || “He11oWor1d” | “lloWorl” | 2 | “HelloWorld” || “Program29b8UYP” | “merS123” | 7 | “ProgramerS123” |입출력 예 설명입출력 예 #1  예제 1번의 my_string 에서 인덱스 2부터 overwrite_string 의 길이만큼에 해당하는 부분은 “11oWor1” 이고 이를 “lloWorl” 로 바꾼 “HelloWorld” 를 return 합니다.입출력 예 #2  예제 2번의 my_string 에서 인덱스 7부터 overwrite_string 의 길이만큼에 해당하는 부분은 “29b8UYP” 이고 이를 “merS123” 로 바꾼 “ProgrammerS123”를 return 합니다.02 풀이  함수와 나머지를 통해서 풀 수 있다.홀수인지 짝수인지를 판단해주는 함수를 하나 작성하고,이 함수를 print(함수) 로 출력할 수 있다.💡Answerimport Foundationfunc solution(_ my_string:String, _ overwrite_string:String, _ s:Int) -&gt; String {    let a = my_string.prefix(s)    let b = overwrite_string    let c = my_string.suffix(my_string.count - overwrite_string.count - s)    return a + b + c}// 1 is odd해당문제 풀러가보기"
+    "snippet": "01 문제 : \b\b문자열 겹쳐쓰기문제 설명  문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • my_string...",
+    "content": "01 문제 : \b\b문자열 겹쳐쓰기문제 설명  문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • my_string와 overwrite_string은 숫자와 알파벳으로 이루어져 있습니다.• 1 ≤ overwrite_string의 길이 ≤ my_string의 길이 ≤ 1,000• 0 ≤ s ≤ my_string의 길이 - overwrite_string의 길이입출력 예            my_string      overwrite_string      s      result                  “He11oWor1d”      “lloWorl”      2      “HelloWorld”              “Program29b8UYP”      “merS123”      7      “ProgramerS123”      입출력 예 설명  입출력 예 #1\t• 예제 1번의 my_string 에서 인덱스 2부터 overwrite_string 의 길이만큼에 해당하는 부분은 “11oWor1” 이고 이를 “lloWorl” 로 바꾼 “HelloWorld” 를 return 합니다.  입출력 예 #2\t• 예제 2번의 my_string 에서 인덱스 7부터 overwrite_string 의 길이만큼에 해당하는 부분은 “29b8UYP” 이고 이를 “merS123” 로 바꾼 “ProgrammerS123”를 return 합니다.02 풀이  함수와 나머지를 통해서 풀 수 있다.홀수인지 짝수인지를 판단해주는 함수를 하나 작성하고,이 함수를 print(함수) 로 출력할 수 있다.💡Answerimport Foundationfunc solution(_ my_string:String, _ overwrite_string:String, _ s:Int) -&gt; String {    let a = my_string.prefix(s)    let b = overwrite_string    let c = my_string.suffix(my_string.count - overwrite_string.count - s)    return a + b + c}// 1 is odd해당문제 풀러가보기"
   },
   
   {
-    "title": "프로그래머스 Swift 코테준비 (7) -\b홀짝 구분하기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)/",
+    "title": "프로그래머스 Swift 코테준비 (9) -\b홀짝 구분하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-11 00:00:00 +0900",
@@ -154,8 +171,42 @@
   },
   
   {
+    "title": "프로그래머스 Swift 코테준비 (8) -\b문자열 돌리기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-11 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 문자열 돌리기문제 설명  문자열 str이 주어집니다.문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str의 길이 ≤ 10입출력 예입력 #1abcde출력 #1abcde제시 코드import Foundationlet s1 = readLine()!02 풀이for문을 사용하기  fo...",
+    "content": "01 문제 : 문자열 돌리기문제 설명  문자열 str이 주어집니다.문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str의 길이 ≤ 10입출력 예입력 #1abcde출력 #1abcde제시 코드import Foundationlet s1 = readLine()!02 풀이for문을 사용하기  for문을 통하여, 첫번째 index를 print를 하면 된다!💡Answerimport Foundationlet s1 = readLine()!for character in s1 {\tprint(character)}// \ba// b// c// d// e해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "프로그래머스 Swift 코테준비 (7) -\b문자열 붙여서 출력하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-11 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : \b\b홀짝 구분하기문제 설명  두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str1, str2의 길이 ≤ 10입출력 예입력 #1apple pen출력 #1applepen입력 #2hello World!출력 #2Hel...",
+    "content": "01 문제 : \b\b홀짝 구분하기문제 설명  두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str1, str2의 길이 ≤ 10입출력 예입력 #1apple pen출력 #1applepen입력 #2hello World!출력 #2HelloWorld!제시 코드import Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, s2) = (inp[0], inp[1])02 풀이두개의 문자열 더해서 붙이기  문자열 + 문자열은 두개의 문자열을 붙여서 출력할 수 있다.\"안녕\" + \"하세요\" = \"안녕하세요\"하나의 배열에 넣고 붙이기  [“안녕”, “하세요”]💡Answerimport Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, s2) = (inp[0], inp[1])print(s1 + s2)print([s1, s2].joined())// HelloWorld!해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (6) -\b덧셈식 출력하기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)/",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)-%EB%8D%A7%EC%85%88%EC%8B%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-10 00:00:00 +0900",
@@ -166,13 +217,13 @@
 
 
     
-    "snippet": "01 문제 : \b\b덧셈식 출력하기문제 설명  두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.a + b = c제한사항      1 ≤ a, b ≤ 100  입출력 예입력 #14 5출력 #14 + 5 = 9제시 코드import Foundationlet n = readLine()!.components(separat...",
-    "content": "01 문제 : \b\b덧셈식 출력하기문제 설명  두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.a + b = c제한사항      1 ≤ a, b ≤ 100  입출력 예입력 #14 5출력 #14 + 5 = 9제시 코드import Foundationlet n = readLine()!.components(separatedBy: [\" \"]).map { Int($0)! }let (a, b) = (n[0], n[1])02 풀이콘솔창에 원하는 값을 출력하기 위해선 print(출력할 값) 을 활용하면 된다.(아래 포스트 참고)# 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기  제시되어 있는 a 와 b의 값을 더한 값을 새로운 변수에 넣어주고, print 로 출력하면 된다.💡Answerimport Foundationlet n = readLine()!.components(separatedBy: [\" \"]).map { Int($0)! }let (a, b) = (n[0], n[1])let sum = a + bprint(\"\\(a) + \\(b) = \\(sum)\")// 4 + 5 = 9해당문제 풀러가보기"
+    "snippet": "01 문제 : 덧셈식 출력하기문제 설명  두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.a + b = c제한사항      1 ≤ a, b ≤ 100  입출력 예입력 #14 5출력 #14 + 5 = 9제시 코드import Foundationlet n = readLine()!.components(separated...",
+    "content": "01 문제 : 덧셈식 출력하기문제 설명  두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.a + b = c제한사항      1 ≤ a, b ≤ 100  입출력 예입력 #14 5출력 #14 + 5 = 9제시 코드import Foundationlet n = readLine()!.components(separatedBy: [\" \"]).map { Int($0)! }let (a, b) = (n[0], n[1])02 풀이콘솔창에 원하는 값을 출력하기 위해선 print(출력할 값) 을 활용하면 된다.(아래 포스트 참고)# 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기  제시되어 있는 a 와 b의 값을 더한 값을 새로운 변수에 넣어주고, print 로 출력하면 된다.💡Answerimport Foundationlet n = readLine()!.components(separatedBy: [\" \"]).map { Int($0)! }let (a, b) = (n[0], n[1])let sum = a + bprint(\"\\(a) + \\(b) = \\(sum)\")// 4 + 5 = 9해당문제 풀러가보기"
   },
   
   {
     "title": "프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)/",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-09 00:00:00 +0900",
@@ -183,13 +234,13 @@
 
 
     
-    "snippet": "01 문제 : \b특수문자 출력하기문제 설명  다음과 같이 출력하도록 코드를 작성해 주세요.입출력 예출력 #1!@#$%^&amp;*(\\'\"&lt;&gt;?:;제시 코드import Foundation02 풀이콘솔창에 원하는 값을 출력하기 위해선 print(출력할 값) 을 활용하면 된다.(아래 포스트 참고)# 프로그래머스 Swift 코테준비 (1) - 문자...",
-    "content": "01 문제 : \b특수문자 출력하기문제 설명  다음과 같이 출력하도록 코드를 작성해 주세요.입출력 예출력 #1!@#$%^&amp;*(\\'\"&lt;&gt;?:;제시 코드import Foundation02 풀이콘솔창에 원하는 값을 출력하기 위해선 print(출력할 값) 을 활용하면 된다.(아래 포스트 참고)# 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기그럼 간단하게, print(\"!@#$%^&amp;*(\\'\"&lt;&gt;?:;\") 로 출력하면 되지 않을까?print(\"!@#$%^&amp;*(\\'\"&lt;&gt;?:;\")// 출력이 되지 않는다.출력이 되지 않는다. 왜일까?  그 이유는 대표적인 예로, 따옴표 (“) 때문이다.string 값을 출력할때는 따옴표를 이용하여 출력을 한다. -&gt; print(\"출력할 값\")하지만, 특수문자중 따옴표가 있으면, print(“””)` swift 상에서 이를 string으로 처리해주지 않는다.  여기서는 # 을 print(#\"출력할 특수문자\"#) 따옴표 밖에 추가해주면 출력이 가능하다.💡Answerimport Foundationprint(#\"!@#$%^&amp;*(\\'\"&lt;&gt;?:;\"#)// \b!@#$%^&amp;*(\\'\"&lt;&gt;?:;해당문제 풀러가보기"
+    "snippet": "01 문제 : 특수문자 출력하기문제 설명  다음과 같이 출력하도록 코드를 작성해 주세요.입출력 예출력 #1!@#$%^&amp;*(\\'\"&lt;&gt;?:;제시 코드import Foundation02 풀이콘솔창에 원하는 값을 출력하기 위해선 print(출력할 값) 을 활용하면 된다.(아래 포스트 참고)# 프로그래머스 Swift 코테준비 (1) - 문자열...",
+    "content": "01 문제 : 특수문자 출력하기문제 설명  다음과 같이 출력하도록 코드를 작성해 주세요.입출력 예출력 #1!@#$%^&amp;*(\\'\"&lt;&gt;?:;제시 코드import Foundation02 풀이콘솔창에 원하는 값을 출력하기 위해선 print(출력할 값) 을 활용하면 된다.(아래 포스트 참고)# 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기그럼 간단하게, print(\"!@#$%^&amp;*(\\'\"&lt;&gt;?:;\") 로 출력하면 되지 않을까?print(\"!@#$%^&amp;*(\\'\"&lt;&gt;?:;\")// 출력이 되지 않는다.출력이 되지 않는다. 왜일까?  그 이유는 대표적인 예로, 따옴표 (“) 때문이다.string 값을 출력할때는 따옴표를 이용하여 출력을 한다. -&gt; print(\"출력할 값\")하지만, 특수문자중 따옴표가 있으면, print(“””)` swift 상에서 이를 string으로 처리해주지 않는다.  여기서는 # 을 print(#\"출력할 특수문자\"#) 따옴표 밖에 추가해주면 출력이 가능하다.💡Answerimport Foundationprint(#\"!@#$%^&amp;*(\\'\"&lt;&gt;?:;\"#)// \b!@#$%^&amp;*(\\'\"&lt;&gt;?:;해당문제 풀러가보기"
   },
   
   {
     "title": "프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)/",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-08 00:00:00 +0900",
@@ -200,13 +251,13 @@
 
 
     
-    "snippet": "01 문제 : \b대소문자 바꿔서 출력하기문제 설명  영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.제한사항  -1 ≤ str의 길이 ≤ 20\t-str은 알파벳으로 이루어진 문자열입니다.입출력 예입력 #1\baBcDeFg출력 #1AbCdEfG제시 코드import...",
-    "content": "01 문제 : \b대소문자 바꿔서 출력하기문제 설명  영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.제한사항  -1 ≤ str의 길이 ≤ 20\t-str은 알파벳으로 이루어진 문자열입니다.입출력 예입력 #1\baBcDeFg출력 #1AbCdEfG제시 코드import Foundationlet s1 = readLine()!02 풀이제시된 내용을 보면, 현재 s1 에는 aBcDeFg 라는 값이 들어가 있다.소문자인 경우에는 대문자로, 대문자인 경우에는 소문자로 바꿔야하는 문제인것으로 보이는데,.map 을 활용하여 s1 에 값을 하나씩 받아, 조건 / 삼항연산자로 처리할 수 있을 것으로 보인다.1) 조건문을 이용한 풀이  let convertedString = s1.map { char -&gt; String in    if char.isLowercase {        return char.uppercased()    } else {        return char.lowercased()    }}.joined()2) 삼항연산자를 이용한 풀이  let convertedString = s1.map{ char -&gt; String in char.isLowercase ? char.uppercased() : char.lowercased()}.joined()💡Answer1) 조건문을 이용한 풀이import Foundationlet s1 = readLine()!let convertedString = s1.map { char -&gt; String in    if char.isLowercase {        return char.uppercased()    } else {        return char.lowercased()    }}.joined()print(convertedString)// \bAbCdEfG2) 삼항연산자를 이용한 풀이import Foundationlet s1 = readLine()!let convertedString = s1.map{ char -&gt; String in char.isLowercase ? char.uppercased() : char.lowercased()}.joined()print(convertedString)// \bAbCdEfG해당문제 풀러가보기"
+    "snippet": "01 문제 : 대소문자 바꿔서 출력하기문제 설명  영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str의 길이 ≤ 20\t•  str은 알파벳으로 이루어진 문자열입니다.입출력 예입력 #1\baBcDeFg출력 #1AbCdEfG제시 코드impo...",
+    "content": "01 문제 : 대소문자 바꿔서 출력하기문제 설명  영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str의 길이 ≤ 20\t•  str은 알파벳으로 이루어진 문자열입니다.입출력 예입력 #1\baBcDeFg출력 #1AbCdEfG제시 코드import Foundationlet s1 = readLine()!02 풀이제시된 내용을 보면, 현재 s1 에는 aBcDeFg 라는 값이 들어가 있다.소문자인 경우에는 대문자로, 대문자인 경우에는 소문자로 바꿔야하는 문제인것으로 보이는데,.map 을 활용하여 s1 에 값을 하나씩 받아, 조건 / 삼항연산자로 처리할 수 있을 것으로 보인다.1) 조건문을 이용한 풀이  let convertedString = s1.map { char -&gt; String in    if char.isLowercase {        return char.uppercased()    } else {        return char.lowercased()    }}.joined()2) 삼항연산자를 이용한 풀이  let convertedString = s1.map{ char -&gt; String in char.isLowercase ? char.uppercased() : char.lowercased()}.joined()💡Answer1) 조건문을 이용한 풀이import Foundationlet s1 = readLine()!let convertedString = s1.map { char -&gt; String in    if char.isLowercase {        return char.uppercased()    } else {        return char.lowercased()    }}.joined()print(convertedString)// \bAbCdEfG2) 삼항연산자를 이용한 풀이import Foundationlet s1 = readLine()!let convertedString = s1.map{ char -&gt; String in char.isLowercase ? char.uppercased() : char.lowercased()}.joined()print(convertedString)// \bAbCdEfG해당문제 풀러가보기"
   },
   
   {
     "title": "프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)/",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-08 00:00:00 +0900",
@@ -217,13 +268,13 @@
 
 
     
-    "snippet": "01 문제 : \b문자열 반복해서 출력하기문제 설명  문자열 str과 정수 n이 주어집니다.str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.제한사항      1 ≤ str의 길이 ≤ 10    1 ≤ n ≤ 5  입출력 예입력 #1string 5출력 #1stringstringstringstringstring제시 코드import Fou...",
-    "content": "01 문제 : \b문자열 반복해서 출력하기문제 설명  문자열 str과 정수 n이 주어집니다.str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.제한사항      1 ≤ str의 길이 ≤ 10    1 ≤ n ≤ 5  입출력 예입력 #1string 5출력 #1stringstringstringstringstring제시 코드import Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, a) = (inp[0], Int(inp[1])!)02 풀이  제시된 내용을 보면,let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인해, 현재 변수 s1 에는 \"string\" , a 에는 5라는 number 형태의 의 값이 들어가 있다.  string을 총 5번 출력하기 위해서는, 제시된 5 라는 값을 활용 해야한다.따라서 for문을 활용하고, 변수 result 를 생성하여, 해당 변수에 \"string\" 을 5번 넣어주면 될 것으로 보인다.💡Answerimport Foundationlet s1 = readLine()!var result = \"\"for count in 1...a {    result = result + s1}print(result)// stringstringstringstringstring해당문제 풀러가보기"
+    "snippet": "01 문제 : \b문자열 반복해서 출력하기문제 설명  문자열 str과 정수 n이 주어집니다.str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str의 길이 ≤ 10• 1 ≤ n ≤ 5입출력 예입력 #1string 5출력 #1stringstringstringstringstring제시 코드import Foundatio...",
+    "content": "01 문제 : \b문자열 반복해서 출력하기문제 설명  문자열 str과 정수 n이 주어집니다.str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str의 길이 ≤ 10• 1 ≤ n ≤ 5입출력 예입력 #1string 5출력 #1stringstringstringstringstring제시 코드import Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, a) = (inp[0], Int(inp[1])!)02 풀이  제시된 내용을 보면,let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인해, 현재 변수 s1 에는 \"string\" , a 에는 5라는 number 형태의 의 값이 들어가 있다.  string을 총 5번 출력하기 위해서는, 제시된 5 라는 값을 활용 해야한다.따라서 for문을 활용하고, 변수 result 를 생성하여, 해당 변수에 \"string\" 을 5번 넣어주면 될 것으로 보인다.💡Answerimport Foundationlet s1 = readLine()!var result = \"\"for count in 1...a {    result = result + s1}print(result)// stringstringstringstringstring해당문제 풀러가보기"
   },
   
   {
     "title": "프로그래머스 Swift 코테준비 (2) - a와 b 출력하기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)/",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)-a%EC%99%80-b-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-08 00:00:00 +0900",
@@ -234,13 +285,13 @@
 
 
     
-    "snippet": "01 문제 : \ba 와 b 출력하기문제 설명  정수 a와 b가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.제한사항      100,000 ≤ a, b ≤ 100,000  입출력 예입력 #14 5출력 #1a = 4b = 5제시 코드import Foundationlet n = readLine()!.compone...",
-    "content": "01 문제 : \ba 와 b 출력하기문제 설명  정수 a와 b가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.제한사항      100,000 ≤ a, b ≤ 100,000  입출력 예입력 #14 5출력 #1a = 4b = 5제시 코드import Foundationlet n = readLine()!.components(separatedBy: [\" \"]).map { Int($0)! }let (a, b) = (n[0], n[1])02 풀이  제시된 내용을 보면,let (a, b) = (n[0], n[1]) 은 튜플의 구조분해할당으로 인해, 현재 변수 a 에는 4 , b 에는 5라는 numbers 형태의 값이 들어가 있다.  해당 a값을 String형태가 아닌, Number 형태로 출력하기 위해서는,  \\(출력할 값) 을 활용하면 된다.따라서, print(\"a = \\(n[0])\\nb = \\(n[1])\") 혹은 print(\"a = \\(a)\\nb = \\(b)\")를 입력하면 된다.💡Answerimport Foundationlet s1 = readLine()!print(\"a = \\(n[0])\\nb = \\(n[1])\")// print(\"a = \\(a)\\nb = \\(b)\")// a = 4// b = 5해당문제 풀러가보기"
+    "snippet": "01 문제 : a 와 b 출력하기문제 설명  정수 a와 b가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.제한사항  • 100,000 ≤ a, b ≤ 100,000입출력 예입력 #14 5출력 #1a = 4b = 5제시 코드import Foundationlet n = readLine()!.components(s...",
+    "content": "01 문제 : a 와 b 출력하기문제 설명  정수 a와 b가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.제한사항  • 100,000 ≤ a, b ≤ 100,000입출력 예입력 #14 5출력 #1a = 4b = 5제시 코드import Foundationlet n = readLine()!.components(separatedBy: [\" \"]).map { Int($0)! }let (a, b) = (n[0], n[1])02 풀이  제시된 내용을 보면,let (a, b) = (n[0], n[1]) 은 튜플의 구조분해할당으로 인해, 현재 변수 a 에는 4 , b 에는 5라는 numbers 형태의 값이 들어가 있다.  해당 a값을 String형태가 아닌, Number 형태로 출력하기 위해서는,  \\(출력할 값) 을 활용하면 된다.따라서, print(\"a = \\(n[0])\\nb = \\(n[1])\") 혹은 print(\"a = \\(a)\\nb = \\(b)\")를 입력하면 된다.💡Answerimport Foundationlet s1 = readLine()!print(\"a = \\(n[0])\\nb = \\(n[1])\")// print(\"a = \\(a)\\nb = \\(b)\")// a = 4// b = 5해당문제 풀러가보기"
   },
   
   {
     "title": "프로그래머스 Swift 코테준비 (1) - 문자열 출력하기",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-01-07 00:00:00 +0900",
@@ -251,8 +302,8 @@
 
 
     
-    "snippet": "01 문제 : 문자열 출력하기문제 설명  문자열 str이 주어질 때, str을 출력하는 코드를 작성해 보세요.제한사항  1 ≤ str의 길이 ≤ 1,000,000  str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.입출력 예입력 #1HelloWorld!출력 #1HelloWorld!제시 코드import Foundationlet s1 = read...",
-    "content": "01 문제 : 문자열 출력하기문제 설명  문자열 str이 주어질 때, str을 출력하는 코드를 작성해 보세요.제한사항  1 ≤ str의 길이 ≤ 1,000,000  str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.입출력 예입력 #1HelloWorld!출력 #1HelloWorld!제시 코드import Foundationlet s1 = readLine()!02 풀이  제시된 내용을 보면,현재 변수 s1 에는 “HelloWorld” 라는 string 형태의 값이 들어가 있다.해당 String 값을 콘솔창에 출력하기 위해서는 print(출력할 값) 을 활용하면 된다.따라서  print(s1) 을 입력하면 된다.💡Answerimport Foundationlet s1 = readLine()!print(s1)// HelloWorld해당문제 풀러가보기"
+    "snippet": "01 문제 : 문자열 출력하기문제 설명  문자열 str이 주어질 때, str을 출력하는 코드를 작성해 보세요.제한사항  •  1 ≤ str의 길이 ≤ 1,000,000• str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.입출력 예입력 #1HelloWorld!출력 #1HelloWorld!제시 코드import Foundationlet s1 = r...",
+    "content": "01 문제 : 문자열 출력하기문제 설명  문자열 str이 주어질 때, str을 출력하는 코드를 작성해 보세요.제한사항  •  1 ≤ str의 길이 ≤ 1,000,000• str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.입출력 예입력 #1HelloWorld!출력 #1HelloWorld!제시 코드import Foundationlet s1 = readLine()!02 풀이  제시된 내용을 보면,현재 변수 s1 에는 “HelloWorld” 라는 string 형태의 값이 들어가 있다.해당 String 값을 콘솔창에 출력하기 위해서는 print(출력할 값) 을 활용하면 된다.따라서  print(s1) 을 입력하면 된다.💡Answerimport Foundationlet s1 = readLine()!print(s1)// HelloWorld해당문제 풀러가보기"
   },
   
   {

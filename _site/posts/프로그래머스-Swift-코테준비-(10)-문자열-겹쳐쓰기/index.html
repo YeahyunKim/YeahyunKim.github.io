@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Swift 코테준비 (8) -문자열 겹쳐쓰기" />
+<meta property="og:title" content="프로그래머스 Swift 코테준비 (10) -문자열 겹쳐쓰기" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
 <meta name="description" content="01 문제 : 문자열 겹쳐쓰기 문제 설명" />
 <meta property="og:description" content="01 문제 : 문자열 겹쳐쓰기 문제 설명" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:image" content="https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-01-12T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB" />
-<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (8) -문자열 겹쳐쓰기" />
+<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (10) -문자열 겹쳐쓰기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-17T22:20:05+09:00","datePublished":"2024-01-12T00:00:00+09:00","description":"01 문제 : \b\b문자열 겹쳐쓰기 문제 설명","headline":"프로그래머스 Swift 코테준비 (8) -\b문자열 겹쳐쓰기","image":"https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-22T00:00:17+09:00","datePublished":"2024-01-12T00:00:00+09:00","description":"01 문제 : \b\b문자열 겹쳐쓰기 문제 설명","headline":"프로그래머스 Swift 코테준비 (10) -\b문자열 겹쳐쓰기","image":"https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Swift 코테준비 (8) -문자열 겹쳐쓰기 | Yeahyun Kim
+  <title>프로그래머스 Swift 코테준비 (10) -문자열 겹쳐쓰기 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>프로그래머스 Swift 코테준비 (8) -문자열 겹쳐쓰기</span>
+              <span>프로그래머스 Swift 코테준비 (10) -문자열 겹쳐쓰기</span>
             
 
           
@@ -756,6 +756,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -763,27 +774,6 @@
   
   
 
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
   
 
 
@@ -796,7 +786,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (8) -문자열 겹쳐쓰기</h1>
+    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (10) -문자열 겹쳐쓰기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -837,13 +827,13 @@
 
 <time
   
-  data-ts="1705497605"
+  data-ts="1705849217"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 17, 2024
+  Jan 22, 2024
 </time>
 
         </span>
@@ -898,7 +888,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="387 words"
+  title="368 words"
 >
   <em>2 min</em> read</span>
 
@@ -911,42 +901,61 @@
   <div class="content">
     <h2 id="01-문제--문자열-겹쳐쓰기"><span class="me-2">01 문제 : 문자열 겹쳐쓰기</span><a href="#01-문제--문자열-겹쳐쓰기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h5 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<blockquote>
+<blockquote class="command-text">
   <p>문자열 <code class="language-plaintext highlighter-rouge">my_string</code>, <code class="language-plaintext highlighter-rouge">overwrite_string</code>과 정수 <code class="language-plaintext highlighter-rouge">s</code>가 주어집니다. 문자열 <code class="language-plaintext highlighter-rouge">my_string</code>의 인덱스 <code class="language-plaintext highlighter-rouge">s</code>부터 <code class="language-plaintext highlighter-rouge">overwrite_string</code>의 길이만큼을 문자열 <code class="language-plaintext highlighter-rouge">overwrite_string</code>으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
 </blockquote>
 
 <hr />
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<blockquote>
-  <ul>
-    <li>my_string와 overwrite_string은 숫자와 알파벳으로 이루어져 있습니다.</li>
-    <li>1 ≤ overwrite_string의 길이 ≤ my_string의 길이 ≤ 1,000</li>
-    <li>0 ≤ s ≤ my_string의 길이 - overwrite_string의 길이</li>
-  </ul>
+<blockquote class="command-text">
+  <p>• my_string와 overwrite_string은 숫자와 알파벳으로 이루어져 있습니다.
+• 1 ≤ overwrite_string의 길이 ≤ my_string의 길이 ≤ 1,000
+• 0 ≤ s ≤ my_string의 길이 - overwrite_string의 길이</p>
 </blockquote>
 
 <hr />
 
 <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<p>| my_string | overwrite_string | s | result |
-| —- | —- | —- | —- |
-| “He11oWor1d” | “lloWorl” | 2 | “HelloWorld” |
-| “Program29b8UYP” | “merS123” | 7 | “ProgramerS123” |</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>overwrite_string</th>
+      <th>s</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“He11oWor1d”</td>
+      <td>“lloWorl”</td>
+      <td>2</td>
+      <td>“HelloWorld”</td>
+    </tr>
+    <tr>
+      <td>“Program29b8UYP”</td>
+      <td>“merS123”</td>
+      <td>7</td>
+      <td>“ProgramerS123”</td>
+    </tr>
+  </tbody>
+</table></div>
 
 <hr />
 <h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>입출력 예 #1</p>
-<ul>
-  <li>예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code> 에서 인덱스 2부터 <code class="language-plaintext highlighter-rouge">overwrite_string</code> 의 길이만큼에 해당하는 부분은 “11oWor1” 이고 이를 “lloWorl” 로 바꾼 “HelloWorld” 를 return 합니다.</li>
-</ul>
+<blockquote class="command-text">
+  <p>입출력 예 #1
+	• 예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code> 에서 인덱스 2부터 <code class="language-plaintext highlighter-rouge">overwrite_string</code> 의 길이만큼에 해당하는 부분은 “11oWor1” 이고 이를 “lloWorl” 로 바꾼 “HelloWorld” 를 return 합니다.</p>
+</blockquote>
 
-<p>입출력 예 #2</p>
-<ul>
-  <li>예제 2번의 <code class="language-plaintext highlighter-rouge">my_string</code> 에서 인덱스 7부터 <code class="language-plaintext highlighter-rouge">overwrite_string</code> 의 길이만큼에 해당하는 부분은 “29b8UYP” 이고 이를 “merS123” 로 바꾼 “ProgrammerS123”를 return 합니다.</li>
-</ul>
+<blockquote class="command-text">
+  <p>입출력 예 #2
+	• 예제 2번의 <code class="language-plaintext highlighter-rouge">my_string</code> 에서 인덱스 7부터 <code class="language-plaintext highlighter-rouge">overwrite_string</code> 의 길이만큼에 해당하는 부분은 “29b8UYP” 이고 이를 “merS123” 로 바꾼 “ProgrammerS123”를 return 합니다.</p>
+</blockquote>
 
 <hr />
 
@@ -1043,21 +1052,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(8)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%288%29%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(10)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2810%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EA%25B2%25B9%25EC%25B3%2590%25EC%2593%25B0%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(8)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%288%29%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(10)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2810%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EA%25B2%25B9%25EC%25B3%2590%25EC%2593%25B0%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%288%29%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(8)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2810%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EA%25B2%25B9%25EC%25B3%2590%25EC%2593%25B0%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(10)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1112,35 +1121,35 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(12)/">프로그래머스 Swift 코테준비 (12) -더 크게 합치기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/">프로그래머스 Swift 코테준비 (10) -문자열 겹쳐쓰기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)/">프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (13) -문자열 곱하기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)/">프로그래머스 Swift 코테준비 (7) -홀짝 구분하기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (9) -홀짝 구분하기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/">프로그래머스 Swift 코테준비 (8) -문자열 겹쳐쓰기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)-%EB%8D%A7%EC%85%88%EC%8B%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(9)/">프로그래머스 Swift 코테준비 (9) -문자열 섞기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기</a>
         </li>
       
     </ul>
@@ -1456,7 +1465,43 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1556,147 +1601,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704726000"
-  data-df="ll"
-  
->
-  Jan  9, 2024
-</time>
-
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  01 문제 : 특수문자 출력하기
-
-
-
-문제 설명
-
-
-  다음과 같이 출력하도록 코드를 작성해 주세요.
-
-
-
-
-입출력 예
-
-출력 #1
-!@#$%^&amp;amp;*(\&#39;&quot;&amp;lt;&amp;gt;?:;
-
-
-
-
-제시 코드
-
-import Foundation
-
-
-
-
-02 풀이
-
-콘솔창에 원하는 값을 출력하기 위해선 print(출력할 값) 을 활용하면 된다.
-(아래 포스트 참...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704812400"
-  data-df="ll"
-  
->
-  Jan 10, 2024
-</time>
-
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  01 문제 : 덧셈식 출력하기
-
-
-
-문제 설명
-
-
-  두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.
-
-
-a + b = c
-
-
-
-제한사항
-
-  
-    1 ≤ a, b ≤ 100
-  
-
-
-
-
-입출력 예
-
-입력 #1
-4 5
-
-
-출력 #1
-4 + 5 = 9
-
-
-
-제시 코드
-
-import Foundation
-
-...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)/" class="post-preview card h-100">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1715,7 +1620,82 @@ import Foundation
   Jan 11, 2024
 </time>
 
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (7) -홀짝 구분하기</h4>
+              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (8) -문자열 돌리기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  01 문제 : 문자열 돌리기
+
+
+문제 설명
+
+
+  문자열 str이 주어집니다.
+문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.
+
+
+
+
+제한사항
+
+  • 1 ≤ str의 길이 ≤ 10
+
+
+
+
+입출력 예
+
+입력 #1
+abcde
+
+
+출력 #1
+a
+b
+c
+d
+e
+
+
+
+
+제시 코드
+
+import Foundation
+
+...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1704898800"
+  data-df="ll"
+  
+>
+  Jan 11, 2024
+</time>
+
+              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (9) -홀짝 구분하기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1765,6 +1745,55 @@ import Foundation
           </a>
         </article>
       
+        <article class="col">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1705071600"
+  data-df="ll"
+  
+>
+  Jan 13, 2024
+</time>
+
+              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (11) -문자열 섞기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  01 문제 : 문자열 섞기
+
+문제 설명
+
+
+  길이가 같은 두 문자열 str1과 str2가 주어집니다.
+두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.
+
+
+
+제한사항
+
+  • 1 ≤ str1의 길이 = str2의 길이 ≤ 10
+    • str1과 str...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -1780,21 +1809,21 @@ import Foundation
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Swift 코테준비 (7) -홀짝 구분하기</p>
+      <p>프로그래머스 Swift 코테준비 (9) -홀짝 구분하기</p>
     </a>
   
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(9)/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>프로그래머스 Swift 코테준비 (9) -문자열 섞기</p>
+      <p>프로그래머스 Swift 코테준비 (11) -문자열 섞기</p>
     </a>
   
 </nav>

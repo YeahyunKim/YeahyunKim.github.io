@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Swift 코테준비 (1) - 문자열 출력하기" />
+<meta property="og:title" content="프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="01 문제 : 문자열 출력하기" />
-<meta property="og:description" content="01 문제 : 문자열 출력하기" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/" />
+<meta name="description" content="01 문제 : 두 수의 연산값 비교하기 문제 설명" />
+<meta property="og:description" content="01 문제 : 두 수의 연산값 비교하기 문제 설명" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(15)-%EB%91%90-%EC%88%98%EC%9D%98-%EC%97%B0%EC%82%B0%EA%B0%92-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(15)-%EB%91%90-%EC%88%98%EC%9D%98-%EC%97%B0%EC%82%B0%EA%B0%92-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:image" content="https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-07T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-01-15T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB" />
-<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (1) - 문자열 출력하기" />
+<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-17T22:20:05+09:00","datePublished":"2024-01-07T00:00:00+09:00","description":"01 문제 : 문자열 출력하기","headline":"프로그래머스 Swift 코테준비 (1) - 문자열 출력하기","image":"https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-15T00:00:00+09:00","datePublished":"2024-01-15T00:00:00+09:00","description":"01 문제 : 두 수의 연산값 비교하기 문제 설명","headline":"프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기","image":"https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(15)-%EB%91%90-%EC%88%98%EC%9D%98-%EC%97%B0%EC%82%B0%EA%B0%92-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(15)-%EB%91%90-%EC%88%98%EC%9D%98-%EC%97%B0%EC%82%B0%EA%B0%92-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Swift 코테준비 (1) - 문자열 출력하기 | Yeahyun Kim
+  <title>프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>프로그래머스 Swift 코테준비 (1) - 문자열 출력하기</span>
+              <span>프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기</span>
             
 
           
@@ -756,6 +756,50 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -763,27 +807,6 @@
   
   
 
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
   
 
 
@@ -796,7 +819,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (1) - 문자열 출력하기</h1>
+    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -812,41 +835,18 @@
 
 <time
   
-  data-ts="1704553200"
+  data-ts="1705244400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan  7, 2024
+  Jan 15, 2024
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1705497605"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Jan 17, 2024
-</time>
-
-        </span>
       
 
       
@@ -898,9 +898,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="205 words"
+  title="526 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -909,38 +909,64 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제--문자열-출력하기"><span class="me-2">01 문제 : 문자열 출력하기</span><a href="#01-문제--문자열-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
+    <h2 id="01-문제--두-수의-연산값-비교하기"><span class="me-2">01 문제 : 두 수의 연산값 비교하기</span><a href="#01-문제--두-수의-연산값-비교하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h5 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
-<ul>
-  <li>문자열 <code class="language-plaintext highlighter-rouge">str</code>이 주어질 때, <code class="language-plaintext highlighter-rouge">str</code>을 출력하는 코드를 작성해 보세요.</li>
-</ul>
+<h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<blockquote class="command-text">
+  <p>연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.
+	• 12 ⊕ 3 = 123
+	• 3 ⊕ 12 = 312
+양의 정수 a와 b가 주어졌을 때, a ⊕ b와 2 * a *b 중 더 큰 값을 return하는 solution 함수를 완성해 주세요.
+단, a ⊕ b와 2 * a * b가 같으면 a ⊕ b를 return 합니다.</p>
+</blockquote>
 
 <hr />
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<ul>
-  <li>1 ≤ <code class="language-plaintext highlighter-rouge">str</code>의 길이 ≤ 1,000,000</li>
-  <li><code class="language-plaintext highlighter-rouge">str</code>에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.</li>
-</ul>
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code> &lt; 10,000</p>
+</blockquote>
 
 <hr />
+
 <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>입력 #1</p>
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>a</th>
+      <th>b</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>91</td>
+      <td>364</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>2</td>
+      <td>912</td>
+    </tr>
+  </tbody>
+</table></div>
 
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>HelloWorld!
-</pre></td></tr></tbody></table></code></div></div>
+<hr />
+<h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>출력 #1</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>HelloWorld!
-</pre></td></tr></tbody></table></code></div></div>
+<blockquote class="command-text">
+  <p>입출력 예 #1
+• <code class="language-plaintext highlighter-rouge">a</code> ⊕ <code class="language-plaintext highlighter-rouge">b</code> = 291 이고, <code class="language-plaintext highlighter-rouge">2 * a * b</code> = 364 입니다. 둘 중 더 큰 값은 364 이므로 
+364를 return 합니다.</p>
+</blockquote>
+
+<blockquote class="command-text">
+  <p>입출력 예 #2
+•  <code class="language-plaintext highlighter-rouge">a</code> ⊕ <code class="language-plaintext highlighter-rouge">b</code> = 912 이고, <code class="language-plaintext highlighter-rouge">2 * a * b</code> = 364 입니다. 둘 중 더 큰 값은 912 이므로 
+912를 return 합니다.</p>
+</blockquote>
 
 <hr />
 
@@ -951,21 +977,41 @@
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
+4
+5
+6
+7
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <hr />
-
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<blockquote class="prompt-tip">
-  <p>제시된 내용을 보면,
-현재 변수 <code class="language-plaintext highlighter-rouge">s1</code> 에는 “HelloWorld” 라는 <code class="language-plaintext highlighter-rouge">string</code> 형태의 값이 들어가 있다.
-해당 String 값을 콘솔창에 출력하기 위해서는 <code class="language-plaintext highlighter-rouge">print(출력할 값)</code> 을 활용하면 된다.
-따라서  <code class="language-plaintext highlighter-rouge">print(s1)</code> 을 입력하면 된다.</p>
-</blockquote>
+<p>앞에 있는 <a href="https://yeahyunkim.github.io/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(12)/">더 크게 합치기</a> 와 동일한 문제풀이!</p>
+
+<h4 id="정수를-붙이기"><span class="me-2">정수를 붙이기</span><a href="#정수를-붙이기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>정수 <code class="language-plaintext highlighter-rouge">3</code> 과 <code class="language-plaintext highlighter-rouge">23</code> 이 있다고 가정해보았을때, 두개를 붙인 <code class="language-plaintext highlighter-rouge">323</code> 을 만들기 위해선,
+정수를 <code class="language-plaintext highlighter-rouge">string(3)</code> <code class="language-plaintext highlighter-rouge">string(23)</code>으로 형 변환을 하고, <code class="language-plaintext highlighter-rouge">"3" + "23"</code> 을 처리하면 문자열 <code class="language-plaintext highlighter-rouge">"323"</code>을 만들 수 있다.
+여기서, 문자열 “323” 을 <code class="language-plaintext highlighter-rouge">Int("323")</code> 로 다시 형 변환을 해주면 완성된다.</p>
+
+<h4 id="최솟값과-최댓값"><span class="me-2">최솟값과 최댓값</span><a href="#최솟값과-최댓값" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>더 큰 값을 반환하는 것이 문제의 포인트,
+최솟값과 최댓값을 구하는 방식을 활용해보기로 했다.</p>
+
+<ul>
+  <li>a 와 b 중 더 작은 값을 구할때는 <code class="language-plaintext highlighter-rouge">min(a, b)</code></li>
+  <li>a 와 b 중 더 큰 값을 구할때에는 <code class="language-plaintext highlighter-rouge">max(a, b)</code></li>
+</ul>
+
+<p>두개의 방식을 사용하여 문제를 해결 할 수 있었다.</p>
 
 <hr />
 
@@ -980,16 +1026,25 @@
 5
 6
 7
+8
+9
+10
+11
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
-
-<span class="nf">print</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>
-
-<span class="c1">// HelloWorld</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="n">result</span> <span class="o">=</span> <span class="nf">max</span><span class="p">(</span><span class="kt">Int</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="kt">String</span><span class="p">(</span><span class="n">b</span><span class="p">))</span><span class="o">!</span> <span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">result</span>
+    
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181952">해당문제 풀러가보기</a></p>
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181938">해당문제 풀러가보기</a></p>
+
 
   </div>
 
@@ -1045,21 +1100,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(1)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%281%29%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(15)%20-%20%EB%91%90%20%EC%88%98%EC%9D%98%20%EC%97%B0%EC%82%B0%EA%B0%92%20%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2815%29-%25EB%2591%2590-%25EC%2588%2598%25EC%259D%2598-%25EC%2597%25B0%25EC%2582%25B0%25EA%25B0%2592-%25EB%25B9%2584%25EA%25B5%2590%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(1)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%281%29%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(15)%20-%20%EB%91%90%20%EC%88%98%EC%9D%98%20%EC%97%B0%EC%82%B0%EA%B0%92%20%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2815%29-%25EB%2591%2590-%25EC%2588%2598%25EC%259D%2598-%25EC%2597%25B0%25EC%2582%25B0%25EA%25B0%2592-%25EB%25B9%2584%25EA%25B5%2590%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%281%29%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(1)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2815%29-%25EB%2591%2590-%25EC%2588%2598%25EC%259D%2598-%25EC%2597%25B0%25EC%2582%25B0%25EA%25B0%2592-%25EB%25B9%2584%25EA%25B5%2590%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(15)%20-%20%EB%91%90%20%EC%88%98%EC%9D%98%20%EC%97%B0%EC%82%B0%EA%B0%92%20%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1114,35 +1169,35 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(12)/">프로그래머스 Swift 코테준비 (12) -더 크게 합치기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/">프로그래머스 Swift 코테준비 (10) -문자열 겹쳐쓰기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)/">프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (13) -문자열 곱하기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)/">프로그래머스 Swift 코테준비 (7) -홀짝 구분하기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (9) -홀짝 구분하기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)/">프로그래머스 Swift 코테준비 (8) -문자열 겹쳐쓰기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)-%EB%8D%A7%EC%85%88%EC%8B%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(9)/">프로그래머스 Swift 코테준비 (9) -문자열 섞기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기</a>
         </li>
       
     </ul>
@@ -1410,139 +1465,175 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -1558,151 +1649,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704726000"
-  data-df="ll"
-  
->
-  Jan  9, 2024
-</time>
-
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  01 문제 : 특수문자 출력하기
-
-
-문제 설명
-
-
-  다음과 같이 출력하도록 코드를 작성해 주세요.
-
-
-
-입출력 예
-
-출력 #1
-1
-!@#$%^&amp;amp;*(\&#39;&quot;&amp;lt;&amp;gt;?:;
-
-
-
-
-제시 코드
-
-1
-import Foundation
-
-
-
-
-02 풀이
-
-콘솔창에 원하는 값을 출력하기 위해선 print(출력할 값) 을 활용하면 된다.
-(아래 포스트...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704812400"
-  data-df="ll"
-  
->
-  Jan 10, 2024
-</time>
-
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  01 문제 : 덧셈식 출력하기
-
-
-문제 설명
-
-
-  두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.
-
-
-1
-a + b = c
-
-
-제한사항
-
-  
-    1 ≤ a, b ≤ 100
-  
-
-
-
-
-입출력 예
-
-입력 #1
-1
-4 5
-
-
-출력 #1
-1
-4 + 5 = 9
-
-
-
-제시 코드
-
-1
-2
-3
-4
-5
-impor...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)/" class="post-preview card h-100">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1721,7 +1668,82 @@ impor...
   Jan 11, 2024
 </time>
 
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (7) -홀짝 구분하기</h4>
+              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (8) -문자열 돌리기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  01 문제 : 문자열 돌리기
+
+
+문제 설명
+
+
+  문자열 str이 주어집니다.
+문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.
+
+
+
+
+제한사항
+
+  • 1 ≤ str의 길이 ≤ 10
+
+
+
+
+입출력 예
+
+입력 #1
+abcde
+
+
+출력 #1
+a
+b
+c
+d
+e
+
+
+
+
+제시 코드
+
+import Foundation
+
+...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1704898800"
+  data-df="ll"
+  
+>
+  Jan 11, 2024
+</time>
+
+              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (9) -홀짝 구분하기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1732,10 +1754,12 @@ impor...
 
                   01 문제 : 홀짝 구분하기
 
+
 문제 설명
 
 
   자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 “n is even”을, 홀수이면 “n is odd”를 출력하는 코드를 작성해 보세요.
+
 
 
 
@@ -1751,18 +1775,67 @@ impor...
 입출력 예
 
 입력 #1
-1
 100
 
 
 출력 #1
-1
 100 is even
 
 
 입력 #2
 1
-1...
+
+
+출...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1704985200"
+  data-df="ll"
+  
+>
+  Jan 12, 2024
+</time>
+
+              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (10) -문자열 겹쳐쓰기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  01 문제 : 문자열 겹쳐쓰기
+
+
+문제 설명
+
+
+  문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.
+
+
+
+
+제한사항
+
+...
                 </p>
               </div>
             </div>
@@ -1784,21 +1857,21 @@ impor...
 
   
     <a
-      href="/posts/Jekyll-Chirpy-%ED%85%8C%EB%A7%88-%EA%B9%83-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0(1)/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>깃 블로그 생성하기 (1)</p>
+      <p>프로그래머스 Swift 코테준비 (14) -더 크게 합치기</p>
     </a>
   
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(16)-n%EC%9D%98-%EB%B0%B0%EC%88%98/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>프로그래머스 Swift 코테준비 (2) - a와 b 출력하기</p>
+      <p>프로그래머스 Swift 코테준비 (16) - n의 배수</p>
     </a>
   
 </nav>
