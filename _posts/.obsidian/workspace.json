@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2024-01-22- 프로그래머스 Swift 코테준비 (18) - 홀짝에 따라 다른 값 반환하기.md",
+                "file": "2024-01-22- 프로그래머스 Swift 코테준비 (19) - 조건 문자열.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2024-01-22- 프로그래머스 Swift 코테준비 (18) - 홀짝에 따라 다른 값 반환하기.md",
+                "file": "2024-01-22- 프로그래머스 Swift 코테준비 (19) - 조건 문자열.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2024-01-22- 프로그래머스 Swift 코테준비 (18) - 홀짝에 따라 다른 값 반환하기.md",
+                "file": "2024-01-22- 프로그래머스 Swift 코테준비 (19) - 조건 문자열.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2024-01-22- 프로그래머스 Swift 코테준비 (18) - 홀짝에 따라 다른 값 반환하기.md"
+                "file": "2024-01-22- 프로그래머스 Swift 코테준비 (19) - 조건 문자열.md"
               }
             }
           }
@@ -146,10 +146,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "cd3381a31aca176b",
+  "active": "c0f3930f82a8c6b2",
   "lastOpenFiles": [
-    "2024-01-15- 프로그래머스 Swift 코테준비 (17) - 공배수.md",
     "2024-01-22- 프로그래머스 Swift 코테준비 (18) - 홀짝에 따라 다른 값 반환하기.md",
+    "2024-01-22- 프로그래머스 Swift 코테준비 (19) - 조건 문자열.md",
+    "2024-01-15- 프로그래머스 Swift 코테준비 (17) - 공배수.md",
     "2024-01-15- 프로그래머스 Swift 코테준비 (16) - n의 배수.md",
     "2024-01-15- 프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기.md",
     "2024-01-15- 프로그래머스 Swift 코테준비 (14) - 더 크게 합치기.md",
@@ -175,7 +176,6 @@
     "2019-08-09-getting-started.md",
     "Pasted image 20240107192947.png",
     "2019-08-08-write-a-new-post.md",
-    "posts/20190808/mockup.png.md",
     "posts/20190808",
     "posts",
     "Blog"
