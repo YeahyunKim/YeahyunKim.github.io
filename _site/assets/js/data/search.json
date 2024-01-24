@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(22)-%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98-%ED%8A%B9%EC%A0%95%ED%95%9C-%ED%95%AD%EB%A7%8C-%EB%8D%94%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-24 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 코드 처리하기문제 설명  두 정수 a, d와 길이가 n인 boolean 배열 included가 주어집니다.첫째항이 a, 공차가 d인 등차수열에서 included[i]가 i + 1항을 의미할 때,이 등차수열의 1항부터 n항까지 included가 true인 항들만 더한 값을 return하는 solution 함수를 작성해 주세요.제한사항  •...",
+    "content": "01 문제 : 코드 처리하기문제 설명  두 정수 a, d와 길이가 n인 boolean 배열 included가 주어집니다.첫째항이 a, 공차가 d인 등차수열에서 included[i]가 i + 1항을 의미할 때,이 등차수열의 1항부터 n항까지 included가 true인 항들만 더한 값을 return하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ a ≤ 100• 1 ≤ d ≤ 100• 1 ≤ included의 길이 ≤ 100• included에는 true가 적어도 하나 존재합니다.입출력 예            a      d      included      result                  3      4      [true, false, false, true, true]      37              7      1      [false, false, false, true, false, false, false]      10      입출력 예 설명  입출력 예 #1\t• 예제 1번은 a와 d가 각각 3, 4이고 included의 길이가 5입니다. 이를 표로 나타내면 다음과 같습니다.                   1항      2항      3항      4항      5항                  등차수열      3      7      11      15      19              included      true      false      false      true      true        따라서 true에 해당하는 1항, 4항, 5항을 더한 3 + 15 + 19 = 37을 return 합니다.  입출력 예 #2\t• 예제 2번은 a와 d가 각각 7, 1이고 included의 길이가 7입니다. 이를 표로 나타내면 다음과 같습니다.            1항      2항      3항      4항      5항      6항      7항                         등차수열      7      8      9      10      11      12      13              included      false      false      false      true      false      false      false        따라서 4항만 true이므로 10을 return 합니다.제시 코드import Foundationfunc solution(_ a:Int, _ d:Int, _ included:[Bool]) -&gt; Int {        return 0    }02 풀이solution 1 : 반복문과 조건문을 활용하여 풀기먼저, included가 담고 있는 요소의 개수(count) 만큼 for문을 돌리면, 0..&lt;5 의 값만큼의 i 값을 얻을 수 있다.for i 0..&lt;included.count {\tprint(i)}이어서, 해당 i 값을 활용하여, included[i]가 true 일 경우,결과값을 저장해주는 하나의 변수를 생성하고, 해당 변수에 값을 더해주면 된다.for i in 0..&lt;included.count {    \tif included[i] == true {\t\tvalue += (a + b * i)\t}\t}solution 2 : map과 filter를 활용하여 풀기indices와 filter를 활용하여 included의 요소중 true인 것의 index 값만 남겨준다.var included = [true, false, false, true, true]print(included.indices.filter { included[$0] })// [0, 3, 4]이어서 해당 index[0, 3, 4] 를 가지고, map 을 활용하여, 문제에서 주어진 연산을 진행한다.var included = [true, false, false, true, true]print(included.indices.filter{ included[$0]}.map { a + d * $0 })//[3, 15, 19]그러면 각 인덱스 별 연산을 마친 결과값이 배열에 담기는데, 해당 배열에 있는 값을 모두 더해주면 된다.var included = [true, false, false, true, true]print(included.indices.filter{ included[$0]}.map { a + d * $0 }.reduce(0){$0 + $1})//37💡Answer 01import Foundation    var result = 0        for i in 0..&lt;included.count {                if included[i] == true {            result += (a + d * i)                    }            }    return result    }// 0💡Answer 02import Foundation    var result = 0        result = included.indices.filter{ included[$0]}.map { a + d * $0 }.reduce(0){$0 + $1}        return result    }// 37해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (21) - 코드 처리하기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(21)-%EC%BD%94%EB%93%9C-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",

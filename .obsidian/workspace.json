@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "65e11a4c91d4a476",
+    "type": "split",
+    "children": [
+      {
+        "id": "44da67940f8f7905",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7da753013d5bd56b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "aef4190f6f62159a",
+    "type": "split",
+    "children": [
+      {
+        "id": "1632454028935072",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0faec7e2ac89e871",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f9ddad6fd3946801",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9b0362ff5cb409eb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "450b3379e299ce3a",
+    "type": "split",
+    "children": [
+      {
+        "id": "cd6a57cc097d7266",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "854025536f48bce8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "360d9367a52c601f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "20d7e8d5e0ab2ee0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3325941af4227533",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "7da753013d5bd56b",
+  "lastOpenFiles": [
+    "_site/posts/프로그래머스-Swift-코테준비-(22)-등차수열의-특정한-항만-더하기/index.html",
+    "_site/posts/프로그래머스-Swift-코테준비-(22)-등차수열의-특정한-항만-더하기",
+    "_site/posts/프로그래머스-Swift-코테준비-(22)-코드-처리하기-1/index.html",
+    "_site/posts/프로그래머스-Swift-코테준비-(22)-코드-처리하기-1",
+    "_site/posts/프로그래머스-Swift-코테준비-(21)-코드-처리하기-1/index.html",
+    "_site/posts/프로그래머스-Swift-코테준비-(21)-코드-처리하기-1",
+    "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (21) - 코드 처리하기.md",
+    "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기.md",
+    "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
+    "_tabs/about.md"
+  ]
+}
