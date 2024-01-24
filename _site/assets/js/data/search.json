@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (21) - 코드 처리하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(21)-%EC%BD%94%EB%93%9C-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-24 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 코드 처리하기문제 설명  문자열 code가 주어집니다.code를 앞에서부터 읽으면서 만약 문자가 “1”이면 mode를 바꿉니다. mode에 따라 code를 읽어가면서 문자열 ret을 만들어냅니다.  mode는 0과 1이 있으며, idx를 0 부터 code의 길이 - 1 까지 1씩 키워나가면서 code[idx]의 값에 따라 다음과 같이 행...",
+    "content": "01 문제 : 코드 처리하기문제 설명  문자열 code가 주어집니다.code를 앞에서부터 읽으면서 만약 문자가 “1”이면 mode를 바꿉니다. mode에 따라 code를 읽어가면서 문자열 ret을 만들어냅니다.  mode는 0과 1이 있으며, idx를 0 부터 code의 길이 - 1 까지 1씩 키워나가면서 code[idx]의 값에 따라 다음과 같이 행동합니다.\t• mode가 0일 때\t    • code[idx]가 “1”이 아니면 idx가 짝수일 때만 ret의 맨 뒤에 code[idx]를 추가합니다.\t    • code[idx]가 “1”이면 mode를 0에서 1로 바꿉니다.\t• mode가 1일 때\t    • code[idx]가 “1”이 아니면 idx가 홀수일 때만 ret의 맨 뒤에 code[idx]를 추가합니다.\t    • code[idx]가 “1”이면 mode를 1에서 0으로 바꿉니다.문자열 code를 통해 만들어진 문자열 ret를 return 하는 solution 함수를 완성해 주세요.단, 시작할 때 mode는 0이며, return 하려는 ret가 만약 빈 문자열이라면 대신 “EMPTY”를 return 합니다.제한사항  • 1 ≤ code의 길이 ≤ 100,000    • code는 알파벳 소문자 또는 “1”로 이루어진 문자열입니다.입출력 예            code      result                  “abc1abc1abc”      “acbac”      입출력 예 설명  입출력 예 #1\t• 예제 1번에서 flag가 true이므로 a + b = (-4) + 7 = 3을 return 합니다.            i      code[i]      mode      ret                  0      “a”      0      “a”              1      “b”      0      “a”              2      “c”      0      “ac”              3      “1”      1      “ac”              4      “a”      1      “ac”              5      “b”      1      “acb”              6      “c”      1      “acb”              7      “1”      0      “acb”              8      “a”      0      “acba”              9      “b”      0      “acba”              10      “c”      0      “acbac”      제시 코드import Foundationfunc solution(_ code:String) -&gt; String {        return \"\"    }02 풀이해당 문제는\b지문을 읽으면서 조건문을 활용해 코드를 작성하며 풀어보았다.💡Answerimport Foundation var ret = [Character]()    var mode = false    let codeArray = Array(code)            for idx in 0..&lt;code.count {        if mode == false {            if codeArray[idx] != \"1\" {                if idx % 2 == 0 {                    ret.append(codeArray[idx])                }            } else {                mode = true            }                    } else {            if codeArray[idx] != \"1\" {                if idx % 2 == 1 {                    ret.append(codeArray[idx])                }            } else {                mode = false            }                 }         }        return String(ret) == \"\" ? \"EMPTY\" : String(ret)    }// 0해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(20)-flag%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
