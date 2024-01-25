@@ -909,7 +909,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="852 words"
+  title="850 words"
 >
   <em>4 min</em> read</span>
 
@@ -1016,10 +1016,12 @@
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><br /></p>
+<p><br />
+<br /></p>
 
-<hr />
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+
 <h4 id="solution-1--반복문과-조건문을-활용하여-풀기"><span class="me-2">solution 1 : 반복문과 조건문을 활용하여 풀기</span><a href="#solution-1--반복문과-조건문을-활용하여-풀기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <p>먼저, <code class="language-plaintext highlighter-rouge">included</code>가 담고 있는 요소의 개수<code class="language-plaintext highlighter-rouge">(count)</code> 만큼 for문을 돌리면, <code class="language-plaintext highlighter-rouge">0..&lt;5</code> 의 값만큼의 <code class="language-plaintext highlighter-rouge">i</code> 값을 얻을 수 있다.</p>
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -1044,7 +1046,7 @@
 5
 6
 7
-</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">included</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span> <span class="err"> </span> <span class="err"> </span>
+</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">included</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
 
 	<span class="k">if</span> <span class="n">included</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="kc">true</span> <span class="p">{</span>
 		<span class="n">value</span> <span class="o">+=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
@@ -1053,6 +1055,7 @@
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
+<p><br /></p>
 <h4 id="solution-2--map과-filter를-활용하여-풀기"><span class="me-2">solution 2 : map과 filter를 활용하여 풀기</span><a href="#solution-2--map과-filter를-활용하여-풀기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <p><code class="language-plaintext highlighter-rouge">indices</code>와 <code class="language-plaintext highlighter-rouge">filter</code>를 활용하여 <code class="language-plaintext highlighter-rouge">included</code>의 요소중 true인 것의 <code class="language-plaintext highlighter-rouge">index</code> 값만 남겨준다.</p>
 
@@ -1104,11 +1107,11 @@
 
 <span class="c1">//37</span>
 </pre></td></tr></tbody></table></code></div></div>
-<p><br /></p>
-
-<hr />
+<p><br />
+<br /></p>
 
 <h2 id="answer-01"><span class="me-2">💡Answer 01</span><a href="#answer-01" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
@@ -1150,6 +1153,7 @@
 
 <p><br /></p>
 <h2 id="answer-02"><span class="me-2">💡Answer 02</span><a href="#answer-02" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
