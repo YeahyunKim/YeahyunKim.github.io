@@ -54,7 +54,7 @@
 <meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="twitter:title" content="프로그래머스 Swift 코테준비 (23) - 주사위 게임 2" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-24T00:00:00+09:00","datePublished":"2024-01-24T00:00:00+09:00","description":"01 문제 : 주사위 게임 2","headline":"프로그래머스 Swift 코테준비 (23) - 주사위 게임 2","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-25T21:59:19+09:00","datePublished":"2024-01-24T00:00:00+09:00","description":"01 문제 : 주사위 게임 2","headline":"프로그래머스 Swift 코테준비 (23) - 주사위 게임 2","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -859,6 +859,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1706187559"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Jan 25, 2024
+</time>
+
+        </span>
+      
 
       
         
@@ -909,9 +932,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="850 words"
+  title="1051 words"
 >
-  <em>4 min</em> read</span>
+  <em>5 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -1022,21 +1045,39 @@
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 
-<h4 id="solution-1--반복문과-조건문을-활용하여-풀기"><span class="me-2">solution 1 : 반복문과 조건문을 활용하여 풀기</span><a href="#solution-1--반복문과-조건문을-활용하여-풀기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<p>먼저, <code class="language-plaintext highlighter-rouge">included</code>가 담고 있는 요소의 개수<code class="language-plaintext highlighter-rouge">(count)</code> 만큼 for문을 돌리면, <code class="language-plaintext highlighter-rouge">0..&lt;5</code> 의 값만큼의 <code class="language-plaintext highlighter-rouge">i</code> 값을 얻을 수 있다.</p>
+<h4 id="solution-1--조건문과-논리연산자-활용하여-풀기"><span class="me-2">solution 1 : 조건문과 논리연산자 활용하여 풀기</span><a href="#solution-1--조건문과-논리연산자-활용하여-풀기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>문제에서 제시하는 바 그대로 조건문으로 차근차근 작성하며 나아가 보았다.<br />
+조건 1  : <code class="language-plaintext highlighter-rouge">세 숫자가 모두 다르다면 a + b + c 점을 얻습니다.</code></p>
+
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="n">i</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">included</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
-	<span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">!=</span> <span class="n">c</span> <span class="p">{</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+조건 2 : <code class="language-plaintext highlighter-rouge">세 숫자 중 어느 두 숫자는 같고 나머지 다른 숫자는 다르다면 (a + b + c) × (a2 + b2 + c2 )점을 얻습니다.</code></p>
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre> <span class="k">if</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">!=</span> <span class="n">c</span> <span class="p">{</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">!=</span> <span class="n">c</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">b</span> <span class="o">==</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">c</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">c</span> <span class="o">!=</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">c</span><span class="p">)</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
-이어서, 해당 <code class="language-plaintext highlighter-rouge">i</code> 값을 활용하여, <code class="language-plaintext highlighter-rouge">included[i]</code>가 <code class="language-plaintext highlighter-rouge">true</code> 일 경우,
-결과값을 저장해주는 하나의 변수를 생성하고, 해당 변수에 값을 더해주면 된다.</p>
+조건 3 : <code class="language-plaintext highlighter-rouge">세 숫자가 모두 같다면 (a + b + c) × (a2 + b2 + c2 ) × (a3 + b3 + c3 )점을 얻습니다.</code></p>
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1046,13 +1087,15 @@
 5
 6
 7
-</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">included</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
-
-	<span class="k">if</span> <span class="n">included</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="kc">true</span> <span class="p">{</span>
-		<span class="n">value</span> <span class="o">+=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
-	<span class="p">}</span>
-	
+8
+</pre></td><td class="rouge-code"><pre> <span class="k">if</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">!=</span> <span class="n">c</span> <span class="p">{</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">!=</span> <span class="n">c</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">b</span> <span class="o">==</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">c</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">c</span> <span class="o">!=</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">c</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">==</span> <span class="n">c</span> <span class="p">{</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">c</span><span class="o">*</span><span class="n">c</span><span class="p">)</span>
 <span class="p">}</span>
+
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br /></p>
@@ -1307,6 +1350,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/">프로그래머스 Swift 코테준비 (23) - 주사위 게임 2</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(22)-%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98-%ED%8A%B9%EC%A0%95%ED%95%9C-%ED%95%AD%EB%A7%8C-%EB%8D%94%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기</a>
         </li>
       
@@ -1329,13 +1379,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/">프로그래머스 Swift 코테준비 (11) -문자열 섞기</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(12)-%EB%AC%B8%EC%9E%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (12) -문자 리스트를 문자열로 변환하기</a>
         </li>
       
     </ul>
