@@ -42,8 +42,8 @@
 <meta property="og:title" content="프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="01 문제 : 홀짝 구분하기 문제 설명" />
-<meta property="og:description" content="01 문제 : 홀짝 구분하기 문제 설명" />
+<meta name="description" content="01 문제 : 문자열 붙여서 출력하기 문제 설명" />
+<meta property="og:description" content="01 문제 : 문자열 붙여서 출력하기 문제 설명" />
 <link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
 <meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
@@ -54,7 +54,7 @@
 <meta property="twitter:image" content="https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB" />
 <meta property="twitter:title" content="프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-23T23:01:09+09:00","datePublished":"2024-01-11T00:00:00+09:00","description":"01 문제 : \b\b홀짝 구분하기 문제 설명","headline":"프로그래머스 Swift 코테준비 (7) -\b문자열 붙여서 출력하기","image":"https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-23T23:01:09+09:00","datePublished":"2024-01-11T00:00:00+09:00","description":"01 문제 : 문자열 붙여서 출력하기 문제 설명","headline":"프로그래머스 Swift 코테준비 (7) -\b문자열 붙여서 출력하기","image":"https://lh3.google.com/u/0/d/1-e5Gwx2UQReBJhqc3ib1BvoYmKuCatQB","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -910,7 +910,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="255 words"
+  title="258 words"
 >
   <em>1 min</em> read</span>
 
@@ -921,7 +921,7 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제--홀짝-구분하기"><span class="me-2">01 문제 : 홀짝 구분하기</span><a href="#01-문제--홀짝-구분하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제---문자열-붙여서-출력하기"><span class="me-2">01 문제 :  문자열 붙여서 출력하기</span><a href="#01-문제---문자열-붙여서-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
@@ -930,13 +930,13 @@
 입출력 예와 같이 <code class="language-plaintext highlighter-rouge">str1</code>과 <code class="language-plaintext highlighter-rouge">str2</code>을 이어서 출력하는 코드를 작성해 보세요.</p>
 </blockquote>
 
-<hr />
+<p><br /></p>
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <blockquote class="command-text">
   <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str1</code>, <code class="language-plaintext highlighter-rouge">str2</code>의 길이 ≤ 10</p>
 </blockquote>
 
-<hr />
+<p><br /></p>
 
 <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
@@ -968,7 +968,7 @@
 </pre></td><td class="rouge-code"><pre>HelloWorld!
 </pre></td></tr></tbody></table></code></div></div>
 
-<hr />
+<p><br /></p>
 
 <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
@@ -986,24 +986,28 @@
 
 </pre></td></tr></tbody></table></code></div></div>
 
-<hr />
+<p><br />
+<br /></p>
 
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
+<hr />
 <h4 id="두개의-문자열-더해서-붙이기"><span class="me-2">두개의 문자열 더해서 붙이기</span><a href="#두개의-문자열-더해서-붙이기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <blockquote class="prompt-tip">
   <p>문자열 + 문자열은 두개의 문자열을 붙여서 출력할 수 있다.
 <code class="language-plaintext highlighter-rouge">"안녕"</code> + <code class="language-plaintext highlighter-rouge">"하세요"</code> = <code class="language-plaintext highlighter-rouge">"안녕하세요"</code></p>
 </blockquote>
 
+<p><br /></p>
 <h4 id="하나의-배열에-넣고-붙이기"><span class="me-2">하나의 배열에 넣고 붙이기</span><a href="#하나의-배열에-넣고-붙이기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <blockquote class="prompt-tip">
   <p>[“안녕”, “하세요”]</p>
 </blockquote>
 
-<hr />
+<p><br />
+<br /></p>
 
 <h2 id="answer"><span class="me-2">💡Answer</span><a href="#answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
@@ -1155,6 +1159,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)-%EB%8D%A7%EC%85%88%EC%8B%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기</a>
         </li>
       
@@ -1177,13 +1188,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)-a%EC%99%80-b-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (2) - a와 b 출력하기</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (1) - 문자열 출력하기</a>
         </li>
       
     </ul>

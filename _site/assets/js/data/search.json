@@ -285,8 +285,8 @@
 
 
     
-    "snippet": "01 문제 : \b\b홀짝 구분하기문제 설명  두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str1, str2의 길이 ≤ 10입출력 예입력 #1apple pen출력 #1applepen입력 #2hello World!출력 #2Hel...",
-    "content": "01 문제 : \b\b홀짝 구분하기문제 설명  두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str1, str2의 길이 ≤ 10입출력 예입력 #1apple pen출력 #1applepen입력 #2hello World!출력 #2HelloWorld!제시 코드import Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, s2) = (inp[0], inp[1])02 풀이두개의 문자열 더해서 붙이기  문자열 + 문자열은 두개의 문자열을 붙여서 출력할 수 있다.\"안녕\" + \"하세요\" = \"안녕하세요\"하나의 배열에 넣고 붙이기  [“안녕”, “하세요”]💡Answerimport Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, s2) = (inp[0], inp[1])print(s1 + s2)print([s1, s2].joined())// HelloWorld!해당문제 풀러가보기"
+    "snippet": "01 문제 :  문자열 붙여서 출력하기문제 설명  두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str1, str2의 길이 ≤ 10입출력 예입력 #1apple pen출력 #1applepen입력 #2hello World!출력 #...",
+    "content": "01 문제 :  문자열 붙여서 출력하기문제 설명  두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str1, str2의 길이 ≤ 10입출력 예입력 #1apple pen출력 #1applepen입력 #2hello World!출력 #2HelloWorld!제시 코드import Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, s2) = (inp[0], inp[1])02 풀이두개의 문자열 더해서 붙이기  문자열 + 문자열은 두개의 문자열을 붙여서 출력할 수 있다.\"안녕\" + \"하세요\" = \"안녕하세요\"하나의 배열에 넣고 붙이기  [“안녕”, “하세요”]💡Answerimport Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, s2) = (inp[0], inp[1])print(s1 + s2)print([s1, s2].joined())// HelloWorld!해당문제 풀러가보기"
   },
   
   {
