@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기.md",
+                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (21) - 코드 처리하기.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기.md",
+                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (21) - 코드 처리하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기.md",
+                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (21) - 코드 처리하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기.md"
+                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (21) - 코드 처리하기.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "7da753013d5bd56b",
   "lastOpenFiles": [
+    "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기.md",
     "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (19) - 조건 문자열.md",
     "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (18) - 홀짝에 따라 다른 값 반환하기.md",
     "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (17) - 공배수.md",
