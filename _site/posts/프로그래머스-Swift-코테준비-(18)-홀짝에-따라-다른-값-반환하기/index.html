@@ -928,14 +928,14 @@
   <p>양의 정수 <code class="language-plaintext highlighter-rouge">n</code>이 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">n</code>이 홀수라면 <code class="language-plaintext highlighter-rouge">n</code> 이하의 홀수인 모든 양의 정수의 합을 return 하고 <code class="language-plaintext highlighter-rouge">n</code>이 짝수라면 <code class="language-plaintext highlighter-rouge">n</code> 이하의 짝수인 모든 양의 정수의 제곱의 합을 return 하는 solution 함수를 작성해 주세요.</p>
 </blockquote>
 
-<hr />
+<p><br /></p>
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
   <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 100</p>
 </blockquote>
 
-<hr />
+<p><br /></p>
 <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="table-wrapper"><table>
@@ -957,24 +957,24 @@
   </tbody>
 </table></div>
 
-<hr />
+<p><br /></p>
 <h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
+<p>입출력 예 #1</p>
 <blockquote class="command-text">
-  <p>입출력 예 #1
-	• 예제 1번의 <code class="language-plaintext highlighter-rouge">n</code>은 7로 홀수입니다. 7 이하의 모든 양의 홀수는 1, 3, 5, 7이고 
-	이들의 합인 1 + 3 + 5 + 7 = 16을 return 합니다.</p>
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">n</code>은 7로 홀수입니다. 7 이하의 모든 양의 홀수는 1, 3, 5, 7이고 
+이들의 합인 1 + 3 + 5 + 7 = 16을 return 합니다.</p>
 </blockquote>
 
+<p>입출력 예 #2</p>
 <blockquote class="command-text">
-  <p>입출력 예 #2
-	• 예제 2번의 <code class="language-plaintext highlighter-rouge">n</code>은 10으로 짝수입니다. 10 이하의 모든 양의 짝수는 
-	2, 4, 6, 8, 10이고 이들의 제곱의 합인 
-	22 + 42 + 62 + 82 + 102 = 4 + 16 + 36 + 64 + 100 = 220을 
-	return 합니다.</p>
+  <p>• 예제 2번의 <code class="language-plaintext highlighter-rouge">n</code>은 10으로 짝수입니다. 10 이하의 모든 양의 짝수는 
+2, 4, 6, 8, 10이고 이들의 제곱의 합인 
+22 + 42 + 62 + 82 + 102 = 4 + 16 + 36 + 64 + 100 = 220을 
+return 합니다.</p>
 </blockquote>
 
-<hr />
+<p><br /></p>
 
 <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
@@ -996,9 +996,10 @@
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<hr />
+<p><br />
+<br /></p>
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
+<hr />
 <h4 id="나머지를-이용하여-짝수-홀수-찾기"><span class="me-2">나머지를 이용하여 짝수 홀수 찾기</span><a href="#나머지를-이용하여-짝수-홀수-찾기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <p>배수를 찾는 문제와 똑같은 문제이다. 나누는 값을 <code class="language-plaintext highlighter-rouge">2</code>로 하고, 나머지 값을 구하는 방식을
 활용하면 된다.</p>
@@ -1012,10 +1013,11 @@
 <p>반복문을 활용하여, 양의 정수 <code class="language-plaintext highlighter-rouge">n</code> 이하의 모든 양의 정수를 구하고, 
 각각의 양의 정수에서 짝수와 홀수를 판별하는 조건문을 활용하면 된다.</p>
 
-<hr />
+<p><br />
+<br /></p>
 
 <h2 id="answer"><span class="me-2">💡Answer</span><a href="#answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
+<hr />
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1190,6 +1192,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(17)-%EA%B3%B5%EB%B0%B0%EC%88%98/">프로그래머스 Swift 코테준비 (17) - 공배수</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(16)-n%EC%9D%98-%EB%B0%B0%EC%88%98/">프로그래머스 Swift 코테준비 (16) - n의 배수</a>
         </li>
       
@@ -1212,13 +1221,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/">프로그래머스 Swift 코테준비 (13) -문자열 곱하기</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/">프로그래머스 Swift 코테준비 (11) -문자열 섞기</a>
         </li>
       
     </ul>
