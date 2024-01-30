@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기.md",
+                "file": "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 438.5
   },
   "right": {
     "id": "450b3379e299ce3a",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기.md",
+                "file": "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기.md",
+                "file": "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기.md"
+                "file": "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기.md"
               }
             }
           }
@@ -146,14 +146,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "0faec7e2ac89e871",
+  "active": "7da753013d5bd56b",
   "lastOpenFiles": [
+    "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (16) - n의 배수.md",
+    "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기.md",
+    "_posts/2024-01-25- 프로그래머스 Swift 코테준비 (23) - 주사위 게임 2.md",
     "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (21) - 코드 처리하기.md",
     "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기.md",
     "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (19) - 조건 문자열.md",
     "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (18) - 홀짝에 따라 다른 값 반환하기.md",
     "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (17) - 공배수.md",
-    "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (16) - n의 배수.md",
     "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기.md",
     "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (14) - 더 크게 합치기.md",
     "_posts/2024-01-14- 프로그래머스 Swift 코테준비 (13) - 문자열 곱하기.md",
@@ -169,12 +171,10 @@
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기.md",
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (2) - a와 b 출력하기.md",
     "_posts/2024-01-07- 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기.md",
-    "_posts/2024-01-25- 프로그래머스 Swift 코테준비 (23) - 주사위 게임 2.md",
     "_site/posts/프로그래머스-Swift-코테준비-(23)-주사위-게임-2/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(23)-주사위-게임-2",
     "_site/posts/프로그래머스-Swift-코테준비-(22)-등차수열의-특정한-항만-더하기-1/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(22)-등차수열의-특정한-항만-더하기-1",
-    "_posts/2024-01-24- 프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기.md",
     "_site/posts/프로그래머스-Swift-코테준비-(22)-등차수열의-특정한-항만-더하기/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(22)-등차수열의-특정한-항만-더하기",
     "_site/posts/프로그래머스-Swift-코테준비-(22)-코드-처리하기-1/index.html",
