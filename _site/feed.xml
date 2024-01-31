@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-01-30T22:54:11+09:00</updated>
+  <updated>2024-01-31T19:42:05+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,89 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (24) - 원소들의 곱과 합</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (24) - 원소들의 곱과 합" />
+    <published>2024-01-31T00:00:00+09:00</published>
+  
+    <updated>2024-01-31T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 : 원소들의 곱과 합
+
+
+문제 설명
+
+
+  정수가 담긴 리스트 num_list가 주어질 때, 모든 원소들의 곱이 모든 원소들의 합의 제곱보다 작으면 
+1을 크면 0을 return하도록 solution 함수를 완성해주세요.
+
+
+
+제한사항
+
+
+  • 2 ≤ num_list의 길이 ≤ 10
+• 1 ≤ num_list의 원소 ≤ 9
+
+
+
+입출력 예
+
+
+  
+    
+      num_list
+      result
+    
+  
+  
+    
+      [3, 4, 5, 2, 1]
+      1
+    
+    
+      [5, 7, 8, 3]
+      0
+    
+  
+
+
+
+
+입출력 예 설명
+
+입출력 예 #1
+
+
+  • 모든 원소의 곱은 120, 합의 제곱은 225이므로 1을 return합니다...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -278,67 +361,6 @@ false면 a - b를 return 하는 solution 함수를 작성해 주세요.
 입출력 예 #1
 
   • 예제 1번에서 flag가 true이므로 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (19) - 조건 문자열</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(19)-%EC%A1%B0%EA%B1%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (19) - 조건 문자열" />
-    <published>2024-01-22T00:00:00+09:00</published>
-  
-    <updated>2024-01-29T19:25:43+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(19)-%EC%A1%B0%EA%B1%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(19)-%EC%A1%B0%EA%B1%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 조건 문자열
-
-문제 설명
-
-
-  문자열에 따라 다음과 같이 두 수의 크기를 비교하려고 합니다.
-	• 두 수가 n과 m이라면
-	    • “&amp;gt;”, “=” : n &amp;gt;= m
-	    • “&amp;lt;”, “=” : n &amp;lt;= m
-	    • “&amp;gt;”, “!” : n &amp;gt; m
-	    • “&amp;lt;”, “!” : n &amp;lt; m
-두 문자열 ineq와 eq가 주어집니다. ineq는 “&amp;lt;”와 “&amp;gt;”중 하나고, eq는 “=”와 “!”중 하나입니다. 그리고 두 정수 n과 m이 
-주어질 때, n과 m이 ineq와 eq의 조건에 맞으면 1을 아니면 0을 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ n, m ≤ 100
-
-
-
-입출력 예
-
-...
     </summary>
   
 
