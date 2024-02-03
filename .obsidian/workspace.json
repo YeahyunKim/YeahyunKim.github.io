@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-01- 프로그래머스 Swift 코테준비 (26) - 마지막 두 원소 1.md",
+                "file": "_posts/2024-02-01- 프로그래머스 Swift 코테준비 (26) - 마지막 두 원소.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-01- 프로그래머스 Swift 코테준비 (26) - 마지막 두 원소 1.md",
+                "file": "_posts/2024-02-01- 프로그래머스 Swift 코테준비 (26) - 마지막 두 원소.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-01- 프로그래머스 Swift 코테준비 (26) - 마지막 두 원소 1.md",
+                "file": "_posts/2024-02-01- 프로그래머스 Swift 코테준비 (26) - 마지막 두 원소.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-01- 프로그래머스 Swift 코테준비 (26) - 마지막 두 원소 1.md"
+                "file": "_posts/2024-02-01- 프로그래머스 Swift 코테준비 (26) - 마지막 두 원소.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "6fc8dce851240483",
   "lastOpenFiles": [
-    "_posts/2024-02-01- 프로그래머스 Swift 코테준비 (26) - 마지막 두 원소.md",
     "_posts/2024-02-01- 프로그래머스 Swift 코테준비 (26) - 마지막 두 원소 1.md",
+    "_site/posts/프로그래머스-Swift-코테준비-(26)-마지막-두-원소-1/index.html",
+    "_site/posts/프로그래머스-Swift-코테준비-(26)-마지막-두-원소-1",
+    "_posts/2024-02-01- 프로그래머스 Swift 코테준비 (26) - 마지막 두 원소.md",
     "_posts/2024-01-25- 프로그래머스 Swift 코테준비 (23) - 주사위 게임 2.md",
     "_site/2024-01-31- 프로그래머스 Swift 코테준비 (25) - 이어 붙인 수.html",
     "_site/posts/프로그래머스-Swift-코테준비-(26)-마지막-두-원소/index.html",
@@ -160,9 +162,7 @@
     "_site/posts/프로그래머스-Swift-코테준비-(25)-이어-붙인-수-1",
     "2024-01-31- 프로그래머스 Swift 코테준비 (25) - 이어 붙인 수.md",
     "_site/posts/프로그래머스-Swift-코테준비-(25)-이어-붙인-수/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(25)-이어-붙인-수",
     "_posts/2024-01-31- 프로그래머스 Swift 코테준비 (24) - 원소들의 곱과 합.md",
-    "_site/posts/프로그래머스-Swift-코테준비-(24)-원소들의-곱과-합-1/index.html",
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기.md",
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기.md",
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (6) - 덧셈식 출력하기.md",
@@ -182,7 +182,6 @@
     "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (19) - 조건 문자열.md",
     "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (18) - 홀짝에 따라 다른 값 반환하기.md",
     "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (17) - 공배수.md",
-    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기.md",
-    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (2) - a와 b 출력하기.md"
+    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기.md"
   ]
 }

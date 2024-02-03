@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Swift 코테준비 (13) -문자열 곱하기" />
+<meta property="og:title" content="프로그래머스 Swift 코테준비 (26) - 마지막 두 원소" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="01 문제 : 문자열 곱하기 문제 설명" />
-<meta property="og:description" content="01 문제 : 문자열 곱하기 문제 설명" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/" />
+<meta name="description" content="01 문제 : 마지막 두 원소" />
+<meta property="og:description" content="01 문제 : 마지막 두 원소" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(26)-%EB%A7%88%EC%A7%80%EB%A7%89-%EB%91%90-%EC%9B%90%EC%86%8C-1/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(26)-%EB%A7%88%EC%A7%80%EB%A7%89-%EB%91%90-%EC%9B%90%EC%86%8C-1/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-14T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-01-31T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
-<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (13) -문자열 곱하기" />
+<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (26) - 마지막 두 원소" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-30T22:51:54+09:00","datePublished":"2024-01-14T00:00:00+09:00","description":"01 문제 : \b\b문자열 곱하기 문제 설명","headline":"프로그래머스 Swift 코테준비 (13) -\b문자열 곱하기","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-31T00:00:00+09:00","datePublished":"2024-01-31T00:00:00+09:00","description":"01 문제 : 마지막 두 원소","headline":"프로그래머스 Swift 코테준비 (26) - 마지막 두 원소","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(26)-%EB%A7%88%EC%A7%80%EB%A7%89-%EB%91%90-%EC%9B%90%EC%86%8C-1/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(26)-%EB%A7%88%EC%A7%80%EB%A7%89-%EB%91%90-%EC%9B%90%EC%86%8C-1/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Swift 코테준비 (13) -문자열 곱하기 | Yeahyun Kim
+  <title>프로그래머스 Swift 코테준비 (26) - 마지막 두 원소 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>프로그래머스 Swift 코테준비 (13) -문자열 곱하기</span>
+              <span>프로그래머스 Swift 코테준비 (26) - 마지막 두 원소</span>
             
 
           
@@ -778,6 +778,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -797,7 +808,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (13) -문자열 곱하기</h1>
+    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (26) - 마지막 두 원소</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -813,41 +824,18 @@
 
 <time
   
-  data-ts="1705158000"
+  data-ts="1706626800"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 14, 2024
+  Jan 31, 2024
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1706622714"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Jan 30, 2024
-</time>
-
-        </span>
       
 
       
@@ -899,9 +887,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="359 words"
+  title="590 words"
 >
-  <em>1 min</em> read</span>
+  <em>3 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -910,22 +898,22 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제--문자열-곱하기"><span class="me-2">01 문제 : 문자열 곱하기</span><a href="#01-문제--문자열-곱하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제--마지막-두-원소"><span class="me-2">01 문제 : 마지막 두 원소</span><a href="#01-문제--마지막-두-원소" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <hr />
 <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
+  <p>정수 리스트 <code class="language-plaintext highlighter-rouge">num_list</code>가 주어질 때, 마지막 원소가 그전 원소보다 크면 마지막 원소에서 그전 원소를 뺀 값을 마지막 원소가 그전 원소보다 크지 않다면 마지막 원소를 두 배한 값을 추가하여 return하도록 solution 함수를 완성해주세요.</p>
 </blockquote>
 
 <p><br /></p>
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<blockquote class="command-text">
-  <p>• 1 ≤ my_string의 길이 ≤ 100
-• my_string은 영소문자로만 이루어져 있습니다.
-• 1 ≤ <code class="language-plaintext highlighter-rouge">k</code> ≤ 100</p>
-</blockquote>
 
+<blockquote class="command-text">
+  <p>• 2 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 길이 ≤ 10
+• 1 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 원소 ≤ 9</p>
+</blockquote>
 <p><br /></p>
 
 <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
@@ -933,40 +921,38 @@
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>my_string</th>
-      <th>k</th>
+      <th>num_list</th>
       <th>result</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>“string”</td>
-      <td>3</td>
-      <td>“stringstringstring”</td>
+      <td>[2, 1, 6]</td>
+      <td>[2, 1, 6, 5]</td>
     </tr>
     <tr>
-      <td>“love”</td>
-      <td>10</td>
-      <td>“lovelovelovelovelovelovelovelovelovelove”</td>
+      <td>[5, 2, 1, 7, 5]</td>
+      <td>[5, 2, 1, 7, 5, 10]</td>
     </tr>
   </tbody>
 </table></div>
 
 <p><br /></p>
+
 <h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>입출력 예 #1</p>
-<blockquote class="command-text">
-  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>은 “string” 이고 이를 3번 반복한 문자열은 “stringstringstring” 이므로 이를 return 합니다.</p>
-</blockquote>
+<h6 id="입출력-예-1">입출력 예 #1</h6>
 
-<p>입출력 예 #2</p>
 <blockquote class="command-text">
-  <p>• 예제 2번의 <code class="language-plaintext highlighter-rouge">my_string</code>은 “love” 이고 이를 10번 반복한 문자열은 “lovelovelovelovelovelovelovelovelovelove” 이므로 이를 return 합니다.</p>
+  <p>• 마지막 원소인 6이 그전 원소인 1보다 크기 때문에 6 - 1인 5를 추가해 return합니다.</p>
 </blockquote>
-
 <p><br /></p>
-
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+<blockquote class="command-text">
+  <p>• 마지막 원소인 5가 그전 원소인 7보다 크지 않기 때문에 5의 두 배인 10을 추가해 return합니다.</p>
+</blockquote>
+<p><br />
+<br /></p>
 <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -976,28 +962,62 @@
 3
 4
 5
+6
+7
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">k</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
     
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
 <br /></p>
+
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 
-<blockquote class="prompt-tip">
-  <p>현재 <code class="language-plaintext highlighter-rouge">my_string</code> 에는 문자열 “love” 가 들어가 있고, <code class="language-plaintext highlighter-rouge">k</code> 에는 정수 10 이 들어가 있다.
-여기서, 값을 반환해줄 <code class="language-plaintext highlighter-rouge">result</code> 라는 새로운 변수를 생성하고 해당 변수에 10번 “love” 라는 문자 값을 넣어주면 될것으로 보인다.
-그럼 for문을 통해 <code class="language-plaintext highlighter-rouge">+=</code> 으로 <code class="language-plaintext highlighter-rouge">result</code> 에 “love” 값을 추가하면 된다.</p>
-</blockquote>
+<h4 id="solution-1--count-를-활용하여-마지막-그전-원소값-찾기"><span class="me-2">solution 1 : count 를 활용하여 마지막, 그전 원소값 찾기</span><a href="#solution-1--count-를-활용하여-마지막-그전-원소값-찾기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>조건 1 : <code class="language-plaintext highlighter-rouge">마지막 원소</code> , <code class="language-plaintext highlighter-rouge">그전 원소</code></p>
+
+<p>배열에서 <code class="language-plaintext highlighter-rouge">마지막 원소</code>값을 구하기 위해서는 <code class="language-plaintext highlighter-rouge">해당 배열의 개수(count)</code>를 활용하면 된다. 현재 <code class="language-plaintext highlighter-rouge">num_list.count</code>를 작성하면 3이라는 값을 얻을 수 있는데, 여기서 배열의 index 값의 시작은 <code class="language-plaintext highlighter-rouge">0</code> 이므로, <code class="language-plaintext highlighter-rouge">-1</code>을 빼주면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">prevNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span> <span class="c1">// 그전 원소</span>
+<span class="k">var</span> <span class="nv">lastNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="c1">// 마지막 원소</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+조건 2 : <code class="language-plaintext highlighter-rouge">마지막 원소가 그전 원소보다 크면 마지막 원소에서 그전 원소를 뺀 값을 마지막 원소가 그전 원소보다 크지 않다면 마지막 원소를 두 배한 값을 추가</code></p>
+
+<p>삼항연산자를 이용하여, 앞에서 생성한 변수를 비교해주면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>    <span class="k">var</span> <span class="nv">num_list</span> <span class="o">=</span> <span class="n">num_list</span>
+
+    <span class="k">var</span> <span class="nv">prevNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
+    <span class="k">var</span> <span class="nv">lastNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">num_list</span> <span class="o">+</span> <span class="p">[</span><span class="n">lastNum</span> <span class="o">&gt;</span> <span class="n">prevNum</span> <span class="p">?</span> <span class="n">lastNum</span> <span class="o">-</span> <span class="nv">prevNum</span> <span class="p">:</span> <span class="n">lastNum</span><span class="o">*</span><span class="mi">2</span><span class="p">]</span>
+</pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
 <br /></p>
 
-<h2 id="answer"><span class="me-2">💡Answer</span><a href="#answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="answer-01"><span class="me-2">💡Answer 01</span><a href="#answer-01" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -1015,24 +1035,24 @@
 11
 12
 13
-14
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">k</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
     
-    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
-    
-    <span class="k">for</span> <span class="n">index</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">k</span> <span class="p">{</span>
-        <span class="n">result</span> <span class="o">+=</span> <span class="n">my_string</span>
-    <span class="p">}</span>
-    
-    <span class="k">return</span> <span class="n">result</span>
-<span class="p">}</span>
+    <span class="k">var</span> <span class="nv">num_list</span> <span class="o">=</span> <span class="n">num_list</span>
 
-<span class="c1">// "lovelovelovelovelovelovelovelovelovelove"</span>
+    <span class="k">var</span> <span class="nv">prevNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
+    <span class="k">var</span> <span class="nv">lastNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">num_list</span> <span class="o">+</span> <span class="p">[</span><span class="n">lastNum</span> <span class="o">&gt;</span> <span class="n">prevNum</span> <span class="p">?</span> <span class="n">lastNum</span> <span class="o">-</span> <span class="nv">prevNum</span> <span class="p">:</span> <span class="n">lastNum</span><span class="o">*</span><span class="mi">2</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="c1">// 393</span>
+
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181940">해당문제 풀러가보기</a></p>
+<p><br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181927">해당문제 풀러가보기</a></p>
 
 
   </div>
@@ -1089,21 +1109,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(13)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EA%B3%B1%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2813%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EA%25B3%25B1%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(26)%20-%20%EB%A7%88%EC%A7%80%EB%A7%89%20%EB%91%90%20%EC%9B%90%EC%86%8C%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2826%29-%25EB%25A7%2588%25EC%25A7%2580%25EB%25A7%2589-%25EB%2591%2590-%25EC%259B%2590%25EC%2586%258C-1%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(13)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EA%B3%B1%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2813%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EA%25B3%25B1%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(26)%20-%20%EB%A7%88%EC%A7%80%EB%A7%89%20%EB%91%90%20%EC%9B%90%EC%86%8C%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2826%29-%25EB%25A7%2588%25EC%25A7%2580%25EB%25A7%2589-%25EB%2591%2590-%25EC%259B%2590%25EC%2586%258C-1%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2813%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EA%25B3%25B1%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(13)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EA%B3%B1%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2826%29-%25EB%25A7%2588%25EC%25A7%2580%25EB%25A7%2589-%25EB%2591%2590-%25EC%259B%2590%25EC%2586%258C-1%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(26)%20-%20%EB%A7%88%EC%A7%80%EB%A7%89%20%EB%91%90%20%EC%9B%90%EC%86%8C%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1363,151 +1383,151 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1697,6 +1717,7 @@
 
                   01 문제 : 공배수
 
+
 문제 설명
 
 
@@ -1717,8 +1738,7 @@
 
   
     
-      number
-...
+      number...
                 </p>
               </div>
             </div>
@@ -1757,6 +1777,7 @@
                   01 문제 : 홀짝에 따라 다른 값 반환하기
 
 
+
 문제 설명
 
 
@@ -1771,7 +1792,7 @@
 
 
 
-입...
+...
                 </p>
               </div>
             </div>
@@ -1809,6 +1830,7 @@
 
                   01 문제 : 조건 문자열
 
+
 문제 설명
 
 
@@ -1817,7 +1839,7 @@
 	    • “&amp;gt;”, “=” : n &amp;gt;= m
 	    • “&amp;lt;”, “=” : n &amp;lt;= m
 	    • “&amp;gt;”, “!” : n &amp;gt; m
-	    • “&amp;lt;”, “!” : n &amp;lt; ...
+	    • “&amp;lt;”, “!” : n &amp;lt;...
                 </p>
               </div>
             </div>
@@ -1839,21 +1861,21 @@
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(12)-%EB%AC%B8%EC%9E%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Swift 코테준비 (12) -문자 리스트를 문자열로 변환하기</p>
+      <p>프로그래머스 Swift 코테준비 (24) - 원소들의 곱과 합</p>
     </a>
   
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(26)-%EB%A7%88%EC%A7%80%EB%A7%89-%EB%91%90-%EC%9B%90%EC%86%8C/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>프로그래머스 Swift 코테준비 (14) -더 크게 합치기</p>
+      <p>프로그래머스 Swift 코테준비 (26) - 마지막 두 원소</p>
     </a>
   
 </nav>
