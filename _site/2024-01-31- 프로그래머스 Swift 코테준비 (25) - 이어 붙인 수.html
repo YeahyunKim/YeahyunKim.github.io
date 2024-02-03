@@ -1,0 +1,201 @@
+<h2 id="01-문제--이어-붙인-수">01 문제 : 이어 붙인 수</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수가 담긴 리스트 <code class="language-plaintext highlighter-rouge">num_list</code>가 주어집니다. <code class="language-plaintext highlighter-rouge">num_list</code>의 홀수만 순서대로 이어 붙인 수와 짝수만 순서대로 이어 붙인 수의 합을 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 2 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 길이 ≤ 10
+• 1 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 원소 ≤ 9
+• <code class="language-plaintext highlighter-rouge">num_list</code>에는 적어도 한 개씩의 짝수와 홀수가 있습니다.</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>num_list</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[3, 4, 5, 2, 1]</td>
+      <td>393</td>
+    </tr>
+    <tr>
+      <td>[5, 7, 8, 3]</td>
+      <td>581</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 홀수만 이어 붙인 수는 351이고 짝수만 이어 붙인 수는 42입니다. 두 수의 합은 393입니다.</p>
+</blockquote>
+<p><br /></p>
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+<blockquote class="command-text">
+  <p>• 홀수만 이어 붙인 수는 573이고 짝수만 이어 붙인 수는 8입니다. 두 수의 합은 581입니다.</p>
+</blockquote>
+<p><br />
+<br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--더하기-곱하기-할당과-for문-활용하기">solution 1 : 더하기, 곱하기 할당과 for문 활용하기</h4>
+
+<p>조건 1 : <code class="language-plaintext highlighter-rouge">홀수만 순서대로 이어 붙인 수</code> , <code class="language-plaintext highlighter-rouge">짝수만 순서대로 이어 붙인 수</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">이어붙인 수</code> 를 처리하기 위해선, 먼저 <code class="language-plaintext highlighter-rouge">문자열 + 문자열</code> 로 처리를 해준 후, 해당 값을 <code class="language-plaintext highlighter-rouge">Int</code> 로 형 변환을 해주면 된다. 따라서 문자열을 담을 변수 두개를 생성해 준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">odd</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">// 홀수만 순서대로 이어 붙인 수를 넣어줄 변수</span>
+<span class="k">var</span> <span class="nv">even</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">// 곱한 값을 넣어줄 변수</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+조건 2 : <code class="language-plaintext highlighter-rouge">num_list에서 홀수 / 짝수 값을 따로 추가하기</code></p>
+
+<p>for 문을 사용하여 <code class="language-plaintext highlighter-rouge">num_list</code> 배열의 각 index 값들에 접근하고, 조건 1 에서 만든 변수에 홀수와 짝수별로 값을 더해준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">odd</span> <span class="o">=</span> <span class="s">""</span>
+<span class="k">var</span> <span class="nv">even</span> <span class="o">=</span> <span class="s">""</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+		<span class="n">even</span> <span class="o">+=</span> <span class="kt">String</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+		<span class="n">odd</span> <span class="o">+=</span> <span class="kt">String</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p>조건 3 : <code class="language-plaintext highlighter-rouge">홀수만 순서대로 이어 붙인 수</code> , <code class="language-plaintext highlighter-rouge">짝수만 순서대로 이어 붙인 수</code> 를 더하기</p>
+
+<p>생성된 문자열을 다시 <code class="language-plaintext highlighter-rouge">Int</code> 로 형 변환을 해주고, 값을 더해준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">odd</span> <span class="o">=</span> <span class="s">""</span>
+<span class="k">var</span> <span class="nv">even</span> <span class="o">=</span> <span class="s">""</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+		<span class="n">even</span> <span class="o">+=</span> <span class="kt">String</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+		<span class="n">odd</span> <span class="o">+=</span> <span class="kt">String</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">return</span> <span class="kt">Int</span><span class="p">(</span><span class="n">odd</span><span class="p">)</span><span class="o">!</span> <span class="o">+</span> <span class="kt">Int</span><span class="p">(</span><span class="n">even</span><span class="p">)</span><span class="o">!</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">odd</span> <span class="o">=</span> <span class="s">""</span>
+    <span class="k">var</span> <span class="nv">even</span> <span class="o">=</span> <span class="s">""</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+            <span class="n">even</span> <span class="o">+=</span> <span class="kt">String</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">odd</span> <span class="o">+=</span> <span class="kt">String</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="kt">Int</span><span class="p">(</span><span class="n">odd</span><span class="p">)</span><span class="o">!</span> <span class="o">+</span> <span class="kt">Int</span><span class="p">(</span><span class="n">even</span><span class="p">)</span><span class="o">!</span>
+<span class="p">}</span>
+<span class="c1">// 393</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181928">해당문제 풀러가보기</a></p>
+
