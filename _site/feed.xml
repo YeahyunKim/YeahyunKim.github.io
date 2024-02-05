@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-04T22:26:41+09:00</updated>
+  <updated>2024-02-05T13:10:25+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,62 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (27) - 수 조작하기 1</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(27)-%EC%88%98-%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0-1/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (27) - 수 조작하기 1" />
+    <published>2024-02-05T00:00:00+09:00</published>
+  
+    <updated>2024-02-05T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(27)-%EC%88%98-%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0-1/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(27)-%EC%88%98-%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0-1/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 : 수 조작하기 1
+
+
+문제 설명
+
+
+  정수 n과 문자열 control이 주어집니다. control은 “w”, “a”, “s”, “d”의 4개의 문자로 이루어져 있으며, control의 앞에서부터 순서대로 문자에 따라 n의 값을 바꿉니다. 
+	• “w” : n이 1 커집니다.
+	• “s” : n이 1 작아집니다.
+	• “d” : n이 10 커집니다.
+	• “a” : n이 10 작아집니다.  
+위 규칙에 따라 n을 바꿨을 때 가장 마지막에 나오는 n의 값을 return 하는 solution 함수를 완성해 주세요.
+
+
+
+제한사항
+
+
+  • 100,000 ≤ n ≤ 100,000
+• 1 ≤ control의 길이 ≤ 100,000
+	• control은 알파벳 소문자 “w”, “a”, “s”, “...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -101,7 +157,7 @@
     <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(25)-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%9D%B8-%EC%88%98/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (25) - 이어 붙인 수" />
     <published>2024-01-31T00:00:00+09:00</published>
   
-    <updated>2024-02-03T20:46:15+09:00</updated>
+    <updated>2024-02-04T22:27:00+09:00</updated>
   
     <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(25)-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%9D%B8-%EC%88%98/</id>
     <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(25)-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%9D%B8-%EC%88%98/" />
@@ -182,7 +238,7 @@
     <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (24) - 원소들의 곱과 합" />
     <published>2024-01-31T00:00:00+09:00</published>
   
-    <updated>2024-02-01T22:27:38+09:00</updated>
+    <updated>2024-02-04T22:27:00+09:00</updated>
   
     <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/</id>
     <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/" />
@@ -307,79 +363,6 @@
 
 
   • a, b, c는 1이상 6이하의 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(22)-%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98-%ED%8A%B9%EC%A0%95%ED%95%9C-%ED%95%AD%EB%A7%8C-%EB%8D%94%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기" />
-    <published>2024-01-24T00:00:00+09:00</published>
-  
-    <updated>2024-02-04T22:22:37+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(22)-%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98-%ED%8A%B9%EC%A0%95%ED%95%9C-%ED%95%AD%EB%A7%8C-%EB%8D%94%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(22)-%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98-%ED%8A%B9%EC%A0%95%ED%95%9C-%ED%95%AD%EB%A7%8C-%EB%8D%94%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 등차수열의 특정한 항만 더하기
-
-
-문제 설명
-
-
-  두 정수 a, d와 길이가 n인 boolean 배열 included가 주어집니다.
-첫째항이 a, 공차가 d인 등차수열에서 included[i]가 i + 1항을 의미할 때,
-이 등차수열의 1항부터 n항까지 included가 true인 항들만 더한 값을 return
-하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ a ≤ 100
-• 1 ≤ d ≤ 100
-• 1 ≤ included의 길이 ≤ 100
-• included에는 true가 적어도 하나 존재합니다.
-
-
-
-입출력 예
-
-
-  
-    
-      a
-      d
-      included
-      result
-    
-  
-  
-    
-      3
-   ...
     </summary>
   
 
