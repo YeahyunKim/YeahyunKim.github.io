@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기" />
+<meta property="og:title" content="프로그래머스 Swift 코테준비 (29) - 수열과 구간 쿼리 3" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="01 문제 : 문자열 붙여서 출력하기 문제 설명" />
-<meta property="og:description" content="01 문제 : 문자열 붙여서 출력하기 문제 설명" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
+<meta name="description" content="01 문제 : 수열과 구간 쿼리 3" />
+<meta property="og:description" content="01 문제 : 수열과 구간 쿼리 3" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(29)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-3/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(29)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-3/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-11T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-02-07T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
-<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기" />
+<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (29) - 수열과 구간 쿼리 3" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-30T22:53:42+09:00","datePublished":"2024-01-11T00:00:00+09:00","description":"01 문제 : 문자열 붙여서 출력하기 문제 설명","headline":"프로그래머스 Swift 코테준비 (7) -\b문자열 붙여서 출력하기","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-02-07T00:00:00+09:00","datePublished":"2024-02-07T00:00:00+09:00","description":"01 문제 : 수열과 구간 쿼리 3","headline":"프로그래머스 Swift 코테준비 (29) - 수열과 구간 쿼리 3","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(29)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-3/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(29)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-3/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기 | Yeahyun Kim
+  <title>프로그래머스 Swift 코테준비 (29) - 수열과 구간 쿼리 3 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기</span>
+              <span>프로그래머스 Swift 코테준비 (29) - 수열과 구간 쿼리 3</span>
             
 
           
@@ -703,6 +703,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -723,6 +734,17 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
       
 
       
@@ -808,7 +830,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기</h1>
+    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (29) - 수열과 구간 쿼리 3</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -824,41 +846,18 @@
 
 <time
   
-  data-ts="1704898800"
+  data-ts="1707231600"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 11, 2024
+  Feb  7, 2024
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1706622822"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Jan 30, 2024
-</time>
-
-        </span>
       
 
       
@@ -910,9 +909,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="258 words"
+  title="735 words"
 >
-  <em>1 min</em> read</span>
+  <em>4 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -921,55 +920,65 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제---문자열-붙여서-출력하기"><span class="me-2">01 문제 :  문자열 붙여서 출력하기</span><a href="#01-문제---문자열-붙여서-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제--수열과-구간-쿼리-3"><span class="me-2">01 문제 : 수열과 구간 쿼리 3</span><a href="#01-문제--수열과-구간-쿼리-3" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <hr />
 <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>두 개의 문자열 <code class="language-plaintext highlighter-rouge">str1</code>, <code class="language-plaintext highlighter-rouge">str2</code>가 공백으로 구분되어 입력으로 주어집니다.<br />
-입출력 예와 같이 <code class="language-plaintext highlighter-rouge">str1</code>과 <code class="language-plaintext highlighter-rouge">str2</code>을 이어서 출력하는 코드를 작성해 보세요.</p>
+  <p>정수 배열 <code class="language-plaintext highlighter-rouge">arr</code>와 2차원 정수 배열 <code class="language-plaintext highlighter-rouge">queries</code>이 주어집니다. <code class="language-plaintext highlighter-rouge">queries</code>의 원소는 각각 하나의 <code class="language-plaintext highlighter-rouge">query</code>를 나타내며, <code class="language-plaintext highlighter-rouge">[i, j]</code> 꼴입니다. <br />
+각 <code class="language-plaintext highlighter-rouge">query</code>마다 순서대로 <code class="language-plaintext highlighter-rouge">arr[i]</code>의 값과 <code class="language-plaintext highlighter-rouge">arr[j]</code>의 값을 서로 바꿉니다. <br />
+위 규칙에 따라 <code class="language-plaintext highlighter-rouge">queries</code>를 처리한 이후의 <code class="language-plaintext highlighter-rouge">arr</code>를 return 하는 solution 함수를 완성해 주세요.</p>
 </blockquote>
 
 <p><br /></p>
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<blockquote class="command-text">
-  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str1</code>, <code class="language-plaintext highlighter-rouge">str2</code>의 길이 ≤ 10</p>
-</blockquote>
 
+<blockquote class="command-text">
+  <p>•. 1 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 길이 ≤ 1,000
+	• 0 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 원소 ≤ 1,000,000
+• 1 ≤ <code class="language-plaintext highlighter-rouge">queries</code>의 길이 ≤ 1,000
+	• 0 ≤ <code class="language-plaintext highlighter-rouge">i</code> &lt; <code class="language-plaintext highlighter-rouge">j</code> &lt; <code class="language-plaintext highlighter-rouge">arr</code>의 길이</p>
+</blockquote>
 <p><br /></p>
 
 <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>입력 #1</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>apple pen
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>출력 #1</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>applepen
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>입력 #2</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>hello World!
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>출력 #2</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>HelloWorld!
-</pre></td></tr></tbody></table></code></div></div>
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>arr</th>
+      <th>queries</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[0, 1, 2, 3, 4]</td>
+      <td>[[0, 3],[1, 2],[1, 4]]</td>
+      <td>[3, 4, 1, 0, 2]</td>
+    </tr>
+  </tbody>
+</table></div>
 
 <p><br /></p>
 
+<h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 각 쿼리에 따라 <code class="language-plaintext highlighter-rouge">arr</code>가 다음과 같이 변합니다.</p>
+</blockquote>
+
+<p>|arr|
+|—|
+|[0, 1, 2, 3, 4]|
+|[3, 1, 2, 0, 4]|
+|[3, 2, 1, 0, 4]|
+|[3, 4, 1, 0, 2]|
+<br />
+<br /></p>
 <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -979,11 +988,15 @@
 3
 4
 5
+6
+7
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">inp</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
-<span class="k">let</span> <span class="p">(</span><span class="nv">s1</span><span class="p">,</span> <span class="nv">s2</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inp</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
@@ -991,22 +1004,94 @@
 
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h4 id="두개의-문자열-더해서-붙이기"><span class="me-2">두개의 문자열 더해서 붙이기</span><a href="#두개의-문자열-더해서-붙이기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<blockquote class="prompt-tip">
-  <p>문자열 + 문자열은 두개의 문자열을 붙여서 출력할 수 있다.
-<code class="language-plaintext highlighter-rouge">"안녕"</code> + <code class="language-plaintext highlighter-rouge">"하세요"</code> = <code class="language-plaintext highlighter-rouge">"안녕하세요"</code></p>
-</blockquote>
 
-<p><br /></p>
-<h4 id="하나의-배열에-넣고-붙이기"><span class="me-2">하나의 배열에 넣고 붙이기</span><a href="#하나의-배열에-넣고-붙이기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<blockquote class="prompt-tip">
-  <p>[“안녕”, “하세요”]</p>
-</blockquote>
+<h4 id="solution-1--기존값을-저장하여-swap-하기-내가-풀어본-방법"><span class="me-2">solution 1 : 기존값을 저장하여 swap 하기 (내가 풀어본 방법)</span><a href="#solution-1--기존값을-저장하여-swap-하기-내가-풀어본-방법" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>만약, 변수 <code class="language-plaintext highlighter-rouge">a</code>와 <code class="language-plaintext highlighter-rouge">b</code> 의 값을 바꾸고 싶은 상황이 생기면, <code class="language-plaintext highlighter-rouge">a</code>의 값을 저장할 변수를 생성해야 한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">var</span> <span class="nv">b</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">var</span> <span class="nv">temp</span> <span class="o">=</span> <span class="n">a</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+먼저, <code class="language-plaintext highlighter-rouge">a</code>에 <code class="language-plaintext highlighter-rouge">b</code>의 값을 넣으면, 기존 <code class="language-plaintext highlighter-rouge">a</code>의 값은 사라지게 된다. 그럼 <code class="language-plaintext highlighter-rouge">b</code>에는 <code class="language-plaintext highlighter-rouge">a</code> 값을 어떻게 넣어야할까?
+이를 방지하기 위해 앞에서 <code class="language-plaintext highlighter-rouge">temp</code> 라는 변수에 <code class="language-plaintext highlighter-rouge">a</code>의 값을 넣어준 것이다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">temp</span> <span class="c1">//temp 는 기존 a 의 값이 들어가 있다.</span>
+
+<span class="c1">//a = 2 , b = 1</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+이를 활용하여 문제를 풀 수 있었다.
+위와 같이, 기존 <code class="language-plaintext highlighter-rouge">arr</code> 값을 저장할 변수를 생성하고, 결과값을 저장할 변수를 생성한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">temp</span> <span class="o">=</span> <span class="n">arr</span>
+<span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">arr</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+이후, queries의 개수만큼 쿼리를 돌려야하니, for 문과 위의 방법을 활용하여 문제를 해결했다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">temp</span> <span class="o">=</span> <span class="n">arr</span>
+<span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">arr</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">queries</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+		<span class="n">temp</span> <span class="o">=</span> <span class="n">result</span>
+		
+		<span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span>
+				
+		<span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
 <br /></p>
 
-<h2 id="answer"><span class="me-2">💡Answer</span><a href="#answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h4 id="solution-2--swapat-활용하기-다른사람-풀이를-공부하기"><span class="me-2">solution 2 : swapAt 활용하기 (다른사람 풀이를 공부하기)</span><a href="#solution-2--swapat-활용하기-다른사람-풀이를-공부하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p><code class="language-plaintext highlighter-rouge">swapAt</code>은 원하는 배열 인덱스의 위치를 바꾸어 주는 함수이다. 이를 활용하면 정말 간단하게 해결이 가능했다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">arr</span> <span class="o">=</span> <span class="n">arr</span>
+<span class="n">queries</span><span class="o">.</span><span class="n">forEach</span> <span class="p">{</span> <span class="n">arr</span><span class="o">.</span><span class="nf">swapAt</span><span class="p">(</span><span class="nv">$0</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nv">$0</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01"><span class="me-2">💡Answer 01</span><a href="#answer-01" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -1021,20 +1106,68 @@
 8
 9
 10
+11
+12
+13
+14
+15
+16
+17
+18
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">inp</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
-<span class="k">let</span> <span class="p">(</span><span class="nv">s1</span><span class="p">,</span> <span class="nv">s2</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inp</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">temp</span> <span class="o">=</span> <span class="n">arr</span>
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">arr</span>
+        
+    <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">queries</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+            <span class="n">temp</span> <span class="o">=</span> <span class="n">result</span>
+            
+            <span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span>
+        
+            <span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="p">}</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">result</span>
+<span class="p">}</span>
 
-<span class="nf">print</span><span class="p">([</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">]</span><span class="o">.</span><span class="nf">joined</span><span class="p">())</span>
-
-<span class="c1">// HelloWorld!</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181946">해당문제 풀러가보기</a></p>
+<p><br /></p>
+<h2 id="answer-02"><span class="me-2">💡Answer 02</span><a href="#answer-02" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
 
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">arr</span> <span class="o">=</span> <span class="n">arr</span>
+    
+    <span class="n">queries</span><span class="o">.</span><span class="n">forEach</span> <span class="p">{</span> <span class="n">arr</span><span class="o">.</span><span class="nf">swapAt</span><span class="p">(</span><span class="nv">$0</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nv">$0</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">arr</span>
+<span class="p">}</span>
+
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181924">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -1090,21 +1223,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(7)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B6%99%EC%97%AC%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%287%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B6%2599%25EC%2597%25AC%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(29)%20-%20%EC%88%98%EC%97%B4%EA%B3%BC%20%EA%B5%AC%EA%B0%84%20%EC%BF%BC%EB%A6%AC%203%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2829%29-%25EC%2588%2598%25EC%2597%25B4%25EA%25B3%25BC-%25EA%25B5%25AC%25EA%25B0%2584-%25EC%25BF%25BC%25EB%25A6%25AC-3%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(7)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B6%99%EC%97%AC%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%287%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B6%2599%25EC%2597%25AC%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(29)%20-%20%EC%88%98%EC%97%B4%EA%B3%BC%20%EA%B5%AC%EA%B0%84%20%EC%BF%BC%EB%A6%AC%203%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2829%29-%25EC%2588%2598%25EC%2597%25B4%25EA%25B3%25BC-%25EA%25B5%25AC%25EA%25B0%2584-%25EC%25BF%25BC%25EB%25A6%25AC-3%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%287%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B6%2599%25EC%2597%25AC%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(7)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B6%99%EC%97%AC%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2829%29-%25EC%2588%2598%25EC%2597%25B4%25EA%25B3%25BC-%25EA%25B5%25AC%25EA%25B0%2584-%25EC%25BF%25BC%25EB%25A6%25AC-3%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(29)%20-%20%EC%88%98%EC%97%B4%EA%B3%BC%20%EA%B5%AC%EA%B0%84%20%EC%BF%BC%EB%A6%AC%203%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1352,271 +1485,271 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1734,6 +1867,7 @@
 
                   01 문제 : flag에 따라 다른 값 반환하기
 
+
 문제 설명
 
 
@@ -1753,7 +1887,7 @@ false면 a - b를 return 하는 solution 함수를 작성해 주세요.
 
 
   
-   ...
+  ...
                 </p>
               </div>
             </div>
@@ -1792,6 +1926,7 @@ false면 a - b를 return 하는 solution 함수를 작성해 주세요.
                   01 문제 : 코드 처리하기
 
 
+
 문제 설명
 
 
@@ -1801,7 +1936,7 @@ code를 앞에서부터 읽으면서 만약 문자가 “1”이면 mode를 바
 
 
 
-  mode는 0과 1이 있으며, idx를 0 부터 code의 길이 - 1 까지 1씩 키워나가면서 code[idx]의 값에...
+  mode는 0과 1이 있으며, idx를 0 부터 code의 길이 - 1 까지 1씩 키워나가면서 code[idx]의 값...
                 </p>
               </div>
             </div>
@@ -1840,13 +1975,14 @@ code를 앞에서부터 읽으면서 만약 문자가 “1”이면 mode를 바
                   01 문제 : 등차수열의 특정한 항만 더하기
 
 
+
 문제 설명
 
 
   두 정수 a, d와 길이가 n인 boolean 배열 included가 주어집니다.
 첫째항이 a, 공차가 d인 등차수열에서 included[i]가 i + 1항을 의미할 때,
 이 등차수열의 1항부터 n항까지 included가 true인 항들만 더한 값을 return
-하는 solution 함...
+하는 solution ...
                 </p>
               </div>
             </div>
@@ -1868,22 +2004,18 @@ code를 앞에서부터 읽으면서 만약 문자가 “1”이면 mode를 바
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)-%EB%8D%A7%EC%85%88%EC%8B%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(28)-%EC%88%98-%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0-2/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기</p>
+      <p>프로그래머스 Swift 코테준비 (28) - 수 조작하기 2</p>
     </a>
   
 
   
-    <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>프로그래머스 Swift 코테준비 (8) -문자열 돌리기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 

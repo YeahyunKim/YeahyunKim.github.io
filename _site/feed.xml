@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-06T16:08:07+09:00</updated>
+  <updated>2024-02-07T15:46:37+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,124 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (29) - 수열과 구간 쿼리 3</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(29)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-3/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (29) - 수열과 구간 쿼리 3" />
+    <published>2024-02-07T00:00:00+09:00</published>
+  
+    <updated>2024-02-07T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(29)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-3/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(29)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-3/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 : 수열과 구간 쿼리 3
+
+
+문제 설명
+
+
+  정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [i, j] 꼴입니다. 
+각 query마다 순서대로 arr[i]의 값과 arr[j]의 값을 서로 바꿉니다. 
+위 규칙에 따라 queries를 처리한 이후의 arr를 return 하는 solution 함수를 완성해 주세요.
+
+
+
+제한사항
+
+
+  •. 1 ≤ arr의 길이 ≤ 1,000
+	• 0 ≤ arr의 원소 ≤ 1,000,000
+• 1 ≤ queries의 길이 ≤ 1,000
+	• 0 ≤ i &amp;lt; j &amp;lt; arr의 길이
+
+
+
+입출력 예
+
+
+  
+    
+      arr
+      queries
+      resul...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (28) - 수 조작하기 2</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(28)-%EC%88%98-%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0-2/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (28) - 수 조작하기 2" />
+    <published>2024-02-06T00:00:00+09:00</published>
+  
+    <updated>2024-02-06T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(28)-%EC%88%98-%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0-2/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(28)-%EC%88%98-%EC%A1%B0%EC%9E%91%ED%95%98%EA%B8%B0-2/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 : 수 조작하기 2
+
+
+문제 설명
+
+
+  정수 배열 numLog가 주어집니다. 처음에 numLog[0]에서 부터 시작해 “w”, “a”, “s”, “d”로 이루어진 문자열을 입력으로 받아 순서대로 다음과 같은 조작을 했다고 합시다. 
+	• “w” : 수에 1을 더한다.
+	• “s” : 수에 1을 뺀다.
+	• “d” : 수에 10을 더한다.
+	• “a” : 수에 10을 뺀다. 
+그리고 매번 조작을 할 때마다 결괏값을 기록한 정수 배열이 numLog입니다. 즉, numLog[i]는 numLog[0]로부터 총 i번의 조작을 가한 결과가 저장되어 있습니다. 
+주어진 정수 배열 numLog에 대해 조작을 위해 입력받은 문자열을 return 하는 solution 함수를 완성해 주세요.
+
+
+
+제한사항
+...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -227,142 +345,6 @@
 
 입출력 예 #1
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (24) - 원소들의 곱과 합</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (24) - 원소들의 곱과 합" />
-    <published>2024-01-31T00:00:00+09:00</published>
-  
-    <updated>2024-02-04T22:27:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 원소들의 곱과 합
-
-
-문제 설명
-
-
-  정수가 담긴 리스트 num_list가 주어질 때, 모든 원소들의 곱이 모든 원소들의 합의 제곱보다 작으면 1을 크면 0을 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  • 2 ≤ num_list의 길이 ≤ 10
-• 1 ≤ num_list의 원소 ≤ 9
-
-
-
-입출력 예
-
-
-  
-    
-      num_list
-      result
-    
-  
-  
-    
-      [3, 4, 5, 2, 1]
-      1
-    
-    
-      [5, 7, 8, 3]
-      0
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 예 #1
-
-
-  • 모든 원소의 곱은 120, 합의 제곱은 225이므로 1을 return합니다....
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (23) - 주사위 게임 2</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (23) - 주사위 게임 2" />
-    <published>2024-01-24T00:00:00+09:00</published>
-  
-    <updated>2024-01-25T22:29:10+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 주사위 게임 2
-
-
-문제 설명
-
-
-  1부터 6까지 숫자가 적힌 주사위가 세 개 있습니다. 세 주사위를 굴렸을 때 나온 숫자를 각각 a, b, c라고 
-했을 때 얻는 점수는 다음과 같습니다.
-	• 세 숫자가 모두 다르다면 a + b + c 점을 얻습니다.
-	• 세 숫자 중 어느 두 숫자는 같고 나머지 다른 숫자는 다르다면 (a + b + c) × (a2 + b2 + c2 )점을 얻습니다.
-	• 세 숫자가 모두 같다면 (a + b + c) × (a2 + b2 + c2 ) × (a3 + b3 + c3 )점을 얻습니다.
-세 정수 a, b, c가 매개변수로 주어질 때, 얻는 점수를 return 하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  • a, b, c는 1이상 6이하의 ...
     </summary>
   
 
