@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-07T15:46:37+09:00</updated>
+  <updated>2024-02-07T16:15:22+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,62 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (30) - 수열과 구간 쿼리 2</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(30)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-2/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (30) - 수열과 구간 쿼리 2" />
+    <published>2024-02-07T00:00:00+09:00</published>
+  
+    <updated>2024-02-07T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(30)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-2/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(30)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-2/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 : 수열과 구간 쿼리 2
+
+
+문제 설명
+
+
+  정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타나며, [s, e, k] 꼴입니다. 
+각 query마다 순서대로 s ≤. i ≤ e인 모든 i에 대해 k보다 크면서 가장 작은 arr[i]를 찾습니다.
+각 쿼리의 순서에 맞게 답을 저장한 배열을 반환하는 solution 함수를 완성해 주세요.
+단, 특정 쿼리의 답이 존재하지 않으면 -1을 저장합니다.
+
+
+
+제한사항
+
+
+  • 1 ≤ arr의 길이 ≤ 1,000
+	• 0 ≤ arr의 원소 ≤ 1,000,000
+• 1 ≤ queries의 길이 ≤ 1,000
+	• 0 ≤ s ≤ e &amp;lt; arr의 길이
+	• 0 ≤ k ≤ 1,000,...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -54,7 +110,8 @@
 문제 설명
 
 
-  정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [i, j] 꼴입니다. 
+  정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며,
+ [i, j] 꼴입니다. 
 각 query마다 순서대로 arr[i]의 값과 arr[j]의 값을 서로 바꿉니다. 
 위 규칙에 따라 queries를 처리한 이후의 arr를 return 하는 solution 함수를 완성해 주세요.
 
@@ -77,7 +134,7 @@
     
       arr
       queries
-      resul...
+      resu...
     </summary>
   
 
@@ -264,87 +321,6 @@
 
 
 입출...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (25) - 이어 붙인 수</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(25)-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%9D%B8-%EC%88%98/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (25) - 이어 붙인 수" />
-    <published>2024-01-31T00:00:00+09:00</published>
-  
-    <updated>2024-02-04T22:27:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(25)-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%9D%B8-%EC%88%98/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(25)-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%9D%B8-%EC%88%98/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 이어 붙인 수
-
-
-문제 설명
-
-
-  정수가 담긴 리스트 num_list가 주어집니다. num_list의 홀수만 순서대로 이어 붙인 수와 짝수만 순서대로 이어 붙인 수의 합을 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  • 2 ≤ num_list의 길이 ≤ 10
-• 1 ≤ num_list의 원소 ≤ 9
-• num_list에는 적어도 한 개씩의 짝수와 홀수가 있습니다.
-
-
-
-입출력 예
-
-
-  
-    
-      num_list
-      result
-    
-  
-  
-    
-      [3, 4, 5, 2, 1]
-      393
-    
-    
-      [5, 7, 8, 3]
-      581
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 예 #1
-...
     </summary>
   
 

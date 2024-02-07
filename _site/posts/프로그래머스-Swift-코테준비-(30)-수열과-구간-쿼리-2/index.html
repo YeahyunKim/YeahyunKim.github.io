@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Swift 코테준비 (21) - 코드 처리하기" />
+<meta property="og:title" content="프로그래머스 Swift 코테준비 (30) - 수열과 구간 쿼리 2" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="01 문제 : 코드 처리하기" />
-<meta property="og:description" content="01 문제 : 코드 처리하기" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(21)-%EC%BD%94%EB%93%9C-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(21)-%EC%BD%94%EB%93%9C-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/" />
+<meta name="description" content="01 문제 : 수열과 구간 쿼리 2" />
+<meta property="og:description" content="01 문제 : 수열과 구간 쿼리 2" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(30)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-2/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(30)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-2/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-24T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-02-07T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
-<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (21) - 코드 처리하기" />
+<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (30) - 수열과 구간 쿼리 2" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-29T19:39:00+09:00","datePublished":"2024-01-24T00:00:00+09:00","description":"01 문제 : 코드 처리하기","headline":"프로그래머스 Swift 코테준비 (21) - 코드 처리하기","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(21)-%EC%BD%94%EB%93%9C-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(21)-%EC%BD%94%EB%93%9C-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-02-07T00:00:00+09:00","datePublished":"2024-02-07T00:00:00+09:00","description":"01 문제 : 수열과 구간 쿼리 2","headline":"프로그래머스 Swift 코테준비 (30) - 수열과 구간 쿼리 2","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(30)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-2/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(30)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-2/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Swift 코테준비 (21) - 코드 처리하기 | Yeahyun Kim
+  <title>프로그래머스 Swift 코테준비 (30) - 수열과 구간 쿼리 2 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>프로그래머스 Swift 코테준비 (21) - 코드 처리하기</span>
+              <span>프로그래머스 Swift 코테준비 (30) - 수열과 구간 쿼리 2</span>
             
 
           
@@ -778,6 +778,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -797,7 +808,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (21) - 코드 처리하기</h1>
+    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (30) - 수열과 구간 쿼리 2</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -813,41 +824,18 @@
 
 <time
   
-  data-ts="1706022000"
+  data-ts="1707231600"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 24, 2024
+  Feb  7, 2024
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1706524740"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Jan 29, 2024
-</time>
-
-        </span>
       
 
       
@@ -899,7 +887,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="601 words"
+  title="575 words"
 >
   <em>3 min</em> read</span>
 
@@ -910,146 +898,64 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제--코드-처리하기"><span class="me-2">01 문제 : 코드 처리하기</span><a href="#01-문제--코드-처리하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제--수열과-구간-쿼리-2"><span class="me-2">01 문제 : 수열과 구간 쿼리 2</span><a href="#01-문제--수열과-구간-쿼리-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <hr />
 <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>문자열 <code class="language-plaintext highlighter-rouge">code</code>가 주어집니다.<br />
-<code class="language-plaintext highlighter-rouge">code</code>를 앞에서부터 읽으면서 만약 문자가 “1”이면 <code class="language-plaintext highlighter-rouge">mode</code>를 바꿉니다. <code class="language-plaintext highlighter-rouge">mode</code>에 따라
- <code class="language-plaintext highlighter-rouge">code</code>를 읽어가면서 문자열 <code class="language-plaintext highlighter-rouge">ret</code>을 만들어냅니다.</p>
-</blockquote>
-
-<blockquote class="command-text">
-  <p><code class="language-plaintext highlighter-rouge">mode</code>는 0과 1이 있으며, <code class="language-plaintext highlighter-rouge">idx</code>를 0 부터 <code class="language-plaintext highlighter-rouge">code의 길이 - 1</code> 까지 1씩 키워나가면서 <code class="language-plaintext highlighter-rouge">code[idx]</code>의 값에 따라 다음과 같이 행동합니다.<br />
-	• <code class="language-plaintext highlighter-rouge">mode</code>가 0일 때
-	    • <code class="language-plaintext highlighter-rouge">code[idx]</code>가 “1”이 아니면 <code class="language-plaintext highlighter-rouge">idx</code>가 짝수일 때만 <code class="language-plaintext highlighter-rouge">ret</code>의 맨 뒤에 <code class="language-plaintext highlighter-rouge">code[idx]</code>를 추가합니다.
-	    • <code class="language-plaintext highlighter-rouge">code[idx]</code>가 “1”이면 <code class="language-plaintext highlighter-rouge">mode</code>를 0에서 1로 바꿉니다.
-	• <code class="language-plaintext highlighter-rouge">mode</code>가 1일 때
-	    • <code class="language-plaintext highlighter-rouge">code[idx]</code>가 “1”이 아니면 <code class="language-plaintext highlighter-rouge">idx</code>가 홀수일 때만 <code class="language-plaintext highlighter-rouge">ret</code>의 맨 뒤에 <code class="language-plaintext highlighter-rouge">code[idx]</code>를 추가합니다.
-	    • <code class="language-plaintext highlighter-rouge">code[idx]</code>가 “1”이면 <code class="language-plaintext highlighter-rouge">mode</code>를 1에서 0으로 바꿉니다.<br />
-문자열 <code class="language-plaintext highlighter-rouge">code</code>를 통해 만들어진 문자열 <code class="language-plaintext highlighter-rouge">ret</code>를 return 하는 solution 함수를 
-완성해 주세요.<br />
-단, 시작할 때 <code class="language-plaintext highlighter-rouge">mode</code>는 0이며, return 하려는 <code class="language-plaintext highlighter-rouge">ret</code>가 만약 빈 문자열이라면 
-대신 “EMPTY”를 return 합니다.</p>
+  <p>정수 배열 <code class="language-plaintext highlighter-rouge">arr</code>와 2차원 정수 배열 <code class="language-plaintext highlighter-rouge">queries</code>이 주어집니다. <code class="language-plaintext highlighter-rouge">queries</code>의 원소는 각각 하나의 <code class="language-plaintext highlighter-rouge">query</code>를 나타나며, <code class="language-plaintext highlighter-rouge">[s, e, k]</code> 꼴입니다. <br />
+각 <code class="language-plaintext highlighter-rouge">query</code>마다 순서대로 <code class="language-plaintext highlighter-rouge">s</code> ≤. <code class="language-plaintext highlighter-rouge">i</code> ≤ <code class="language-plaintext highlighter-rouge">e</code>인 모든 <code class="language-plaintext highlighter-rouge">i</code>에 대해 <code class="language-plaintext highlighter-rouge">k</code>보다 크면서 가장 작은 <code class="language-plaintext highlighter-rouge">arr[i]</code>를 찾습니다.
+각 쿼리의 순서에 맞게 답을 저장한 배열을 반환하는 solution 함수를 완성해 주세요.<br />
+단, 특정 쿼리의 답이 존재하지 않으면 -1을 저장합니다.</p>
 </blockquote>
 
 <p><br /></p>
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">code</code>의 길이 ≤ 100,000
-    • <code class="language-plaintext highlighter-rouge">code</code>는 알파벳 소문자 또는 “1”로 이루어진 문자열입니다.</p>
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 길이 ≤ 1,000
+	• 0 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 원소 ≤ 1,000,000
+• 1 ≤ <code class="language-plaintext highlighter-rouge">queries</code>의 길이 ≤ 1,000
+	• 0 ≤ <code class="language-plaintext highlighter-rouge">s</code> ≤ <code class="language-plaintext highlighter-rouge">e</code> &lt; <code class="language-plaintext highlighter-rouge">arr</code>의 길이
+	• 0 ≤ <code class="language-plaintext highlighter-rouge">k</code> ≤ 1,000,000</p>
 </blockquote>
-
 <p><br /></p>
+
 <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>code</th>
+      <th>arr</th>
+      <th>queries</th>
       <th>result</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>“abc1abc1abc”</td>
-      <td>“acbac”</td>
+      <td>[0, 1, 2, 4, 3]</td>
+      <td>[[0, 4, 2],[0, 3, 2],[0, 2, 2]]</td>
+      <td>[3, 4, -1]</td>
     </tr>
   </tbody>
 </table></div>
 
 <p><br /></p>
+
 <h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
 <blockquote class="command-text">
-  <p>입출력 예 #1
-	• 예제 1번에서 <code class="language-plaintext highlighter-rouge">flag</code>가 true이므로 <code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code> = (-4) + 7 = 3을 return 합니다.</p>
+  <p>• 첫 번째 쿼리의 범위에는 0, 1, 2, 4, 3이 있으며 이 중 2보다 크면서 가장 작은 값은 3입니다.
+• 두 번째 쿼리의 범위에는 0, 1, 2, 4가 있으며 이 중 2보다 크면서 가장 작은 값은 4입니다.
+• 세 번째 쿼리의 범위에는 0, 1, 2가 있으며 여기에는 2보다 큰 값이 없습니다.
+• 따라서 [3, 4, -1]을 return 합니다.</p>
 </blockquote>
 
-<div class="table-wrapper"><table>
-  <thead>
-    <tr>
-      <th>i</th>
-      <th>code[i]</th>
-      <th>mode</th>
-      <th>ret</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>“a”</td>
-      <td>0</td>
-      <td>“a”</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>“b”</td>
-      <td>0</td>
-      <td>“a”</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>“c”</td>
-      <td>0</td>
-      <td>“ac”</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>“1”</td>
-      <td>1</td>
-      <td>“ac”</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>“a”</td>
-      <td>1</td>
-      <td>“ac”</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>“b”</td>
-      <td>1</td>
-      <td>“acb”</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>“c”</td>
-      <td>1</td>
-      <td>“acb”</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>“1”</td>
-      <td>0</td>
-      <td>“acb”</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>“a”</td>
-      <td>0</td>
-      <td>“acba”</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>“b”</td>
-      <td>0</td>
-      <td>“acba”</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>“c”</td>
-      <td>0</td>
-      <td>“acbac”</td>
-    </tr>
-  </tbody>
-</table></div>
-
-<p><br /></p>
-
+<p><br />
+<br /></p>
 <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -1063,24 +969,64 @@
 7
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">code</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
     
-    <span class="k">return</span> <span class="s">""</span>
+    <span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
 <br /></p>
+
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 
-<p>해당 문제는지문을 읽으면서 조건문을 활용해 코드를 작성하며 풀어보았다.</p>
+<h4 id="solution-1--map--filter-를이용하여-풀어보기"><span class="me-2">solution 1 : map,  filter 를이용하여 풀어보기</span><a href="#solution-1--map--filter-를이용하여-풀어보기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>먼저, <code class="language-plaintext highlighter-rouge">queries</code> 의 개수 만큼 쿼리를 작동시켜야 하므로, 아래와 같이 작성했다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">queries</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">i</span> <span class="k">in</span> 
+	 <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">...</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+이후, filter를 활용해, 모든 <code class="language-plaintext highlighter-rouge">i</code>에 대해 <code class="language-plaintext highlighter-rouge">k</code>보다 크면서 가장 작은 <code class="language-plaintext highlighter-rouge">arr[i]</code>를 필터해 주었다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">queries</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="n">i</span> <span class="k">in</span>
+	<span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">...</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="nv">$0</span> <span class="o">&gt;</span> <span class="n">i</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">}</span><span class="o">.</span><span class="nf">min</span><span class="p">()</span>
+<span class="p">}</span>
+<span class="c1">//a = 2 , b = 1</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+이후 정답이 없는 경우에는 <code class="language-plaintext highlighter-rouge">-1</code> 을 return 하도록 작성하였다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">queries</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="n">i</span> <span class="k">in</span>
+	<span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">...</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="nv">$0</span> <span class="o">&gt;</span> <span class="n">i</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">}</span><span class="o">.</span><span class="nf">min</span><span class="p">()</span> <span class="p">??</span> <span class="o">-</span><span class="mi">1</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
 <br /></p>
-
-<h2 id="answer"><span class="me-2">💡Answer</span><a href="#answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="answer-01"><span class="me-2">💡Answer 01</span><a href="#answer-01" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -1097,62 +1043,24 @@
 10
 11
 12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
- <span class="k">var</span> <span class="nv">ret</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]()</span>
-    <span class="k">var</span> <span class="nv">mode</span> <span class="o">=</span> <span class="kc">false</span>
-    <span class="k">let</span> <span class="nv">codeArray</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">code</span><span class="p">)</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
     
     
-    <span class="k">for</span> <span class="n">idx</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">code</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="n">mode</span> <span class="o">==</span> <span class="kc">false</span> <span class="p">{</span>
-            <span class="k">if</span> <span class="n">codeArray</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">!=</span> <span class="s">"1"</span> <span class="p">{</span>
-                <span class="k">if</span> <span class="n">idx</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
-                    <span class="n">ret</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">codeArray</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
-                <span class="p">}</span>
-            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                <span class="n">mode</span> <span class="o">=</span> <span class="kc">true</span>
-            <span class="p">}</span>            
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="k">if</span> <span class="n">codeArray</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">!=</span> <span class="s">"1"</span> <span class="p">{</span>
-                <span class="k">if</span> <span class="n">idx</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">{</span>
-                    <span class="n">ret</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">codeArray</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
-                <span class="p">}</span>
-            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-                <span class="n">mode</span> <span class="o">=</span> <span class="kc">false</span>
-            <span class="p">}</span>         
-        <span class="p">}</span>     
+    <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">queries</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="n">i</span> <span class="k">in</span>
+        <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">...</span><span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="nv">$0</span> <span class="o">&gt;</span> <span class="n">i</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="p">}</span><span class="o">.</span><span class="nf">min</span><span class="p">()</span> <span class="p">??</span> <span class="o">-</span><span class="mi">1</span>
     <span class="p">}</span>
     
-    <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span> <span class="o">==</span> <span class="s">""</span> <span class="p">?</span> <span class="s">"EMPTY"</span> <span class="p">:</span> <span class="kt">String</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span>
     
+    <span class="k">return</span> <span class="n">result</span>
 <span class="p">}</span>
-<span class="c1">// 0</span>
-
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181932">해당문제 풀러가보기</a></p>
+<p><br />
+<br /></p>
 
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181923">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -1208,21 +1116,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(21)%20-%20%EC%BD%94%EB%93%9C%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2821%29-%25EC%25BD%2594%25EB%2593%259C-%25EC%25B2%2598%25EB%25A6%25AC%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(30)%20-%20%EC%88%98%EC%97%B4%EA%B3%BC%20%EA%B5%AC%EA%B0%84%20%EC%BF%BC%EB%A6%AC%202%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2830%29-%25EC%2588%2598%25EC%2597%25B4%25EA%25B3%25BC-%25EA%25B5%25AC%25EA%25B0%2584-%25EC%25BF%25BC%25EB%25A6%25AC-2%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(21)%20-%20%EC%BD%94%EB%93%9C%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2821%29-%25EC%25BD%2594%25EB%2593%259C-%25EC%25B2%2598%25EB%25A6%25AC%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(30)%20-%20%EC%88%98%EC%97%B4%EA%B3%BC%20%EA%B5%AC%EA%B0%84%20%EC%BF%BC%EB%A6%AC%202%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2830%29-%25EC%2588%2598%25EC%2597%25B4%25EA%25B3%25BC-%25EA%25B5%25AC%25EA%25B0%2584-%25EC%25BF%25BC%25EB%25A6%25AC-2%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2821%29-%25EC%25BD%2594%25EB%2593%259C-%25EC%25B2%2598%25EB%25A6%25AC%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(21)%20-%20%EC%BD%94%EB%93%9C%20%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2830%29-%25EC%2588%2598%25EC%2597%25B4%25EA%25B3%25BC-%25EA%25B5%25AC%25EA%25B0%2584-%25EC%25BF%25BC%25EB%25A6%25AC-2%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(30)%20-%20%EC%88%98%EC%97%B4%EA%B3%BC%20%EA%B5%AC%EA%B0%84%20%EC%BF%BC%EB%A6%AC%202%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1470,115 +1378,115 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1834,6 +1742,55 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(21)-%EC%BD%94%EB%93%9C-%EC%B2%98%EB%A6%AC%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1706022000"
+  data-df="ll"
+  
+>
+  Jan 24, 2024
+</time>
+
+              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (21) - 코드 처리하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  01 문제 : 코드 처리하기
+
+
+
+문제 설명
+
+
+  문자열 code가 주어집니다.
+code를 앞에서부터 읽으면서 만약 문자가 “1”이면 mode를 바꿉니다. mode에 따라
+ code를 읽어가면서 문자열 ret을 만들어냅니다.
+
+
+
+  mode는 0과 1이 있으며, idx를 0 부터 code의 길이 - 1 까지 1씩 키워나가면서 code[idx]의 값...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(22)-%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98-%ED%8A%B9%EC%A0%95%ED%95%9C-%ED%95%AD%EB%A7%8C-%EB%8D%94%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -1865,13 +1822,14 @@
                   01 문제 : 등차수열의 특정한 항만 더하기
 
 
+
 문제 설명
 
 
   두 정수 a, d와 길이가 n인 boolean 배열 included가 주어집니다.
 첫째항이 a, 공차가 d인 등차수열에서 included[i]가 i + 1항을 의미할 때,
 이 등차수열의 1항부터 n항까지 included가 true인 항들만 더한 값을 return
-하는 solution 함...
+하는 solution ...
                 </p>
               </div>
             </div>
@@ -1910,68 +1868,14 @@
                   01 문제 : 주사위 게임 2
 
 
+
 문제 설명
 
 
   1부터 6까지 숫자가 적힌 주사위가 세 개 있습니다. 세 주사위를 굴렸을 때 나온 숫자를 각각 a, b, c라고 
 했을 때 얻는 점수는 다음과 같습니다.
 	• 세 숫자가 모두 다르다면 a + b + c 점을 얻습니다.
-	• 세 숫자 중 어느 두 숫자는 같고 나머지 다른 숫자는 다르다면 (a + b +...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1706626800"
-  data-df="ll"
-  
->
-  Jan 31, 2024
-</time>
-
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (24) - 원소들의 곱과 합</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  01 문제 : 원소들의 곱과 합
-
-
-문제 설명
-
-
-  정수가 담긴 리스트 num_list가 주어질 때, 모든 원소들의 곱이 모든 원소들의 합의 제곱보다 작으면 1을 크면 0을 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  • 2 ≤ num_list의 길이 ≤ 10
-• 1 ≤ num_list의 원소 ≤ 9
-
-
-
-입출력 예
-...
+	• 세 숫자 중 어느 두 숫자는 같고 나머지 다른 숫자는 다르다면 (a + b ...
                 </p>
               </div>
             </div>
@@ -1993,22 +1897,18 @@
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(20)-flag%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(29)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-3/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기</p>
+      <p>프로그래머스 Swift 코테준비 (29) - 수열과 구간 쿼리 3</p>
     </a>
   
 
   
-    <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(22)-%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98-%ED%8A%B9%EC%A0%95%ED%95%9C-%ED%95%AD%EB%A7%8C-%EB%8D%94%ED%95%98%EA%B8%B0/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>프로그래머스 Swift 코테준비 (22) - 등차수열의 특정한 항만 더하기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
