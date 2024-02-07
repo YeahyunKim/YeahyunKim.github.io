@@ -1,8 +1,8 @@
 [
   
   {
-    "title": "프로그래머스 Swift 코테준비 (30) - 수열과 구간 쿼리 2",
-    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(30)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-2/",
+    "title": "프로그래머스 Swift 코테준비 (31) - 수열과 구간 쿼리 4",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(31)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-4/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
     "date": "2024-02-07 00:00:00 +0900",
@@ -13,8 +13,8 @@
 
 
     
-    "snippet": "01 문제 : 수열과 구간 쿼리 2문제 설명  정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타나며, [s, e, k] 꼴입니다. 각 query마다 순서대로 s ≤. i ≤ e인 모든 i에 대해 k보다 크면서 가장 작은 arr[i]를 찾습니다.각 쿼리의 순서에 맞게 답을 저장한 배열...",
-    "content": "01 문제 : 수열과 구간 쿼리 2문제 설명  정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타나며, [s, e, k] 꼴입니다. 각 query마다 순서대로 s ≤. i ≤ e인 모든 i에 대해 k보다 크면서 가장 작은 arr[i]를 찾습니다.각 쿼리의 순서에 맞게 답을 저장한 배열을 반환하는 solution 함수를 완성해 주세요.단, 특정 쿼리의 답이 존재하지 않으면 -1을 저장합니다.제한사항  • 1 ≤ arr의 길이 ≤ 1,000\t• 0 ≤ arr의 원소 ≤ 1,000,000• 1 ≤ queries의 길이 ≤ 1,000\t• 0 ≤ s ≤ e &lt; arr의 길이\t• 0 ≤ k ≤ 1,000,000입출력 예            arr      queries      result                  [0, 1, 2, 4, 3]      [[0, 4, 2],[0, 3, 2],[0, 2, 2]]      [3, 4, -1]      입출력 예 설명입출력 예 #1  • 첫 번째 쿼리의 범위에는 0, 1, 2, 4, 3이 있으며 이 중 2보다 크면서 가장 작은 값은 3입니다.• 두 번째 쿼리의 범위에는 0, 1, 2, 4가 있으며 이 중 2보다 크면서 가장 작은 값은 4입니다.• 세 번째 쿼리의 범위에는 0, 1, 2가 있으며 여기에는 2보다 큰 값이 없습니다.• 따라서 [3, 4, -1]을 return 합니다.제시 코드import Foundationfunc solution(_ arr:[Int], _ queries:[[Int]]) -&gt; [Int] {        return [0]    }02 풀이solution 1 : \bmap,  filter 를이용하여 풀어보기먼저, queries 의 개수 만큼 쿼리를 작동시켜야 하므로, 아래와 같이 작성했다.let result = queries.map { i in \t arr[i[0]...i[1]]}이후, filter를 활용해, 모든 i에 대해 k보다 크면서 가장 작은 arr[i]를 필터해 주었다.let result = queries.map{ i in\tarr[i[0]...i[1]].filter{ $0 &gt; i[2] }.min()}//a = 2 , b = 1이후 정답이 없는 경우에는 -1 을 return 하도록 작성하였다.let result = queries.map{ i in\tarr[i[0]...i[1]].filter{ $0 &gt; i[2] }.min() ?? -1}💡Answer 01import Foundationfunc solution(_ arr:[Int], _ queries:[[Int]]) -&gt; [Int] {            let result = queries.map{ i in        arr[i[0]...i[1]].filter{ $0 &gt; i[2] }.min() ?? -1    }            return result}해당문제 풀러가보기"
+    "snippet": "01 문제 : 수열과 구간 쿼리 2문제 설명  정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [s, e, k] 꼴입니다.각 query마다 순서대로 s ≤ i ≤ e인 모든 i에 대해 i가 k의 배수이면 arr[i]에 1을 더합니다.위 규칙에 따라 queries를 처리한 이후...",
+    "content": "01 문제 : 수열과 구간 쿼리 2문제 설명  정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [s, e, k] 꼴입니다.각 query마다 순서대로 s ≤ i ≤ e인 모든 i에 대해 i가 k의 배수이면 arr[i]에 1을 더합니다.위 규칙에 따라 queries를 처리한 이후의 arr를 return 하는 solution 함수를 완성해 주세요.제한사항  • 1 ≤ arr의 길이 ≤ 1,000\t• 0 ≤ arr의 원소 ≤ 1,000,000• 1 ≤ queries의 길이 ≤ 1,000\t• 0 ≤ s ≤ e &lt; arr의 길이\t• 0 ≤ k ≤ 5입출력 예            arr      queries      result                  [0, 1, 2, 4, 3]      [[0, 4, 1],[0, 3, 2],[0, 3, 3]]      [3, 2, 4, 6, 4]      입출력 예 설명입출력 예 #1  • 각 쿼리에 따라 arr가 다음과 같이 변합니다.            arr                  [0, 1, 2, 4, 3]              [1, 2, 3, 5, 4]              [2, 2, 4, 5, 4]              [3, 2, 4, 6, 4]      제시 코드import Foundationfunc solution(_ arr:[Int], _ queries:[[Int]]) -&gt; [Int] {        return [0]    }02 풀이solution 1 : \bmap을 이용하여 풀기먼저, queries 의 개수 만큼 쿼리를 실행시켜야 하므로, 아래와 같이 작성했다.var result = arrqueries.map {}이후, \bmap안에 변수 s, e, k를 생성하여 각각 값을 할당해 주었다.var result = arrqueries.map {\tlet (s, e, k) = ($0[0], $0[1], $0[2])}for 문을 통해, s 부터 e 까지의 값을 순차적으로 내보내주고, i % k == 0 을 통해 i가 k 의 배수인지 확인하는 조건문을 통해 result[i]에 1값을 추가해준다.var result = arrqueries.map {\tlet (s, e, k) = ($0[0], $0[1], $0[2])\t\tfor i in s...e {\t\tif i % k == 0 {\t\t\tresult[i] += 1\t\t}\t}}return result    💡Answer 01import Foundationfunc solution(_ arr:[Int], _ queries:[[Int]]) -&gt; [Int] {        var result = arr        queries.map {        let (s, e, k) = ($0[0], $0[1], $0[2])                for i in s...e {            if i % k == 0 {                result[i] += 1            }        }    }    return result}해당문제 풀러가보기"
   },
   
   {
