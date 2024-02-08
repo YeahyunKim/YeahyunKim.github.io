@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (35) - 배열 만들기 4.md",
+                "file": "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (36) - 간단한 논리 연산.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (35) - 배열 만들기 4.md",
+                "file": "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (36) - 간단한 논리 연산.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (35) - 배열 만들기 4.md",
+                "file": "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (36) - 간단한 논리 연산.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (35) - 배열 만들기 4.md"
+                "file": "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (36) - 간단한 논리 연산.md"
               }
             }
           }
@@ -148,8 +148,11 @@
   },
   "active": "6fc8dce851240483",
   "lastOpenFiles": [
-    "_posts/2024-02-07- 프로그래머스 Swift 코테준비 (34) - 콜라츠 수열 만들기.md",
+    "_site/posts/프로그래머스-Swift-코테준비-(36)-간단한-논리-연산/index.html",
+    "_site/posts/프로그래머스-Swift-코테준비-(36)-간단한-논리-연산",
     "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (35) - 배열 만들기 4.md",
+    "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (36) - 간단한 논리 연산.md",
+    "_posts/2024-02-07- 프로그래머스 Swift 코테준비 (34) - 콜라츠 수열 만들기.md",
     "_site/posts/프로그래머스-Swift-코테준비-(35)-배열-만들기-4/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(35)-배열-만들기-4",
     "_site/posts/프로그래머스-Swift-코테준비-(34)-콜라츠-수열-만들기/index.html",
@@ -160,7 +163,6 @@
     "_site/posts/프로그래머스-Swift-코테준비-(33)-카운트-업/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(33)-카운트-업",
     "_site/posts/프로그래머스-Swift-코테준비-(32)-배열-만들기-2-1/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(32)-배열-만들기-2-1",
     "_posts/2024-02-07- 프로그래머스 Swift 코테준비 (32) - 배열 만들기 2.md",
     "_posts/2024-02-07- 프로그래머스 Swift 코테준비 (31) - 수열과 구간 쿼리 4.md",
     "_posts/2024-02-07- 프로그래머스 Swift 코테준비 (30) - 수열과 구간 쿼리 2.md",
@@ -181,7 +183,6 @@
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (8) - 문자열 돌리기.md",
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (9) - 홀짝 구분하기.md",
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (10) - 문자열 겹쳐쓰기.md",
-    "_posts/2024-01-14- 프로그래머스 Swift 코테준비 (11) - 문자열 섞기.md",
-    "_posts/2024-01-14- 프로그래머스 Swift 코테준비 (12) - 문자 리스트를 문자열로 변환하기.md"
+    "_posts/2024-01-14- 프로그래머스 Swift 코테준비 (11) - 문자열 섞기.md"
   ]
 }

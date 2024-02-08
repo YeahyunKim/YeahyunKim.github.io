@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-08T17:13:46+09:00</updated>
+  <updated>2024-02-08T17:30:38+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -20,8 +20,87 @@
 
   
   <entry>
-    <title>프로그래머스 Swift 코테준비 (34) - 배열 만들기 4</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(35)-%EB%B0%B0%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0-4/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (34) - 배열 만들기 4" />
+    <title>프로그래머스 Swift 코테준비 (36) - 간단한 논리 연산</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(36)-%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (36) - 간단한 논리 연산" />
+    <published>2024-02-08T00:00:00+09:00</published>
+  
+    <updated>2024-02-08T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(36)-%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(36)-%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%85%BC%EB%A6%AC-%EC%97%B0%EC%82%B0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 : 간단한 논리 연산
+
+
+문제 설명
+
+
+  boolean 변수 x1, x2, x3, x4가 매개변수로 주어질 때, 다음의 식의 true/false를 return 하는 solution 함수를 작성해 주세요. 
+	• (x1 ∨ x2) ∧ (x3 ∨ x4)
+
+
+
+제한사항
+
+
+  • 1 ≤ arr의 길이 ≤ 100,000
+	• 1 ≤ arr의 원소 ≤ 100,000
+
+
+
+입출력 예
+
+
+  
+    
+      x1
+      x2
+      x3
+      x4
+      result
+    
+  
+  
+    
+      false
+      true
+      true
+      true
+      true
+    
+    
+      true
+      false
+      false
+    ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (35) - 배열 만들기 4</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(35)-%EB%B0%B0%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0-4/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (35) - 배열 만들기 4" />
     <published>2024-02-08T00:00:00+09:00</published>
   
     <updated>2024-02-08T00:00:00+09:00</updated>
@@ -293,70 +372,6 @@
 입출력 예 설명
 
 입출력 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (31) - 수열과 구간 쿼리 4</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(31)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-4/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (31) - 수열과 구간 쿼리 4" />
-    <published>2024-02-07T00:00:00+09:00</published>
-  
-    <updated>2024-02-07T16:44:08+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(31)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-4/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(31)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-4/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 수열과 구간 쿼리 4
-
-
-문제 설명
-
-
-  정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [s, e, k] 꼴입니다. 
-각 query마다 순서대로 s ≤ i ≤ e인 모든 i에 대해 i가 k의 배수이면 arr[i]에 1을 더합니다. 
-위 규칙에 따라 queries를 처리한 이후의 arr를 return 하는 solution 함수를 완성해 주세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ arr의 길이 ≤ 1,000
-	• 0 ≤ arr의 원소 ≤ 1,000,000
-• 1 ≤ queries의 길이 ≤ 1,000
-	• 0 ≤ s ≤ e &amp;lt; arr의 길이
-	• 0 ≤ k ≤ 5
-
-
-
-입출력 예
-
-
-  
-    
-      ...
     </summary>
   
 
