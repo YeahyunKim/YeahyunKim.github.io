@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (43) - 문자열 뒤의 n글자",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(43)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%92%A4%EC%9D%98-n%EA%B8%80%EC%9E%90/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-13 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 문자열 뒤의 n글자문제 설명  문자열 my_string과 정수 n이 매개변수로 주어질 때, my_string의 뒤의 n글자로 이루어진 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • my_string은 숫자와 알파벳으로 이루어져 있습니다.• 1 ≤ my_string의 길이 ≤ 1,000• 1 ≤ n ≤ my...",
+    "content": "01 문제 : 문자열 뒤의 n글자문제 설명  문자열 my_string과 정수 n이 매개변수로 주어질 때, my_string의 뒤의 n글자로 이루어진 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • my_string은 숫자와 알파벳으로 이루어져 있습니다.• 1 ≤ my_string의 길이 ≤ 1,000• 1 ≤ n ≤ my_string의 길이입출력 예            my_string      n      result                  “ProgrammerS123”      11      “grammerS123”              “He110W0r1d”      5      “W0r1d”      입출력 예 설명입출력 예 #1  • 예제 1번의 my_string에서 뒤의 11글자는 “grammerS123”이므로 이 문자열을 return 합니다.입출력 예 #2  • 예제 2번의 my_string에서 뒤의 5글자는 “W0r1d”이므로 이 문자열을 return 합니다.제시 코드import Foundationfunc solution(_ my_string:String, _ n:Int) -&gt; String {        return \"\"    }02 풀이solution 1 : \bdropFirst 활용하기dropFirst는 dropFirst( _ k: Int) 로 활용할 수 있는데, 문자열의 요소를 앞에서부터 파라미터 값만큼 버려준다. 그럼 여기서 제공된 정수 n의 값이 11이라고 가정했을때, 전체 문자열 개수 - 11 을 해주면 해당 문제에서 버릴 만큼의 값을 구할 수 있다.my_string.dropFirst(my_string.count - n)이어서 dropFirst 는 문자열을 string 에서 subString 으로 형변환이 이루어지기 때문에, 다시 문자열로 형변환을 해주어야한다.String(my_string.dropFirst(my_string.count - n))💡Answer 01import Foundationfunc solution(_ my_string:String, _ n:Int) -&gt; String {        return String(my_string.dropFirst(my_string.count - n))    }해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (42) - 부분 문자열 이어 붙여 문자열 만들기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(42)-%EB%B6%80%EB%B6%84-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%97%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/",
     "categories": "Programmers, 기초",
