@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기" />
+<meta property="og:title" content="프로그래머스 Swift 코테준비 (44) - 접미사 배열" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="01 문제 : 문자열 붙여서 출력하기 문제 설명" />
-<meta property="og:description" content="01 문제 : 문자열 붙여서 출력하기 문제 설명" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
+<meta name="description" content="01 문제 : 접미사 배열" />
+<meta property="og:description" content="01 문제 : 접미사 배열" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(44)-%EC%A0%91%EB%AF%B8%EC%82%AC-%EB%B0%B0%EC%97%B4/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(44)-%EC%A0%91%EB%AF%B8%EC%82%AC-%EB%B0%B0%EC%97%B4/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-11T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-02-13T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
-<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기" />
+<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (44) - 접미사 배열" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-02-12T17:46:17+09:00","datePublished":"2024-01-11T00:00:00+09:00","description":"01 문제 : 문자열 붙여서 출력하기 문제 설명","headline":"프로그래머스 Swift 코테준비 (7) -\b문자열 붙여서 출력하기","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-02-13T00:00:00+09:00","datePublished":"2024-02-13T00:00:00+09:00","description":"01 문제 : 접미사 배열","headline":"프로그래머스 Swift 코테준비 (44) - 접미사 배열","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(44)-%EC%A0%91%EB%AF%B8%EC%82%AC-%EB%B0%B0%EC%97%B4/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(44)-%EC%A0%91%EB%AF%B8%EC%82%AC-%EB%B0%B0%EC%97%B4/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기 | Yeahyun Kim
+  <title>프로그래머스 Swift 코테준비 (44) - 접미사 배열 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기</span>
+              <span>프로그래머스 Swift 코테준비 (44) - 접미사 배열</span>
             
 
           
@@ -808,7 +808,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기</h1>
+    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (44) - 접미사 배열</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -824,41 +824,18 @@
 
 <time
   
-  data-ts="1704898800"
+  data-ts="1707750000"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 11, 2024
+  Feb 13, 2024
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1707727577"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Feb 12, 2024
-</time>
-
-        </span>
       
 
       
@@ -910,9 +887,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="258 words"
+  title="624 words"
 >
-  <em>1 min</em> read</span>
+  <em>3 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -921,55 +898,67 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제---문자열-붙여서-출력하기"><span class="me-2">01 문제 :  문자열 붙여서 출력하기</span><a href="#01-문제---문자열-붙여서-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제--접미사-배열"><span class="me-2">01 문제 : 접미사 배열</span><a href="#01-문제--접미사-배열" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <hr />
 <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>두 개의 문자열 <code class="language-plaintext highlighter-rouge">str1</code>, <code class="language-plaintext highlighter-rouge">str2</code>가 공백으로 구분되어 입력으로 주어집니다.<br />
-입출력 예와 같이 <code class="language-plaintext highlighter-rouge">str1</code>과 <code class="language-plaintext highlighter-rouge">str2</code>을 이어서 출력하는 코드를 작성해 보세요.</p>
+  <p>어떤 문자열에 대해서 접미사는 특정 인덱스부터 시작하는 문자열을 의미합니다. 예를 들어, “banana”의 모든 접미사는 “banana”, “anana”, “nana”, “ana”, “na”, “a”입니다. <br />
+문자열 <code class="language-plaintext highlighter-rouge">my_string</code>이 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">my_string</code>의 모든 접미사를 사전순으로 정렬한 문자열 배열을 return 하는 solution 함수를 작성해 주세요.</p>
 </blockquote>
 
 <p><br /></p>
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<blockquote class="command-text">
-  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str1</code>, <code class="language-plaintext highlighter-rouge">str2</code>의 길이 ≤ 10</p>
-</blockquote>
 
+<blockquote class="command-text">
+  <p>• <code class="language-plaintext highlighter-rouge">my_string</code>은 알파벳 소문자로만 이루어져 있습니다.
+• 1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 100
+• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이</p>
+</blockquote>
 <p><br /></p>
 
 <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>입력 #1</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>apple pen
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>출력 #1</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>applepen
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>입력 #2</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>hello World!
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>출력 #2</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>HelloWorld!
-</pre></td></tr></tbody></table></code></div></div>
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“banana”</td>
+      <td>[“a”, “ana”, “anana”, “banana”, “na”, “nana”]</td>
+    </tr>
+    <tr>
+      <td>“programmers”</td>
+      <td>[“ammers”, “ers”, “grammers”, “mers”, “mmers”, “ogrammers”, “programmers”, “rammers”, “rogrammers”, “rs”, “s”]</td>
+    </tr>
+  </tbody>
+</table></div>
 
 <p><br /></p>
 
+<h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>는 “banana”로 모든 접미사는 문제의 설명과 같습니다. 이를 사전순으로 정렬하면 “a”, “ana”, “anana”, “banana”, “na”, “nana”이므로 [“a”, “ana”, “anana”, “banana”, “na”, “nana”]를 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 2번의 <code class="language-plaintext highlighter-rouge">my_string</code>는 “programmers”이고 모든 접미사는 “programmers”, “rogrammers”, “ogrammers”, “grammers”, “rammers”, “ammers”, “mmers”, “mers”, “ers”, “rs”, “s”입니다. <br />
+이를 사전순으로 정렬한 문자열 배열 [“ammers”, “ers”, “grammers”, “mers”, “mmers”, “ogrammers”, “programmers”, “rammers”, “rogrammers”, “rs”, “s”]를 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><br /></p>
 <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -979,11 +968,15 @@
 3
 4
 5
+6
+7
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">inp</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
-<span class="k">let</span> <span class="p">(</span><span class="nv">s1</span><span class="p">,</span> <span class="nv">s2</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inp</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="s">""</span>
+    
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
@@ -991,22 +984,67 @@
 
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h4 id="두개의-문자열-더해서-붙이기"><span class="me-2">두개의 문자열 더해서 붙이기</span><a href="#두개의-문자열-더해서-붙이기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<blockquote class="prompt-tip">
-  <p>문자열 + 문자열은 두개의 문자열을 붙여서 출력할 수 있다.
-<code class="language-plaintext highlighter-rouge">"안녕"</code> + <code class="language-plaintext highlighter-rouge">"하세요"</code> = <code class="language-plaintext highlighter-rouge">"안녕하세요"</code></p>
-</blockquote>
 
-<p><br /></p>
-<h4 id="하나의-배열에-넣고-붙이기"><span class="me-2">하나의 배열에 넣고 붙이기</span><a href="#하나의-배열에-넣고-붙이기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<blockquote class="prompt-tip">
-  <p>[“안녕”, “하세요”]</p>
-</blockquote>
+<h4 id="solution-1--dropfirst-활용하기"><span class="me-2">solution 1 : dropFirst 활용하기</span><a href="#solution-1--dropfirst-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p><code class="language-plaintext highlighter-rouge">dropFirst</code>는 dropFirst( _ k: Int) 로 활용할 수 있는데, 문자열의 요소를 앞에서부터 파라미터 값만큼 버려준다. 그럼 여기서 제공된 정수 <code class="language-plaintext highlighter-rouge">n</code>의 값이 11이라고 가정했을때, <code class="language-plaintext highlighter-rouge">전체 문자열 개수 - 11</code> 을 해주면 해당 문제에서 버릴 만큼의 값을 구할 수 있다.</p>
+
+<p>먼저,  <code class="language-plaintext highlighter-rouge">my_string</code>의 문자 개수만큼 반복문을 돌려야 하므로 <code class="language-plaintext highlighter-rouge">map</code> 과 <code class="language-plaintext highlighter-rouge">indices</code>를 활용했고, 결과값을 담을 변수를 하나 추가해 준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
-<br /></p>
+이후 문자열을 앞에서부터 하나씩 버려주는 dropFirst를 활용하여 생성한 값을 결괏값 변수 <code class="language-plaintext highlighter-rouge">result</code>에 append 시켜준다.</p>
 
-<h2 id="answer"><span class="me-2">💡Answer</span><a href="#answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+
+	<span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="nf">dropFirst</span><span class="p">(</span><span class="nv">$0</span><span class="p">)))</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+<code class="language-plaintext highlighter-rouge">result</code> 를 사전순으로 정렬해주기 위해서는 <code class="language-plaintext highlighter-rouge">sort()</code>를 활용하면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+
+	<span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="nf">dropFirst</span><span class="p">(</span><span class="nv">$0</span><span class="p">)))</span>
+
+<span class="p">}</span>
+
+<span class="n">result</span><span class="o">.</span><span class="nf">sort</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p><br />
+<br /></p>
+<h2 id="answer-01"><span class="me-2">💡Answer 01</span><a href="#answer-01" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -1021,20 +1059,24 @@
 8
 9
 10
+11
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">inp</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
-<span class="k">let</span> <span class="p">(</span><span class="nv">s1</span><span class="p">,</span> <span class="nv">s2</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inp</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="p">)</span>
+	<span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="nf">dropFirst</span><span class="p">(</span><span class="nv">$0</span><span class="p">)))</span>
 
-<span class="nf">print</span><span class="p">([</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">]</span><span class="o">.</span><span class="nf">joined</span><span class="p">())</span>
+<span class="p">}</span>
 
-<span class="c1">// HelloWorld!</span>
+<span class="n">result</span><span class="o">.</span><span class="nf">sort</span><span class="p">()</span>
+
+<span class="k">return</span> <span class="n">result</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181946">해당문제 풀러가보기</a></p>
+<p><br />
+<br /></p>
 
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181909">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -1090,21 +1132,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(7)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B6%99%EC%97%AC%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%287%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B6%2599%25EC%2597%25AC%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(44)%20-%20%EC%A0%91%EB%AF%B8%EC%82%AC%20%EB%B0%B0%EC%97%B4%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2844%29-%25EC%25A0%2591%25EB%25AF%25B8%25EC%2582%25AC-%25EB%25B0%25B0%25EC%2597%25B4%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(7)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B6%99%EC%97%AC%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%287%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B6%2599%25EC%2597%25AC%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(44)%20-%20%EC%A0%91%EB%AF%B8%EC%82%AC%20%EB%B0%B0%EC%97%B4%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2844%29-%25EC%25A0%2591%25EB%25AF%25B8%25EC%2582%25AC-%25EB%25B0%25B0%25EC%2597%25B4%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%287%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B6%2599%25EC%2597%25AC%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(7)%20-%08%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B6%99%EC%97%AC%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2844%29-%25EC%25A0%2591%25EB%25AF%25B8%25EC%2582%25AC-%25EB%25B0%25B0%25EC%2597%25B4%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(44)%20-%20%EC%A0%91%EB%AF%B8%EC%82%AC%20%EB%B0%B0%EC%97%B4%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1352,451 +1394,451 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1915,13 +1957,14 @@
                   01 문제 : 배열 만들기 4
 
 
+
 문제 설명
 
 
   정수 배열 arr가 주어집니다. arr를 이용해 새로운 배열 stk를 만드려고 합니다. 
 변수 i를 만들어 초기값을 0으로 설정한 후 i가 arr의 길이보다 작으면 다음 작업을 반복합니다. 
 	• 만약 stk가 빈 배열이라면 arr[i]를 stk에 추가하고 i에 1을 더합니다.
-	• stk에 원소가 ...
+	• stk에 원소가...
                 </p>
               </div>
             </div>
@@ -1960,6 +2003,7 @@
                   01 문제 : 간단한 논리 연산
 
 
+
 문제 설명
 
 
@@ -1972,7 +2016,7 @@
 
 
   • 1 ≤ arr의 길이 ≤ 100,000
-	• 1 ≤ arr의 원소...
+	• 1 ≤ arr의 원...
                 </p>
               </div>
             </div>
@@ -2011,12 +2055,13 @@
                   01 문제 :  주사위 게임 3
 
 
+
 문제 설명
 
 
   1부터 6까지 숫자가 적힌 주사위가 네 개 있습니다. 네 주사위를 굴렸을 때 나온 숫자에 따라 다음과 같은 점수를 얻습니다. 
 	• 네 주사위에서 나온 숫자가 모두 p로 같다면 1111 × p점을 얻습니다.
-	• 세 주사위에서 나온 숫자가 p로 같고 나머지 다른 주사위에서 나온 숫자가 q(p ≠ q...
+	• 세 주사위에서 나온 숫자가 p로 같고 나머지 다른 주사위에서 나온 숫자가 q(p ≠ ...
                 </p>
               </div>
             </div>
@@ -2038,22 +2083,18 @@
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)-%EB%8D%A7%EC%85%88%EC%8B%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(43)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%92%A4%EC%9D%98-n%EA%B8%80%EC%9E%90/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기</p>
+      <p>프로그래머스 Swift 코테준비 (43) - 문자열 뒤의 n글자</p>
     </a>
   
 
   
-    <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(8)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>프로그래머스 Swift 코테준비 (8) -문자열 돌리기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
