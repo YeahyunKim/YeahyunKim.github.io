@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기" />
+<meta property="og:title" content="프로그래머스 Swift 코테준비 (45) - 접미사인지 확인하기" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="01 문제 : 문자열 반복해서 출력하기 문제 설명" />
-<meta property="og:description" content="01 문제 : 문자열 반복해서 출력하기 문제 설명" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
+<meta name="description" content="01 문제 : 접미사인지 확인하기" />
+<meta property="og:description" content="01 문제 : 접미사인지 확인하기" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(45)-%EC%A0%91%EB%AF%B8%EC%82%AC%EC%9D%B8%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(45)-%EC%A0%91%EB%AF%B8%EC%82%AC%EC%9D%B8%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-08T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-02-13T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
-<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기" />
+<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (45) - 접미사인지 확인하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-02-12T17:44:59+09:00","datePublished":"2024-01-08T00:00:00+09:00","description":"01 문제 : \b문자열 반복해서 출력하기 문제 설명","headline":"프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-02-13T00:00:00+09:00","datePublished":"2024-02-13T00:00:00+09:00","description":"01 문제 : 접미사인지 확인하기","headline":"프로그래머스 Swift 코테준비 (45) - 접미사인지 확인하기","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(45)-%EC%A0%91%EB%AF%B8%EC%82%AC%EC%9D%B8%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(45)-%EC%A0%91%EB%AF%B8%EC%82%AC%EC%9D%B8%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기 | Yeahyun Kim
+  <title>프로그래머스 Swift 코테준비 (45) - 접미사인지 확인하기 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기</span>
+              <span>프로그래머스 Swift 코테준비 (45) - 접미사인지 확인하기</span>
             
 
           
@@ -767,6 +767,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -786,7 +808,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기</h1>
+    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (45) - 접미사인지 확인하기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -802,41 +824,18 @@
 
 <time
   
-  data-ts="1704639600"
+  data-ts="1707750000"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan  8, 2024
+  Feb 13, 2024
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1707727499"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Feb 12, 2024
-</time>
-
-        </span>
       
 
       
@@ -888,9 +887,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="297 words"
+  title="623 words"
 >
-  <em>1 min</em> read</span>
+  <em>3 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -899,42 +898,90 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제--문자열-반복해서-출력하기"><span class="me-2">01 문제 : 문자열 반복해서 출력하기</span><a href="#01-문제--문자열-반복해서-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제--접미사인지-확인하기"><span class="me-2">01 문제 : 접미사인지 확인하기</span><a href="#01-문제--접미사인지-확인하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <hr />
 <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>문자열 <code class="language-plaintext highlighter-rouge">str</code>과 정수 <code class="language-plaintext highlighter-rouge">n</code>이 주어집니다.<br />
-<code class="language-plaintext highlighter-rouge">str</code>이 <code class="language-plaintext highlighter-rouge">n</code>번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.</p>
+  <p>어떤 문자열에 대해서 접미사는 특정 인덱스부터 시작하는 문자열을 의미합니다. 예를 들어, “banana”의 모든 접미사는 “banana”, “anana”, “nana”, “ana”, “na”, “a”입니다. <br />
+문자열 <code class="language-plaintext highlighter-rouge">my_string</code>과 <code class="language-plaintext highlighter-rouge">is_suffix</code>가 주어질 때, <code class="language-plaintext highlighter-rouge">is_suffix</code>가 <code class="language-plaintext highlighter-rouge">my_string</code>의 접미사라면 1을, 아니면 0을 return 하는 solution 함수를 작성해 주세요.</p>
 </blockquote>
 
 <p><br /></p>
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str</code>의 길이 ≤ 10
-• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 5</p>
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 100
+• 1 ≤ <code class="language-plaintext highlighter-rouge">is_suffix</code>의 길이 ≤ 100
+• <code class="language-plaintext highlighter-rouge">my_string</code>과 <code class="language-plaintext highlighter-rouge">is_suffix</code>는 영소문자로만 이루어져 있습니다.</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>is_suffix</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“banana”</td>
+      <td>“ana”</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>“banana”</td>
+      <td>“nan”</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>“banana”</td>
+      <td>“wxyz”</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>“banana”</td>
+      <td>“abanana”</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번에서 <code class="language-plaintext highlighter-rouge">is_suffix</code>가 <code class="language-plaintext highlighter-rouge">my_string</code>의 접미사이기 때문에 1을 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 2번에서 <code class="language-plaintext highlighter-rouge">is_suffix</code>가 <code class="language-plaintext highlighter-rouge">my_string</code>의 접미사가 아니기 때문에 0을 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-3">입출력 예 #3</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 3번에서 <code class="language-plaintext highlighter-rouge">is_suffix</code>가 <code class="language-plaintext highlighter-rouge">my_string</code>의 접미사가 아니기 때문에 0을 return 합니다.</p>
+</blockquote>
+<h6 id="입출력-예-4">입출력 예 #4</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 4번에서 <code class="language-plaintext highlighter-rouge">is_suffix</code>가 <code class="language-plaintext highlighter-rouge">my_string</code>의 접미사가 아니기 때문에 0을 return 합니다.</p>
 </blockquote>
 
 <p><br /></p>
-<h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<p>입력 #1</p>
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">string</span> <span class="mi">5</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>출력 #1</p>
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">stringstringstringstringstring</span>
-</pre></td></tr></tbody></table></code></div></div>
 
 <p><br /></p>
-
 <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -943,10 +990,16 @@
 2
 3
 4
+5
+6
+7
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">inp</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
-<span class="k">let</span> <span class="p">(</span><span class="nv">s1</span><span class="p">,</span> <span class="nv">a</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="kt">Int</span><span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">!</span><span class="p">)</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">is_suffix</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
@@ -955,21 +1008,82 @@
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 
-<blockquote class="command-text">
-  <p>제시된 내용을 보면,
-let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인해, 
-현재 변수 <code class="language-plaintext highlighter-rouge">s1</code> 에는 <code class="language-plaintext highlighter-rouge">"string"</code> , <code class="language-plaintext highlighter-rouge">a</code> 에는 <code class="language-plaintext highlighter-rouge">5</code>라는 <code class="language-plaintext highlighter-rouge">number</code> 형태의 의 값이 들어가 있다.</p>
-</blockquote>
+<h4 id="solution-1--dropfirst--contains-활용하기"><span class="me-2">solution 1 : dropFirst / contains 활용하기</span><a href="#solution-1--dropfirst--contains-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<blockquote class="prompt-tip">
-  <p>string을 총 5번 출력하기 위해서는, 제시된 <code class="language-plaintext highlighter-rouge">5</code> 라는 값을 활용 해야한다.
-따라서 for문을 활용하고, 변수 <code class="language-plaintext highlighter-rouge">result</code> 를 생성하여, 해당 변수에 <code class="language-plaintext highlighter-rouge">"string"</code> 을 5번 넣어주면 될 것으로 보인다.</p>
-</blockquote>
+<p><a href="https://yeahyunkim.github.io/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(44)-%EC%A0%91%EB%AF%B8%EC%82%AC-%EB%B0%B0%EC%97%B4/">프로그래머스 Swift 코테준비 (44) - 접미사 배열</a>의 응용 문제이다.</p>
+
+<p>먼저,  <code class="language-plaintext highlighter-rouge">my_string</code>의 문자 개수만큼 반복문을 돌려야 하므로 <code class="language-plaintext highlighter-rouge">map</code> 과 <code class="language-plaintext highlighter-rouge">indices</code>를 활용했고, 결과값을 담을 변수를 하나 추가해 준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
-<br /></p>
+이후 문자열을 앞에서부터 하나씩 버려주는 dropFirst를 활용하여 생성한 값을 결괏값을 담을 변수 <code class="language-plaintext highlighter-rouge">stringArray</code>를 생성해주고, append 해준다.</p>
 
-<h2 id="answer"><span class="me-2">💡Answer</span><a href="#answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">stringArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+
+	<span class="n">stringArray</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="nf">dropFirst</span><span class="p">(</span><span class="nv">$0</span><span class="p">)))</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+<code class="language-plaintext highlighter-rouge">이후 </code>stringArray<code class="language-plaintext highlighter-rouge">가 </code>is_suffix<code class="language-plaintext highlighter-rouge">를 포함하고 있는지 확인하기 위해 </code>contains`를 사용한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="code-header">
+        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">stringArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> 
+
+	<span class="n">stringArray</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="nf">dropFirst</span><span class="p">(</span><span class="nv">$0</span><span class="p">)))</span>
+	
+	<span class="n">result</span> <span class="o">=</span> <span class="n">stringArray</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="n">is_suffix</span><span class="p">)</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
+	
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p><br />
+<br /></p>
+<h2 id="answer-01"><span class="me-2">💡Answer 01</span><a href="#answer-01" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
@@ -987,22 +1101,35 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
 11
 12
 13
+14
+15
+16
+17
+18
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
-
-<span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
-
-<span class="k">for</span> <span class="n">count</span> <span class="k">in</span> <span class="mi">1</span><span class="o">...</span><span class="n">a</span> <span class="p">{</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="n">s1</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">is_suffix</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">stringArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> 
+    
+        <span class="n">stringArray</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="nf">dropFirst</span><span class="p">(</span><span class="nv">$0</span><span class="p">)))</span>
+        
+        <span class="n">result</span> <span class="o">=</span> <span class="n">stringArray</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="n">is_suffix</span><span class="p">)</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
+        
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">result</span>
+    
 <span class="p">}</span>
-
-<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-
-<span class="c1">// stringstringstringstringstring</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181950">해당문제 풀러가보기</a></p>
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181909">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -1058,21 +1185,21 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(3)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%283%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B0%2598%25EB%25B3%25B5%25ED%2595%25B4%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(45)%20-%20%EC%A0%91%EB%AF%B8%EC%82%AC%EC%9D%B8%EC%A7%80%20%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2845%29-%25EC%25A0%2591%25EB%25AF%25B8%25EC%2582%25AC%25EC%259D%25B8%25EC%25A7%2580-%25ED%2599%2595%25EC%259D%25B8%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(3)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%283%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B0%2598%25EB%25B3%25B5%25ED%2595%25B4%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(45)%20-%20%EC%A0%91%EB%AF%B8%EC%82%AC%EC%9D%B8%EC%A7%80%20%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2845%29-%25EC%25A0%2591%25EB%25AF%25B8%25EC%2582%25AC%25EC%259D%25B8%25EC%25A7%2580-%25ED%2599%2595%25EC%259D%25B8%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%283%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B0%2598%25EB%25B3%25B5%25ED%2595%25B4%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(3)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2845%29-%25EC%25A0%2591%25EB%25AF%25B8%25EC%2582%25AC%25EC%259D%25B8%25EC%25A7%2580-%25ED%2599%2595%25EC%259D%25B8%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(45)%20-%20%EC%A0%91%EB%AF%B8%EC%82%AC%EC%9D%B8%EC%A7%80%20%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1320,511 +1447,511 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1895,6 +2022,7 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
                   01 문제 : 간단한 논리 연산
 
 
+
 문제 설명
 
 
@@ -1907,7 +2035,7 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
 
 
   • 1 ≤ arr의 길이 ≤ 100,000
-	• 1 ≤ arr의 원소...
+	• 1 ≤ arr의 원...
                 </p>
               </div>
             </div>
@@ -1946,12 +2074,13 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
                   01 문제 :  주사위 게임 3
 
 
+
 문제 설명
 
 
   1부터 6까지 숫자가 적힌 주사위가 네 개 있습니다. 네 주사위를 굴렸을 때 나온 숫자에 따라 다음과 같은 점수를 얻습니다. 
 	• 네 주사위에서 나온 숫자가 모두 p로 같다면 1111 × p점을 얻습니다.
-	• 세 주사위에서 나온 숫자가 p로 같고 나머지 다른 주사위에서 나온 숫자가 q(p ≠ q...
+	• 세 주사위에서 나온 숫자가 p로 같고 나머지 다른 주사위에서 나온 숫자가 q(p ≠ ...
                 </p>
               </div>
             </div>
@@ -1990,6 +2119,7 @@ let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인�
                   01 문제 :  글자 이어 붙여 문자열 만들기
 
 
+
 문제 설명
 
 
@@ -2001,7 +2131,7 @@ my_string의 index_list의 원소들에 해당하는 인덱스의 글자들을 
 제한사항
 
 
-  • 1 ≤ my_...
+  • 1 ≤ my...
                 </p>
               </div>
             </div>
@@ -2023,22 +2153,18 @@ my_string의 index_list의 원소들에 해당하는 인덱스의 글자들을 
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)-a%EC%99%80-b-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(44)-%EC%A0%91%EB%AF%B8%EC%82%AC-%EB%B0%B0%EC%97%B4/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Swift 코테준비 (2) - a와 b 출력하기</p>
+      <p>프로그래머스 Swift 코테준비 (44) - 접미사 배열</p>
     </a>
   
 
   
-    <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
