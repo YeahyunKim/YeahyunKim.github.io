@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (42) - 부분 문자열 이어 붙여 문자열 만들기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(42)-%EB%B6%80%EB%B6%84-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%97%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-13 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 부분 문자열 이어 붙여 문자열 만들기문제 설명  길이가 같은 문자열 배열 my_strings와 이차원 정수 배열 parts가 매개변수로 주어집니다. parts[i]는 [s, e] 형태로, my_string[i]의 인덱스 s부터 인덱스 e까지의 부분 문자열을 의미합니다. 각 my_strings의 원소의 parts에 해당하는 부분 문자열을 ...",
+    "content": "01 문제 : 부분 문자열 이어 붙여 문자열 만들기문제 설명  길이가 같은 문자열 배열 my_strings와 이차원 정수 배열 parts가 매개변수로 주어집니다. parts[i]는 [s, e] 형태로, my_string[i]의 인덱스 s부터 인덱스 e까지의 부분 문자열을 의미합니다. 각 my_strings의 원소의 parts에 해당하는 부분 문자열을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ my_strings의 길이 = parts의 길이 ≤ 100• 1 ≤ my_strings의 원소의 길이 ≤ 100• 10l - 1 ≤ k &lt; 10l• parts[i]를 [s, e]라 할 때, 다음을 만족합니다.\t• 0 ≤ s ≤ e &lt; my_strings[i]의 길이입출력 예            my_strings      parts      result                  [“progressive”, “hamburger”, “hammer”, “ahocorasick”]      [[0, 4], [1, 2], [3, 5], [7, 7]]      “programmers”      입출력 예 설명입출력 예 #1  • 예제 1번의 입력을 보기 좋게 표로 나타내면 다음과 같습니다.            i      my_strings[i]      parts[i]      부분 문자열                  0      “progressive”      [0, 4]      “progr”              1      “hamburger”      [1, 2]      “am”              2      “hammer”      [3, 5]      “mer”              3      “ahocorasick”      [7, 7]      ”s”      제시 코드import Foundationfunc solution(_ my_string:String, _ queries:[[Int]]) -&gt; String {        return \"\"    }02 풀이solution 1 : map 활용하기먼저, 결괏값을 담을 변수를 하나 생성한다.var result = [Character]()\bmy_string의 개수 만큼 반복문을 돌려야하고, parts의 각 요소에 접근하기 위해 indices를 활용한다.var result = [Character]()my_string.indices.map {}그후 my_string의 각 요소를 담을 변수를 하나 추가해 주었다.var result = [Character]()my_string.indices.map {\tvar characterArray = my_strings[$0].map{ $0 }}마지막으로 처음에 만든 결괏값을 담는 변수 result에 결괏값들을 append 처리해주면 된다.var result = [Character]()my_strings.indices.map {\tvar characterArray = my_strings[$0].map{ $0 }\tresult.append(contentsOf: characterArray[parts[$0][0]...parts[$0][1]])}💡Answer 01import Foundationfunc solution(_ my_strings:[String], _ parts:[[Int]]) -&gt; String {        var result = [Character]()    my_strings.indices.map {            var characterArray = my_strings[$0].map{ $0 }            result.append(contentsOf: characterArray[parts[$0][0]...parts[$0][1]])        }    return String(result)}해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (41) - 배열 만들기 5",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(41)-%EB%B0%B0%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0-5/",
     "categories": "Programmers, 기초",
