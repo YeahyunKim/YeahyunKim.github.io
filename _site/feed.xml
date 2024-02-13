@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-13T13:02:23+09:00</updated>
+  <updated>2024-02-13T13:16:01+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,77 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (39) - 9로 나눈 나머지</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(39)-9%EB%A1%9C-%EB%82%98%EB%88%88-%EB%82%98%EB%A8%B8%EC%A7%80/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (39) - 9로 나눈 나머지" />
+    <published>2024-02-13T00:00:00+09:00</published>
+  
+    <updated>2024-02-13T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(39)-9%EB%A1%9C-%EB%82%98%EB%88%88-%EB%82%98%EB%A8%B8%EC%A7%80/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(39)-9%EB%A1%9C-%EB%82%98%EB%88%88-%EB%82%98%EB%A8%B8%EC%A7%80/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 :  9로 나눈 나머지
+
+
+문제 설명
+
+
+  음이 아닌 정수를 9로 나눈 나머지는 그 정수의 각 자리 숫자의 합을 9로 나눈 나머지와 같은 것이 알려져 있습니다. 
+이 사실을 이용하여 음이 아닌 정수가 문자열 number로 주어질 때, 이 정수를 9로 나눈 나머지를 return 하는 solution 함수를 작성해주세요.
+
+
+
+제한사항
+
+
+  • 1 ≤ number의 길이 ≤ 100,000
+• number의 원소는 숫자로만 이루어져 있습니다.
+• number는 정수 0이 아니라면 숫자 ‘0’으로 시작하지 않습니다.
+
+
+
+입출력 예
+
+
+  
+    
+      number
+      result
+    
+  
+  
+    
+      “123”
+      6
+    
+    
+      “787...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -261,67 +332,6 @@ my_string의 index_list의 원소들에 해당하는 인덱스의 글자들을 
 
 
   ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (34) - 콜라츠 수열 만들기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(34)-%EC%BD%9C%EB%9D%BC%EC%B8%A0-%EC%88%98%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (34) - 콜라츠 수열 만들기" />
-    <published>2024-02-08T00:00:00+09:00</published>
-  
-    <updated>2024-02-08T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(34)-%EC%BD%9C%EB%9D%BC%EC%B8%A0-%EC%88%98%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(34)-%EC%BD%9C%EB%9D%BC%EC%B8%A0-%EC%88%98%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 콜라츠 수열 만들기
-
-
-문제 설명
-
-
-  모든 자연수 x에 대해서 현재 값이 x이면 x가 짝수일 때는 2로 나누고, x가 홀수일 때는 3 * x + 1로 바꾸는 계산을 계속해서 반복하면 언젠가는 반드시 x가 1이 되는지 묻는 문제를 콜라츠 문제라고 부릅니다. 
-그리고 위 과정에서 거쳐간 모든 수를 기록한 수열을 콜라츠 수열이라고 부릅니다. 
-계산 결과 1,000 보다 작거나 같은 수에 대해서는 전부 언젠가 1에 도달한다는 것이 알려져 있습니다. 
-임의의 1,000 보다 작거나 같은 양의 정수 n이 주어질 때 초기값이 n인 콜라츠 수열을 return 하는 solution 함수를 완성해 주세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ n ≤ 1,000
-
-
-
-입출력 예
-
-
-  
-    
-      n...
     </summary>
   
 
