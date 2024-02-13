@@ -2,6 +2,23 @@
   
   {
     "title": "프로그래머스 Swift 코테준비 (39) - 9로 나눈 나머지",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(40)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%97%AC%EB%9F%AC-%EB%B2%88-%EB%92%A4%EC%A7%91%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-13 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 :  문자열 여러 번 뒤집기문제 설명  문자열 my_string과 이차원 정수 배열 queries가 매개변수로 주어집니다. queries의 원소는 [s, e] 형태로, my_string의 인덱스 s부터 인덱스 e까지를 뒤집으라는 의미입니다. my_string에 queries의 명령을 순서대로 처리한 후의 문자열을 return 하는 solut...",
+    "content": "01 문제 :  문자열 여러 번 뒤집기문제 설명  문자열 my_string과 이차원 정수 배열 queries가 매개변수로 주어집니다. queries의 원소는 [s, e] 형태로, my_string의 인덱스 s부터 인덱스 e까지를 뒤집으라는 의미입니다. my_string에 queries의 명령을 순서대로 처리한 후의 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • my_string은 영소문자로만 이루어져 있습니다.• 1 ≤ my_string의 길이 ≤ 1,000• queries의 원소는 [s, e]의 형태로 0 ≤ s ≤ e &lt; my_string의 길이를 만족합니다.• 1 ≤ queries의 길이 ≤ 1,000입출력 예            my_string      queries      result                  “rermgorpsam”      [[2, 3], [0, 7], [5, 9], [6, 10]]      “programmers”      입출력 예 설명입출력 예 #1  • 예제 1번의 my_string은 “rermgorpsam”이고 주어진 queries를 순서대로 처리하면 다음과 같습니다.            queries      my_string                         “rermgorpsam”              [2, 3]      “remrgorpsam”              [0, 7]      “progrmersam”              [5, 9]      “prograsremm”              [6, 10]      “programmers”      제시 코드import Foundationfunc solution(_ my_string:String, _ queries:[[Int]]) -&gt; String {        return \"\"    }02 풀이solution 1 : reverse() 활용하기먼저 결과값을 담을 변수를 생성해 준다.var result = Array(my_string)\bquries 의 개수만큼 my_string을 업데이트 해야 하므로, quries.count 로 for문을 돌린다.var result = Array(my_string)for i in 0..&lt;queries.count {}문제에서 제시한 queries의 인덱스 값에 맞게 result 의 문자열들을 뒤집어준다.var result = Array(my_string)for i in 0..&lt;queries.count {\tresult[queries[i][0]...queries[i][1]].reverse()}💡Answer 01var result = Array(my_string)for i in 0..&lt;queries.count {\tresult[queries[i][0]...queries[i][1]].reverse()}return String(result)해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "프로그래머스 Swift 코테준비 (39) - 9로 나눈 나머지",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(39)-9%EB%A1%9C-%EB%82%98%EB%88%88-%EB%82%98%EB%A8%B8%EC%A7%80/",
     "categories": "Programmers, 기초",
     "tags": "Algorithm, Programmers",
