@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (38) - 글자 이어 붙여 문자열 만들기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(38)-%EA%B8%80%EC%9E%90-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%97%AC-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-13 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 :  글자 이어 붙여 문자열 만들기문제 설명  문자열 my_string과 정수 배열 index_list가 매개변수로 주어집니다. my_string의 index_list의 원소들에 해당하는 인덱스의 글자들을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ my_string의 길이 ≤ 1...",
+    "content": "01 문제 :  글자 이어 붙여 문자열 만들기문제 설명  문자열 my_string과 정수 배열 index_list가 매개변수로 주어집니다. my_string의 index_list의 원소들에 해당하는 인덱스의 글자들을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ my_string의 길이 ≤ 1,000• my_string의 원소는 영소문자로 이루어져 있습니다.• 1 ≤ index_list의 길이 ≤ 1,000• 0 ≤ index_list의 원소 &lt; my_string의 길이입출력 예            my_string      index_list      result                  “cvsgiorszzzmrpaqpe”      [16, 6, 5, 3, 12, 14, 11, 11, 17, 12, 7]      “programmers”              “zpiaz”      [1, 2, 0, 0, 3]      “pizza”      입출력 예 설명입출력 예 #1  • 예제 1번의 my_string에서 인덱스 3, 5, 6, 11, 12, 14, 16, 17에 해당하는 글자는 각각 g, o, r, m, r, a, p, e이므로 my_string에서 index_list에 들어있는 원소에 해당하는 인덱스의 글자들은 각각 순서대로 p, r, o, g, r, a, m, m, e, r, s입니다. 따라서 “programmers”를 return 합니다.입출력 예 #2  • 예제 2번의 my_string에서 인덱스 0, 1, 2, 3에 해당하는 글자는 각각 z, p, i, a이므로 my_string에서 index_list에 들어있는 원소에 해당하는 인덱스의 글자들은 각각 순서대로 p, i, z, z, a입니다. 따라서 “pizza”를 return 합니다.제시 코드import Foundationfunc solution(_ my_string:String, _ index_list:[Int]) -&gt; String {        return \"\"    }02 풀이solution 1 : map 활용하기index_list 안에 있는 숫자를 순서대로 가져오기 위해서 map을 활용한다.index_list.map{ $0 }이후, my_string 을 Character 형식으로 바꾼 후, 위에서 만들어놓은 index_list 의 숫자 값들을 Character로 바꾼 my_string에 조합하여 결과 값을 가져온다.index_list.map{ my_string.map{$0}[$0] }💡Answer 01import Foundationfunc solution(_ my_string:String, _ index_list:[Int]) -&gt; String {    return String(index_list.map{ my_string.map{$0}[$0] })    }해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (37) - 주사위 게임 3",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(37)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-3/",
     "categories": "Programmers, 기초",
@@ -576,6 +593,23 @@
     
     "snippet": "01 문제 : 대소문자 바꿔서 출력하기문제 설명  영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str의 길이 ≤ 20\t•  str은 알파벳으로 이루어진 문자열입니다.입출력 예입력 #1\baBcDeFg출력 #1AbCdEfG제시 코드impo...",
     "content": "01 문제 : 대소문자 바꿔서 출력하기문제 설명  영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str의 길이 ≤ 20\t•  str은 알파벳으로 이루어진 문자열입니다.입출력 예입력 #1\baBcDeFg출력 #1AbCdEfG제시 코드import Foundationlet s1 = readLine()!02 풀이제시된 내용을 보면, 현재 s1 에는 aBcDeFg 라는 값이 들어가 있다.소문자인 경우에는 대문자로, 대문자인 경우에는 소문자로 바꿔야하는 문제인것으로 보이는데,.map 을 활용하여 s1 에 값을 하나씩 받아, 조건 / 삼항연산자로 처리할 수 있을 것으로 보인다.1) 조건문을 이용한 풀이  let convertedString = s1.map { char -&gt; String in    if char.isLowercase {        return char.uppercased()    } else {        return char.lowercased()    }}.joined()2) 삼항연산자를 이용한 풀이  let convertedString = s1.map{ char -&gt; String in char.isLowercase ? char.uppercased() : char.lowercased()}.joined()💡Answer1) 조건문을 이용한 풀이import Foundationlet s1 = readLine()!let convertedString = s1.map { char -&gt; String in    if char.isLowercase {        return char.uppercased()    } else {        return char.lowercased()    }}.joined()print(convertedString)// \bAbCdEfG2) 삼항연산자를 이용한 풀이import Foundationlet s1 = readLine()!let convertedString = s1.map{ char -&gt; String in char.isLowercase ? char.uppercased() : char.lowercased()}.joined()print(convertedString)// \bAbCdEfG해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-01-08 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : \b문자열 반복해서 출력하기문제 설명  문자열 str과 정수 n이 주어집니다.str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str의 길이 ≤ 10• 1 ≤ n ≤ 5입출력 예입력 #1string 5출력 #1stringstringstringstringstring제시 코드import Foundatio...",
+    "content": "01 문제 : \b문자열 반복해서 출력하기문제 설명  문자열 str과 정수 n이 주어집니다.str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.제한사항  • 1 ≤ str의 길이 ≤ 10• 1 ≤ n ≤ 5입출력 예입력 #1string 5출력 #1stringstringstringstringstring제시 코드import Foundationlet inp = readLine()!.components(separatedBy: [\" \"]).map { $0 }let (s1, a) = (inp[0], Int(inp[1])!)02 풀이  제시된 내용을 보면,let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인해, 현재 변수 s1 에는 \"string\" , a 에는 5라는 number 형태의 의 값이 들어가 있다.  string을 총 5번 출력하기 위해서는, 제시된 5 라는 값을 활용 해야한다.따라서 for문을 활용하고, 변수 result 를 생성하여, 해당 변수에 \"string\" 을 5번 넣어주면 될 것으로 보인다.💡Answerimport Foundationlet s1 = readLine()!var result = \"\"for count in 1...a {    result = result + s1}print(result)// stringstringstringstringstring해당문제 풀러가보기"
   },
   
   {
