@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (50) - qr code",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(50)-qr-code/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-14 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : qr code문제 설명  두 정수 q, r과 문자열 code가 주어질 때, code의 각 인덱스를 q로 나누었을 때 나머지가 r인 위치의 문자를 앞에서부터 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • 0 ≤ r &lt; q ≤ 20• r &lt; code의 길이 ≤ 1,000• cod...",
+    "content": "01 문제 : qr code문제 설명  두 정수 q, r과 문자열 code가 주어질 때, code의 각 인덱스를 q로 나누었을 때 나머지가 r인 위치의 문자를 앞에서부터 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • 0 ≤ r &lt; q ≤ 20• r &lt; code의 길이 ≤ 1,000• code는 영소문자로만 이루어져 있습니다.• 1 ≤ c ≤ m입출력 예            q      r      code      result                  3      1      “qjnwezgrpirldywt”      “jerry”              1      0      “programmers”      “programmers”      입출력 예 설명입출력 예 #1  • 예제 1번의 q와 r은 각각 3, 1이고 인덱스와 그 값을 q로 나눈 나머지가 잘 보이도록 표로 만들면 다음과 같습니다.            code      q      j      n      w      e      z      g      r      p      i      r      l      d      y      w      t                  index      0      1      2      3      4      5      6      7      8      9      10      11      12      13      14      15              q로 나눈 나머지      0      1      2      0      1      2      0      1      2      0      1      2      0      1      2      0      입출력 예 #2  • 예제 2번의 q와 r은 각각 1, 0이고 인덱스와 그 값을 q로 나눈 나머지가 잘 보이도록 표로 만들면 다음과 같습니다.|code|p|r|o|g|r|a|m|m|e|r|s||—|—|—|—|—|—|—|—|—|—|—|—||index|0|1|2|3|4|5|6|7|8|9|10||q로 나눈 나머지|0|0|0|0|0|0|0|0|0|0|0|제시 코드import Foundationfunc solution(_ q:Int, _ r:Int, _ code:String) -&gt; String {        return \"\"    }02 풀이solution 1 : map, indices, filter 다같이 사용하기먼저 코드의 문자 개수만큼 반복문(map)을 돌려야하고, 해당 문자의 인덱스 값을 q로 나눈 나머지 값을 구해야하니, filter 를 사용한다.var characterArray = code.map{$0}characterArray.indices.filter{ $0 % q == r }이후 filter 의 조건문으로 걸러진 요소들을 하나의 문자열로 합쳐야하므로, joined()를 활용하여 문제를 마무리 했다.var characterArray = code.map{$0}characterArray.indices.filter{ $0 % q == r }.map{ String(characterArray[$0]) }.joined()\b여기서 생성된 요소들의 element를 map 을 통해 저장해주고, 이 문자열 배열을 joined() 를 활용하여 하나의 string 으로 합쳐주었다. my_string.enumerated()            .filter{ $0.offset % m == c - 1}            .map { String($0.element) }            .joined()💡Answer 01import Foundationfunc solution(_ my_string:String, _ m:Int, _ c:Int) -&gt; String {    return my_string.enumerated()            .filter{ $0.offset % m == c - 1}            .map { String($0.element) }            .joined()            }해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (49) - 세로 읽기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(49)-%EC%84%B8%EB%A1%9C-%EC%9D%BD%EA%B8%B0/",
     "categories": "Programmers, 기초",
