@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (48) - 문자열 뒤집기.md",
+                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (49) - 세로 읽기.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (48) - 문자열 뒤집기.md",
+                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (49) - 세로 읽기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (48) - 문자열 뒤집기.md",
+                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (49) - 세로 읽기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (48) - 문자열 뒤집기.md"
+                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (49) - 세로 읽기.md"
               }
             }
           }
@@ -148,10 +148,13 @@
   },
   "active": "6fc8dce851240483",
   "lastOpenFiles": [
+    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (48) - 문자열 뒤집기.md",
+    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (49) - 세로 읽기.md",
+    "_site/posts/프로그래머스-Swift-코테준비-(49)-세로-읽기/index.html",
+    "_site/posts/프로그래머스-Swift-코테준비-(49)-세로-읽기",
     "_site/posts/프로그래머스-Swift-코테준비-(48)-문자열-뒤집기/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(48)-문자열-뒤집기",
     "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (47) - 접두사인지 확인하기.md",
-    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (48) - 문자열 뒤집기.md",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (44) - 접미사 배열.md",
     "_site/posts/프로그래머스-Swift-코테준비-(47)-문자열-뒤집기/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(47)-문자열-뒤집기",
@@ -160,9 +163,6 @@
     "_site/posts/프로그래머스-Swift-코테준비-(47)-접두사인지-확인하기/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(47)-접두사인지-확인하기",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (46) - 문자열의 앞의 n글자.md",
-    "_site/posts/프로그래머스-Swift-코테준비-(46)-문자열의-앞의-n글자/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(46)-문자열의-앞의-n글자",
-    "_site/posts/프로그래머스-Swift-코테준비-(45)-문자열의-앞의-n글자/index.html",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (45) - 접미사인지 확인하기.md",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (43) - 문자열 뒤의 n글자.md",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (42) - 부분 문자열 이어 붙여 문자열 만들기.md",
@@ -182,7 +182,6 @@
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (6) - 덧셈식 출력하기.md",
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기.md",
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기.md",
-    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (2) - a와 b 출력하기.md",
-    "_posts/2024-01-07- 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기.md"
+    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (2) - a와 b 출력하기.md"
   ]
 }

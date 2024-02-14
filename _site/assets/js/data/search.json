@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (49) - 세로 읽기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(49)-%EC%84%B8%EB%A1%9C-%EC%9D%BD%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-14 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 세로 읽기문제 설명  문자열 my_string과 두 정수 m, c가 주어집니다. my_string을 한 줄에 m 글자씩 가로로 적었을 때 왼쪽부터 세로로 c번째 열에 적힌 글자들을 문자열로 return 하는 solution 함수를 작성해 주세요.제한사항  • my_string은 영소문자로 이루어져 있습니다.• 1 ≤ m ≤ my_stri...",
+    "content": "01 문제 : 세로 읽기문제 설명  문자열 my_string과 두 정수 m, c가 주어집니다. my_string을 한 줄에 m 글자씩 가로로 적었을 때 왼쪽부터 세로로 c번째 열에 적힌 글자들을 문자열로 return 하는 solution 함수를 작성해 주세요.제한사항  • my_string은 영소문자로 이루어져 있습니다.• 1 ≤ m ≤ my_string의 길이 ≤ 1,000• m은 my_string 길이의 약수로만 주어집니다.• 1 ≤ c ≤ m입출력 예            my_string      m      c      result                  “ihrhbakrfpndopljhygc”      4      2      “happy”              “programmers”      1      1      “programmers”      입출력 예 설명입출력 예 #1  • 예제 1번의 my_string을 한 줄에 4 글자씩 쓰면 다음의 표와 같습니다.            1열      2열      3열      4열                  i      h      r      h              b      a      k      r              f      p      n      d              o      p      l      j              h      y      g      c      입출력 예 #2  • 예제 2번의 my_string은 m이 1이므로 세로로 “programmers”를 적는 것과 같고 따라서 1열에 적힌 글자를 세로로 읽으면 programmers입니다. 따라서 “programmers”를 return 합니다.제시 코드import Foundationfunc solution(_ my_string:String, _ m:Int, _ c:Int) -&gt; String {        return \"\"    }02 풀이solution 1 : enumerated() 활용하기enumerated() 는 배열안의 요소의 element 와 offset 값을 튜플 형태로 리턴해준다.이를 활용하여 문제를 해결할 수 있었다.먼저 my_string.enumerated()를 작성해주어 my_string의 요소를 튜플 형태로 저장한다.my_string.enumerated()이후 문제에서 제시한대로 my_string 문자열을 m 으로 구간을 나누어준 후, 각 구간별 c 의 위치에 있는 요소들을 가져와야하니, filter 를 활용하여 조건을 걸어주었다.my_string.enumerated()            .filter{ $0.offset % m == c - 1}\b여기서 생성된 요소들의 element를 map 을 통해 저장해주고, 이 문자열 배열을 joined() 를 활용하여 하나의 string 으로 합쳐주었다. my_string.enumerated()            .filter{ $0.offset % m == c - 1}            .map { String($0.element) }            .joined()💡Answer 01import Foundationfunc solution(_ my_string:String, _ m:Int, _ c:Int) -&gt; String {    return my_string.enumerated()            .filter{ $0.offset % m == c - 1}            .map { String($0.element) }            .joined()            }해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (48) - 문자열 뒤집기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(48)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%92%A4%EC%A7%91%EA%B8%B0/",
     "categories": "Programmers, 기초",
