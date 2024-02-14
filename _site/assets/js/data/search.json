@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (48) - 문자열 뒤집기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(48)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%92%A4%EC%A7%91%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-14 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 문자열 뒤집기문제 설명  문자열 my_string과 정수 s, e가 매개변수로 주어질 때, my_string에서 인덱스 s부터 인덱스 e까지를 뒤집은 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • my_string은 숫자와 알파벳으로만 이루어져 있습니다.• 1 ≤ my_string의 길이 ≤ 1,000• ...",
+    "content": "01 문제 : 문자열 뒤집기문제 설명  문자열 my_string과 정수 s, e가 매개변수로 주어질 때, my_string에서 인덱스 s부터 인덱스 e까지를 뒤집은 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • my_string은 숫자와 알파벳으로만 이루어져 있습니다.• 1 ≤ my_string의 길이 ≤ 1,000• 0 ≤ s ≤ e &lt; my_string의 길이입출력 예            my_string      s      e      result                  “Progra21Sremm3”      6      12      “ProgrammerS123”              “Stanley1yelnatS”      4      10      “Stanley1yelnatS”      입출력 예 설명입출력 예 #1  • 예제 1번의 my_string에서 인덱스 6부터 인덱스 12까지를 뒤집은 문자열은 “ProgrammerS123”이므로 “ProgrammerS123”를 return 합니다.입출력 예 #2  • 예제 2번의 my_string에서 인덱스 4부터 인덱스 10까지를 뒤집으면 원래 문자열과 같은 “Stanley1yelnatS”이므로 “Stanley1yelnatS”를 return 합니다.제시 코드import Foundationfunc solution(_ my_string:String, _ s:Int, _ e:Int) -&gt; String {        return \"\"    }02 풀이solution 1 : reverse() 활용하기reversed() 를 사용하지 않고, reverse() 를 활용해보았다.그 이유로는 새로운 배열을 생성하기 보단, 기존에 있는 데이터를 수정해야하는 문제로 보여서 reverse() 가 더 적합해 보였다.먼저 reverse() 는 배열에 사용할 수 있어서, my_string을 Character 배열로 변형해 변수에 담아주었다.var characterArray = my_string.map{$0}이후 생성한 characterArray[s...e]로 뒤집을 영역을 선택 한 후, 해당 영역을 reverse() 처리해 주었다.var prefixArray = [String]()my_string.map{$0}.indices.map{    var characterArray = my_string.map {$0}        characterArray[s...e].reverse()}\b현재 characterArray 는 character 타입이라 이를 string 타입으로 바꿔주었다.var characterArray = my_string.map {$0}characterArray[s...e].reverse()return String(characterArray)💡Answer 01import Foundationfunc solution(_ my_string:String, _ s:Int, _ e:Int) -&gt; String {         var characterArray = my_string.map {$0}        characterArray[s...e].reverse()        return String(characterArray)    }해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (47) - 접두사인지 확인하기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(47)-%EC%A0%91%EB%91%90%EC%82%AC%EC%9D%B8%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
