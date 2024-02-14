@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (47) - 접두사인지 확인하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(47)-%EC%A0%91%EB%91%90%EC%82%AC%EC%9D%B8%EC%A7%80-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-14 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 문자열의 앞의 n글자문제 설명  어떤 문자열에 대해서 접두사는 특정 인덱스까지의 문자열을 의미합니다. 예를 들어, “banana”의 모든 접두사는 “b”, “ba”, “ban”, “bana”, “banan”, “banana”입니다. 문자열 my_string과 is_prefix가 주어질 때, is_prefix가 my_string의 접두사라...",
+    "content": "01 문제 : 문자열의 앞의 n글자문제 설명  어떤 문자열에 대해서 접두사는 특정 인덱스까지의 문자열을 의미합니다. 예를 들어, “banana”의 모든 접두사는 “b”, “ba”, “ban”, “bana”, “banan”, “banana”입니다. 문자열 my_string과 is_prefix가 주어질 때, is_prefix가 my_string의 접두사라면 1을, 아니면 0을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ my_string의 길이 ≤ 100• 1 ≤ is_prefix의 길이 ≤ 100• my_string과 is_prefix는 영소문자로만 이루어져 있습니다.입출력 예            my_string      is_prefix      result                  “banana”      “ban”      1              “banana”      “nan”      0              “banana”      “abcd”      0              “banana”      “bananan”      0      입출력 예 설명입출력 예 #1  • 예제 1번에서 is_prefix가 my_string의 접두사이기 때문에 1을 return 합니다.입출력 예 #2  • 예제 2번에서 is_prefix가 my_string의 접두사가 아니기 때문에 0을 return 합니다.입출력 예 #3  • 예제 3번에서 is_prefix가 my_string의 접두사가 아니기 때문에 0을 return 합니다.입출력 예 #4  • 예제 4번에서 is_prefix가 my_string의 접두사가 아니기 때문에 0을 return 합니다.제시 코드import Foundationfunc solution(_ my_string:String, _ is_prefix:String) -&gt; Int {        return 0    }02 풀이solution 1 : prefix, contains 활용하기\b먼저 \"banana\" 의 모든 접두사를 저장할 변수를 선언해 준다.var prefixArray = [String]()이후 문자열의 개수 만큼 반복문을 돌리기 위해 my_string에 indices.map 을 사용했다.var prefixArray = [String]()my_string.map{$0}.indices.map{  }\b모든 \"banana\" 의 접두사들을 prefixArray에 append 처리해준다.var prefixArray = [String]()my_string.map{$0}.indices.map{\tprefixArray.append(String(my_string.map{$0}.prefix($0 + 1)))}마지막으로 prefixArray가 is_prefix 를 포함하고 있는지 유무에 따라 1 과 0을 return 해준다.var prefixArray = [String]()my_string.map{$0}.indices.map{\tprefixArray.append(String(my_string.map{$0}.prefix($0 + 1)))}return prefixArray.contains(is_prefix) ? 1 : 0💡Answer 01import Foundationfunc solution(_ my_string:String, _ is_prefix:String) -&gt; Int {    var prefixArray = [String]()    my_string.map{$0}.indices.map {        prefixArray.append(String(my_string.map{$0}.prefix($0 + 1)))    }        return prefixArray.contains(is_prefix) ? 1 : 0}해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (46) - 문자열의 앞의 n글자",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(46)-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98-%EC%95%9E%EC%9D%98-n%EA%B8%80%EC%9E%90/",
     "categories": "Programmers, 기초",
