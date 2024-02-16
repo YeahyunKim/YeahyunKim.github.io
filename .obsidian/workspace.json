@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md",
+                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (51) - 문자 개수 세기.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 250.5
+    "width": 360.5
   },
   "right": {
     "id": "450b3379e299ce3a",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md",
+                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (51) - 문자 개수 세기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md",
+                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (51) - 문자 개수 세기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md"
+                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (51) - 문자 개수 세기.md"
               }
             }
           }
@@ -161,6 +161,12 @@
   },
   "active": "3014ac36fe90fb0a",
   "lastOpenFiles": [
+    "_site/posts/프로그래머스-Swift-코테준비-(51)-문자-개수-세기/index.html",
+    "_site/posts/프로그래머스-Swift-코테준비-(51)-문자-개수-세기",
+    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (50) - qr code.md",
+    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (51) - 문자 개수 세기.md",
+    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (49) - 세로 읽기.md",
+    "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md",
     "_site/posts/swift-메서드-replacingOccurances()-문자열-치환/index.html",
     "_site/posts/swift-메서드-replacingOccurances()-문자열-치환",
     "_site/categories/stringmethods/index.html",
@@ -170,11 +176,7 @@
     "_site/tags/swiftstringmethods/index.html",
     "_site/tags/swiftstringmethods",
     "_site/tags/methods/index.html",
-    "_site/tags/methods",
-    "_site/tags/swift/index.html",
     "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
-    "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md",
-    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (50) - qr code.md",
     "_posts/2024-02-07- 프로그래머스 Swift 코테준비 (34) - 콜라츠 수열 만들기.md",
     "_posts/2024-02-07- 프로그래머스 Swift 코테준비 (31) - 수열과 구간 쿼리 4.md",
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기.md",
@@ -183,7 +185,6 @@
     "_posts/2024-01-07- 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기.md",
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (9) - 홀짝 구분하기.md",
     "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (16) - n의 배수.md",
-    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (49) - 세로 읽기.md",
     "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (48) - 문자열 뒤집기.md",
     "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (47) - 접두사인지 확인하기.md",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (44) - 접미사 배열.md",
@@ -195,7 +196,6 @@
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (40) - 문자열 여러 번 뒤집기.md",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (39) - 9로 나눈 나머지.md",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (38) - 글자 이어 붙여 문자열 만들기.md",
-    "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (37) - 주사위 게임 3.md",
-    "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (36) - 간단한 논리 연산.md"
+    "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (37) - 주사위 게임 3.md"
   ]
 }
