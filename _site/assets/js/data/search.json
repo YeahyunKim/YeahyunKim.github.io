@@ -1,6 +1,40 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (53) - 글자 지우기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(53)-%EA%B8%80%EC%9E%90-%EC%A7%80%EC%9A%B0%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-16 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 글자 지우기문제 설명  문자열 my_string과 정수 배열 indices가 주어질 때, my_string에서 indices의 원소에 해당하는 인덱스의 글자를 지우고 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ indices의 길이 &lt; my_string의 길이 ≤ 100• my_s...",
+    "content": "01 문제 : 글자 지우기문제 설명  문자열 my_string과 정수 배열 indices가 주어질 때, my_string에서 indices의 원소에 해당하는 인덱스의 글자를 지우고 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ indices의 길이 &lt; my_string의 길이 ≤ 100• my_string은 영소문자로만 이루어져 있습니다• 0 ≤ indices의 원소 &lt; my_string의 길이• indices의 원소는 모두 서로 다릅니다.입출력 예            my_string      indices      result                  “apporoograpemmemprs”      [1, 16, 6, 15, 0, 10, 11, 3]      “programmers”      입출력 예 설명입출력 예 #1  • 예제 1번의 my_string의 인덱스가 잘 보이도록 표를 만들면 다음과 같습니다.|index|0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18||—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—|—||my_string|a|p|p|o|r|o|o|g|r|a|p|e|m|m|e|m|p|r|s|제시 코드import Foundationfunc solution(_ my_string:String, _ indices:[Int]) -&gt; String {    \treturn \"\"    }02 풀이solution 1 : range / filter 활용하기\b먼저 indices 안의 요소들을 my_string의 배열요소로 사용하기 위해 my_string을 [String] 형태로 바꿔준다.var myString = my_string.map { String($0) }indices의 요소들을 가져오기 위해 forEach 문을 사용하고, 각각의 요소 위치를 빈문자열로 치환해준다. var myString = my_string.map { String($0) }  indices.forEach { myString[$0] = \"\" }마지막으로 빈 문자열들이 아닌 요소들만 남기고, 하나로 합쳐주면 된다. var myString = my_string.map { String($0) }  indices.forEach { myString[$0] = \"\" }  myString.filter { !$0.isEmpty }.map { String($0) }.joined()💡Answer 01import Foundationfunc solution(_ my_string:String, _ indices:[Int]) -&gt; String {        var myString = my_string.map { String($0) }        indices.forEach { myString[$0] = \"\" }        return myString.filter { !$0.isEmpty }.map { String($0) }.joined()    }해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "프로그래머스 Swift 코테준비 (52) - 배열 만들기 1",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(52)-%EB%B0%B0%EC%97%B4-%EB%A7%8C%EB%93%A4%EA%B8%B0-1/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-16 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 배열 만들기 1문제 설명  정수 n과 k가 주어졌을 때, 1 이상 n이하의 정수 중에서 k의 배수를 오름차순으로 저장한 배열을 return 하는 solution 함수를 완성해 주세요.제한사항  • 1 ≤ n ≤ 1,000,000• 1 ≤ k ≤ min(1,000, n)입출력 예            n      k      result  ...",
+    "content": "01 문제 : 배열 만들기 1문제 설명  정수 n과 k가 주어졌을 때, 1 이상 n이하의 정수 중에서 k의 배수를 오름차순으로 저장한 배열을 return 하는 solution 함수를 완성해 주세요.제한사항  • 1 ≤ n ≤ 1,000,000• 1 ≤ k ≤ min(1,000, n)입출력 예            n      k      result                  10      3      [3, 6, 9]              15      5      [5, 10, 15]      입출력 예 설명입출력 예 #1  • 1 이상 10 이하의 3의 배수는 3, 6, 9 이므로 [3, 6, 9]를 return 합니다.입출력 예 #2  • 1 이상 15 이하의 5의 배수는 5, 10, 15 이므로 [5, 10, 15]를 return 합니다.제시 코드import Foundationfunc solution(_ n:Int, _ k:Int) -&gt; [Int] {        return \"\"    }02 풀이solution 1 : range / filter 활용하기k 부터 n 까지 정수 중이면 아래와 같이 작성할 수 있다.(k...n)그중 k의 배수인 요소들만 남겨두어야 하니, filter를 활용하여 문제를 마무리 하였다. (k...n).filter{ $0 % k == 0 }💡Answer 01import Foundationfunc solution(_ n:Int, _ k:Int) -&gt; [Int] {\treturn (k...n).filter{ $0 % k == 0 }}해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (51) - 문자 개수 세기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(51)-%EB%AC%B8%EC%9E%90-%EA%B0%9C%EC%88%98-%EC%84%B8%EA%B8%B0/",
     "categories": "Programmers, 기초",
