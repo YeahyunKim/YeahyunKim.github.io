@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (50) - qr code.md",
+                "file": "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3014ac36fe90fb0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:methods",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 250.5
   },
   "right": {
     "id": "450b3379e299ce3a",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (50) - qr code.md",
+                "file": "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (50) - qr code.md",
+                "file": "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (50) - qr code.md"
+                "file": "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md"
               }
             }
           }
@@ -146,24 +159,34 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "6fc8dce851240483",
+  "active": "3014ac36fe90fb0a",
   "lastOpenFiles": [
-    "_site/posts/프로그래머스-Swift-코테준비-(50)-qr-code/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(50)-qr-code",
-    "_site/posts/프로그래머스-Swift-코테준비-(49)-세로-읽기/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(49)-세로-읽기",
-    "_site/page6/index.html",
-    "_site/page6",
-    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (49) - 세로 읽기.md",
+    "_site/posts/swift-메서드-replacingOccurances()-문자열-치환/index.html",
+    "_site/posts/swift-메서드-replacingOccurances()-문자열-치환",
+    "_site/categories/stringmethods/index.html",
+    "_site/categories/stringmethods",
+    "_site/categories/swift/index.html",
+    "_site/categories/swift",
+    "_site/tags/swiftstringmethods/index.html",
+    "_site/tags/swiftstringmethods",
+    "_site/tags/methods/index.html",
+    "_site/tags/methods",
+    "_site/tags/swift/index.html",
+    "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
+    "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md",
     "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (50) - qr code.md",
-    "_site/posts/프로그래머스-Swift-코테준비-(49)-qr-code/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(49)-qr-code",
+    "_posts/2024-02-07- 프로그래머스 Swift 코테준비 (34) - 콜라츠 수열 만들기.md",
+    "_posts/2024-02-07- 프로그래머스 Swift 코테준비 (31) - 수열과 구간 쿼리 4.md",
+    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기.md",
+    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (7) - 문자열 붙여서 출력하기.md",
+    "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기.md",
+    "_posts/2024-01-07- 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기.md",
+    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (9) - 홀짝 구분하기.md",
+    "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (16) - n의 배수.md",
+    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (49) - 세로 읽기.md",
     "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (48) - 문자열 뒤집기.md",
     "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (47) - 접두사인지 확인하기.md",
-    "_site/posts/프로그래머스-Swift-코테준비-(48)-문자열-뒤집기/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(48)-문자열-뒤집기",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (44) - 접미사 배열.md",
-    "_site/posts/프로그래머스-Swift-코테준비-(47)-문자열-뒤집기/index.html",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (46) - 문자열의 앞의 n글자.md",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (45) - 접미사인지 확인하기.md",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (43) - 문자열 뒤의 n글자.md",
@@ -173,16 +196,6 @@
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (39) - 9로 나눈 나머지.md",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (38) - 글자 이어 붙여 문자열 만들기.md",
     "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (37) - 주사위 게임 3.md",
-    "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (36) - 간단한 논리 연산.md",
-    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (7) - 문자열 붙여서 출력하기.md",
-    "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (35) - 배열 만들기 4.md",
-    "_posts/2024-01-31- 프로그래머스 Swift 코테준비 (24) - 원소들의 곱과 합.md",
-    "_posts/2024-01-22- 프로그래머스 Swift 코테준비 (20) - flag에 따라 다른 값 반환하기.md",
-    "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (17) - 공배수.md",
-    "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (16) - n의 배수.md",
-    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기.md",
-    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (6) - 덧셈식 출력하기.md",
-    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기.md",
-    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기.md"
+    "_posts/2024-02-08- 프로그래머스 Swift 코테준비 (36) - 간단한 논리 연산.md"
   ]
 }

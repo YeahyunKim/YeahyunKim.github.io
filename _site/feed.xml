@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-14T16:47:58+09:00</updated>
+  <updated>2024-02-16T13:03:59+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,67 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>replacingOccurances (1) - 문자열 치환</title>
+    <link href="http://localhost:4000/posts/swift-%EB%A9%94%EC%84%9C%EB%93%9C-replacingOccurances()-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B9%98%ED%99%98/" rel="alternate" type="text/html" title="replacingOccurances (1) - 문자열 치환" />
+    <published>2024-02-14T00:00:00+09:00</published>
+  
+    <updated>2024-02-14T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/swift-%EB%A9%94%EC%84%9C%EB%93%9C-replacingOccurances()-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B9%98%ED%99%98/</id>
+    <content src="http://localhost:4000/posts/swift-%EB%A9%94%EC%84%9C%EB%93%9C-replacingOccurances()-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B9%98%ED%99%98/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Swift" />
+    
+    <category term="StringMethods" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      replacingOccurrences(of:with:)
+
+
+메소드 설명
+
+
+  Returns a new string in which all occurrences of a target. string in the receiver are replaced by another given string.
+파라미터를 통해 받은 문자열을 다른 문자열로 대체하고 새 문자열을 반환한다.
+애플 공식 문서
+
+
+func replacingOccurrences(
+    of target: String,
+    with replacement: String
+) -&amp;gt; String
+
+
+
+사용 예시
+예시 1 : String 을 바꿀때
+
+import Foundation 
+
+var text = "helloMath"
+
+// hello 가 ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -297,80 +358,6 @@
     
       my_string
       i...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (46) - 문자열의 앞의 n글자</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(46)-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98-%EC%95%9E%EC%9D%98-n%EA%B8%80%EC%9E%90/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (46) - 문자열의 앞의 n글자" />
-    <published>2024-02-13T00:00:00+09:00</published>
-  
-    <updated>2024-02-13T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(46)-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98-%EC%95%9E%EC%9D%98-n%EA%B8%80%EC%9E%90/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(46)-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98-%EC%95%9E%EC%9D%98-n%EA%B8%80%EC%9E%90/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 문자열의 앞의 n글자
-
-
-문제 설명
-
-
-  문자열 my_string과 정수 n이 매개변수로 주어질 때, my_string의 앞의 n글자로 이루어진 문자열을 return 하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  • my_string은 숫자와 알파벳으로 이루어져 있습니다.
-• 1 ≤ my_string의 길이 ≤ 1,000
-• 1 ≤ n ≤ my_string의 길이
-
-
-
-입출력 예
-
-
-  
-    
-      my_string
-      n
-      result
-    
-  
-  
-    
-      “ProgrammerS123”
-      11
-      “ProgrammerS”
-    
-    
-      “He110W0r1d”
-      5
-      “He11...
     </summary>
   
 
