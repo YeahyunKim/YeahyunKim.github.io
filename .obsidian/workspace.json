@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (58) - 배열 만들기 3.md",
+                "file": "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (59) - 2의 영역.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 244.5
+    "width": 486.5
   },
   "right": {
     "id": "450b3379e299ce3a",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (58) - 배열 만들기 3.md",
+                "file": "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (59) - 2의 영역.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (58) - 배열 만들기 3.md",
+                "file": "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (59) - 2의 영역.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (58) - 배열 만들기 3.md"
+                "file": "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (59) - 2의 영역.md"
               }
             }
           }
@@ -161,9 +161,10 @@
   },
   "active": "3014ac36fe90fb0a",
   "lastOpenFiles": [
+    "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (56) - 리스트 자르기.md",
     "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (57) - 첫 번째로 나오는 음수.md",
     "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (58) - 배열 만들기 3.md",
-    "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (56) - 리스트 자르기.md",
+    "_posts/2024-02-17 - 프로그래머스 Swift 코테준비 (59) - 2의 영역.md",
     "_site/posts/프로그래머스-Swift-코테준비-(56)-가까운-1-찾기-1/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(56)-가까운-1-찾기-1",
     "_posts/2024-02-16- 프로그래머스 Swift 코테준비 (55) - 가까운 1 찾기.md",
@@ -195,7 +196,6 @@
     "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (47) - 접두사인지 확인하기.md",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (44) - 접미사 배열.md",
     "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (46) - 문자열의 앞의 n글자.md",
-    "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (45) - 접미사인지 확인하기.md",
-    "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (43) - 문자열 뒤의 n글자.md"
+    "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (45) - 접미사인지 확인하기.md"
   ]
 }
