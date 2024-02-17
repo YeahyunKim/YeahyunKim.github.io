@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-16T19:08:25+09:00</updated>
+  <updated>2024-02-17T17:17:44+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -48,8 +48,7 @@
 
 
 
-      01 문제 : 카운트 다운
-
+      01 문제 : 1. 가까운 1 찾기
 
 문제 설명
 
@@ -86,8 +85,7 @@
     
       [1, 0, 0, 1, 0, 0]
       4
-      -1
-   ...
+      -1...
     </summary>
   
 
