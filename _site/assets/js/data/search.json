@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (65) - n개 간격의 원소들",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(65)-n%EA%B0%9C-%EA%B0%84%EA%B2%A9%EC%9D%98-%EC%9B%90%EC%86%8C%EB%93%A4/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-19 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 :\bn개 간격의 원소들문제 설명  정수 리스트 num_list와 정수 n이 주어질 때, num_list의 첫 번째 원소부터 마지막 원소까지 n개 간격으로 저장되어있는 원소들을 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.제한사항  • 5 ≤ num_list의 길이 ≤ 20• 1 ≤ num_list의 원소 ≤ 9...",
+    "content": "01 문제 :\bn개 간격의 원소들문제 설명  정수 리스트 num_list와 정수 n이 주어질 때, num_list의 첫 번째 원소부터 마지막 원소까지 n개 간격으로 저장되어있는 원소들을 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.제한사항  • 5 ≤ num_list의 길이 ≤ 20• 1 ≤ num_list의 원소 ≤ 9• 1 ≤ n ≤ 4입출력 예            num_list      n      result                  [4, 2, 6, 1, 7, 6]      2      [4, 6, 7]              [4, 2, 6, 1, 7, 6]      4      [4, 7]      입출력 예 설명입출력 예 #1  • [4, 2, 6, 1, 7, 6]에서 2개 간격으로 저장되어 있는 원소들은 [4, 6, 7]입니다.입출력 예 #2  • [4, 2, 6, 1, 7, 6]에서 4개 간격으로 저장되어 있는 원소들은 [4, 7]입니다.제시 코드import Foundationfunc solution(_ num_list:[Int], _ n:Int) -&gt; [Int] {    \treturn [0]    }02 풀이solution 1 : for 문 활용하기 (내가 푼 방법)먼저, 결괏값을 저장할 변수를 하나 생성해 주었다.var result = [Int]()먼저, 이후, n 의 간격으로 요소를 저장해야하기 때문에 num_list.count - 1 에서 n을 나눠준 값만큼 반복문은 실행시켰다.var result = [Int]()for i in 0...((num_list.count - 1) / n) {}마지막으로 result 에 num_list 에서 n의 간격만큼의 반복문이 실행될동안 추가해주었다.var result = [Int]()for i in 0...((num_list.count - 1) / n) {\tresult += Array(arrayLiteral: num_list[(n * i)])}return resultsolution 2 : stride 활용하기 (\b다른 풀이 )swift 에 원하는 구간만큼의 요소의 값을 가져오는데 편리한 메서드가 있음을 해당 문제를 통해 알게 되었다.바로 stride 이다.0부터 num_list.count 까지 n의 간격만큼 인덱스의 값을 가져올 수 있다.stride(from: 0, to: num_list.count, by: 2)이후, 가져온 인덱스들을 가지고 num_list[인덱스] 로 원하는 값을 가져올 수 있었다.stride(from: 0, to: num_list.count, by: 2).map{ num_list[$0] }💡Answer 01import Foundationfunc solution(_ num_list:[Int], _ n:Int) -&gt; [Int] {    var result = [Int]()    for i in 0...((num_list.count - 1) / n) {            result += Array(arrayLiteral: num_list[(n * i)])        }    return result}💡Answer 02import Foundationfunc solution(_ num_list:[Int], _ n:Int) -&gt; [Int] {    return stride(from: 0, to: num_list.count, by: n).map{ num_list[$0] }    }해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (64) - n 번째 원소까지",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/",
     "categories": "Programmers, 기초",
