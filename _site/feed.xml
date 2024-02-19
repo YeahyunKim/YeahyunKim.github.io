@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-19T17:33:37+09:00</updated>
+  <updated>2024-02-19T18:00:39+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,86 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (64) - n 번째 원소까지</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (64) - n 번째 원소까지" />
+    <published>2024-02-19T00:00:00+09:00</published>
+  
+    <updated>2024-02-19T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 :n 번째 원소까지
+
+문제 설명
+
+
+  정수 리스트 num_list와 정수 n이 주어질 때, num_list의 첫 번째 원소부터 n 번째 원소까지의 모든 원소를 담은 리스트를 return하도록 solution 함수를 완성해주세요.
+
+
+
+제한사항
+
+
+  • 2 ≤ num_list의 길이 ≤ 30
+• 1 ≤ num_list의 원소 ≤ 9
+• 1 ≤ n ≤ num_list의 길이 ___
+
+
+
+입출력 예
+
+
+  
+    
+      num_list
+      n
+      result
+    
+  
+  
+    
+      [2, 1, 6]
+      1
+      [2]
+    
+    
+      [5, 2, 1, 7, 5]
+      3
+      [5, 2, 1]
+    
+  
+
+
+
+
+입출...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -279,83 +359,6 @@ str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이�
 	• 0 ≤ arr의 원소 ≤ 100
 • 1 ≤ query의 길이 &amp;lt; min(50, arr의 길이 / 2)
 	• query의 각 원소...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (59) - 2의 영역</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(59)-2%EC%9D%98-%EC%98%81%EC%97%AD/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (59) - 2의 영역" />
-    <published>2024-02-17T00:00:00+09:00</published>
-  
-    <updated>2024-02-17T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(59)-2%EC%9D%98-%EC%98%81%EC%97%AD/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(59)-2%EC%9D%98-%EC%98%81%EC%97%AD/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 2의 영역
-
-문제 설명
-
-
-  정수 배열 arr가 주어집니다. 배열 안의 2가 모두 포함된 가장 작은 연속된 부분 배열을 return 하는 solution 함수를 완성해 주세요. 
-단, arr에 2가 없는 경우 [-1]을 return 합니다.
-
-
-
-제한사항
-
-
-  • 1 ≤ arr의 길이 ≤ 100,000
-	• 1 ≤ arr의 원소 ≤ 10
-
-
-
-입출력 예
-
-
-  
-    
-      arr
-      result
-    
-  
-  
-    
-      [1, 2, 1, 4, 5, 2, 9]
-      [2, 1, 4, 5, 2]
-    
-    
-      [1, 2, 1]
-      [2]
-    
-    
-      [1, 1, 1]
-      [-1]
-    
-    
-      ...
     </summary>
   
 

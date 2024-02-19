@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽" />
+<meta property="og:title" content="프로그래머스 Swift 코테준비 (64) - n 번째 원소까지" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="01 문제 :왼쪽 오른쪽 문제 설명" />
-<meta property="og:description" content="01 문제 :왼쪽 오른쪽 문제 설명" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(63)-%EC%99%BC%EC%AA%BD-%EC%98%A4%EB%A5%B8%EC%AA%BD/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(63)-%EC%99%BC%EC%AA%BD-%EC%98%A4%EB%A5%B8%EC%AA%BD/" />
+<meta name="description" content="01 문제 :n 번째 원소까지 문제 설명" />
+<meta property="og:description" content="01 문제 :n 번째 원소까지 문제 설명" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-02-17T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-02-19T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
-<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽" />
+<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (64) - n 번째 원소까지" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-02-17T00:00:00+09:00","datePublished":"2024-02-17T00:00:00+09:00","description":"01 문제 :\b왼쪽 오른쪽 문제 설명","headline":"프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(63)-%EC%99%BC%EC%AA%BD-%EC%98%A4%EB%A5%B8%EC%AA%BD/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(63)-%EC%99%BC%EC%AA%BD-%EC%98%A4%EB%A5%B8%EC%AA%BD/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-02-19T00:00:00+09:00","datePublished":"2024-02-19T00:00:00+09:00","description":"01 문제 :\bn 번째 원소까지 문제 설명","headline":"프로그래머스 Swift 코테준비 (64) - n 번째 원소까지","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽 | Yeahyun Kim
+  <title>프로그래머스 Swift 코테준비 (64) - n 번째 원소까지 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽</span>
+              <span>프로그래머스 Swift 코테준비 (64) - n 번째 원소까지</span>
             
 
           
@@ -808,7 +808,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽</h1>
+    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (64) - n 번째 원소까지</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -824,13 +824,13 @@
 
 <time
   
-  data-ts="1708095600"
+  data-ts="1708268400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Feb 17, 2024
+  Feb 19, 2024
 </time>
 
       </span>
@@ -887,9 +887,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="535 words"
+  title="333 words"
 >
-  <em>2 min</em> read</span>
+  <em>1 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -898,21 +898,21 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제-왼쪽-오른쪽"><span class="me-2">01 문제 :왼쪽 오른쪽</span><a href="#01-문제-왼쪽-오른쪽" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제-n-번째-원소까지"><span class="me-2">01 문제 :n 번째 원소까지</span><a href="#01-문제-n-번째-원소까지" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>문자열 리스트 <code class="language-plaintext highlighter-rouge">str_list</code>에는 “u”, “d”, “l”, “r” 네 개의 문자열이 여러 개 저장되어 있습니다. <br />
-<code class="language-plaintext highlighter-rouge">str_list</code>에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이라면 해당 문자열을 기준으로 왼쪽에 있는 문자열들을 순서대로 담은 리스트를, 먼저 나오는 문자열이 “r”이라면 해당 문자열을 기준으로 오른쪽에 있는 문자열들을 순서대로 담은 리스트를 return하도록 solution 함수를 완성해주세요. “l”이나 “r”이 없다면 빈 리스트를 return합니다.</p>
+  <p>정수 리스트 <code class="language-plaintext highlighter-rouge">num_list</code>와 정수 <code class="language-plaintext highlighter-rouge">n</code>이 주어질 때, <code class="language-plaintext highlighter-rouge">num_list</code>의 첫 번째 원소부터 <code class="language-plaintext highlighter-rouge">n</code> 번째 원소까지의 모든 원소를 담은 리스트를 return하도록 solution 함수를 완성해주세요.</p>
 </blockquote>
 
 <p><br /></p>
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str_list</code>의 길이 ≤ 20
-• <code class="language-plaintext highlighter-rouge">str_list</code>는 “u”, “d”, “l”, “r” 네 개의 문자열로 이루어져 있습니다.</p>
+  <p>• 2 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 길이 ≤ 30
+• 1 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 원소 ≤ 9
+• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 길이 ___</p>
 </blockquote>
 <p><br /></p>
 
@@ -921,18 +921,21 @@
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>str_list</th>
+      <th>num_list</th>
+      <th>n</th>
       <th>result</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>[“u”, “u”, “l”, “r”]</td>
-      <td>[“u”, “u”]</td>
+      <td>[2, 1, 6]</td>
+      <td>1</td>
+      <td>[2]</td>
     </tr>
     <tr>
-      <td>[“l”]</td>
-      <td>[]</td>
+      <td>[5, 2, 1, 7, 5]</td>
+      <td>3</td>
+      <td>[5, 2, 1]</td>
     </tr>
   </tbody>
 </table></div>
@@ -944,13 +947,13 @@
 <h6 id="입출력-예-1">입출력 예 #1</h6>
 
 <blockquote class="command-text">
-  <p>• “r”보다 “l”이 먼저 나왔기 때문에 “l”의 왼쪽에 있는 문자열들을 담은 리스트인 [“u”, “u”]를 return합니다.</p>
+  <p>• [2, 1, 6]의 첫 번째 원소부터 첫 번째 원소까지의 모든 원소는 [2]입니다.</p>
 </blockquote>
 
 <h6 id="입출력-예-2">입출력 예 #2</h6>
 
 <blockquote class="command-text">
-  <p>• “l”의 왼쪽에 문자열이 없기 때문에 빈 리스트를 return합니다.</p>
+  <p>• [5, 2, 1, 7, 5]의 첫 번째 원소부터 세 번째 원소까지의 모든 원소는 [5, 2, 1]입니다.</p>
 </blockquote>
 
 <p><br /></p>
@@ -967,9 +970,9 @@
 7
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">str_list</span><span class="p">:[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
     
-	<span class="k">return</span> <span class="p">[</span><span class="s">" "</span><span class="p">]</span>
+	<span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
     
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
@@ -980,58 +983,15 @@
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 
-<h4 id="solution-1--enumerated-활용하기"><span class="me-2">solution 1 : enumerated() 활용하기</span><a href="#solution-1--enumerated-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<h4 id="solution-1--range-활용하기"><span class="me-2">solution 1 : range 활용하기</span><a href="#solution-1--range-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>먼저 <code class="language-plaintext highlighter-rouge">str_list</code> 에서 가장 가까운 <code class="language-plaintext highlighter-rouge">l</code> 혹은 <code class="language-plaintext highlighter-rouge">r</code> 의 인덱스 값을 구하였다.</p>
-
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">getLR</span> <span class="o">=</span> <span class="n">str_list</span><span class="o">.</span><span class="nf">enumerated</span><span class="p">()</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span><span class="nv">$0</span><span class="o">.</span><span class="n">element</span> <span class="o">==</span> <span class="s">"l"</span> <span class="o">||</span> <span class="nv">$0</span><span class="o">.</span><span class="n">element</span> <span class="o">==</span> <span class="s">"r"</span><span class="p">}</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="o">.</span><span class="n">offset</span><span class="p">}</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p><br />
-이후, 해당 인덱스 값만큼 for문을 돌려주었다.</p>
+<p><code class="language-plaintext highlighter-rouge">num_list</code>의 첫 번째 원소부터 <code class="language-plaintext highlighter-rouge">n</code> 번째 원소까지를 구하기 위해선 범위를 <code class="language-plaintext highlighter-rouge">0...(n-1)</code> 로 잡아주면 된다.
+<code class="language-plaintext highlighter-rouge">n - 1</code> 에서 1을 빼는 이유는 배열의 인덱스값은 0부터 시작하기 때문..!</p>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">getLR</span> <span class="o">=</span> <span class="n">str_list</span><span class="o">.</span><span class="nf">enumerated</span><span class="p">()</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span><span class="nv">$0</span><span class="o">.</span><span class="n">element</span> <span class="o">==</span> <span class="s">"l"</span> <span class="o">||</span> <span class="nv">$0</span><span class="o">.</span><span class="n">element</span> <span class="o">==</span> <span class="s">"r"</span><span class="p">}</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="o">.</span><span class="n">offset</span><span class="p">}</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="n">getLR</span> <span class="p">{</span>
-
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p><br /></p>
-
-<p>마지막으로 조건을 추가해주었다.</p>
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">getLR</span> <span class="o">=</span> <span class="n">str_list</span><span class="o">.</span><span class="nf">enumerated</span><span class="p">()</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span><span class="nv">$0</span><span class="o">.</span><span class="n">element</span> <span class="o">==</span> <span class="s">"l"</span> <span class="o">||</span> <span class="nv">$0</span><span class="o">.</span><span class="n">element</span> <span class="o">==</span> <span class="s">"r"</span><span class="p">}</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="o">.</span><span class="n">offset</span><span class="p">}</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="n">getLR</span> <span class="p">{</span>
-	<span class="k">if</span> <span class="n">str_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">"l"</span> <span class="p">{</span>
-		<span class="k">return</span> <span class="kt">Array</span><span class="p">(</span><span class="n">str_list</span><span class="p">[</span><span class="o">...</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)])</span>
-	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-		<span class="k">return</span> <span class="kt">Array</span><span class="p">(</span><span class="n">str_list</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">...</span><span class="p">])</span>
-	<span class="p">}</span>
-<span class="p">}</span>
-<span class="k">return</span> <span class="p">[]</span>
+</pre></td><td class="rouge-code"><pre><span class="kt">Array</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="mi">0</span><span class="o">...</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)])</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br /></p>
@@ -1049,26 +1009,12 @@
 5
 6
 7
-8
-9
-10
-11
-12
-13
-14
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">str_list</span><span class="p">:[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="nv">getLR</span> <span class="o">=</span> <span class="n">str_list</span><span class="o">.</span><span class="nf">enumerated</span><span class="p">()</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span><span class="nv">$0</span><span class="o">.</span><span class="n">element</span> <span class="o">==</span> <span class="s">"l"</span> <span class="o">||</span> <span class="nv">$0</span><span class="o">.</span><span class="n">element</span> <span class="o">==</span> <span class="s">"r"</span><span class="p">}</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="o">.</span><span class="n">offset</span><span class="p">}</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+
+    <span class="k">return</span> <span class="kt">Array</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="mi">0</span><span class="o">...</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)])</span>
     
-    <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="n">getLR</span> <span class="p">{</span>
-        <span class="k">if</span> <span class="n">str_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">"l"</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="kt">Array</span><span class="p">(</span><span class="n">str_list</span><span class="p">[</span><span class="o">...</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)])</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="kt">Array</span><span class="p">(</span><span class="n">str_list</span><span class="p">[(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">...</span><span class="p">])</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="p">[]</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1130,21 +1076,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(63)%20-%20%EC%99%BC%EC%AA%BD%20%EC%98%A4%EB%A5%B8%EC%AA%BD%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2863%29-%25EC%2599%25BC%25EC%25AA%25BD-%25EC%2598%25A4%25EB%25A5%25B8%25EC%25AA%25BD%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(64)%20-%20n%20%EB%B2%88%EC%A7%B8%20%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2864%29-n-%25EB%25B2%2588%25EC%25A7%25B8-%25EC%259B%2590%25EC%2586%258C%25EA%25B9%258C%25EC%25A7%2580%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(63)%20-%20%EC%99%BC%EC%AA%BD%20%EC%98%A4%EB%A5%B8%EC%AA%BD%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2863%29-%25EC%2599%25BC%25EC%25AA%25BD-%25EC%2598%25A4%25EB%25A5%25B8%25EC%25AA%25BD%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(64)%20-%20n%20%EB%B2%88%EC%A7%B8%20%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2864%29-n-%25EB%25B2%2588%25EC%25A7%25B8-%25EC%259B%2590%25EC%2586%258C%25EA%25B9%258C%25EC%25A7%2580%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2863%29-%25EC%2599%25BC%25EC%25AA%25BD-%25EC%2598%25A4%25EB%25A5%25B8%25EC%25AA%25BD%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(63)%20-%20%EC%99%BC%EC%AA%BD%20%EC%98%A4%EB%A5%B8%EC%AA%BD%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2864%29-n-%25EB%25B2%2588%25EC%25A7%25B8-%25EC%259B%2590%25EC%2586%258C%25EA%25B9%258C%25EC%25A7%2580%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(64)%20-%20n%20%EB%B2%88%EC%A7%B8%20%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1521,19 +1467,19 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -2454,22 +2400,18 @@
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(62)-%EC%88%9C%EC%84%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(63)-%EC%99%BC%EC%AA%BD-%EC%98%A4%EB%A5%B8%EC%AA%BD/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Swift 코테준비 (62) - 순서 바꾸기</p>
+      <p>프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽</p>
     </a>
   
 
   
-    <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>프로그래머스 Swift 코테준비 (64) - n 번째 원소까지</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
