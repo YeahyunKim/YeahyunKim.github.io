@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-20T17:52:17+09:00</updated>
+  <updated>2024-02-20T18:00:56+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,151 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (67) - 5명씩</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(67)-5%EB%AA%85%EC%94%A9/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (67) - 5명씩" />
+    <published>2024-02-20T00:00:00+09:00</published>
+  
+    <updated>2024-02-20T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(67)-5%EB%AA%85%EC%94%A9/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(67)-5%EB%AA%85%EC%94%A9/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 :5명씩
+
+
+문제 설명
+
+
+  최대 5명씩 탑승가능한 놀이기구를 타기 위해 줄을 서있는 사람들의 이름이 담긴 문자열 리스트 names가 주어질 때, 앞에서 부터 5명씩 묶은 그룹의 가장 앞에 서있는 사람들의 이름을 담은 리스트를 return하도록 solution 함수를 완성해주세요. 마지막 그룹이 5명이 되지 않더라도 가장 앞에 있는 사람의 이름을 포함합니다.
+
+
+
+제한사항
+
+
+  • 5 ≤ names의 길이 ≤ 30
+• 1 ≤ names의 원소의 길이 ≤ 10
+• names의 원소는 영어 알파벳 소문자로만 이루어져 있습니다.
+
+
+
+입출력 예
+
+
+  
+    
+      names
+      result
+    
+  
+  
+    
+      [“nami”, “ahri”, “jayce”, ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (66) - 홀수 vs 짝수</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(66)-%ED%99%80%EC%88%98-vs-%EC%A7%9D%EC%88%98/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (66) - 홀수 vs 짝수" />
+    <published>2024-02-20T00:00:00+09:00</published>
+  
+    <updated>2024-02-20T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(66)-%ED%99%80%EC%88%98-vs-%EC%A7%9D%EC%88%98/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(66)-%ED%99%80%EC%88%98-vs-%EC%A7%9D%EC%88%98/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 :홀수 vs 짝수
+
+
+문제 설명
+
+
+  정수 리스트 num_list가 주어집니다. 가장 첫 번째 원소를 1번 원소라고 할 때, 홀수 번째 원소들의 합과 짝수 번째 원소들의 합 중 큰 값을 return 하도록 solution 함수를 완성해주세요. 두 값이 같을 경우 그 값을 return합니다.
+
+
+
+제한사항
+
+
+  • 5 ≤ num_list의 길이 ≤ 50
+• 9 ≤ num_list의 원소 ≤ 9
+
+
+
+입출력 예
+
+
+  
+    
+      num_list
+      result
+    
+  
+  
+    
+      [4, 2, 6, 1, 7, 6]
+      17
+    
+    
+      [-1, 2, 5, 6, 3]
+      8
+    
+  
+
+
+
+
+입출력 예 설명
+
+입출력 예 #...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -225,160 +370,6 @@ str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이�
 
   
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (62) - 순서 바꾸기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(62)-%EC%88%9C%EC%84%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (62) - 순서 바꾸기" />
-    <published>2024-02-17T00:00:00+09:00</published>
-  
-    <updated>2024-02-17T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(62)-%EC%88%9C%EC%84%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(62)-%EC%88%9C%EC%84%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :순서 바꾸기
-
-문제 설명
-
-
-  정수 리스트 num_list와 정수 n이 주어질 때, num_list를 n 번째 원소 이후의 원소들과 n 번째까지의 원소들로 나눠 n 번째 원소 이후의 원소들을 n 번째까지의 원소들 앞에 붙인 리스트를 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  • 2 ≤ num_list의 길이 ≤ 30
-• 1 ≤ num_list의 원소 ≤ 9
-• 1 ≤ n ≤ num_list의 길이
-
-
-
-입출력 예
-
-
-  
-    
-      num_list
-      n
-      result
-    
-  
-  
-    
-      [2, 1, 6]
-      1
-      [1, 6, 2]
-    
-    
-      [5, 2, 1, 7, 5]
-  ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (61) - n 번째 원소부터</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(61)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EB%B6%80%ED%84%B0/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (61) - n 번째 원소부터" />
-    <published>2024-02-17T00:00:00+09:00</published>
-  
-    <updated>2024-02-19T17:19:55+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(61)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EB%B6%80%ED%84%B0/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(61)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EB%B6%80%ED%84%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :n 번째 원소부터
-
-문제 설명
-
-
-  정수 리스트 num_list와 정수 n이 주어질 때, n 번째 원소부터 마지막 원소까지의 모든 원소를 담은 리스트를 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  • 2 ≤ num_list의 길이 ≤ 30
-• 1 ≤ num_list의 원소 ≤ 9
-• 1 ≤ n ≤ num_list의 길이
-
-
-
-입출력 예
-
-
-  
-    
-      num_list
-      n
-      result
-    
-  
-  
-    
-      [2, 1, 6]
-      3
-      [6]
-    
-    
-      [5, 2, 1, 7, 5]
-      2
-      [2, 1, 7, 5]
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 ...
     </summary>
   
 
