@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (65) - n개 간격의 원소들.md",
+                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (66) - 홀수 vs 짝수.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (65) - n개 간격의 원소들.md",
+                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (66) - 홀수 vs 짝수.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (65) - n개 간격의 원소들.md",
+                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (66) - 홀수 vs 짝수.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (65) - n개 간격의 원소들.md"
+                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (66) - 홀수 vs 짝수.md"
               }
             }
           }
@@ -161,12 +161,15 @@
   },
   "active": "3014ac36fe90fb0a",
   "lastOpenFiles": [
+    "_site/posts/프로그래머스-Swift-코테준비-(66)-n개-간격의-원소들-1/index.html",
+    "_site/posts/프로그래머스-Swift-코테준비-(66)-n개-간격의-원소들-1",
+    "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (65) - n개 간격의 원소들.md",
+    "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (66) - 홀수 vs 짝수.md",
     "_site/posts/프로그래머스-Swift-코테준비-(65)-n개-간격의-원소들/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(65)-n개-간격의-원소들",
     "_site/posts/프로그래머스-Swift-코테준비-(65)-n-번째-원소까지-1/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(65)-n-번째-원소까지-1",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (64) - n 번째 원소까지.md",
-    "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (65) - n개 간격의 원소들.md",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽.md",
     "_site/posts/프로그래머스-Swift-코테준비-(64)-n-번째-원소까지/index.html",
     "_site/posts/프로그래머스-Swift-코테준비-(64)-n-번째-원소까지",
@@ -174,9 +177,7 @@
     "_site/posts/프로그래머스-Swift-코테준비-(64)",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (62) - 순서 바꾸기.md",
     "_site/posts/프로그래머스-Swift-코테준비-(63)-왼쪽-오른쪽/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(63)-왼쪽-오른쪽",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (61) -  n 번째 원소부터.md",
-    "_site/posts/프로그래머스-Swift-코테준비-(63)-순서-바꾸기-1/index.html",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (60) - 배열 조각하기.md",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (59) - 2의 영역.md",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (57) - 첫 번째로 나오는 음수.md",
@@ -195,7 +196,6 @@
     "_posts/2024-02-07- 프로그래머스 Swift 코테준비 (34) - 콜라츠 수열 만들기.md",
     "_posts/2024-02-07- 프로그래머스 Swift 코테준비 (31) - 수열과 구간 쿼리 4.md",
     "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기.md",
-    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (7) - 문자열 붙여서 출력하기.md",
-    "_posts/2024-01-15- 프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기.md"
+    "_posts/2024-01-08- 프로그래머스 Swift 코테준비 (7) - 문자열 붙여서 출력하기.md"
   ]
 }
