@@ -1,6 +1,40 @@
 [
   
   {
+    "title": "프로그래머스 Swift 코테준비 (68) - 할 일 목록",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(69)-n%EB%B3%B4%EB%8B%A4-%EC%BB%A4%EC%A7%88-%EB%95%8C%EA%B9%8C%EC%A7%80-%EB%8D%94%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-20 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 :\bn보다 커질 때까지 더하기문제 설명  정수 배열 numbers와 정수 n이 매개변수로 주어집니다. numbers의 원소를 앞에서부터 하나씩 더하다가 그 합이 n보다 커지는 순간 이때까지 더했던 원소들의 합을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ numbers의 길이 ≤ 100• 1 ≤ numbers...",
+    "content": "01 문제 :\bn보다 커질 때까지 더하기문제 설명  정수 배열 numbers와 정수 n이 매개변수로 주어집니다. numbers의 원소를 앞에서부터 하나씩 더하다가 그 합이 n보다 커지는 순간 이때까지 더했던 원소들의 합을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ numbers의 길이 ≤ 100• 1 ≤ numbers의 원소 ≤ 100• 0 ≤ n &lt; numbers의 모든 원소의 합입출력 예            numbers      n      result                  [34, 5, 71, 29, 100, 34]      123      139              [58, 44, 27, 10, 100]      139      239      입출력 예 설명입출력 예 #1  • 예제 1번의 numbers를 문제 설명대로 더해가는 과정을 나타내면 다음의 표와 같습니다.            i      numbers[i]      sum                                0              0      34      34              1      5      39              2      71      110              3      29      139      제시 코드import Foundationfunc solution(_ numbers:[Int], _ n:Int) -&gt; Int {    \treturn [\" \"]    }02 풀이solution 1 : reduce() 활용하기먼저, numbers 의 값들을 n 보다 작을때까지 앞에서부터 더해줘야하니, reduce() 를 통해 삼항 연산자로 조건을 걸어주었다.numbers.reduce(0) { $0 &lt;= n ? $0 + $1 : $0 }💡Answer 01import Foundationfunc solution(_ numbers:[Int], _ n:Int) -&gt; Int {    return numbers.reduce(0) { $0 &lt;= n ? $0 + $1 : $0 }    }해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "프로그래머스 Swift 코테준비 (68) - 할 일 목록",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(68)-%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-02-20 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 :\b할 일 목록문제 설명  오늘 해야 할 일이 담긴 문자열 배열 todo_list와 각각의 일을 지금 마쳤는지를 나타내는 boolean 배열 finished가 매개변수로 주어질 때, todo_list에서 아직 마치지 못한 일들을 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ todo...",
+    "content": "01 문제 :\b할 일 목록문제 설명  오늘 해야 할 일이 담긴 문자열 배열 todo_list와 각각의 일을 지금 마쳤는지를 나타내는 boolean 배열 finished가 매개변수로 주어질 때, todo_list에서 아직 마치지 못한 일들을 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요.제한사항  • 1 ≤ todo_list의 길이 1 ≤ 100• 2 ≤ todo_list의 원소의 길이 ≤ 20\t• todo_list의 원소는 영소문자로만 이루어져 있습니다.\t• todo_list의 원소는 모두 서로 다릅니다.• finished[i]는 true 또는 false이고 true는 todo_list[i]를 마쳤음을, false는 아직 마치지 못했음을 나타냅니다.• 아직 마치지 못한 일이 적어도 하나 있습니다.입출력 예            todo_list      finished      result                  [“problemsolving”, “practiceguitar”, “swim”, “studygraph”]      [true, false, true, false]      [“practiceguitar”, “studygraph”]      입출력 예 설명입출력 예 #1  • 예제 1번의 todo_list 중에서 “problemsolving”과 “swim”은 마쳤고, “practiceguitar”와 “studygraph”는 아직 마치지 못했으므로 todo_list에서 나온 순서대로 담은 문자열 배열 [“practiceguitar”, “studygraph”]를 return 합니다.제시 코드import Foundationfunc solution(_ todo_list:[String], _ finished:[Bool]) -&gt; [String] {    \treturn [\" \"]    }02 풀이solution 1 : enumerated() 활용하기먼저, finished 변수의 각 요소별 element 와 offset 값을 만들었다. finished 변수의 false 요소의 offset 값을 통해 todo_list 에서 요소를 가져와야 하기 때문이다.finished.enumerated()\b이후, filter 로 false 요소들만 남겨두었다.finished.enumerated().filter{$0.element == false }마지막으로 false 요소의 offset 값으로 finished 에서 요소를 가져와 주었다.finished.enumerated().filter{$0.element == false }.map{ todo_list[$0.offset] }💡Answer 01import Foundationfunc solution(_ todo_list:[String], _ finished:[Bool]) -&gt; [String] {    return finished.enumerated().filter{$0.element == false }.map{ todo_list[$0.offset] }    }해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (67) - 5명씩",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(67)-5%EB%AA%85%EC%94%A9/",
     "categories": "Programmers, 기초",

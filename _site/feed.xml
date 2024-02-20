@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-20T18:18:39+09:00</updated>
+  <updated>2024-02-20T18:29:22+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,136 @@
 
   
   <entry>
+    <title>프로그래머스 Swift 코테준비 (68) - 할 일 목록</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(69)-n%EB%B3%B4%EB%8B%A4-%EC%BB%A4%EC%A7%88-%EB%95%8C%EA%B9%8C%EC%A7%80-%EB%8D%94%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (68) - 할 일 목록" />
+    <published>2024-02-20T00:00:00+09:00</published>
+  
+    <updated>2024-02-20T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(69)-n%EB%B3%B4%EB%8B%A4-%EC%BB%A4%EC%A7%88-%EB%95%8C%EA%B9%8C%EC%A7%80-%EB%8D%94%ED%95%98%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(69)-n%EB%B3%B4%EB%8B%A4-%EC%BB%A4%EC%A7%88-%EB%95%8C%EA%B9%8C%EC%A7%80-%EB%8D%94%ED%95%98%EA%B8%B0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 :n보다 커질 때까지 더하기
+
+
+문제 설명
+
+
+  정수 배열 numbers와 정수 n이 매개변수로 주어집니다. numbers의 원소를 앞에서부터 하나씩 더하다가 그 합이 n보다 커지는 순간 이때까지 더했던 원소들의 합을 return 하는 solution 함수를 작성해 주세요.
+
+
+
+제한사항
+
+
+  • 1 ≤ numbers의 길이 ≤ 100
+• 1 ≤ numbers의 원소 ≤ 100
+• 0 ≤ n &amp;lt; numbers의 모든 원소의 합
+
+
+
+입출력 예
+
+
+  
+    
+      numbers
+      n
+      result
+    
+  
+  
+    
+      [34, 5, 71, 29, 100, 34]
+      123
+      139
+    
+    
+      [58, 44...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>프로그래머스 Swift 코테준비 (68) - 할 일 목록</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(68)-%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (68) - 할 일 목록" />
+    <published>2024-02-20T00:00:00+09:00</published>
+  
+    <updated>2024-02-20T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(68)-%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(68)-%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 :할 일 목록
+
+
+문제 설명
+
+
+  오늘 해야 할 일이 담긴 문자열 배열 todo_list와 각각의 일을 지금 마쳤는지를 나타내는 boolean 배열 finished가 매개변수로 주어질 때, todo_list에서 아직 마치지 못한 일들을 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요.
+
+
+
+제한사항
+
+
+  • 1 ≤ todo_list의 길이 1 ≤ 100
+• 2 ≤ todo_list의 원소의 길이 ≤ 20
+	• todo_list의 원소는 영소문자로만 이루어져 있습니다.
+	• todo_list의 원소는 모두 서로 다릅니다.
+• finished[i]는 true 또는 false이고 true는 todo_list[i]를 마쳤음을, false는 아직 마치지 못했음...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>프로그래머스 Swift 코테준비 (67) - 5명씩</title>
     <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(67)-5%EB%AA%85%EC%94%A9/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (67) - 5명씩" />
     <published>2024-02-20T00:00:00+09:00</published>
   
-    <updated>2024-02-20T00:00:00+09:00</updated>
+    <updated>2024-02-20T18:19:20+09:00</updated>
   
     <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(67)-5%EB%AA%85%EC%94%A9/</id>
     <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(67)-5%EB%AA%85%EC%94%A9/" />
@@ -219,144 +344,6 @@
       [4, 2, 6, 1, 7, 6]
       4
       [4, ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (64) - n 번째 원소까지</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (64) - n 번째 원소까지" />
-    <published>2024-02-19T00:00:00+09:00</published>
-  
-    <updated>2024-02-19T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(64)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EA%B9%8C%EC%A7%80/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :n 번째 원소까지
-
-문제 설명
-
-
-  정수 리스트 num_list와 정수 n이 주어질 때, num_list의 첫 번째 원소부터 n 번째 원소까지의 모든 원소를 담은 리스트를 return하도록 solution 함수를 완성해주세요.
-
-
-
-제한사항
-
-
-  • 2 ≤ num_list의 길이 ≤ 30
-• 1 ≤ num_list의 원소 ≤ 9
-• 1 ≤ n ≤ num_list의 길이 ___
-
-
-
-입출력 예
-
-
-  
-    
-      num_list
-      n
-      result
-    
-  
-  
-    
-      [2, 1, 6]
-      1
-      [2]
-    
-    
-      [5, 2, 1, 7, 5]
-      3
-      [5, 2, 1]
-    
-  
-
-
-
-
-입출...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(63)-%EC%99%BC%EC%AA%BD-%EC%98%A4%EB%A5%B8%EC%AA%BD/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽" />
-    <published>2024-02-17T00:00:00+09:00</published>
-  
-    <updated>2024-02-19T18:01:07+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(63)-%EC%99%BC%EC%AA%BD-%EC%98%A4%EB%A5%B8%EC%AA%BD/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(63)-%EC%99%BC%EC%AA%BD-%EC%98%A4%EB%A5%B8%EC%AA%BD/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :왼쪽 오른쪽
-
-문제 설명
-
-
-  문자열 리스트 str_list에는 “u”, “d”, “l”, “r” 네 개의 문자열이 여러 개 저장되어 있습니다. 
-str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이라면 해당 문자열을 기준으로 왼쪽에 있는 문자열들을 순서대로 담은 리스트를, 먼저 나오는 문자열이 “r”이라면 해당 문자열을 기준으로 오른쪽에 있는 문자열들을 순서대로 담은 리스트를 return하도록 solution 함수를 완성해주세요. “l”이나 “r”이 없다면 빈 리스트를 return합니다.
-
-
-
-제한사항
-
-
-  • 1 ≤ str_list의 길이 ≤ 20
-• str_list는 “u”, “d”, “l”, “r” 네 개의 문자열로 이루어져 있습니다.
-
-
-
-입출력 예
-
-
-  
-...
     </summary>
   
 
