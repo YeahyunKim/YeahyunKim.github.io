@@ -887,7 +887,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="458 words"
+  title="497 words"
 >
   <em>2 min</em> read</span>
 
@@ -904,16 +904,19 @@
 <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>최대 5명씩 탑승가능한 놀이기구를 타기 위해 줄을 서있는 사람들의 이름이 담긴 문자열 리스트 <code class="language-plaintext highlighter-rouge">names</code>가 주어질 때, 앞에서 부터 5명씩 묶은 그룹의 가장 앞에 서있는 사람들의 이름을 담은 리스트를 return하도록 solution 함수를 완성해주세요. 마지막 그룹이 5명이 되지 않더라도 가장 앞에 있는 사람의 이름을 포함합니다.</p>
+  <p>오늘 해야 할 일이 담긴 문자열 배열 <code class="language-plaintext highlighter-rouge">todo_list</code>와 각각의 일을 지금 마쳤는지를 나타내는 boolean 배열 <code class="language-plaintext highlighter-rouge">finished</code>가 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">todo_list</code>에서 아직 마치지 못한 일들을 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요.</p>
 </blockquote>
 
 <p><br /></p>
 <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>• 5 ≤ <code class="language-plaintext highlighter-rouge">names</code>의 길이 ≤ 30
-• 1 ≤ <code class="language-plaintext highlighter-rouge">names</code>의 원소의 길이 ≤ 10
-• <code class="language-plaintext highlighter-rouge">names</code>의 원소는 영어 알파벳 소문자로만 이루어져 있습니다.</p>
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">todo_list</code>의 길이 1 ≤ 100
+• 2 ≤ <code class="language-plaintext highlighter-rouge">todo_list</code>의 원소의 길이 ≤ 20
+	• <code class="language-plaintext highlighter-rouge">todo_list</code>의 원소는 영소문자로만 이루어져 있습니다.
+	• <code class="language-plaintext highlighter-rouge">todo_list</code>의 원소는 모두 서로 다릅니다.
+• <code class="language-plaintext highlighter-rouge">finished[i]</code>는 true 또는 false이고 true는 <code class="language-plaintext highlighter-rouge">todo_list[i]</code>를 마쳤음을, false는 아직 마치지 못했음을 나타냅니다.
+• 아직 마치지 못한 일이 적어도 하나 있습니다.</p>
 </blockquote>
 <p><br /></p>
 
@@ -922,14 +925,16 @@
 <div class="table-wrapper"><table>
   <thead>
     <tr>
-      <th>names</th>
+      <th>todo_list</th>
+      <th>finished</th>
       <th>result</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>[“nami”, “ahri”, “jayce”, “garen”, “ivern”, “vex”, “jinx”]</td>
-      <td>[“nami”, “vex”]</td>
+      <td>[“problemsolving”, “practiceguitar”, “swim”, “studygraph”]</td>
+      <td>[true, false, true, false]</td>
+      <td>[“practiceguitar”, “studygraph”]</td>
     </tr>
   </tbody>
 </table></div>
@@ -941,7 +946,7 @@
 <h6 id="입출력-예-1">입출력 예 #1</h6>
 
 <blockquote class="command-text">
-  <p>• 앞에서부터 5명씩 두 그룹으로 묶을 수 있습니다. [“nami”, “ahri”, “jayce”, “garen”, “ivern”], [“vex”, “jinx”] 이 두 그룹에서 가장 앞에 서있는 사람들의 이름을 담은 리스트인 [“nami”, “vex”]를 return합니다.</p>
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">todo_list</code> 중에서 “problemsolving”과 “swim”은 마쳤고, “practiceguitar”와 “studygraph”는 아직 마치지 못했으므로 <code class="language-plaintext highlighter-rouge">todo_list</code>에서 나온 순서대로 담은 문자열 배열 [“practiceguitar”, “studygraph”]를 return 합니다.</p>
 </blockquote>
 
 <p><br /></p>
@@ -958,7 +963,7 @@
 7
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">names</span><span class="p">:[</span><span class="kt">String</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span>
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">todo_list</span><span class="p">:[</span><span class="kt">String</span><span class="p">],</span> <span class="n">_</span> <span class="nv">finished</span><span class="p">:[</span><span class="kt">Bool</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span>
     
 	<span class="k">return</span> <span class="p">[</span><span class="s">" "</span><span class="p">]</span>
     
@@ -973,12 +978,12 @@
 
 <h4 id="solution-1--enumerated-활용하기"><span class="me-2">solution 1 : enumerated() 활용하기</span><a href="#solution-1--enumerated-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>먼저, <code class="language-plaintext highlighter-rouge">names</code> 변수의 각 요소별 <code class="language-plaintext highlighter-rouge">element</code> 와 <code class="language-plaintext highlighter-rouge">offset</code> 값을 만들었다.</p>
+<p>먼저, <code class="language-plaintext highlighter-rouge">finished</code> 변수의 각 요소별 <code class="language-plaintext highlighter-rouge">element</code> 와 <code class="language-plaintext highlighter-rouge">offset</code> 값을 만들었다. <code class="language-plaintext highlighter-rouge">finished</code> 변수의 false 요소의 offset 값을 통해 추후에 <code class="language-plaintext highlighter-rouge">todo_list</code></p>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="err"></span><span class="n">names</span><span class="o">.</span><span class="nf">enumerated</span><span class="p">()</span>
+</pre></td><td class="rouge-code"><pre><span class="err"></span><span class="n">finished</span><span class="o">.</span><span class="nf">enumerated</span><span class="p">()</span>
 </pre></td></tr></tbody></table></code></div></div>
 <p><br /></p>
 
