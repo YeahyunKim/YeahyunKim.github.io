@@ -887,7 +887,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="516 words"
+  title="397 words"
 >
   <em>2 min</em> read</span>
 
@@ -974,16 +974,7 @@
 
 <h4 id="solution-1--map-활용하기"><span class="me-2">solution 1 : map 활용하기</span><a href="#solution-1--map-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>먼저 결괏값을 저장하기 위한 변수를 하나 생성해 주었다.</p>
-
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">arr</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p><br />
-그리고 반복문을 사용하여 <code class="language-plaintext highlighter-rouge">queries</code> 각각의 요소를 <code class="language-plaintext highlighter-rouge">s</code> 와 <code class="language-plaintext highlighter-rouge">e</code> 로 값을 저장해주었다.</p>
+<p><code class="language-plaintext highlighter-rouge">arr</code> 의 각 요소별로 조건을 걸어주어 문제를 해결하였다.</p>
 
 <div class="language-swift highlighter-rouge"><div class="code-header">
         <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
@@ -992,50 +983,14 @@
 3
 4
 5
-6
-7
-</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">arr</span>
-
-<span class="k">for</span> <span class="n">j</span> <span class="k">in</span> <span class="n">queries</span><span class="p">{</span>
-
-	<span class="k">let</span> <span class="p">(</span><span class="nv">s</span><span class="p">,</span> <span class="nv">e</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">j</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">j</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
+</pre></td><td class="rouge-code"><pre><span class="n">arr</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> 
+	<span class="k">if</span> <span class="nv">$0</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="mi">50</span> <span class="o">&lt;=</span> <span class="nv">$0</span> <span class="p">{</span> <span class="k">return</span> <span class="nv">$0</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">}</span>
+	<span class="k">else</span> <span class="k">if</span> <span class="nv">$0</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="mi">50</span> <span class="o">&gt;</span> <span class="nv">$0</span> <span class="p">{</span> <span class="k">return</span> <span class="nv">$0</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">}</span>
+	<span class="k">return</span> <span class="nv">$0</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
+
 <p><br />
-마지막으로 기존에 구한 <code class="language-plaintext highlighter-rouge">s</code>와 <code class="language-plaintext highlighter-rouge">e</code> 의 범위로 반복문을 실행시키고, 실행되는 반복문별 정수값을 <code class="language-plaintext highlighter-rouge">result[i]</code> 로 <code class="language-plaintext highlighter-rouge">result</code> 배열의 요소를 선택하고, 각 요소에 1씩 더해주었다.</p>
-
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">arr</span>
-
-<span class="k">for</span> <span class="n">j</span> <span class="k">in</span> <span class="n">queries</span><span class="p">{</span>
-
-	<span class="k">let</span> <span class="p">(</span><span class="nv">s</span><span class="p">,</span> <span class="nv">e</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">j</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">j</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-	
-        <span class="k">for</span> <span class="n">i</span> <span class="nf">in</span> <span class="p">(</span><span class="n">s</span><span class="o">...</span><span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-        
-            <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-
-        <span class="p">}</span>
-
-<span class="p">}</span>
-</pre></td></tr></tbody></table></code></div></div>
-<p><br />
-<br />
 <br /></p>
 <h2 id="answer-01"><span class="me-2">💡Answer 01</span><a href="#answer-01" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
@@ -1051,40 +1006,20 @@
 7
 8
 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
 </pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
-    
-    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">arr</span>
-    
-    <span class="k">for</span> <span class="n">j</span> <span class="k">in</span> <span class="n">queries</span><span class="p">{</span>
-        
-    <span class="k">let</span> <span class="p">(</span><span class="nv">s</span><span class="p">,</span> <span class="nv">e</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">j</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">j</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-    
-        <span class="k">for</span> <span class="n">i</span> <span class="nf">in</span> <span class="p">(</span><span class="n">s</span><span class="o">...</span><span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-        
-            <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-
-        <span class="p">}</span>
-
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    <span class="n">arr</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> 
+        <span class="k">if</span> <span class="nv">$0</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="mi">50</span> <span class="o">&lt;=</span> <span class="nv">$0</span> <span class="p">{</span> <span class="k">return</span> <span class="nv">$0</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="nv">$0</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="mi">50</span> <span class="o">&gt;</span> <span class="nv">$0</span> <span class="p">{</span> <span class="k">return</span> <span class="nv">$0</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">}</span>
+        <span class="k">return</span> <span class="nv">$0</span>
     <span class="p">}</span>
-    <span class="k">return</span> <span class="n">result</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br /></p>
 
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181883">해당문제 풀러가보기</a></p>
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181882">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -1297,15 +1232,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -1326,13 +1252,6 @@
     
     
       
-    
-  
-    
-    
-    
-    
-      
         
         
 
@@ -1340,13 +1259,6 @@
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1389,6 +1301,76 @@
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -1408,6 +1390,13 @@
     
     
     
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -1468,6 +1457,9 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/github-blog/">github_blog</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/methods/">methods</a>
@@ -2541,9 +2533,13 @@ str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이�
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/MacOS-%EC%97%90-JAVA-11%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>[Java] MacOS에 JAVA 11설치하기</p>
+    </a>
   
 </nav>
 
@@ -2640,15 +2636,6 @@ str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이�
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -2669,13 +2656,6 @@ str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이�
     
     
       
-    
-  
-    
-    
-    
-    
-      
         
         
 
@@ -2683,13 +2663,6 @@ str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이�
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -2732,6 +2705,76 @@ str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이�
     
     
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -2751,6 +2794,13 @@ str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이�
     
     
     
+    
+  
+    
+    
+    
+    
+      
     
   
     
@@ -2811,6 +2861,9 @@ str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이�
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/github-blog/">github_blog</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/methods/">methods</a>

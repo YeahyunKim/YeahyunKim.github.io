@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "[Java] MacOS에 JAVA 11설치하기",
+    "url": "/posts/MacOS-%EC%97%90-JAVA-11%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/",
+    "categories": "Java, Install",
+    "tags": "Java",
+    "date": "2024-02-25 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "MacOS에 JAVA 11설치하기01. 터미널을 실행하여 자바 설치 여부 및 버전 확인터미널(terminal)을 열어 java --version 이라 입력후 엔터를 치면 나의 맥북에 Java 설치 유무 및 버전 체크가 가능하다.  아직까지 자바가 설치되지 않았다고 나와있다.02. oracle의 java downloads 사이트 접속다운로드 사이트에 접...",
+    "content": "MacOS에 JAVA 11설치하기01. 터미널을 실행하여 자바 설치 여부 및 버전 확인터미널(terminal)을 열어 java --version 이라 입력후 엔터를 치면 나의 맥북에 Java 설치 유무 및 버전 체크가 가능하다.  아직까지 자바가 설치되지 않았다고 나와있다.02. oracle의 java downloads 사이트 접속다운로드 사이트에 접속해서, MacOS 운영체제를 선택해주고, 내가 사용하는 맥북은 ARM 기반이므로,  ARM64 DMG Installer 를 다운로드 받았다. 본인에게 적절한 파일을 찾아 다운로드 해도 된다.  인텔의 경우, x64 파일을 다운로드 받으면 된다.03. 자바 설치자기가 설치할 파일 경로를 잘 설정하고, 계속 다음을 눌러 설치완료한다.04. 자바 설치 확인다시 터미널로 가서, java --version을 입력하여 자바가 잘 설치 되었는지 확인한다.05. 환경변수 설정간단하게 Java의 경로가 어디있는지 확인할 수 있는 환경변수를 설정하겠다.먼저, 본인이 설치한 Java의 경로를 터미널로 열어준다. 만약, 본인이 설정한 경로를 모르겠다 하면,cd /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home 를 터미널에 입력하자.  다운로드 받은 파일이 다를경우, 경로 중간의 [jdk-21.jdk] 의 폴더명이 다를 . 수있다.그럴경우, Library 부터 차근차근 폴더를 타고 올라가는걸 추천한다.1) 터미널에 vi ~/.zshrc를 입력해 환경설정창을 열어준다.2) i 키를 눌러 INSERT 모드로 전환한다.3) 아래 세개를 기입한다. (이미지 참고)  export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin  export CLASSPATH=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/lib  export PATH=${PATH}:$JAVA_HOME/bin**4) ESC를 누르고 :wq 를 눌러 저장하고 INSERT 모드를 종료한다.5) source ~/.zshrc 입력 (변경된 내용 저장)06. 환경변수 설정 확인터미널에 echo $JAVA_HOME 와 java -version 를 입력해보면, 현재 저장되어있는 자바 경로와 버전이 나타나는 걸 볼 수 있다."
+  },
+  
+  {
     "title": "프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(71)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EA%B2%8C-%EC%88%98%EC%97%B4-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0-1/",
     "categories": "Programmers, 기초",
@@ -14,7 +31,7 @@
 
     
     "snippet": "01 문제 :\b조건에 맞게 수열 변환하기 1문제 설명  정수 배열 arr가 주어집니다. arr의 각 원소에 대해 값이 50보다 크거나 같은 짝수라면 2로 나누고, 50보다 작은 홀수라면 2를 곱합니다. 그 결과인 정수 배열을 return 하는 solution 함수를 완성해 주세요.제한사항  • 1 ≤ arr의 길이 ≤ 1,000,000\t• 1 ≤ ar...",
-    "content": "01 문제 :\b조건에 맞게 수열 변환하기 1문제 설명  정수 배열 arr가 주어집니다. arr의 각 원소에 대해 값이 50보다 크거나 같은 짝수라면 2로 나누고, 50보다 작은 홀수라면 2를 곱합니다. 그 결과인 정수 배열을 return 하는 solution 함수를 완성해 주세요.제한사항  • 1 ≤ arr의 길이 ≤ 1,000,000\t• 1 ≤ arr의 원소의 값 ≤ 100입출력 예            arr      result                  [1, 2, 3, 100, 99, 98]      [2, 2, 6, 50, 99, 49]      입출력 예 설명입출력 예 #1  • 1, 3은 50 미만의 홀수 이므로 2를 곱하고, 100, 98은 50 이상의 짝수이므로 2로 나눕니다.• 나머지 값들은 변경 조건에 해당하지 않으므로 바꾸지 않습니다.• 따라서 [2, 2, 6, 50, 99, 49]를 return 합니다.제시 코드import Foundationfunc solution(_ arr:[Int]) -&gt; [Int] {    \treturn [0]    }02 풀이solution 1 : \bmap 활용하기\b먼저 결괏값을 저장하기 위한 변수를 하나 생성해 주었다.var result = arr그리고 반복문을 사용하여 queries 각각의 요소를 s 와 e 로 값을 저장해주었다.var result = arrfor j in queries{\tlet (s, e) = (j[0], j[1])}마지막으로 기존에 구한 s와 e 의 범위로 반복문을 실행시키고, 실행되는 반복문별 정수값을 result[i] 로 result 배열의 요소를 선택하고, 각 요소에 1씩 더해주었다.var result = arrfor j in queries{\tlet (s, e) = (j[0], j[1])\t        for i in (s...e) {                    result[i] += 1        }}💡Answer 01import Foundationfunc solution(_ arr:[Int], _ queries:[[Int]]) -&gt; [Int] {        var result = arr        for j in queries{            let (s, e) = (j[0], j[1])            for i in (s...e) {                    result[i] += 1        }    }    return result}해당문제 풀러가보기"
+    "content": "01 문제 :\b조건에 맞게 수열 변환하기 1문제 설명  정수 배열 arr가 주어집니다. arr의 각 원소에 대해 값이 50보다 크거나 같은 짝수라면 2로 나누고, 50보다 작은 홀수라면 2를 곱합니다. 그 결과인 정수 배열을 return 하는 solution 함수를 완성해 주세요.제한사항  • 1 ≤ arr의 길이 ≤ 1,000,000\t• 1 ≤ arr의 원소의 값 ≤ 100입출력 예            arr      result                  [1, 2, 3, 100, 99, 98]      [2, 2, 6, 50, 99, 49]      입출력 예 설명입출력 예 #1  • 1, 3은 50 미만의 홀수 이므로 2를 곱하고, 100, 98은 50 이상의 짝수이므로 2로 나눕니다.• 나머지 값들은 변경 조건에 해당하지 않으므로 바꾸지 않습니다.• 따라서 [2, 2, 6, 50, 99, 49]를 return 합니다.제시 코드import Foundationfunc solution(_ arr:[Int]) -&gt; [Int] {    \treturn [0]    }02 풀이solution 1 : \bmap 활용하기arr 의 각 요소별로 조건을 걸어주어 문제를 해결하였다.arr.map { \tif $0 % 2 == 0 &amp;&amp; 50 &lt;= $0 { return $0 / 2 }\telse if $0 % 2 != 0 &amp;&amp; 50 &gt; $0 { return $0 * 2 }\treturn $0}💡Answer 01import Foundationfunc solution(_ arr:[Int]) -&gt; [Int] {    arr.map {         if $0 % 2 == 0 &amp;&amp; 50 &lt;= $0 { return $0 / 2 }        else if $0 % 2 != 0 &amp;&amp; 50 &gt; $0 { return $0 * 2 }        return $0    }}해당문제 풀러가보기"
   },
   
   {

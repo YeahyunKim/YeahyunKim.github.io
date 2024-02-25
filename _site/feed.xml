@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-22T21:30:12+09:00</updated>
+  <updated>2024-02-25T16:56:27+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,67 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>[Java] MacOS에 JAVA 11설치하기</title>
+    <link href="http://localhost:4000/posts/MacOS-%EC%97%90-JAVA-11%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="[Java] MacOS에 JAVA 11설치하기" />
+    <published>2024-02-25T00:00:00+09:00</published>
+  
+    <updated>2024-02-25T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/MacOS-%EC%97%90-JAVA-11%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/MacOS-%EC%97%90-JAVA-11%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Install" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      MacOS에 JAVA 11설치하기
+
+
+01. 터미널을 실행하여 자바 설치 여부 및 버전 확인
+
+터미널(terminal)을 열어 java --version 이라 입력후 엔터를 치면 나의 맥북에 Java 설치 유무 및 버전 체크가 가능하다.
+
+
+
+  아직까지 자바가 설치되지 않았다고 나와있다.
+
+
+
+02. oracle의 java downloads 사이트 접속
+
+다운로드 사이트에 접속해서, MacOS 운영체제를 선택해주고, 내가 사용하는 맥북은 ARM 기반이므로,  ARM64 DMG Installer 를 다운로드 받았다. 본인에게 적절한 파일을 찾아 다운로드 해도 된다.
+
+
+
+  인텔의 경우, x64 파일을 다운로드 받으면 된다.
+
+
+
+03. 자바 설치
+
+자기가 설치할 파일 경로를 잘 설정하고, 계속 다음을...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -262,85 +323,6 @@
 	• todo_list의 원소는 영소문자로만 이루어져 있습니다.
 	• todo_list의 원소는 모두 서로 다릅니다.
 • finished[i]는 true 또는 false이고 true는 todo_list[i]를 마쳤음을, false는 아직 마치지 못했음을 나...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (66) - 홀수 vs 짝수</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(66)-%ED%99%80%EC%88%98-vs-%EC%A7%9D%EC%88%98/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (66) - 홀수 vs 짝수" />
-    <published>2024-02-20T00:00:00+09:00</published>
-  
-    <updated>2024-02-20T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(66)-%ED%99%80%EC%88%98-vs-%EC%A7%9D%EC%88%98/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(66)-%ED%99%80%EC%88%98-vs-%EC%A7%9D%EC%88%98/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :홀수 vs 짝수
-
-
-문제 설명
-
-
-  정수 리스트 num_list가 주어집니다. 가장 첫 번째 원소를 1번 원소라고 할 때, 홀수 번째 원소들의 합과 짝수 번째 원소들의 합 중 큰 값을 return 하도록 solution 함수를 완성해주세요. 두 값이 같을 경우 그 값을 return합니다.
-
-
-
-제한사항
-
-
-  • 5 ≤ num_list의 길이 ≤ 50
-• 9 ≤ num_list의 원소 ≤ 9
-
-
-
-입출력 예
-
-
-  
-    
-      num_list
-      result
-    
-  
-  
-    
-      [4, 2, 6, 1, 7, 6]
-      17
-    
-    
-      [-1, 2, 5, 6, 3]
-      8
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 예 #...
     </summary>
   
 

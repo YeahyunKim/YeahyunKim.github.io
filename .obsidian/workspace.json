@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md",
+                "file": "_posts/2024-02-19- MacOS 에 JAVA 11설치하기.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:methods",
+                "query": "prompt-",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.5
+    "width": 306.5110321044922
   },
   "right": {
     "id": "450b3379e299ce3a",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md",
+                "file": "_posts/2024-02-19- MacOS 에 JAVA 11설치하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md",
+                "file": "_posts/2024-02-19- MacOS 에 JAVA 11설치하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md"
+                "file": "_posts/2024-02-19- MacOS 에 JAVA 11설치하기.md"
               }
             }
           }
@@ -161,20 +161,22 @@
   },
   "active": "3014ac36fe90fb0a",
   "lastOpenFiles": [
-    "_site/posts/프로그래머스-Swift-코테준비-(71)-조건에-맞게-수열-변환하기-1/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(71)-조건에-맞게-수열-변환하기-1",
-    "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (70) - 수열과 구간 쿼리 1.md",
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md",
-    "_site/posts/프로그래머스-Swift-코테준비-(70)-수열과-구간-쿼리-1/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(70)-수열과-구간-쿼리-1",
-    "_site/posts/프로그래머스-Swift-코테준비-(69)-n보다-커질-때까지-더하기/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(69)-n보다-커질-때까지-더하기",
-    "_site/posts/프로그래머스-Swift-코테준비-(69)-할-일-목록-1/index.html",
-    "_site/posts/프로그래머스-Swift-코테준비-(69)-할-일-목록-1",
-    "_site/page8/index.html",
-    "_site/page8",
+    "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
+    "_posts/2024-02-19- MacOS 에 JAVA 11설치하기.md",
+    "_posts/2024-01-07- 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기.md",
+    "_site/posts/MacOS-에-JAVA-11설치하기/index.html",
+    "_site/posts/MacOS-에-JAVA-11설치하기",
+    "_site/tags/java/index.html",
+    "_site/tags/java",
+    "_site/posts/프로그래머스-Swift-코테준비-(71)-조건에-맞게-수열-변환하기-1-1/index.html",
+    "_site/posts/프로그래머스-Swift-코테준비-(71)-조건에-맞게-수열-변환하기-1-1",
+    "_site/categories/install/index.html",
+    "_site/categories/install",
+    "_site/categories/java/index.html",
+    "_site/categories/java",
+    "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (70) - 수열과 구간 쿼리 1.md",
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (68) - 할 일 목록.md",
-    "_site/posts/프로그래머스-Swift-코테준비-(68)-할-일-목록/index.html",
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (67) - 5명씩.md",
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (66) - 홀수 vs 짝수.md",
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (65) - n개 간격의 원소들.md",
@@ -194,8 +196,6 @@
     "_posts/2024-02-16- 프로그래머스 Swift 코테준비 (53) - 글자 지우기.md",
     "_posts/2024-02-16- 프로그래머스 Swift 코테준비 (52) - 배열 만들기 1.md",
     "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (51) - 문자 개수 세기.md",
-    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (50) - qr code.md",
-    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (49) - 세로 읽기.md",
-    "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md"
+    "_posts/2024-02-14- 프로그래머스 Swift 코테준비 (50) - qr code.md"
   ]
 }
