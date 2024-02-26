@@ -1,6 +1,40 @@
 [
   
   {
+    "title": "[Java] 자바 빌드 도구 종류 Maven, Gradle 차이점",
+    "url": "/posts/%EC%9E%90%EB%B0%94-%EB%B9%8C%EB%93%9C-%EB%8F%84%EA%B5%AC-%EC%A2%85%EB%A5%98-Maven,-Gradle-%EC%B0%A8%EC%9D%B4%EC%A0%90/",
+    "categories": "Java, Study",
+    "tags": "Java, JavaSpring",
+    "date": "2024-02-26 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "메이븐(Maven) 이란?01. \b메이븐 정의Maven은 주로 Java 개발에 사용되는 프로젝트 관리 빌드 도구 이다.  Apache Ant의 대안으로 만들어 졌으며, Apache Software Foundation에서 호스팅하는 Maven은 자카르타 프로젝트의 일부로 시작되었다고 한다.02. 메이븐 특징  빌드 절차를 간소화  정형화된 빌드 시스템을...",
+    "content": "메이븐(Maven) 이란?01. \b메이븐 정의Maven은 주로 Java 개발에 사용되는 프로젝트 관리 빌드 도구 이다.  Apache Ant의 대안으로 만들어 졌으며, Apache Software Foundation에서 호스팅하는 Maven은 자카르타 프로젝트의 일부로 시작되었다고 한다.02. 메이븐 특징  빌드 절차를 간소화  정형화된 빌드 시스템을 제공  프로젝트 정보를 제공  Pom.xml 파일을 통해 프로젝트를 빌드    03. 메이븐의 LifeCycle  미리 정의하고 있는 빌드 순서를 라이프사이클이라고 한다.각 빌드 단계를 phase라 하며 각 phase들은 서로 의존 단계를 가지고 있는데,메이븐은 프로젝트 생성에 필요한 단계(phase)들을 Build LifeCycle 이라고 하고,default, clean, site 세가지로 표준 정의한다.  clean : 빌드 시 생성되었던 산출물을 삭제          pre-clean : clean 작업 전에 사전작업      clean : 이전 빌드에서 생성된 모든 파일 삭제      post-clean : 사후작업        default : 프로젝트 배포절차, 패키지 타입별로 다르게 정의됌          validate : 프로젝트 상태 점검, 빌드에 필요한 정보 존재유무 체크      initialize : 빌드 상태를 초기화, 속성 설정, 작업 디렉터리 생성      generate-sources : 컴파일에 필요한 소스 생성      process-sources : 소스코드를 처리      generate-resources : 패키지에 포함될 자원 생성      compile : 프로젝트의 소스코드를 컴파일      process-classes : 컴파일 후 후처리      generate-test-source : 테스트를 위한 소스 코드를 생성      process-test-source : 테스트 소스코드를 처리      generate-test-resources : 테스팅을 위한 자원 생성      process-test-resources : 테스트 대상 디렉터리에 자원을 복사하고 가공      test-compile : 테스트 코드를 컴파일      process-test-classes : 컴파일 후 후처리      test : 단위 테스트 프레임워크를 이용해 테스트 수행      prepare-package : 패키지 생성 전 사전작업      package : 개발자가 선택한 war, jar 등의 패키징 수행      pre-integration-test : 통합테스팅 전 사전작업      integration-test : 통합테스트      post-integration : 통합테스팅 후 사후작업      verify : 패키지가 품질 기준에 적합한지 검사      install : 패키지를 로컬 저장소에 설치      deploy : 패키지를 원격 저장소에 배포        site : 프로젝트 문서화 절차          pre-site : 사전작업      site : 사이트문서 생성      post-site : 사후작업 및 배포 전 사전작업      site-deploy : 생성된 문서를 웹 서버에 배포      그래들 (\bGradle) 이란?01. \b그래들의 정의Gradle은 다국어 소프트웨어 개발을 위한 빌드 자동화 도구 이다. 컴파일과 패키징부터 테스트, 배포, 게시까지의 작업에서 개발 프로세스를 제어한다.02. \b그래들의 특징  설정 주입 방식(Configuration Injection)을 사용  오픈소스 기반의 빌드 자동화 시스템으로 Groovy** 기반 DSL(Domain-Specific-Language)로 작성한다.  **Groovy : JVM에서 실행되는 스크립트 언어  src/main/java : 배포할 자바 소스코드 디렉토리  src/main/resources : 배포한 설정 파일 디렉토리  gradle/wrapper 디렉토리 : 내장 task wrapper. 개발자들이 직접 gradle을 설치하지 않아도 빌드가 가능하다.  gradlew : 리눅스 또는 맥 OS 용 실행 쉘 스크립트 파일이다.  gradlew.bat : 윈도우용 실행 배치 스크립트 파일이다.  gradle-wrapper.jar : JAR 형식으로 압축된 wrapper파일이다. gradlew나 gradlew.bat 파일이 프로젝트 안에 설치되는 이 파일을 사용하여 gradle task를 실행한다.  gradle-wrapper.properties : gradle wrapper 설정정보 파일이다. wrapper의 버전등을 확인할 수 있다.  build.gradle : 프로젝트의 라이브러리 의존성, 플러그인, 라이브러리 저장소등을 설정하는 빌드 스크립트 파일이다.  settings.gradle : 프로젝트의 구성 정보 파일. 멀티 프로젝트를 구성하여 프로젝트를 모듈화할 경우, 하위 프로젝트의 구성을 설정할 수 있다."
+  },
+  
+  {
+    "title": "[Java] 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기",
+    "url": "/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%8A%A4%ED%83%80%ED%84%B0-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/",
+    "categories": "Java, Spring",
+    "tags": "Java, JavaSpring",
+    "date": "2024-02-26 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기01. 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기예전의 스프링 프로젝트는 정말 밑바닥 부터 다 만들었는데, 요즘에는 SpringBoot 를 기반으로 프로젝트를 만든다. 아래 사이트로 이동하자.  https://start.spring.io/02. https://start.spring.io 에...",
+    "content": "스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기01. 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기예전의 스프링 프로젝트는 정말 밑바닥 부터 다 만들었는데, 요즘에는 SpringBoot 를 기반으로 프로젝트를 만든다. 아래 사이트로 이동하자.  https://start.spring.io/02. https://start.spring.io 에 대해 알아보기해당 사이트에 접속하면 아래와 같은 화면을 볼 수 있다."
+  },
+  
+  {
     "title": "[Java] MacOS에 JAVA 11설치하기",
     "url": "/posts/MacOS-%EC%97%90-JAVA-11%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/",
     "categories": "Java, Install",
@@ -14,7 +48,7 @@
 
     
     "snippet": "MacOS에 JAVA 11설치하기01. 터미널을 실행하여 자바 설치 여부 및 버전 확인터미널(terminal)을 열어 java --version 이라 입력후 엔터를 치면 나의 맥북에 Java 설치 유무 및 버전 체크가 가능하다.  아직까지 자바가 설치되지 않았다고 나와있다.02. oracle의 java downloads 사이트 접속다운로드 사이트에 접...",
-    "content": "MacOS에 JAVA 11설치하기01. 터미널을 실행하여 자바 설치 여부 및 버전 확인터미널(terminal)을 열어 java --version 이라 입력후 엔터를 치면 나의 맥북에 Java 설치 유무 및 버전 체크가 가능하다.  아직까지 자바가 설치되지 않았다고 나와있다.02. oracle의 java downloads 사이트 접속다운로드 사이트에 접속해서, MacOS 운영체제를 선택해주고, 내가 사용하는 맥북은 ARM 기반이므로,  ARM64 DMG Installer 를 다운로드 받았다. 본인에게 적절한 파일을 찾아 다운로드 해도 된다.  인텔의 경우, x64 파일을 다운로드 받으면 된다.03. 자바 설치자기가 설치할 파일 경로를 잘 설정하고, 계속 다음을 눌러 설치완료한다.04. 자바 설치 확인다시 터미널로 가서, java --version을 입력하여 자바가 잘 설치 되었는지 확인한다.05. 환경변수 설정간단하게 Java의 경로가 어디있는지 확인할 수 있는 환경변수를 설정하겠다.먼저, 본인이 설치한 Java의 경로를 터미널로 열어준다. 만약, 본인이 설정한 경로를 모르겠다 하면,cd /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home 를 터미널에 입력하자.  다운로드 받은 파일이 다를경우, 경로 중간의 [jdk-21.jdk] 의 폴더명이 다를 . 수있다.그럴경우, Library 부터 차근차근 폴더를 타고 올라가는걸 추천한다.1) 터미널에 vi ~/.zshrc를 입력해 환경설정창을 열어준다.2) i 키를 눌러 INSERT 모드로 전환한다.3) 아래 세개를 기입한다. (이미지 참고)  export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin  export CLASSPATH=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/lib  export PATH=${PATH}:$JAVA_HOME/bin**4) ESC를 누르고 :wq 를 눌러 저장하고 INSERT 모드를 종료한다.5) source ~/.zshrc 입력 (변경된 내용 저장)06. 환경변수 설정 확인터미널에 echo $JAVA_HOME 와 java -version 를 입력해보면, 현재 저장되어있는 자바 경로와 버전이 나타나는 걸 볼 수 있다."
+    "content": "MacOS에 JAVA 11설치하기01. 터미널을 실행하여 자바 설치 여부 및 버전 확인터미널(terminal)을 열어 java --version 이라 입력후 엔터를 치면 나의 맥북에 Java 설치 유무 및 버전 체크가 가능하다.  아직까지 자바가 설치되지 않았다고 나와있다.02. oracle의 java downloads 사이트 접속다운로드 사이트에 접속해서, MacOS 운영체제를 선택해주고, 내가 사용하는 맥북은 ARM 기반이므로,  ARM64 DMG Installer 를 다운로드 받았다. 본인에게 적절한 파일을 찾아 다운로드 해도 된다.  인텔의 경우, x64 파일을 다운로드 받으면 된다.03. 자바 설치자기가 설치할 파일 경로를 잘 설정하고, 계속 다음을 눌러 설치완료한다.04. 자바 설치 확인다시 터미널로 가서, java --version을 입력하여 자바가 잘 설치 되었는지 확인한다.05. 환경변수 설정간단하게 Java의 경로가 어디있는지 확인할 수 있는 환경변수를 설정하겠다.먼저, 본인이 설치한 Java의 경로를 터미널로 열어준다. 만약, 본인이 설정한 경로를 모르겠다 하면,cd /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home 를 터미널에 입력하자.  다운로드 받은 파일이 다를경우, 경로 중간의 [jdk-21.jdk] 의 폴더명이 다를 수있다.그럴경우, Library 부터 차근차근 폴더를 타고 올라가는걸 추천한다.1) 터미널에 vi ~/.zshrc를 입력해 환경설정창을 열어준다.2) i 키를 눌러 INSERT 모드로 전환한다.3) 아래 세개를 기입한다. (이미지 참고)  export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/bin  export CLASSPATH=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home/lib  export PATH=${PATH}:$JAVA_HOME/bin**4) ESC를 누르고 :wq 를 눌러 저장하고 INSERT 모드를 종료한다.5) source ~/.zshrc 입력 (변경된 내용 저장)06. 환경변수 설정 확인터미널에 echo $JAVA_HOME 와 java -version 를 입력해보면, 현재 저장되어있는 자바 경로와 버전이 나타나는 걸 볼 수 있다."
   },
   
   {

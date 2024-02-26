@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-25T16:56:27+09:00</updated>
+  <updated>2024-02-26T13:15:50+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,116 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>[Java] 자바 빌드 도구 종류 Maven, Gradle 차이점</title>
+    <link href="http://localhost:4000/posts/%EC%9E%90%EB%B0%94-%EB%B9%8C%EB%93%9C-%EB%8F%84%EA%B5%AC-%EC%A2%85%EB%A5%98-Maven,-Gradle-%EC%B0%A8%EC%9D%B4%EC%A0%90/" rel="alternate" type="text/html" title="[Java] 자바 빌드 도구 종류 Maven, Gradle 차이점" />
+    <published>2024-02-26T00:00:00+09:00</published>
+  
+    <updated>2024-02-26T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%EC%9E%90%EB%B0%94-%EB%B9%8C%EB%93%9C-%EB%8F%84%EA%B5%AC-%EC%A2%85%EB%A5%98-Maven,-Gradle-%EC%B0%A8%EC%9D%B4%EC%A0%90/</id>
+    <content src="http://localhost:4000/posts/%EC%9E%90%EB%B0%94-%EB%B9%8C%EB%93%9C-%EB%8F%84%EA%B5%AC-%EC%A2%85%EB%A5%98-Maven,-Gradle-%EC%B0%A8%EC%9D%B4%EC%A0%90/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Study" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      메이븐(Maven) 이란?
+
+01. 메이븐 정의
+
+Maven은 주로 Java 개발에 사용되는 프로젝트 관리 빌드 도구 이다.  Apache Ant의 대안으로 만들어 졌으며, Apache Software Foundation에서 호스팅하는 Maven은 자카르타 프로젝트의 일부로 시작되었다고 한다.
+
+
+02. 메이븐 특징
+
+
+  빌드 절차를 간소화
+  정형화된 빌드 시스템을 제공
+  프로젝트 정보를 제공
+  Pom.xml 파일을 통해 프로젝트를 빌드
+
+
+    03. 메이븐의 LifeCycle
+  
+
+
+미리 정의하고 있는 빌드 순서를 라이프사이클이라고 한다.
+각 빌드 단계를 phase라 하며 각 phase들은 서로 의존 단계를 가지고 있는데,
+메이븐은 프로젝트 생성에 필요한 단계(phase)들을 Build...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>[Java] 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기</title>
+    <link href="http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%8A%A4%ED%83%80%ED%84%B0-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="[Java] 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기" />
+    <published>2024-02-26T00:00:00+09:00</published>
+  
+    <updated>2024-02-26T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%8A%A4%ED%83%80%ED%84%B0-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%8A%A4%ED%83%80%ED%84%B0-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Spring" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기
+
+
+01. 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기
+
+예전의 스프링 프로젝트는 정말 밑바닥 부터 다 만들었는데, 요즘에는 SpringBoot 를 기반으로 프로젝트를 만든다. 아래 사이트로 이동하자.
+
+  https://start.spring.io/
+
+
+
+02. https://start.spring.io 에 대해 알아보기
+
+해당 사이트에 접속하면 아래와 같은 화면을 볼 수 있다.
+
+
+
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -85,7 +195,7 @@
     <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(71)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EA%B2%8C-%EC%88%98%EC%97%B4-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0-1/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1" />
     <published>2024-02-20T00:00:00+09:00</published>
   
-    <updated>2024-02-20T00:00:00+09:00</updated>
+    <updated>2024-02-25T16:58:03+09:00</updated>
   
     <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(71)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EA%B2%8C-%EC%88%98%EC%97%B4-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0-1/</id>
     <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(71)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EA%B2%8C-%EC%88%98%EC%97%B4-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0-1/" />
@@ -217,112 +327,6 @@
       arr
       queries
       res...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (68) - 할 일 목록</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(68)-%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (68) - 할 일 목록" />
-    <published>2024-02-20T00:00:00+09:00</published>
-  
-    <updated>2024-02-20T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(68)-%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(68)-%ED%95%A0-%EC%9D%BC-%EB%AA%A9%EB%A1%9D/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :할 일 목록
-
-
-문제 설명
-
-
-  오늘 해야 할 일이 담긴 문자열 배열 todo_list와 각각의 일을 지금 마쳤는지를 나타내는 boolean 배열 finished가 매개변수로 주어질 때, todo_list에서 아직 마치지 못한 일들을 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ todo_list의 길이 1 ≤ 100
-• 2 ≤ todo_list의 원소의 길이 ≤ 20
-	• todo_list의 원소는 영소문자로만 이루어져 있습니다.
-	• todo_list의 원소는 모두 서로 다릅니다.
-• finished[i]는 true 또는 false이고 true는 todo_list[i]를 마쳤음을, false는 아직 마치지 못했음...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (67) - 5명씩</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(67)-5%EB%AA%85%EC%94%A9/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (67) - 5명씩" />
-    <published>2024-02-20T00:00:00+09:00</published>
-  
-    <updated>2024-02-20T18:19:20+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(67)-5%EB%AA%85%EC%94%A9/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(67)-5%EB%AA%85%EC%94%A9/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :5명씩
-
-
-문제 설명
-
-
-  오늘 해야 할 일이 담긴 문자열 배열 todo_list와 각각의 일을 지금 마쳤는지를 나타내는 boolean 배열 finished가 매개변수로 주어질 때, todo_list에서 아직 마치지 못한 일들을 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ todo_list의 길이 1 ≤ 100
-• 2 ≤ todo_list의 원소의 길이 ≤ 20
-	• todo_list의 원소는 영소문자로만 이루어져 있습니다.
-	• todo_list의 원소는 모두 서로 다릅니다.
-• finished[i]는 true 또는 false이고 true는 todo_list[i]를 마쳤음을, false는 아직 마치지 못했음을 나...
     </summary>
   
 
