@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-27T12:46:49+09:00</updated>
+  <updated>2024-02-27T17:13:30+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -125,6 +125,57 @@ dependencies {
 
   
   <entry>
+    <title>Static Content - 정적 컨텐츠</title>
+    <link href="http://localhost:4000/posts/Static-Content-%EC%A0%95%EC%A0%81-%EC%BB%A8%ED%85%90%EC%B8%A0/" rel="alternate" type="text/html" title="Static Content - 정적 컨텐츠" />
+    <published>2024-02-27T00:00:00+09:00</published>
+  
+    <updated>2024-02-27T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Static-Content-%EC%A0%95%EC%A0%81-%EC%BB%A8%ED%85%90%EC%B8%A0/</id>
+    <content src="http://localhost:4000/posts/Static-Content-%EC%A0%95%EC%A0%81-%EC%BB%A8%ED%85%90%EC%B8%A0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Study" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Static Content (정적 컨텐츠)
+
+01. 정적 컨텐츠
+
+정적 컨텐츠는 서버에서 데이터를 클라이언트로 보내주는게 아닌, 파일을 그대로 웹 브라우저에게 보내주는것을 정적 컨텐츠라고 한다.
+
+요즘 많이 사용하고 있는 MVC(Model / View / Controller)는 동적 컨텐츠 인데, 둘의 차의점은
+MVC경우 jsp, php 등 서버에서 프로그래밍을 해서 클라이언트에게 동적으로 전달한다.
+
+하지만 정적 컨텐츠는 웹 브라우저에게 그대로 전달하는 방식이다.
+spring boot에서는 정적 컨텐츠 기능을 기본적으로 제공을 하고 있다.
+
+02. 코드로 작성해보기
+
+먼저, resources -&amp;gt; static 폴더 안에 hello-static.html 이라는 파일을 생성하였다.
+해당 파일을 로컬...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>[Java] 자바 빌드 도구 종류 Maven, Gradle 차이점</title>
     <link href="http://localhost:4000/posts/%EC%9E%90%EB%B0%94-%EB%B9%8C%EB%93%9C-%EB%8F%84%EA%B5%AC-%EC%A2%85%EB%A5%98-Maven,-Gradle-%EC%B0%A8%EC%9D%B4%EC%A0%90/" rel="alternate" type="text/html" title="[Java] 자바 빌드 도구 종류 Maven, Gradle 차이점" />
     <published>2024-02-26T00:00:00+09:00</published>
@@ -230,67 +281,6 @@ Maven은 개발자가 사용할 라이브러리를 땡겨 오고 빌드하는 �
 하지만 요즘에는** 대부분 Gradle을 많이 사용한다.**
 
 Ma...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>[Java] MacOS에 JAVA 11설치하기</title>
-    <link href="http://localhost:4000/posts/MacOS-%EC%97%90-JAVA-11%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="[Java] MacOS에 JAVA 11설치하기" />
-    <published>2024-02-25T00:00:00+09:00</published>
-  
-    <updated>2024-02-25T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/MacOS-%EC%97%90-JAVA-11%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/MacOS-%EC%97%90-JAVA-11%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Java" />
-    
-    <category term="Install" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      MacOS에 JAVA 11설치하기
-
-
-01. 터미널을 실행하여 자바 설치 여부 및 버전 확인
-
-터미널(terminal)을 열어 java --version 이라 입력후 엔터를 치면 나의 맥북에 Java 설치 유무 및 버전 체크가 가능하다.
-
-
-
-  아직까지 자바가 설치되지 않았다고 나와있다.
-
-
-
-02. oracle의 java downloads 사이트 접속
-
-다운로드 사이트에 접속해서, MacOS 운영체제를 선택해주고, 내가 사용하는 맥북은 ARM 기반이므로,  ARM64 DMG Installer 를 다운로드 받았다. 본인에게 적절한 파일을 찾아 다운로드 해도 된다.
-
-
-
-  인텔의 경우, x64 파일을 다운로드 받으면 된다.
-
-
-
-03. 자바 설치
-
-자기가 설치할 파일 경로를 잘 설정하고, 계속 다음을...
     </summary>
   
 
