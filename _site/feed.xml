@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-26T13:15:50+09:00</updated>
+  <updated>2024-02-27T12:06:36+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,66 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>플러그인 - Spring Boot Devtools</title>
+    <link href="http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-Spring-Boot-Devtools/" rel="alternate" type="text/html" title="플러그인 - Spring Boot Devtools" />
+    <published>2024-02-27T00:00:00+09:00</published>
+  
+    <updated>2024-02-27T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-Spring-Boot-Devtools/</id>
+    <content src="http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-Spring-Boot-Devtools/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Plugin" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Spring Boot Devtools - 서버 자동 재가동
+
+Spring Boot Devtools
+
+소스의 변경이 일어날 때마다 스프링부트의 로컬 서버를 매번 재실행 해줘야하는 번거로움이 있었다..
+
+
+  소스 변경
+  로컬 서버 재실행
+  웹사이트 새로고침
+
+
+하지만, Spring Boot Devtools 를 사용하면 소스의 변경이 일어났을때 서버를 재시작하지 않아도, 서버가 자동으로 재가동 시켜주는 매우 편리한 플러그인이다.
+
+
+01. build.gradle에 플러그인 추가
+
+아래의 코드를 build.gradle 파일에 추가해준다.
+dependencies {  
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+}
+
+
+
+02. ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -120,9 +180,11 @@ Maven은 주로 Java 개발에 사용되는 프로젝트 관리 빌드 도구 �
 02. https://start.spring.io 에 대해 알아보기
 
 해당 사이트에 접속하면 아래와 같은 화면을 볼 수 있다.
+프로젝트를 선택하는 단계에서, Maven Project 와 Gradle Project 가 있는데,
+Maven은 개발자가 사용할 라이브러리를 땡겨 오고 빌드하는 라이프 사이클까지 관리해주는 툴이다.
+하지만 요즘에는** 대부분 Gradle을 많이 사용한다.**
 
-
-
+Ma...
     </summary>
   
 
@@ -262,71 +324,6 @@ Maven은 주로 Java 개발에 사용되는 프로젝트 관리 빌드 도구 �
 
 
   • 1, 3은 50 미만의 홀수 이므로...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (70) - 수열과 구간 쿼리 1</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(70)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-1/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (70) - 수열과 구간 쿼리 1" />
-    <published>2024-02-20T00:00:00+09:00</published>
-  
-    <updated>2024-02-20T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(70)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-1/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(70)-%EC%88%98%EC%97%B4%EA%B3%BC-%EA%B5%AC%EA%B0%84-%EC%BF%BC%EB%A6%AC-1/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :수열과 구간 쿼리 1
-
-
-문제 설명
-
-
-  정수 배열 arr와 2차원 정수 배열 queries이 주어집니다. queries의 원소는 각각 하나의 query를 나타내며, [s, e] 꼴입니다. 
-각 query마다 순서대로 s ≤ i ≤ e인 모든 i에 대해 arr[i]에 1을 더합니다. 
-위 규칙에 따라 queries를 처리한 이후의 arr를 return 하는 solution 함수를 완성해 주세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ arr의 길이 ≤ 1,000
-	• 0 ≤ arr의 원소 ≤ 1,000,000
-• 1 ≤ queries의 길이 ≤ 1,000
-	• 0 ≤ s ≤ e &amp;lt; arr의 길이
-
-
-
-입출력 예
-
-
-  
-    
-      arr
-      queries
-      res...
     </summary>
   
 
