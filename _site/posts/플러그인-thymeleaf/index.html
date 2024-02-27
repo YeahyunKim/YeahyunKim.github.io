@@ -31,28 +31,35 @@
   
 
   
+    
+
+    
+  
 
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Yeahyun Kim" />
+<meta property="og:title" content="플러그인 - Spring Boot Devtools" />
+<meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="소소한 개발 일지" />
-<meta property="og:description" content="소소한 개발 일지" />
-<link rel="canonical" href="http://localhost:4000/page8/" />
-<meta property="og:url" content="http://localhost:4000/page8/" />
+<meta name="description" content="thymeleaf - HTML 동적 렌더링 thymeleaf(타임리프)" />
+<meta property="og:description" content="thymeleaf - HTML 동적 렌더링 thymeleaf(타임리프)" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-thymeleaf/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-thymeleaf/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
-<meta property="og:type" content="website" />
-<link rel="prev" href="http://localhost:4000/page7" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Yeahyun Kim" />
+<meta property="og:image" content="https://ifh.cc/g/wvbwro.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-02-27T00:00:00+09:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
+<meta property="twitter:title" content="플러그인 - Spring Boot Devtools" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"소소한 개발 일지","headline":"Yeahyun Kim","url":"http://localhost:4000/page8/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-02-27T00:00:00+09:00","datePublished":"2024-02-27T00:00:00+09:00","description":"thymeleaf - HTML 동적 렌더링 thymeleaf(타임리프)","headline":"플러그인 - Spring Boot Devtools","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-thymeleaf/"},"url":"http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-thymeleaf/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Yeahyun Kim
+  <title>플러그인 - Spring Boot Devtools | Yeahyun Kim
   </title>
 
   <!--
@@ -104,11 +111,16 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
+  
 
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
   
 
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -287,7 +299,7 @@
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
       <!-- home -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a href="/" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
           <span>HOME</span>
@@ -451,9 +463,25 @@
       
 
       
-        <!-- index page -->
-        <span>Home</span>
+        
+          
+            <span>
+              <a href="/">
+                Home
+              </a>
+            </span>
 
+          
+        
+          
+        
+          
+            
+              <span>플러그인 - Spring Boot Devtools</span>
+            
+
+          
+        
       
     </nav>
     <!-- endof #breadcrumb -->
@@ -463,7 +491,7 @@
     </button>
 
     <div id="topbar-title">
-      Yeahyun Kim
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -561,6 +589,30 @@
 
       
     
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
 
     <!-- take out classes -->
     
@@ -578,12 +630,16 @@
     
 
     
-      <!-- create the image wrapper -->
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
       
 
       
-      
+        <!-- create the image wrapper -->
+        
 
+        
+        
+      
     
 
     <!-- combine -->
@@ -637,307 +693,16 @@
     
 
     
-      <!-- create the image wrapper -->
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
       
 
       
-      
-
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
+        <!-- create the image wrapper -->
+        
 
+        
+        
       
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
     
 
     <!-- combine -->
@@ -961,6 +726,27 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
@@ -970,6 +756,60 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -985,98 +825,15 @@
 
 
 
+<article class="px-1">
+  <header>
+    <h1 data-toc-skip>플러그인 - Spring Boot Devtools</h1>
 
-
-
-
-
-<!-- Get pinned posts -->
-
-
-
-
-
-
-<!-- Get default posts -->
-
-
-
-
-
-
-
-
-
-
-<div id="post-list" class="flex-grow-1 px-xl-1">
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (7) -문자열 붙여서 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                01 문제 :  문자열 붙여서 출력하기
-
-
-문제 설명
-
-
-  두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.
-입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-  • 1 ≤ str1, str2의 길이 ≤ 10
-
-
-
-
-입출력 예
-
-입력 #1
-apple pen
-
-
-출력 #1
-appl...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -1086,860 +843,227 @@ appl...
 
 <time
   
-  data-ts="1704898800"
+  data-ts="1708959600"
   data-df="ll"
   
->
-  Jan 11, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(6)-%EB%8D%A7%EC%85%88%EC%8B%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (6) -덧셈식 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                01 문제 : 덧셈식 출력하기
-
-
-
-문제 설명
-
-
-  두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.
-a + b = c
-
-
-
-제한사항
-
-
-  
-    1 ≤ a, b ≤ 100
-  
-
-
-
-
-입출력 예
-
-입력 #1
-4 5
-
-
-출력 #1
-4 + 5 = 9
-
-
-
-
-제시 코드
-
-import Foundation
-
-le...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704812400"
-  data-df="ll"
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 10, 2024
+  Feb 27, 2024
 </time>
 
+      </span>
 
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
+      <!-- lastmod date -->
+      
 
+      
+        
+        
+        
+
+        
+
+        <div class="mt-3 mb-3">
+          <a href="https://ifh.cc/g/wvbwro.png" class="popup img-link preview-img shimmer"><img src="https://ifh.cc/g/wvbwro.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
               
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
+                <a href="not_yey">Yeahyun Kim</a>
                 
+              
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
 
 
 
 
 
-                01 문제 : 특수문자 출력하기
-
-
-
-문제 설명
-
-
-  다음과 같이 출력하도록 코드를 작성해 주세요.
-
-
-
-입출력 예
-
-출력 #1
-!@#$%^&amp;amp;*(\&#39;&quot;&amp;lt;&amp;gt;?:;
-
-
-
-
-제시 코드
-
-import Foundation
 
 
 
 
 
-02 풀이
-
-
-”#”을 활용하기
-콘솔창에 원하는 값을 출력하기 위해선 print(출력할 값) 을 활용하면 된다....
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704726000"
-  data-df="ll"
-  
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="428 words"
 >
-  Jan  9, 2024
-</time>
+  <em>2 min</em> read</span>
+
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
+
+  <div class="content">
+    <h2 id="thymeleaf---html-동적-렌더링"><span class="me-2">thymeleaf - HTML 동적 렌더링</span><a href="#thymeleaf---html-동적-렌더링" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+<h4 id="thymeleaf타임리프"><span class="me-2">thymeleaf(타임리프)</span><a href="#thymeleaf타임리프" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>타임리프는 백엔드 서버에서 Html을 동적으로 렌더링  <strong>Java Template Engine</strong> 이다.
+해당 플러그인의 주요 목적은 유지 관리가 수월한 템플릿을 작성하도록 지원해주고, 타임리프의 핵심 기능인 Natural Template 을 통해 제공해주는데, 서버 사이드 렌더링을 하는데 필요한 데이터 값이 없더라도, 프로토 타입으로서의 역할을 해줄 수 있는 걸 말한다.</p>
+
+<p><strong>이 특징이 기존 Java Template Engine 중의 하나인 Jsp 와 가장 다른 점인데 Jsp 는 화면을 보기 위해선 서버의 도움이 필요하다. 그치만 Thymeleaf 는 서버의 도움없이 프로토 타입 형태로도 뷰를 볼 수 있다.</strong></p>
+
+<p>그렇기 때문에 Thymeleaf 를 사용한다면 디자인팀과 개발팀 사이에 생길 수 있는 커뮤니케이션 비용을 줄여줄 수 있다.</p>
+
+<p><br /></p>
+
+<h4 id="01-thymeleaf-가-제공해주는-template-6가지"><span class="me-2">01. thymeleaf 가 제공해주는 Template 6가지</span><a href="#01-thymeleaf-가-제공해주는-template-6가지" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>TEXT</li>
+  <li>Raw</li>
+  <li>XML</li>
+</ul>
+
+<p><br /></p>
+
+<h4 id="02-thymeleaf-라이브러리-추가"><span class="me-2">02. Thymeleaf 라이브러리 추가</span><a href="#02-thymeleaf-라이브러리-추가" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p><code class="language-plaintext highlighter-rouge">bulid.gradle</code> 파일에서 의존성 라이브러리를 추가해준다.</p>
+
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="n">dependencies</span> <span class="o">{</span>  
+    <span class="n">implementation</span> <span class="err">'</span><span class="n">org</span><span class="o">.</span><span class="na">springframework</span><span class="o">.</span><span class="na">boot</span><span class="o">:</span><span class="n">spring</span><span class="o">-</span><span class="n">boot</span><span class="o">-</span><span class="n">starter</span><span class="o">-</span><span class="n">thymeleaf</span><span class="err">'</span>
+    <span class="n">implementation</span> <span class="err">'</span><span class="n">org</span><span class="o">.</span><span class="na">springframework</span><span class="o">.</span><span class="na">boot</span><span class="o">:</span><span class="n">spring</span><span class="o">-</span><span class="n">boot</span><span class="o">-</span><span class="n">starter</span><span class="o">-</span><span class="n">web</span><span class="err">'</span>  
+    <span class="n">testImplementation</span> <span class="err">'</span><span class="n">org</span><span class="o">.</span><span class="na">springframework</span><span class="o">.</span><span class="na">boot</span><span class="o">:</span><span class="n">spring</span><span class="o">-</span><span class="n">boot</span><span class="o">-</span><span class="n">starter</span><span class="o">-</span><span class="n">test</span><span class="err">'</span>  
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+<h4 id="03-thymeleaf-기본-경로"><span class="me-2">03. Thymeleaf 기본 경로</span><a href="#03-thymeleaf-기본-경로" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<p>타임리프는 기본적으로 templates 폴더(root) 안에 있는 파일들을 기준으로 타임리프의 기능을 실행시켜주기 때문에,  <strong>templates</strong> 폴더가 없을경우 생성해 주어야하고, 테스트를 위해 폴더 안에 <strong>hello.html</strong> 파일도 생성해 주었다.</p>
+
+<p><strong>프로젝트 디렉터리(root) &gt; src &gt; main &gt; resources &gt; templates</strong>
+<a href="https://ifh.cc/g/dmbCMF.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/dmbCMF.png" alt="이미지" loading="lazy"></a></p>
+
+<p><br /></p>
 
 
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
+  </div>
 
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/java/">Java</a>,
+          <a href="/categories/plugin/">Plugin</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/java/"
+            class="post-tag no-text-decoration"
+          >Java</a>
+        
+          <a
+            href="/tags/plugin/"
+            class="post-tag no-text-decoration"
+          >Plugin</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%20-%20Spring%20Boot%20Devtools%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%258C%25EB%259F%25AC%25EA%25B7%25B8%25EC%259D%25B8-thymeleaf%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
+    
 
-        
-          
-          
+      
 
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                01 문제 : 대소문자 바꿔서 출력하기
-
-
-
-문제 설명
-
-
-  영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ str의 길이 ≤ 20
-	•  str은 알파벳으로 이루어진 문자열입니다.
-
-
-
-입출력 예
-
-입력 #1
-aBcDeF...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704639600"
-  data-df="ll"
-  
->
-  Jan  8, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%20-%20Spring%20Boot%20Devtools%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%258C%25EB%259F%25AC%25EA%25B7%25B8%25EC%259D%25B8-thymeleaf%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
       </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
+    
 
-        
-          
-          
+      
 
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                01 문제 : 문자열 반복해서 출력하기
-
-
-문제 설명
-
-
-  문자열 str과 정수 n이 주어집니다.
-str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ str의 길이 ≤ 10
-• 1 ≤ n ≤ 5
-
-
-
-입출력 예
-
-입력 #1
-string 5
-
-
-출력 #1
-stringstringstringstrings...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704639600"
-  data-df="ll"
-  
->
-  Jan  8, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%258C%25EB%259F%25AC%25EA%25B7%25B8%25EC%259D%25B8-thymeleaf%2F&text=%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%20-%20Spring%20Boot%20Devtools%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
       </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)-a%EC%99%80-b-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (2) - a와 b 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                01 문제 : a 와 b 출력하기
-
-
-
-문제 설명
-
-
-  정수 a와 b가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-
-  • 100,000 ≤ a, b ≤ 100,000
-
-
-
-입출력 예
-
-입력 #1
-4 5
-
-
-출력 #1
-a = 4
-b = 5
-
-
-
-
-제시 코드
-
-import Foundatio...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704639600"
-  data-df="ll"
-  
->
-  Jan  8, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (1) - 문자열 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                01 문제 : 문자열 출력하기
-
-
-
-문제 설명
-
-
-  문자열 str이 주어질 때, str을 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-  •  1 ≤ str의 길이 ≤ 1,000,000
-• str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.
-
-
-
-입출력 예
-
-입력 #1
-
-HelloWorld!
-
-
-출력 #1
-HelloWorld!
-
-
-
-
-제...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704553200"
-  data-df="ll"
-  
->
-  Jan  7, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
-<!-- #post-list -->
 
-
-  <!-- The paginator for post list on HomgPage. -->
-
-<nav aria-label="Page Navigation">
-  <ul class="pagination align-items-center mt-4 mb-0">
-    <!-- left arrow -->
-    
-
-    <li class="page-item ">
-      <a class="page-link" href="/page7" aria-label="previous-page">
-        <i class="fas fa-angle-left"></i>
-      </a>
-    </li>
-
-    <!-- page numbers -->
-    
-    
-
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a
-            class="page-link"
-            href="/"
-          >1</a>
-        </li>
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- hide number -->
-        
-          <li class="page-item disabled">
-            <span class="page-link">...</span>
-          </li>
-          
-        
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- hide number -->
-        
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- hide number -->
-        
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- hide number -->
-        
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a
-            class="page-link"
-            href="/page6"
-          >6</a>
-        </li>
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a
-            class="page-link"
-            href="/page7"
-          >7</a>
-        </li>
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- show number -->
-        <li class="page-item  active">
-          <a
-            class="page-link"
-            href="/page8"
-          >8</a>
-        </li>
-      
-    
-
-    <!-- mobile pagination -->
-    <li class="page-index align-middle">
-      <span>8</span>
-      <span class="text-muted">/ 8</span>
-    </li>
-
-    <!-- right arrow -->
-    
-
-    <li class="page-item disabled">
-      <a class="page-link" href="#" aria-label="next-page">
-        <i class="fas fa-angle-right"></i>
-      </a>
-    </li>
-  </ul>
-</nav>
-<!-- .pagination -->
-
-
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
+</article>
 
 
             
@@ -2413,12 +1537,297 @@ HelloWorld!
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-Spring-Boot-Devtools/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1708959600"
+  data-df="ll"
+  
+>
+  Feb 27, 2024
+</time>
+
+              <h4 class="pt-0 my-2">플러그인 - Spring Boot Devtools</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  Spring Boot Devtools - 서버 자동 재가동
+
+
+Spring Boot Devtools
+
+소스의 변경이 일어날 때마다 스프링부트의 로컬 서버를 매번 재실행 해줘야하는 번거로움이 있었다..
+
+
+  소스 변경
+  로컬 서버 재실행
+  웹사이트 새로고침
+
+
+하지만, Spring Boot Devtools 를 사용하면 소스의 변경이 일어났을때 서버...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/MacOS-%EC%97%90-JAVA-11%EC%84%A4%EC%B9%98%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1708786800"
+  data-df="ll"
+  
+>
+  Feb 25, 2024
+</time>
+
+              <h4 class="pt-0 my-2">[Java] MacOS에 JAVA 11설치하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  MacOS에 JAVA 11설치하기
+
+
+
+01. 터미널을 실행하여 자바 설치 여부 및 버전 확인
+
+터미널(terminal)을 열어 java --version 이라 입력후 엔터를 치면 나의 맥북에 Java 설치 유무 및 버전 체크가 가능하다.
+
+
+
+  아직까지 자바가 설치되지 않았다고 나와있다.
+
+
+
+02. oracle의 java downloads 사이트...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%8A%A4%ED%83%80%ED%84%B0-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1708873200"
+  data-df="ll"
+  
+>
+  Feb 26, 2024
+</time>
+
+              <h4 class="pt-0 my-2">[Java] 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기
+
+
+
+01. 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기
+
+예전의 스프링 프로젝트는 정말 밑바닥 부터 다 만들었는데, 요즘에는 SpringBoot 를 기반으로 프로젝트를 만든다. 아래 사이트로 이동하자.
+
+  https://start.spring.io/
+
+
+
+02. https://start...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-Spring-Boot-Devtools/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>플러그인 - Spring Boot Devtools</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -2916,6 +2325,9 @@ HelloWorld!
   
 
   
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
 
 
 
@@ -2987,16 +2399,37 @@ HelloWorld!
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/home.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-02-26-플러그인 - Spring Boot Devtools.md",
+                "file": "_posts/2024-02-26-플러그인 - thymeleaf.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-26-플러그인 - Spring Boot Devtools.md",
+                "file": "_posts/2024-02-26-플러그인 - thymeleaf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-26-플러그인 - Spring Boot Devtools.md",
+                "file": "_posts/2024-02-26-플러그인 - thymeleaf.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-26-플러그인 - Spring Boot Devtools.md"
+                "file": "_posts/2024-02-26-플러그인 - thymeleaf.md"
               }
             }
           }
@@ -161,24 +161,27 @@
   },
   "active": "3014ac36fe90fb0a",
   "lastOpenFiles": [
+    "_site/tags/plugin/index.html",
+    "_site/tags/plugin",
+    "_site/Pasted image 20240227124417.png",
+    "Pasted image 20240227124417.png",
+    "_posts/2024-02-26-플러그인 - Spring Boot Devtools.md",
+    "_posts/2024-02-26-플러그인 - thymeleaf.md",
+    "_site/posts/플러그인-thymeleaf/index.html",
+    "_site/posts/플러그인-thymeleaf",
+    "_site/posts/플러그인-Spring-Boot-Devtools-1/index.html",
+    "_site/posts/플러그인-Spring-Boot-Devtools-1",
+    "_posts/2024-02-26- 자바 빌드 도구 종류 Maven, Gradle 차이점.md",
     "_site/posts/플러그인-Spring-Boot-Devtools/index.html",
     "_site/posts/플러그인-Spring-Boot-Devtools",
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (70) - 수열과 구간 쿼리 1.md",
-    "_posts/2024-02-26-플러그인 - Spring Boot Devtools.md",
     "_site/posts/라이브러리-Spring-Boot-Devtools/index.html",
     "_site/posts/라이브러리-Spring-Boot-Devtools",
     "_site/스크린샷 2024-02-27 오전 11.50.41.png",
     "_site/categories/plugin/index.html",
-    "_site/categories/plugin",
     "스크린샷 2024-02-27 오전 11.50.41.png",
-    "_posts/2024-02-26- 자바 빌드 도구 종류 Maven, Gradle 차이점.md",
     "_posts/2024-02-26- 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
-    "_site/posts/자바-빌드-도구-종류-Maven,-Gradle-차이점/index.html",
-    "_site/posts/자바-빌드-도구-종류-Maven,-Gradle-차이점",
-    "_site/categories/study/index.html",
-    "_site/categories/study",
     "_posts/2024-02-19- MacOS 에 JAVA 11설치하기.md",
-    "_site/posts/스프링-부트-스타터-사이트로-스프링-프로젝트-생성하기-1/index.html",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽.md",
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md",
     "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
@@ -197,7 +200,6 @@
     "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md",
     "_posts/2024-02-16- 프로그래머스 Swift 코테준비 (55) - 가까운 1 찾기.md",
     "_posts/2024-02-16- 프로그래머스 Swift 코테준비 (54) - 글자 지우기 1.md",
-    "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (41) - 배열 만들기 5.md",
-    "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (58) - 배열 만들기 3.md"
+    "_posts/2024-02-13- 프로그래머스 Swift 코테준비 (41) - 배열 만들기 5.md"
   ]
 }

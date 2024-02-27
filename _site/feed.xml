@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-02-27T12:10:17+09:00</updated>
+  <updated>2024-02-27T12:46:49+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,51 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>플러그인 - Spring Boot Devtools</title>
+    <link href="http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-thymeleaf/" rel="alternate" type="text/html" title="플러그인 - Spring Boot Devtools" />
+    <published>2024-02-27T00:00:00+09:00</published>
+  
+    <updated>2024-02-27T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-thymeleaf/</id>
+    <content src="http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-thymeleaf/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Plugin" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      thymeleaf - HTML 동적 렌더링
+
+thymeleaf(타임리프)
+
+타임리프는 백엔드 서버에서 Html을 동적으로 렌더링  Java Template Engine 이다.
+해당 플러그인의 주요 목적은 유지 관리가 수월한 템플릿을 작성하도록 지원해주고, 타임리프의 핵심 기능인 Natural Template 을 통해 제공해주는데, 서버 사이드 렌더링을 하는데 필요한 데이터 값이 없더라도, 프로토 타입으로서의 역할을 해줄 수 있는 걸 말한다.
+
+이 특징이 기존 Java Template Engine 중의 하나인 Jsp 와 가장 다른 점인데 Jsp 는 화면을 보기 위해선 서버의 도움이 필요하다. 그치만 Thymeleaf 는 서버의 도움없이 프로토 타입 형태로도 뷰를 볼 수 있다.
+
+그렇기 때문에 Thymel...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -246,84 +291,6 @@ Ma...
 03. 자바 설치
 
 자기가 설치할 파일 경로를 잘 설정하고, 계속 다음을...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(71)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EA%B2%8C-%EC%88%98%EC%97%B4-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0-1/" rel="alternate" type="text/html" title="프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1" />
-    <published>2024-02-20T00:00:00+09:00</published>
-  
-    <updated>2024-02-25T16:58:03+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(71)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EA%B2%8C-%EC%88%98%EC%97%B4-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0-1/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(71)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EA%B2%8C-%EC%88%98%EC%97%B4-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0-1/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :조건에 맞게 수열 변환하기 1
-
-
-문제 설명
-
-
-  정수 배열 arr가 주어집니다. arr의 각 원소에 대해 값이 50보다 크거나 같은 짝수라면 2로 나누고, 50보다 작은 홀수라면 2를 곱합니다. 그 결과인 정수 배열을 return 하는 solution 함수를 완성해 주세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ arr의 길이 ≤ 1,000,000
-	• 1 ≤ arr의 원소의 값 ≤ 100
-
-
-
-입출력 예
-
-
-  
-    
-      arr
-      result
-    
-  
-  
-    
-      [1, 2, 3, 100, 99, 98]
-      [2, 2, 6, 50, 99, 49]
-    
-  
-
-
-
-
-입출력 예 설명
-
-입출력 예 #1
-
-
-  • 1, 3은 50 미만의 홀수 이므로...
     </summary>
   
 
