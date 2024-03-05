@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6b8bcc6d09055f4c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-02-26- 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-02-26-Static Content - 정적 컨텐츠.md",
+                "file": "_posts/2024-02-26- 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-02-26-Static Content - 정적 컨텐츠.md",
+                "file": "_posts/2024-02-26- 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-02-26-Static Content - 정적 컨텐츠.md"
+                "file": "_posts/2024-02-26- 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md"
               }
             }
           }
@@ -159,7 +171,7 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "3014ac36fe90fb0a",
+  "active": "6b8bcc6d09055f4c",
   "lastOpenFiles": [
     "_posts/2024-02-26- 자바 빌드 도구 종류 Maven, Gradle 차이점.md",
     "_posts/2024-02-26-플러그인 - Spring Boot Devtools.md",
