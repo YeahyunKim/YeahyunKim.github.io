@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기",
+    "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/",
+    "categories": "mySQL, Grammar",
+    "tags": "mySQL",
+    "date": "2024-03-08 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "💡BETWEEN, IN, LIKE01. ORDER BY  The ORDER BY keyword is used to sort the result-set in ascending or descending order. The ORDER BY keyword sorts the records in ascending order by default. To sort t...",
+    "content": "💡BETWEEN, IN, LIKE01. ORDER BY  The ORDER BY keyword is used to sort the result-set in ascending or descending order. The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.ORDER BY 는 결과의 집합을 오름차 / 내림차순으로 정렬하는데 사용된다.💡문법 Syntax01. \bORDER BY ASC(오름차순)SELECT * FROM 테이블 ORDER BY 컬럼1 ASC, 컬럼2 ASC02. \bORDER BY DESC(내림차순)SELECT * FROM 테이블 ORDER BY 컬럼1 DESC, 컬럼2 DESC💡사용예시01. ORDER BY ASC 예시 (오름차순)1) 나이컬럼을 기준으로 오름차순으로 가져오기SELECT * FROM customers ORDER BY age ASC;  • 조건 1 : 없음• 해석 : \b나이를 오름차순으로 정렬한 고객 정보 테이블을 가져와줘  근데 한살이 어떻게 있지?;;2) 두개의 컬럼을 오름차순으로 정리하기SELECT * FROM customers ORDER BY age ASC, name ASC;  • 조건 1 : 없음• 해석 : \b나이를 오름차순으로 정렬하고, 그중 이름을 오름차순으로 정리한 고객 정보 테이블을 가져와줘03. ORDER BY DESC 예시 (내림차순)1) 나이컬럼을 기준으로 내림차순으로 가져오기SELECT * FROM customers ORDER BY age DESC;  • 조건 1 : 없음• 해석 : \b나이를 오름차순으로 정렬한 고객 정보 테이블을 가져와줘2) 두개의 컬럼을 내림차순으로 정리하기SELECT * FROM customers ORDER BY age DESC, name DESC;  • 조건 1 : 없음• 해석 : \b나이를 내림차순으로 정렬하고, 그중 이름을 내림차순으로 정리한 고객 정보 테이블을 가져와줘"
+  },
+  
+  {
     "title": "mySQL 문법 (5) - BETWEEN, IN, LIKE",
     "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/",
     "categories": "mySQL, Grammar",

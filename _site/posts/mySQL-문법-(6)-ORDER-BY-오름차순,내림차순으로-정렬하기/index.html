@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Swift 코테준비 (14) -더 크게 합치기" />
+<meta property="og:title" content="mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="01 문제 : 더 크게 합치기 문제 설명" />
-<meta property="og:description" content="01 문제 : 더 크게 합치기 문제 설명" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/" />
+<meta name="description" content="💡BETWEEN, IN, LIKE 01. ORDER BY" />
+<meta property="og:description" content="💡BETWEEN, IN, LIKE 01. ORDER BY" />
+<link rel="canonical" href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/" />
+<meta property="og:url" content="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
-<meta property="og:image" content="https://ifh.cc/g/wvbwro.png" />
+<meta property="og:image" content="https://ifh.cc/g/DMV0va.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-15T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-03-08T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
-<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (14) -더 크게 합치기" />
+<meta property="twitter:image" content="https://ifh.cc/g/DMV0va.png" />
+<meta property="twitter:title" content="mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-30T22:51:44+09:00","datePublished":"2024-01-15T00:00:00+09:00","description":"01 문제 : 더 크게 합치기 문제 설명","headline":"프로그래머스 Swift 코테준비 (14) -\b더 크게 합치기","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-08T00:00:00+09:00","datePublished":"2024-03-08T00:00:00+09:00","description":"💡BETWEEN, IN, LIKE 01. ORDER BY","headline":"mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기","image":"https://ifh.cc/g/DMV0va.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Swift 코테준비 (14) -더 크게 합치기 | Yeahyun Kim
+  <title>mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>프로그래머스 Swift 코테준비 (14) -더 크게 합치기</span>
+              <span>mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기</span>
             
 
           
@@ -596,6 +596,258 @@
       
 
       
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
     
       
 
@@ -778,6 +1030,43 @@
 
       
     
+
+    
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
       
 
       
@@ -802,11 +1091,6 @@
     
 
     
-  
-
-  
-  
-
   
 
 
@@ -819,7 +1103,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (14) -더 크게 합치기</h1>
+    <h1 data-toc-skip>mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -835,41 +1119,18 @@
 
 <time
   
-  data-ts="1705244400"
+  data-ts="1709823600"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan 15, 2024
+  Mar  8, 2024
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1706622704"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Jan 30, 2024
-</time>
-
-        </span>
       
 
       
@@ -880,7 +1141,7 @@
         
 
         <div class="mt-3 mb-3">
-          <a href="https://ifh.cc/g/wvbwro.png" class="popup img-link preview-img shimmer"><img src="https://ifh.cc/g/wvbwro.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
+          <a href="https://ifh.cc/g/DMV0va.png" class="popup img-link preview-img shimmer"><img src="https://ifh.cc/g/DMV0va.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -921,7 +1182,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="480 words"
+  title="453 words"
 >
   <em>2 min</em> read</span>
 
@@ -932,143 +1193,114 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제--더-크게-합치기"><span class="me-2">01 문제 : 더 크게 합치기</span><a href="#01-문제--더-크게-합치기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="between-in-like"><span class="me-2">💡BETWEEN, IN, LIKE</span><a href="#between-in-like" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<h4 id="01-order-by"><span class="me-2">01. ORDER BY</span><a href="#01-order-by" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.
-	• 12 ⊕ 3 = 123
-	• 3 ⊕ 12 = 312
-양의 정수 <code class="language-plaintext highlighter-rouge">a</code>와 <code class="language-plaintext highlighter-rouge">b</code>가 주어졌을 때, <code class="language-plaintext highlighter-rouge">a</code> ⊕ <code class="language-plaintext highlighter-rouge">b</code>와 <code class="language-plaintext highlighter-rouge">b</code> ⊕ <code class="language-plaintext highlighter-rouge">a</code> 중 더 큰 값을 return 하는 solution 함수를 완성해 주세요.
-단, <code class="language-plaintext highlighter-rouge">a</code> ⊕ <code class="language-plaintext highlighter-rouge">b</code>와 <code class="language-plaintext highlighter-rouge">b</code> ⊕ <code class="language-plaintext highlighter-rouge">a</code>가 같다면 <code class="language-plaintext highlighter-rouge">a</code> ⊕ <code class="language-plaintext highlighter-rouge">b</code>를 return 합니다.</p>
+  <p>The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword is used to sort the result-set in ascending or descending order. <br />
+The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword sorts the records in ascending order by default. To sort the records in descending order, use the <code class="language-plaintext highlighter-rouge">DESC</code> keyword.</p>
 </blockquote>
 
-<p><br /></p>
-<h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<blockquote class="command-text">
-  <p>• 1 ≤ a, b &lt; 10,000</p>
-</blockquote>
+<p><code class="language-plaintext highlighter-rouge">ORDER BY</code> 는 결과의 집합을 오름차 / 내림차순으로 정렬하는데 사용된다.</p>
 
-<p><br /></p>
+<p><br />
+<br /></p>
+<h2 id="문법-syntax"><span class="me-2">💡문법 Syntax</span><a href="#문법-syntax" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+<h4 id="01-order-by-asc오름차순"><span class="me-2">01. ORDER BY ASC(오름차순)</span><a href="#01-order-by-asc오름차순" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<div class="table-wrapper"><table>
-  <thead>
-    <tr>
-      <th>a</th>
-      <th>b</th>
-      <th>result</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>9</td>
-      <td>91</td>
-      <td>991</td>
-    </tr>
-    <tr>
-      <td>89</td>
-      <td>8</td>
-      <td>898</td>
-    </tr>
-  </tbody>
-</table></div>
-
-<p><br /></p>
-<h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<p>입출력 예 #1</p>
-<blockquote class="command-text">
-  <p>• <code class="language-plaintext highlighter-rouge">a</code> ⊕ <code class="language-plaintext highlighter-rouge">b</code> = 991 이고, <code class="language-plaintext highlighter-rouge">b</code> ⊕ <code class="language-plaintext highlighter-rouge">a</code> = 919 입니다. 둘 중 더 큰 값은 991 이므로 991을
-return 합니다.</p>
-</blockquote>
-
-<p>입출력 예 #2</p>
-<blockquote class="command-text">
-  <p>• <code class="language-plaintext highlighter-rouge">a</code> ⊕ <code class="language-plaintext highlighter-rouge">b</code> = 898 이고, <code class="language-plaintext highlighter-rouge">b</code> ⊕ <code class="language-plaintext highlighter-rouge">a</code> = 889 입니다. 둘 중 더 큰 값은 898 이므로 898
-을 return 합니다.</p>
-</blockquote>
-
-<p><br /></p>
-
-<h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="err">테이블</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="err">컬럼</span><span class="mi">1</span> <span class="k">ASC</span><span class="p">,</span> <span class="err">컬럼</span><span class="mi">2</span> <span class="k">ASC</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
-    
-    <span class="k">return</span> <span class="mi">0</span>
+<p><br /></p>
+<h4 id="02-order-by-desc내림차순"><span class="me-2">02. ORDER BY DESC(내림차순)</span><a href="#02-order-by-desc내림차순" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<span class="p">}</span>
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="err">테이블</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="err">컬럼</span><span class="mi">1</span> <span class="k">DESC</span><span class="p">,</span> <span class="err">컬럼</span><span class="mi">2</span> <span class="k">DESC</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
 <br /></p>
-<h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<h2 id="사용예시"><span class="me-2">💡사용예시</span><a href="#사용예시" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
+<h4 id="01-order-by-asc-예시-오름차순"><span class="me-2">01. ORDER BY ASC 예시 (오름차순)</span><a href="#01-order-by-asc-예시-오름차순" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<h4 id="정수를-붙이기"><span class="me-2">정수를 붙이기</span><a href="#정수를-붙이기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<h5 id="1-나이컬럼을-기준으로-오름차순으로-가져오기"><span class="me-2">1) 나이컬럼을 기준으로 오름차순으로 가져오기</span><a href="#1-나이컬럼을-기준으로-오름차순으로-가져오기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 
-<p>정수 <code class="language-plaintext highlighter-rouge">3</code> 과 <code class="language-plaintext highlighter-rouge">23</code> 이 있다고 가정해보았을때, 두개를 붙인 <code class="language-plaintext highlighter-rouge">323</code> 을 만들기 위해선,
-정수를 <code class="language-plaintext highlighter-rouge">string(3)</code> <code class="language-plaintext highlighter-rouge">string(23)</code>으로 형 변환을 하고, <code class="language-plaintext highlighter-rouge">"3" + "23"</code> 을 처리하면 문자열 <code class="language-plaintext highlighter-rouge">"323"</code>을 만들 수 있다.
-여기서, 문자열 “323” 을 <code class="language-plaintext highlighter-rouge">Int("323")</code> 로 다시 형 변환을 해주면 완성된다.</p>
-
-<p><br /></p>
-<h4 id="최솟값과-최댓값"><span class="me-2">최솟값과 최댓값</span><a href="#최솟값과-최댓값" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<p>더 큰 값을 반환하는 것이 문제의 포인트,
-최솟값과 최댓값을 구하는 방식을 활용해보기로 했다.</p>
-
-<ul>
-  <li>a 와 b 중 더 작은 값을 구할때는 <code class="language-plaintext highlighter-rouge">min(a, b)</code></li>
-  <li>a 와 b 중 더 큰 값을 구할때에는 <code class="language-plaintext highlighter-rouge">max(a, b)</code></li>
-</ul>
-
-<p>두개의 방식을 사용하여 문제를 해결 할 수 있었다.</p>
-
-<p><br />
-<br /></p>
-
-<h2 id="answer"><span class="me-2">💡Answer</span><a href="#answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<hr />
-
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
-
-<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
-    
-    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="mi">0</span>
-    
-    <span class="n">result</span> <span class="o">=</span> <span class="nf">max</span><span class="p">(</span><span class="kt">Int</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="kt">String</span><span class="p">(</span><span class="n">b</span><span class="p">))</span><span class="o">!</span> <span class="p">,</span> <span class="kt">Int</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="kt">String</span><span class="p">(</span><span class="n">a</span><span class="p">))</span><span class="o">!</span><span class="p">)</span>
-    
-    <span class="k">return</span> <span class="n">result</span>
-<span class="p">}</span>
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">age</span> <span class="k">ASC</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181939">해당문제 풀러가보기</a></p>
+<blockquote class="command-text">
+  <p>• 조건 1 : 없음
+• 해석 : 나이를 오름차순으로 정렬한 고객 정보 테이블을 가져와줘</p>
+</blockquote>
 
+<p><a href="https://ifh.cc/g/TjRLFb.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/TjRLFb.png" alt="이미지" loading="lazy"></a></p>
+
+<blockquote class="command-text">
+  <p>근데 한살이 어떻게 있지?;;</p>
+</blockquote>
+
+<p><br /></p>
+<h5 id="2-두개의-컬럼을-오름차순으로-정리하기"><span class="me-2">2) 두개의 컬럼을 오름차순으로 정리하기</span><a href="#2-두개의-컬럼을-오름차순으로-정리하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">age</span> <span class="k">ASC</span><span class="p">,</span> <span class="n">name</span> <span class="k">ASC</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote class="command-text">
+  <p>• 조건 1 : 없음
+• 해석 : 나이를 오름차순으로 정렬하고, 그중 이름을 오름차순으로 정리한 고객 정보 테이블을 가져와줘</p>
+</blockquote>
+
+<p><a href="https://ifh.cc/g/y1aNgH.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/y1aNgH.png" alt="이미지" loading="lazy"></a></p>
+
+<p><br /></p>
+
+<h4 id="03-order-by-desc-예시-내림차순"><span class="me-2">03. ORDER BY DESC 예시 (내림차순)</span><a href="#03-order-by-desc-예시-내림차순" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<h5 id="1-나이컬럼을-기준으로-내림차순으로-가져오기"><span class="me-2">1) 나이컬럼을 기준으로 내림차순으로 가져오기</span><a href="#1-나이컬럼을-기준으로-내림차순으로-가져오기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">age</span> <span class="k">DESC</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote class="command-text">
+  <p>• 조건 1 : 없음
+• 해석 : 나이를 오름차순으로 정렬한 고객 정보 테이블을 가져와줘</p>
+</blockquote>
+
+<p><a href="https://ifh.cc/g/AaRXzJ.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/AaRXzJ.png" alt="이미지" loading="lazy"></a></p>
+
+<p><br /></p>
+<h5 id="2-두개의-컬럼을-내림차순으로-정리하기"><span class="me-2">2) 두개의 컬럼을 내림차순으로 정리하기</span><a href="#2-두개의-컬럼을-내림차순으로-정리하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">age</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">name</span> <span class="k">DESC</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote class="command-text">
+  <p>• 조건 1 : 없음
+• 해석 : 나이를 내림차순으로 정렬하고, 그중 이름을 내림차순으로 정리한 고객 정보 테이블을 가져와줘</p>
+</blockquote>
+
+<p><a href="https://ifh.cc/g/C7GvoK.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/C7GvoK.png" alt="이미지" loading="lazy"></a></p>
 
   </div>
 
@@ -1078,8 +1310,8 @@ return 합니다.</p>
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/programmers/">Programmers</a>,
-          <a href="/categories/%EA%B8%B0%EC%B4%88/">기초</a>
+          <a href="/categories/mysql/">mySQL</a>,
+          <a href="/categories/grammar/">Grammar</a>
       </div>
     
 
@@ -1089,14 +1321,9 @@ return 합니다.</p>
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/algorithm/"
+            href="/tags/mysql/"
             class="post-tag no-text-decoration"
-          >Algorithm</a>
-        
-          <a
-            href="/tags/programmers/"
-            class="post-tag no-text-decoration"
-          >Programmers</a>
+          >mySQL</a>
         
       </div>
     
@@ -1124,21 +1351,21 @@ return 합니다.</p>
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(14)%20-%08%EB%8D%94%20%ED%81%AC%EA%B2%8C%20%ED%95%A9%EC%B9%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2814%29-%25EB%258D%2594-%25ED%2581%25AC%25EA%25B2%258C-%25ED%2595%25A9%25EC%25B9%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=mySQL%20%EB%AC%B8%EB%B2%95%20(6)%20-%20ORDER%20BY%20%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%20%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%286%29-ORDER-BY-%25EC%2598%25A4%25EB%25A6%2584%25EC%25B0%25A8%25EC%2588%259C%2C%25EB%2582%25B4%25EB%25A6%25BC%25EC%25B0%25A8%25EC%2588%259C%25EC%259C%25BC%25EB%25A1%259C-%25EC%25A0%2595%25EB%25A0%25AC%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(14)%20-%08%EB%8D%94%20%ED%81%AC%EA%B2%8C%20%ED%95%A9%EC%B9%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2814%29-%25EB%258D%2594-%25ED%2581%25AC%25EA%25B2%258C-%25ED%2595%25A9%25EC%25B9%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=mySQL%20%EB%AC%B8%EB%B2%95%20(6)%20-%20ORDER%20BY%20%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%20%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%286%29-ORDER-BY-%25EC%2598%25A4%25EB%25A6%2584%25EC%25B0%25A8%25EC%2588%259C%2C%25EB%2582%25B4%25EB%25A6%25BC%25EC%25B0%25A8%25EC%2588%259C%25EC%259C%25BC%25EB%25A1%259C-%25EC%25A0%2595%25EB%25A0%25AC%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%2814%29-%25EB%258D%2594-%25ED%2581%25AC%25EA%25B2%258C-%25ED%2595%25A9%25EC%25B9%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(14)%20-%08%EB%8D%94%20%ED%81%AC%EA%B2%8C%20%ED%95%A9%EC%B9%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%286%29-ORDER-BY-%25EC%2598%25A4%25EB%25A6%2584%25EC%25B0%25A8%25EC%2588%259C%2C%25EB%2582%25B4%25EB%25A6%25BC%25EC%25B0%25A8%25EC%2588%259C%25EC%259C%25BC%25EB%25A1%259C-%25EC%25A0%2595%25EB%25A0%25AC%25ED%2595%2598%25EA%25B8%25B0%2F&text=mySQL%20%EB%AC%B8%EB%B2%95%20(6)%20-%20ORDER%20BY%20%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%20%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1673,775 +1900,7 @@ return 합니다.</p>
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -2517,7 +1976,7 @@ return 합니다.</p>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(61)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EB%B6%80%ED%84%B0/" class="post-preview card h-100">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-SELECT,-FROM-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2529,14 +1988,14 @@ return 합니다.</p>
 
 <time
   
-  data-ts="1708095600"
+  data-ts="1709650800"
   data-df="ll"
   
 >
-  Feb 17, 2024
+  Mar  6, 2024
 </time>
 
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (61) - n 번째 원소부터</h4>
+              <h4 class="pt-0 my-2">mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2545,21 +2004,23 @@ return 합니다.</p>
 
 
 
-                  01 문제 :n 번째 원소부터
+                  SELECT, FROM
+01. SELECT
 
-문제 설명
-
-
-  정수 리스트 num_list와 정수 n이 주어질 때, n 번째 원소부터 마지막 원소까지의 모든 원소를 담은 리스트를 return하도록 solution 함수를 완성해주세요.
-
+SELECT 는 데이터를 가져오는 기본 명령어로, 데이터를 조회하는 모든 Query에 사용된다.
+기본적으로 컬럼을 선택한다고 생각하면 된다.
 
 
-제한사항
+02. FROM
+
+FROM 은 데이터를 가져올 테이블을 특정해주는 명령어이다.
+기본적으로 테이블을 선택한다고 생각하면 된다.
 
 
-  • 2 ≤ num_list의 길이 ≤ 30
-• 1 ≤ num_list의 원소 ≤ 9
-• 1 ≤ n ≤ num...
+
+문법보기
+
+01. 테이블의 모든 ...
                 </p>
               </div>
             </div>
@@ -2567,7 +2028,7 @@ return 합니다.</p>
         </article>
       
         <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(62)-%EC%88%9C%EC%84%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/" class="post-preview card h-100">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-WHERE-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2579,14 +2040,14 @@ return 합니다.</p>
 
 <time
   
-  data-ts="1708095600"
+  data-ts="1709823600"
   data-df="ll"
   
 >
-  Feb 17, 2024
+  Mar  8, 2024
 </time>
 
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (62) - 순서 바꾸기</h4>
+              <h4 class="pt-0 my-2">mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2595,19 +2056,17 @@ return 합니다.</p>
 
 
 
-                  01 문제 :순서 바꾸기
-
-문제 설명
+                  💡WHERE
 
 
-  정수 리스트 num_list와 정수 n이 주어질 때, num_list를 n 번째 원소 이후의 원소들과 n 번째까지의 원소들로 나눠 n 번째 원소 이후의 원소들을 n 번째까지의 원소들 앞에 붙인 리스트를 return하도록 solution 함수를 완성해주세요.
+01. WHERE 절이란
 
 
+  The WHERE clause is used to filter records.
+It is used to extract only those records that fulfill a specified condition.
 
-제한사항
 
-
-  • 2 ≤ num_list의...
+WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다....
                 </p>
               </div>
             </div>
@@ -2615,7 +2074,7 @@ return 합니다.</p>
         </article>
       
         <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(63)-%EC%99%BC%EC%AA%BD-%EC%98%A4%EB%A5%B8%EC%AA%BD/" class="post-preview card h-100">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(3)-AND,-OR,-NOT-%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2627,14 +2086,14 @@ return 합니다.</p>
 
 <time
   
-  data-ts="1708095600"
+  data-ts="1709823600"
   data-df="ll"
   
 >
-  Feb 17, 2024
+  Mar  8, 2024
 </time>
 
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽</h4>
+              <h4 class="pt-0 my-2">mySQL 문법 (3) - AND, OR, NOT 연산자</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2643,13 +2102,20 @@ return 합니다.</p>
 
 
 
-                  01 문제 :왼쪽 오른쪽
-
-문제 설명
+                  💡AND, OR, NOT 논리연산자
 
 
-  문자열 리스트 str_list에는 “u”, “d”, “l”, “r” 네 개의 문자열이 여러 개 저장되어 있습니다. 
-str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이라면 해당 문자열을 기준으로 왼쪽에 있는 문자열들을 순서대로 담은 리스트를, 먼저 나오는 문자열이 “r”이라면 해당 문자열...
+01. AND
+
+
+  The AND operators are used to filter records based on more than one condition:
+
+
+AND 연산자는 두개의 조건이 모두 true 인 경우의 데이터를 필터링 합니다.
+AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
+
+
+...
                 </p>
               </div>
             </div>
@@ -2671,22 +2137,18 @@ str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이�
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/"
+      href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Swift 코테준비 (13) -문자열 곱하기</p>
+      <p>mySQL 문법 (5) - BETWEEN, IN, LIKE</p>
     </a>
   
 
   
-    <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(15)-%EB%91%90-%EC%88%98%EC%9D%98-%EC%97%B0%EC%82%B0%EA%B0%92-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>프로그래머스 Swift 코테준비 (15) - 두 수의 연산값 비교하기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
