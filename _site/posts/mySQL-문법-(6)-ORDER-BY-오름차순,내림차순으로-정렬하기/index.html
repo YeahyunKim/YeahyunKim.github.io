@@ -42,8 +42,8 @@
 <meta property="og:title" content="mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="💡BETWEEN, IN, LIKE 01. ORDER BY" />
-<meta property="og:description" content="💡BETWEEN, IN, LIKE 01. ORDER BY" />
+<meta name="description" content="💡ORDER BY 01. ORDER BY" />
+<meta property="og:description" content="💡ORDER BY 01. ORDER BY" />
 <link rel="canonical" href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/" />
 <meta property="og:url" content="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
@@ -54,7 +54,7 @@
 <meta property="twitter:image" content="https://ifh.cc/g/DMV0va.png" />
 <meta property="twitter:title" content="mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-08T00:00:00+09:00","datePublished":"2024-03-08T00:00:00+09:00","description":"💡BETWEEN, IN, LIKE 01. ORDER BY","headline":"mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기","image":"https://ifh.cc/g/DMV0va.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-08T00:00:00+09:00","datePublished":"2024-03-08T00:00:00+09:00","description":"💡ORDER BY 01. ORDER BY","headline":"mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기","image":"https://ifh.cc/g/DMV0va.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1182,7 +1182,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="453 words"
+  title="452 words"
 >
   <em>2 min</em> read</span>
 
@@ -1193,7 +1193,7 @@
   </header>
 
   <div class="content">
-    <h2 id="between-in-like"><span class="me-2">💡BETWEEN, IN, LIKE</span><a href="#between-in-like" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="order-by"><span class="me-2">💡ORDER BY</span><a href="#order-by" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 <h4 id="01-order-by"><span class="me-2">01. ORDER BY</span><a href="#01-order-by" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
@@ -1420,6 +1420,13 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/">mySQL 문법 (5) - BETWEEN, IN, LIKE</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(61)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EB%B6%80%ED%84%B0/">프로그래머스 Swift 코테준비 (61) - n 번째 원소부터</a>
         </li>
       
@@ -1442,13 +1449,6 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
         
         <li class="text-truncate lh-lg">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(67)-5%EB%AA%85%EC%94%A9/">프로그래머스 Swift 코테준비 (67) - 5명씩</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(63)-%EC%99%BC%EC%AA%BD-%EC%98%A4%EB%A5%B8%EC%AA%BD/">프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽</a>
         </li>
       
     </ul>
@@ -1552,15 +1552,6 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -1577,6 +1568,13 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
     
     
       
+        
+        
+
+  
+    
+    
+    
     
   
     
@@ -1824,10 +1822,10 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
         <a class="post-tag btn btn-outline-primary" href="/tags/programmers/">Programmers</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">mySQL</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">mySQL</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/javaspring/">JavaSpring</a>
@@ -1896,6 +1894,18 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -2146,9 +2156,13 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(7)-LIMIT-%EC%9B%90%ED%95%98%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EB%A7%8C%ED%81%BC-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기</p>
+    </a>
   
 </nav>
 
@@ -2289,15 +2303,6 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -2314,6 +2319,13 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
     
     
       
+        
+        
+
+  
+    
+    
+    
     
   
     
@@ -2561,10 +2573,10 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
         <a class="post-tag btn btn-outline-primary" href="/tags/programmers/">Programmers</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">mySQL</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/tags/mysql/">mySQL</a>
+        <a class="post-tag btn btn-outline-primary" href="/tags/java/">Java</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/tags/javaspring/">JavaSpring</a>

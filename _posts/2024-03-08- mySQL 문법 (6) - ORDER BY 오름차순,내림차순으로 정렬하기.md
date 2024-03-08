@@ -9,7 +9,7 @@ tags:
   - mySQL
 image: https://ifh.cc/g/DMV0va.png
 ---
-## 💡BETWEEN, IN, LIKE
+## 💡ORDER BY
 ---
 #### 01. ORDER BY
 
