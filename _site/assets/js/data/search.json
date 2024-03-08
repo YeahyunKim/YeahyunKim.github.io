@@ -1,8 +1,8 @@
 [
   
   {
-    "title": "mySQL 문법 (3) - AND, OR, NOT 연산자",
-    "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(3)-AND,-OR,-NOT-%EC%97%B0%EC%82%B0%EC%9E%90/",
+    "title": "mySQL 문법 (4) - 비교연산자 종류",
+    "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(4)-%EB%B9%84%EA%B5%90%EC%97%B0%EC%82%B0%EC%9E%90-%EC%A2%85%EB%A5%98/",
     "categories": "mySQL, Grammar",
     "tags": "mySQL",
     "date": "2024-03-08 00:00:00 +0900",
@@ -13,8 +13,25 @@
 
 
     
-    "snippet": "💡AND, OR, NOT 연산자01. \bAND  The AND operators are used to filter records based on more than one condition:AND 연산자는 두개의 조건이 모두 true 인 경우의 데이터를 필터링 합니다.AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.02. \bOR  The OR...",
-    "content": "💡AND, OR, NOT 연산자01. \bAND  The AND operators are used to filter records based on more than one condition:AND 연산자는 두개의 조건이 모두 true 인 경우의 데이터를 필터링 합니다.AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.02. \bOR  The OR operators are used to filter records based on more than one condition:OR 연산자는 두개중 하나의 조건이 true 인 경우의 데이터를 필터링 합니다.OR 연산자는 WHERE절과 조합하여 사용할 수 있습니다.03. \bNOT  The NOT operator displays a record if the condition(s) is NOT TRUE.NOT 연산자는 조건이 true가 아닌 경우의 데이터를 필터링 합니다.NOT 연산자는 WHERE절과 조합하여 사용할 수 있습니다.💡문법 Syntax01. \bAND 구문SELECT * FROM 테이블WHERE 조건1 AND 조건2 AND 조건3 ...;02. OR 구문SELECT * FROM 테이블WHERE 조건1 OR 조건2 OR 조건3 ...;03. NOT 구문SELECT * FROM 테이블WHERE \bNOT 조건1;💡사용예시01. AND 예시SELECT * FROM food_orders WHERE cuisine_type = 'Korean' AND price &gt; 20000;  조건 1 : cuisin_type = ‘Korean’  조건 2 : price &gt; 20000;두개의 조건을 모두 충족하는 데이터를 불러온다.쿼리 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이상인 한식 데이터를 모두 보여줘02. OR 예시SELECT * FROM food_orders WHERE cuisine_type = 'Korean' OR price &gt; 20000;  조건 1 : cuisin_type = ‘Korean’  조건 2 : price &gt; 20000;두개의 조건중 하나를 충족하는 데이터를 불러온다. 위의 AND 보다 많은 데이터가 조회된 것을 볼 수 있다.쿼리 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이거나, 한식인 데이터를 모두 보여줘03. NOT 예시SELECT * FROM food_orders WHERE NOT cuisine_type = 'Korean'  조건 1 : cuisin_type = ‘Korean’ 이외의음식타입이 ‘Korean’ 이 아닌 모든 데이터를 조회한다쿼리 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 음식타입이 한식이 아닌 모든 데이터를 보여줘"
+    "snippet": "💡비교연산자01. \b비교연산자란 - 공식문서  Comparison operations result in a value of 1 (TRUE), 0 (FALSE), or NULL. These operations work for both numbers and strings. Strings are automatically converted to numbers...",
+    "content": "💡비교연산자01. \b비교연산자란 - 공식문서  Comparison operations result in a value of 1 (TRUE), 0 (FALSE), or NULL. These operations work for both numbers and strings. Strings are automatically converted to numbers and numbers to strings as necessary.비교 연산의 결과는 1 (TRUE), 0 (FALSE) 혹은 NULL 이고, 숫자와 문자열 모두에 적용할 수 있습니다. 상황에 따라 문자열은 자동으로 숫자로 변환되고, 숫자는 문자열로 변환됩니다.02. \b비교연산자 종류            이름      설명                  &gt;      연산자보다 큼              &gt;=      크거나 같음 연산자              &lt;      미만 연산자              &lt;&gt;,!=      같지 않음 연산자              &lt;=      작거나 같음 연산자              &lt;=&gt;      NULL 안전 연산자와 같음              =      같음 연산자              BETWEEN ... AND ...      값이 값 범위 내에 있는지 여부              COALESCE()      NULL이 아닌 첫 번째 인수를 반환합니다.              GREATEST()      가장 큰 인수를 반환합니다.              IN()      값이 값 집합 내에 있는지 여부              INTERVAL()      첫 번째 인수보다 작은 인수의 인덱스를 반환합니다.              IS      부울에 대해 값 테스트              IS NOT      부울에 대해 값 테스트              IS NOT NULL      NOT NULL 값 테스트              IS NULL      NULL 값 테스트              ISNULL()      인수가 NULL인지 테스트              LEAST()      가장 작은 인수를 반환합니다.              LIKE      단순 패턴 매칭              NOT BETWEEN ... AND ...      값이 값 범위 내에 있지 않은지 여부              NOT IN()      값이 값 집합 내에 있지 않은지 여부              NOT LIKE      단순 패턴 매칭의 부정              STRCMP()      두 문자열 비교      &lt;=&gt; 는 처음알아서 조금 알아본 결과..  SQL에서 NULL과의 모든 연산은 NULL을 반환하는데, 이를 피하기 위해 mySQL은 &lt;=&gt; 라는 연산자를 제공합니다."
+  },
+  
+  {
+    "title": "mySQL 문법 (3) - AND, OR, NOT 연산자",
+    "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(3)-AND,-OR,-NOT-%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90/",
+    "categories": "mySQL, Grammar",
+    "tags": "mySQL",
+    "date": "2024-03-08 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "💡AND, OR, NOT 논리연산자01. \bAND  The AND operators are used to filter records based on more than one condition:AND 연산자는 두개의 조건이 모두 true 인 경우의 데이터를 필터링 합니다.AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.02. \bOR  The ...",
+    "content": "💡AND, OR, NOT 논리연산자01. \bAND  The AND operators are used to filter records based on more than one condition:AND 연산자는 두개의 조건이 모두 true 인 경우의 데이터를 필터링 합니다.AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.02. \bOR  The OR operators are used to filter records based on more than one condition:OR 연산자는 두개중 하나의 조건이 true 인 경우의 데이터를 필터링 합니다.OR 연산자는 WHERE절과 조합하여 사용할 수 있습니다.03. \bNOT  The NOT operator displays a record if the condition(s) is NOT TRUE.NOT 연산자는 조건이 true가 아닌 경우의 데이터를 필터링 합니다.NOT 연산자는 WHERE절과 조합하여 사용할 수 있습니다.💡문법 Syntax01. \bAND 구문SELECT * FROM 테이블WHERE 조건1 AND 조건2 AND 조건3 ...;02. OR 구문SELECT * FROM 테이블WHERE 조건1 OR 조건2 OR 조건3 ...;03. NOT 구문SELECT * FROM 테이블WHERE \bNOT 조건1;💡사용예시01. AND 예시SELECT * FROM food_orders WHERE cuisine_type = 'Korean' AND price &gt; 20000;  조건 1 : cuisin_type = ‘Korean’  조건 2 : price &gt; 20000;두개의 조건을 모두 충족하는 데이터를 불러온다.쿼리 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이상인 한식 데이터를 모두 보여줘02. OR 예시SELECT * FROM food_orders WHERE cuisine_type = 'Korean' OR price &gt; 20000;  조건 1 : cuisin_type = ‘Korean’  조건 2 : price &gt; 20000;두개의 조건중 하나를 충족하는 데이터를 불러온다. 위의 AND 보다 많은 데이터가 조회된 것을 볼 수 있다.쿼리 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이거나, 한식인 데이터를 모두 보여줘03. NOT 예시SELECT * FROM food_orders WHERE NOT cuisine_type = 'Korean'  조건 1 : cuisin_type = ‘Korean’ 이외의음식타입이 ‘Korean’ 이 아닌 모든 데이터를 조회한다쿼리 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 음식타입이 한식이 아닌 모든 데이터를 보여줘"
   },
   
   {

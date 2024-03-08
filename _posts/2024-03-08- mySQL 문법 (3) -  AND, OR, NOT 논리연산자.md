@@ -9,7 +9,7 @@ tags:
   - mySQL
 image: https://ifh.cc/g/DMV0va.png
 ---
-## 💡AND, OR, NOT 연산자
+## 💡AND, OR, NOT 논리연산자
 ---
 #### 01. AND
 
