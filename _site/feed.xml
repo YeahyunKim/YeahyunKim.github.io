@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-08T12:01:36+09:00</updated>
+  <updated>2024-03-08T15:52:15+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,58 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>mySQL 문법 (5) - BETWEEN, IN, LIKE</title>
+    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/" rel="alternate" type="text/html" title="mySQL 문법 (5) - BETWEEN, IN, LIKE" />
+    <published>2024-03-08T00:00:00+09:00</published>
+  
+    <updated>2024-03-08T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/</id>
+    <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="mySQL" />
+    
+    <category term="Grammar" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      💡BETWEEN, IN, LIKE
+
+01. BETWEEN
+
+
+  The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.
+The BETWEEN operator is inclusive: begin and end values are included.
+
+
+BETWEEN 연산자는 주어진 범위 내의 값을 선택하고, 값은 숫자, 문자열 혹은 날짜일 수 있습니다.
+BETWEEN 연산자는 시작 및 끝 값이 포함되어있어, 조건의 값을 포괄합니다.
+
+
+02. IN
+
+
+  The IN operator allows you to specify multiple values in a WHERE clause...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -267,51 +319,6 @@ select order_id, restaurant_name from food_orders
 
 
 위의 쿼리를 해석하면, food_orders 라는...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>플러그인 - Spring Boot Devtools</title>
-    <link href="http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-thymeleaf/" rel="alternate" type="text/html" title="플러그인 - Spring Boot Devtools" />
-    <published>2024-02-27T00:00:00+09:00</published>
-  
-    <updated>2024-02-27T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-thymeleaf/</id>
-    <content src="http://localhost:4000/posts/%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-thymeleaf/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Java" />
-    
-    <category term="Plugin" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      thymeleaf - HTML 동적 렌더링
-
-thymeleaf(타임리프)
-
-타임리프는 백엔드 서버에서 Html을 동적으로 렌더링  Java Template Engine 이다.
-해당 플러그인의 주요 목적은 유지 관리가 수월한 템플릿을 작성하도록 지원해주고, 타임리프의 핵심 기능인 Natural Template 을 통해 제공해주는데, 서버 사이드 렌더링을 하는데 필요한 데이터 값이 없더라도, 프로토 타입으로서의 역할을 해줄 수 있는 걸 말한다.
-
-이 특징이 기존 Java Template Engine 중의 하나인 Jsp 와 가장 다른 점인데 Jsp 는 화면을 보기 위해선 서버의 도움이 필요하다. 그치만 Thymeleaf 는 서버의 도움없이 프로토 타입 형태로도 뷰를 볼 수 있다.
-
-그렇기 때문에 Thymel...
     </summary>
   
 
