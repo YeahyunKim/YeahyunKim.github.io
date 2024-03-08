@@ -1,5 +1,5 @@
 ---
-title: mySQL 문법 (1) - 데이터 조회하기 SELECT, FROM
+title: mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기
 author: yeahyun
 date: 2024-03-06
 categories:
@@ -7,7 +7,7 @@ categories:
   - Grammar
 tags:
   - mySQL
-image: https://ifh.cc/g/wvbwro.png
+image: https://ifh.cc/g/DMV0va.png
 ---
 SELECT, FROM
 ---

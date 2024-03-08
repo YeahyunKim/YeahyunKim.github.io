@@ -37,14 +37,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-06- mySQL 문법 (1) - 데이터 조회하기 SELECT, FROM.md",
+                "file": "_posts/2024-03-06- mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9ae7af00f328df42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-03-08- mySQL 문법 (3) -  AND, OR, NOT 연산자.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "de178bb3c18b29e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-06- mySQL 문법 (1) - 데이터 조회하기 SELECT, FROM.md",
+                "file": "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-06- mySQL 문법 (1) - 데이터 조회하기 SELECT, FROM.md",
+                "file": "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-06- mySQL 문법 (1) - 데이터 조회하기 SELECT, FROM.md"
+                "file": "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md"
               }
             }
           }
@@ -171,30 +195,31 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "6b8bcc6d09055f4c",
+  "active": "de178bb3c18b29e2",
   "lastOpenFiles": [
-    "_site/posts/mySQL-문법-(1)-데이터-조회하기-SELECT,-FROM/index.html",
-    "_site/posts/mySQL-문법-(1)-데이터-조회하기-SELECT,-FROM",
-    "_site/categories/grammar/index.html",
-    "_site/categories/grammar",
-    "_site/categories/mysql/index.html",
-    "_site/categories/mysql",
-    "_site/categories/javaspring/index.html",
-    "_site/categories/javaspring",
-    "_site/tags/mysql/index.html",
-    "_site/tags/mysql",
+    "_posts/2024-03-08- mySQL 문법 (3) -  AND, OR, NOT 연산자.md",
+    "_posts/2024-03-06- mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기.md",
+    "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md",
+    "_site/posts/mySQL-문법-(3)-AND,-OR,-NOT-연산자/index.html",
+    "_site/posts/mySQL-문법-(3)-AND,-OR,-NOT-연산자",
+    "_site/page9/index.html",
+    "_site/page9",
+    "_site/posts/mySQL-문법-(2)-조건에-맞는-데이터만-가져오기-WHERE-1/index.html",
+    "_site/posts/mySQL-문법-(2)-조건에-맞는-데이터만-가져오기-WHERE-1",
+    "_site/posts/mySQL-문법-(2)-조건에-맞는-데이터만-가져오기-WHERE/index.html",
+    "_site/posts/mySQL-문법-(2)-조건에-맞는-데이터만-가져오기-WHERE",
+    "_site/posts/mySQL-문법-(1)-데이터-조회하기-SELECT,-FROM-1/index.html",
+    "_site/posts/mySQL-문법-(1)-데이터-조회하기-SELECT,-FROM-1",
+    "Pasted image 20240227124417.png",
+    "스크린샷 2024-02-27 오전 11.50.41.png",
     "_posts/2024-02-26-Static Content - 정적 컨텐츠.md",
-    "_posts/2024-03-06- mySQL 문법 (1) - 데이터 조회하기 SELECT, FROM.md",
     "_posts/2024-02-26- 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
     "_posts/2024-02-26- 자바 빌드 도구 종류 Maven, Gradle 차이점.md",
     "_posts/2024-02-26-플러그인 - Spring Boot Devtools.md",
     "_posts/2024-02-26-플러그인 - thymeleaf.md",
-    "_site/posts/Static-Content-정적-컨텐츠/index.html",
     "_site/Pasted image 20240227124417.png",
-    "Pasted image 20240227124417.png",
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (70) - 수열과 구간 쿼리 1.md",
     "_site/스크린샷 2024-02-27 오전 11.50.41.png",
-    "스크린샷 2024-02-27 오전 11.50.41.png",
     "_posts/2024-02-19- MacOS 에 JAVA 11설치하기.md",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽.md",
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md",
@@ -210,8 +235,6 @@
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (60) - 배열 조각하기.md",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (59) - 2의 영역.md",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (57) - 첫 번째로 나오는 음수.md",
-    "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (56) - 리스트 자르기.md",
-    "_posts/2024-02-16- swift 메서드 replacingOccurances() - 문자열 치환.md",
-    "_posts/2024-02-16- 프로그래머스 Swift 코테준비 (55) - 가까운 1 찾기.md"
+    "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (56) - 리스트 자르기.md"
   ]
 }

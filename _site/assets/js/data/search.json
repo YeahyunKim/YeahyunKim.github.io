@@ -1,6 +1,40 @@
 [
   
   {
+    "title": "2024-03-08- mySQL 문법 (3) - AND, OR, NOT 연산자",
+    "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(3)-AND,-OR,-NOT-%EC%97%B0%EC%82%B0%EC%9E%90/",
+    "categories": "mySQL, Grammar",
+    "tags": "mySQL",
+    "date": "2024-03-08 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "💡WHERE01. WHERE 절이란  The WHERE clause is used to filter records.It is used to extract only those records that fulfill a specified condition.WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다.여기서, 데이터 조...",
+    "content": "💡WHERE01. WHERE 절이란  The WHERE clause is used to filter records.It is used to extract only those records that fulfill a specified condition.WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다.여기서, 데이터 조회 뿐만 아닌, UPDATE, DELETE 등 에서도 사용이 가능하다.💡문법 Syntax01. 한개의 데이터 필터링하기SELECT * FROM 테이블WHERE 조건 = \"값\"02. 한개 이상의 데이터 필터링하기SELECT * FROM 테이블WHERE 조건 = 값 and 조건 = 값💡사용예시01. 특정 데이터만 필터링 하기SELECT * FROM food_orders WHERE cuisine_type = 'Korean';food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 \b한식을 판매하는 모든 데이터를 모여줘02. 한개 이상의 데이터 필터링 하기SELECT * FROM food_orders WHERE cuisine_type = 'Korean' and price &gt; 20000;WHERE 절에 한개 이상의 데이터를 필터링 하고 싶으면, and 를 사용하면 된다.위의 쿼리를 해석하면, food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이상인 한식 데이터를 모두 보여줘"
+  },
+  
+  {
+    "title": "mySQL 문법 (2) - 조건에 맞는 데이터만 가져오기 WHERE",
+    "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-WHERE/",
+    "categories": "mySQL, Grammar",
+    "tags": "mySQL",
+    "date": "2024-03-08 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "💡WHERE01. WHERE 절이란  The WHERE clause is used to filter records.It is used to extract only those records that fulfill a specified condition.WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다.여기서, 데이터 조...",
+    "content": "💡WHERE01. WHERE 절이란  The WHERE clause is used to filter records.It is used to extract only those records that fulfill a specified condition.WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다.여기서, 데이터 조회 뿐만 아닌, UPDATE, DELETE 등 에서도 사용이 가능하다.💡문법 Syntax01. 한개의 데이터 필터링하기SELECT * FROM 테이블WHERE 조건 = \"값\"02. 한개 이상의 데이터 필터링하기SELECT * FROM 테이블WHERE 조건 = 값 and 조건 = 값💡사용예시01. 특정 데이터만 필터링 하기SELECT * FROM food_orders WHERE cuisine_type = 'Korean';food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 \b한식을 판매하는 모든 데이터를 모여줘02. 한개 이상의 데이터 필터링 하기SELECT * FROM food_orders WHERE cuisine_type = 'Korean' and price &gt; 20000;WHERE 절에 한개 이상의 데이터를 필터링 하고 싶으면, and 를 사용하면 된다.위의 쿼리를 해석하면, food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이상인 한식 데이터를 모두 보여줘"
+  },
+  
+  {
     "title": "mySQL 문법 (1) - 데이터 조회하기 SELECT, FROM",
     "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0-SELECT,-FROM/",
     "categories": "mySQL, Grammar",
