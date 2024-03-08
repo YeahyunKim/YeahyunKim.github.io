@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md",
+                "file": "_posts/2024-03-08- mySQL 문법 (3) -  AND, OR, NOT 연산자.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md",
+                "file": "_posts/2024-03-08- mySQL 문법 (3) -  AND, OR, NOT 연산자.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md",
+                "file": "_posts/2024-03-08- mySQL 문법 (3) -  AND, OR, NOT 연산자.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md"
+                "file": "_posts/2024-03-08- mySQL 문법 (3) -  AND, OR, NOT 연산자.md"
               }
             }
           }
@@ -197,19 +197,19 @@
   },
   "active": "de178bb3c18b29e2",
   "lastOpenFiles": [
+    "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md",
+    "_site/posts/mySQL-문법-(2)-WHERE-조건에-맞는-데이터만-가져오기/index.html",
+    "_site/posts/mySQL-문법-(2)-WHERE-조건에-맞는-데이터만-가져오기",
+    "_site/posts/mySQL-문법-(1)-SELECT,-FROM-데이터-조회하기/index.html",
+    "_site/posts/mySQL-문법-(1)-SELECT,-FROM-데이터-조회하기",
     "_posts/2024-03-08- mySQL 문법 (3) -  AND, OR, NOT 연산자.md",
     "_posts/2024-03-06- mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기.md",
-    "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md",
     "_site/posts/mySQL-문법-(3)-AND,-OR,-NOT-연산자/index.html",
     "_site/posts/mySQL-문법-(3)-AND,-OR,-NOT-연산자",
     "_site/page9/index.html",
     "_site/page9",
     "_site/posts/mySQL-문법-(2)-조건에-맞는-데이터만-가져오기-WHERE-1/index.html",
     "_site/posts/mySQL-문법-(2)-조건에-맞는-데이터만-가져오기-WHERE-1",
-    "_site/posts/mySQL-문법-(2)-조건에-맞는-데이터만-가져오기-WHERE/index.html",
-    "_site/posts/mySQL-문법-(2)-조건에-맞는-데이터만-가져오기-WHERE",
-    "_site/posts/mySQL-문법-(1)-데이터-조회하기-SELECT,-FROM-1/index.html",
-    "_site/posts/mySQL-문법-(1)-데이터-조회하기-SELECT,-FROM-1",
     "Pasted image 20240227124417.png",
     "스크린샷 2024-02-27 오전 11.50.41.png",
     "_posts/2024-02-26-Static Content - 정적 컨텐츠.md",

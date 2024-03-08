@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-08T11:05:24+09:00</updated>
+  <updated>2024-03-08T11:38:31+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -20,8 +20,8 @@
 
   
   <entry>
-    <title>2024-03-08- mySQL 문법 (3) - AND, OR, NOT 연산자</title>
-    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(3)-AND,-OR,-NOT-%EC%97%B0%EC%82%B0%EC%9E%90/" rel="alternate" type="text/html" title="2024-03-08- mySQL 문법 (3) - AND, OR, NOT 연산자" />
+    <title>mySQL 문법 (3) - AND, OR, NOT 연산자</title>
+    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(3)-AND,-OR,-NOT-%EC%97%B0%EC%82%B0%EC%9E%90/" rel="alternate" type="text/html" title="mySQL 문법 (3) - AND, OR, NOT 연산자" />
     <published>2024-03-08T00:00:00+09:00</published>
   
     <updated>2024-03-08T00:00:00+09:00</updated>
@@ -48,42 +48,32 @@
 
 
 
-      💡WHERE
+      💡AND, OR, NOT 연산자
 
-01. WHERE 절이란
-
-
-  The WHERE clause is used to filter records.
-It is used to extract only those records that fulfill a specified condition.
+01. AND
 
 
-WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다.
-여기서, 데이터 조회 뿐만 아닌, UPDATE, DELETE 등 에서도 사용이 가능하다.
+  The AND operators are used to filter records based on more than one condition:
 
 
+AND 연산자는 두개의 조건이 모두 true 인 경우의 데이터를 필터링 합니다.
+AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
 
 
-💡문법 Syntax
-
-01. 한개의 데이터 필터링하기
-
-SELECT * FROM 테이블
-WHERE 조건 = "값"
+02. OR
 
 
-
-02. 한개 이상의 데이터 필터링하기
-
-SELECT * FROM 테이블
-WHERE 조건 = 값 and 조건 = 값
+  The OR operators are used to filter records based on more than one condition:
 
 
+OR 연산자는 두개중 하나의 조건이 true 인 경우의 데이터를 필터링 합니다.
+OR 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
 
 
+03. NOT
 
-💡사용예시
 
-01....
+  The NOT operator d...
     </summary>
   
 
@@ -91,14 +81,14 @@ WHERE 조건 = 값 and 조건 = 값
 
   
   <entry>
-    <title>mySQL 문법 (2) - 조건에 맞는 데이터만 가져오기 WHERE</title>
-    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-WHERE/" rel="alternate" type="text/html" title="mySQL 문법 (2) - 조건에 맞는 데이터만 가져오기 WHERE" />
+    <title>mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기</title>
+    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-WHERE-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/" rel="alternate" type="text/html" title="mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기" />
     <published>2024-03-08T00:00:00+09:00</published>
   
     <updated>2024-03-08T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-WHERE/</id>
-    <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-WHERE/" />
+    <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-WHERE-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-WHERE-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/" />
     <author>
       <name>yeahyun</name>
     </author>
@@ -162,14 +152,14 @@ WHERE 조건 = 값 and 조건 = 값
 
   
   <entry>
-    <title>mySQL 문법 (1) - 데이터 조회하기 SELECT, FROM</title>
-    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0-SELECT,-FROM/" rel="alternate" type="text/html" title="mySQL 문법 (1) - 데이터 조회하기 SELECT, FROM" />
+    <title>mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기</title>
+    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-SELECT,-FROM-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기" />
     <published>2024-03-06T00:00:00+09:00</published>
   
     <updated>2024-03-06T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0-SELECT,-FROM/</id>
-    <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0-SELECT,-FROM/" />
+    <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-SELECT,-FROM-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-SELECT,-FROM-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/" />
     <author>
       <name>yeahyun</name>
     </author>

@@ -1,7 +1,7 @@
 [
   
   {
-    "title": "2024-03-08- mySQL 문법 (3) - AND, OR, NOT 연산자",
+    "title": "mySQL 문법 (3) - AND, OR, NOT 연산자",
     "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(3)-AND,-OR,-NOT-%EC%97%B0%EC%82%B0%EC%9E%90/",
     "categories": "mySQL, Grammar",
     "tags": "mySQL",
@@ -13,13 +13,13 @@
 
 
     
-    "snippet": "💡WHERE01. WHERE 절이란  The WHERE clause is used to filter records.It is used to extract only those records that fulfill a specified condition.WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다.여기서, 데이터 조...",
-    "content": "💡WHERE01. WHERE 절이란  The WHERE clause is used to filter records.It is used to extract only those records that fulfill a specified condition.WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다.여기서, 데이터 조회 뿐만 아닌, UPDATE, DELETE 등 에서도 사용이 가능하다.💡문법 Syntax01. 한개의 데이터 필터링하기SELECT * FROM 테이블WHERE 조건 = \"값\"02. 한개 이상의 데이터 필터링하기SELECT * FROM 테이블WHERE 조건 = 값 and 조건 = 값💡사용예시01. 특정 데이터만 필터링 하기SELECT * FROM food_orders WHERE cuisine_type = 'Korean';food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 \b한식을 판매하는 모든 데이터를 모여줘02. 한개 이상의 데이터 필터링 하기SELECT * FROM food_orders WHERE cuisine_type = 'Korean' and price &gt; 20000;WHERE 절에 한개 이상의 데이터를 필터링 하고 싶으면, and 를 사용하면 된다.위의 쿼리를 해석하면, food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이상인 한식 데이터를 모두 보여줘"
+    "snippet": "💡AND, OR, NOT 연산자01. \bAND  The AND operators are used to filter records based on more than one condition:AND 연산자는 두개의 조건이 모두 true 인 경우의 데이터를 필터링 합니다.AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.02. \bOR  The OR...",
+    "content": "💡AND, OR, NOT 연산자01. \bAND  The AND operators are used to filter records based on more than one condition:AND 연산자는 두개의 조건이 모두 true 인 경우의 데이터를 필터링 합니다.AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.02. \bOR  The OR operators are used to filter records based on more than one condition:OR 연산자는 두개중 하나의 조건이 true 인 경우의 데이터를 필터링 합니다.OR 연산자는 WHERE절과 조합하여 사용할 수 있습니다.03. \bNOT  The NOT operator displays a record if the condition(s) is NOT TRUE.NOT 연산자는 조건이 true가 아닌 경우의 데이터를 필터링 합니다.NOT 연산자는 WHERE절과 조합하여 사용할 수 있습니다.💡문법 Syntax01. \bAND 구문SELECT * FROM 테이블WHERE 조건1 AND 조건2 AND 조건3 ...;02. OR 구문SELECT * FROM 테이블WHERE 조건1 OR 조건2 OR 조건3 ...;03. NOT 구문SELECT * FROM 테이블WHERE \bNOT 조건1;💡사용예시01. AND 예시SELECT * FROM food_orders WHERE cuisine_type = 'Korean' AND price &gt; 20000;  조건 1 : cuisin_type = ‘Korean’  조건 2 : price &gt; 20000;두개의 조건을 모두 충족하는 데이터를 불러온다.쿼리 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이상인 한식 데이터를 모두 보여줘02. OR 예시SELECT * FROM food_orders WHERE cuisine_type = 'Korean' OR price &gt; 20000;  조건 1 : cuisin_type = ‘Korean’  조건 2 : price &gt; 20000;두개의 조건중 하나를 충족하는 데이터를 불러온다. 위의 AND 보다 많은 데이터가 조회된 것을 볼 수 있다.쿼리 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이거나, 한식인 데이터를 모두 보여줘03. NOT 예시SELECT * FROM food_orders WHERE NOT cuisine_type = 'Korean'  조건 1 : cuisin_type = ‘Korean’ 이외의음식타입이 ‘Korean’ 이 아닌 모든 데이터를 조회한다쿼리 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 음식타입이 한식이 아닌 모든 데이터를 보여줘"
   },
   
   {
-    "title": "mySQL 문법 (2) - 조건에 맞는 데이터만 가져오기 WHERE",
-    "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0-WHERE/",
+    "title": "mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기",
+    "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-WHERE-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/",
     "categories": "mySQL, Grammar",
     "tags": "mySQL",
     "date": "2024-03-08 00:00:00 +0900",
@@ -35,8 +35,8 @@
   },
   
   {
-    "title": "mySQL 문법 (1) - 데이터 조회하기 SELECT, FROM",
-    "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0-SELECT,-FROM/",
+    "title": "mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기",
+    "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-SELECT,-FROM-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/",
     "categories": "mySQL, Grammar",
     "tags": "mySQL",
     "date": "2024-03-06 00:00:00 +0900",
