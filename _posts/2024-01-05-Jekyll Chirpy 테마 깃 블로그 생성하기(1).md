@@ -2,12 +2,8 @@
 title: 깃 블로그 생성하기 (1)
 author: cotes
 date: 2024-01-05
-categories:
-  - Github blog
-  - Tutorial
-tags:
-  - github
-  - github_blog
+categories: []
+tags: 
 pin: true
 math: true
 mermaid: true

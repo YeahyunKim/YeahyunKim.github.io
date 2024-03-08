@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md",
+                "file": "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md",
+                "file": "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md",
+                "file": "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md"
+                "file": "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md"
               }
             }
           }
@@ -197,12 +197,12 @@
   },
   "active": "de178bb3c18b29e2",
   "lastOpenFiles": [
+    "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md",
+    "_posts/2024-03-08- mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기.md",
     "_site/posts/mySQL-문법-(8)-Aliases(AS)-컬럼,-테이블명-별칭주기/index.html",
     "_site/posts/mySQL-문법-(8)-Aliases(AS)-컬럼,-테이블명-별칭주기",
     "_site/posts/mySQL-문법-(8)-Aliases-컬럼명-변경하기/index.html",
     "_site/posts/mySQL-문법-(8)-Aliases-컬럼명-변경하기",
-    "_posts/2024-03-08- mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기.md",
-    "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md",
     "_posts/2024-03-08- mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기.md",
     "_posts/2024-03-08- mySQL 문법 (5) - BETWEEN, IN, LIKE.md",
     "_site/posts/mySQL-문법-(7)-LIMIT-원하는-데이터-수만큼-조회하기/index.html",
@@ -216,7 +216,6 @@
     "_posts/2024-03-08- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md",
     "_posts/2024-01-07- 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기.md",
     "_posts/2024-03-08- mySQL 문법 (3) -  AND, OR, NOT 논리연산자.md",
-    "_site/posts/mySQL-문법-(5)-BETWEEN,-IN,-LIKE/index.html",
     "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (61) -  n 번째 원소부터.md",
     "Pasted image 20240227124417.png",
