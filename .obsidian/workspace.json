@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기.md",
+                "file": "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기.md",
+                "file": "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기.md",
+                "file": "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-08- mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기.md"
+                "file": "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md"
               }
             }
           }
@@ -197,9 +197,14 @@
   },
   "active": "de178bb3c18b29e2",
   "lastOpenFiles": [
+    "_site/posts/mySQL-문법-(8)-Aliases(AS)-컬럼,-테이블명-별칭주기/index.html",
+    "_site/posts/mySQL-문법-(8)-Aliases(AS)-컬럼,-테이블명-별칭주기",
+    "_site/posts/mySQL-문법-(8)-Aliases-컬럼명-변경하기/index.html",
+    "_site/posts/mySQL-문법-(8)-Aliases-컬럼명-변경하기",
+    "_posts/2024-03-08- mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기.md",
+    "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md",
     "_posts/2024-03-08- mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기.md",
     "_posts/2024-03-08- mySQL 문법 (5) - BETWEEN, IN, LIKE.md",
-    "_posts/2024-03-08- mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기.md",
     "_site/posts/mySQL-문법-(7)-LIMIT-원하는-데이터-수만큼-조회하기/index.html",
     "_site/posts/mySQL-문법-(7)-LIMIT-원하는-데이터-수만큼-조회하기",
     "_posts/2024-03-08- mySQL 문법 (4) - 비교연산자 종류.md",
@@ -212,9 +217,6 @@
     "_posts/2024-01-07- 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기.md",
     "_posts/2024-03-08- mySQL 문법 (3) -  AND, OR, NOT 논리연산자.md",
     "_site/posts/mySQL-문법-(5)-BETWEEN,-IN,-LIKE/index.html",
-    "_site/posts/mySQL-문법-(5)-BETWEEN,-IN,-LIKE",
-    "_site/posts/mySQL-문법-(4)-비교연산자-종류-1/index.html",
-    "_site/posts/mySQL-문법-(4)-비교연산자-종류-1",
     "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (61) -  n 번째 원소부터.md",
     "Pasted image 20240227124417.png",
@@ -234,7 +236,6 @@
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (67) - 5명씩.md",
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (66) - 홀수 vs 짝수.md",
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (65) - n개 간격의 원소들.md",
-    "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (64) - n 번째 원소까지.md",
-    "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (62) - 순서 바꾸기.md"
+    "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (64) - n 번째 원소까지.md"
   ]
 }

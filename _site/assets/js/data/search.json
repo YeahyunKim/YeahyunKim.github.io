@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "mySQL 문법 (8) - Aliases 컬럼명 변경하기",
+    "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(8)-Aliases(AS)-%EC%BB%AC%EB%9F%BC,-%ED%85%8C%EC%9D%B4%EB%B8%94%EB%AA%85-%EB%B3%84%EC%B9%AD%EC%A3%BC%EA%B8%B0/",
+    "categories": "mySQL, Grammar",
+    "tags": "mySQL",
+    "date": "2024-03-08 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "💡Aliases01. Aliases(AS)  Aliases are used to give a table, or a column in a table, a temporary name.Aliases are often used to make column names more readable.An alias only exists for the duration o...",
+    "content": "💡Aliases01. Aliases(AS)  Aliases are used to give a table, or a column in a table, a temporary name.Aliases are often used to make column names more readable.An alias only exists for the duration of that query.An alias is created with the AS keyword.AS 는 컬럼명, 테이블명에 별칭을 주어, 데이터 조회 후 가독성이 좋아보이게 만드는데 굉장히 효과적이다. AS는 해당 쿼리가 실행되었을 동안만 존재하고, 직접적으로 테이블에 영향을 주지 않는다.테이블에 별칭을 주었으면, 해당 별칭으로 컬럼들을 조회할 수 있다.💡문법 Syntax01. \b테이블에 별칭주기SELECT * FROM 테이블 AS 별칭02. \b컬럼에 별칭주기SELECT 컬럼 AS 별칭 FROM 테이블💡사용예시01. 컬럼에 별칭주기1) 하나의 컬럼 별칭주기SELECT name AS '이름' FROM customers  • 조건 1 : name 컬럼명에 ‘이름’이란 별칭주기• 해석 : \bcustomers 테이블에서 name 컬럼만 가져와주는데, 컬럼명을 ‘이름’으로 바꿔줘.2) 여러개의 컬럼에 별칭주기SELECT name AS '이름', email AS '이메일' FROM customers  • 조건 1 : name 컬럼명에 ‘이름’, email 컬럼명에 ‘이메일’ 이란 별칭주기• 해석 : \bcustomers 테이블에서 name 과 email 컬럼만 가져와주는데, 컬럼명 각각 ‘이름’, ‘이메일’ 로 바꿔줘.02. 테이블에 별칭주기1) 테이블에 별칭주기SELECT * FROM customer AS c  • 조건 1 : name 컬럼명에 ‘이름’이란 별칭주기• 해석 : \bcustomers 테이블에서 name 컬럼만 가져와주는데, 컬럼명을 ‘이름’으로 바꿔줘."
+  },
+  
+  {
     "title": "mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기",
     "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(7)-LIMIT-%EC%9B%90%ED%95%98%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EB%A7%8C%ED%81%BC-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/",
     "categories": "mySQL, Grammar",
