@@ -9,7 +9,7 @@ tags:
   - mySQL
 image: https://ifh.cc/g/DMV0va.png
 ---
-SELECT, FROM
+## SELECT, FROM
 ---
 #### 01. SELECT
 
