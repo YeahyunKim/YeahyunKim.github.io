@@ -75,8 +75,10 @@ WHERE NOT 조건1;
 SELECT * FROM food_orders WHERE cuisine_type = 'Korean' AND price > 20000;
 ```
 
-- 조건 1 : cuisin_type = 'Korean'
-- 조건 2 : price > 20000;
+>• 조건 1 : cuisin_type = 'Korean'
+>• 조건 2 : price > 20000
+>• 해석 : 나이를 오름차순으로 정렬한 고객 정보 테이블을 가져와줘
+{: .command-text}
 
 **두개의 조건을 모두 충족하는 데이터를 불러온다.**   
 
