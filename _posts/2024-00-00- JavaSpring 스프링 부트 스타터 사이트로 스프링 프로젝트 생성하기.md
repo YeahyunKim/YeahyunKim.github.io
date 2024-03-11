@@ -4,7 +4,7 @@ author: yeahyun
 date: 2024-02-26
 categories:
   - JavaSpring
-  - Installㅤㅤ
+  - Install　
 tags:
   - Java
   - JavaSpring
