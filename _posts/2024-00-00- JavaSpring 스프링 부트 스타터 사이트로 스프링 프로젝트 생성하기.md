@@ -1,10 +1,10 @@
 ---
-title: "[Java] 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기"
+title: JavaSpring - 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기
 author: yeahyun
 date: 2024-02-26
 categories:
   - JavaSpring
-  - Install
+  - Install  
 tags:
   - Java
   - JavaSpring

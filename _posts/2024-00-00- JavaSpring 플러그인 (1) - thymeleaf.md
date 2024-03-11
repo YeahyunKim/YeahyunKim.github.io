@@ -1,12 +1,12 @@
 ---
-title: 플러그인 - Spring Boot Devtools
+title: JavaSpring 플러그인 (1) - thymeleaf
 author: yeahyun
 date: 2024-02-27
 categories:
-  - Java
-  - Plugin
+  - JavaSpring
+  - Plugin  
 tags:
-  - Java
+  - JavaSpring
   - Plugin
 image: https://ifh.cc/g/wvbwro.png
 ---
