@@ -4,7 +4,7 @@ author: yeahyun
 date: 2024-03-08
 categories:
   - mySQL
-  - Grammar   
+  - Grammarㅤ
 tags:
   - mySQL
 image: https://ifh.cc/g/DMV0va.png

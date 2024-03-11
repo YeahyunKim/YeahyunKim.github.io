@@ -4,10 +4,10 @@ author: yeahyun
 date: 2024-02-27
 categories:
   - JavaSpring
-  - Plugin  
+  - Pluginㅤ
 tags:
   - JavaSpring
-  - Plugin
+  - Plugin_
 image: https://ifh.cc/g/wvbwro.png
 ---
 ## thymeleaf - HTML 동적 렌더링

@@ -4,7 +4,7 @@ author: yeahyun
 date: 2024-02-27
 categories:
   - JavaSpring
-  - Plugin  
+  - Pluginㅤ
 tags:
   - Java
   - JavaSpring

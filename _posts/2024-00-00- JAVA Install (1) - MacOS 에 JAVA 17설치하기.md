@@ -1,10 +1,10 @@
 ---
-title: JAVA Install - MacOS 에 JAVA 11설치하기
+title: JAVA Install (1) - MacOS 에 JAVA 17설치하기
 author: yeahyun
 date: 2024-02-25
 categories:
   - Java
-  - Install 
+  - Installㅤ
 tags:
   - Java
 image: https://ifh.cc/g/wvbwro.png

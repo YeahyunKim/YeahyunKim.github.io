@@ -1,10 +1,10 @@
 ---
-title: "[Java] 자바 빌드 도구 종류 Maven, Gradle 차이점"
+title: JAVA study (4) - Maven, Gradle 차이점
 author: yeahyun
-date: 2024-02-26
+date: 2024-02-29
 categories:
   - Java
-  - Study 
+  - Study
 tags:
   - Java
   - JavaSpring
