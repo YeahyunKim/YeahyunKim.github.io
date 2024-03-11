@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-11T14:29:40+09:00</updated>
+  <updated>2024-03-11T15:35:21+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -73,6 +73,58 @@ public class Var1 {
 
 
 위의 코...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>JAVA 문법 (1) - 변수 Variable</title>
+    <link href="http://localhost:4000/posts/JAVA-study-(2)-%EB%B3%80%EC%88%98-%ED%83%80%EC%9E%85/" rel="alternate" type="text/html" title="JAVA 문법 (1) - 변수 Variable" />
+    <published>2024-03-11T00:00:00+09:00</published>
+  
+    <updated>2024-03-11T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/JAVA-study-(2)-%EB%B3%80%EC%88%98-%ED%83%80%EC%9E%85/</id>
+    <content src="http://localhost:4000/posts/JAVA-study-(2)-%EB%B3%80%EC%88%98-%ED%83%80%EC%9E%85/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Study" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      🔎 변수 타입
+
+01. 변수 타입이란?
+
+
+  자바는 정적 타입 언어로, 프로그램이 실행되기 전에 모든 변수의 타입이 결정되어야 한다. 이러한 특성 때문에 변수 타입을 명시적으로 지정하는 것이 필요하다.
+
+
+
+02. 변수 타입을 지정하는 이유
+
+1) 타입 안정성 
+변수 타입을 사전에 지정함으로써, 컴파일러는 타입 체크를 통해 타입 불일치로 인한 오류를 미리 잡아낼 수 있다. 예를 들어, 정수형 변수(int)에 문자열을 할당하려고 시도한다면, 컴파일 단계에서 오류를 발생시켜 프로그래머가 이를 수정할 수 있도록 도와준다. 이는 프로그램의 안정성을 높이는 중요한 요소이다.
+
+2) 메모리 관리 
+JVM(자바 가상 머신)은 해당 변수에 필요한 메모리의 양을 정확히 알 수 있다.
+예를 들어, int 타입은 4바이...
     </summary>
   
 
@@ -228,63 +280,6 @@ LIMIT 절은 대량의 데이터를 조회할때 유용하게 사용할 수 있�
 01. LIMIT 숫자
 
 SELECT * FROM 테...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기</title>
-    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기" />
-    <published>2024-03-08T00:00:00+09:00</published>
-  
-    <updated>2024-03-08T16:43:16+09:00</updated>
-  
-    <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="mySQL" />
-    
-    <category term="Grammar" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      💡ORDER BY
-
-01. ORDER BY
-
-
-  The ORDER BY keyword is used to sort the result-set in ascending or descending order. 
-The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword.
-
-
-ORDER BY 는 결과의 집합을 오름차 / 내림차순으로 정렬하는데 사용된다.
-
-
-
-💡문법 Syntax
-
-01. ORDER BY ASC(오름차순)
-
-SELECT * FROM 테이블 ORDER BY 컬럼1 ASC, 컬럼2 ASC
-
-
-
-02. ORDER BY DE...
     </summary>
   
 

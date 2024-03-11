@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-03-11- JAVA 문법 (1) - 변수 Variable.md",
+                "file": "_posts/2024-03-11- JAVA study (2) - 변수 타입과 메모리 공간.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 548.5
+    "width": 267.5
   },
   "right": {
     "id": "450b3379e299ce3a",
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-03-11- JAVA 문법 (1) - 변수 Variable.md",
+                "file": "_posts/2024-03-11- JAVA study (2) - 변수 타입과 메모리 공간.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-03-11- JAVA 문법 (1) - 변수 Variable.md",
+                "file": "_posts/2024-03-11- JAVA study (2) - 변수 타입과 메모리 공간.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-03-11- JAVA 문법 (1) - 변수 Variable.md"
+                "file": "_posts/2024-03-11- JAVA study (2) - 변수 타입과 메모리 공간.md"
               }
             }
           }
@@ -197,13 +197,18 @@
   },
   "active": "de178bb3c18b29e2",
   "lastOpenFiles": [
+    "_site/posts/JAVA-study-(2)-변수-타입/index.html",
+    "_site/posts/JAVA-study-(2)-변수-타입",
+    "_posts/2024-03-11- JAVA study (1) -  자바란?.md",
+    "_posts/2024-03-11- JAVA study (2) - 변수 타입과 메모리 공간.md",
+    "_posts/2024-03-11- JAVA 문법 (1) - 변수 Variable.md",
+    "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md",
+    "_site/posts/JAVA-문법-(2)-변수-타입/index.html",
+    "_site/posts/JAVA-문법-(2)-변수-타입",
     "_site/posts/JAVA-문법-(1)-변수-Variable/index.html",
     "_site/posts/JAVA-문법-(1)-변수-Variable",
-    "_posts/2024-03-11- JAVA study (1) -  자바란?.md",
-    "_posts/2024-03-11- JAVA 문법 (1) - 변수 Variable.md",
     "_site/무제 파일.md",
     "무제 파일.md",
-    "_posts/2024-03-08- mySQL 문법 (8) -  Aliases(AS) 컬럼, 테이블명 별칭주기.md",
     "_posts/2024-02-19- MacOS 에 JAVA 11설치하기.md",
     "_posts/2024-03-06- mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기.md",
     "_site/posts/JAVA-study-(1)-자바란/index.html",
@@ -217,11 +222,7 @@
     "_posts/2024-02-26-플러그인 - Spring Boot Devtools.md",
     "_posts/2024-01-05-Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
     "_site/posts/mySQL-문법-(8)-Aliases(AS)-컬럼,-테이블명-별칭주기/index.html",
-    "_site/posts/mySQL-문법-(8)-Aliases(AS)-컬럼,-테이블명-별칭주기",
-    "_site/posts/mySQL-문법-(8)-Aliases-컬럼명-변경하기/index.html",
-    "_site/posts/mySQL-문법-(8)-Aliases-컬럼명-변경하기",
     "_posts/2024-03-08- mySQL 문법 (5) - BETWEEN, IN, LIKE.md",
-    "_site/posts/mySQL-문법-(7)-LIMIT-원하는-데이터-수만큼-조회하기/index.html",
     "_posts/2024-03-08- mySQL 문법 (4) - 비교연산자 종류.md",
     "_posts/2024-01-07- 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기.md",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (61) -  n 번째 원소부터.md",
@@ -235,7 +236,6 @@
     "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (70) - 수열과 구간 쿼리 1.md",
     "_site/스크린샷 2024-02-27 오전 11.50.41.png",
     "_posts/2024-02-17- 프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽.md",
-    "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md",
-    "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (68) - 할 일 목록.md"
+    "_posts/2024-02-19- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md"
   ]
 }
