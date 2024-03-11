@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-11T12:34:16+09:00</updated>
+  <updated>2024-03-11T14:29:40+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,66 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>JAVA 문법 (1) - 변수 Variable</title>
+    <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(1)-%EB%B3%80%EC%88%98-Variable/" rel="alternate" type="text/html" title="JAVA 문법 (1) - 변수 Variable" />
+    <published>2024-03-11T00:00:00+09:00</published>
+  
+    <updated>2024-03-11T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(1)-%EB%B3%80%EC%88%98-Variable/</id>
+    <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(1)-%EB%B3%80%EC%88%98-Variable/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Grammar" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      🔎 변수(Variable)
+
+01. 변수란?
+
+
+  변수(Variable)는 데이터를 저장하는 공간이다.
+변수는 특정 데이터 타입을 가지며, 이 데이터 타입에 따라 저장할 수 있는 데이터의 종류와 크기가 결정된다. 변수를 사용하면 데이터를 보다 쉽게 관리할 수 있고, 코드 내에서 값을 재사용하거나 변경할 수 있다.
+
+
+
+02. 왜 사용해야하나?
+public class Var1 {  
+    public static void main(String[] args) {  
+        System.out.println(10);  
+        System.out.println(10);  
+        System.out.println(10);  
+    }  
+}
+
+//10
+//10
+//10
+
+
+위의 코...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -225,58 +285,6 @@ SELECT * FROM 테이블 ORDER BY 컬럼1 ASC, 컬럼2 ASC
 
 
 02. ORDER BY DE...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>mySQL 문법 (5) - BETWEEN, IN, LIKE</title>
-    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/" rel="alternate" type="text/html" title="mySQL 문법 (5) - BETWEEN, IN, LIKE" />
-    <published>2024-03-08T00:00:00+09:00</published>
-  
-    <updated>2024-03-08T16:12:24+09:00</updated>
-  
-    <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/</id>
-    <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="mySQL" />
-    
-    <category term="Grammar" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      💡BETWEEN, IN, LIKE
-
-01. BETWEEN
-
-
-  The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.
-The BETWEEN operator is inclusive: begin and end values are included.
-
-
-BETWEEN 연산자는 주어진 범위 내의 값을 선택하고, 값은 숫자, 문자열 혹은 날짜일 수 있습니다.
-BETWEEN 연산자는 시작 및 끝 값이 포함되어있어, 조건의 값을 포괄합니다.
-
-
-02. IN
-
-
-  The IN operator allows you to specify multiple values in a WHERE clause...
     </summary>
   
 
