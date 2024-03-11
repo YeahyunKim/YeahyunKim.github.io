@@ -7,7 +7,6 @@ categories:
   - Study
 tags:
   - Java
-  - JavaSpring
 image: https://ifh.cc/g/wvbwro.png
 ---
 ## Static Content (정적 컨텐츠)
