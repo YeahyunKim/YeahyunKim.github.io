@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기" />
+<meta property="og:title" content="JAVA study (7) - String 리터럴, String 객체" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="01 문제 : 대소문자 바꿔서 출력하기" />
-<meta property="og:description" content="01 문제 : 대소문자 바꿔서 출력하기" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
+<meta name="description" content="🔎 문자열 생성  Java에서 문자열을 생성하는 과정은 크게 2가지 방법이 있다. String literal new String() 두개는 어떤 차이를 가지고 있을까?" />
+<meta property="og:description" content="🔎 문자열 생성  Java에서 문자열을 생성하는 과정은 크게 2가지 방법이 있다. String literal new String() 두개는 어떤 차이를 가지고 있을까?" />
+<link rel="canonical" href="http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/" />
+<meta property="og:url" content="http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-08T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-03-12T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
-<meta property="twitter:title" content="프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기" />
+<meta property="twitter:title" content="JAVA study (7) - String 리터럴, String 객체" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-01-08T00:00:00+09:00","datePublished":"2024-01-08T00:00:00+09:00","description":"01 문제 : 대소문자 바꿔서 출력하기","headline":"프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-12T00:00:00+09:00","datePublished":"2024-03-12T00:00:00+09:00","description":"🔎 문자열 생성 \b Java에서 문자열을 생성하는 과정은 크게 2가지 방법이 있다. String literal new String() 두개는 어떤 차이를 가지고 있을까?","headline":"JAVA study (7) - String 리터럴, String 객체","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/"},"url":"http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기 | Yeahyun Kim
+  <title>JAVA study (7) - String 리터럴, String 객체 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기</span>
+              <span>JAVA study (7) - String 리터럴, String 객체</span>
             
 
           
@@ -645,6 +645,69 @@
     <!-- combine -->
     
   
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
 
   
 
@@ -692,17 +755,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -723,72 +775,6 @@
       
         
         
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
       
 
       
@@ -830,7 +816,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기</h1>
+    <h1 data-toc-skip>JAVA study (7) - String 리터럴, String 객체</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -846,13 +832,13 @@
 
 <time
   
-  data-ts="1704639600"
+  data-ts="1710169200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan  8, 2024
+  Mar 12, 2024
 </time>
 
       </span>
@@ -909,7 +895,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="409 words"
+  title="539 words"
 >
   <em>2 min</em> read</span>
 
@@ -920,144 +906,77 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제--대소문자-바꿔서-출력하기"><span class="me-2">01 문제 : 대소문자 바꿔서 출력하기</span><a href="#01-문제--대소문자-바꿔서-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
+    <h2 id="-문자열-생성"><span class="me-2">🔎 문자열 생성</span><a href="#-문자열-생성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>
+Java에서 문자열을 생성하는 과정은 크게 2가지 방법이 있다.</p>
+<ul>
+  <li><strong>String literal</strong></li>
+  <li><strong>new String()</strong>
+두개는 어떤 차이를 가지고 있을까?
+<br /></li>
+</ul>
 
-<blockquote class="command-text">
-  <p>영어 알파벳으로 이루어진 문자열 <code class="language-plaintext highlighter-rouge">str</code>이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.</p>
-</blockquote>
+<h4 id="01-string-literal"><span class="me-2">01. String Literal</span><a href="#01-string-literal" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p><br /></p>
-<h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<blockquote class="command-text">
-  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str</code>의 길이 ≤ 20
-	•  <code class="language-plaintext highlighter-rouge">str</code>은 알파벳으로 이루어진 문자열입니다.</p>
-</blockquote>
-
-<p><br /></p>
-<h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<p>입력 #1</p>
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="err"></span><span class="n">aBcDeFg</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p>출력 #1</p>
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="kt">AbCdEfG</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p><br /></p>
-
-<h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-3
-</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
-
-<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
+</pre></td><td class="rouge-code"><pre><span class="nc">String</span> <span class="n">str1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="o">;</span>
+<span class="nc">String</span> <span class="n">str2</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="o">;</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><br /></p>
-
-<h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<hr />
-<p>제시된 내용을 보면, 현재 <code class="language-plaintext highlighter-rouge">s1</code> 에는 <code class="language-plaintext highlighter-rouge">aBcDeFg</code> 라는 값이 들어가 있다.
-소문자인 경우에는 대문자로, 대문자인 경우에는 소문자로 바꿔야하는 문제인것으로 보이는데,
-<code class="language-plaintext highlighter-rouge">.map</code> 을 활용하여 <code class="language-plaintext highlighter-rouge">s1</code> 에 값을 하나씩 받아, 조건 / 삼항연산자로 처리할 수 있을 것으로 보인다.</p>
-
-<h4 id="1-조건문을-이용한-풀이"><span class="me-2">1) 조건문을 이용한 풀이</span><a href="#1-조건문을-이용한-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<blockquote>
-  <p>let convertedString = s1.map { char -&gt; String in
-    if char.isLowercase {
-        return char.uppercased()
-    } else {
-        return char.lowercased()
-    }
-}.joined()</p>
+<blockquote class="command-text">
+  <p>String Literal은 문자열을 생성하는 가장 간단하고 일반적이 방법이다. 이 방식은 문자열을 큰 따옴표(“ “) 로 둘러싸서 표현한다. <br />
+String Literal 방식으로 문자열을 생성하면, JAVA Heap 메모리 영역의 문자열 상수 풀(String Constant Pool) 영역에 값이 저장이 된다.</p>
 </blockquote>
 
-<h4 id="2-삼항연산자를-이용한-풀이"><span class="me-2">2) 삼항연산자를 이용한 풀이</span><a href="#2-삼항연산자를-이용한-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<blockquote>
-  <p>let convertedString = s1.map{ char -&gt; String in char.isLowercase ? char.uppercased() : char.lowercased()}.joined()</p>
+<p><br /></p>
+<h4 id="02-new-string"><span class="me-2">02. new String()</span><a href="#02-new-string" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nc">String</span> <span class="n">str3</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"Hello"</span><span class="o">);</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote class="command-text">
+  <p>new String() 방식으로 문자열을 생성하면, 매번 새로운 String 객체가 생성된다. 즉, 문자열이 저장된 메모리 주소가 다르게 된다. 따라서 동일한 문자열을 가리키는 변수들도 서로 다른 메모리 주소를 참조하게 된다.</p>
 </blockquote>
 
 <p><br />
 <br /></p>
-<h2 id="answer"><span class="me-2">💡Answer</span><a href="#answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="-메모리-저장의-차이"><span class="me-2">🔎 메모리 저장의 차이</span><a href="#-메모리-저장의-차이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h4 id="1-조건문을-이용한-풀이-1"><span class="me-2">1) 조건문을 이용한 풀이</span><a href="#1-조건문을-이용한-풀이-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
-
-<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
-
-<span class="k">let</span> <span class="nv">convertedString</span> <span class="o">=</span> <span class="n">s1</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">char</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="k">in</span>
-    <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isLowercase</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">char</span><span class="o">.</span><span class="nf">uppercased</span><span class="p">()</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">char</span><span class="o">.</span><span class="nf">lowercased</span><span class="p">()</span>
-    <span class="p">}</span>
-<span class="p">}</span><span class="o">.</span><span class="nf">joined</span><span class="p">()</span>
-
-<span class="nf">print</span><span class="p">(</span><span class="n">convertedString</span><span class="p">)</span>
-
-<span class="c1">// AbCdEfG</span>
+</pre></td><td class="rouge-code"><pre><span class="nc">String</span> <span class="n">str1</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="o">;</span> <span class="c1">// 리터럴</span>
+<span class="nc">String</span> <span class="n">str2</span> <span class="o">=</span> <span class="s">"Hello"</span><span class="o">;</span> <span class="c1">// 리터럴</span>
+<span class="nc">String</span> <span class="n">str3</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">String</span><span class="o">(</span><span class="s">"Hello"</span><span class="o">);</span> <span class="c1">//객체</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h4 id="2-삼항연산자를-이용한-풀이-1"><span class="me-2">2) 삼항연산자를 이용한 풀이</span><a href="#2-삼항연산자를-이용한-풀이-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>위의 코드처럼, <code class="language-plaintext highlighter-rouge">str1</code>, <code class="language-plaintext highlighter-rouge">str2</code> 는 리터럴 방식으로 문자열을 생성했고, <code class="language-plaintext highlighter-rouge">str3</code>은 객체 방식으로 문자열을 생성했다.</p>
 
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+<p><br />
+<a href="https://ifh.cc/g/C37H0N.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/C37H0N.png" alt="이미지" loading="lazy"></a></p>
 
-<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">str1</code>으로 인해 JAVA HEAP안의 String Constant pool 영역에 <code class="language-plaintext highlighter-rouge">"Hello"</code> 가 생성된다.</li>
+  <li>JVM이 String Constant Pool에 <code class="language-plaintext highlighter-rouge">"Hello"</code>가 존재함을 확인하고, <code class="language-plaintext highlighter-rouge">str2</code>는 새로운 값을 메모리에 할당하지 않고, <code class="language-plaintext highlighter-rouge">str1</code>의 주소를 참조한다.</li>
+  <li><code class="language-plaintext highlighter-rouge">str3</code>은 객체이기 때문에 JAVA HEAP에 새로운 메모리를 할당하여 값을 저장한다.
+<br />
+<br /></li>
+</ol>
 
-<span class="k">let</span> <span class="nv">convertedString</span> <span class="o">=</span> <span class="n">s1</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="n">char</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="k">in</span> <span class="n">char</span><span class="o">.</span><span class="n">isLowercase</span> <span class="p">?</span> <span class="n">char</span><span class="o">.</span><span class="nf">uppercased</span><span class="p">()</span> <span class="p">:</span> <span class="n">char</span><span class="o">.</span><span class="nf">lowercased</span><span class="p">()}</span><span class="o">.</span><span class="nf">joined</span><span class="p">()</span>
-
-<span class="nf">print</span><span class="p">(</span><span class="n">convertedString</span><span class="p">)</span>
-
-<span class="c1">// AbCdEfG</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181949">해당문제 풀러가보기</a></p>
+<blockquote class="prompt-info">
+  <p><strong>String Constant Pool 란?</strong> <br />
+JVM은 String Constant Pool을 사용하여 문자열 리터럴을 관리한다. 그 이유는 동일한 문자열 리터럴을 새로운 메모리에 생성하지 않고, 하나의 메모리에 값을 생성하고, 그 주소를 참조하게 만들어 메모리를 절약할 수 있고, 컴파일러가 코드를 최적화하는데 큰 도움을 준다.</p>
+</blockquote>
 
   </div>
 
@@ -1067,8 +986,8 @@
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/programmers/">Programmers</a>,
-          <a href="/categories/%EA%B8%B0%EC%B4%88/">기초</a>
+          <a href="/categories/java/">Java</a>,
+          <a href="/categories/study/">Study</a>
       </div>
     
 
@@ -1078,14 +997,14 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/algorithm/"
+            href="/tags/java/"
             class="post-tag no-text-decoration"
-          >Algorithm</a>
+          >Java</a>
         
           <a
-            href="/tags/programmers/"
+            href="/tags/javaspring/"
             class="post-tag no-text-decoration"
-          >Programmers</a>
+          >JavaSpring</a>
         
       </div>
     
@@ -1113,21 +1032,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(4)%20-%20%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90%20%EB%B0%94%EA%BF%94%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%284%29-%25EB%258C%2580%25EC%2586%258C%25EB%25AC%25B8%25EC%259E%2590-%25EB%25B0%2594%25EA%25BF%2594%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=JAVA%20study%20(7)%20-%20String%20%EB%A6%AC%ED%84%B0%EB%9F%B4,%20String%20%EA%B0%9D%EC%B2%B4%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%287%29-String-%25EB%25A6%25AC%25ED%2584%25B0%25EB%259F%25B4%2C-String-%25EA%25B0%259D%25EC%25B2%25B4%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(4)%20-%20%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90%20%EB%B0%94%EA%BF%94%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%284%29-%25EB%258C%2580%25EC%2586%258C%25EB%25AC%25B8%25EC%259E%2590-%25EB%25B0%2594%25EA%25BF%2594%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=JAVA%20study%20(7)%20-%20String%20%EB%A6%AC%ED%84%B0%EB%9F%B4,%20String%20%EA%B0%9D%EC%B2%B4%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%287%29-String-%25EB%25A6%25AC%25ED%2584%25B0%25EB%259F%25B4%2C-String-%25EA%25B0%259D%25EC%25B2%25B4%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Swift-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%284%29-%25EB%258C%2580%25EC%2586%258C%25EB%25AC%25B8%25EC%259E%2590-%25EB%25B0%2594%25EA%25BF%2594%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Swift%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20(4)%20-%20%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90%20%EB%B0%94%EA%BF%94%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%287%29-String-%25EB%25A6%25AC%25ED%2584%25B0%25EB%259F%25B4%2C-String-%25EA%25B0%259D%25EC%25B2%25B4%2F&text=JAVA%20study%20(7)%20-%20String%20%EB%A6%AC%ED%84%B0%EB%9F%B4,%20String%20%EA%B0%9D%EC%B2%B4%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1595,799 +1514,115 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -2439,7 +1674,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(61)-n-%EB%B2%88%EC%A7%B8-%EC%9B%90%EC%86%8C%EB%B6%80%ED%84%B0/" class="post-preview card h-100">
+          <a href="/posts/JAVA-study-(4)-Maven,-Gradle-%EC%B0%A8%EC%9D%B4%EC%A0%90/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2451,14 +1686,14 @@
 
 <time
   
-  data-ts="1708095600"
+  data-ts="1709132400"
   data-df="ll"
   
 >
-  Feb 17, 2024
+  Feb 29, 2024
 </time>
 
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (61) - n 번째 원소부터</h4>
+              <h4 class="pt-0 my-2">JAVA study (4) - Maven, Gradle 차이점</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2467,21 +1702,19 @@
 
 
 
-                  01 문제 :n 번째 원소부터
-
-문제 설명
+                  메이븐(Maven) 이란?
 
 
-  정수 리스트 num_list와 정수 n이 주어질 때, n 번째 원소부터 마지막 원소까지의 모든 원소를 담은 리스트를 return하도록 solution 함수를 완성해주세요.
+01. 메이븐 정의
+
+Maven은 주로 Java 개발에 사용되는 프로젝트 관리 빌드 도구 이다.  Apache Ant의 대안으로 만들어 졌으며, Apache Software Foundation에서 호스팅하는 Maven은 자카르타 프로젝트의 일부로 시작되었다고 한다.
 
 
+02. 메이븐 특징
 
-제한사항
 
-
-  • 2 ≤ num_list의 길이 ≤ 30
-• 1 ≤ num_list의 원소 ≤ 9
-• 1 ≤ n ≤ num...
+  빌드 절차를 간소화
+  ...
                 </p>
               </div>
             </div>
@@ -2489,7 +1722,7 @@
         </article>
       
         <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(62)-%EC%88%9C%EC%84%9C-%EB%B0%94%EA%BE%B8%EA%B8%B0/" class="post-preview card h-100">
+          <a href="/posts/JAVA-study-(5)-%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84-%EC%A6%9D%EA%B0%90-%EC%97%B0%EC%82%B0%EC%9E%90/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2501,14 +1734,14 @@
 
 <time
   
-  data-ts="1708095600"
+  data-ts="1710169200"
   data-df="ll"
   
 >
-  Feb 17, 2024
+  Mar 12, 2024
 </time>
 
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (62) - 순서 바꾸기</h4>
+              <h4 class="pt-0 my-2">JAVA study (5) - 전위,후위 증감 연산자</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2517,19 +1750,21 @@
 
 
 
-                  01 문제 :순서 바꾸기
-
-문제 설명
+                  🔎 전위, 후위 증감 연산자란?
 
 
-  정수 리스트 num_list와 정수 n이 주어질 때, num_list를 n 번째 원소 이후의 원소들과 n 번째까지의 원소들로 나눠 n 번째 원소 이후의 원소들을 n 번째까지의 원소들 앞에 붙인 리스트를 return하도록 solution 함수를 완성해주세요.
+01. 전위 증감 연산자
+
+++a , --a
+전위 증감 연산자는 연산자가 변수의 앞에 있고,
+변수의 값을 먼저 증가시키거나 감소시킨 후 값을 대입해준다.
 
 
+02. 후위 증감 연산자
 
-제한사항
-
-
-  • 2 ≤ num_list의...
+a++ , a--
+후위 증감 연산자는 연산자가 변수의 앞에 있고,
+변수의 값을 먼저 사용하고, 그 이후 값을 증가시키거나 감소시킨다...
                 </p>
               </div>
             </div>
@@ -2537,7 +1772,7 @@
         </article>
       
         <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(63)-%EC%99%BC%EC%AA%BD-%EC%98%A4%EB%A5%B8%EC%AA%BD/" class="post-preview card h-100">
+          <a href="/posts/JAVA-study-(6)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2549,14 +1784,14 @@
 
 <time
   
-  data-ts="1708095600"
+  data-ts="1710169200"
   data-df="ll"
   
 >
-  Feb 17, 2024
+  Mar 12, 2024
 </time>
 
-              <h4 class="pt-0 my-2">프로그래머스 Swift 코테준비 (63) - 왼쪽 오른쪽</h4>
+              <h4 class="pt-0 my-2">JAVA study (6) - 리터럴 상수</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2565,13 +1800,20 @@
 
 
 
-                  01 문제 :왼쪽 오른쪽
-
-문제 설명
+                  🔎 리터럴
 
 
-  문자열 리스트 str_list에는 “u”, “d”, “l”, “r” 네 개의 문자열이 여러 개 저장되어 있습니다. 
-str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이라면 해당 문자열을 기준으로 왼쪽에 있는 문자열들을 순서대로 담은 리스트를, 먼저 나오는 문자열이 “r”이라면 해당 문자열...
+01. 리터럴(Literal) 이란?
+
+
+  Literal은 데이터(값) 그 자체, 즉 변수에 넣은 변하지 않는 데이터 즉 문자 그대로의 값이라고 할 수 있다. 리터럴은 변수에 할당될 수 있는 구체적인 값을 직접 표현한 것이다.
+
+
+
+02. 리터럴(Literal)의 종류 및 선언방법
+
+1) 정수 리터럴 
+정수 값을 나타내며, 10진수,...
                 </p>
               </div>
             </div>
@@ -2593,22 +1835,18 @@ str_list에서 “l”과 “r” 중 먼저 나오는 문자열이 “l”이�
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
+      href="/posts/JAVA-study-(6)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기</p>
+      <p>JAVA study (6) - 리터럴 상수</p>
     </a>
   
 
   
-    <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 

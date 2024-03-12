@@ -2,6 +2,23 @@
   
   {
     "title": "JAVA study (6) - 리터럴 상수",
+    "url": "/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/",
+    "categories": "Java, Study",
+    "tags": "Java, JavaSpring",
+    "date": "2024-03-12 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "🔎 문자열 생성\bJava에서 문자열을 생성하는 과정은 크게 2가지 방법이 있다.  String literal  new String()두개는 어떤 차이를 가지고 있을까?01. String LiteralString str1 = \"Hello\";String str2 = \"Hello\";  String Literal은 문자열을 생성하는 가장 간단하고 일반적이 방...",
+    "content": "🔎 문자열 생성\bJava에서 문자열을 생성하는 과정은 크게 2가지 방법이 있다.  String literal  new String()두개는 어떤 차이를 가지고 있을까?01. String LiteralString str1 = \"Hello\";String str2 = \"Hello\";  String Literal은 문자열을 생성하는 가장 간단하고 일반적이 방법이다. 이 방식은 문자열을 큰 따옴표(“ “) 로 둘러싸서 표현한다. String Literal 방식으로 문자열을 생성하면, JAVA Heap 메모리 영역의 문자열 상수 풀(String Constant Pool) 영역에 값이 저장이 된다.02. new String()String str3 = new String(\"Hello\");  new String() 방식으로 문자열을 생성하면, 매번 새로운 String 객체가 생성된다. 즉, 문자열이 저장된 메모리 주소가 다르게 된다. 따라서 동일한 문자열을 가리키는 변수들도 서로 다른 메모리 주소를 참조하게 된다.🔎 메모리 저장의 차이String str1 = \"Hello\"; // 리터럴String str2 = \"Hello\"; // 리터럴String str3 = new String(\"Hello\"); //객체위의 코드처럼, str1, str2 는 리터럴 방식으로 문자열을 생성했고, str3은 객체 방식으로 문자열을 생성했다.  str1으로 인해 JAVA HEAP안의 String Constant pool 영역에 \"Hello\" 가 생성된다.  JVM이 String Constant Pool에 \"Hello\"가 존재함을 확인하고, str2는 새로운 값을 메모리에 할당하지 않고, str1의 주소를 참조한다.  str3은 객체이기 때문에 JAVA HEAP에 새로운 메모리를 할당하여 값을 저장한다.  String Constant Pool 란? JVM은 String Constant Pool을 사용하여 문자열 리터럴을 관리한다. 그 이유는 동일한 문자열 리터럴을 새로운 메모리에 생성하지 않고, 하나의 메모리에 값을 생성하고, 그 주소를 참조하게 만들어 메모리를 절약할 수 있고, 컴파일러가 코드를 최적화하는데 큰 도움을 준다."
+  },
+  
+  {
+    "title": "JAVA study (6) - 리터럴 상수",
     "url": "/posts/JAVA-study-(6)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/",
     "categories": "Java, Study",
     "tags": "Java, JavaSpring",
@@ -14,7 +31,7 @@
 
     
     "snippet": "🔎 리터럴01. 리터럴(Literal) 이란?  Literal은 데이터(값) 그 자체, 즉 변수에 넣은 변하지 않는 데이터 즉 문자 그대로의 값이라고 할 수 있다. 리터럴은 변수에 할당될 수 있는 구체적인 값을 직접 표현한 것이다.02. \b리터럴(Literal)의 종류 및 선언방법1) 정수 리터럴 정수 값을 나타내며, 10진수, 16진수, 8진수, 2...",
-    "content": "🔎 리터럴01. 리터럴(Literal) 이란?  Literal은 데이터(값) 그 자체, 즉 변수에 넣은 변하지 않는 데이터 즉 문자 그대로의 값이라고 할 수 있다. 리터럴은 변수에 할당될 수 있는 구체적인 값을 직접 표현한 것이다.02. \b리터럴(Literal)의 종류 및 선언방법1) 정수 리터럴 정수 값을 나타내며, 10진수, 16진수, 8진수, 2진수로 표현int a = 100int b = 0x6Fint c = 0144int d = 0b1010110// a,b,c,d 는 변수, 값들은 리터럴2) 부동 소수점 리터럴  실수 값을 나타내며, 소수점이 포함된 숫자나 지수를 사용해서 표현double a = 3.14double b = 2.5e2// a,b 는 변수, 값들은 리터럴3) 논리 리터럴  참(true) 또는 거짓(false)의 불리언 값boolean a = \btrueboolean b = 2.5e2// a,b 는 변수, 값들은 리터럴4) 문자 리터럴  참(true) 또는 거짓(false)의 불리언 값String a = \b'a'String b = '1'String c = '\\n'// a,b,c 는 변수, 값들은 리터럴5) 문자열 리터럴  큰따옴표(““)로 둘러싸인 문자들의 시퀀스String a = \b\"Hello, World\"String b = \"Java\"// a,b 는 변수, 값들은 리터럴6) Null 리터럴  참조 타입(객체 타입) 변수가 어떤 객체도 가리키지 않음을 나타냄String a = null;// a 는 변수, 값들은 리터럴🔎 상수01. 상수(Constant) 이란?  Constant는 프로그램 실행 도중 그 값이 변하지 않는 값을 의미한다. 한번 초기화 되면 그 값을 변경 할 수 없다. 일반적으로 프로그램에서 사용되는 고정된 값이나 식별자에 사용한다.02. 선언 방법final int MAX_VALUE = 100;// 리터럴 = 10// 상수 = A  • final을 사용하여 상수를 선언한다.• 상수명을 대문자로 선언해준다.대문자로 선언하여, 해당 변수가 변하지 않는 값인 상수임을 표현해주어, 코드의 가독성을 높일 수 있다."
+    "content": "🔎 리터럴01. 리터럴(Literal) 이란?  Literal은 데이터(값) 그 자체, 즉 변수에 넣은 변하지 않는 데이터 즉 문자 그대로의 값이라고 할 수 있다. 리터럴은 변수에 할당될 수 있는 구체적인 값을 직접 표현한 것이다.02. \b리터럴(Literal)의 종류 및 선언방법1) 정수 리터럴 정수 값을 나타내며, 10진수, 16진수, 8진수, 2진수로 표현int a = 100int b = 0x6Fint c = 0144int d = 0b1010110// a,b,c,d 는 변수, 값들은 리터럴2) 부동 소수점 리터럴  실수 값을 나타내며, 소수점이 포함된 숫자나 지수를 사용해서 표현double a = 3.14double b = 2.5e2// a,b 는 변수, 값들은 리터럴3) 논리 리터럴  참(true) 또는 거짓(false)의 불리언 값boolean a = \btrueboolean b = 2.5e2// a,b 는 변수, 값들은 리터럴4) 문자 리터럴  참(true) 또는 거짓(false)의 불리언 값String a = \b'a'String b = '1'String c = '\\n'// a,b,c 는 변수, 값들은 리터럴5) 문자열 리터럴  큰따옴표(““)로 둘러싸인 문자들의 시퀀스String a = \b\"Hello, World\"String b = \"Java\"// a,b 는 변수, 값들은 리터럴6) Null 리터럴  참조 타입(객체 타입) 변수가 어떤 객체도 가리키지 않음을 나타냄String a = null;// a 는 변수, 값들은 리터럴🔎 상수01. 상수(Constant) 이란?  Constant는 프로그램 실행 도중 그 값이 변하지 않는 값을 의미한다. 한번 초기화 되면 그 값을 변경 할 수 없다. 일반적으로 프로그램에서 사용되는 고정된 값이나 식별자에 사용한다.02. 선언 방법final int MAX_VALUE = 100;// 리터럴 = 100// 상수 = MAX_VALUE  • final을 사용하여 상수를 선언한다.• 상수명을 대문자로 선언해준다.대문자로 선언하여, 해당 변수가 변하지 않는 값인 상수임을 표현해주어, 코드의 가독성을 높일 수 있다."
   },
   
   {

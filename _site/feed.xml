@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-12T16:06:12+09:00</updated>
+  <updated>2024-03-12T16:39:44+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,67 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>JAVA study (6) - 리터럴 상수</title>
+    <link href="http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/" rel="alternate" type="text/html" title="JAVA study (6) - 리터럴 상수" />
+    <published>2024-03-12T00:00:00+09:00</published>
+  
+    <updated>2024-03-12T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/</id>
+    <content src="http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Study" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      🔎 문자열 생성
+
+
+Java에서 문자열을 생성하는 과정은 크게 2가지 방법이 있다.
+
+  String literal
+  new String()
+두개는 어떤 차이를 가지고 있을까?
+
+
+
+01. String Literal
+
+String str1 = "Hello";
+String str2 = "Hello";
+
+
+
+  String Literal은 문자열을 생성하는 가장 간단하고 일반적이 방법이다. 이 방식은 문자열을 큰 따옴표(“ “) 로 둘러싸서 표현한다. 
+String Literal 방식으로 문자열을 생성하면, JAVA Heap 메모리 영역의 문자열 상수 풀(String Constant Pool) 영역에 값이 저장이 된다.
+
+
+
+02. new String()
+
+String str3 = new String(...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -258,77 +319,6 @@ public class Var1 {
 
 
 위의 코...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>mySQL 문법 (9) - UPDATE 데이터 수정하기</title>
-    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(9)-UPDATE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="mySQL 문법 (9) - UPDATE 데이터 수정하기" />
-    <published>2024-03-08T00:00:00+09:00</published>
-  
-    <updated>2024-03-08T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(9)-UPDATE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(9)-UPDATE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="mySQL" />
-    
-    <category term="Grammarㅤ" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      💡UPDATE
-
-01. UPDATE
-
-
-  The UPDATE statement is used to modify the existing records in a table.
-
-
-UPDATE 는 테이블의 기존 데이터 값을 수정하는데 사용한다.
-
-02. 주의사항
-
-
-  반드시 WHERE절을 사용하여 특정 데이터만 수정하는데 사용하자. 그렇지 않으면 모든 기록이 업데이트 될 수 있기 때문..
-
-
-
-
-💡문법 Syntax
-
-01. 특정한 컬럼의 데이터값을 수정할 때
-
-UPDATE 테이블명 SET 컬럼1 = '변경할 값' WHERE 조건1;
-
-
-
-02. 여러개 컬럼의 데이터값을 수정할 때
-
-UPDATE 테이블명 SET 컬럼1 = '변경할 값', 컬럼2 = '변경할 값' WHERE 조건1;
-
-
-
-
-💡사용예시
-
-0...
     </summary>
   
 
