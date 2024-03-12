@@ -31,28 +31,35 @@
   
 
   
+    
+
+    
+  
 
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="Yeahyun Kim" />
+<meta property="og:title" content="mySQL 문법 (9) - UPDATE 데이터 수정하기" />
+<meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="소소한 개발 일지" />
-<meta property="og:description" content="소소한 개발 일지" />
-<link rel="canonical" href="http://localhost:4000/page10/" />
-<meta property="og:url" content="http://localhost:4000/page10/" />
+<meta name="description" content="💡DELETE DELETE" />
+<meta property="og:description" content="💡DELETE DELETE" />
+<link rel="canonical" href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/" />
+<meta property="og:url" content="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
-<meta property="og:type" content="website" />
-<link rel="prev" href="http://localhost:4000/page9" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Yeahyun Kim" />
+<meta property="og:image" content="https://ifh.cc/g/DMV0va.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-03-08T00:00:00+09:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://ifh.cc/g/DMV0va.png" />
+<meta property="twitter:title" content="mySQL 문법 (9) - UPDATE 데이터 수정하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"소소한 개발 일지","headline":"Yeahyun Kim","url":"http://localhost:4000/page10/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-08T00:00:00+09:00","datePublished":"2024-03-08T00:00:00+09:00","description":"💡DELETE DELETE","headline":"mySQL 문법 (9) - UPDATE 데이터 수정하기","image":"https://ifh.cc/g/DMV0va.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Yeahyun Kim
+  <title>mySQL 문법 (9) - UPDATE 데이터 수정하기 | Yeahyun Kim
   </title>
 
   <!--
@@ -104,11 +111,16 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
+  
 
   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
   
 
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -287,7 +299,7 @@
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
       <!-- home -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a href="/" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
           <span>HOME</span>
@@ -451,9 +463,25 @@
       
 
       
-        <!-- index page -->
-        <span>Home</span>
+        
+          
+            <span>
+              <a href="/">
+                Home
+              </a>
+            </span>
 
+          
+        
+          
+        
+          
+            
+              <span>mySQL 문법 (9) - UPDATE 데이터 수정하기</span>
+            
+
+          
+        
       
     </nav>
     <!-- endof #breadcrumb -->
@@ -463,7 +491,7 @@
     </button>
 
     <div id="topbar-title">
-      Yeahyun Kim
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -561,48 +589,13 @@
 
       
     
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
       
 
       
       
+      
 
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
+      
     
       
 
@@ -637,189 +630,16 @@
     
 
     
-      <!-- create the image wrapper -->
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
       
 
       
+        <!-- create the image wrapper -->
+        
+
+        
+        
       
-
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- create the image wrapper -->
-      
-
-      
-      
-
     
 
     <!-- combine -->
@@ -843,6 +663,49 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
@@ -852,6 +715,82 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -867,104 +806,15 @@
 
 
 
+<article class="px-1">
+  <header>
+    <h1 data-toc-skip>mySQL 문법 (9) - UPDATE 데이터 수정하기</h1>
 
-
-
-
-
-<!-- Get pinned posts -->
-
-
-
-
-
-
-<!-- Get default posts -->
-
-
-
-
-
-
-
-
-
-
-<div id="post-list" class="flex-grow-1 px-xl-1">
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(5)-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (5) - 특수문자 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                01 문제 : 특수문자 출력하기
-
-
-
-문제 설명
-
-
-  다음과 같이 출력하도록 코드를 작성해 주세요.
-
-
-
-입출력 예
-
-출력 #1
-!@#$%^&amp;amp;*(\&#39;&quot;&amp;lt;&amp;gt;?:;
-
-
-
-
-제시 코드
-
-import Foundation
-
-
-
-
-
-02 풀이
-
-
-”#”을 활용하기
-콘솔창에 원하는 값을 출력하기 위해선 print(출력할 값) 을 활용하면 된다....
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -974,659 +824,236 @@ import Foundation
 
 <time
   
-  data-ts="1704726000"
+  data-ts="1709823600"
   data-df="ll"
   
->
-  Jan  9, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(4)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (4) - 대소문자 바꿔서 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                01 문제 : 대소문자 바꿔서 출력하기
-
-
-
-문제 설명
-
-
-  영어 알파벳으로 이루어진 문자열 str이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ str의 길이 ≤ 20
-	•  str은 알파벳으로 이루어진 문자열입니다.
-
-
-
-입출력 예
-
-입력 #1
-aBcDeF...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704639600"
-  data-df="ll"
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Jan  8, 2024
+  Mar  8, 2024
 </time>
 
+      </span>
 
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
+      <!-- lastmod date -->
+      
 
+      
+        
+        
+        
+
+        
+
+        <div class="mt-3 mb-3">
+          <a href="https://ifh.cc/g/DMV0va.png" class="popup img-link preview-img shimmer"><img src="https://ifh.cc/g/DMV0va.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
               
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
-      </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
-
-        
-          
-          
-
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (3) - 문자열 반복해서 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
+                <a href="not_yey">Yeahyun Kim</a>
                 
+              
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
 
 
 
 
 
-                01 문제 : 문자열 반복해서 출력하기
-
-
-문제 설명
-
-
-  문자열 str과 정수 n이 주어집니다.
-str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-
-  • 1 ≤ str의 길이 ≤ 10
-• 1 ≤ n ≤ 5
-
-
-
-입출력 예
-
-입력 #1
-string 5
-
-
-출력 #1
-stringstringstringstrings...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
 
 
 
 
-<time
-  
-  data-ts="1704639600"
-  data-df="ll"
-  
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="243 words"
 >
-  Jan  8, 2024
-</time>
+  <em>1 min</em> read</span>
 
+      </div>
+      <!-- .d-flex -->
+    </div>
+    <!-- .post-meta -->
+  </header>
 
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
+  <div class="content">
+    <h2 id="delete"><span class="me-2">💡DELETE</span><a href="#delete" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+<h4 id="delete-1"><span class="me-2">DELETE</span><a href="#delete-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
+<blockquote class="command-text">
+  <p>The <code class="language-plaintext highlighter-rouge">DELETE</code> statement is used to delete existing records in a table.</p>
+</blockquote>
+
+<p><code class="language-plaintext highlighter-rouge">UPDATE</code> 는 테이블의 기존 데이터 값을 삭제하는데 사용한다.</p>
+
+<h4 id="02-주의사항"><span class="me-2">02. 주의사항</span><a href="#02-주의사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<blockquote class="prompt-danger">
+  <p>반드시 <code class="language-plaintext highlighter-rouge">WHERE</code>절을 사용하여 특정 데이터만 삭제하는데 사용하자. 그렇지 않으면 모든 데이터가 삭제될수도…</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+<h2 id="문법-syntax"><span class="me-2">💡문법 Syntax</span><a href="#문법-syntax" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+<h4 id="01-특정한-컬럼의-데이터값을-삭제할-때"><span class="me-2">01. 특정한 컬럼의 데이터값을 삭제할 때</span><a href="#01-특정한-컬럼의-데이터값을-삭제할-때" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">DELETE</span> <span class="k">FROM</span> <span class="err">테이블명</span> <span class="k">WHERE</span> <span class="err">컬럼</span><span class="mi">1</span> <span class="o">=</span> <span class="s1">'삭제할 값'</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+<h4 id="02-모든-데이터를-삭제할-때"><span class="me-2">02. 모든 데이터를 삭제할 때</span><a href="#02-모든-데이터를-삭제할-때" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">DELETE</span> <span class="k">FROM</span> <span class="err">테이블명</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p><br />
+<br /></p>
+
+<h2 id="사용예시"><span class="me-2">💡사용예시</span><a href="#사용예시" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+<h4 id="01-특정한-컬럼의-데이터값을-삭제할-때-1"><span class="me-2">01. 특정한 컬럼의 데이터값을 삭제할 때</span><a href="#01-특정한-컬럼의-데이터값을-삭제할-때-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">Customers</span>
+<span class="k">WHERE</span><span class="err"> </span><span class="n">CustomerID</span> <span class="o">=</span><span class="err"> </span><span class="mi">1</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote class="command-text">
+  <p>• 조건 1 : CustomerID 가 1
+• 해석 : 고객 테이블 고객 아이디가 1인 고객의 데이터를 삭제해줘</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="02-모든-데이터를-삭제할-때-1"><span class="me-2">02. 모든 데이터를 삭제할 때</span><a href="#02-모든-데이터를-삭제할-때-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+
+<div class="language-sql highlighter-rouge"><div class="code-header">
+        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">Customers</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote class="command-text">
+  <p>• 해석 : 고객 테이블의 데이터를 모두 삭제해줘</p>
+</blockquote>
+
+  </div>
+
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/categories/mysql/">mySQL</a>,
+          <a href="/categories/grammar%E3%85%A4/">Grammarㅤ</a>
+      </div>
+    
+
+    <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/tags/mysql/"
+            class="post-tag no-text-decoration"
+          >mySQL</a>
+        
+      </div>
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+      </div>
+
+      <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+
+      
+
+      <a href="https://twitter.com/intent/tweet?text=mySQL%20%EB%AC%B8%EB%B2%95%20(9)%20-%20UPDATE%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%2810%29-DELETE-%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0-%25EC%2582%25AD%25EC%25A0%259C%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(2)-a%EC%99%80-b-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
+    
 
-        
-          
-          
+      
 
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (2) - a와 b 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                01 문제 : a 와 b 출력하기
-
-
-
-문제 설명
-
-
-  정수 a와 b가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-
-  • 100,000 ≤ a, b ≤ 100,000
-
-
-
-입출력 예
-
-입력 #1
-4 5
-
-
-출력 #1
-a = 4
-b = 5
-
-
-
-
-제시 코드
-
-import Foundatio...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704639600"
-  data-df="ll"
-  
->
-  Jan  8, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
+      <a href="https://www.facebook.com/sharer/sharer.php?title=mySQL%20%EB%AC%B8%EB%B2%95%20(9)%20-%20UPDATE%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%2810%29-DELETE-%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0-%25EC%2582%25AD%25EC%25A0%259C%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+        <i class="fa-fw fab fa-facebook-square"></i>
       </a>
-    </article>
-  
-    <article class="card-wrapper card">
-      <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview row g-0 flex-md-row-reverse">
-        
+    
 
-        
-          
-          
+      
 
-          
-
-          
-
-          
-
-          <div class="col-md-5">
-            <div class="preview-img  shimmer"><img src="https://ifh.cc/g/wvbwro.png" alt="Preview Image"  loading="lazy"></div>
-          </div>
-
-          
-        
-
-        <div class="col-md-7">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">프로그래머스 Swift 코테준비 (1) - 문자열 출력하기</h1>
-
-            <div class="card-text content mt-0 mb-3">
-              <p>
-                
-
-
-
-
-
-                01 문제 : 문자열 출력하기
-
-
-
-문제 설명
-
-
-  문자열 str이 주어질 때, str을 출력하는 코드를 작성해 보세요.
-
-
-
-제한사항
-
-  •  1 ≤ str의 길이 ≤ 1,000,000
-• str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.
-
-
-
-입출력 예
-
-입력 #1
-
-HelloWorld!
-
-
-출력 #1
-HelloWorld!
-
-
-
-
-제...
-              </p>
-            </div>
-
-            <div class="post-meta flex-grow-1 d-flex align-items-end">
-              <div class="me-auto">
-                <!-- posted date -->
-                <i class="far fa-calendar fa-fw me-1"></i>
-                <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1704553200"
-  data-df="ll"
-  
->
-  Jan  7, 2024
-</time>
-
-
-                <!-- categories -->
-                
-                  <i class="far fa-folder-open fa-fw me-1"></i>
-                  <span class="categories">
-                    
-                      Programmers,
-                      기초
-                  </span>
-                
-              </div>
-
-              
-            </div>
-            <!-- .post-meta -->
-          </div>
-          <!-- .card-body -->
-        </div>
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%2810%29-DELETE-%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0-%25EC%2582%25AD%25EC%25A0%259C%25ED%2595%2598%25EA%25B8%25B0%2F&text=mySQL%20%EB%AC%B8%EB%B2%95%20(9)%20-%20UPDATE%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+        <i class="fa-fw fab fa-telegram"></i>
       </a>
-    </article>
-  
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
+    </button>
+  </span>
 </div>
-<!-- #post-list -->
 
-
-  <!-- The paginator for post list on HomgPage. -->
-
-<nav aria-label="Page Navigation">
-  <ul class="pagination align-items-center mt-4 mb-0">
-    <!-- left arrow -->
-    
-
-    <li class="page-item ">
-      <a class="page-link" href="/page9" aria-label="previous-page">
-        <i class="fas fa-angle-left"></i>
-      </a>
-    </li>
-
-    <!-- page numbers -->
-    
-    
-
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a
-            class="page-link"
-            href="/"
-          >1</a>
-        </li>
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- hide number -->
-        
-          <li class="page-item disabled">
-            <span class="page-link">...</span>
-          </li>
-          
-        
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- hide number -->
-        
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- hide number -->
-        
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- hide number -->
-        
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- hide number -->
-        
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- hide number -->
-        
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a
-            class="page-link"
-            href="/page8"
-          >8</a>
-        </li>
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- show number -->
-        <li class="page-item ">
-          <a
-            class="page-link"
-            href="/page9"
-          >9</a>
-        </li>
-      
-    
-      
-      
-      
-      
-      
-
-      
-
-      
-        <!-- show number -->
-        <li class="page-item  active">
-          <a
-            class="page-link"
-            href="/page10"
-          >10</a>
-        </li>
-      
-    
-
-    <!-- mobile pagination -->
-    <li class="page-index align-middle">
-      <span>10</span>
-      <span class="text-muted">/ 10</span>
-    </li>
-
-    <!-- right arrow -->
-    
-
-    <li class="page-item disabled">
-      <a class="page-link" href="#" aria-label="next-page">
-        <i class="fas fa-angle-right"></i>
-      </a>
-    </li>
-  </ul>
-</nav>
-<!-- .pagination -->
-
-
+    </div>
+    <!-- .post-tail-bottom -->
+  </div>
+  <!-- div.post-tail-wrapper -->
+</article>
 
 
             
@@ -2025,12 +1452,362 @@ HelloWorld!
             </div>
 
             
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-SELECT,-FROM-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1709650800"
+  data-df="ll"
+  
+>
+  Mar  6, 2024
+</time>
+
+              <h4 class="pt-0 my-2">mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  SELECT, FROM
+
+
+01. SELECT
+
+SELECT 는 데이터를 가져오는 기본 명령어로, 데이터를 조회하는 모든 Query에 사용된다.
+기본적으로 컬럼을 선택한다고 생각하면 된다.
+
+
+02. FROM
+
+FROM 은 데이터를 가져올 테이블을 특정해주는 명령어이다.
+기본적으로 테이블을 선택한다고 생각하면 된다.
+
+
+
+문법보기
+
+01. 테이블의 모...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-WHERE-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1709823600"
+  data-df="ll"
+  
+>
+  Mar  8, 2024
+</time>
+
+              <h4 class="pt-0 my-2">mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  💡WHERE
+
+01. WHERE 절이란
+
+
+  The WHERE clause is used to filter records.
+It is used to extract only those records that fulfill a specified condition.
+
+
+WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다.
+...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(3)-AND,-OR,-NOT-%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1709823600"
+  data-df="ll"
+  
+>
+  Mar  8, 2024
+</time>
+
+              <h4 class="pt-0 my-2">mySQL 문법 (3) - AND, OR, NOT 연산자</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  💡AND, OR, NOT 논리연산자
+
+01. AND
+
+
+  The AND operators are used to filter records based on more than one condition:
+
+
+AND 연산자는 두개의 조건이 모두 true 인 경우의 데이터를 필터링 합니다.
+AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
+
+
+0...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+            
+              
+              <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-SELECT,-FROM-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기</p>
+    </a>
+  
+
+  
+    <a
+      href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-WHERE-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기</p>
+    </a>
+  
+</nav>
+
+            
+              
+              <!--  The comments switcher -->
+
+
             
 
             <!-- The Footer -->
@@ -2453,6 +2230,9 @@ HelloWorld!
   
 
   
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
 
 
 
@@ -2524,16 +2304,37 @@ HelloWorld!
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/ko.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 
 
 
 
-<script defer src="/assets/js/dist/home.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
