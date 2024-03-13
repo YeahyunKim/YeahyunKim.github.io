@@ -39,27 +39,27 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="JAVA 문법 (3) - if, else, else if 조건문" />
+<meta property="og:title" content="JAVA 문법 (4) - switch 조건문" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
 <meta name="description" content="🔎 조건문 이란" />
 <meta property="og:description" content="🔎 조건문 이란" />
-<link rel="canonical" href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if-,-switch%EC%A1%B0%EA%B1%B4%EB%AC%B8/" />
-<meta property="og:url" content="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if-,-switch%EC%A1%B0%EA%B1%B4%EB%AC%B8/" />
+<link rel="canonical" href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" />
+<meta property="og:url" content="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:image" content="https://ifh.cc/g/NhyPJf.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-13T00:00:00+09:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://ifh.cc/g/NhyPJf.png" />
-<meta property="twitter:title" content="JAVA 문법 (3) - if, else, else if 조건문" />
+<meta property="twitter:title" content="JAVA 문법 (4) - switch 조건문" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-13T00:00:00+09:00","datePublished":"2024-03-13T00:00:00+09:00","description":"🔎 조건문 이란","headline":"JAVA 문법 (3) - if, else, else if 조건문","image":"https://ifh.cc/g/NhyPJf.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if-,-switch%EC%A1%B0%EA%B1%B4%EB%AC%B8/"},"url":"http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if-,-switch%EC%A1%B0%EA%B1%B4%EB%AC%B8/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-13T00:00:00+09:00","datePublished":"2024-03-13T00:00:00+09:00","description":"🔎 조건문 이란","headline":"JAVA 문법 (4) - switch 조건문","image":"https://ifh.cc/g/NhyPJf.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/"},"url":"http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>JAVA 문법 (3) - if, else, else if 조건문 | Yeahyun Kim
+  <title>JAVA 문법 (4) - switch 조건문 | Yeahyun Kim
   </title>
 
   <!--
@@ -477,7 +477,7 @@
         
           
             
-              <span>JAVA 문법 (3) - if, else, else if 조건문</span>
+              <span>JAVA 문법 (4) - switch 조건문</span>
             
 
           
@@ -745,39 +745,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -785,60 +752,6 @@
   
   
 
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
   
 
 
@@ -851,7 +764,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>JAVA 문법 (3) - if, else, else if 조건문</h1>
+    <h1 data-toc-skip>JAVA 문법 (4) - switch 조건문</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -930,9 +843,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1852 words"
+  title="766 words"
 >
-  <em>10 min</em> read</span>
+  <em>4 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -954,108 +867,9 @@
 
 <p><br />
 <br /></p>
-<h2 id="-if--else--else-if"><span class="me-2">🔎 if / else / else if</span><a href="#-if--else--else-if" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="-switch문"><span class="me-2">🔎 switch문</span><a href="#-switch문" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h4 id="01-if문"><span class="me-2">01. if문</span><a href="#01-if문" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<div class="language-java highlighter-rouge"><div class="code-header">
-        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="o">(</span><span class="n">조건식</span><span class="o">)</span> <span class="o">{</span>
-	<span class="n">실행문1</span><span class="o">;</span>
-	<span class="n">실행문2</span><span class="o">;</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote class="command-text">
-  <p>조건식이 <code class="language-plaintext highlighter-rouge">true</code> 일경우 중괄호 안에있는 실행문을 실행시킨다.</p>
-</blockquote>
-
-<p><br /></p>
-<div class="language-java highlighter-rouge"><div class="code-header">
-        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-</pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
-
-<span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//true</span>
-	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"성인입니다"</span><span class="o">)</span> <span class="c1">//실행</span>
-<span class="o">}</span>
-<span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">=&lt;</span> <span class="mi">20</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//false</span>
-	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"미성년자입니다"</span><span class="o">)</span> <span class="c1">//실행안됨</span>
-<span class="o">}</span>
-
-<span class="c1">// 성인입니다</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote class="command-text">
-  <p><code class="language-plaintext highlighter-rouge">age</code>가 20살 이상일 경우, <code class="language-plaintext highlighter-rouge">"성인입니다"</code> 가 출력이 되고, 20살 미만일 경우, <code class="language-plaintext highlighter-rouge">"미성년자입니다"</code> 가 출력되는것을 볼 수 있다. 하지만 이렇게 된 경우에는 같은 조건(나이)아래 조건문이 두번실행 되므로, 좋은 방법이 아니다.</p>
-</blockquote>
-
-<p><br /></p>
-<h4 id="02-else문"><span class="me-2">02. else문</span><a href="#02-else문" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<div class="language-java highlighter-rouge"><div class="code-header">
-        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="o">(</span><span class="n">조건식</span><span class="o">)</span> <span class="o">{</span> 
-	<span class="n">실행문1</span><span class="o">;</span>
-	<span class="n">실행문2</span><span class="o">;</span>
-<span class="o">}</span> <span class="k">else</span> <span class="o">{</span> <span class="c1">//if문의 조건식이 거짓일 때 실행</span>
-	<span class="n">실행문3</span><span class="o">;</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote class="command-text">
-  <p><code class="language-plaintext highlighter-rouge">else</code>문은 위의 <strong><code class="language-plaintext highlighter-rouge">if</code>문의 조건이 모두 거짓일때 실행된다.</strong></p>
-</blockquote>
-
-<p><br /></p>
-
-<div class="language-java highlighter-rouge"><div class="code-header">
-        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-</pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">18</span><span class="o">;</span>
-
-<span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//false</span>
-	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"성인입니다"</span><span class="o">)</span> <span class="c1">//실행</span>
-<span class="o">}</span> <span class="k">else</span> <span class="o">{</span> <span class="c1">//true</span>
-	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"미성년자입니다"</span><span class="o">)</span> <span class="c1">//실행안됨</span>
-<span class="o">}</span>
-
-<span class="c1">// 성인입니다</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote class="command-text">
-  <p>나이가 20살 이상이 아니라면 전부 <code class="language-plaintext highlighter-rouge">"미성년자"</code>가 출력된다.</p>
-</blockquote>
-
-<p><br /></p>
-<h4 id="03-else-if-문"><span class="me-2">03. else if 문</span><a href="#03-else-if-문" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<h4 id="01-switch-문"><span class="me-2">01. switch 문</span><a href="#01-switch-문" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
@@ -1071,32 +885,31 @@
 10
 11
 12
-</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="o">(</span><span class="n">조건식1</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// false</span>
-	<span class="n">실행문1</span><span class="o">;</span>
-	<span class="n">실행문2</span><span class="o">;</span>
-<span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">조건식2</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// false</span>
-	<span class="n">실행문3</span><span class="o">;</span>
-	<span class="n">실행문4</span><span class="o">;</span>
-<span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">조건식3</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// true</span>
-	<span class="n">실행문5</span><span class="o">;</span> <span class="c1">//실행</span>
-	<span class="n">실행문6</span><span class="o">;</span> <span class="c1">//실행</span>
-<span class="o">}</span> <span class="k">else</span> <span class="o">{</span> 
-	<span class="n">실행문7</span><span class="o">;</span>
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="k">switch</span> <span class="o">(</span><span class="n">값</span><span class="o">)</span> <span class="o">{</span>
+	<span class="k">case</span> <span class="n">값1</span> <span class="o">:</span> 
+		<span class="n">실행문1</span><span class="o">;</span>
+		<span class="k">break</span><span class="o">;</span>
+		
+	<span class="k">case</span> <span class="n">값2</span> <span class="o">:</span> 
+		<span class="n">실행문2</span><span class="o">;</span>
+		<span class="k">break</span><span class="o">;</span>
+		
+	<span class="k">case</span> <span class="n">값3</span> <span class="o">:</span> 
+		<span class="n">실행문3</span><span class="o">;</span>
+		<span class="k">break</span><span class="o">;</span>
+	<span class="k">default</span> <span class="o">:</span>
+		<span class="n">실행문4</span><span class="o">;</span>
 <span class="o">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>else if문의<code class="language-plaintext highlighter-rouge">조건식3</code> 이 <code class="language-plaintext highlighter-rouge">true</code> 일경우 <code class="language-plaintext highlighter-rouge">실행문5</code>, <code class="language-plaintext highlighter-rouge">실행문6</code>를 실행하고, 나머지 아래의 코드들은 실행되지 않는다.</p>
+  <p>조건식에 해당하는 특정 값으로 실행할 코드를 선택한다</p>
 </blockquote>
 
 <p><br /></p>
-<h4 id="04-if문-여러개와-else-if-문의-차이"><span class="me-2">04. if문 여러개와 else if 문의 차이</span><a href="#04-if문-여러개와-else-if-문의-차이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<p>그렇다면, if문이 여러개인 경우와 else if을 활용하여 만든 조건식의 차이는 무엇이 있을까?
-이는 <strong>조건문이 실행되는 방식과, 출력하려는 값과, 주어진 조건의 개수에 따라 활용도가 다르다.</strong></p>
-
-<h5 id="1-if문이-여러개일-경우-불필요한-조건-검사"><span class="me-2">1) if문이 여러개일 경우 (불필요한 조건 검사)</span><a href="#1-if문이-여러개일-경우-불필요한-조건-검사" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
-
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1117,38 +930,37 @@
 16
 17
 18
-</pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">14</span><span class="o">;</span>
-
-<span class="k">if</span><span class="o">(</span><span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">7</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//~7: 미취학 </span>
-	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"미취학"</span><span class="o">);</span>
-<span class="o">}</span>
-<span class="k">if</span><span class="o">(</span><span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">8</span> <span class="o">&amp;&amp;</span> <span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">13</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//8~13: 초등학생</span>
-	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"초등학생"</span><span class="o">);</span>
-<span class="o">}</span>
-<span class="k">if</span><span class="o">(</span><span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">14</span> <span class="o">&amp;&amp;</span> <span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">16</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//14~16: 중학생</span>
-	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"중학생"</span><span class="o">);</span>
-<span class="o">}</span>
-<span class="k">if</span><span class="o">(</span><span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">17</span> <span class="o">&amp;&amp;</span> <span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">19</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//17~19: 고등학생</span>
-	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"고등학생"</span><span class="o">);</span>
-<span class="o">}</span>
-<span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">20</span><span class="o">)</span> <span class="o">{</span> <span class="c1">//20~: 성인</span>
-	<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"성인"</span><span class="o">);</span>
-<span class="o">}</span>
-<span class="c1">// 중학생</span>
+19
+20
+</pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">grade</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>
+<span class="kt">int</span> <span class="n">coupon</span><span class="o">;</span>
+  
+<span class="kt">int</span> <span class="n">coupon</span><span class="o">;</span>  
+<span class="k">switch</span> <span class="o">(</span><span class="n">grade</span><span class="o">)</span> <span class="o">{</span>  
+    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>  
+        <span class="n">coupon</span> <span class="o">=</span> <span class="mi">1000</span><span class="o">;</span>  
+        <span class="k">break</span><span class="o">;</span>  
+    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span>  
+        <span class="n">coupon</span> <span class="o">=</span> <span class="mi">2000</span><span class="o">;</span>  <span class="c1">//실행</span>
+        <span class="k">break</span><span class="o">;</span>  <span class="c1">//종료</span>
+    <span class="k">case</span> <span class="mi">3</span><span class="o">:</span>  
+        <span class="n">coupon</span> <span class="o">=</span> <span class="mi">3000</span><span class="o">;</span>  
+        <span class="k">break</span><span class="o">;</span>  
+  
+    <span class="k">default</span><span class="o">:</span>  
+        <span class="n">coupon</span> <span class="o">=</span> <span class="mi">500</span><span class="o">;</span>  
+<span class="o">}</span>  
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"발급받은 쿠폰: "</span> <span class="o">+</span> <span class="n">coupon</span><span class="o">);</span>
+<span class="c1">// 발급받을 쿠폰: 2000</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p><strong>위의 코드는 불필요한 조건 검사가 이루어 진다.</strong> 
-만약 나이가 5살이라면 미취학이 이미 출력되어야 하지만, 나머지 <code class="language-plaintext highlighter-rouge">if</code>문을 통한 검사도 모두 실행해야 한다.</p>
-</blockquote>
-
-<blockquote class="command-text">
-  <p><strong>코드의 효율성에서도 좋지 않다.</strong>
-나이가 9살인 초등학생 이라면, 미취학을 체크하는 조건인 <code class="language-plaintext highlighter-rouge">age &lt;= 7</code>을 통해 나이가 이미 8살이 넘는다는 것을 알 수 있다. 하지만, 두번째 조건문에서 확인할 수 있듯이, <code class="language-plaintext highlighter-rouge">age &gt;= 8</code>, <code class="language-plaintext highlighter-rouge">age &lt;= 13</code>이란 조건문이 실행되고, 앞전에 이미 8살을 넘는다는 조건과 포함하여 <strong>중복체크 한것을 볼 수 있다.</strong></p>
+  <p><code class="language-plaintext highlighter-rouge">grade</code>가 현재 2로 설정이 되어있고,
+switch문에서 <code class="language-plaintext highlighter-rouge">case</code>별 적혀있는 값이 변수 <code class="language-plaintext highlighter-rouge">grade</code> 값과 동일할 때, 해당 조건식이 실행되고, <code class="language-plaintext highlighter-rouge">break;</code>에서 switch문을 종료한다.</p>
 </blockquote>
 
 <p><br /></p>
-<h5 id="2-else-if-문의-효율성"><span class="me-2">2) else if 문의 효율성</span><a href="#2-else-if-문의-효율성" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h4 id="02-java-14-이상-switch-문"><span class="me-2">02. Java 14 이상 switch 문</span><a href="#02-java-14-이상-switch-문" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <div class="language-java highlighter-rouge"><div class="code-header">
         <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
@@ -1162,135 +974,39 @@
 8
 9
 10
-11
-12
-13
-</pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">14</span><span class="o">;</span>
-
-<span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">7</span><span class="o">){</span>  
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"미취학"</span><span class="o">);</span>  
-<span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">13</span><span class="o">)</span> <span class="o">{</span>  <span class="c1">// 위에서 이미 나이가 7살 이상이라는 조건을 검사했기 때문</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"초등학생"</span><span class="o">);</span>  
-<span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">16</span><span class="o">)</span> <span class="o">{</span>  
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"중학생"</span><span class="o">);</span>  
-<span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">19</span><span class="o">)</span> <span class="o">{</span>  
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"고등학생"</span><span class="o">);</span>  
-<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>  
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"성인"</span><span class="o">);</span>  
-<span class="o">}</span>
+</pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">grade</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>  
+  
+<span class="kt">int</span> <span class="n">coupon</span> <span class="o">=</span> <span class="k">switch</span> <span class="o">(</span><span class="n">grade</span><span class="o">)</span> <span class="o">{</span>  
+    <span class="k">case</span> <span class="mi">1</span> <span class="o">-&gt;</span> <span class="mi">1000</span><span class="o">;</span>  
+    <span class="k">case</span> <span class="mi">2</span> <span class="o">-&gt;</span> <span class="mi">2000</span><span class="o">;</span>  
+    <span class="k">case</span> <span class="mi">3</span> <span class="o">-&gt;</span> <span class="mi">3000</span><span class="o">;</span>  
+    <span class="k">case</span> <span class="mi">4</span> <span class="o">-&gt;</span> <span class="mi">4000</span><span class="o">;</span>  
+    <span class="k">default</span> <span class="o">-&gt;</span> <span class="mi">500</span><span class="o">;</span>  
+<span class="o">};</span>  
+<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"발급받은 쿠폰: "</span> <span class="o">+</span> <span class="n">coupon</span><span class="o">);</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p><strong>위의 코드는 앞전에서 검사한 조건을 토대로 이어서 else if문이 실행된다</strong> 
-<code class="language-plaintext highlighter-rouge">age &lt;= 7</code> 의 조건이 거짓이면, 그다음 조건에는 이미 나이가 7살 이상이라는 데이터를 가지고 있다.
-따라서, 지금과 같은 상황에서는 <strong>else if 문을 사용하는것이 더 유리하다.</strong></p>
-</blockquote>
-
-<p><br /></p>
-<h4 id="05-상황에-따라-다르게-쓰이는-if문과-else-if문"><span class="me-2">05. 상황에 따라 다르게 쓰이는 if문과 else if문</span><a href="#05-상황에-따라-다르게-쓰이는-if문과-else-if문" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<blockquote class="command-text">
-  <p><strong>상황</strong>
-온라인 쇼핑몰의 할인 시스템을 개발해야 한다. 한 사용자가 어떤 상품을 구매할 때, 다양한 할인 조건에 따라 총 할인 금액이 달라질 수 있다. 각각의 할인 조건은 다음과 같다. <br />
-	• 조건 1 : 아이템 가격이 10000원 이상일 때, 1000원 할인 
-	• 조건 2 : 나이가 10살 이하일 때 1000원 추가 할인 <br />
-위의 상황에서는 <strong>한 사용자가 동시에 여러 할인을 받을 수 있다는 점</strong> 이다.</p>
-</blockquote>
-
-<h5 id="1-여러-할인을-받아야-하기-때문에-if문을-여러번-사용"><span class="me-2">1) 여러 할인을 받아야 하기 때문에, if문을 여러번 사용</span><a href="#1-여러-할인을-받아야-하기-때문에-if문을-여러번-사용" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
-
-<div class="language-java highlighter-rouge"><div class="code-header">
-        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-</pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">price</span> <span class="o">=</span> <span class="mi">10000</span><span class="o">;</span>  
-<span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>  
-<span class="kt">int</span> <span class="n">discount</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>  
-  
-<span class="k">if</span> <span class="o">(</span><span class="n">price</span> <span class="o">&gt;=</span> <span class="mi">10000</span><span class="o">)</span> <span class="o">{</span>  
-    <span class="n">discount</span> <span class="o">=</span> <span class="n">discount</span> <span class="o">+</span> <span class="mi">1000</span><span class="o">;</span>  
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"10000원 이상 구매, 1000원 할인"</span><span class="o">);</span>  
-<span class="o">}</span>  
-<span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="o">)</span> <span class="o">{</span>  
-    <span class="n">discount</span> <span class="o">=</span> <span class="n">discount</span> <span class="o">+</span> <span class="mi">1000</span><span class="o">;</span>  
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"어린이 1000원 할인"</span><span class="o">);</span>  
-<span class="o">}</span>  
-  
-<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"총 할인 금액: "</span> <span class="o">+</span> <span class="n">discount</span> <span class="o">+</span> <span class="s">"원"</span><span class="o">);</span>
-<span class="c1">// 총 할인 금액: 2000원</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote class="command-text">
-  <p>위의 코드에서는 고객이 1만원 이상을 구매했고, 나이도 10살 이하라 2번의 할인을 받아야하므로,
-조건을 두번 나누어 주었다. 그럼 우리가 원했던 할인 시스템의 값이 출력되는것을 볼 수 있다.
-출력 : <code class="language-plaintext highlighter-rouge">총 할인 금액: 2000원</code></p>
-</blockquote>
-
-<p><br /></p>
-<h5 id="2-위와-같은-상황에-else-if문을-사용하면"><span class="me-2">2) 위와 같은 상황에 else if문을 사용하면..</span><a href="#2-위와-같은-상황에-else-if문을-사용하면" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
-
-<div class="language-java highlighter-rouge"><div class="code-header">
-        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-</pre></td><td class="rouge-code"><pre><span class="kt">int</span> <span class="n">price</span> <span class="o">=</span> <span class="mi">10000</span><span class="o">;</span>  
-<span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>  
-<span class="kt">int</span> <span class="n">discount</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>  
-  
-<span class="k">if</span> <span class="o">(</span><span class="n">price</span> <span class="o">&gt;=</span> <span class="mi">10000</span><span class="o">)</span> <span class="o">{</span>  <span class="c1">// 1. 실행되면</span>
-    <span class="n">discount</span> <span class="o">=</span> <span class="n">discount</span> <span class="o">+</span> <span class="mi">1000</span><span class="o">;</span>  
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"10000원 이상 구매, 1000원 할인"</span><span class="o">);</span>  
-<span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">age</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="o">)</span> <span class="o">{</span>  <span class="c1">// 2. 실행이 안됨</span>
-    <span class="n">discount</span> <span class="o">=</span> <span class="n">discount</span> <span class="o">+</span> <span class="mi">1000</span><span class="o">;</span>  
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"어린이 1000원 할인"</span><span class="o">);</span>  
-<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>  
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"할인 없음"</span><span class="o">);</span>  
-<span class="o">}</span>  
-
-<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"총 할인 금액: "</span> <span class="o">+</span> <span class="n">discount</span> <span class="o">+</span> <span class="s">"원"</span><span class="o">);</span>
-<span class="c1">//총 할인 금액: 1000원</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote class="command-text">
-  <p>else if문을 사용하게 된다면, 첫번째 조건문이 실행된 경우, 두번째의 조건문은 실행이 되지 않기 때문에, 우리가 원했던 할인 시스템 값인 2000원이 아닌, 1000원이 출력되는 것을 볼 수 있다.
-출력 : <code class="language-plaintext highlighter-rouge">총 할인 금액: 1000원</code></p>
+  <p>Java버전이 14이상일 경우, 해당 문법을 사용할 수 있다.
+<code class="language-plaintext highlighter-rouge">case</code>별 <code class="language-plaintext highlighter-rouge">break;</code>를 적어주지 않아도 돼서 더욱 간편하게 사용할 수 있다.</p>
 </blockquote>
 
 <p><br />
 <br /></p>
-<h2 id="-정리"><span class="me-2">🔎 정리</span><a href="#-정리" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="-switch문-vs-if문"><span class="me-2">🔎 switch문 vs if문</span><a href="#-switch문-vs-if문" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<blockquote class="prompt-tip">
-  <p>조건문도 상황에 따라 if문을 여러개 쓸지, else if문을 사용할지 등 고려해야할 부분이 많다.
-코드를 막 적는게 중요한게 아닌, 상황에 맞에 코드를 어떻게 작성해야할지를 심중히 고민해봐야 좋은 코드가 될 것이다.</p>
-</blockquote>
+<p><strong>if문</strong> <br />
+    • 단일 조건을 평가하고, 조건이 참(true)인 경우에만 해당 코드 블록을 실행 <br />
+    • 조건식의 결과에 따라 다양한 조건을 처리, 조건식에 비교 연산자를 사용하여 값의 크기나 동등성을 비교 <br />
+    • <strong>논리적인 조건을 다루는 데 유연성이 있고, 여러 개의 조건을 체인으로 연결하거나 복잡한 조건식을 작성할 수 있음</strong> 또한 else문과 else if문을 사용하여 추가적인 조건을 처리할 수 있음 <br />
+    • <strong>범위에 대한 체크, 다양한 조건에 따른 분기, 복잡한 조건 처리</strong></p>
+
+<p><strong>switch문</strong> <br />
+    • switch문은 변수나 식의 값을 여러 가지 경우(case)와 비교하여 일치하는 경우 해당 코드 블록을 실행 <br />
+    • s값의 동등성을 비교하는 데 사용, 각 case는 일치하는 값을 가지고 있으며, 해당 case에 해당하는 코드 블록이 실행 <br />
+    • if문보다 특정 값에 대한 다중 분기를 처리하는 데 더 적합. 여러 개의 값을 비교해야 할 때 switch문을 사용하면 코드의 가독성을 높임 <br />
+    • 일치하는 값이 없을 경우에 대비해 default문을 사용하여 기본 동작 정의 <br />
+    • <strong>일치하는 값에 따라 분기를 처리하는 간단한 상황에서 효과적으로 사용</strong></p>
 
   </div>
 
@@ -1341,21 +1057,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=JAVA%20%EB%AC%B8%EB%B2%95%20(3)%20-%20if,%20else,%20else%20if%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-%25EB%25AC%25B8%25EB%25B2%2595-%283%29-if-%2C-switch%25EC%25A1%25B0%25EA%25B1%25B4%25EB%25AC%25B8%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=JAVA%20%EB%AC%B8%EB%B2%95%20(4)%20-%20switch%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-%25EB%25AC%25B8%25EB%25B2%2595-%284%29-switch-%25EC%25A1%25B0%25EA%25B1%25B4%25EB%25AC%25B8%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=JAVA%20%EB%AC%B8%EB%B2%95%20(3)%20-%20if,%20else,%20else%20if%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-%25EB%25AC%25B8%25EB%25B2%2595-%283%29-if-%2C-switch%25EC%25A1%25B0%25EA%25B1%25B4%25EB%25AC%25B8%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=JAVA%20%EB%AC%B8%EB%B2%95%20(4)%20-%20switch%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-%25EB%25AC%25B8%25EB%25B2%2595-%284%29-switch-%25EC%25A1%25B0%25EA%25B1%25B4%25EB%25AC%25B8%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-%25EB%25AC%25B8%25EB%25B2%2595-%283%29-if-%2C-switch%25EC%25A1%25B0%25EA%25B1%25B4%25EB%25AC%25B8%2F&text=JAVA%20%EB%AC%B8%EB%B2%95%20(3)%20-%20if,%20else,%20else%20if%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-%25EB%25AC%25B8%25EB%25B2%2595-%284%29-switch-%25EC%25A1%25B0%25EA%25B1%25B4%25EB%25AC%25B8%2F&text=JAVA%20%EB%AC%B8%EB%B2%95%20(4)%20-%20switch%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1410,35 +1126,35 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-%EB%AC%B8%EB%B2%95-(2)-%EB%B3%80%EC%88%98-%EB%AA%85%EB%AA%85-%EA%B7%9C%EC%B9%99/">JAVA 문법 (2) - 변수 명명 규칙</a>
+          <a href="/posts/JAVA-study-(5)-%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84-%EC%A6%9D%EA%B0%90-%EC%97%B0%EC%82%B0%EC%9E%90/">JAVA study (5) - 전위,후위 증감 연산자</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/JavaSpring-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%8A%A4%ED%83%80%ED%84%B0-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/">JavaSpring - 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기</a>
+          <a href="/posts/JAVA-study-(6)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/">JAVA study (6) - 리터럴 상수</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(7)-LIMIT-%EC%9B%90%ED%95%98%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EB%A7%8C%ED%81%BC-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/">mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기</a>
+          <a href="/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/">JAVA study (7) - String 리터럴, String 객체</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-%EB%AC%B8%EB%B2%95-(1)-%EB%B3%80%EC%88%98-Variable/">JAVA 문법 (1) - 변수 Variable</a>
+          <a href="/posts/JAVA-study-(3)-%EC%A0%95%EC%A0%81-%EC%BB%A8%ED%85%90%EC%B8%A0/">JAVA study (3) - 정적 컨텐츠</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-study-(1)-%EC%9E%90%EB%B0%94%EB%9E%80/">JAVA study (1) - 자바란?</a>
+          <a href="/posts/JAVA-study-(4)-Maven,-Gradle-%EC%B0%A8%EC%9D%B4%EC%A0%90/">JAVA study (4) - Maven, Gradle 차이점</a>
         </li>
       
     </ul>
@@ -1968,6 +1684,18 @@
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -2084,7 +1812,7 @@ pu...
         </article>
       
         <article class="col">
-          <a href="/posts/JavaSpring-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%8A%A4%ED%83%80%ED%84%B0-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
+          <a href="/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if,-else,-else-if-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2096,14 +1824,14 @@ pu...
 
 <time
   
-  data-ts="1708873200"
+  data-ts="1710255600"
   data-df="ll"
   
 >
-  Feb 26, 2024
+  Mar 13, 2024
 </time>
 
-              <h4 class="pt-0 my-2">JavaSpring - 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기</h4>
+              <h4 class="pt-0 my-2">JAVA 문법 (3) - if, else, else if 조건문</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2112,19 +1840,32 @@ pu...
 
 
 
-                  스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기
+                  🔎 조건문 이란
 
 
 
-01. 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기
+  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 
+• if 문
+	- else if
+	- else 
+• switch 문
 
-예전의 스프링 프로젝트는 정말 밑바닥 부터 다 만들었는데, 요즘에는 SpringBoot 를 기반으로 프로젝트를 만든다. 아래 사이트로 이동하자.
-
-  https://start.spring.io/
 
 
 
-02. https://start...
+🔎 if / else / else if
+
+
+01. if문
+
+if (조건식) {
+	실행문1;
+	실행문2;
+}
+
+
+
+  조건식이 true 일경우 중괄호 안에있는...
                 </p>
               </div>
             </div>
@@ -2146,11 +1887,11 @@ pu...
 
   
     <a
-      href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/"
+      href="/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if,-else,-else-if-%EC%A1%B0%EA%B1%B4%EB%AC%B8/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>mySQL 문법 (10) - DELETE 데이터 삭제하기</p>
+      <p>JAVA 문법 (3) - if, else, else if 조건문</p>
     </a>
   
 

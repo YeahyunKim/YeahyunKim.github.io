@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-13T12:50:41+09:00</updated>
+  <updated>2024-03-13T14:29:33+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,95 @@
 
   
   <entry>
-    <title>JAVA 문법 (3) - if, else, else if 조건문</title>
-    <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if-,-switch%EC%A1%B0%EA%B1%B4%EB%AC%B8/" rel="alternate" type="text/html" title="JAVA 문법 (3) - if, else, else if 조건문" />
+    <title>JAVA 문법 (4) - switch 조건문</title>
+    <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" rel="alternate" type="text/html" title="JAVA 문법 (4) - switch 조건문" />
     <published>2024-03-13T00:00:00+09:00</published>
   
     <updated>2024-03-13T00:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if-,-switch%EC%A1%B0%EA%B1%B4%EB%AC%B8/</id>
-    <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if-,-switch%EC%A1%B0%EA%B1%B4%EB%AC%B8/" />
+    <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/</id>
+    <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Grammar" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      🔎 조건문 이란
+
+
+
+  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 
+• if 문
+	- else if
+	- else 
+• switch 문
+
+
+
+
+🔎 switch문
+
+01. switch 문
+
+switch (값) {
+	case 값1 : 
+		실행문1;
+		break;
+		
+	case 값2 : 
+		실행문2;
+		break;
+		
+	case 값3 : 
+		실행문3;
+		break;
+	default :
+		실행문4;
+}
+
+
+
+  조건식에 해당하는 특정 값으로 실행할 코드를 선택한다
+
+
+
+int grade = 2;
+int coupon;
+  
+int coupon;  
+switch (grade) {  
+    case 1:  
+        coupon = 100...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>JAVA 문법 (3) - if, else, else if 조건문</title>
+    <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if,-else,-else-if-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" rel="alternate" type="text/html" title="JAVA 문법 (3) - if, else, else if 조건문" />
+    <published>2024-03-13T00:00:00+09:00</published>
+  
+    <updated>2024-03-13T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if,-else,-else-if-%EC%A1%B0%EA%B1%B4%EB%AC%B8/</id>
+    <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if,-else,-else-if-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" />
     <author>
       <name>yeahyun</name>
     </author>
@@ -175,7 +256,7 @@ WHERE CustomerID = ...
     <link href="http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/" rel="alternate" type="text/html" title="JAVA study (7) - String 리터럴, String 객체" />
     <published>2024-03-12T00:00:00+09:00</published>
   
-    <updated>2024-03-12T00:00:00+09:00</updated>
+    <updated>2024-03-13T12:52:44+09:00</updated>
   
     <id>http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/</id>
     <content src="http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/" />
@@ -236,7 +317,7 @@ String str3 = new String(...
     <link href="http://localhost:4000/posts/JAVA-study-(6)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/" rel="alternate" type="text/html" title="JAVA study (6) - 리터럴 상수" />
     <published>2024-03-12T00:00:00+09:00</published>
   
-    <updated>2024-03-12T00:00:00+09:00</updated>
+    <updated>2024-03-13T12:52:44+09:00</updated>
   
     <id>http://localhost:4000/posts/JAVA-study-(6)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/</id>
     <content src="http://localhost:4000/posts/JAVA-study-(6)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/" />
@@ -287,68 +368,6 @@ double a = 3.14
 double b = 2.5e2
 
 // a,b 는 변...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>JAVA study (5) - 전위,후위 증감 연산자</title>
-    <link href="http://localhost:4000/posts/JAVA-study-(5)-%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84-%EC%A6%9D%EA%B0%90-%EC%97%B0%EC%82%B0%EC%9E%90/" rel="alternate" type="text/html" title="JAVA study (5) - 전위,후위 증감 연산자" />
-    <published>2024-03-12T00:00:00+09:00</published>
-  
-    <updated>2024-03-12T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/JAVA-study-(5)-%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84-%EC%A6%9D%EA%B0%90-%EC%97%B0%EC%82%B0%EC%9E%90/</id>
-    <content src="http://localhost:4000/posts/JAVA-study-(5)-%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84-%EC%A6%9D%EA%B0%90-%EC%97%B0%EC%82%B0%EC%9E%90/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Java" />
-    
-    <category term="Study" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      🔎 전위, 후위 증감 연산자란?
-
-01. 전위 증감 연산자
-
-++a , --a
-전위 증감 연산자는 연산자가 변수의 앞에 있고,
-변수의 값을 먼저 증가시키거나 감소시킨 후 값을 대입해준다.
-
-
-02. 후위 증감 연산자
-
-a++ , a--
-후위 증감 연산자는 연산자가 변수의 앞에 있고,
-변수의 값을 먼저 사용하고, 그 이후 값을 증가시키거나 감소시킨다.
-
-
-
-03. 코드 예시
-
-1) 전위 증감 연산자
-
-public static void main(String[] args) {  
-    int a = 1;  
-    int b = 0;  
-  
-    b = ++a; //a의 값을 먼저 증가시키고, 그 결과를 b에 대입  
-    System.out.println("a = " + a + ", b = " +...
     </summary>
   
 

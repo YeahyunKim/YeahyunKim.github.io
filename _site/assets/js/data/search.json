@@ -1,8 +1,25 @@
 [
   
   {
+    "title": "JAVA 문법 (4) - switch 조건문",
+    "url": "/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/",
+    "categories": "Java, Grammar",
+    "tags": "Java",
+    "date": "2024-03-13 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "🔎 조건문 이란  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 • if 문\t- else if\t- else • switch 문🔎 switch문01. switch 문switch (값) {\tcase 값1 : \t\t실행문1;\t\tbreak;\t\t\tcase 값2 : \t\t실행문2;\t\tbreak;\t\t\tcase 값3 : ...",
+    "content": "🔎 조건문 이란  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 • if 문\t- else if\t- else • switch 문🔎 switch문01. switch 문switch (값) {\tcase 값1 : \t\t실행문1;\t\tbreak;\t\t\tcase 값2 : \t\t실행문2;\t\tbreak;\t\t\tcase 값3 : \t\t실행문3;\t\tbreak;\tdefault :\t\t실행문4;}  조건식에 해당하는 특정 값으로 실행할 코드를 선택한다int grade = 2;int coupon;  int coupon;  switch (grade) {      case 1:          coupon = 1000;          break;      case 2:          coupon = 2000;  //실행        break;  //종료    case 3:          coupon = 3000;          break;        default:          coupon = 500;  }  System.out.println(\"발급받은 쿠폰: \" + coupon);// 발급받을 쿠폰: 2000  grade가 현재 2로 설정이 되어있고,switch문에서 case\b별 적혀있는 값이 변수 grade 값과 동일할 때, 해당 조건식이 실행되고, break;에서 switch문을 종료한다.02. Java 14 이상 switch 문int grade = 2;    int coupon = switch (grade) {      case 1 -&gt; 1000;      case 2 -&gt; 2000;      case 3 -&gt; 3000;      case 4 -&gt; 4000;      default -&gt; 500;  };  System.out.println(\"발급받은 쿠폰: \" + coupon);  Java버전이 14이상일 경우, 해당 문법을 사용할 수 있다.case별 break;를 적어주지 않아도 돼서 더욱 간편하게 사용할 수 있다.🔎 switch문 vs if문if문     • 단일 조건을 평가하고, 조건이 참(true)인 경우에만 해당 코드 블록을 실행     • 조건식의 결과에 따라 다양한 조건을 처리, 조건식에 비교 연산자를 사용하여 값의 크기나 동등성을 비교     • 논리적인 조건을 다루는 데 유연성이 있고, 여러 개의 조건을 체인으로 연결하거나 복잡한 조건식을 작성할 수 있음 또한 else문과 else if문을 사용하여 추가적인 조건을 처리할 수 있음     • 범위에 대한 체크, 다양한 조건에 따른 분기, 복잡한 조건 처리switch문     • switch문은 변수나 식의 값을 여러 가지 경우(case)와 비교하여 일치하는 경우 해당 코드 블록을 실행     • s값의 동등성을 비교하는 데 사용, 각 case는 일치하는 값을 가지고 있으며, 해당 case에 해당하는 코드 블록이 실행     • if문보다 특정 값에 대한 다중 분기를 처리하는 데 더 적합. 여러 개의 값을 비교해야 할 때 switch문을 사용하면 코드의 가독성을 높임     • 일치하는 값이 없을 경우에 대비해 default문을 사용하여 기본 동작 정의     • 일치하는 값에 따라 분기를 처리하는 간단한 상황에서 효과적으로 사용"
+  },
+  
+  {
     "title": "JAVA 문법 (3) - if, else, else if 조건문",
-    "url": "/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if-,-switch%EC%A1%B0%EA%B1%B4%EB%AC%B8/",
+    "url": "/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if,-else,-else-if-%EC%A1%B0%EA%B1%B4%EB%AC%B8/",
     "categories": "Java, Grammar",
     "tags": "Java",
     "date": "2024-03-13 00:00:00 +0900",
