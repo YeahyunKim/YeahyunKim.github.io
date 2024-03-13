@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-13T14:29:33+09:00</updated>
+  <updated>2024-03-13T17:29:40+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,75 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>JAVA 문법 (5) - for, while, do-while 반복문</title>
+    <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/" rel="alternate" type="text/html" title="JAVA 문법 (5) - for, while, do-while 반복문" />
+    <published>2024-03-13T00:00:00+09:00</published>
+  
+    <updated>2024-03-13T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/</id>
+    <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Grammar" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      🔎 반복문이란
+
+
+
+  코드를 반복적으로 실행하게 하는 제어문의 한 종류이다. 반복문의 종류는 크게 세가지가 있다.
+• for 문
+• while문 
+• do-while 문
+
+
+
+
+🔎 for 문
+
+int num = 0;
+
+for(int i = 0(초기화); i &amp;lt; 10(조건식); i++(증감식) {
+	num += i;
+}
+	
+System.out.println(num);
+
+
+
+  • for문은 초기화, 조건식, 증감식으로 구성된 제어 구조
+• 반복 횟수가 정해져 있는 경우에 사용
+• 주어진 횟수만큼 반복을 수행하며, 반복 횟수를 명시적으로 알 수 있기 때문에 사용하기 간편
+
+
+
+int sum = 0;  
+int endNum = 3;  
+  
+for (int i = 1; i &amp;lt;= endNum; i...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -306,68 +375,6 @@ String Literal 방식으로 문자열을 생성하면, JAVA Heap 메모리 영�
 02. new String()
 
 String str3 = new String(...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>JAVA study (6) - 리터럴 상수</title>
-    <link href="http://localhost:4000/posts/JAVA-study-(6)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/" rel="alternate" type="text/html" title="JAVA study (6) - 리터럴 상수" />
-    <published>2024-03-12T00:00:00+09:00</published>
-  
-    <updated>2024-03-13T12:52:44+09:00</updated>
-  
-    <id>http://localhost:4000/posts/JAVA-study-(6)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/</id>
-    <content src="http://localhost:4000/posts/JAVA-study-(6)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Java" />
-    
-    <category term="Study" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      🔎 리터럴
-
-01. 리터럴(Literal) 이란?
-
-
-  Literal은 데이터(값) 그 자체, 즉 변수에 넣은 변하지 않는 데이터 즉 문자 그대로의 값이라고 할 수 있다. 리터럴은 변수에 할당될 수 있는 구체적인 값을 직접 표현한 것이다.
-
-
-
-02. 리터럴(Literal)의 종류 및 선언방법
-
-1) 정수 리터럴 
-정수 값을 나타내며, 10진수, 16진수, 8진수, 2진수로 표현
-int a = 100
-int b = 0x6F
-int c = 0144
-int d = 0b1010110
-
-// a,b,c,d 는 변수, 값들은 리터럴
-
-
-2) 부동 소수점 리터럴 
- 실수 값을 나타내며, 소수점이 포함된 숫자나 지수를 사용해서 표현
-double a = 3.14
-double b = 2.5e2
-
-// a,b 는 변...
     </summary>
   
 

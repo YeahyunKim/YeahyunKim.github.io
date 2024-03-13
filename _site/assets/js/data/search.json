@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "JAVA 문법 (5) - for, while, do-while 반복문",
+    "url": "/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/",
+    "categories": "Java, Grammar",
+    "tags": "Java",
+    "date": "2024-03-13 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "🔎 반복문이란  코드를 반복적으로 실행하게 하는 제어문의 한 종류이다. 반복문의 종류는 크게 세가지가 있다.• for 문• while문 • do-while 문🔎 for 문int num = 0;for(int i = 0(초기화); i &lt; 10(조건식); i++(증감식) {\tnum += i;}\tSystem.out.println(num);  • for문...",
+    "content": "🔎 반복문이란  코드를 반복적으로 실행하게 하는 제어문의 한 종류이다. 반복문의 종류는 크게 세가지가 있다.• for 문• while문 • do-while 문🔎 for 문int num = 0;for(int i = 0(초기화); i &lt; 10(조건식); i++(증감식) {\tnum += i;}\tSystem.out.println(num);  • for문은 초기화, 조건식, 증감식으로 구성된 제어 구조• 반복 횟수가 정해져 있는 경우에 사용• 주어진 횟수만큼 반복을 수행하며, 반복 횟수를 명시적으로 알 수 있기 때문에 사용하기 간편int sum = 0;  int endNum = 3;    for (int i = 1; i &lt;= endNum; i++) {      sum = sum + i;      System.out.println(\"i= \" + i + \" sum=\" + sum);  }//i= 1 sum=1//i= 2 sum=3//i= 3 sum=6  \bendNum및 또는 반복계수 i 값에 따라 몇번의 반복문을 돌릴지 설정할 수 있다.🔎 while 문증감변수while(조건식) {\t실행문1;\t증감식1;}  • while문은 주어진 조건식이 참인 동안 반복을 수행하는 제어 구조• 반복 횟수가 정해져 있지 않고, 조건이 만족될 때까지 반복을 수행해야 할 때 사용• 조건식이 처음부터 거짓이면 반복을 수행하지 않을 수 있음int count = 0;while (count &lt; 3) {      count = ++count;      System.out.println(\"현재 숫자는: \" + count);  }//1//2//3  count의 값을 while문 안에서 증감시켜주어, 원하는 구간까지 반복되도록 설정할 수 있다.🔎 do-while문do {\t실행문1;} while (조건식);  • do-while문은 while문과 유사하지만, 코드 블록을 실행한 후에 조건식을 평가• 코드 블록을 최소한 한 번은 실행하고, 그 후에 조건식을 평가하여 반복 여부를 결정• 건식이 처음부터 거짓이더라도 코드 블록은 최소한 한 번은 실행되므로, 반복 실행을 보장할 때 사용int i = 1;    do {      System.out.println(\"현재 숫자는: \" + i);      i++;  } while (i &lt; 1);// 현재 숫자는: 1  위의 코드를 보면, 먼저 do 영역에서 코드가 반드시 실행된다. 따라서, i의 값이 1이므로, \"현재 숫자는: 1\" 이라는 출력값을 볼 수 있다.그 이후에 while영역에서 i &lt; 1 의 조건이 거짓이기 때문에 반복문을 종료한다."
+  },
+  
+  {
     "title": "JAVA 문법 (4) - switch 조건문",
     "url": "/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/",
     "categories": "Java, Grammar",
@@ -14,7 +31,7 @@
 
     
     "snippet": "🔎 조건문 이란  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 • if 문\t- else if\t- else • switch 문🔎 switch문01. switch 문switch (값) {\tcase 값1 : \t\t실행문1;\t\tbreak;\t\t\tcase 값2 : \t\t실행문2;\t\tbreak;\t\t\tcase 값3 : ...",
-    "content": "🔎 조건문 이란  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 • if 문\t- else if\t- else • switch 문🔎 switch문01. switch 문switch (값) {\tcase 값1 : \t\t실행문1;\t\tbreak;\t\t\tcase 값2 : \t\t실행문2;\t\tbreak;\t\t\tcase 값3 : \t\t실행문3;\t\tbreak;\tdefault :\t\t실행문4;}  조건식에 해당하는 특정 값으로 실행할 코드를 선택한다int grade = 2;int coupon;  int coupon;  switch (grade) {      case 1:          coupon = 1000;          break;      case 2:          coupon = 2000;  //실행        break;  //종료    case 3:          coupon = 3000;          break;        default:          coupon = 500;  }  System.out.println(\"발급받은 쿠폰: \" + coupon);// 발급받을 쿠폰: 2000  grade가 현재 2로 설정이 되어있고,switch문에서 case\b별 적혀있는 값이 변수 grade 값과 동일할 때, 해당 조건식이 실행되고, break;에서 switch문을 종료한다.02. Java 14 이상 switch 문int grade = 2;    int coupon = switch (grade) {      case 1 -&gt; 1000;      case 2 -&gt; 2000;      case 3 -&gt; 3000;      case 4 -&gt; 4000;      default -&gt; 500;  };  System.out.println(\"발급받은 쿠폰: \" + coupon);  Java버전이 14이상일 경우, 해당 문법을 사용할 수 있다.case별 break;를 적어주지 않아도 돼서 더욱 간편하게 사용할 수 있다.🔎 switch문 vs if문if문     • 단일 조건을 평가하고, 조건이 참(true)인 경우에만 해당 코드 블록을 실행     • 조건식의 결과에 따라 다양한 조건을 처리, 조건식에 비교 연산자를 사용하여 값의 크기나 동등성을 비교     • 논리적인 조건을 다루는 데 유연성이 있고, 여러 개의 조건을 체인으로 연결하거나 복잡한 조건식을 작성할 수 있음 또한 else문과 else if문을 사용하여 추가적인 조건을 처리할 수 있음     • 범위에 대한 체크, 다양한 조건에 따른 분기, 복잡한 조건 처리switch문     • switch문은 변수나 식의 값을 여러 가지 경우(case)와 비교하여 일치하는 경우 해당 코드 블록을 실행     • s값의 동등성을 비교하는 데 사용, 각 case는 일치하는 값을 가지고 있으며, 해당 case에 해당하는 코드 블록이 실행     • if문보다 특정 값에 대한 다중 분기를 처리하는 데 더 적합. 여러 개의 값을 비교해야 할 때 switch문을 사용하면 코드의 가독성을 높임     • 일치하는 값이 없을 경우에 대비해 default문을 사용하여 기본 동작 정의     • 일치하는 값에 따라 분기를 처리하는 간단한 상황에서 효과적으로 사용"
+    "content": "🔎 조건문 이란  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 • if 문\t- else if\t- else • switch 문🔎 switch문01. switch 문switch (값) {\tcase 값1 : \t\t실행문1;\t\tbreak;\t\t\tcase 값2 : \t\t실행문2;\t\tbreak;\t\t\tcase 값3 : \t\t실행문3;\t\tbreak;\tdefault :\t\t실행문4;}  조건식에 해당하는 특정 값으로 실행할 코드를 선택한다int grade = 2;int coupon;  int coupon;  switch (grade) {      case 1:          coupon = 1000;          break;      case 2:          coupon = 2000;  //실행        break;  //종료    case 3:          coupon = 3000;          break;        default:          coupon = 500;  }  System.out.println(\"발급받은 쿠폰: \" + coupon);// 발급받을 쿠폰: 2000  grade가 현재 2로 설정이 되어있고,switch문에서 case\b별 적혀있는 값이 변수 grade 값과 동일할 때, 해당 조건식이 실행되고, break;에서 switch문을 종료한다.02. Java 14 이상 switch 문int grade = 2;    int coupon = switch (grade) {      case 1 -&gt; 1000;    case 2 -&gt; 2000;    case 3 -&gt; 3000;    case 4 -&gt; 4000;    default -&gt; 500;};  System.out.println(\"발급받은 쿠폰: \" + coupon);  Java버전이 14이상일 경우, 해당 문법을 사용할 수 있다.case별 break;를 적어주지 않아도 돼서 더욱 간편하게 사용할 수 있다.🔎 switch문 vs if문if문     • 단일 조건을 평가하고, 조건이 참(true)인 경우에만 해당 코드 블록을 실행     • 조건식의 결과에 따라 다양한 조건을 처리, 조건식에 비교 연산자를 사용하여 값의 크기나 동등성을 비교     • 논리적인 조건을 다루는 데 유연성이 있고, 여러 개의 조건을 체인으로 연결하거나 복잡한 조건식을 작성할 수 있음 또한 else문과 else if문을 사용하여 추가적인 조건을 처리할 수 있음     • 범위에 대한 체크, 다양한 조건에 따른 분기, 복잡한 조건 처리switch문     • switch문은 변수나 식의 값을 여러 가지 경우(case)와 비교하여 일치하는 경우 해당 코드 블록을 실행     • s값의 동등성을 비교하는 데 사용, 각 case는 일치하는 값을 가지고 있으며, 해당 case에 해당하는 코드 블록이 실행     • if문보다 특정 값에 대한 다중 분기를 처리하는 데 더 적합. 여러 개의 값을 비교해야 할 때 switch문을 사용하면 코드의 가독성을 높임     • 일치하는 값이 없을 경우에 대비해 default문을 사용하여 기본 동작 정의     • 일치하는 값에 따라 분기를 처리하는 간단한 상황에서 효과적으로 사용"
   },
   
   {
@@ -277,7 +294,7 @@
     "url": "/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-SELECT,-FROM-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/",
     "categories": "mySQL, Grammarㅤ",
     "tags": "mySQL",
-    "date": "2024-03-06 00:00:00 +0900",
+    "date": "2024-03-08 00:00:00 +0900",
     
 
 
@@ -338,23 +355,6 @@
     
     "snippet": "thymeleaf - HTML 동적 렌더링thymeleaf(타임리프)타임리프는 백엔드 서버에서 Html을 동적으로 렌더링  Java Template Engine 이다.해당 플러그인의 주요 목적은 유지 관리가 수월한 템플릿을 작성하도록 지원해주고, 타임리프의 핵심 기능인 Natural Template 을 통해 제공해주는데, 서버 사이드 렌더링을 하는데 ...",
     "content": "thymeleaf - HTML 동적 렌더링thymeleaf(타임리프)타임리프는 백엔드 서버에서 Html을 동적으로 렌더링  Java Template Engine 이다.해당 플러그인의 주요 목적은 유지 관리가 수월한 템플릿을 작성하도록 지원해주고, 타임리프의 핵심 기능인 Natural Template 을 통해 제공해주는데, 서버 사이드 렌더링을 하는데 필요한 데이터 값이 없더라도, 프로토 타입으로서의 역할을 해줄 수 있는 걸 말한다.이 특징이 기존 Java Template Engine 중의 하나인 Jsp 와 가장 다른 점인데 Jsp 는 화면을 보기 위해선 서버의 도움이 필요하다. 그치만 Thymeleaf 는 서버의 도움없이 프로토 타입 형태로도 뷰를 볼 수 있다.그렇기 때문에 Thymeleaf 를 사용한다면 디자인팀과 개발팀 사이에 생길 수 있는 커뮤니케이션 비용을 줄여줄 수 있다.01. thymeleaf 가 제공해주는 Template 6가지  HTML  CSS  Javascript  TEXT  Raw  XML02. Thymeleaf 라이브러리 추가bulid.gradle 파일에서 의존성 라이브러리를 추가해준다.dependencies {      implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'    implementation 'org.springframework.boot:spring-boot-starter-web'      testImplementation 'org.springframework.boot:spring-boot-starter-test'  }03. Thymeleaf 기본 경로타임리프는 기본적으로 templates 폴더(root) 안에 있는 파일들을 기준으로 타임리프의 기능을 실행시켜주기 때문에,  templates 폴더가 없을경우 생성해 주어야하고, 테스트를 위해 폴더 안에 hello.html 파일도 생성해 주었다.프로젝트 디렉터리(root) &gt; src &gt; main &gt; resources &gt; templates"
-  },
-  
-  {
-    "title": "JAVA study (3) - 정적 컨텐츠",
-    "url": "/posts/JAVA-study-(3)-%EC%A0%95%EC%A0%81-%EC%BB%A8%ED%85%90%EC%B8%A0/",
-    "categories": "Java, Study",
-    "tags": "Java",
-    "date": "2024-02-27 00:00:00 +0900",
-    
-
-
-
-
-
-    
-    "snippet": "Static Content (정적 컨텐츠)01. 정적 컨텐츠정적 컨텐츠는 서버에서 데이터를 클라이언트로 보내주는게 아닌, 파일을 그대로 웹 브라우저에게 보내주는것을 정적 컨텐츠라고 한다.요즘 많이 사용하고 있는 MVC(Model / View / Controller)는 동적 컨텐츠 인데, 둘의 차의점은MVC경우 jsp, php 등 서버에서 프로그래밍을 ...",
-    "content": "Static Content (정적 컨텐츠)01. 정적 컨텐츠정적 컨텐츠는 서버에서 데이터를 클라이언트로 보내주는게 아닌, 파일을 그대로 웹 브라우저에게 보내주는것을 정적 컨텐츠라고 한다.요즘 많이 사용하고 있는 MVC(Model / View / Controller)는 동적 컨텐츠 인데, 둘의 차의점은MVC경우 jsp, php 등 서버에서 프로그래밍을 해서 클라이언트에게 동적으로 전달한다.하지만 정적 컨텐츠는 웹 브라우저에게 그대로 전달하는 방식이다.spring boot에서는 정적 컨텐츠 기능을 기본적으로 제공을 하고 있다.02. 코드로 작성해보기먼저, resources -&gt; static 폴더 안에 hello-static.html 이라는 파일을 생성하였다.해당 파일을 로컬서버에서 정상적으로 노출이 되는지 확인을 위해, 아래의 주소를 url 창에 입력하였다.  localhost:8080/hello-static.html위의 이미지처럼 html 파일이 웹 브라우저에 노출이 되는것을 알 수 있었다. 지금까지의 과정이 실행되는 순서를 정리해 보자면,1) 웹 브라우저에서 요청2) 톰캣 서버에서 스프링 컨테이너에게 요청을 전달3) controller에 hello-static 이 있는지 확인4) controller에 hello-static이 없을을 확인하면 spring-boot가 resources 폴더 안에 hello-static 이 있는지 찾아서 반환03. 마무리정적 컨텐츠를 사용하면 빠르게 나의 코드를 웹 브라우저 상에서 확인할 수 있지만, 데이터를 불러오는데에는 어느정도 한계가 있을 것 같다. 간단한 프론트 코드 작성에는 유용할 것으로 보인다."
   },
   
   {
@@ -508,6 +508,23 @@
     
     "snippet": "01 문제 :\bn 번째 원소까지문제 설명  정수 리스트 num_list와 정수 n이 주어질 때, num_list의 첫 번째 원소부터 n 번째 원소까지의 모든 원소를 담은 리스트를 return하도록 solution 함수를 완성해주세요.제한사항  • 2 ≤ num_list의 길이 ≤ 30• 1 ≤ num_list의 원소 ≤ 9• 1 ≤ n ≤ num_li...",
     "content": "01 문제 :\bn 번째 원소까지문제 설명  정수 리스트 num_list와 정수 n이 주어질 때, num_list의 첫 번째 원소부터 n 번째 원소까지의 모든 원소를 담은 리스트를 return하도록 solution 함수를 완성해주세요.제한사항  • 2 ≤ num_list의 길이 ≤ 30• 1 ≤ num_list의 원소 ≤ 9• 1 ≤ n ≤ num_list의 길이 ___입출력 예            num_list      n      result                  [2, 1, 6]      1      [2]              [5, 2, 1, 7, 5]      3      [5, 2, 1]      입출력 예 설명입출력 예 #1  • [2, 1, 6]의 첫 번째 원소부터 첫 번째 원소까지의 모든 원소는 [2]입니다.입출력 예 #2  • [5, 2, 1, 7, 5]의 첫 번째 원소부터 세 번째 원소까지의 모든 원소는 [5, 2, 1]입니다.제시 코드import Foundationfunc solution(_ num_list:[Int], _ n:Int) -&gt; [Int] {    \treturn [0]    }02 풀이solution 1 : range 활용하기num_list의 첫 번째 원소부터 n 번째 원소까지를 구하기 위해선 범위를 0...(n-1) 로 잡아주면 된다.n - 1 에서 1을 빼는 이유는 배열의 인덱스값은 0부터 시작하기 때문..!Array(num_list[0...(n-1)])💡Answer 01import Foundationfunc solution(_ num_list:[Int], _ n:Int) -&gt; [Int] {    return Array(num_list[0...(n-1)])    }해당문제 풀러가보기"
+  },
+  
+  {
+    "title": "JAVA study (3) - 정적 컨텐츠",
+    "url": "/posts/JAVA-study-(3)-%EC%A0%95%EC%A0%81-%EC%BB%A8%ED%85%90%EC%B8%A0/",
+    "categories": "Java, Study",
+    "tags": "Java",
+    "date": "2024-02-18 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Static Content (정적 컨텐츠)01. 정적 컨텐츠정적 컨텐츠는 서버에서 데이터를 클라이언트로 보내주는게 아닌, 파일을 그대로 웹 브라우저에게 보내주는것을 정적 컨텐츠라고 한다.요즘 많이 사용하고 있는 MVC(Model / View / Controller)는 동적 컨텐츠 인데, 둘의 차의점은MVC경우 jsp, php 등 서버에서 프로그래밍을 ...",
+    "content": "Static Content (정적 컨텐츠)01. 정적 컨텐츠정적 컨텐츠는 서버에서 데이터를 클라이언트로 보내주는게 아닌, 파일을 그대로 웹 브라우저에게 보내주는것을 정적 컨텐츠라고 한다.요즘 많이 사용하고 있는 MVC(Model / View / Controller)는 동적 컨텐츠 인데, 둘의 차의점은MVC경우 jsp, php 등 서버에서 프로그래밍을 해서 클라이언트에게 동적으로 전달한다.하지만 정적 컨텐츠는 웹 브라우저에게 그대로 전달하는 방식이다.spring boot에서는 정적 컨텐츠 기능을 기본적으로 제공을 하고 있다.02. 코드로 작성해보기먼저, resources -&gt; static 폴더 안에 hello-static.html 이라는 파일을 생성하였다.해당 파일을 로컬서버에서 정상적으로 노출이 되는지 확인을 위해, 아래의 주소를 url 창에 입력하였다.  localhost:8080/hello-static.html위의 이미지처럼 html 파일이 웹 브라우저에 노출이 되는것을 알 수 있었다. 지금까지의 과정이 실행되는 순서를 정리해 보자면,1) 웹 브라우저에서 요청2) 톰캣 서버에서 스프링 컨테이너에게 요청을 전달3) controller에 hello-static 이 있는지 확인4) controller에 hello-static이 없을을 확인하면 spring-boot가 resources 폴더 안에 hello-static 이 있는지 찾아서 반환03. 마무리정적 컨텐츠를 사용하면 빠르게 나의 코드를 웹 브라우저 상에서 확인할 수 있지만, 데이터를 불러오는데에는 어느정도 한계가 있을 것 같다. 간단한 프론트 코드 작성에는 유용할 것으로 보인다."
   },
   
   {

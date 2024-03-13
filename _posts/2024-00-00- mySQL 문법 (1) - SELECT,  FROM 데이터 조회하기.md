@@ -1,7 +1,7 @@
 ---
 title: mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기
 author: yeahyun
-date: 2024-03-06
+date: 2024-03-08
 categories:
   - mySQL
   - Grammarㅤ

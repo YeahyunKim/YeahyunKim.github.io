@@ -67,5 +67,3 @@ String str3 = new String("Hello"); //객체
 >**String Constant Pool 란?**   
 >JVM은 String Constant Pool을 사용하여 문자열 리터럴을 관리한다. 그 이유는 동일한 문자열 리터럴을 새로운 메모리에 생성하지 않고, 하나의 메모리에 값을 생성하고, 그 주소를 참조하게 만들어 메모리를 절약할 수 있고, 컴파일러가 코드를 최적화하는데 큰 도움을 준다.
 {: .prompt-info}
-
-![이미지](https://ifh.cc/g/NhyPJf.png)
