@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-12T17:16:37+09:00</updated>
+  <updated>2024-03-13T12:50:41+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,157 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>JAVA 문법 (3) - if, else, else if 조건문</title>
+    <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if-,-switch%EC%A1%B0%EA%B1%B4%EB%AC%B8/" rel="alternate" type="text/html" title="JAVA 문법 (3) - if, else, else if 조건문" />
+    <published>2024-03-13T00:00:00+09:00</published>
+  
+    <updated>2024-03-13T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if-,-switch%EC%A1%B0%EA%B1%B4%EB%AC%B8/</id>
+    <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if-,-switch%EC%A1%B0%EA%B1%B4%EB%AC%B8/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Grammar" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      🔎 조건문 이란
+
+
+
+  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 
+• if 문
+	- else if
+	- else 
+• switch 문
+
+
+
+
+🔎 if / else / else if
+
+01. if문
+
+if (조건식) {
+	실행문1;
+	실행문2;
+}
+
+
+
+  조건식이 true 일경우 중괄호 안에있는 실행문을 실행시킨다.
+
+
+
+int age = 20;
+
+if (age &amp;gt;= 20) { //true
+	System.out.println("성인입니다") //실행
+}
+if (age =&amp;lt; 20) { //false
+	System.out.println("미성년자입니다") //실행안됨
+}
+
+// 성인입니다
+
+
+
+  age가 20살 이상일 경우, "성인입니다"...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>mySQL 문법 (10) - DELETE 데이터 삭제하기</title>
+    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="mySQL 문법 (10) - DELETE 데이터 삭제하기" />
+    <published>2024-03-12T00:00:00+09:00</published>
+  
+    <updated>2024-03-12T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="mySQL" />
+    
+    <category term="Grammarㅤ" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      💡DELETE
+
+DELETE
+
+
+  The DELETE statement is used to delete existing records in a table.
+
+
+UPDATE 는 테이블의 기존 데이터 값을 삭제하는데 사용한다.
+
+02. 주의사항
+
+
+  반드시 WHERE절을 사용하여 특정 데이터만 삭제하는데 사용하자. 그렇지 않으면 모든 데이터가 삭제될수도…
+
+
+
+
+💡문법 Syntax
+
+01. 특정한 컬럼의 데이터값을 삭제할 때
+
+DELETE FROM 테이블명 WHERE 컬럼1 = '삭제할 값';
+
+
+
+02. 모든 데이터를 삭제할 때
+
+DELETE FROM 테이블명
+
+
+
+
+💡사용예시
+
+01. 특정한 컬럼의 데이터값을 삭제할 때
+
+DELETE FROM Customers
+WHERE CustomerID = ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -198,127 +349,6 @@ public static void main(String[] args) {
   
     b = ++a; //a의 값을 먼저 증가시키고, 그 결과를 b에 대입  
     System.out.println("a = " + a + ", b = " +...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>JAVA 문법 (2) - 변수 명명 규칙</title>
-    <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(2)-%EB%B3%80%EC%88%98-%EB%AA%85%EB%AA%85-%EA%B7%9C%EC%B9%99/" rel="alternate" type="text/html" title="JAVA 문법 (2) - 변수 명명 규칙" />
-    <published>2024-03-11T00:00:00+09:00</published>
-  
-    <updated>2024-03-12T14:28:58+09:00</updated>
-  
-    <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(2)-%EB%B3%80%EC%88%98-%EB%AA%85%EB%AA%85-%EA%B7%9C%EC%B9%99/</id>
-    <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(2)-%EB%B3%80%EC%88%98-%EB%AA%85%EB%AA%85-%EA%B7%9C%EC%B9%99/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Java" />
-    
-    <category term="Grammar" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      🔎 변수(Variable)
-
-01. 변수 명명 규칙
-
-
-  자바에서 변수의 이름을 짓는데는 규칙과 관례가 있다.
-	- 규칙은 필수
-	- 관례는 선택
-관례는 필수는 아니지만, 전세계 개발자가 해당 관례를 따르기 때문에 사실상 규칙이라고 생각해도 된다.
-
-
-
-02. 규칙
-
-
-  • 변수 이름은 숫자로 시작할 수 없다 (예: 1num, 1first)
-• 변수 이름에는 공백이 들어갈 수 없다.
-• 자바의 예약어를 변수 이름으로 사용할 수 없다.(예: int, class, public, static 등등)
-• 변수 이름에는 영문자, 숫자, 달러 기호 또는 언더바(_) 만 사용할 수 있다.
-
-
-
-03. 관례
-
-
-  • 소문자로 시작하는 Camel Case ( 낙타 표기법 ) (예 : myName, randomN...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>JAVA 문법 (1) - 변수 Variable</title>
-    <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(1)-%EB%B3%80%EC%88%98-Variable/" rel="alternate" type="text/html" title="JAVA 문법 (1) - 변수 Variable" />
-    <published>2024-03-11T00:00:00+09:00</published>
-  
-    <updated>2024-03-11T17:50:08+09:00</updated>
-  
-    <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(1)-%EB%B3%80%EC%88%98-Variable/</id>
-    <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(1)-%EB%B3%80%EC%88%98-Variable/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Java" />
-    
-    <category term="Grammar" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      🔎 변수(Variable)
-
-01. 변수란?
-
-
-  변수(Variable)는 데이터를 저장하는 공간이다.
-변수는 특정 데이터 타입을 가지며, 이 데이터 타입에 따라 저장할 수 있는 데이터의 종류와 크기가 결정된다. 변수를 사용하면 데이터를 보다 쉽게 관리할 수 있고, 코드 내에서 값을 재사용하거나 변경할 수 있다.
-
-
-
-02. 왜 사용해야하나?
-public class Var1 {  
-    public static void main(String[] args) {  
-        System.out.println(10);  
-        System.out.println(10);  
-        System.out.println(10);  
-    }  
-}
-
-//10
-//10
-//10
-
-
-위의 코...
     </summary>
   
 

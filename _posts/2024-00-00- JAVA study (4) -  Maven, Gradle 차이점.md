@@ -8,7 +8,7 @@ categories:
 tags:
   - Java
   - JavaSpring
-image: https://ifh.cc/g/wvbwro.png
+image: https://ifh.cc/g/NhyPJf.png
 ---
 ## 메이븐(Maven) 이란?
 ---

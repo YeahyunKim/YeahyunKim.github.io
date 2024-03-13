@@ -1,7 +1,7 @@
 ---
 title: mySQL 문법 (10) - DELETE 데이터 삭제하기
 author: yeahyun
-date: 2024-03-08
+date: 2024-03-12
 categories:
   - mySQL
   - Grammarㅤ
