@@ -42,7 +42,7 @@ FROM food_orders
 GROUP BY restaurant_name;
 ```
 
->• 조건 1 : 없음
+>• 조건 1 : 없음<br/>
 >• 해석 : 음식 주문 테이블에서 레스토랑 별로 몇개의 주문이 있었는지 조회해줘
 {: .command-text}
 
@@ -77,7 +77,7 @@ WHERE cuisine_type = 'Korean'
 GROUP BY 1;
 ```
 
->• 조건 1 : cuisine_type = 'Korean' 
+>• 조건 1 : cuisine_type = 'Korean' <br/>
 >• 해석 : 음식 주문 테이블에서 한식을 판매중인 레스토랑 리스트를 보여줘.
 {: .command-text}
 
@@ -98,7 +98,7 @@ group by 1
 HAVING AVG(price) > 15000
 ```
 
->• 조건 1 : AVG(price) > 15000
+>• 조건 1 : AVG(price) > 15000<br/>
 >• 해석 : 음식 주문 테이블에서 레스토랑별 판매한 음식의 평균 값이 15000원 이상인 데이터를 보여줘
 {: .command-text}
 
@@ -122,8 +122,8 @@ group by 1
 HAVING AVG(price) > 12000
 ```
 
->• 조건 1 : AVG(price) > 15000 
->• 조건 2 : where cuisine_type = 'korean'
+>• 조건 1 : AVG(price) > 15000 <br/>
+>• 조건 2 : where cuisine_type = 'korean'<br/>
 >• 해석 : 음식 주문 테이블에서 한식을 판매하는 레스토랑별 판매한 음식의 평균 값이 12000원 이상인 데이터를 보여줘
 {: .command-text}
 
@@ -134,10 +134,11 @@ HAVING AVG(price) > 12000
 <br>
 ## 💡WHERE과 HAVING 헷갈리지 말자
 ---
->두개가 모두 조건을 걸어주어서 헷갈려 하는 경우가 많다. 하지만 위에서 말했듯이,
->**WHERE은 테이블 생성 전에 걸어주는 조건,**
->**HAVING은 테이블 생성 후에 걸어주는 조건**
+>두개가 모두 조건을 걸어주어서 헷갈려 하는 경우가 많다. 하지만 위에서 말했듯이,<br/>
+>**WHERE은 테이블 생성 전에 걸어주는 조건,**<br/>
+>**HAVING은 테이블 생성 후에 걸어주는 조건**<br/>
 >으로 생각하면 쉽다.
+{: .command-text}
 
 ```sql
 SELECT restaurant_name, AVG(price) 
@@ -145,7 +146,7 @@ FROM food_orders
 group by 1;
 ```
 
->위의 코드에 WHERE과 HAVING을 예시를 들어보겠다.
+>위의 코드에 WHERE과 HAVING을 예시를 들어보겠다.<br/>
 >해석 : 음식 주문 테이블에서 레스토랑 이름과, 평균 판매 금액을 레스토랑별로 보여줘
 {: .command-text}
 
@@ -163,12 +164,12 @@ GROUP BY 1;
 >**[HY000][1111] Invalid use of group function**
 {: .prompt-danger}
 
->**결과는 Error**
->그 이유는, Query의 실행 순서에 따라 작업의 우선순위에 차이가 있기 때문이다.   
->  1) food_orders 테이블에서 `FROM food_orders`
->  2) AVG(price) > 12000 인 데이터들 중 `WHERE AVG(price) > 12000`
->  3) restaurant_name컬럼 기준으로 그룹한 `GROUP BY 1;`
->  4) restaurant_name, AVG(price)를 가져와줘 `SELECT restaurant_name, AVG(price)`    
+>**결과는 Error**<br/>
+>그 이유는, Query의 실행 순서에 따라 작업의 우선순위에 차이가 있기 때문이다.   <br/>
+>  1) food_orders 테이블에서 `FROM food_orders`<br/>
+>  2) AVG(price) > 12000 인 데이터들 중 `WHERE AVG(price) > 12000`<br/>
+>  3) restaurant_name컬럼 기준으로 그룹한 `GROUP BY 1;`<br/>
+>  4) restaurant_name, AVG(price)를 가져와줘 `SELECT restaurant_name, AVG(price)`<br/>  
 >여기서 보면, `3)`에 테이블을 한번 GROUP BY를 통해 만들어 내는데, 테이블이 만들어지기도 전에 AVG(price) 라는 연산을 진행하여 생기는 오류이다.
 {: .command-text}
 
@@ -184,12 +185,12 @@ HAVING AVG(price) > 12000
 ```
 
 
->**결과는 정상실행**
->Query의 실행 순서는 아래와 같다.
->  1) food_orders 테이블에서 `FROM food_orders`
->  2) restaurant_name컬럼 기준으로 그룹하는데  `GROUP BY 1;`
->  3) AVG(price) > 12000 인 데이터들을만 `HAVING AVG(price) > 12000`
->  4) restaurant_name, AVG(price)를 가져와줘 `SELECT restaurant_name, AVG(price)`   
+>**결과는 정상실행**<br/>
+>Query의 실행 순서는 아래와 같다.<br/>
+>  1) food_orders 테이블에서 `FROM food_orders`<br/>
+>  2) restaurant_name컬럼 기준으로 그룹하는데  `GROUP BY 1;<br/>`
+>  3) AVG(price) > 12000 인 데이터들을만 `HAVING AVG(price) > 12000<br/>`
+>  4) restaurant_name, AVG(price)를 가져와줘 `SELECT restaurant_name, AVG(price)`<br/>   
 >여기서 보면, `2)`에 테이블을 한번 GROUP BY를 통해 만들어 내고 난 후에 해당 테이블에서 AVG(price) > 12000 이라는 조건을 걸기 때문에 에러가 나지 않는다.
 {: .command-text}
 

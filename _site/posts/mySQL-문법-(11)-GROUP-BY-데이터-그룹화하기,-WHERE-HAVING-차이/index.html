@@ -54,7 +54,7 @@
 <meta property="twitter:image" content="https://ifh.cc/g/DMV0va.png" />
 <meta property="twitter:title" content="mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-12T00:00:00+09:00","datePublished":"2024-03-12T00:00:00+09:00","description":"💡GROUP BY 01. GROUP BY","headline":"mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이","image":"https://ifh.cc/g/DMV0va.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/"},"url":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-14T15:21:41+09:00","datePublished":"2024-03-12T00:00:00+09:00","description":"💡GROUP BY 01. GROUP BY","headline":"mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이","image":"https://ifh.cc/g/DMV0va.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/"},"url":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1258,6 +1258,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710397301"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Mar 14, 2024
+</time>
+
+        </span>
+      
 
       
         
@@ -1360,7 +1383,7 @@ The <code class="language-plaintext highlighter-rouge">GROUP BY</code> stateme
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : 없음
+  <p>• 조건 1 : 없음<br />
 • 해석 : 음식 주문 테이블에서 레스토랑 별로 몇개의 주문이 있었는지 조회해줘</p>
 </blockquote>
 
@@ -1407,7 +1430,7 @@ The <code class="language-plaintext highlighter-rouge">GROUP BY</code> stateme
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : cuisine_type = ‘Korean’ 
+  <p>• 조건 1 : cuisine_type = ‘Korean’ <br />
 • 해석 : 음식 주문 테이블에서 한식을 판매중인 레스토랑 리스트를 보여줘.</p>
 </blockquote>
 
@@ -1436,7 +1459,7 @@ The <code class="language-plaintext highlighter-rouge">GROUP BY</code> stateme
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : AVG(price) &gt; 15000
+  <p>• 조건 1 : AVG(price) &gt; 15000<br />
 • 해석 : 음식 주문 테이블에서 레스토랑별 판매한 음식의 평균 값이 15000원 이상인 데이터를 보여줘</p>
 </blockquote>
 
@@ -1468,8 +1491,8 @@ The <code class="language-plaintext highlighter-rouge">GROUP BY</code> stateme
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : AVG(price) &gt; 15000 
-• 조건 2 : where cuisine_type = ‘korean’
+  <p>• 조건 1 : AVG(price) &gt; 15000 <br />
+• 조건 2 : where cuisine_type = ‘korean’<br />
 • 해석 : 음식 주문 테이블에서 한식을 판매하는 레스토랑별 판매한 음식의 평균 값이 12000원 이상인 데이터를 보여줘</p>
 </blockquote>
 
@@ -1479,10 +1502,10 @@ The <code class="language-plaintext highlighter-rouge">GROUP BY</code> stateme
 <br /></p>
 <h2 id="where과-having-헷갈리지-말자"><span class="me-2">💡WHERE과 HAVING 헷갈리지 말자</span><a href="#where과-having-헷갈리지-말자" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<blockquote>
-  <p>두개가 모두 조건을 걸어주어서 헷갈려 하는 경우가 많다. 하지만 위에서 말했듯이,
-<strong>WHERE은 테이블 생성 전에 걸어주는 조건,</strong>
-<strong>HAVING은 테이블 생성 후에 걸어주는 조건</strong>
+<blockquote class="command-text">
+  <p>두개가 모두 조건을 걸어주어서 헷갈려 하는 경우가 많다. 하지만 위에서 말했듯이,<br />
+<strong>WHERE은 테이블 생성 전에 걸어주는 조건,</strong><br />
+<strong>HAVING은 테이블 생성 후에 걸어주는 조건</strong><br />
 으로 생각하면 쉽다.</p>
 </blockquote>
 
@@ -1497,7 +1520,7 @@ The <code class="language-plaintext highlighter-rouge">GROUP BY</code> stateme
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>위의 코드에 WHERE과 HAVING을 예시를 들어보겠다.
+  <p>위의 코드에 WHERE과 HAVING을 예시를 들어보겠다.<br />
 해석 : 음식 주문 테이블에서 레스토랑 이름과, 평균 판매 금액을 레스토랑별로 보여줘</p>
 </blockquote>
 
@@ -1522,12 +1545,12 @@ The <code class="language-plaintext highlighter-rouge">GROUP BY</code> stateme
 </blockquote>
 
 <blockquote class="command-text">
-  <p><strong>결과는 Error</strong>
-그 이유는, Query의 실행 순서에 따라 작업의 우선순위에 차이가 있기 때문이다. <br />
- 1) food_orders 테이블에서 <code class="language-plaintext highlighter-rouge">FROM food_orders</code>
- 2) AVG(price) &gt; 12000 인 데이터들 중 <code class="language-plaintext highlighter-rouge">WHERE AVG(price) &gt; 12000</code>
- 3) restaurant_name컬럼 기준으로 그룹한 <code class="language-plaintext highlighter-rouge">GROUP BY 1;</code>
- 4) restaurant_name, AVG(price)를 가져와줘 <code class="language-plaintext highlighter-rouge">SELECT restaurant_name, AVG(price)</code>  <br />
+  <p><strong>결과는 Error</strong><br />
+그 이유는, Query의 실행 순서에 따라 작업의 우선순위에 차이가 있기 때문이다.   <br />
+ 1) food_orders 테이블에서 <code class="language-plaintext highlighter-rouge">FROM food_orders</code><br />
+ 2) AVG(price) &gt; 12000 인 데이터들 중 <code class="language-plaintext highlighter-rouge">WHERE AVG(price) &gt; 12000</code><br />
+ 3) restaurant_name컬럼 기준으로 그룹한 <code class="language-plaintext highlighter-rouge">GROUP BY 1;</code><br />
+ 4) restaurant_name, AVG(price)를 가져와줘 <code class="language-plaintext highlighter-rouge">SELECT restaurant_name, AVG(price)</code><br /><br />
 여기서 보면, <code class="language-plaintext highlighter-rouge">3)</code>에 테이블을 한번 GROUP BY를 통해 만들어 내는데, 테이블이 만들어지기도 전에 AVG(price) 라는 연산을 진행하여 생기는 오류이다.</p>
 </blockquote>
 
@@ -1548,12 +1571,12 @@ The <code class="language-plaintext highlighter-rouge">GROUP BY</code> stateme
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p><strong>결과는 정상실행</strong>
-Query의 실행 순서는 아래와 같다.
- 1) food_orders 테이블에서 <code class="language-plaintext highlighter-rouge">FROM food_orders</code>
- 2) restaurant_name컬럼 기준으로 그룹하는데  <code class="language-plaintext highlighter-rouge">GROUP BY 1;</code>
- 3) AVG(price) &gt; 12000 인 데이터들을만 <code class="language-plaintext highlighter-rouge">HAVING AVG(price) &gt; 12000</code>
- 4) restaurant_name, AVG(price)를 가져와줘 <code class="language-plaintext highlighter-rouge">SELECT restaurant_name, AVG(price)</code> <br />
+  <p><strong>결과는 정상실행</strong><br />
+Query의 실행 순서는 아래와 같다.<br />
+ 1) food_orders 테이블에서 <code class="language-plaintext highlighter-rouge">FROM food_orders</code><br />
+ 2) restaurant_name컬럼 기준으로 그룹하는데  <code class="language-plaintext highlighter-rouge">GROUP BY 1;&lt;br/&gt;</code>
+ 3) AVG(price) &gt; 12000 인 데이터들을만 <code class="language-plaintext highlighter-rouge">HAVING AVG(price) &gt; 12000&lt;br/&gt;</code>
+ 4) restaurant_name, AVG(price)를 가져와줘 <code class="language-plaintext highlighter-rouge">SELECT restaurant_name, AVG(price)</code><br /> <br />
 여기서 보면, <code class="language-plaintext highlighter-rouge">2)</code>에 테이블을 한번 GROUP BY를 통해 만들어 내고 난 후에 해당 테이블에서 AVG(price) &gt; 12000 이라는 조건을 걸기 때문에 에러가 나지 않는다.</p>
 </blockquote>
 
@@ -1677,6 +1700,13 @@ Query의 실행 순서는 아래와 같다.
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/">mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/">mySQL 문법 (10) - DELETE 데이터 삭제하기</a>
         </li>
       
@@ -1699,13 +1729,6 @@ Query의 실행 순서는 아래와 같다.
         
         <li class="text-truncate lh-lg">
           <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(1)-SELECT,-FROM-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/">mySQL 문법 (1) - SELECT,  FROM 데이터 조회하기</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/">JAVA 문법 (4) - switch 조건문</a>
         </li>
       
     </ul>
