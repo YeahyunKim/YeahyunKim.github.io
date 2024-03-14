@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-13T17:29:40+09:00</updated>
+  <updated>2024-03-14T14:58:03+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -93,7 +93,7 @@ for (int i = 1; i &amp;lt;= endNum; i...
     <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" rel="alternate" type="text/html" title="JAVA 문법 (4) - switch 조건문" />
     <published>2024-03-13T00:00:00+09:00</published>
   
-    <updated>2024-03-13T00:00:00+09:00</updated>
+    <updated>2024-03-13T17:31:44+09:00</updated>
   
     <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/</id>
     <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" />
@@ -247,6 +247,57 @@ if (age =&amp;lt; 20) { //false
 
   
   <entry>
+    <title>mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이</title>
+    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/" rel="alternate" type="text/html" title="mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이" />
+    <published>2024-03-12T00:00:00+09:00</published>
+  
+    <updated>2024-03-12T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/</id>
+    <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="mySQL" />
+    
+    <category term="Grammarㅤ" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      💡GROUP BY
+
+01. GROUP BY
+
+
+  The GROUP BY statement groups rows that have the same values into summary rows, like “find the number of customers in each country”.
+The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+
+
+GROUP BY 는 유형별로 개수를 알고 싶을때 사용한다.
+
+02. WHERE과 HAVING
+
+
+  WHERE는 그룹화 하기 전의 조건 
+HAVING는 그...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>mySQL 문법 (10) - DELETE 데이터 삭제하기</title>
     <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="mySQL 문법 (10) - DELETE 데이터 삭제하기" />
     <published>2024-03-12T00:00:00+09:00</published>
@@ -277,7 +328,7 @@ if (age =&amp;lt; 20) { //false
 
       💡DELETE
 
-DELETE
+01. DELETE
 
 
   The DELETE statement is used to delete existing records in a table.
@@ -313,68 +364,7 @@ DELETE FROM 테이블명
 01. 특정한 컬럼의 데이터값을 삭제할 때
 
 DELETE FROM Customers
-WHERE CustomerID = ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>JAVA study (7) - String 리터럴, String 객체</title>
-    <link href="http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/" rel="alternate" type="text/html" title="JAVA study (7) - String 리터럴, String 객체" />
-    <published>2024-03-12T00:00:00+09:00</published>
-  
-    <updated>2024-03-13T12:52:44+09:00</updated>
-  
-    <id>http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/</id>
-    <content src="http://localhost:4000/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Java" />
-    
-    <category term="Study" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      🔎 문자열 생성
-
-
-Java에서 문자열을 생성하는 과정은 크게 2가지 방법이 있다.
-
-  String literal
-  new String()
-두개는 어떤 차이를 가지고 있을까?
-
-
-
-01. String Literal
-
-String str1 = "Hello";
-String str2 = "Hello";
-
-
-
-  String Literal은 문자열을 생성하는 가장 간단하고 일반적이 방법이다. 이 방식은 문자열을 큰 따옴표(“ “) 로 둘러싸서 표현한다. 
-String Literal 방식으로 문자열을 생성하면, JAVA Heap 메모리 영역의 문자열 상수 풀(String Constant Pool) 영역에 값이 저장이 된다.
-
-
-
-02. new String()
-
-String str3 = new String(...
+WHERE CustomerI...
     </summary>
   
 

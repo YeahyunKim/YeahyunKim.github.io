@@ -11,7 +11,7 @@ image: https://ifh.cc/g/DMV0va.png
 ---
 ## 💡DELETE
 ---
-#### DELETE
+#### 01. DELETE
 
 >The `DELETE` statement is used to delete existing records in a table.
 {: .command-text}
