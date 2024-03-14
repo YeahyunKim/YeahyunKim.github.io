@@ -17,7 +17,7 @@ image: https://ifh.cc/g/DMV0va.png
 >It is used to extract only those records that fulfill a specified condition.
 {: .command-text}
 
-`WHERE` 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다.
+`WHERE` 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다.  
 여기서, 데이터 조회 뿐만 아닌, `UPDATE`, `DELETE` 등 에서도 사용이 가능하다.
 
 

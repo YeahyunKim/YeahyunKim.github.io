@@ -16,7 +16,7 @@ image: https://ifh.cc/g/DMV0va.png
 >The `AND` operators are used to filter records based on more than one condition:
 {: .command-text}
 
-`AND` 연산자는 두개의 조건이 모두 `true` 인 경우의 데이터를 필터링 합니다.
+`AND` 연산자는 두개의 조건이 모두 `true` 인 경우의 데이터를 필터링 합니다.  
 `AND` 연산자는 `WHERE`절과 조합하여 사용할 수 있습니다.
 
 <br>
@@ -25,7 +25,7 @@ image: https://ifh.cc/g/DMV0va.png
 >The `OR` operators are used to filter records based on more than one condition:
 {: .command-text}
 
-`OR` 연산자는 두개중 하나의 조건이 `true` 인 경우의 데이터를 필터링 합니다.
+`OR` 연산자는 두개중 하나의 조건이 `true` 인 경우의 데이터를 필터링 합니다.  
 `OR` 연산자는 `WHERE`절과 조합하여 사용할 수 있습니다.
 
 <br>
@@ -34,7 +34,7 @@ image: https://ifh.cc/g/DMV0va.png
 >The `NOT` operator displays a record if the condition(s) is NOT TRUE.
 {: .command-text}
 
-`NOT` 연산자는 조건이 `true`가 아닌 경우의 데이터를 필터링 합니다.
+`NOT` 연산자는 조건이 `true`가 아닌 경우의 데이터를 필터링 합니다.  
 `NOT` 연산자는 `WHERE`절과 조합하여 사용할 수 있습니다.
 <br>
 <br>
@@ -75,14 +75,10 @@ WHERE NOT 조건1;
 SELECT * FROM food_orders WHERE cuisine_type = 'Korean' AND price > 20000;
 ```
 
->• 조건 1 : cuisin_type = 'Korean'
->• 조건 2 : price > 20000
->• 해석 : 나이를 오름차순으로 정렬한 고객 정보 테이블을 가져와줘
+>• 조건 1 : cuisin_type = 'Korean'  
+>• 조건 2 : price > 20000  
+>• 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이상인 한식 데이터를 모두 보여줘
 {: .command-text}
-
-**두개의 조건을 모두 충족하는 데이터를 불러온다.**   
-
-쿼리 해석 : `food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이상인 한식 데이터를 모두 보여줘`
 
 ![이미지](https://ifh.cc/g/vb6pch.png)<br>
 <br>
@@ -92,12 +88,12 @@ SELECT * FROM food_orders WHERE cuisine_type = 'Korean' AND price > 20000;
 SELECT * FROM food_orders WHERE cuisine_type = 'Korean' OR price > 20000;
 ```
 
-- 조건 1 : cuisin_type = 'Korean'
-- 조건 2 : price > 20000;
+>• 조건 1 : cuisin_type = 'Korean'  
+>• 조건 2 : price > 20000  
+>• 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이거나, 한식인 데이터를 모두 보여줘
+{: .command-text}
 
 **두개의 조건중 하나를 충족하는 데이터를 불러온다. 위의 `AND` 보다 많은 데이터가 조회된 것을 볼 수 있다.** 
-
-쿼리 해석 : `food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이거나, 한식인 데이터를 모두 보여줘`
 
 ![이미지](https://ifh.cc/g/woWk9g.jpg)
 
@@ -109,11 +105,11 @@ SELECT * FROM food_orders WHERE cuisine_type = 'Korean' OR price > 20000;
 SELECT * FROM food_orders WHERE NOT cuisine_type = 'Korean'
 ```
 
-- 조건 1 : cuisin_type = 'Korean' 이외의
+>• 조건 1 : cuisin_type = 'Korean' 이외
+>• 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 음식타입이 한식이 아닌 모든 데이터를 보여줘
+{: .command-text}
 
 **음식타입이 'Korean' 이 아닌 모든 데이터를 조회한다** 
-
-쿼리 해석 : `food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 음식타입이 한식이 아닌 모든 데이터를 보여줘`
 
 ![이미지](https://ifh.cc/g/3BD3XT.jpg)
 

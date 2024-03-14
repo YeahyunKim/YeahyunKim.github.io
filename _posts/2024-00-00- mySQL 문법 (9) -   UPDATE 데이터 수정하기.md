@@ -52,6 +52,6 @@ SET ContactName = 'Alfred Schmidt', City = 'Frankfurt'
 WHERE CustomerID = 1;
 ```
 
->• 조건 1 : CustomerID 가 1
+>• 조건 1 : CustomerID 가 1  
 >• 해석 : 고객 테이블 고객 아이디가 1인 고객의 이름과 도시명을 조건처럼 바꿔줘
 {: .command-text}

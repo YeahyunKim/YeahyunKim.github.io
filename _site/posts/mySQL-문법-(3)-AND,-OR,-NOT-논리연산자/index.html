@@ -1132,7 +1132,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="609 words"
+  title="558 words"
 >
   <em>3 min</em> read</span>
 
@@ -1151,7 +1151,7 @@
   <p>The <code class="language-plaintext highlighter-rouge">AND</code> operators are used to filter records based on more than one condition:</p>
 </blockquote>
 
-<p><code class="language-plaintext highlighter-rouge">AND</code> 연산자는 두개의 조건이 모두 <code class="language-plaintext highlighter-rouge">true</code> 인 경우의 데이터를 필터링 합니다.
+<p><code class="language-plaintext highlighter-rouge">AND</code> 연산자는 두개의 조건이 모두 <code class="language-plaintext highlighter-rouge">true</code> 인 경우의 데이터를 필터링 합니다.<br />
 <code class="language-plaintext highlighter-rouge">AND</code> 연산자는 <code class="language-plaintext highlighter-rouge">WHERE</code>절과 조합하여 사용할 수 있습니다.</p>
 
 <p><br /></p>
@@ -1161,7 +1161,7 @@
   <p>The <code class="language-plaintext highlighter-rouge">OR</code> operators are used to filter records based on more than one condition:</p>
 </blockquote>
 
-<p><code class="language-plaintext highlighter-rouge">OR</code> 연산자는 두개중 하나의 조건이 <code class="language-plaintext highlighter-rouge">true</code> 인 경우의 데이터를 필터링 합니다.
+<p><code class="language-plaintext highlighter-rouge">OR</code> 연산자는 두개중 하나의 조건이 <code class="language-plaintext highlighter-rouge">true</code> 인 경우의 데이터를 필터링 합니다.<br />
 <code class="language-plaintext highlighter-rouge">OR</code> 연산자는 <code class="language-plaintext highlighter-rouge">WHERE</code>절과 조합하여 사용할 수 있습니다.</p>
 
 <p><br /></p>
@@ -1171,7 +1171,7 @@
   <p>The <code class="language-plaintext highlighter-rouge">NOT</code> operator displays a record if the condition(s) is NOT TRUE.</p>
 </blockquote>
 
-<p><code class="language-plaintext highlighter-rouge">NOT</code> 연산자는 조건이 <code class="language-plaintext highlighter-rouge">true</code>가 아닌 경우의 데이터를 필터링 합니다.
+<p><code class="language-plaintext highlighter-rouge">NOT</code> 연산자는 조건이 <code class="language-plaintext highlighter-rouge">true</code>가 아닌 경우의 데이터를 필터링 합니다.<br />
 <code class="language-plaintext highlighter-rouge">NOT</code> 연산자는 <code class="language-plaintext highlighter-rouge">WHERE</code>절과 조합하여 사용할 수 있습니다.
 <br />
 <br /></p>
@@ -1223,14 +1223,10 @@
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : cuisin_type = ‘Korean’
-• 조건 2 : price &gt; 20000
-• 해석 : 나이를 오름차순으로 정렬한 고객 정보 테이블을 가져와줘</p>
+  <p>• 조건 1 : cuisin_type = ‘Korean’<br />
+• 조건 2 : price &gt; 20000<br />
+• 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이상인 한식 데이터를 모두 보여줘</p>
 </blockquote>
-
-<p><strong>두개의 조건을 모두 충족하는 데이터를 불러온다.</strong></p>
-
-<p>쿼리 해석 : <code class="language-plaintext highlighter-rouge">food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이상인 한식 데이터를 모두 보여줘</code></p>
 
 <p><a href="https://ifh.cc/g/vb6pch.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/vb6pch.png" alt="이미지" loading="lazy"></a><br />
 <br /></p>
@@ -1242,14 +1238,13 @@
 </pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">food_orders</span> <span class="k">WHERE</span> <span class="n">cuisine_type</span> <span class="o">=</span> <span class="s1">'Korean'</span> <span class="k">OR</span> <span class="n">price</span> <span class="o">&gt;</span> <span class="mi">20000</span><span class="p">;</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<ul>
-  <li>조건 1 : cuisin_type = ‘Korean’</li>
-  <li>조건 2 : price &gt; 20000;</li>
-</ul>
+<blockquote class="command-text">
+  <p>• 조건 1 : cuisin_type = ‘Korean’<br />
+• 조건 2 : price &gt; 20000<br />
+• 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이거나, 한식인 데이터를 모두 보여줘</p>
+</blockquote>
 
 <p><strong>두개의 조건중 하나를 충족하는 데이터를 불러온다. 위의 <code class="language-plaintext highlighter-rouge">AND</code> 보다 많은 데이터가 조회된 것을 볼 수 있다.</strong></p>
-
-<p>쿼리 해석 : <code class="language-plaintext highlighter-rouge">food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 가격이 20,000원 이거나, 한식인 데이터를 모두 보여줘</code></p>
 
 <p><a href="https://ifh.cc/g/woWk9g.jpg" class="popup img-link  shimmer"><img src="https://ifh.cc/g/woWk9g.jpg" alt="이미지" loading="lazy"></a></p>
 
@@ -1263,13 +1258,12 @@
 </pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">food_orders</span> <span class="k">WHERE</span> <span class="k">NOT</span> <span class="n">cuisine_type</span> <span class="o">=</span> <span class="s1">'Korean'</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<ul>
-  <li>조건 1 : cuisin_type = ‘Korean’ 이외의</li>
-</ul>
+<blockquote class="command-text">
+  <p>• 조건 1 : cuisin_type = ‘Korean’ 이외
+• 해석 : food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 음식타입이 한식이 아닌 모든 데이터를 보여줘</p>
+</blockquote>
 
 <p><strong>음식타입이 ‘Korean’ 이 아닌 모든 데이터를 조회한다</strong></p>
-
-<p>쿼리 해석 : <code class="language-plaintext highlighter-rouge">food_orders 라는 테이블에서 모든 컬럼을 선택하는데, 그중 음식타입이 한식이 아닌 모든 데이터를 보여줘</code></p>
 
 <p><a href="https://ifh.cc/g/3BD3XT.jpg" class="popup img-link  shimmer"><img src="https://ifh.cc/g/3BD3XT.jpg" alt="이미지" loading="lazy"></a></p>
 
@@ -1392,6 +1386,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/test-%ED%8E%98%EC%9D%B4%EC%A7%80/">테스트 페이지</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/">mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이</a>
         </li>
       
@@ -1414,13 +1415,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/">JAVA study (7) - String 리터럴, String 객체</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-study-(3)-%EC%A0%95%EC%A0%81-%EC%BB%A8%ED%85%90%EC%B8%A0/">JAVA study (3) - 정적 컨텐츠</a>
         </li>
       
     </ul>

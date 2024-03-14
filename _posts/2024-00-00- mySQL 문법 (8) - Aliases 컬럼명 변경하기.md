@@ -19,7 +19,7 @@ image: https://ifh.cc/g/DMV0va.png
 >An alias is created with the `AS` keyword.
 {: .command-text}
 
-`AS` 는 컬럼명, 테이블명에 별칭을 주어, 데이터 조회 후 가독성이 좋아보이게 만드는데 굉장히 효과적이다. 
+`AS` 는 컬럼명, 테이블명에 별칭을 주어, 데이터 조회 후 가독성이 좋아보이게 만드는데 굉장히 효과적이다.  
 `AS`는 해당 쿼리가 실행되었을 동안만 존재하고, 직접적으로 테이블에 영향을 주지 않는다.
 
 **테이블에 별칭을 주었으면, 해당 별칭으로 컬럼들을 조회할 수 있다.**
@@ -53,7 +53,7 @@ SELECT 컬럼 AS 별칭 FROM 테이블
 SELECT name AS '이름' FROM customers
 ```
 
->• 조건 1 : name 컬럼명에 '이름'이란 별칭주기
+>• 조건 1 : name 컬럼명에 '이름'이란 별칭주기  
 >• 해석 : customers 테이블에서 name 컬럼만 가져와주는데, 컬럼명을 '이름'으로 바꿔줘.
 {: .command-text}
 
@@ -67,7 +67,7 @@ SELECT name AS '이름' FROM customers
 SELECT name AS '이름', email AS '이메일' FROM customers
 ```
 
->• 조건 1 : name 컬럼명에 '이름', email 컬럼명에 '이메일' 이란 별칭주기
+>• 조건 1 : name 컬럼명에 '이름', email 컬럼명에 '이메일' 이란 별칭주기  
 >• 해석 : customers 테이블에서 name 과 email 컬럼만 가져와주는데, 컬럼명 각각 '이름', '이메일' 로 바꿔줘.
 {: .command-text}
 
@@ -82,6 +82,6 @@ SELECT name AS '이름', email AS '이메일' FROM customers
 SELECT * FROM customer AS c
 ```
 
->• 조건 1 : name 컬럼명에 '이름'이란 별칭주기
+>• 조건 1 : name 컬럼명에 '이름'이란 별칭주기  
 >• 해석 : customers 테이블에서 name 컬럼만 가져와주는데, 컬럼명을 '이름'으로 바꿔줘.
 {: .command-text}

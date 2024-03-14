@@ -17,7 +17,7 @@ image: https://ifh.cc/g/DMV0va.png
 >The `LIMIT` clause is useful on large tables with thousands of records. Returning a large number of records can impact performance.
 {: .command-text}
 
-`LIMIT` 절은 대량의 데이터를 조회할때 유용하게 사용할 수 있다.
+`LIMIT` 절은 대량의 데이터를 조회할때 유용하게 사용할 수 있다.  
 만약, customers라는 테이블을 조회했는데, 고객 수가 100,000,000명이면, 이를 조회하는데 컴퓨터에 무리가 갈 수 있고 시간이 굉장히 오래 걸린다.
 
 <br>
@@ -43,7 +43,7 @@ SELECT * FROM 테이블 LIMIT 숫자;
 SELECT * FROM customers LIMIT 3;
 ```
 
->• 조건 1 : 10개만 조회
+>• 조건 1 : 10개만 조회  
 >• 해석 : 고객들의 정보들 중 3개만 조회해줘
 {: .command-text}
 
@@ -57,7 +57,7 @@ SELECT * FROM customers LIMIT 3;
 SELECT * FROM customers ORDER BY customer_id DESC LIMIT 3;
 ```
 
->• 조건 1 : 고객이 가입한 아이디를 내림차순으로 정렬하고, 그중 3개만 조회
+>• 조건 1 : 고객이 가입한 아이디를 내림차순으로 정렬하고, 그중 3개만 조회  
 >• 해석 : 고객 아이디를 내림차순으로 정렬하고, 그중 3개를 고객 테이블에서 가져와줘
 {: .command-text}
 

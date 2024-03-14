@@ -50,7 +50,7 @@ SELECT * FROM 테이블 ORDER BY 컬럼1 DESC, 컬럼2 DESC
 SELECT * FROM customers ORDER BY age ASC;
 ```
 
->• 조건 1 : 없음
+>• 조건 1 : 없음  
 >• 해석 : 나이를 오름차순으로 정렬한 고객 정보 테이블을 가져와줘
 {: .command-text}
 
@@ -66,7 +66,7 @@ SELECT * FROM customers ORDER BY age ASC;
 SELECT * FROM customers ORDER BY age ASC, name ASC;
 ```
 
->• 조건 1 : 없음
+>• 조건 1 : 없음  
 >• 해석 : 나이를 오름차순으로 정렬하고, 그중 이름을 오름차순으로 정리한 고객 정보 테이블을 가져와줘
 {: .command-text}
 
@@ -82,7 +82,7 @@ SELECT * FROM customers ORDER BY age ASC, name ASC;
 SELECT * FROM customers ORDER BY age DESC;
 ```
 
->• 조건 1 : 없음
+>• 조건 1 : 없음  
 >• 해석 : 나이를 오름차순으로 정렬한 고객 정보 테이블을 가져와줘
 {: .command-text}
 
@@ -95,7 +95,7 @@ SELECT * FROM customers ORDER BY age DESC;
 SELECT * FROM customers ORDER BY age DESC, name DESC;
 ```
 
->• 조건 1 : 없음
+>• 조건 1 : 없음  
 >• 해석 : 나이를 내림차순으로 정렬하고, 그중 이름을 내림차순으로 정리한 고객 정보 테이블을 가져와줘
 {: .command-text}
 

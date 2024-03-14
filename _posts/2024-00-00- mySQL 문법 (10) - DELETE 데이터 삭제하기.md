@@ -51,7 +51,7 @@ DELETE FROM Customers
 WHERE CustomerID = 1;
 ```
 
->• 조건 1 : CustomerID 가 1
+>• 조건 1 : CustomerID 가 1  
 >• 해석 : 고객 테이블 고객 아이디가 1인 고객의 데이터를 삭제해줘
 {: .command-text}
 

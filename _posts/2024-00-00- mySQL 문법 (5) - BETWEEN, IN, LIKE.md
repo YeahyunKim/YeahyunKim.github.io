@@ -13,7 +13,7 @@ image: https://ifh.cc/g/DMV0va.png
 ---
 #### 01. BETWEEN
 
->The `BETWEEN` operator selects values within a given range. The values can be numbers, text, or dates.
+>The `BETWEEN` operator selects values within a given range. The values can be numbers, text, or dates.  
 >The `BETWEEN` operator is inclusive: begin and end values are included.
 {: .command-text}
 
@@ -23,7 +23,7 @@ image: https://ifh.cc/g/DMV0va.png
 <br>
 #### 02. IN
 
->The `IN` operator allows you to specify multiple values in a `WHERE` clause.
+>The `IN` operator allows you to specify multiple values in a `WHERE` clause.  
 >The `IN` operator is a shorthand for multiple `OR` conditions.
 {: .command-text}
 
@@ -33,14 +33,14 @@ image: https://ifh.cc/g/DMV0va.png
 <br>
 #### 03. LIKE
 
->The `LIKE` operator is used in a `WHERE` clause to search for a specified pattern in a column.   
->There are two wildcards often used in conjunction with the `LIKE`  operator:   
->	- The percent sign (%) represents zero, one, or multiple characters
->	- The underscore sign (_) represents one, single character   
+>The `LIKE` operator is used in a `WHERE` clause to search for a specified pattern in a column.  
+>There are two wildcards often used in conjunction with the `LIKE`  operator:  
+>	- The percent sign (%) represents zero, one, or multiple characters  
+>	- The underscore sign (_) represents one, single character  
 >The percent sign and the underscore can also be used in combinations!
 {: .command-text}
 
-`LIKE` 는  문자열 내에서 **내가 원하는 문자열 혹은 값을 찾아내는 함수입니다.**
+`LIKE` 는  문자열 내에서 **내가 원하는 문자열 혹은 값을 찾아내는 함수입니다.**  
 `LIKE` 함수는 `WILDCARDS` 문자들과 함께 쓰이기도 합니다.
 
 | WILDCARD | 설명                     |
@@ -89,7 +89,7 @@ WHERE 컬럼 LIKE 조건
 SELECT * FROM customers WHERE age BETWEEN 20 and 30;
 ```
 
->• 조건 1 : 20 <= age <= 30
+>• 조건 1 : 20 <= age <= 30  
 >• 해석 : customers 라는 고객 테이블에서 고객의 나이가 20~30인 고객들의 데이터를 불러와줘
 {: .command-text}
 
@@ -107,7 +107,7 @@ SELECT * FROM customers WHERE age >= 20 and age <= 30;
 SELECT * FROM customers WHERE age > 19 and age < 31;
 ```
 
->위의 세개 쿼리는 모두 같은 값을 조회하여 결과로 보여준다. 
+>위의 세개 쿼리는 모두 같은 값을 조회하여 결과로 보여준다.  
 >하지만 가독성을 따져보았을때 BETWEEN 이 더 간편한 가독성을 보여준다.
 {: .command-text}
 
@@ -119,7 +119,7 @@ SELECT * FROM customers WHERE age > 19 and age < 31;
 SELECT * FROM customers WHERE age in (29, 31, 39)
 ```
 
->• 조건 1 : age = 29, age = 31, age = 39
+>• 조건 1 : age = 29, age = 31, age = 39  
 >• 해석 : customers 라는 고객 테이블에서 고객의 나이가 29, 31, 39인 고객들의 데이터를 불러와줘
 {: .command-text}
 
@@ -136,7 +136,7 @@ SELECT * FROM customers WHERE age in (29, 31, 39)
 SELECT * FROM customers WHERE name LIKE "김예연";
 ```
 
->• 조건 1 : name = "김예연"
+>• 조건 1 : name = "김예연"  
 >• 해석 : 고객 테이블에서 이름이 "김예연"이란 고객들의 정보를 가져와줘.
 {: .command-text}
 
@@ -147,7 +147,7 @@ SELECT * FROM customers WHERE name LIKE "김예연";
 SELECT * FROM customers WHERE age LIKE 39;
 ```
 
->• 조건 1 : age = 39
+>• 조건 1 : age = 39  
 >• 해석 : 고객 테이블에서 나이가 39살인 고객들의 정보를 가져와줘.
 {: .command-text}
 
@@ -157,7 +157,7 @@ SELECT * FROM customers WHERE age LIKE 39;
 SELECT * FROM customers WHERE name LIKE '%연'
 ```
 
->• 조건 1 : name에서 '연' 문자로 끝나는 모든 값
+>• 조건 1 : name에서 '연' 문자로 끝나는 모든 값  
 >• 해석 : 고객 테이블에서 이름이 '연'으로 끝나는 모든 고객들의 정보를 가져와줘
 {: .command-text}
 
@@ -170,7 +170,7 @@ SELECT * FROM customers WHERE name LIKE '%연'
 SELECT * FROM customers WHERE name LIKE '김%'
 ```
 
->• 조건 1 : name에서 '연' 문자로 끝나는 모든 값
+>• 조건 1 : name에서 '연' 문자로 끝나는 모든 값  
 >• 해석 : 고객 테이블에서 성이 '김' 씨인 모든 고객들의 정보를 가져와줘
 {: .command-text}
 
@@ -183,14 +183,15 @@ SELECT * FROM customers WHERE name LIKE '김%'
 SELECT * FROM customers WHERE name LIKE '%예%'
 ```
 
->• 조건 1 : name에서 중간에 '예' 문자가 있는 모든 값
+>• 조건 1 : name에서 중간에 '예' 문자가 있는 모든 값  
 >• 해석 : 고객 테이블에서 이름의 가운데에 '예' 가 있는 모든 고객들의 정보를 가져와줘.
 {: .command-text}
 
 ![이미지](https://ifh.cc/g/YARvqC.jpg)
 
 
->%김% 으로 조회를 하면 `김예연` 이 조회가 된다. 그 이유는, %는 어떠한 문자가 와도 상관이 없기 때문에, `김예연` 도 조회를 한다.
+>%김% 으로 조회를 하면 `김예연` 이 조회가 된다.  
+>그 이유는, %는 어떠한 문자가 와도 상관이 없기 때문에, `김예연` 도 조회를 한다.
 {: .prompt-danger}
 
 <br>
@@ -200,7 +201,7 @@ SELECT * FROM customers WHERE name LIKE '%예%'
 SELECT * FROM customers WHERE name LIKE "_민_"
 ```
 
->• 조건 1 : name에서 3개의 문자로 이루어져 있고, 가운데에 '민' 이라는 문자를 가지고 있는 값
+>• 조건 1 : name에서 3개의 문자로 이루어져 있고, 가운데에 '민' 이라는 문자를 가지고 있는 값  
 >• 해석 : 고객 테이블에서 이름이 3자이면서, 가운데가 '민' 자인 모든 고객들을 불러와줘.
 {: .command-text}
 

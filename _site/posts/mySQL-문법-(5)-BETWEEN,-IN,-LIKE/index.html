@@ -1446,7 +1446,7 @@
 <h4 id="01-between"><span class="me-2">01. BETWEEN</span><a href="#01-between" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>The <code class="language-plaintext highlighter-rouge">BETWEEN</code> operator selects values within a given range. The values can be numbers, text, or dates.
+  <p>The <code class="language-plaintext highlighter-rouge">BETWEEN</code> operator selects values within a given range. The values can be numbers, text, or dates.<br />
 The <code class="language-plaintext highlighter-rouge">BETWEEN</code> operator is inclusive: begin and end values are included.</p>
 </blockquote>
 
@@ -1457,7 +1457,7 @@ The <code class="language-plaintext highlighter-rouge">BETWEEN</code> operator
 <h4 id="02-in"><span class="me-2">02. IN</span><a href="#02-in" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>The <code class="language-plaintext highlighter-rouge">IN</code> operator allows you to specify multiple values in a <code class="language-plaintext highlighter-rouge">WHERE</code> clause.
+  <p>The <code class="language-plaintext highlighter-rouge">IN</code> operator allows you to specify multiple values in a <code class="language-plaintext highlighter-rouge">WHERE</code> clause.<br />
 The <code class="language-plaintext highlighter-rouge">IN</code> operator is a shorthand for multiple <code class="language-plaintext highlighter-rouge">OR</code> conditions.</p>
 </blockquote>
 
@@ -1467,14 +1467,14 @@ The <code class="language-plaintext highlighter-rouge">IN</code> operator is a
 <h4 id="03-like"><span class="me-2">03. LIKE</span><a href="#03-like" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p>The <code class="language-plaintext highlighter-rouge">LIKE</code> operator is used in a <code class="language-plaintext highlighter-rouge">WHERE</code> clause to search for a specified pattern in a column. <br />
-There are two wildcards often used in conjunction with the <code class="language-plaintext highlighter-rouge">LIKE</code>  operator: <br />
-	- The percent sign (%) represents zero, one, or multiple characters
-	- The underscore sign (_) represents one, single character <br />
+  <p>The <code class="language-plaintext highlighter-rouge">LIKE</code> operator is used in a <code class="language-plaintext highlighter-rouge">WHERE</code> clause to search for a specified pattern in a column.<br />
+There are two wildcards often used in conjunction with the <code class="language-plaintext highlighter-rouge">LIKE</code>  operator:<br />
+	- The percent sign (%) represents zero, one, or multiple characters<br />
+	- The underscore sign (_) represents one, single character<br />
 The percent sign and the underscore can also be used in combinations!</p>
 </blockquote>
 
-<p><code class="language-plaintext highlighter-rouge">LIKE</code> 는  문자열 내에서 <strong>내가 원하는 문자열 혹은 값을 찾아내는 함수입니다.</strong>
+<p><code class="language-plaintext highlighter-rouge">LIKE</code> 는  문자열 내에서 <strong>내가 원하는 문자열 혹은 값을 찾아내는 함수입니다.</strong><br />
 <code class="language-plaintext highlighter-rouge">LIKE</code> 함수는 <code class="language-plaintext highlighter-rouge">WILDCARDS</code> 문자들과 함께 쓰이기도 합니다.</p>
 
 <div class="table-wrapper"><table>
@@ -1548,7 +1548,7 @@ The percent sign and the underscore can also be used in combinations!</p>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : 20 &lt;= age &lt;= 30
+  <p>• 조건 1 : 20 &lt;= age &lt;= 30<br />
 • 해석 : customers 라는 고객 테이블에서 고객의 나이가 20~30인 고객들의 데이터를 불러와줘</p>
 </blockquote>
 
@@ -1572,7 +1572,7 @@ The percent sign and the underscore can also be used in combinations!</p>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>위의 세개 쿼리는 모두 같은 값을 조회하여 결과로 보여준다. 
+  <p>위의 세개 쿼리는 모두 같은 값을 조회하여 결과로 보여준다.<br />
 하지만 가독성을 따져보았을때 BETWEEN 이 더 간편한 가독성을 보여준다.</p>
 </blockquote>
 
@@ -1587,7 +1587,7 @@ The percent sign and the underscore can also be used in combinations!</p>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : age = 29, age = 31, age = 39
+  <p>• 조건 1 : age = 29, age = 31, age = 39<br />
 • 해석 : customers 라는 고객 테이블에서 고객의 나이가 29, 31, 39인 고객들의 데이터를 불러와줘</p>
 </blockquote>
 
@@ -1605,7 +1605,7 @@ The percent sign and the underscore can also be used in combinations!</p>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : name = “김예연”
+  <p>• 조건 1 : name = “김예연”<br />
 • 해석 : 고객 테이블에서 이름이 “김예연”이란 고객들의 정보를 가져와줘.</p>
 </blockquote>
 
@@ -1618,7 +1618,7 @@ The percent sign and the underscore can also be used in combinations!</p>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : age = 39
+  <p>• 조건 1 : age = 39<br />
 • 해석 : 고객 테이블에서 나이가 39살인 고객들의 정보를 가져와줘.</p>
 </blockquote>
 
@@ -1631,7 +1631,7 @@ The percent sign and the underscore can also be used in combinations!</p>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : name에서 ‘연’ 문자로 끝나는 모든 값
+  <p>• 조건 1 : name에서 ‘연’ 문자로 끝나는 모든 값<br />
 • 해석 : 고객 테이블에서 이름이 ‘연’으로 끝나는 모든 고객들의 정보를 가져와줘</p>
 </blockquote>
 
@@ -1647,7 +1647,7 @@ The percent sign and the underscore can also be used in combinations!</p>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : name에서 ‘연’ 문자로 끝나는 모든 값
+  <p>• 조건 1 : name에서 ‘연’ 문자로 끝나는 모든 값<br />
 • 해석 : 고객 테이블에서 성이 ‘김’ 씨인 모든 고객들의 정보를 가져와줘</p>
 </blockquote>
 
@@ -1663,14 +1663,15 @@ The percent sign and the underscore can also be used in combinations!</p>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : name에서 중간에 ‘예’ 문자가 있는 모든 값
+  <p>• 조건 1 : name에서 중간에 ‘예’ 문자가 있는 모든 값<br />
 • 해석 : 고객 테이블에서 이름의 가운데에 ‘예’ 가 있는 모든 고객들의 정보를 가져와줘.</p>
 </blockquote>
 
 <p><a href="https://ifh.cc/g/YARvqC.jpg" class="popup img-link  shimmer"><img src="https://ifh.cc/g/YARvqC.jpg" alt="이미지" loading="lazy"></a></p>
 
 <blockquote class="prompt-danger">
-  <p>%김% 으로 조회를 하면 <code class="language-plaintext highlighter-rouge">김예연</code> 이 조회가 된다. 그 이유는, %는 어떠한 문자가 와도 상관이 없기 때문에, <code class="language-plaintext highlighter-rouge">김예연</code> 도 조회를 한다.</p>
+  <p>%김% 으로 조회를 하면 <code class="language-plaintext highlighter-rouge">김예연</code> 이 조회가 된다.<br />
+그 이유는, %는 어떠한 문자가 와도 상관이 없기 때문에, <code class="language-plaintext highlighter-rouge">김예연</code> 도 조회를 한다.</p>
 </blockquote>
 
 <p><br /></p>
@@ -1683,7 +1684,7 @@ The percent sign and the underscore can also be used in combinations!</p>
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>• 조건 1 : name에서 3개의 문자로 이루어져 있고, 가운데에 ‘민’ 이라는 문자를 가지고 있는 값
+  <p>• 조건 1 : name에서 3개의 문자로 이루어져 있고, 가운데에 ‘민’ 이라는 문자를 가지고 있는 값<br />
 • 해석 : 고객 테이블에서 이름이 3자이면서, 가운데가 ‘민’ 자인 모든 고객들을 불러와줘.</p>
 </blockquote>
 
@@ -1807,6 +1808,13 @@ The percent sign and the underscore can also be used in combinations!</p>
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/test-%ED%8E%98%EC%9D%B4%EC%A7%80/">테스트 페이지</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/">mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이</a>
         </li>
       
@@ -1829,13 +1837,6 @@ The percent sign and the underscore can also be used in combinations!</p>
         
         <li class="text-truncate lh-lg">
           <a href="/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/">JAVA study (7) - String 리터럴, String 객체</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-study-(3)-%EC%A0%95%EC%A0%81-%EC%BB%A8%ED%85%90%EC%B8%A0/">JAVA study (3) - 정적 컨텐츠</a>
         </li>
       
     </ul>
