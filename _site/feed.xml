@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-14T14:58:03+09:00</updated>
+  <updated>2024-03-14T15:21:05+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -280,7 +280,7 @@ if (age =&amp;lt; 20) { //false
 01. GROUP BY
 
 
-  The GROUP BY statement groups rows that have the same values into summary rows, like “find the number of customers in each country”.
+  The GROUP BY statement groups rows that have the same values into summary rows, like “find the number of customers in each country”. 
 The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
 
 
@@ -290,7 +290,7 @@ GROUP BY 는 유형별로 개수를 알고 싶을때 사용한다.
 
 
   WHERE는 그룹화 하기 전의 조건 
-HAVING는 그...
+HAVING는 ...
     </summary>
   
 
@@ -302,7 +302,7 @@ HAVING는 그...
     <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="mySQL 문법 (10) - DELETE 데이터 삭제하기" />
     <published>2024-03-12T00:00:00+09:00</published>
   
-    <updated>2024-03-12T00:00:00+09:00</updated>
+    <updated>2024-03-14T14:58:27+09:00</updated>
   
     <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/</id>
     <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/" />

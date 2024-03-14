@@ -13,7 +13,7 @@ image: https://ifh.cc/g/DMV0va.png
 ---
 #### 01. GROUP BY
 
->The `GROUP BY` statement groups rows that have the same values into summary rows, like "find the number of customers in each country".
+>The `GROUP BY` statement groups rows that have the same values into summary rows, like "find the number of customers in each country". <br/>
 >The `GROUP BY` statement is often used with aggregate functions (`COUNT()`, `MAX()`, `MIN()`, `SUM()`, `AVG()`) to group the result-set by one or more columns.
 {: .command-text}
 
@@ -122,7 +122,7 @@ group by 1
 HAVING AVG(price) > 12000
 ```
 
->• 조건 1 : AVG(price) > 15000
+>• 조건 1 : AVG(price) > 15000 
 >• 조건 2 : where cuisine_type = 'korean'
 >• 해석 : 음식 주문 테이블에서 한식을 판매하는 레스토랑별 판매한 음식의 평균 값이 12000원 이상인 데이터를 보여줘
 {: .command-text}
