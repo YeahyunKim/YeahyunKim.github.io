@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-14T16:12:26+09:00</updated>
+  <updated>2024-03-14T16:19:32+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -54,7 +54,7 @@
 
   코드를 반복적으로 실행하게 하는 제어문의 한 종류이다. 반복문의 종류는 크게 세가지가 있다.
 • for 문
-• while문 
+• while문
 • do-while 문
 
 
@@ -81,7 +81,7 @@ System.out.println(num);
 int sum = 0;  
 int endNum = 3;  
   
-for (int i = 1; i &amp;lt;= endNum; i...
+for (int i = 1; i &amp;lt;= endNum; i+...
     </summary>
   
 
@@ -121,7 +121,7 @@ for (int i = 1; i &amp;lt;= endNum; i...
 
 
 
-  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 
+  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 아래와 같이 나뉜다.
 • if 문
 	- else if
 	- else 
@@ -162,7 +162,7 @@ int coupon;
 int coupon;  
 switch (grade) {  
     case 1:  
-        coupon = 100...
+        c...
     </summary>
   
 
@@ -202,7 +202,7 @@ switch (grade) {
 
 
 
-  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 
+  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 아래와 같이 나뉜다.
 • if 문
 	- else if
 	- else 
@@ -239,7 +239,7 @@ if (age =&amp;lt; 20) { //false
 
 
 
-  age가 20살 이상일 경우, "성인입니다"...
+  age가 20살 이상일 ...
     </summary>
   
 

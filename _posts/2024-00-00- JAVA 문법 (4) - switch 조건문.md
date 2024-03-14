@@ -12,10 +12,10 @@ image: https://ifh.cc/g/NhyPJf.png
 ## 🔎 조건문 이란
 ---
 
->개발자가 작성한 코드를 **특정 조건에 따라 코드의 실행의 흐름을 제어**하는 것이다. 조건문은 크게 
->• `if` 문
->	- `else if`
->	- `else` 
+>개발자가 작성한 코드를 **특정 조건에 따라 코드의 실행의 흐름을 제어**하는 것이다. 조건문은 크게 아래와 같이 나뉜다.  
+>• `if` 문  
+>	- `else if`  
+>	- `else`   
 >• `switch` 문
 {: .command-text}
 
@@ -71,7 +71,7 @@ System.out.println("발급받은 쿠폰: " + coupon);
 // 발급받을 쿠폰: 2000
 ```
 
->`grade`가 현재 2로 설정이 되어있고,
+>`grade`가 현재 2로 설정이 되어있고,  
 >switch문에서 `case`별 적혀있는 값이 변수 `grade` 값과 동일할 때, 해당 조건식이 실행되고, `break;`에서 switch문을 종료한다.
 {: .command-text}
 
@@ -91,7 +91,7 @@ int coupon = switch (grade) {
 System.out.println("발급받은 쿠폰: " + coupon);
 ```
 
-> Java버전이 14이상일 경우, 해당 문법을 사용할 수 있다.
+> Java버전이 14이상일 경우, 해당 문법을 사용할 수 있다.  
 > `case`별 `break;`를 적어주지 않아도 돼서 더욱 간편하게 사용할 수 있다.
 {: .command-text}
 

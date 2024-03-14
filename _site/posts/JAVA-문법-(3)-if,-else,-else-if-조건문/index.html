@@ -930,7 +930,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1852 words"
+  title="1861 words"
 >
   <em>10 min</em> read</span>
 
@@ -945,10 +945,10 @@
 <hr />
 
 <blockquote class="command-text">
-  <p>개발자가 작성한 코드를 <strong>특정 조건에 따라 코드의 실행의 흐름을 제어</strong>하는 것이다. 조건문은 크게 
-• <code class="language-plaintext highlighter-rouge">if</code> 문
-	- <code class="language-plaintext highlighter-rouge">else if</code>
-	- <code class="language-plaintext highlighter-rouge">else</code> 
+  <p>개발자가 작성한 코드를 <strong>특정 조건에 따라 코드의 실행의 흐름을 제어</strong>하는 것이다. 조건문은 크게 아래와 같이 나뉜다.<br />
+• <code class="language-plaintext highlighter-rouge">if</code> 문<br />
+	- <code class="language-plaintext highlighter-rouge">else if</code><br />
+	- <code class="language-plaintext highlighter-rouge">else</code> <br />
 • <code class="language-plaintext highlighter-rouge">switch</code> 문</p>
 </blockquote>
 
@@ -1092,7 +1092,7 @@
 <p><br /></p>
 <h4 id="04-if문-여러개와-else-if-문의-차이"><span class="me-2">04. if문 여러개와 else if 문의 차이</span><a href="#04-if문-여러개와-else-if-문의-차이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
-<p>그렇다면, if문이 여러개인 경우와 else if을 활용하여 만든 조건식의 차이는 무엇이 있을까?
+<p>그렇다면, if문이 여러개인 경우와 else if을 활용하여 만든 조건식의 차이는 무엇이 있을까?<br />
 이는 <strong>조건문이 실행되는 방식과, 출력하려는 값과, 주어진 조건의 개수에 따라 활용도가 다르다.</strong></p>
 
 <h5 id="1-if문이-여러개일-경우-불필요한-조건-검사"><span class="me-2">1) if문이 여러개일 경우 (불필요한 조건 검사)</span><a href="#1-if문이-여러개일-경우-불필요한-조건-검사" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
@@ -1138,12 +1138,12 @@
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p><strong>위의 코드는 불필요한 조건 검사가 이루어 진다.</strong> 
+  <p><strong>위의 코드는 불필요한 조건 검사가 이루어 진다.</strong><br />
 만약 나이가 5살이라면 미취학이 이미 출력되어야 하지만, 나머지 <code class="language-plaintext highlighter-rouge">if</code>문을 통한 검사도 모두 실행해야 한다.</p>
 </blockquote>
 
 <blockquote class="command-text">
-  <p><strong>코드의 효율성에서도 좋지 않다.</strong>
+  <p><strong>코드의 효율성에서도 좋지 않다.</strong><br />
 나이가 9살인 초등학생 이라면, 미취학을 체크하는 조건인 <code class="language-plaintext highlighter-rouge">age &lt;= 7</code>을 통해 나이가 이미 8살이 넘는다는 것을 알 수 있다. 하지만, 두번째 조건문에서 확인할 수 있듯이, <code class="language-plaintext highlighter-rouge">age &gt;= 8</code>, <code class="language-plaintext highlighter-rouge">age &lt;= 13</code>이란 조건문이 실행되고, 앞전에 이미 8살을 넘는다는 조건과 포함하여 <strong>중복체크 한것을 볼 수 있다.</strong></p>
 </blockquote>
 
@@ -1181,8 +1181,8 @@
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p><strong>위의 코드는 앞전에서 검사한 조건을 토대로 이어서 else if문이 실행된다</strong> 
-<code class="language-plaintext highlighter-rouge">age &lt;= 7</code> 의 조건이 거짓이면, 그다음 조건에는 이미 나이가 7살 이상이라는 데이터를 가지고 있다.
+  <p><strong>위의 코드는 앞전에서 검사한 조건을 토대로 이어서 else if문이 실행된다</strong><br />
+<code class="language-plaintext highlighter-rouge">age &lt;= 7</code> 의 조건이 거짓이면, 그다음 조건에는 이미 나이가 7살 이상이라는 데이터를 가지고 있다.<br />
 따라서, 지금과 같은 상황에서는 <strong>else if 문을 사용하는것이 더 유리하다.</strong></p>
 </blockquote>
 
@@ -1190,10 +1190,10 @@
 <h4 id="05-상황에-따라-다르게-쓰이는-if문과-else-if문"><span class="me-2">05. 상황에 따라 다르게 쓰이는 if문과 else if문</span><a href="#05-상황에-따라-다르게-쓰이는-if문과-else-if문" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 
 <blockquote class="command-text">
-  <p><strong>상황</strong>
+  <p><strong>상황</strong><br />
 온라인 쇼핑몰의 할인 시스템을 개발해야 한다. 한 사용자가 어떤 상품을 구매할 때, 다양한 할인 조건에 따라 총 할인 금액이 달라질 수 있다. 각각의 할인 조건은 다음과 같다. <br />
-	• 조건 1 : 아이템 가격이 10000원 이상일 때, 1000원 할인 
-	• 조건 2 : 나이가 10살 이하일 때 1000원 추가 할인 <br />
+	• 조건 1 : 아이템 가격이 10000원 이상일 때, 1000원 할인<br />
+	• 조건 2 : 나이가 10살 이하일 때 1000원 추가 할인<br />
 위의 상황에서는 <strong>한 사용자가 동시에 여러 할인을 받을 수 있다는 점</strong> 이다.</p>
 </blockquote>
 
@@ -1236,7 +1236,7 @@
 
 <blockquote class="command-text">
   <p>위의 코드에서는 고객이 1만원 이상을 구매했고, 나이도 10살 이하라 2번의 할인을 받아야하므로,
-조건을 두번 나누어 주었다. 그럼 우리가 원했던 할인 시스템의 값이 출력되는것을 볼 수 있다.
+조건을 두번 나누어 주었다. 그럼 우리가 원했던 할인 시스템의 값이 출력되는것을 볼 수 있다.<br />
 출력 : <code class="language-plaintext highlighter-rouge">총 할인 금액: 2000원</code></p>
 </blockquote>
 
@@ -1280,7 +1280,7 @@
 </pre></td></tr></tbody></table></code></div></div>
 
 <blockquote class="command-text">
-  <p>else if문을 사용하게 된다면, 첫번째 조건문이 실행된 경우, 두번째의 조건문은 실행이 되지 않기 때문에, 우리가 원했던 할인 시스템 값인 2000원이 아닌, 1000원이 출력되는 것을 볼 수 있다.
+  <p>else if문을 사용하게 된다면, 첫번째 조건문이 실행된 경우, 두번째의 조건문은 실행이 되지 않기 때문에, 우리가 원했던 할인 시스템 값인 2000원이 아닌, 1000원이 출력되는 것을 볼 수 있다.<br />
 출력 : <code class="language-plaintext highlighter-rouge">총 할인 금액: 1000원</code></p>
 </blockquote>
 
@@ -1411,27 +1411,6 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/test-%ED%8E%98%EC%9D%B4%EC%A7%80/">테스트 페이지</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/">mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/">JAVA 문법 (5) - for, while, do-while 반복문</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/">mySQL 문법 (10) - DELETE 데이터 삭제하기</a>
         </li>
       
@@ -1439,7 +1418,28 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-study-(7)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4/">JAVA study (7) - String 리터럴, String 객체</a>
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-WHERE-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/">mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(3)-AND,-OR,-NOT-%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90/">mySQL 문법 (3) - AND, OR, NOT 연산자</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/">mySQL 문법 (5) - BETWEEN, IN, LIKE</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/">mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기</a>
         </li>
       
     </ul>
@@ -2141,7 +2141,7 @@ pu...
 
 
 
-  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 
+  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 아래와 같이 나뉜다.
 • if 문
 	- else if
 	- else 
@@ -2170,8 +2170,7 @@ pu...
 14
 15
 switch (값) {
-	case 값1 : 
-	...
+	c...
                 </p>
               </div>
             </div>
