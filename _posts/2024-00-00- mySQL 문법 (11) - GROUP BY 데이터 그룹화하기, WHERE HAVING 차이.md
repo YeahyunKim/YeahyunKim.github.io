@@ -188,8 +188,8 @@ HAVING AVG(price) > 12000
 >**결과는 정상실행**<br/>
 >Query의 실행 순서는 아래와 같다.<br/>
 >  1) food_orders 테이블에서 `FROM food_orders`<br/>
->  2) restaurant_name컬럼 기준으로 그룹하는데  `GROUP BY 1;<br/>`
->  3) AVG(price) > 12000 인 데이터들을만 `HAVING AVG(price) > 12000<br/>`
+>  2) restaurant_name컬럼 기준으로 그룹하는데  `GROUP BY 1;`<br/>
+>  3) AVG(price) > 12000 인 데이터들을만 `HAVING AVG(price) > 12000`<br/>
 >  4) restaurant_name, AVG(price)를 가져와줘 `SELECT restaurant_name, AVG(price)`<br/>   
 >여기서 보면, `2)`에 테이블을 한번 GROUP BY를 통해 만들어 내고 난 후에 해당 테이블에서 AVG(price) > 12000 이라는 조건을 걸기 때문에 에러가 나지 않는다.
 {: .command-text}

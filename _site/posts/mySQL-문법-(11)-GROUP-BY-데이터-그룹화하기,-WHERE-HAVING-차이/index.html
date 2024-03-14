@@ -54,7 +54,7 @@
 <meta property="twitter:image" content="https://ifh.cc/g/DMV0va.png" />
 <meta property="twitter:title" content="mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-14T15:21:41+09:00","datePublished":"2024-03-12T00:00:00+09:00","description":"💡GROUP BY 01. GROUP BY","headline":"mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이","image":"https://ifh.cc/g/DMV0va.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/"},"url":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-14T15:24:20+09:00","datePublished":"2024-03-12T00:00:00+09:00","description":"💡GROUP BY 01. GROUP BY","headline":"mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이","image":"https://ifh.cc/g/DMV0va.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/"},"url":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1270,7 +1270,7 @@
 
 <time
   
-  data-ts="1710397301"
+  data-ts="1710397460"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -1574,8 +1574,8 @@ The <code class="language-plaintext highlighter-rouge">GROUP BY</code> stateme
   <p><strong>결과는 정상실행</strong><br />
 Query의 실행 순서는 아래와 같다.<br />
  1) food_orders 테이블에서 <code class="language-plaintext highlighter-rouge">FROM food_orders</code><br />
- 2) restaurant_name컬럼 기준으로 그룹하는데  <code class="language-plaintext highlighter-rouge">GROUP BY 1;&lt;br/&gt;</code>
- 3) AVG(price) &gt; 12000 인 데이터들을만 <code class="language-plaintext highlighter-rouge">HAVING AVG(price) &gt; 12000&lt;br/&gt;</code>
+ 2) restaurant_name컬럼 기준으로 그룹하는데  <code class="language-plaintext highlighter-rouge">GROUP BY 1;</code><br />
+ 3) AVG(price) &gt; 12000 인 데이터들을만 <code class="language-plaintext highlighter-rouge">HAVING AVG(price) &gt; 12000</code><br />
  4) restaurant_name, AVG(price)를 가져와줘 <code class="language-plaintext highlighter-rouge">SELECT restaurant_name, AVG(price)</code><br /> <br />
 여기서 보면, <code class="language-plaintext highlighter-rouge">2)</code>에 테이블을 한번 GROUP BY를 통해 만들어 내고 난 후에 해당 테이블에서 AVG(price) &gt; 12000 이라는 조건을 걸기 때문에 에러가 나지 않는다.</p>
 </blockquote>
@@ -2113,6 +2113,18 @@ Query의 실행 순서는 아래와 같다.<br />
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -2249,52 +2261,6 @@ Query의 실행 순서는 아래와 같다.<br />
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-WHERE-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1709823600"
-  data-df="ll"
-  
->
-  Mar  8, 2024
-</time>
-
-              <h4 class="pt-0 my-2">mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  💡WHERE
-
-
-01. WHERE 절이란
-
-
-  The WHERE clause is used to filter records.
-It is used to extract only those records that fulfill a specified condition.
-
-
-WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다....
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
           <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(3)-AND,-OR,-NOT-%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -2385,6 +2351,49 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
           </a>
         </article>
       
+        <article class="col">
+          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1709823600"
+  data-df="ll"
+  
+>
+  Mar  8, 2024
+</time>
+
+              <h4 class="pt-0 my-2">mySQL 문법 (5) - BETWEEN, IN, LIKE</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  💡BETWEEN, IN, LIKE
+
+
+01. BETWEEN
+
+
+  The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.
+The BETWEEN operator is inclusive: begin and end values are...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -2410,11 +2419,11 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
 
   
     <a
-      href="/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if,-else,-else-if-%EC%A1%B0%EA%B1%B4%EB%AC%B8/"
+      href="/posts/test-%ED%8E%98%EC%9D%B4%EC%A7%80/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>JAVA 문법 (3) - if, else, else if 조건문</p>
+      <p>테스트 페이지</p>
     </a>
   
 </nav>
