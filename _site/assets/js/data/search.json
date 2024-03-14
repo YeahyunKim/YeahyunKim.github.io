@@ -64,8 +64,8 @@
 
 
     
-    "snippet": "💡GROUP BY  코드를 반복적으로 실행하게 하는 제어문의 한 종류이다. 반복문의 종류는 크게 세가지가 있다.• for 문• while문 • do-while 문  WHERE는 그룹화 하기 전의 조건 HAVING는 그룹화 후 의 조건  WHERE는 그룹화 하기 전의 조건 HAVING는 그룹화 후 의 조건",
-    "content": "💡GROUP BY  코드를 반복적으로 실행하게 하는 제어문의 한 종류이다. 반복문의 종류는 크게 세가지가 있다.• for 문• while문 • do-while 문  WHERE는 그룹화 하기 전의 조건 HAVING는 그룹화 후 의 조건  WHERE는 그룹화 하기 전의 조건 HAVING는 그룹화 후 의 조건"
+    "snippet": "💡GROUP BY  코드를 반복적으로 실행하게 하는 제어문의 한 종류이다. 반복문의 종류는 크게 세가지가 있다.• for 문• while문 • do-while 문  WHERE는 그룹화 하기 전의 조건HAVING는 그룹화 후 의 조건  WHERE는 그룹화 하기 전의 조건HAVING는 그룹화 후 의 조건  결과는 Error그 이유는, Query의 실행 순...",
+    "content": "💡GROUP BY  코드를 반복적으로 실행하게 하는 제어문의 한 종류이다. 반복문의 종류는 크게 세가지가 있다.• for 문• while문 • do-while 문  WHERE는 그룹화 하기 전의 조건HAVING는 그룹화 후 의 조건  WHERE는 그룹화 하기 전의 조건HAVING는 그룹화 후 의 조건  결과는 Error그 이유는, Query의 실행 순서에 따라 작업의 우선순위에 차이가 있기 때문이다. 1) food_orders 테이블에서 FROM food_orders 2) AVG(price) &gt; 12000 인 데이터들 중 WHERE AVG(price) &gt; 12000 3) restaurant_name컬럼 기준으로 그룹한 GROUP BY 1; 4) restaurant_name, AVG(price)를 가져와줘 SELECT restaurant_name, AVG(price)여기서 보면, 3)에 테이블을 한번 GROUP BY를 통해 만들어 내는데, 테이블이 만들어지기도 전에 AVG(price) 라는 연산을 진행하여 생기는 오류이다."
   },
   
   {

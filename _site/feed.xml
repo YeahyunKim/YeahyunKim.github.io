@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-14T15:47:29+09:00</updated>
+  <updated>2024-03-14T15:58:08+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/" rel="alternate" type="text/html" title="JAVA 문법 (5) - for, while, do-while 반복문" />
     <published>2024-03-13T00:00:00+09:00</published>
   
-    <updated>2024-03-13T00:00:00+09:00</updated>
+    <updated>2024-03-14T15:48:04+09:00</updated>
   
     <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/</id>
     <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/" />
@@ -285,15 +285,22 @@ if (age =&amp;lt; 20) { //false
 
 
 
-  WHERE는 그룹화 하기 전의 조건 
+  WHERE는 그룹화 하기 전의 조건
 HAVING는 그룹화 후 의 조건
 
 
 
-  WHERE는 그룹화 하기 전의 조건 
+  WHERE는 그룹화 하기 전의 조건
 HAVING는 그룹화 후 의 조건
 
 
+
+  결과는 Error
+그 이유는, Query의 실행 순서에 따라 작업의 우선순위에 차이가 있기 때문이다.
+ 1) food_orders 테이블에서 FROM food_orders
+ 2) AVG(price) &amp;gt; 12000 인 데이터들 중 WHERE AVG(price) &amp;gt; 12000
+ 3) restaurant_name컬럼 기준으로 그룹한 GROUP BY 1;
+ 4) r...
     </summary>
   
 
@@ -305,7 +312,7 @@ HAVING는 그룹화 후 의 조건
     <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/" rel="alternate" type="text/html" title="mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이" />
     <published>2024-03-12T00:00:00+09:00</published>
   
-    <updated>2024-03-14T15:24:20+09:00</updated>
+    <updated>2024-03-14T15:48:04+09:00</updated>
   
     <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/</id>
     <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/" />
