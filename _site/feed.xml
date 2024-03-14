@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-14T16:19:41+09:00</updated>
+  <updated>2024-03-14T16:27:16+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/" rel="alternate" type="text/html" title="JAVA 문법 (5) - for, while, do-while 반복문" />
     <published>2024-03-13T00:00:00+09:00</published>
   
-    <updated>2024-03-14T15:48:04+09:00</updated>
+    <updated>2024-03-14T16:19:53+09:00</updated>
   
     <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/</id>
     <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/" />
@@ -93,7 +93,7 @@ for (int i = 1; i &amp;lt;= endNum; i+...
     <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" rel="alternate" type="text/html" title="JAVA 문법 (4) - switch 조건문" />
     <published>2024-03-13T00:00:00+09:00</published>
   
-    <updated>2024-03-13T17:31:44+09:00</updated>
+    <updated>2024-03-14T16:19:53+09:00</updated>
   
     <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/</id>
     <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(4)-switch-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" />
@@ -174,7 +174,7 @@ switch (grade) {
     <link href="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if,-else,-else-if-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" rel="alternate" type="text/html" title="JAVA 문법 (3) - if, else, else if 조건문" />
     <published>2024-03-13T00:00:00+09:00</published>
   
-    <updated>2024-03-13T00:00:00+09:00</updated>
+    <updated>2024-03-14T16:19:53+09:00</updated>
   
     <id>http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if,-else,-else-if-%EC%A1%B0%EA%B1%B4%EB%AC%B8/</id>
     <content src="http://localhost:4000/posts/JAVA-%EB%AC%B8%EB%B2%95-(3)-if,-else,-else-if-%EC%A1%B0%EA%B1%B4%EB%AC%B8/" />
@@ -247,67 +247,6 @@ if (age =&amp;lt; 20) { //false
 
   
   <entry>
-    <title>테스트 페이지</title>
-    <link href="http://localhost:4000/posts/test-%ED%8E%98%EC%9D%B4%EC%A7%80/" rel="alternate" type="text/html" title="테스트 페이지" />
-    <published>2024-03-12T00:00:00+09:00</published>
-  
-    <updated>2024-03-14T15:58:58+09:00</updated>
-  
-    <id>http://localhost:4000/posts/test-%ED%8E%98%EC%9D%B4%EC%A7%80/</id>
-    <content src="http://localhost:4000/posts/test-%ED%8E%98%EC%9D%B4%EC%A7%80/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="mySQL" />
-    
-    <category term="Grammarㅤ" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      💡GROUP BY
-
-
-  코드를 반복적으로 실행하게 하는 제어문의 한 종류이다. 반복문의 종류는 크게 세가지가 있다.
-• for 문
-• while문 
-• do-while 문
-
-
-
-  WHERE는 그룹화 하기 전의 조건
-HAVING는 그룹화 후 의 조건
-
-
-
-  WHERE는 그룹화 하기 전의 조건
-HAVING는 그룹화 후 의 조건
-
-
-
-  결과는 Error
-그 이유는, Query의 실행 순서에 따라 작업의 우선순위에 차이가 있기 때문이다.
- 1) food_orders 테이블에서 FROM food_orders
- 2) AVG(price) &amp;gt; 12000 인 데이터들 중 WHERE AVG(price) &amp;gt; 12000
- 3) restaurant_name컬럼 기준으로 그룹한 GROUP BY 1;
- 4) r...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
     <title>mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이</title>
     <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(11)-GROUP-BY-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0,-WHERE-HAVING-%EC%B0%A8%EC%9D%B4/" rel="alternate" type="text/html" title="mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이" />
     <published>2024-03-12T00:00:00+09:00</published>
@@ -352,6 +291,80 @@ GROUP BY 는 유형별로 개수를 알고 싶을때 사용한다.
 
   WHERE는 그룹화 하기 전의 조건 
 HAVING는 ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>mySQL 문법 (10) - DELETE 데이터 삭제하기</title>
+    <link href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="mySQL 문법 (10) - DELETE 데이터 삭제하기" />
+    <published>2024-03-12T00:00:00+09:00</published>
+  
+    <updated>2024-03-14T16:14:02+09:00</updated>
+  
+    <id>http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(10)-DELETE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%AD%EC%A0%9C%ED%95%98%EA%B8%B0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="mySQL" />
+    
+    <category term="Grammarㅤ" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      💡DELETE
+
+01. DELETE
+
+
+  The DELETE statement is used to delete existing records in a table.
+
+
+UPDATE 는 테이블의 기존 데이터 값을 삭제하는데 사용한다.
+
+02. 주의사항
+
+
+  반드시 WHERE절을 사용하여 특정 데이터만 삭제하는데 사용하자. 그렇지 않으면 모든 데이터가 삭제될수도…
+
+
+
+
+💡문법 Syntax
+
+01. 특정한 컬럼의 데이터값을 삭제할 때
+
+DELETE FROM 테이블명 WHERE 컬럼1 = '삭제할 값';
+
+
+
+02. 모든 데이터를 삭제할 때
+
+DELETE FROM 테이블명
+
+
+
+
+💡사용예시
+
+01. 특정한 컬럼의 데이터값을 삭제할 때
+
+DELETE FROM Customers
+WHERE CustomerI...
     </summary>
   
 
