@@ -2,17 +2,17 @@
 title: 깃 블로그 생성하기 (1)
 author: cotes
 date: 2024-01-05
-categories: []
+categories: 
 tags: 
-pin: true
-math: true
-mermaid: true
+pin: false
+math: false
+mermaid: false
 image:
   path: /commons/devices-mockup.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
-## 깃허브 블로그
+## 깃허브 블로그
 
 깃헙 블로그(Github blog)의 정식 명칭은 깃헙 페이지(Github page)입니다. 전 세계 개발자들이 이용하는 오픈소스 라이브러리 Github에서 제공하는 웹 호스팅 서비스로 유저가 **무료**로 자유롭게 사이트(블로그)를 제작하고 운영할 수 있는 서비스입니다. Github이 개발자들을 위한 서비스인만큼, 깃헙 블로그 역시 많은 개발자가 즐겨 사용하고 있습니다.
 

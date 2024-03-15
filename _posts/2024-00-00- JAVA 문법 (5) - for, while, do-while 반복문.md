@@ -7,7 +7,7 @@ categories:
   - Grammar
 tags:
   - Java
-image: https://ifh.cc/g/NhyPJf.png
+image:
 ---
 ## 🔎 반복문이란
 ---
