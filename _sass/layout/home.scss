@@ -11,8 +11,13 @@
     }
 
     &:not(:last-child) {
-      margin-bottom: 1.25rem;
+      // margin-bottom: 1.25rem; 수정
     }
+  }
+
+  .divider {
+    border-bottom: 1px solid #ececec;
+    margin: 1.75rem 1.75rem 1.25rem 1.75rem;
   }
 
   .card {
@@ -40,6 +45,15 @@
 
         color: var(--heading-color) !important;
         font-size: 1.25rem;
+      }
+
+      .category-title { // 수정 및 추가
+        // @extend %text-clip;
+
+        text-transform: uppercase;
+        color: var(--category-color) !important;
+        font-size: 1.25rem;
+        font-weight: 600;
       }
 
       %muted {
@@ -85,7 +99,7 @@
 
 .pagination {
   color: var(--text-color);
-  font-family: Lato, sans-serif;
+  font-family: "Pretendard Variable", Pretendard, Lato, sans-serif;
   justify-content: space-evenly;
 
   a:hover {
@@ -151,6 +165,25 @@
           }
         }
       }
+    }
+  }
+}
+
+
+/* Categories List*/ 
+.category-list {
+  margin: 0rem 1.75rem;;
+  
+  .categroies-wrap {
+    // line-height: 0;
+    padding: 5px 18px;
+    margin-right: 5px;
+    background-color: var(--category-list-bg-color);
+    // border: 1px solid var(--category-list-border-color);
+    border-radius: 10px;
+  
+    .categories-title{
+      color: var(--category-list-text-color);
     }
   }
 }

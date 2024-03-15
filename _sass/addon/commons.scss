@@ -350,11 +350,11 @@ sup {
 }
 
 .post-preview {
-  @extend %rounded;
+  // @extend %rounded;
 
   border: 0;
   background: var(--card-bg);
-  box-shadow: var(--card-shadow);
+  // box-shadow: var(--card-shadow);
 
   &::before {
     @extend %rounded;

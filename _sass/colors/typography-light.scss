@@ -8,11 +8,20 @@
   --mask-bg: #c1c3c5;
   --main-border-color: #f3f3f3;
 
+  /* Categories List color 수정 */
+  --category-list-bg-color:#f2f2f2;
+  --category-list-border-color:#d2c6b5;
+  --category-list-text-color:#8D8077;
+  --category-list-subtext-color:#989898;
+  --category-list-bg-color: #F9F7F3;
+  --category-color: #93856d;
+
   /* Common color */
   --text-color: #34343c;
   --text-muted-color: #757575;
   --text-muted-hightlight-color: inherit;
-  --heading-color: #2a2a2a;
+  // --heading-color: #2a2a2a;
+  --heading-color: #4f4f4f;
   --label-color: #585858;
   --blockquote-border-color: #eeeeee;
   --blockquote-text-color: #757575;
@@ -40,7 +49,8 @@
   /* Sidebar */
   --site-title-color: rgb(113, 113, 113);
   --site-subtitle-color: #717171;
-  --sidebar-bg: #f6f8fa;
+  // --sidebar-bg: #f6f8fa;
+  --sidebar-bg: #D6CDBE;
   --sidebar-border-color: #efefef;
   --sidebar-muted-color: #545454;
   --sidebar-active-color: #1d1d1d;

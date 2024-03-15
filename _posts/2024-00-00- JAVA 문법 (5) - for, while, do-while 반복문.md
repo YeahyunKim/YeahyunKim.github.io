@@ -7,7 +7,9 @@ categories:
   - Grammar
 tags:
   - Java
-image:
+image: 
+description:
+  - 코드를 반복적으로 실행하게 하는 제어문의 한 종류이다. 반복문의 종류는 크게 세가지가 있다.
 ---
 ## 🔎 반복문이란
 ---
