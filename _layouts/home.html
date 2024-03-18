@@ -64,8 +64,8 @@ refactor: true
       {% assign sub_categories_size = sub_categories | size %}
 
       {% capture _category_url %}/categories/{{ category_name | slugify | url_encode }}/{% endcapture %}
+      <a href="{{ _category_url | relative_url }}" class="category-link">
       <div class="categroies-wrap" style="display: inline-block;">
-        <a href="{{ _category_url | relative_url }}" class="category-link">
         {% assign top_posts_size = site.categories[category_name] | size %}
         <span class="categories-title">{{ category_name }}</span>
         <span class="text-muted small font-weight-light">
@@ -73,8 +73,8 @@ refactor: true
           {{ top_posts_size }}
 
         </span>
-      </a>
       </div>
+    </a>
   
     {% endif %}
     {% endfor %}

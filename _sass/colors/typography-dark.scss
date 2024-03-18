@@ -9,9 +9,10 @@
   --main-border-color: rgb(44, 45, 45);
 
 
-  /* Categories List color */
-  --category-list-bg-color:black;
+  /* Categories List color 수정 */ 
+  --category-list-bg-color:#292929;
   --category-list-border-color:#f2f2f2;
+  --category-list-text-color: #ac9889;
   --category-color: #ac9889;
 
 
@@ -66,6 +67,7 @@
   --btn-paginator-hover-color: #2e2e2e;
 
   /* Posts */
+  --divider-color : #333333;
   --toc-highlight: rgb(116, 178, 243);
   --tag-hover: rgb(43, 56, 62);
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
@@ -74,7 +76,8 @@
   --footnote-target-bg: rgb(63, 81, 181);
   --btn-share-color: #6c757d;
   --btn-share-hover-color: #bfc1ca;
-  --card-bg: #1e1e1e;
+  // --card-bg: #1e1e1e; 수정
+  --card-bg: #1e1e1e00;
   --card-hovor-bg: #464d51;
   --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
     rgb(137, 135, 135, 0.24) 0 0 0 1px;
