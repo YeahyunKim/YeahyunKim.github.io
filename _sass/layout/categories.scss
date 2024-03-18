@@ -26,6 +26,13 @@
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
     }
+
+    a {
+      color: var(--category-pg-text-color);
+      font-weight: 600
+    }
+    
+
   }
 
   i {
@@ -46,6 +53,10 @@
 
     &:last-child {
       border-bottom: 0;
+    }
+
+    a {
+      color: var(--sub-category-pg-text-color);
     }
   }
 } /* .categories */

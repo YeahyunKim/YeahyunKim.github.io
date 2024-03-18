@@ -835,9 +835,11 @@ $btn-mb: 0.5rem;
   }
 
   .sidebar-bottom {
-    padding-left: 2rem;
-    padding-right: 1rem;
+    // padding-left: 2rem;
+    // padding-right: 1rem;
     margin-bottom: 1.5rem;
+    
+    justify-content: center;
 
     $btn-size: 1.75rem;
 
@@ -858,15 +860,20 @@ $btn-mb: 0.5rem;
         background-color: var(--sidebar-hover-bg);
       }
     }
+    
+    * {
+      &:not(:last-child) {
+        margin-right: $sb-btn-gap;
+      }  
+    }
+
+    
 
     a {
       @extend %button;
       @extend %sidebar-link-hover;
       @extend %clickable-transition;
 
-      &:not(:last-child) {
-        margin-right: $sb-btn-gap;
-      }
     }
 
     i {

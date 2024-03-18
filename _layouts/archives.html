@@ -27,7 +27,15 @@ layout: page
       <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
         {{ post.date | date: df_strftime_m }}
       </span>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">
+        <span class="category-title" style="text-transform: uppercase;">
+          {{ post.categories.first }} › <!-- 수정 추가 -->
+        </span>
+        <span class="post-title">
+          {{ post.title }}
+        </span>
+      </a>
+      <!-- 여기 -->
     </li>
 
     {% if forloop.last %}</ul>{% endif %}
