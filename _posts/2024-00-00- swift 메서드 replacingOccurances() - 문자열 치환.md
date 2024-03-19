@@ -10,6 +10,8 @@ tags:
   - methods
   - SwiftStringMethods
 image: https://ifh.cc/g/wvbwro.png
+description:
+  - 파라미터를 통해 받은 문자열을 다른 문자열로 대체하고 새 문자열을 반환한다.
 ---
 ## replacingOccurrences(of:with:) 
 

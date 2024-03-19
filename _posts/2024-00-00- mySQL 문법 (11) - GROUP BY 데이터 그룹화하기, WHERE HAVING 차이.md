@@ -8,6 +8,8 @@ categories:
 tags:
   - mySQL
 image: https://ifh.cc/g/DMV0va.png
+description:
+  - 데이터의 유형별 개수를 알고 싶을때, 그리고 WHERE 과 HAVING의 차이점
 ---
 ## 💡GROUP BY
 ---

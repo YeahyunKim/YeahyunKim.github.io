@@ -8,6 +8,8 @@ categories:
 tags:
   - Java
 image: https://ifh.cc/g/NhyPJf.png
+description:
+  - 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다.
 ---
 ## 🔎 조건문 이란
 ---

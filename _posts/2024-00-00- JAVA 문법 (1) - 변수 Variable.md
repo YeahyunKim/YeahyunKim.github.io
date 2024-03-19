@@ -8,6 +8,8 @@ categories:
 tags:
   - Java
 image: https://ifh.cc/g/NhyPJf.png
+description:
+  - 변수(Variable)는 데이터를 저장하는 공간이다. 변수는 특정 데이터 타입을 가지며, 이 데이터 타입에 따라 저장할 수 있는 데이터의 종류와 크기가 결정된다.
 ---
 ## 🔎 변수(Variable)
 ---
