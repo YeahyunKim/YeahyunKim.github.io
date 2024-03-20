@@ -1,6 +1,40 @@
 [
   
   {
+    "title": "JAVA study (8) - Array 배열을 print 했을때 주소값이 나오는 이유",
+    "url": "/posts/JAVA-study-(8)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-print-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/",
+    "categories": "Java, Study",
+    "tags": "Java",
+    "date": "2024-03-19 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "🔎 배열을 출력했을때 메모리 주소가 나오는 이유\bint[] arrayValue = new int[5] //배열 생성System.out.println(arrayValue) // [I@a09ee92  위에는 [1, 2, 3, 4, 5] 의 값을 가지고있는 배열을 생성하였다.그리고 해당 변수를 출력해보면 메모리 주소값이 출력이 되는데, [I@a09ee92 ...",
+    "content": "🔎 배열을 출력했을때 메모리 주소가 나오는 이유\bint[] arrayValue = new int[5] //배열 생성System.out.println(arrayValue) // [I@a09ee92  위에는 [1, 2, 3, 4, 5] 의 값을 가지고있는 배열을 생성하였다.그리고 해당 변수를 출력해보면 메모리 주소값이 출력이 되는데, [I@a09ee92 이는 왜이럴까?01. 배열 참조값 보관int[] arrayValue = new int[1, 2, 3, 4, 5] //배열 생성System.out.println(arrayValue) // [I@a09ee92  int[] students 변수는 new int[5] 로 생성한 배열의 참조값을 가지고 있다.      new int[5] 로 배열을 생성하면 배열의 크기만큼 매모리를 확보한다.    배열을 생성하고 나면 자바는 메모리 어딘가에 있는 이 배열에 접근할 수 있는 참조값(주소)[I@a09ee92 를 반환한다.    앞서 선언한 배열 변수인 int[] students 에 생성된 배열의 참조값[I@a09ee92을 보관한다.    int[] students의 변수를 통해, [1, 2, 3, 4, 5]의 배열에 접근할 수 있다.  02. 간단하게 풀어보기int[] arrayValue = new int[5]; //1. 배열 생성  int[] students = [I@a09ee92; //2. new int[5]의 결과로 [I@a09ee92 참조값 반환arrayValue = [I@a09ee92 //3. 최종 결과  이는 메모리의 STACK 과 HEAP에 관련이 있다.이 문제는 추후에 정리하여 글을 올리도록 하겠다."
+  },
+  
+  {
+    "title": "JAVA 문법 (6) - 배열",
+    "url": "/posts/JAVA-%EB%AC%B8%EB%B2%95-(6)-%EB%B0%B0%EC%97%B4/",
+    "categories": "Java, Grammar",
+    "tags": "Java",
+    "date": "2024-03-13 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "🔎 배열이란  배열(Array)는 동일한 데이터 타입의 연속된 메모리 공간에 저장된 요소들의 집합이다.01. 값 목록으로 배열 생성int[] scores = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}  • \b정해진 값의 목록이 있다면 위와 같이 배열 객체를 생성할 수 있다.int[] scores = {10, 20, 30...",
+    "content": "🔎 배열이란  배열(Array)는 동일한 데이터 타입의 연속된 메모리 공간에 저장된 요소들의 집합이다.01. 값 목록으로 배열 생성int[] scores = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}  • \b정해진 값의 목록이 있다면 위와 같이 배열 객체를 생성할 수 있다.int[] scores = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}scores[0] = 15;  • \b대입 연산자로 값을 바꿀 수 있다.02. new 연산자로 배열 생성int[] scores = new int[5];  • 정해진 값의 목록이 없지만, 앞으로 값을 정장할 배열을 미리 만들고 싶다면 new 연산자를 사용할 수 있다.  new 연산자로 배열을 처음 생성할 때는 자동으로 기본값으로 초기화 된다.int의 경우에는 0의 값이 메모리에 저장이된다.03. 타입별 배열의 초기값                                             분류      타입      초기화              기본 타입(정수)      byte[]  char[]  short[]  int[]  long[]      0  ‘\\u000’  0  0  0L              기본 타입(실수)      float[ ]  double[ ]      0.0F  0.0              기본 타입(논리)      boolean[]      false              참조 타입      클래스[ ]      null              인터페이스[ ]      null             "
+  },
+  
+  {
     "title": "JAVA 문법 (5) - for, while, do-while 반복문",
     "url": "/posts/JAVA-%EB%AC%B8%EB%B2%95-(5)-for,-while,-do-while-%EB%B0%98%EB%B3%B5%EB%AC%B8/",
     "categories": "Java, Grammar",
@@ -83,23 +117,6 @@
     
     "snippet": "💡DELETE01. DELETE  The DELETE statement is used to delete existing records in a table.UPDATE 는 테이블의 기존 데이터 값을 삭제하는데 사용한다.02. 주의사항  반드시 WHERE절을 사용하여 특정 데이터만 삭제하는데 사용하자. 그렇지 않으면 모든 데이터가 삭제될수도…💡문법 Syn...",
     "content": "💡DELETE01. DELETE  The DELETE statement is used to delete existing records in a table.UPDATE 는 테이블의 기존 데이터 값을 삭제하는데 사용한다.02. 주의사항  반드시 WHERE절을 사용하여 특정 데이터만 삭제하는데 사용하자. 그렇지 않으면 모든 데이터가 삭제될수도…💡문법 Syntax01. \b특정한 컬럼의 데이터값을 삭제할 때DELETE FROM 테이블명 WHERE 컬럼1 = '삭제할 값';02. \b모든 데이터를 삭제할 때DELETE FROM 테이블명💡사용예시01. 특정한 컬럼의 데이터값을 삭제할 때DELETE FROM CustomersWHERE CustomerID = 1;  • 조건 1 : CustomerID 가 1• 해석 : \b고객 테이블 고객 아이디가 1인 고객의 데이터를 삭제해줘02. 모든 데이터를 삭제할 때DELETE FROM Customers;  • 해석 : \b고객 테이블의 데이터를 모두 삭제해줘"
-  },
-  
-  {
-    "title": "JAVA study (8) - Array 배열을 print 했을때 주소값이 나오는 이유",
-    "url": "/posts/JAVA-study-(8)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-print-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/",
-    "categories": "Java, Study",
-    "tags": "Java",
-    "date": "2024-03-12 00:00:00 +0900",
-    
-
-
-
-
-
-    
-    "snippet": "🔎 배열을 출력했을때 메모리 주소가 나오는 이유\bint[] arrayValue = new int[5] //배열 생성System.out.println(arrayValue) // [I@a09ee92  위에는 [1, 2, 3, 4, 5] 의 값을 가지고있는 배열을 생성하였다.그리고 해당 변수를 출력해보면 메모리 주소값이 출력이 되는데, [I@a09ee92 ...",
-    "content": "🔎 배열을 출력했을때 메모리 주소가 나오는 이유\bint[] arrayValue = new int[5] //배열 생성System.out.println(arrayValue) // [I@a09ee92  위에는 [1, 2, 3, 4, 5] 의 값을 가지고있는 배열을 생성하였다.그리고 해당 변수를 출력해보면 메모리 주소값이 출력이 되는데, [I@a09ee92 이는 왜이럴까?01. 배열 참조값 보관int[] arrayValue = new int[1, 2, 3, 4, 5] //배열 생성System.out.println(arrayValue) // [I@a09ee92  int[] students 변수는 new int[5] 로 생성한 배열의 참조값을 가지고 있다.      new int[5] 로 배열을 생성하면 배열의 크기만큼 매모리를 확보한다.    배열을 생성하고 나면 자바는 메모리 어딘가에 있는 이 배열에 접근할 수 있는 참조값(주소)[I@a09ee92 를 반환한다.    앞서 선언한 배열 변수인 int[] students 에 생성된 배열의 참조값[I@a09ee92을 보관한다.    int[] students의 변수를 통해, [1, 2, 3, 4, 5]의 배열에 접근할 수 있다.  02. 간단하게 풀어보기int[] arrayValue = new int[5]; //1. 배열 생성  int[] students = [I@a09ee92; //2. new int[5]의 결과로 [I@a09ee92 참조값 반환arrayValue = [I@a09ee92 //3. 최종 결과  이는 메모리의 STACK 과 HEAP에 관련이 있다.이 문제는 추후에 정리하여 글을 올리도록 하겠다."
   },
   
   {

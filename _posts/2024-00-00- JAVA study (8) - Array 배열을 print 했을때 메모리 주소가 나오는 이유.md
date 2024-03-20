@@ -8,6 +8,8 @@ categories:
 tags:
   - Java
 image: https://ifh.cc/g/NhyPJf.png
+description:
+  - 참조값에 대한 기본적인 이해
 ---
 ## 🔎 배열을 출력했을때 메모리 주소가 나오는 이유
 ---
