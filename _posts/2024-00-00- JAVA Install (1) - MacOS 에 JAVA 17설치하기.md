@@ -8,6 +8,8 @@ categories:
 tags:
   - Java
 image: https://ifh.cc/g/wvbwro.png
+description:
+  - JAVA 17버전 설치하기
 ---
 ## MacOS에 JAVA 11설치하기
 
