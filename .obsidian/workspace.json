@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-00-00- JAVA study (2) - 변수 타입과 메모리 공간.md",
+                "file": "_posts/2024-00-00- JAVA study (3) - 정적 컨텐츠.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-00-00- JAVA study (2) - 변수 타입과 메모리 공간.md",
+                "file": "_posts/2024-00-00- JAVA study (3) - 정적 컨텐츠.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-00-00- JAVA study (2) - 변수 타입과 메모리 공간.md",
+                "file": "_posts/2024-00-00- JAVA study (3) - 정적 컨텐츠.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-00-00- JAVA study (2) - 변수 타입과 메모리 공간.md"
+                "file": "_posts/2024-00-00- JAVA study (3) - 정적 컨텐츠.md"
               }
             }
           }
@@ -197,6 +197,7 @@
   },
   "active": "40e24eb77fb888cf",
   "lastOpenFiles": [
+    "_posts/2024-00-00- JAVA study (2) - 변수 타입과 메모리 공간.md",
     "_posts/2024-00-00- JAVA study (1) -  자바란?.md",
     "_posts/2024-00-00- JAVA study (7) - String 리터럴, String 객체의 차이.md",
     "_posts/2024-00-00- JAVA 문법 (5) - for, while, do-while 반복문.md",
@@ -232,7 +233,6 @@
     "_posts/2024-00-00- mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기.md",
     "_posts/2024-00-00- mySQL 문법 (3) -  AND, OR, NOT 논리연산자.md",
     "_posts/2024-00-00- mySQL 문법 (4) - 비교연산자 종류.md",
-    "_posts/2024-00-00- mySQL 문법 (5) - BETWEEN, IN, LIKE.md",
     "_site/무제 파일.canvas",
     "무제 파일.canvas",
     "Pasted image 20240227124417.png",
