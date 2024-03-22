@@ -9,6 +9,8 @@ tags:
   - Java
   - JavaSpring
 image: https://ifh.cc/g/NhyPJf.png
+description:
+  - String Literal 과 new String()은 메모리 저장의 차이가 있다.
 ---
 ## 🔎 문자열 생성
 ---
