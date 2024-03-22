@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "40e24eb77fb888cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-00-00- JAVA study (2) - 변수 타입과 메모리 공간.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "9ae7af00f328df42",
             "type": "leaf",
             "state": {
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-00-00- JAVA Install (1) - MacOS 에 JAVA 17설치하기.md",
+                "file": "_posts/2024-00-00- JAVA study (2) - 변수 타입과 메모리 공간.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-00-00- JAVA Install (1) - MacOS 에 JAVA 17설치하기.md",
+                "file": "_posts/2024-00-00- JAVA study (2) - 변수 타입과 메모리 공간.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-00-00- JAVA Install (1) - MacOS 에 JAVA 17설치하기.md"
+                "file": "_posts/2024-00-00- JAVA study (2) - 변수 타입과 메모리 공간.md"
               }
             }
           }
@@ -183,14 +195,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "9811220d2e85b49b",
+  "active": "40e24eb77fb888cf",
   "lastOpenFiles": [
-    "_posts/2024-00-00- JAVA 문법 (6) - 배열.md",
+    "_posts/2024-00-00- JAVA study (1) -  자바란?.md",
+    "_posts/2024-00-00- JAVA study (7) - String 리터럴, String 객체의 차이.md",
     "_posts/2024-00-00- JAVA 문법 (5) - for, while, do-while 반복문.md",
-    "_posts/2024-00-00- JAVA 문법 (4) - switch 조건문.md",
-    "_posts/2024-00-00- JAVA 문법 (3) - if, else, else if 조건문.md",
     "_posts/2024-00-00- JAVA 문법 (2) - 변수 명명 규칙.md",
     "_posts/2024-00-00- JAVA 문법 (1) - 변수 Variable.md",
+    "_posts/2024-00-00- swift 메서드 replacingOccurances() - 문자열 치환.md",
+    "_posts/2024-00-00- JAVA 문법 (6) - 배열.md",
+    "_posts/2024-00-00- JAVA 문법 (4) - switch 조건문.md",
+    "_posts/2024-00-00- JAVA 문법 (3) - if, else, else if 조건문.md",
     "_site/posts/JAVA-문법-(6)-배열/index.html",
     "_site/posts/JAVA-문법-(6)-배열",
     "_site/page11/index.html",
@@ -200,12 +215,10 @@
     "_posts/2024-00-00- JAVA study (8) - Array 배열을 print 했을때 메모리 주소가 나오는 이유.md",
     "_posts/2024-00-00- mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이.md",
     "_posts/2024-00-00- JAVA study (6) - 리터럴과 상수의 차이.md",
-    "_posts/2024-00-00- JAVA study (7) - String 리터럴, String 객체의 차이.md",
     "_site/posts/JAVA-study-(8)-Array-배열을-print-했을때-메모리-주소가-나오는-이유/index.html",
     "_site/posts/JAVA-study-(8)-Array-배열을-print-했을때-메모리-주소가-나오는-이유",
     "_site/posts/JAVA-study-(8)-Array-배열을-print-했을때-주소값이-나오는-이유/index.html",
     "_site/posts/JAVA-study-(8)-Array-배열을-print-했을때-주소값이-나오는-이유",
-    "_posts/2024-00-00- swift 메서드 replacingOccurances() - 문자열 치환.md",
     "_posts/2024-00-00- 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기.md",
     "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
     "_posts/2024-00-00- 프로그래머스 Swift 코테준비 (2) - a와 b 출력하기.md",
