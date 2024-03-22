@@ -9,6 +9,8 @@ tags:
   - Java
   - JavaSpring
 image: https://ifh.cc/g/NhyPJf.png
+description:
+  - Maven은 주로 Java 개발에 사용되는 프로젝트 관리 빌드 도구이다.  Apache Ant의 대안으로 만들어 졌으며, Apache Software Foundation에서 호스팅하는 Maven은 자카르타 프로젝트의 일부로 시작되었다고 한다.
 ---
 ## 메이븐(Maven) 이란?
 ---
