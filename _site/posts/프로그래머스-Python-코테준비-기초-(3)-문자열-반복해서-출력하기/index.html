@@ -35,25 +35,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Python 코테준비 기초 (1) - 문자열 출력하기" />
+<meta property="og:title" content="프로그래머스 Python 코테준비 기초 (3) - 문자열 반복해서 출력하기" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="[“문자열 출력하기”]" />
-<meta property="og:description" content="[“문자열 출력하기”]" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(1)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(1)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
+<meta name="description" content="[“연산자 활용하기”]" />
+<meta property="og:description" content="[“연산자 활용하기”]" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-25T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="프로그래머스 Python 코테준비 기초 (1) - 문자열 출력하기" />
+<meta property="twitter:title" content="프로그래머스 Python 코테준비 기초 (3) - 문자열 반복해서 출력하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-25T00:00:00+09:00","datePublished":"2024-03-25T00:00:00+09:00","description":"[“문자열 출력하기”]","headline":"프로그래머스 Python 코테준비 기초 (1) - 문자열 출력하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(1)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(1)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-25T00:00:00+09:00","datePublished":"2024-03-25T00:00:00+09:00","description":"[“연산자 활용하기”]","headline":"프로그래머스 Python 코테준비 기초 (3) - 문자열 반복해서 출력하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Python 코테준비 기초 (1) - 문자열 출력하기 | Yeahyun Kim
+  <title>프로그래머스 Python 코테준비 기초 (3) - 문자열 반복해서 출력하기 | Yeahyun Kim
   </title>
 
   <!--
@@ -430,7 +430,7 @@
         
           
             
-              <span>프로그래머스 Python 코테준비 기초 (1) - 문자열 출력하기</span>
+              <span>프로그래머스 Python 코테준비 기초 (3) - 문자열 반복해서 출력하기</span>
             
 
           
@@ -617,6 +617,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -668,7 +690,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Python 코테준비 기초 (1) - 문자열 출력하기</h1>
+    <h1 data-toc-skip>프로그래머스 Python 코테준비 기초 (3) - 문자열 반복해서 출력하기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -738,7 +760,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="152 words"
+  title="195 words"
 >
   <em>1 min</em> read</span>
 
@@ -749,7 +771,7 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제-문자열-출력하기"><span class="me-2">01 문제 :문자열 출력하기</span><a href="#01-문제-문자열-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제-문자열-반복해서-출력하기"><span class="me-2">01 문제 :문자열 반복해서 출력하기</span><a href="#01-문제-문자열-반복해서-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <hr />
 <blockquote>
@@ -757,7 +779,8 @@
 </blockquote>
 
 <blockquote class="command-text">
-  <p>문자열 <code class="language-plaintext highlighter-rouge">str</code>이 주어질 때, <code class="language-plaintext highlighter-rouge">str</code>을 출력하는 코드를 작성해 보세요.</p>
+  <p>문자열 <code class="language-plaintext highlighter-rouge">str</code>과 정수 <code class="language-plaintext highlighter-rouge">n</code>이 주어집니다.<br />
+<code class="language-plaintext highlighter-rouge">str</code>이 <code class="language-plaintext highlighter-rouge">n</code>번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.</p>
 </blockquote>
 <p><br />
 <br /></p>
@@ -766,8 +789,8 @@
 </blockquote>
 
 <blockquote class="command-text">
-  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str</code>의 길이 ≤ 1,000,000<br />
-• <code class="language-plaintext highlighter-rouge">str</code>에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.</p>
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str</code>의 길이 ≤ 10
+• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 5</p>
 </blockquote>
 <p><br />
 <br /></p>
@@ -780,14 +803,14 @@
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">HelloWorld</span><span class="err">!</span>
+</pre></td><td class="rouge-code"><pre><span class="n">string</span> <span class="mi">5</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h5 id="출력-1"><span class="me-2">출력 #1</span><a href="#출력-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">HelloWorld</span><span class="err">!</span>
+</pre></td><td class="rouge-code"><pre><span class="n">stringstringstringstringstring</span>
 </pre></td></tr></tbody></table></code></div></div>
 <p><br />
 <br /></p>
@@ -798,7 +821,9 @@
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">str</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
+2
+</pre></td><td class="rouge-code"><pre><span class="nb">str</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="nf">input</span><span class="p">().</span><span class="nf">strip</span><span class="p">().</span><span class="nf">split</span><span class="p">(</span><span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
@@ -807,35 +832,48 @@
 <h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 
-<blockquote class="command-text">
-  <p>원하는 값을 출력할 수 있는 방법은 <code class="language-plaintext highlighter-rouge">print(값)</code>을 활용하여 출력할 수 있다.</p>
+<blockquote>
+  <h4 id="1-연산자를-활용하여-풀기"><span class="me-2">1) 연산자를 활용하여 풀기</span><a href="#1-연산자를-활용하여-풀기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">문자열</code> * <code class="language-plaintext highlighter-rouge">넘버</code> = <code class="language-plaintext highlighter-rouge">문자열</code> 인것을 활용하여, <code class="language-plaintext highlighter-rouge">str * n</code> 으로 간단하게 풀 수 있다.</p>
 </blockquote>
 
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+</pre></td><td class="rouge-code"><pre><span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="o">*</span><span class="n">n</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
 <br />
 <br /></p>
+
+<p><br /></p>
 <h2 id="03-answer"><span class="me-2">03 Answer</span><a href="#03-answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
+<blockquote>
+  <h4 id="1-연산자를-활용하여-풀기-1"><span class="me-2">1) 연산자를 활용하여 풀기</span><a href="#1-연산자를-활용하여-풀기-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="rouge-code"><pre><span class="nb">str</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nb">str</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="nf">input</span><span class="p">().</span><span class="nf">strip</span><span class="p">().</span><span class="nf">split</span><span class="p">(</span><span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></div></div>
+<span class="nf">print</span><span class="p">(</span><span class="nb">str</span><span class="o">*</span><span class="n">n</span><span class="p">)</span>
 
-<p><br /></p>
+<span class="c1"># stringstringstringstringstring
+</span></pre></td></tr></tbody></table></code></div></div>
 
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181952">해당문제 풀러가보기</a></p>
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181950">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -891,21 +929,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(1)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%281%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(3)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%283%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B0%2598%25EB%25B3%25B5%25ED%2595%25B4%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(1)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%281%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(3)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%283%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B0%2598%25EB%25B3%25B5%25ED%2595%25B4%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%281%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(1)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%283%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B0%2598%25EB%25B3%25B5%25ED%2595%25B4%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(3)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1364,31 +1402,31 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1466,6 +1504,75 @@
         </article>
       
         <article class="col">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(1)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1711292400"
+  data-df="ll"
+  
+>
+  Mar 25, 2024
+</time>
+
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (1) - 문자열 출력하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  01 문제 :문자열 출력하기
+
+
+
+
+  문제 설명
+
+
+
+  문자열 str이 주어질 때, str을 출력하는 코드를 작성해 보세요.
+
+
+
+
+  제한사항
+
+
+
+  • 1 ≤ str의 길이 ≤ 1,000,000
+• str에는 공백이 없으며, 첫째 줄에 한 줄로만 주어집니다.
+
+
+
+
+
+  입출력 예
+
+
+입력 #1
+HelloWorld!
+
+
+출력 #1
+Hello...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(2)-a%EC%99%80-b-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
@@ -1498,6 +1605,7 @@
 
 
 
+
   문제 설명
 
 
@@ -1521,91 +1629,20 @@
 
 
 입력 #1
-1
 4 5
 
 
 출력 #1
-1
-2
 a = 4
 b = 5
 
 
 
 
-  제시 코...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+  제시 코드
 
 
-
-
-<time
-  
-  data-ts="1711292400"
-  data-df="ll"
-  
->
-  Mar 25, 2024
-</time>
-
-              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (3) - 문자열 반복해서 출력하기</h4>
-              <div class="text-muted">
-                <p>
-                  
-
-
-
-
-
-                  01 문제 :문자열 반복해서 출력하기
-
-
-
-  문제 설명
-
-
-
-  문자열 str과 정수 n이 주어집니다.
-str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.
-
-
-
-
-  제한사항
-
-
-
-  • 1 ≤ str의 길이 ≤ 10
-• 1 ≤ n ≤ 5
-
-
-
-
-
-  입출력 예
-
-
-입력 #1
-1
-string 5
-
-
-출력 #1
-1
-stringstr...
+a...
                 </p>
               </div>
             </div>
@@ -1627,21 +1664,21 @@ stringstr...
 
   
     <a
-      href="/posts/JAVA-study-(8)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-print-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(2)-a%EC%99%80-b-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>JAVA study (8) - Array 배열을 print 했을때 주소값이 나오는 이유</p>
+      <p>프로그래머스 Python 코테준비 기초 (2) - a와 b 출력하기</p>
     </a>
   
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(2)-a%EC%99%80-b-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(4)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>프로그래머스 Python 코테준비 기초 (2) - a와 b 출력하기</p>
+      <p>프로그래머스 Python 코테준비 기초 (4) - 대소문자 바꿔서 출력하기</p>
     </a>
   
 </nav>
