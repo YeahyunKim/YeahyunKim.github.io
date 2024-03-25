@@ -31,35 +31,29 @@
   
 
   
-    
-
-    
-  
 
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기" />
+<meta property="og:title" content="프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="💡ORDER BY 01. ORDER BY" />
-<meta property="og:description" content="💡ORDER BY 01. ORDER BY" />
-<link rel="canonical" href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/" />
+<meta name="description" content="[“배열 슬라이싱”]" />
+<meta property="og:description" content="[“배열 슬라이싱”]" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
-<meta property="og:image" content="https://ifh.cc/g/DMV0va.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-08T00:00:00+09:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://ifh.cc/g/DMV0va.png" />
-<meta property="twitter:title" content="mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기" />
+<meta property="article:published_time" content="2024-03-25T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-08T00:00:00+09:00","datePublished":"2024-03-08T00:00:00+09:00","description":"💡ORDER BY 01. ORDER BY","headline":"mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기","image":"https://ifh.cc/g/DMV0va.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(6)-ORDER-BY-%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-25T00:00:00+09:00","datePublished":"2024-03-25T00:00:00+09:00","description":"[“배열 슬라이싱”]","headline":"프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기 | Yeahyun Kim
+  <title>프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기 | Yeahyun Kim
   </title>
 
   <!--
@@ -436,7 +430,7 @@
         
           
             
-              <span>mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기</span>
+              <span>프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기</span>
             
 
           
@@ -503,361 +497,6 @@
 
 
 
-
-  
-  
-
-  <!-- CDN URL -->
-  
-
-  <!-- Add image path -->
-  
-
-  
-    
-      
-      
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-
-  
 
 
 <!-- Add header for code snippets -->
@@ -989,32 +628,6 @@
 
       
     
-
-    
-  
-
-  
-  
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
       
 
       
@@ -1050,6 +663,11 @@
     
 
     
+  
+
+  
+  
+
   
 
 
@@ -1062,7 +680,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>mySQL 문법 (6) - ORDER BY 오름차순,내림차순으로 정렬하기</h1>
+    <h1 data-toc-skip>프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -1078,13 +696,13 @@
 
 <time
   
-  data-ts="1709823600"
+  data-ts="1711292400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Mar  8, 2024
+  Mar 25, 2024
 </time>
 
       </span>
@@ -1092,15 +710,6 @@
       <!-- lastmod date -->
       
 
-      
-        
-        
-        
-
-        
-
-        <div class="mt-3 mb-3">
-          <a href="https://ifh.cc/g/DMV0va.png" class="popup img-link preview-img shimmer"><img src="https://ifh.cc/g/DMV0va.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -1141,9 +750,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="452 words"
+  title="647 words"
 >
-  <em>2 min</em> read</span>
+  <em>3 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -1152,114 +761,259 @@
   </header>
 
   <div class="content">
-    <h2 id="order-by"><span class="me-2">💡ORDER BY</span><a href="#order-by" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<hr />
-<h4 id="01-order-by"><span class="me-2">01. ORDER BY</span><a href="#01-order-by" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+    <h2 id="01-문제-문자열-섞기"><span class="me-2">01 문제 :문자열 섞기</span><a href="#01-문제-문자열-섞기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<blockquote class="command-text">
-  <p>The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword is used to sort the result-set in ascending or descending order. <br />
-The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword sorts the records in ascending order by default. To sort the records in descending order, use the <code class="language-plaintext highlighter-rouge">DESC</code> keyword.</p>
+<hr />
+<blockquote>
+  <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
 
-<p><code class="language-plaintext highlighter-rouge">ORDER BY</code> 는 결과의 집합을 오름차 / 내림차순으로 정렬하는데 사용된다.</p>
+<blockquote class="command-text">
+  <p>길이가 같은 두 문자열 <code class="language-plaintext highlighter-rouge">str1</code>과 <code class="language-plaintext highlighter-rouge">str2</code>가 주어집니다.<br />
+두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.</p>
+</blockquote>
 
 <p><br />
 <br /></p>
-<h2 id="문법-syntax"><span class="me-2">💡문법 Syntax</span><a href="#문법-syntax" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<hr />
-<h4 id="01-order-by-asc오름차순"><span class="me-2">01. ORDER BY ASC(오름차순)</span><a href="#01-order-by-asc오름차순" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str1</code>의 길이 = <code class="language-plaintext highlighter-rouge">str2</code>의 길이 ≤ 10<br />
+• <code class="language-plaintext highlighter-rouge">str1</code>과 <code class="language-plaintext highlighter-rouge">str2</code>는 알파벳 소문자로 이루어진 문자열입니다.</p>
+</blockquote>
+<p><br />
+<br /></p>
+
+<blockquote>
+  <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>str1</th>
+      <th>str2</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“aaaaa”</td>
+      <td>“bbbbb”</td>
+      <td>“ababababab”</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><br /></p>
+
+<p><br /></p>
+<blockquote>
+  <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="err">테이블</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="err">컬럼</span><span class="mi">1</span> <span class="k">ASC</span><span class="p">,</span> <span class="err">컬럼</span><span class="mi">2</span> <span class="k">ASC</span>
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">str1</span><span class="p">,</span> <span class="n">str2</span><span class="p">):</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+<br />
+<br /></p>
+<h2 id="-02-풀이"><span class="me-2">## 02 풀이</span><a href="#-02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+
+<blockquote>
+  <h4 id="1-내가-푼-방법---for문-활용하기"><span class="me-2">1) 내가 푼 방법 - for문 활용하기</span><a href="#1-내가-푼-방법---for문-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<blockquote class="command-text">
+  <p><code class="language-plaintext highlighter-rouge">str1</code> 과 <code class="language-plaintext highlighter-rouge">str2</code> 의 길이가 같다는 점을 활용하여, for문을 통해 문제를 해결할 수 있었다.
+먼저, 정답을 담을 빈 문자열 변수를 생성해주었다.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">result</span> <span class="o">=</span> <span class="sh">""</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br /></p>
-<h4 id="02-order-by-desc내림차순"><span class="me-2">02. ORDER BY DESC(내림차순)</span><a href="#02-order-by-desc내림차순" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote class="command-text">
+  <p>그 후, <code class="language-plaintext highlighter-rouge">str1</code> 혹은 <code class="language-plaintext highlighter-rouge">str2</code> 의 길이가 같으니, 둘 중 하나의 길이값만큼 반복문을 돌려주었다.</p>
+</blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="err">테이블</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="err">컬럼</span><span class="mi">1</span> <span class="k">DESC</span><span class="p">,</span> <span class="err">컬럼</span><span class="mi">2</span> <span class="k">DESC</span>
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="n">result</span> <span class="o">=</span> <span class="sh">""</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">str1</span><span class="p">))</span> <span class="p">:</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+<blockquote class="command-text">
+  <p>마지막으로 첫 번째로 <code class="language-plaintext highlighter-rouge">str1[j]</code> 값을, 두번째로 <code class="language-plaintext highlighter-rouge">str2[i]</code> 값을 생성한 변수 <code class="language-plaintext highlighter-rouge">result</code> 에 더해주었다.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">result</span> <span class="o">=</span> <span class="sh">""</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">str1</span><span class="p">)):</span>
+	<span class="n">result</span> <span class="o">+=</span> <span class="n">str1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">str2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
 <br /></p>
+<blockquote>
+  <h4 id="2-다른사람이-푼-방법--for문과-zip-활용하기"><span class="me-2">2) 다른사람이 푼 방법 -for문과 zip() 활용하기</span><a href="#2-다른사람이-푼-방법--for문과-zip-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
-<h2 id="사용예시"><span class="me-2">💡사용예시</span><a href="#사용예시" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<blockquote class="command-text">
+  <p>다른사람의 풀이를 보며 <code class="language-plaintext highlighter-rouge">zip()</code> 이라는걸 알게되었다.<br />
+<strong>zip()은 두개의 리스트를 호출한 후, for문을 사용하여 반환된 튜플을 차례대로 출력해준다.</strong></p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="n">result</span> <span class="o">=</span> <span class="sh">""</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">zip</span><span class="p">(</span><span class="n">str1</span><span class="p">,</span> <span class="n">str2</span><span class="p">)</span> <span class="p">:</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="c1"># ('a', 'b')
+# ('a', 'b')
+# ('a', 'b')
+# ('a', 'b')
+# ('a', 'b')
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+<blockquote class="command-text">
+  <p>그럼 for문을 통해 처음으로 출력되는 값을 두개의 인자에서 받으면?
+<strong>첫 번째 인자 s1이 str1[0] 값을, 두 번째 인자 s2가 str2[0]의 값을 가지게 된다.</strong></p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="n">result</span> <span class="o">=</span> <span class="sh">""</span>
+
+<span class="k">for</span> <span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="ow">in</span> <span class="nf">zip</span><span class="p">(</span><span class="n">str1</span><span class="p">,</span> <span class="n">str2</span><span class="p">)</span> <span class="p">:</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>
+
+<span class="c1"># a
+# b
+# a
+# b
+# ...
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+<blockquote class="command-text">
+  <p>이를 활용하여, <code class="language-plaintext highlighter-rouge">result</code> 변수에 <code class="language-plaintext highlighter-rouge">s1</code>과 <code class="language-plaintext highlighter-rouge">s2</code>의 값을 담아주면 된다.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">result</span> <span class="o">=</span> <span class="sh">""</span>
+
+<span class="k">for</span> <span class="n">s1</span><span class="p">,</span> <span class="n">s2</span> <span class="ow">in</span> <span class="nf">zip</span><span class="p">(</span><span class="n">str1</span><span class="p">,</span> <span class="n">str2</span><span class="p">):</span>  
+    <span class="n">result</span> <span class="o">+=</span> <span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p><br />
+<br />
+<br /></p>
+
+<h2 id="03-answer"><span class="me-2">03 Answer</span><a href="#03-answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h4 id="01-order-by-asc-예시-오름차순"><span class="me-2">01. ORDER BY ASC 예시 (오름차순)</span><a href="#01-order-by-asc-예시-오름차순" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="1-내가-푼-방법---for문-활용"><span class="me-2">1) 내가 푼 방법 - for문 활용</span><a href="#1-내가-푼-방법---for문-활용" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
-<h5 id="1-나이컬럼을-기준으로-오름차순으로-가져오기"><span class="me-2">1) 나이컬럼을 기준으로 오름차순으로 가져오기</span><a href="#1-나이컬럼을-기준으로-오름차순으로-가져오기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
-
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">age</span> <span class="k">ASC</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote class="command-text">
-  <p>• 조건 1 : 없음<br />
-• 해석 : 나이를 오름차순으로 정렬한 고객 정보 테이블을 가져와줘</p>
-</blockquote>
-
-<p><a href="https://ifh.cc/g/TjRLFb.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/TjRLFb.png" alt="이미지" loading="lazy"></a></p>
-
-<blockquote class="command-text">
-  <p>근데 한살이 어떻게 있지?;;</p>
-</blockquote>
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">str1</span><span class="p">,</span> <span class="n">str2</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="sh">""</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">str1</span><span class="p">)):</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="n">str1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">str2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">result</span>
+    
+<span class="c1"># ababababab
+</span></pre></td></tr></tbody></table></code></div></div>
 
 <p><br /></p>
-<h5 id="2-두개의-컬럼을-오름차순으로-정리하기"><span class="me-2">2) 두개의 컬럼을 오름차순으로 정리하기</span><a href="#2-두개의-컬럼을-오름차순으로-정리하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
-
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">age</span> <span class="k">ASC</span><span class="p">,</span> <span class="n">name</span> <span class="k">ASC</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote class="command-text">
-  <p>• 조건 1 : 없음<br />
-• 해석 : 나이를 오름차순으로 정렬하고, 그중 이름을 오름차순으로 정리한 고객 정보 테이블을 가져와줘</p>
+<blockquote>
+  <h4 id="2-다른사람이-푼-방법---for문과-zip-활용하기"><span class="me-2">2) 다른사람이 푼 방법 - for문과 zip() 활용하기</span><a href="#2-다른사람이-푼-방법---for문과-zip-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
 
-<p><a href="https://ifh.cc/g/y1aNgH.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/y1aNgH.png" alt="이미지" loading="lazy"></a></p>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">str1</span><span class="p">,</span> <span class="n">str2</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="sh">""</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">str1</span><span class="p">)):</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="n">str1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">str2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">result</span>
+    
+<span class="c1"># ababababab
+</span></pre></td></tr></tbody></table></code></div></div>
 
 <p><br /></p>
 
-<h4 id="03-order-by-desc-예시-내림차순"><span class="me-2">03. ORDER BY DESC 예시 (내림차순)</span><a href="#03-order-by-desc-예시-내림차순" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<h5 id="1-나이컬럼을-기준으로-내림차순으로-가져오기"><span class="me-2">1) 나이컬럼을 기준으로 내림차순으로 가져오기</span><a href="#1-나이컬럼을-기준으로-내림차순으로-가져오기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
-
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">age</span> <span class="k">DESC</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote class="command-text">
-  <p>• 조건 1 : 없음<br />
-• 해석 : 나이를 오름차순으로 정렬한 고객 정보 테이블을 가져와줘</p>
-</blockquote>
-
-<p><a href="https://ifh.cc/g/AaRXzJ.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/AaRXzJ.png" alt="이미지" loading="lazy"></a></p>
-
-<p><br /></p>
-<h5 id="2-두개의-컬럼을-내림차순으로-정리하기"><span class="me-2">2) 두개의 컬럼을 내림차순으로 정리하기</span><a href="#2-두개의-컬럼을-내림차순으로-정리하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
-
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">customers</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">age</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">name</span> <span class="k">DESC</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<blockquote class="command-text">
-  <p>• 조건 1 : 없음<br />
-• 해석 : 나이를 내림차순으로 정렬하고, 그중 이름을 내림차순으로 정리한 고객 정보 테이블을 가져와줘</p>
-</blockquote>
-
-<p><a href="https://ifh.cc/g/C7GvoK.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/C7GvoK.png" alt="이미지" loading="lazy"></a></p>
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181942">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -1269,8 +1023,8 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/mysql/">mySQL</a>,
-          <a href="/categories/grammar%E3%85%A4/">Grammarㅤ</a>
+          <a href="/categories/programmers/">Programmers</a>,
+          <a href="/categories/%EA%B8%B0%EC%B4%88/">기초</a>
       </div>
     
 
@@ -1280,9 +1034,14 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/mysql/"
+            href="/tags/algorithm/"
             class="post-tag no-text-decoration"
-          >mySQL</a>
+          >Algorithm</a>
+        
+          <a
+            href="/tags/programmers/"
+            class="post-tag no-text-decoration"
+          >Programmers</a>
         
       </div>
     
@@ -1310,21 +1069,21 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=mySQL%20%EB%AC%B8%EB%B2%95%20(6)%20-%20ORDER%20BY%20%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%20%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%286%29-ORDER-BY-%25EC%2598%25A4%25EB%25A6%2584%25EC%25B0%25A8%25EC%2588%259C%2C%25EB%2582%25B4%25EB%25A6%25BC%25EC%25B0%25A8%25EC%2588%259C%25EC%259C%25BC%25EB%25A1%259C-%25EC%25A0%2595%25EB%25A0%25AC%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(11)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%84%9E%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2811%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EC%2584%259E%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=mySQL%20%EB%AC%B8%EB%B2%95%20(6)%20-%20ORDER%20BY%20%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%20%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%286%29-ORDER-BY-%25EC%2598%25A4%25EB%25A6%2584%25EC%25B0%25A8%25EC%2588%259C%2C%25EB%2582%25B4%25EB%25A6%25BC%25EC%25B0%25A8%25EC%2588%259C%25EC%259C%25BC%25EB%25A1%259C-%25EC%25A0%2595%25EB%25A0%25AC%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(11)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%84%9E%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2811%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EC%2584%259E%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%286%29-ORDER-BY-%25EC%2598%25A4%25EB%25A6%2584%25EC%25B0%25A8%25EC%2588%259C%2C%25EB%2582%25B4%25EB%25A6%25BC%25EC%25B0%25A8%25EC%2588%259C%25EC%259C%25BC%25EB%25A1%259C-%25EC%25A0%2595%25EB%25A0%25AC%25ED%2595%2598%25EA%25B8%25B0%2F&text=mySQL%20%EB%AC%B8%EB%B2%95%20(6)%20-%20ORDER%20BY%20%EC%98%A4%EB%A6%84%EC%B0%A8%EC%88%9C,%EB%82%B4%EB%A6%BC%EC%B0%A8%EC%88%9C%EC%9C%BC%EB%A1%9C%20%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2811%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EC%2584%259E%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(11)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%84%9E%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1838,31 +1597,43 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -1914,7 +1685,7 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(2)-WHERE-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/" class="post-preview card h-100">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1926,14 +1697,14 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
 
 <time
   
-  data-ts="1709823600"
+  data-ts="1711292400"
   data-df="ll"
   
 >
-  Mar  8, 2024
+  Mar 25, 2024
 </time>
 
-              <h4 class="pt-0 my-2">mySQL 문법 (2) - WHERE 조건에 맞는 데이터만 가져오기</h4>
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1942,17 +1713,22 @@ The <code class="language-plaintext highlighter-rouge">ORDER BY</code> keyword
 
 
 
-                  💡WHERE
+                  01 문제 :문자열 겹쳐쓰기
 
 
-01. WHERE 절이란
 
 
-  The WHERE clause is used to filter records.
-It is used to extract only those records that fulfill a specified condition.
+  문제 설명
 
 
-WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다....
+
+  문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.
+
+
+
+
+
+  ...
                 </p>
               </div>
             </div>
@@ -1960,7 +1736,7 @@ WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터�
         </article>
       
         <article class="col">
-          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(3)-AND,-OR,-NOT-%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90/" class="post-preview card h-100">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(2)-a%EC%99%80-b-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1972,14 +1748,14 @@ WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터�
 
 <time
   
-  data-ts="1709823600"
+  data-ts="1711292400"
   data-df="ll"
   
 >
-  Mar  8, 2024
+  Mar 25, 2024
 </time>
 
-              <h4 class="pt-0 my-2">mySQL 문법 (3) - AND, OR, NOT 연산자</h4>
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (2) - a와 b 출력하기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1988,20 +1764,47 @@ WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터�
 
 
 
-                  💡AND, OR, NOT 논리연산자
+                  01 문제 :a와 b 출력하기
 
 
-01. AND
+
+  문제 설명
 
 
-  The AND operators are used to filter records based on more than one condition:
+
+  정수 a와 b가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.
 
 
-AND 연산자는 두개의 조건이 모두 true 인 경우의 데이터를 필터링 합니다.
-AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
 
 
-...
+  제한사항
+
+
+
+  • 100,000 ≤ a, b ≤ 100,000
+
+
+
+
+
+  입출력 예
+
+
+입력 #1
+1
+4 5
+
+
+출력 #1
+1
+2
+a = 4
+b = 5
+
+
+
+
+  제시 코...
                 </p>
               </div>
             </div>
@@ -2009,7 +1812,7 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
         </article>
       
         <article class="col">
-          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(4)-%EB%B9%84%EA%B5%90%EC%97%B0%EC%82%B0%EC%9E%90-%EC%A2%85%EB%A5%98/" class="post-preview card h-100">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(3)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -2021,14 +1824,14 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
 
 <time
   
-  data-ts="1709823600"
+  data-ts="1711292400"
   data-df="ll"
   
 >
-  Mar  8, 2024
+  Mar 25, 2024
 </time>
 
-              <h4 class="pt-0 my-2">mySQL 문법 (4) - 비교연산자 종류</h4>
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (3) - 문자열 반복해서 출력하기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -2037,13 +1840,42 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
 
 
 
-                  💡비교연산자
+                  01 문제 :문자열 반복해서 출력하기
 
 
-01. 비교연산자란 - 공식문서
+
+  문제 설명
 
 
-  Comparison operations result in a value of 1 (TRUE), 0 (FALSE), or NULL. These operations work for both numbers and strings. Strings are automatically converted to n...
+
+  문자열 str과 정수 n이 주어집니다.
+str이 n번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.
+
+
+
+
+  제한사항
+
+
+
+  • 1 ≤ str의 길이 ≤ 10
+• 1 ≤ n ≤ 5
+
+
+
+
+
+  입출력 예
+
+
+입력 #1
+1
+string 5
+
+
+출력 #1
+1
+stringstr...
                 </p>
               </div>
             </div>
@@ -2065,21 +1897,21 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
 
   
     <a
-      href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(5)-BETWEEN,-IN,-LIKE/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>mySQL 문법 (5) - BETWEEN, IN, LIKE</p>
+      <p>프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기</p>
     </a>
   
 
   
     <a
-      href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(7)-LIMIT-%EC%9B%90%ED%95%98%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EB%A7%8C%ED%81%BC-%EC%A1%B0%ED%9A%8C%ED%95%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(2)-a%EC%99%80-b-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>mySQL 문법 (7) - LIMIT 원하는 데이터 수만큼 조회하기</p>
+      <p>프로그래머스 Python 코테준비 기초 (2) - a와 b 출력하기</p>
     </a>
   
 </nav>

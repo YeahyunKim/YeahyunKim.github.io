@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기.md"
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기.md"
               }
             }
           }
@@ -197,23 +197,23 @@
   },
   "active": "40e24eb77fb888cf",
   "lastOpenFiles": [
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기.md",
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기.md",
+    "_posts/2024-00-00- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(11)-문자열-섞기/index.html",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(11)-문자열-섞기",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(11)-문자열-겹쳐쓰기-1/index.html",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(11)-문자열-겹쳐쓰기-1",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(10)-문자열-겹쳐쓰기-1/index.html",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(10)-문자열-겹쳐쓰기-1",
     "_site/posts/프로그래머스-Python-코테준비-기초-(1)-문자열-출력하기/index.html",
     "_site/posts/프로그래머스-Python-코테준비-기초-(1)-문자열-출력하기",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (1) - 문자열 출력하기.md",
     "_site/posts/프로그래머스-Python-코테준비-기초-(01)-문자열-출력하기/index.html",
     "_site/posts/프로그래머스-Python-코테준비-기초-(01)-문자열-출력하기",
-    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기.md",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(10)-문자열-겹쳐쓰기/index.html",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(10)-문자열-겹쳐쓰기",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기 1.md",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(9)-홀짝-구분하기-1/index.html",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(9)-홀짝-구분하기-1",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(10)/index.html",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(10)",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(9)-홀짝-구분하기/index.html",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (8) - 문자열 돌리기.md",
-    "_posts/2024-00-00- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (7) - 문자열 붙여서 출력하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (6) - 덧셈식 출력하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (5) - 특수문자 출력하기.md",
@@ -232,7 +232,6 @@
     "Archive/archive/2024-00-00- 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기.md",
     "Archive/archive/2024-00-00- 프로그래머스 Swift 코테준비 (2) - a와 b 출력하기.md",
     "_posts/Java/2024-00-00- JAVA 문법 (6) - 배열.md",
-    "_posts/posts/20190808/mockup.png.md",
     "_site/무제 파일.canvas",
     "무제 파일.canvas",
     "Pasted image 20240227124417.png",
