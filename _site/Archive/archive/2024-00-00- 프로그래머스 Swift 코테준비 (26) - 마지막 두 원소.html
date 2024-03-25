@@ -1,0 +1,148 @@
+<h2 id="01-문제--마지막-두-원소">01 문제 : 마지막 두 원소</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수 리스트 <code class="language-plaintext highlighter-rouge">num_list</code>가 주어질 때, 마지막 원소가 그전 원소보다 크면 마지막 원소에서 그전 원소를 뺀 값을 마지막 원소가 그전 원소보다 크지 않다면 마지막 원소를 두 배한 값을 추가하여 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 2 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 길이 ≤ 10
+• 1 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 원소 ≤ 9</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>num_list</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[2, 1, 6]</td>
+      <td>[2, 1, 6, 5]</td>
+    </tr>
+    <tr>
+      <td>[5, 2, 1, 7, 5]</td>
+      <td>[5, 2, 1, 7, 5, 10]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 마지막 원소인 6이 그전 원소인 1보다 크기 때문에 6 - 1인 5를 추가해 return합니다.</p>
+</blockquote>
+<p><br /></p>
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+<blockquote class="command-text">
+  <p>• 마지막 원소인 5가 그전 원소인 7보다 크지 않기 때문에 5의 두 배인 10을 추가해 return합니다.</p>
+</blockquote>
+<p><br />
+<br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--count-를-활용하여-마지막-그전-원소값-찾기">solution 1 : count 를 활용하여 마지막, 그전 원소값 찾기</h4>
+
+<p>조건 1 : <code class="language-plaintext highlighter-rouge">마지막 원소</code> , <code class="language-plaintext highlighter-rouge">그전 원소</code></p>
+
+<p>배열에서 <code class="language-plaintext highlighter-rouge">마지막 원소</code>값을 구하기 위해서는 <code class="language-plaintext highlighter-rouge">해당 배열의 개수(count)</code>를 활용하면 된다. 현재 <code class="language-plaintext highlighter-rouge">num_list.count</code>를 작성하면 3이라는 값을 얻을 수 있는데, 여기서 배열의 index 값의 시작은 <code class="language-plaintext highlighter-rouge">0</code> 이므로, <code class="language-plaintext highlighter-rouge">-1</code>을 빼주면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">prevNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span> <span class="c1">// 그전 원소</span>
+<span class="k">var</span> <span class="nv">lastNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="c1">// 마지막 원소</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+조건 2 : <code class="language-plaintext highlighter-rouge">마지막 원소가 그전 원소보다 크면 마지막 원소에서 그전 원소를 뺀 값을 마지막 원소가 그전 원소보다 크지 않다면 마지막 원소를 두 배한 값을 추가</code></p>
+
+<p>삼항연산자를 이용하여, 앞에서 생성한 변수를 비교해주면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>    <span class="k">var</span> <span class="nv">num_list</span> <span class="o">=</span> <span class="n">num_list</span>
+
+    <span class="k">var</span> <span class="nv">prevNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
+    <span class="k">var</span> <span class="nv">lastNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">num_list</span> <span class="o">+</span> <span class="p">[</span><span class="n">lastNum</span> <span class="o">&gt;</span> <span class="n">prevNum</span> <span class="p">?</span> <span class="n">lastNum</span> <span class="o">-</span> <span class="nv">prevNum</span> <span class="p">:</span> <span class="n">lastNum</span><span class="o">*</span><span class="mi">2</span><span class="p">]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">num_list</span> <span class="o">=</span> <span class="n">num_list</span>
+
+    <span class="k">var</span> <span class="nv">prevNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">2</span><span class="p">]</span>
+    <span class="k">var</span> <span class="nv">lastNum</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">num_list</span> <span class="o">+</span> <span class="p">[</span><span class="n">lastNum</span> <span class="o">&gt;</span> <span class="n">prevNum</span> <span class="p">?</span> <span class="n">lastNum</span> <span class="o">-</span> <span class="nv">prevNum</span> <span class="p">:</span> <span class="n">lastNum</span><span class="o">*</span><span class="mi">2</span><span class="p">]</span>
+<span class="p">}</span>
+<span class="c1">// 393</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181927">해당문제 풀러가보기</a></p>
+

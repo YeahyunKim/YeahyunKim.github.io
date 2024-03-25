@@ -1,0 +1,313 @@
+<h2 id="01-문제--등차수열의-특정한-항만-더하기">01 문제 : 등차수열의 특정한 항만 더하기</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>두 정수 <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">d</code>와 길이가 n인 boolean 배열 <code class="language-plaintext highlighter-rouge">included</code>가 주어집니다.
+첫째항이 <code class="language-plaintext highlighter-rouge">a</code>, 공차가 <code class="language-plaintext highlighter-rouge">d</code>인 등차수열에서 <code class="language-plaintext highlighter-rouge">included[i]</code>가 i + 1항을 의미할 때,
+이 등차수열의 1항부터 n항까지 <code class="language-plaintext highlighter-rouge">included</code>가 true인 항들만 더한 값을 return
+하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">a</code> ≤ 100
+• 1 ≤ <code class="language-plaintext highlighter-rouge">d</code> ≤ 100
+• 1 ≤ <code class="language-plaintext highlighter-rouge">included</code>의 길이 ≤ 100
+• <code class="language-plaintext highlighter-rouge">included</code>에는 true가 적어도 하나 존재합니다.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>a</th>
+      <th>d</th>
+      <th>included</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>[true, false, false, true, true]</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1</td>
+      <td>[false, false, false, true, false, false, false]</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<p>입출력 예 #1</p>
+<blockquote class="command-text">
+  <p>• 예제 1번은 <code class="language-plaintext highlighter-rouge">a</code>와 <code class="language-plaintext highlighter-rouge">d</code>가 각각 3, 4이고 <code class="language-plaintext highlighter-rouge">included</code>의 길이가 5입니다. 이를 표로 나타내면 다음과 같습니다.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>1항</th>
+      <th>2항</th>
+      <th>3항</th>
+      <th>4항</th>
+      <th>5항</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>등차수열</td>
+      <td>3</td>
+      <td>7</td>
+      <td>11</td>
+      <td>15</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>included</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote class="command-text">
+  <p>따라서 true에 해당하는 1항, 4항, 5항을 더한 3 + 15 + 19 = 37을 return 합니다.</p>
+</blockquote>
+
+<p><br />
+입출력 예 #2</p>
+<blockquote class="command-text">
+  <p>• 예제 2번은 <code class="language-plaintext highlighter-rouge">a</code>와 <code class="language-plaintext highlighter-rouge">d</code>가 각각 7, 1이고 <code class="language-plaintext highlighter-rouge">included</code>의 길이가 7입니다. 이를 표로 나타내면 다음과 같습니다.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>1항</th>
+      <th>2항</th>
+      <th>3항</th>
+      <th>4항</th>
+      <th>5항</th>
+      <th>6항</th>
+      <th>7항</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>등차수열</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>included</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote class="command-text">
+  <p>따라서 4항만 true이므로 10을 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">included</span><span class="p">:[</span><span class="kt">Bool</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+<h4 id="solution-1--반복문과-조건문을-활용하여-풀기">solution 1 : 반복문과 조건문을 활용하여 풀기</h4>
+<p>먼저, <code class="language-plaintext highlighter-rouge">included</code>가 담고 있는 요소의 개수<code class="language-plaintext highlighter-rouge">(count)</code> 만큼 for문을 돌리면, <code class="language-plaintext highlighter-rouge">0..&lt;5</code> 의 값만큼의 <code class="language-plaintext highlighter-rouge">i</code> 값을 얻을 수 있다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="n">i</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">included</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이어서, 해당 <code class="language-plaintext highlighter-rouge">i</code> 값을 활용하여, <code class="language-plaintext highlighter-rouge">included[i]</code>가 <code class="language-plaintext highlighter-rouge">true</code> 일 경우,
+결과값을 저장해주는 하나의 변수를 생성하고, 해당 변수에 값을 더해주면 된다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">included</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+
+	<span class="k">if</span> <span class="n">included</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="kc">true</span> <span class="p">{</span>
+		<span class="n">value</span> <span class="o">+=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
+	<span class="p">}</span>
+	
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+<h4 id="solution-2--map과-filter를-활용하여-풀기">solution 2 : map과 filter를 활용하여 풀기</h4>
+<p><code class="language-plaintext highlighter-rouge">indices</code>와 <code class="language-plaintext highlighter-rouge">filter</code>를 활용하여 <code class="language-plaintext highlighter-rouge">included</code>의 요소중 true인 것의 <code class="language-plaintext highlighter-rouge">index</code> 값만 남겨준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">included</span> <span class="o">=</span> <span class="p">[</span><span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">]</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">included</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">filter</span> <span class="p">{</span> <span class="n">included</span><span class="p">[</span><span class="nv">$0</span><span class="p">]</span> <span class="p">})</span>
+
+<span class="c1">// [0, 3, 4]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이어서 해당 <code class="language-plaintext highlighter-rouge">index[0, 3, 4]</code> 를 가지고, <code class="language-plaintext highlighter-rouge">map</code> 을 활용하여, 문제에서 주어진 연산을 진행한다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">included</span> <span class="o">=</span> <span class="p">[</span><span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">]</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">included</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="n">included</span><span class="p">[</span><span class="nv">$0</span><span class="p">]}</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">a</span> <span class="o">+</span> <span class="n">d</span> <span class="o">*</span> <span class="nv">$0</span> <span class="p">})</span>
+
+<span class="c1">//[3, 15, 19]</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+그러면 각 인덱스 별 연산을 마친 결과값이 배열에 담기는데, 해당 배열에 있는 값을 모두 더해주면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">included</span> <span class="o">=</span> <span class="p">[</span><span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">]</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">included</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="n">included</span><span class="p">[</span><span class="nv">$0</span><span class="p">]}</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">a</span> <span class="o">+</span> <span class="n">d</span> <span class="o">*</span> <span class="nv">$0</span> <span class="p">}</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">0</span><span class="p">){</span><span class="nv">$0</span> <span class="o">+</span> <span class="nv">$1</span><span class="p">})</span>
+
+<span class="c1">//37</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br /></p>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">included</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+        
+        <span class="k">if</span> <span class="n">included</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="kc">true</span> <span class="p">{</span>
+            <span class="n">result</span> <span class="o">+=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">d</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
+            
+        <span class="p">}</span>
+        
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">result</span>
+    
+<span class="p">}</span>
+<span class="c1">// 0</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+<h2 id="answer-02">💡Answer 02</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="n">result</span> <span class="o">=</span> <span class="n">included</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="n">included</span><span class="p">[</span><span class="nv">$0</span><span class="p">]}</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">a</span> <span class="o">+</span> <span class="n">d</span> <span class="o">*</span> <span class="nv">$0</span> <span class="p">}</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">0</span><span class="p">){</span><span class="nv">$0</span> <span class="o">+</span> <span class="nv">$1</span><span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">result</span>
+    
+<span class="p">}</span>
+<span class="c1">// 37</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181931">해당문제 풀러가보기</a></p>
+

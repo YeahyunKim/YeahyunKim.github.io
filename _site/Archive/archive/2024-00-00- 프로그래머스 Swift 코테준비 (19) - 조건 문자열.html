@@ -1,0 +1,144 @@
+<h2 id="01-문제--조건-문자열">01 문제 : 조건 문자열</h2>
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>문자열에 따라 다음과 같이 두 수의 크기를 비교하려고 합니다.
+	• 두 수가 <code class="language-plaintext highlighter-rouge">n</code>과 <code class="language-plaintext highlighter-rouge">m</code>이라면
+	    • “&gt;”, “=” : <code class="language-plaintext highlighter-rouge">n</code> &gt;= <code class="language-plaintext highlighter-rouge">m</code>
+	    • “&lt;”, “=” : <code class="language-plaintext highlighter-rouge">n</code> &lt;= <code class="language-plaintext highlighter-rouge">m</code>
+	    • “&gt;”, “!” : <code class="language-plaintext highlighter-rouge">n</code> &gt; <code class="language-plaintext highlighter-rouge">m</code>
+	    • “&lt;”, “!” : <code class="language-plaintext highlighter-rouge">n</code> &lt; <code class="language-plaintext highlighter-rouge">m</code>
+두 문자열 <code class="language-plaintext highlighter-rouge">ineq</code>와 <code class="language-plaintext highlighter-rouge">eq</code>가 주어집니다. <code class="language-plaintext highlighter-rouge">ineq</code>는 “&lt;”와 “&gt;”중 하나고, <code class="language-plaintext highlighter-rouge">eq</code>는 “=”와 “!”중 하나입니다. 그리고 두 정수 <code class="language-plaintext highlighter-rouge">n</code>과 <code class="language-plaintext highlighter-rouge">m</code>이 
+주어질 때, <code class="language-plaintext highlighter-rouge">n</code>과 <code class="language-plaintext highlighter-rouge">m</code>이 <code class="language-plaintext highlighter-rouge">ineq</code>와 <code class="language-plaintext highlighter-rouge">eq</code>의 조건에 맞으면 1을 아니면 0을 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code>, <code class="language-plaintext highlighter-rouge">m</code> ≤ 100</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>ineq</th>
+      <th>eq</th>
+      <th>n</th>
+      <th>m</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>”&lt;”</td>
+      <td>”=”</td>
+      <td>20</td>
+      <td>50</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>”&gt;”</td>
+      <td>”!”</td>
+      <td>41</td>
+      <td>78</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<p>입출력 예 #1</p>
+<blockquote class="command-text">
+  <p>• 20 &lt;= 50은 참이기 때문에 1을 return합니다.</p>
+</blockquote>
+
+<p>입출력 예 #2</p>
+<blockquote class="command-text">
+  <p>• 41 &gt; 78은 거짓이기 때문에 0을 return합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">ineq</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">eq</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">m</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="switch-문-사용하기">switch 문 사용하기</h4>
+<p>먼저, <code class="language-plaintext highlighter-rouge">ineq</code> 와 <code class="language-plaintext highlighter-rouge">eq</code> 를 붙인 값을 하나의 변수 <code class="language-plaintext highlighter-rouge">char</code> 에 넣고,
+<code class="language-plaintext highlighter-rouge">switch</code> 문을 활용하여, 변수 <code class="language-plaintext highlighter-rouge">char</code> 가 <code class="language-plaintext highlighter-rouge">&gt;=</code>, <code class="language-plaintext highlighter-rouge">&gt;!</code>, <code class="language-plaintext highlighter-rouge">&lt;=</code>, <code class="language-plaintext highlighter-rouge">&lt;!</code> 인 경우에 따라 
+0 과 1을 return 해주는 방식을 활용하면 된다.</p>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer">💡Answer</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">ineq</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">eq</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">m</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">let</span> <span class="nv">char</span> <span class="o">=</span> <span class="n">ineq</span> <span class="o">+</span> <span class="n">eq</span>
+    
+    <span class="k">switch</span> <span class="n">char</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="s">"&gt;="</span> <span class="p">:</span> <span class="k">return</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="n">m</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
+        <span class="k">case</span> <span class="s">"&gt;!"</span> <span class="p">:</span> <span class="k">return</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">m</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
+        <span class="k">case</span> <span class="s">"&lt;="</span> <span class="p">:</span> <span class="k">return</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="n">m</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
+        <span class="k">case</span> <span class="s">"&lt;!"</span> <span class="p">:</span> <span class="k">return</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">m</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
+        <span class="k">default</span> <span class="p">:</span> <span class="k">return</span> <span class="mi">0</span>
+    <span class="p">}</span>
+
+    
+<span class="p">}</span>
+<span class="c1">// 0</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181934">해당문제 풀러가보기</a></p>
+

@@ -1,0 +1,93 @@
+<h2 id="01-문제--덧셈식-출력하기">01 문제 : 덧셈식 출력하기</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>두 정수 <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.<br />
+<code class="language-plaintext highlighter-rouge">a + b = c</code></p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <ul>
+    <li>1 ≤ <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code> ≤ 100</li>
+  </ul>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<p>입력 #1</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>4 5
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h5 id="출력-1">출력 #1</h5>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>4 + 5 = 9
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">n</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="kt">Int</span><span class="p">(</span><span class="nv">$0</span><span class="p">)</span><span class="o">!</span> <span class="p">}</span>
+<span class="k">let</span> <span class="p">(</span><span class="nv">a</span><span class="p">,</span> <span class="nv">b</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">n</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<p>콘솔창에 원하는 값을 출력하기 위해선 <code class="language-plaintext highlighter-rouge">print(출력할 값)</code> 을 활용하면 된다.
+(아래 포스트 참고)
+<a href="https://yeahyunkim.github.io/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Swift-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-(1)/"># 프로그래머스 Swift 코테준비 (1) - 문자열 출력하기</a></p>
+
+<blockquote class="prompt-tip">
+  <p>제시되어 있는 a 와 b의 값을 더한 값을 새로운 변수에 넣어주고, <code class="language-plaintext highlighter-rouge">print</code> 로 출력하면 된다.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer">💡Answer</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">n</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="kt">Int</span><span class="p">(</span><span class="nv">$0</span><span class="p">)</span><span class="o">!</span> <span class="p">}</span>
+<span class="k">let</span> <span class="p">(</span><span class="nv">a</span><span class="p">,</span> <span class="nv">b</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">n</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="k">let</span> <span class="nv">sum</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">a</span><span class="se">)</span><span class="s"> + </span><span class="se">\(</span><span class="n">b</span><span class="se">)</span><span class="s"> = </span><span class="se">\(</span><span class="n">sum</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1">// 4 + 5 = 9</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181947">해당문제 풀러가보기</a></p>
+

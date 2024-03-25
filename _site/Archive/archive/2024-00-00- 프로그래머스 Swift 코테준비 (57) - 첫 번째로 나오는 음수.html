@@ -1,0 +1,120 @@
+<h2 id="01-문제--첫-번째로-나오는-음수">01 문제 : 첫 번째로 나오는 음수</h2>
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수 리스트 <code class="language-plaintext highlighter-rouge">num_list</code>가 주어질 때, 첫 번째로 나오는 음수의 인덱스를 return하도록 solution 함수를 완성해주세요. 음수가 없다면 -1을 return합니다.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 5 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 길이 ≤ 100
+• -10 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 원소 ≤ 100</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>num_list</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[12, 4, 15, 46, 38, -2, 15]</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>[13, 22, 53, 24, 15, 6]</td>
+      <td>-1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 5번 인덱스에서 음수가 처음 등장하므로 5를 return합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 음수가 없으므로 -1을 return합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+	<span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--firstindexwhere--활용하기">solution 1 : firstIndex(where: ) 활용하기</h4>
+
+<p>먼저, <code class="language-plaintext highlighter-rouge">num_list</code>에서 첫 번째로 나오는 음수의 index 값을 구하기 위해서는 <code class="language-plaintext highlighter-rouge">firstIndex</code>에 추가로 <code class="language-plaintext highlighter-rouge">where</code>절을 활용하면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">num_list</span><span class="o">.</span><span class="nf">firstIndex</span><span class="p">(</span><span class="nv">where</span><span class="p">:</span> <span class="p">{</span><span class="nv">$0</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">})</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+만약 조건을 만족하지 못한다면, <code class="language-plaintext highlighter-rouge">-1</code> 을 리턴해주도록 작성했다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">num_list</span><span class="o">.</span><span class="nf">firstIndex</span><span class="p">(</span><span class="nv">where</span><span class="p">:</span> <span class="p">{</span><span class="nv">$0</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">})</span> <span class="p">??</span> <span class="o">-</span><span class="mi">1</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+
+    <span class="k">return</span>  <span class="n">num_list</span><span class="o">.</span><span class="nf">firstIndex</span><span class="p">(</span><span class="nv">where</span><span class="p">:</span> <span class="p">{</span><span class="nv">$0</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">})</span> <span class="p">??</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181896">해당문제 풀러가보기</a></p>

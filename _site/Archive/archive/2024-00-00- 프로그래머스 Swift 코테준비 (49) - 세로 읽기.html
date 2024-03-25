@@ -1,0 +1,195 @@
+<h2 id="01-문제--세로-읽기">01 문제 : 세로 읽기</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>문자열 <code class="language-plaintext highlighter-rouge">my_string</code>과 두 정수 <code class="language-plaintext highlighter-rouge">m</code>, <code class="language-plaintext highlighter-rouge">c</code>가 주어집니다. <code class="language-plaintext highlighter-rouge">my_string</code>을 한 줄에 <code class="language-plaintext highlighter-rouge">m</code> 글자씩 가로로 적었을 때 왼쪽부터 세로로 <code class="language-plaintext highlighter-rouge">c</code>번째 열에 적힌 글자들을 문자열로 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• <code class="language-plaintext highlighter-rouge">my_string</code>은 영소문자로 이루어져 있습니다.
+• 1 ≤ <code class="language-plaintext highlighter-rouge">m</code> ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 1,000
+• <code class="language-plaintext highlighter-rouge">m</code>은 <code class="language-plaintext highlighter-rouge">my_string</code> 길이의 약수로만 주어집니다.
+• 1 ≤ <code class="language-plaintext highlighter-rouge">c</code> ≤ <code class="language-plaintext highlighter-rouge">m</code></p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>m</th>
+      <th>c</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“ihrhbakrfpndopljhygc”</td>
+      <td>4</td>
+      <td>2</td>
+      <td>“happy”</td>
+    </tr>
+    <tr>
+      <td>“programmers”</td>
+      <td>1</td>
+      <td>1</td>
+      <td>“programmers”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>을 한 줄에 4 글자씩 쓰면 다음의 표와 같습니다.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>1열</th>
+      <th>2열</th>
+      <th>3열</th>
+      <th>4열</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>i</td>
+      <td>h</td>
+      <td>r</td>
+      <td>h</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>a</td>
+      <td>k</td>
+      <td>r</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>p</td>
+      <td>n</td>
+      <td>d</td>
+    </tr>
+    <tr>
+      <td>o</td>
+      <td>p</td>
+      <td>l</td>
+      <td>j</td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>y</td>
+      <td>g</td>
+      <td>c</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 2번의 <code class="language-plaintext highlighter-rouge">my_string</code>은 <code class="language-plaintext highlighter-rouge">m</code>이 1이므로 세로로 “programmers”를 적는 것과 같고 따라서 1열에 적힌 글자를 세로로 읽으면 programmers입니다. 따라서 “programmers”를 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">m</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="s">""</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--enumerated-활용하기">solution 1 : enumerated() 활용하기</h4>
+
+<p><code class="language-plaintext highlighter-rouge">enumerated()</code> 는 배열안의 요소의 <code class="language-plaintext highlighter-rouge">element</code> 와 <code class="language-plaintext highlighter-rouge">offset</code> 값을 튜플 형태로 리턴해준다.
+이를 활용하여 문제를 해결할 수 있었다.</p>
+
+<p>먼저 <code class="language-plaintext highlighter-rouge">my_string.enumerated()</code>를 작성해주어 <code class="language-plaintext highlighter-rouge">my_string</code>의 요소를 튜플 형태로 저장한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">my_string</span><span class="o">.</span><span class="nf">enumerated</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이후 문제에서 제시한대로 <code class="language-plaintext highlighter-rouge">my_string</code> 문자열을 <code class="language-plaintext highlighter-rouge">m</code> 으로 구간을 나누어준 후, 각 구간별 <code class="language-plaintext highlighter-rouge">c</code> 의 위치에 있는 요소들을 가져와야하니, <code class="language-plaintext highlighter-rouge">filter</code> 를 활용하여 조건을 걸어주었다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="n">my_string</span><span class="o">.</span><span class="nf">enumerated</span><span class="p">()</span>
+            <span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="n">offset</span> <span class="o">%</span> <span class="n">m</span> <span class="o">==</span> <span class="n">c</span> <span class="o">-</span> <span class="mi">1</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+여기서 생성된 요소들의 <code class="language-plaintext highlighter-rouge">element</code>를 <code class="language-plaintext highlighter-rouge">map</code> 을 통해 저장해주고, 이 문자열 배열을 <code class="language-plaintext highlighter-rouge">joined()</code> 를 활용하여 하나의 <code class="language-plaintext highlighter-rouge">string</code> 으로 합쳐주었다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre> <span class="n">my_string</span><span class="o">.</span><span class="nf">enumerated</span><span class="p">()</span>
+            <span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="n">offset</span> <span class="o">%</span> <span class="n">m</span> <span class="o">==</span> <span class="n">c</span> <span class="o">-</span> <span class="mi">1</span><span class="p">}</span>
+            <span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="kt">String</span><span class="p">(</span><span class="nv">$0</span><span class="o">.</span><span class="n">element</span><span class="p">)</span> <span class="p">}</span>
+            <span class="o">.</span><span class="nf">joined</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">m</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">c</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+
+    <span class="k">return</span> <span class="n">my_string</span><span class="o">.</span><span class="nf">enumerated</span><span class="p">()</span>
+            <span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="n">offset</span> <span class="o">%</span> <span class="n">m</span> <span class="o">==</span> <span class="n">c</span> <span class="o">-</span> <span class="mi">1</span><span class="p">}</span>
+            <span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="kt">String</span><span class="p">(</span><span class="nv">$0</span><span class="o">.</span><span class="n">element</span><span class="p">)</span> <span class="p">}</span>
+            <span class="o">.</span><span class="nf">joined</span><span class="p">()</span>
+            
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181904">해당문제 풀러가보기</a></p>

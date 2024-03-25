@@ -1,0 +1,265 @@
+<h2 id="01-문제--주사위-게임-2">01 문제 : 주사위 게임 2</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>1부터 6까지 숫자가 적힌 주사위가 세 개 있습니다. 세 주사위를 굴렸을 때 나온 숫자를 각각 <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>, <code class="language-plaintext highlighter-rouge">c</code>라고 
+했을 때 얻는 점수는 다음과 같습니다.<br />
+	• 세 숫자가 모두 다르다면 <code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code> + <code class="language-plaintext highlighter-rouge">c</code> 점을 얻습니다.
+	• 세 숫자 중 어느 두 숫자는 같고 나머지 다른 숫자는 다르다면 (<code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code> + <code class="language-plaintext highlighter-rouge">c</code>) × (<code class="language-plaintext highlighter-rouge">a</code>2 + <code class="language-plaintext highlighter-rouge">b</code>2 + <code class="language-plaintext highlighter-rouge">c</code>2 )점을 얻습니다.
+	• 세 숫자가 모두 같다면 (<code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code> + <code class="language-plaintext highlighter-rouge">c</code>) × (<code class="language-plaintext highlighter-rouge">a</code>2 + <code class="language-plaintext highlighter-rouge">b</code>2 + <code class="language-plaintext highlighter-rouge">c</code>2 ) × (<code class="language-plaintext highlighter-rouge">a</code>3 + <code class="language-plaintext highlighter-rouge">b</code>3 + <code class="language-plaintext highlighter-rouge">c</code>3 )점을 얻습니다.<br />
+세 정수 <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>, <code class="language-plaintext highlighter-rouge">c</code>가 매개변수로 주어질 때, 얻는 점수를 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>, <code class="language-plaintext highlighter-rouge">c</code>는 1이상 6이하의 정수입니다.</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>6</td>
+      <td>1</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>3</td>
+      <td>3</td>
+      <td>473</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>110592</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번은 <code class="language-plaintext highlighter-rouge">a</code>와 <code class="language-plaintext highlighter-rouge">d</code>가 각각 3, 4이고 <code class="language-plaintext highlighter-rouge">included</code>의 길이가 5입니다. 이를 표로 나타내면 다음과 같습니다.</p>
+</blockquote>
+<p><br /></p>
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+<blockquote class="command-text">
+  <p>• 예제 2번에서 두 주사위 숫자만 같으므로 (5 + 3 + 3) × (52 + 32 + 32 ) = 11 × 43 = 473점을 얻습니다. 따라서 473을 return 합니다.</p>
+</blockquote>
+<p><br /></p>
+<h6 id="입출력-예-3">입출력 예 #3</h6>
+<blockquote class="command-text">
+  <p>• 예제 3번에서 세 주사위 숫자가 모두 같으므로 (4 + 4 + 4) × (42 + 42 + 42 ) × (43 + 43 + 43 ) = 12 × 48 × 192 = 110,592점을 얻습니다. 따라서 110592를 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">d</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">included</span><span class="p">:[</span><span class="kt">Bool</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--조건문과-논리연산자-활용하여-풀기">solution 1 : 조건문과 논리연산자 활용하여 풀기</h4>
+
+<p>문제에서 제시하는 바 그대로 조건문으로 차근차근 작성하며 나아가 보았다.<br />
+조건 1  : <code class="language-plaintext highlighter-rouge">세 숫자가 모두 다르다면 a + b + c 점을 얻습니다.</code></p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">!=</span> <span class="n">c</span> <span class="p">{</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
+    <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+조건 2 : <code class="language-plaintext highlighter-rouge">세 숫자 중 어느 두 숫자는 같고 나머지 다른 숫자는 다르다면 (a + b + c) × (a2 + b2 + c2 )점을 얻습니다.</code></p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre> <span class="k">if</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">!=</span> <span class="n">c</span> <span class="p">{</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">!=</span> <span class="n">c</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">b</span> <span class="o">==</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">c</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">c</span> <span class="o">!=</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">c</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+조건 3 : <code class="language-plaintext highlighter-rouge">세 숫자가 모두 같다면 (a + b + c) × (a2 + b2 + c2 ) × (a3 + b3 + c3 )점을 얻습니다.</code></p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre> <span class="k">if</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">!=</span> <span class="n">c</span> <span class="p">{</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">!=</span> <span class="n">c</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">b</span> <span class="o">==</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">c</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">c</span> <span class="o">&amp;&amp;</span> <span class="n">c</span> <span class="o">!=</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">c</span><span class="p">)</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span> <span class="o">&amp;&amp;</span> <span class="n">b</span> <span class="o">==</span> <span class="n">c</span> <span class="p">{</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">*</span><span class="n">a</span><span class="o">*</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="o">*</span><span class="n">c</span><span class="o">*</span><span class="n">c</span><span class="p">)</span>
+<span class="p">}</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+<h4 id="solution-2--map과-filter를-활용하여-풀기">solution 2 : map과 filter를 활용하여 풀기</h4>
+<p><code class="language-plaintext highlighter-rouge">indices</code>와 <code class="language-plaintext highlighter-rouge">filter</code>를 활용하여 <code class="language-plaintext highlighter-rouge">included</code>의 요소중 true인 것의 <code class="language-plaintext highlighter-rouge">index</code> 값만 남겨준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">included</span> <span class="o">=</span> <span class="p">[</span><span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">]</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">included</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">filter</span> <span class="p">{</span> <span class="n">included</span><span class="p">[</span><span class="nv">$0</span><span class="p">]</span> <span class="p">})</span>
+
+<span class="c1">// [0, 3, 4]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이어서 해당 <code class="language-plaintext highlighter-rouge">index[0, 3, 4]</code> 를 가지고, <code class="language-plaintext highlighter-rouge">map</code> 을 활용하여, 문제에서 주어진 연산을 진행한다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">included</span> <span class="o">=</span> <span class="p">[</span><span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">]</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">included</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="n">included</span><span class="p">[</span><span class="nv">$0</span><span class="p">]}</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">a</span> <span class="o">+</span> <span class="n">d</span> <span class="o">*</span> <span class="nv">$0</span> <span class="p">})</span>
+
+<span class="c1">//[3, 15, 19]</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+그러면 각 인덱스 별 연산을 마친 결과값이 배열에 담기는데, 해당 배열에 있는 값을 모두 더해주면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">included</span> <span class="o">=</span> <span class="p">[</span><span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">true</span><span class="p">]</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">included</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="n">included</span><span class="p">[</span><span class="nv">$0</span><span class="p">]}</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">a</span> <span class="o">+</span> <span class="n">d</span> <span class="o">*</span> <span class="nv">$0</span> <span class="p">}</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">0</span><span class="p">){</span><span class="nv">$0</span> <span class="o">+</span> <span class="nv">$1</span><span class="p">})</span>
+
+<span class="c1">//37</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+<br /></p>
+
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">included</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+        
+        <span class="k">if</span> <span class="n">included</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="kc">true</span> <span class="p">{</span>
+            <span class="n">result</span> <span class="o">+=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">d</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
+            
+        <span class="p">}</span>
+        
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">result</span>
+    
+<span class="p">}</span>
+<span class="c1">// 0</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+<h2 id="answer-02">💡Answer 02</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="n">result</span> <span class="o">=</span> <span class="n">included</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="n">included</span><span class="p">[</span><span class="nv">$0</span><span class="p">]}</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">a</span> <span class="o">+</span> <span class="n">d</span> <span class="o">*</span> <span class="nv">$0</span> <span class="p">}</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">0</span><span class="p">){</span><span class="nv">$0</span> <span class="o">+</span> <span class="nv">$1</span><span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">result</span>
+    
+<span class="p">}</span>
+<span class="c1">// 37</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181930">해당문제 풀러가보기</a></p>
+

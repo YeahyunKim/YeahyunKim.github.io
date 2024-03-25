@@ -1,0 +1,161 @@
+<h2 id="01-문제--원소들의-곱과-합">01 문제 : 원소들의 곱과 합</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수가 담긴 리스트 <code class="language-plaintext highlighter-rouge">num_list</code>가 주어질 때, 모든 원소들의 곱이 모든 원소들의 합의 제곱보다 작으면 1을 크면 0을 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 2 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 길이 ≤ 10
+• 1 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 원소 ≤ 9</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>num_list</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[3, 4, 5, 2, 1]</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>[5, 7, 8, 3]</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 모든 원소의 곱은 120, 합의 제곱은 225이므로 1을 return합니다.</p>
+</blockquote>
+<p><br /></p>
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+<blockquote class="command-text">
+  <p>• 모든 원소의 곱은 840, 합의 제곱은 529이므로 0을 return합니다.</p>
+</blockquote>
+<p><br />
+<br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--더하기-곱하기-할당과-for문-활용하기">solution 1 : 더하기, 곱하기 할당과 for문 활용하기</h4>
+
+<p>조건 1 : <code class="language-plaintext highlighter-rouge">모든 원소들의 곱</code> , <code class="language-plaintext highlighter-rouge">모든 원소들의 합</code></p>
+
+<p>문제에서 제시한 2가지 값을 변수로 담아주기 위해, 변수를 생성한다.
+여기서, 곱에대한 값을 담는 변수에는 <code class="language-plaintext highlighter-rouge">1</code>의 값을 넣어주었는데, 그 이유는 <code class="language-plaintext highlighter-rouge">0</code> 을 넣어 두었을때 <code class="language-plaintext highlighter-rouge">곱하기 할당</code>을<br />
+활용하면 추후에도 계속 <code class="language-plaintext highlighter-rouge">0</code>의 값으로 계산이 되기 때문이다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">addValue</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">// 더한 값을 넣어줄 변수</span>
+<span class="k">var</span> <span class="nv">timesValue</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">// 곱한 값을 넣어줄 변수</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+조건 2 : <code class="language-plaintext highlighter-rouge">num_list의 모든 원소들의 곱, 합</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">num_list</code>의 모든 원소들의 곱과 합을 구해야하기 때문에, for문을 통하여 <code class="language-plaintext highlighter-rouge">num_list</code> 배열의 각 index 값에
+접근하여 문제를 해결한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">addValue</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">var</span> <span class="nv">timesValue</span> <span class="o">=</span> <span class="mi">1</span>
+    
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+	<span class="n">addValue</span> <span class="o">+=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+	<span class="n">timesValue</span> <span class="o">*=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">addValue</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">var</span> <span class="nv">timesValue</span> <span class="o">=</span> <span class="mi">1</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+        <span class="n">addValue</span> <span class="o">+=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">timesValue</span> <span class="o">*=</span> <span class="n">num_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="p">}</span>
+
+    
+    <span class="k">return</span> <span class="n">timesValue</span> <span class="o">&lt;</span> <span class="n">addValue</span> <span class="o">*</span> <span class="n">addValue</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
+<span class="p">}</span>
+<span class="c1">// 0</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181929">해당문제 풀러가보기</a></p>
+

@@ -1,0 +1,200 @@
+<h2 id="01-문제-n개-간격의-원소들">01 문제 :n개 간격의 원소들</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수 리스트 <code class="language-plaintext highlighter-rouge">num_list</code>와 정수 <code class="language-plaintext highlighter-rouge">n</code>이 주어질 때, <code class="language-plaintext highlighter-rouge">num_list</code>의 첫 번째 원소부터 마지막 원소까지 <code class="language-plaintext highlighter-rouge">n</code>개 간격으로 저장되어있는 원소들을 차례로 담은 리스트를 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 5 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 길이 ≤ 20
+• 1 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 원소 ≤ 9
+• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 4</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>num_list</th>
+      <th>n</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[4, 2, 6, 1, 7, 6]</td>
+      <td>2</td>
+      <td>[4, 6, 7]</td>
+    </tr>
+    <tr>
+      <td>[4, 2, 6, 1, 7, 6]</td>
+      <td>4</td>
+      <td>[4, 7]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• [4, 2, 6, 1, 7, 6]에서 2개 간격으로 저장되어 있는 원소들은 [4, 6, 7]입니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• [4, 2, 6, 1, 7, 6]에서 4개 간격으로 저장되어 있는 원소들은 [4, 7]입니다.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+	<span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--for-문-활용하기-내가-푼-방법">solution 1 : for 문 활용하기 (내가 푼 방법)</h4>
+
+<p>먼저, 결괏값을 저장할 변수를 하나 생성해 주었다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+먼저, 이후, <code class="language-plaintext highlighter-rouge">n</code> 의 간격으로 요소를 저장해야하기 때문에 <code class="language-plaintext highlighter-rouge">num_list.count - 1</code> 에서 <code class="language-plaintext highlighter-rouge">n</code>을 나눠준 값만큼 반복문은 실행시켰다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">...</span><span class="p">((</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p>마지막으로 <code class="language-plaintext highlighter-rouge">result</code> 에 <code class="language-plaintext highlighter-rouge">num_list</code> 에서 <code class="language-plaintext highlighter-rouge">n</code>의 간격만큼의 반복문이 실행될동안 추가해주었다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">...</span><span class="p">((</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+
+	<span class="n">result</span> <span class="o">+=</span> <span class="kt">Array</span><span class="p">(</span><span class="nv">arrayLiteral</span><span class="p">:</span> <span class="n">num_list</span><span class="p">[(</span><span class="n">n</span> <span class="o">*</span> <span class="n">i</span><span class="p">)])</span>
+
+<span class="p">}</span>
+<span class="k">return</span> <span class="n">result</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+<br /></p>
+
+<h4 id="solution-2--stride-활용하기-다른-풀이-">solution 2 : stride 활용하기 (다른 풀이 )</h4>
+
+<p>swift 에 원하는 구간만큼의 요소의 값을 가져오는데 편리한 메서드가 있음을 해당 문제를 통해 알게 되었다.
+바로 stride 이다.</p>
+
+<p>0부터 <code class="language-plaintext highlighter-rouge">num_list.count</code> 까지 n의 간격만큼 인덱스의 값을 가져올 수 있다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nf">stride</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="n">num_list</span><span class="o">.</span><span class="n">count</span><span class="p">,</span> <span class="nv">by</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+이후, 가져온 인덱스들을 가지고 <code class="language-plaintext highlighter-rouge">num_list[인덱스]</code> 로 원하는 값을 가져올 수 있었다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nf">stride</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="n">num_list</span><span class="o">.</span><span class="n">count</span><span class="p">,</span> <span class="nv">by</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="n">num_list</span><span class="p">[</span><span class="nv">$0</span><span class="p">]</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">...</span><span class="p">((</span><span class="n">num_list</span><span class="o">.</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    
+        <span class="n">result</span> <span class="o">+=</span> <span class="kt">Array</span><span class="p">(</span><span class="nv">arrayLiteral</span><span class="p">:</span> <span class="n">num_list</span><span class="p">[(</span><span class="n">n</span> <span class="o">*</span> <span class="n">i</span><span class="p">)])</span>
+    
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">result</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="answer-02">💡Answer 02</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+
+    <span class="k">return</span> <span class="nf">stride</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="n">num_list</span><span class="o">.</span><span class="n">count</span><span class="p">,</span> <span class="nv">by</span><span class="p">:</span> <span class="n">n</span><span class="p">)</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="n">num_list</span><span class="p">[</span><span class="nv">$0</span><span class="p">]</span> <span class="p">}</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181888">해당문제 풀러가보기</a></p>

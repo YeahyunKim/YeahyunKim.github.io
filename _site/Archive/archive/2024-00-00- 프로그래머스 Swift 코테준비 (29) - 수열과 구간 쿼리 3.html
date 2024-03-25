@@ -1,0 +1,233 @@
+<h2 id="01-문제--수열과-구간-쿼리-3">01 문제 : 수열과 구간 쿼리 3</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수 배열 <code class="language-plaintext highlighter-rouge">arr</code>와 2차원 정수 배열 <code class="language-plaintext highlighter-rouge">queries</code>이 주어집니다. <code class="language-plaintext highlighter-rouge">queries</code>의 원소는 각각 하나의 <code class="language-plaintext highlighter-rouge">query</code>를 나타내며,
+ <code class="language-plaintext highlighter-rouge">[i, j]</code> 꼴입니다. <br />
+각 <code class="language-plaintext highlighter-rouge">query</code>마다 순서대로 <code class="language-plaintext highlighter-rouge">arr[i]</code>의 값과 <code class="language-plaintext highlighter-rouge">arr[j]</code>의 값을 서로 바꿉니다. <br />
+위 규칙에 따라 <code class="language-plaintext highlighter-rouge">queries</code>를 처리한 이후의 <code class="language-plaintext highlighter-rouge">arr</code>를 return 하는 solution 함수를 완성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>•. 1 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 길이 ≤ 1,000
+	• 0 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 원소 ≤ 1,000,000
+• 1 ≤ <code class="language-plaintext highlighter-rouge">queries</code>의 길이 ≤ 1,000
+	• 0 ≤ <code class="language-plaintext highlighter-rouge">i</code> &lt; <code class="language-plaintext highlighter-rouge">j</code> &lt; <code class="language-plaintext highlighter-rouge">arr</code>의 길이</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>arr</th>
+      <th>queries</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[0, 1, 2, 3, 4]</td>
+      <td>[[0, 3],[1, 2],[1, 4]]</td>
+      <td>[3, 4, 1, 0, 2]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 각 쿼리에 따라 <code class="language-plaintext highlighter-rouge">arr</code>가 다음과 같이 변합니다.</p>
+</blockquote>
+
+<p>|arr|
+|—|
+|[0, 1, 2, 3, 4]|
+|[3, 1, 2, 0, 4]|
+|[3, 2, 1, 0, 4]|
+|[3, 4, 1, 0, 2]|
+<br />
+<br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--기존값을-저장하여-swap-하기-내가-풀어본-방법">solution 1 : 기존값을 저장하여 swap 하기 (내가 풀어본 방법)</h4>
+
+<p>만약, 변수 <code class="language-plaintext highlighter-rouge">a</code>와 <code class="language-plaintext highlighter-rouge">b</code> 의 값을 바꾸고 싶은 상황이 생기면, <code class="language-plaintext highlighter-rouge">a</code>의 값을 저장할 변수를 생성해야 한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">var</span> <span class="nv">b</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="k">var</span> <span class="nv">temp</span> <span class="o">=</span> <span class="n">a</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+먼저, <code class="language-plaintext highlighter-rouge">a</code>에 <code class="language-plaintext highlighter-rouge">b</code>의 값을 넣으면, 기존 <code class="language-plaintext highlighter-rouge">a</code>의 값은 사라지게 된다. 그럼 <code class="language-plaintext highlighter-rouge">b</code>에는 <code class="language-plaintext highlighter-rouge">a</code> 값을 어떻게 넣어야할까?
+이를 방지하기 위해 앞에서 <code class="language-plaintext highlighter-rouge">temp</code> 라는 변수에 <code class="language-plaintext highlighter-rouge">a</code>의 값을 넣어준 것이다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">temp</span> <span class="c1">//temp 는 기존 a 의 값이 들어가 있다.</span>
+
+<span class="c1">//a = 2 , b = 1</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이를 활용하여 문제를 풀 수 있었다.
+위와 같이, 기존 <code class="language-plaintext highlighter-rouge">arr</code> 값을 저장할 변수를 생성하고, 결과값을 저장할 변수를 생성한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">temp</span> <span class="o">=</span> <span class="n">arr</span>
+<span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">arr</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이후, queries의 개수만큼 쿼리를 돌려야하니, for 문과 위의 방법을 활용하여 문제를 해결했다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">temp</span> <span class="o">=</span> <span class="n">arr</span>
+<span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">arr</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">queries</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+		<span class="n">temp</span> <span class="o">=</span> <span class="n">result</span>
+		
+		<span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span>
+				
+		<span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h4 id="solution-2--swapat-활용하기-다른사람-풀이를-공부하기">solution 2 : swapAt 활용하기 (다른사람 풀이를 공부하기)</h4>
+
+<p><code class="language-plaintext highlighter-rouge">swapAt</code>은 원하는 배열 인덱스의 위치를 바꾸어 주는 함수이다. 이를 활용하면 정말 간단하게 해결이 가능했다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">arr</span> <span class="o">=</span> <span class="n">arr</span>
+<span class="n">queries</span><span class="o">.</span><span class="n">forEach</span> <span class="p">{</span> <span class="n">arr</span><span class="o">.</span><span class="nf">swapAt</span><span class="p">(</span><span class="nv">$0</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nv">$0</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">temp</span> <span class="o">=</span> <span class="n">arr</span>
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">arr</span>
+        
+    <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">queries</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+            <span class="n">temp</span> <span class="o">=</span> <span class="n">result</span>
+            
+            <span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span>
+        
+            <span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">result</span>
+<span class="p">}</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+<h2 id="answer-02">💡Answer 02</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">arr</span> <span class="o">=</span> <span class="n">arr</span>
+    
+    <span class="n">queries</span><span class="o">.</span><span class="n">forEach</span> <span class="p">{</span> <span class="n">arr</span><span class="o">.</span><span class="nf">swapAt</span><span class="p">(</span><span class="nv">$0</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nv">$0</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">arr</span>
+<span class="p">}</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181924">해당문제 풀러가보기</a></p>

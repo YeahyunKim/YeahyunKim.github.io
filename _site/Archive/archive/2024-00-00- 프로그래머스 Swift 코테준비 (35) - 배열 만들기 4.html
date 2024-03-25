@@ -1,0 +1,286 @@
+<h2 id="01-문제--배열-만들기-4">01 문제 : 배열 만들기 4</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수 배열 <code class="language-plaintext highlighter-rouge">arr</code>가 주어집니다. <code class="language-plaintext highlighter-rouge">arr</code>를 이용해 새로운 배열 <code class="language-plaintext highlighter-rouge">stk</code>를 만드려고 합니다. <br />
+변수 <code class="language-plaintext highlighter-rouge">i</code>를 만들어 초기값을 0으로 설정한 후 <code class="language-plaintext highlighter-rouge">i</code>가 <code class="language-plaintext highlighter-rouge">arr</code>의 길이보다 작으면 다음 작업을 반복합니다. <br />
+	• 만약 <code class="language-plaintext highlighter-rouge">stk</code>가 빈 배열이라면 <code class="language-plaintext highlighter-rouge">arr[i]</code>를 <code class="language-plaintext highlighter-rouge">stk</code>에 추가하고 <code class="language-plaintext highlighter-rouge">i</code>에 1을 더합니다.
+	• <code class="language-plaintext highlighter-rouge">stk</code>에 원소가 있고, <code class="language-plaintext highlighter-rouge">stk</code>의 마지막 원소가 <code class="language-plaintext highlighter-rouge">arr[i]</code>보다 작으면 <code class="language-plaintext highlighter-rouge">arr[i]</code>를 <code class="language-plaintext highlighter-rouge">stk</code>의 뒤에 추가하고 <code class="language-plaintext highlighter-rouge">i</code>에 1을 더합니다
+	• <code class="language-plaintext highlighter-rouge">stk</code>에 원소가 있는데 <code class="language-plaintext highlighter-rouge">stk</code>의 마지막 원소가 <code class="language-plaintext highlighter-rouge">arr[i]</code>보다 크거나 같으면 <code class="language-plaintext highlighter-rouge">stk</code>의 마지막 원소를 <code class="language-plaintext highlighter-rouge">stk</code>에서 제거합니다. <br />
+위 작업을 마친 후 만들어진 <code class="language-plaintext highlighter-rouge">stk</code>를 return 하는 solution 함수를 완성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 길이 ≤ 100,000
+	• 1 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 원소 ≤ 100,000</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>arr</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[1, 4, 2, 5, 3]</td>
+      <td>[1, 2, 3]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 각 작업을 마친 후에 배열의 변화를 나타내면 다음 표와 같습니다.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>i</th>
+      <th>arr[i]</th>
+      <th>stk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>[]</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>4</td>
+      <td>[1]</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td>[1, 4]</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td>[1]</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>5</td>
+      <td>[1, 2]</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>3</td>
+      <td>[1, 2, 5]</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>3</td>
+      <td>[1, 2]</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>[1, 2, 3]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+<br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--while문-조건문-활용하기">solution 1 : while문, 조건문 활용하기</h4>
+
+<p>해당 문제는 정수 <code class="language-plaintext highlighter-rouge">i</code> 가 <code class="language-plaintext highlighter-rouge">arr.count</code>의 값보다 커졌을때 반복문 실행을 멈춰야 하기 때문에 앞전의 문제와 동일하게 while문을 통하여 문제에 접근해보았다.</p>
+
+<p>먼저 새로운 배열을 담을 변수와 정수 <code class="language-plaintext highlighter-rouge">i</code>를 담을 변수를 생성해준후, while문을 작성해 주었다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">stk</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+<span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span> 
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p>조건 1 : <code class="language-plaintext highlighter-rouge">만약 stk가 빈 배열이라면 arr[i]를 stk에 추가하고 i에 1을 더합니다.</code></p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">stk</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+<span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span> 
+	<span class="k">if</span> <span class="n">stk</span><span class="o">.</span><span class="n">isEmpty</span> <span class="p">{</span>
+		<span class="n">stk</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+		<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+조건 2 : <code class="language-plaintext highlighter-rouge">stk에 원소가 있고, stk의 마지막 원소가 arr[i]보다 작으면 arr[i]를 stk의 뒤에 추가하고 i에 1을 더합니다.</code></p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">stk</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+<span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span> 
+	<span class="k">if</span> <span class="n">stk</span><span class="o">.</span><span class="n">isEmpty</span> <span class="p">{</span>
+		<span class="n">stk</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+		<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">!</span><span class="n">stk</span><span class="o">.</span><span class="n">isEmpty</span> <span class="o">&amp;&amp;</span> <span class="n">stk</span><span class="o">.</span><span class="n">last</span><span class="o">!</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">{</span>
+		<span class="n">stk</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+		<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+조건 3 : <code class="language-plaintext highlighter-rouge">stk에 원소가 있는데 stk의 마지막 원소가 arr[i]보다 크거나 같으면 stk의 마지막 원소를 stk에서 제거합니다.</code></p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">stk</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+<span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span> 
+	<span class="k">if</span> <span class="n">stk</span><span class="o">.</span><span class="n">isEmpty</span> <span class="p">{</span>
+		<span class="n">stk</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+		<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">!</span><span class="n">stk</span><span class="o">.</span><span class="n">isEmpty</span> <span class="o">&amp;&amp;</span> <span class="n">stk</span><span class="o">.</span><span class="n">last</span><span class="o">!</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">{</span>
+		<span class="n">stk</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+		<span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">!</span><span class="n">stk</span><span class="o">.</span><span class="n">isEmpty</span> <span class="o">&amp;&amp;</span> <span class="n">stk</span><span class="o">.</span><span class="n">last</span><span class="o">!</span> <span class="o">&gt;=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">{</span>
+		<span class="n">stk</span><span class="o">.</span><span class="nf">removeLast</span><span class="p">()</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">stk</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+    <span class="k">var</span> <span class="nv">i</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    
+   <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+        
+            <span class="k">if</span> <span class="n">stk</span><span class="o">.</span><span class="n">isEmpty</span> <span class="p">{</span>
+                <span class="n">stk</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">!</span><span class="n">stk</span><span class="o">.</span><span class="n">isEmpty</span> <span class="o">&amp;&amp;</span> <span class="n">stk</span><span class="o">.</span><span class="n">last</span><span class="o">!</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">{</span>
+                    <span class="n">stk</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+                    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">!</span><span class="n">stk</span><span class="o">.</span><span class="n">isEmpty</span> <span class="o">&amp;&amp;</span> <span class="n">stk</span><span class="o">.</span><span class="n">last</span><span class="o">!</span> <span class="o">&gt;=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">{</span>
+                <span class="n">stk</span><span class="o">.</span><span class="nf">removeLast</span><span class="p">()</span> 
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="k">return</span> <span class="n">stk</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181918">해당문제 풀러가보기</a></p>

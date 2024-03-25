@@ -1,0 +1,120 @@
+<h2 id="01-문제--문자열-곱하기">01 문제 : 문자열 곱하기</h2>
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>문자열 my_string과 정수 k가 주어질 때, my_string을 k번 반복한 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+<blockquote class="command-text">
+  <p>• 1 ≤ my_string의 길이 ≤ 100
+• my_string은 영소문자로만 이루어져 있습니다.
+• 1 ≤ <code class="language-plaintext highlighter-rouge">k</code> ≤ 100</p>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>k</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“string”</td>
+      <td>3</td>
+      <td>“stringstringstring”</td>
+    </tr>
+    <tr>
+      <td>“love”</td>
+      <td>10</td>
+      <td>“lovelovelovelovelovelovelovelovelovelove”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<p>입출력 예 #1</p>
+<blockquote class="command-text">
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>은 “string” 이고 이를 3번 반복한 문자열은 “stringstringstring” 이므로 이를 return 합니다.</p>
+</blockquote>
+
+<p>입출력 예 #2</p>
+<blockquote class="command-text">
+  <p>• 예제 2번의 <code class="language-plaintext highlighter-rouge">my_string</code>은 “love” 이고 이를 10번 반복한 문자열은 “lovelovelovelovelovelovelovelovelovelove” 이므로 이를 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">k</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<blockquote class="prompt-tip">
+  <p>현재 <code class="language-plaintext highlighter-rouge">my_string</code> 에는 문자열 “love” 가 들어가 있고, <code class="language-plaintext highlighter-rouge">k</code> 에는 정수 10 이 들어가 있다.
+여기서, 값을 반환해줄 <code class="language-plaintext highlighter-rouge">result</code> 라는 새로운 변수를 생성하고 해당 변수에 10번 “love” 라는 문자 값을 넣어주면 될것으로 보인다.
+그럼 for문을 통해 <code class="language-plaintext highlighter-rouge">+=</code> 으로 <code class="language-plaintext highlighter-rouge">result</code> 에 “love” 값을 추가하면 된다.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer">💡Answer</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">k</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
+    
+    <span class="k">for</span> <span class="n">index</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">k</span> <span class="p">{</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="n">my_string</span>
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">result</span>
+<span class="p">}</span>
+
+<span class="c1">// "lovelovelovelovelovelovelovelovelovelove"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181940">해당문제 풀러가보기</a></p>
+

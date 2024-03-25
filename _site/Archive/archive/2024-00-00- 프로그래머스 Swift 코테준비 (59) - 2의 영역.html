@@ -1,0 +1,151 @@
+<h2 id="01-문제--2의-영역">01 문제 : 2의 영역</h2>
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수 배열 <code class="language-plaintext highlighter-rouge">arr</code>가 주어집니다. 배열 안의 2가 모두 포함된 가장 작은 연속된 부분 배열을 return 하는 solution 함수를 완성해 주세요. <br />
+단, <code class="language-plaintext highlighter-rouge">arr</code>에 2가 없는 경우 [-1]을 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 길이 ≤ 100,000
+	• 1 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 원소 ≤ 10</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>arr</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[1, 2, 1, 4, 5, 2, 9]</td>
+      <td>[2, 1, 4, 5, 2]</td>
+    </tr>
+    <tr>
+      <td>[1, 2, 1]</td>
+      <td>[2]</td>
+    </tr>
+    <tr>
+      <td>[1, 1, 1]</td>
+      <td>[-1]</td>
+    </tr>
+    <tr>
+      <td>[1, 2, 1, 2, 1, 10, 2, 1]</td>
+      <td>[2, 1, 2, 1, 10, 2]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 2가 있는 인덱스는 1번, 5번 인덱스뿐이므로 1번부터 5번 인덱스까지의 부분 배열인 [2, 1, 4, 5, 2]를 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 2가 한 개뿐이므로 [2]를 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-3">입출력 예 #3</h6>
+
+<blockquote class="command-text">
+  <p>• 2가 배열에 없으므로 [-1]을 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-4">입출력 예 #4</h6>
+
+<blockquote class="command-text">
+  <p>• 2가 있는 인덱스는 1번, 3번, 6번 인덱스이므로 1번부터 6번 인덱스까지의 부분 배열인 [2, 1, 2, 1, 10, 2]를 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+	<span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--firstindexof---lastindexof--활용하기">solution 1 : firstIndex(of :) / lastIndex(of :) 활용하기</h4>
+
+<p>문제를 읽어보면 마지막의 <code class="language-plaintext highlighter-rouge">arr에 2가 없는 경우 [-1] 을 return 합니다.</code> 로 인해, <code class="language-plaintext highlighter-rouge">if let</code> 으로 값이 있는 경우와 없는 경우를 한번에 체크해주는 방식으로 문제를 해결하였다.</p>
+
+<ul>
+  <li>변수 <code class="language-plaintext highlighter-rouge">a</code> 에는 <code class="language-plaintext highlighter-rouge">arr</code> 의 가장 처음으로 등장하는 2의 index 값을 저장</li>
+  <li>변수 <code class="language-plaintext highlighter-rouge">b</code> 에는 <code class="language-plaintext highlighter-rouge">arr</code> 의 가장 마지막으로 등장하는 2의 index 값을 저장</li>
+</ul>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="k">let</span> <span class="nv">a</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="nf">firstIndex</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="mi">2</span><span class="p">),</span> <span class="k">let</span> <span class="nv">b</span> <span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="nf">lastIndex</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="kt">Array</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">a</span><span class="o">...</span><span class="n">b</span><span class="p">])</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<blockquote class="prompt-tip">
+  <p>여기서 <code class="language-plaintext highlighter-rouge">Array(arr[a...b])</code> 에 <code class="language-plaintext highlighter-rouge">Array</code> 를 감싸아준 이유는 <code class="language-plaintext highlighter-rouge">arr[a...b]</code>의 타입이 <code class="language-plaintext highlighter-rouge">ArraySlice&lt;Int&gt;</code> 이기 때문이다.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">intervals</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="kt">Array</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">intervals</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">...</span><span class="n">intervals</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span> <span class="o">+</span> <span class="n">arr</span><span class="p">[</span><span class="n">intervals</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">...</span><span class="n">intervals</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]])</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181894">해당문제 풀러가보기</a></p>

@@ -1,0 +1,122 @@
+<h2 id="01-문제--배열-만들기-1">01 문제 : 배열 만들기 1</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수 <code class="language-plaintext highlighter-rouge">n</code>과 <code class="language-plaintext highlighter-rouge">k</code>가 주어졌을 때, 1 이상 <code class="language-plaintext highlighter-rouge">n</code>이하의 정수 중에서 <code class="language-plaintext highlighter-rouge">k</code>의 배수를 오름차순으로 저장한 배열을 return 하는 solution 함수를 완성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 1,000,000
+• 1 ≤ <code class="language-plaintext highlighter-rouge">k</code> ≤ min(1,000, n)</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>n</th>
+      <th>k</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10</td>
+      <td>3</td>
+      <td>[3, 6, 9]</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>5</td>
+      <td>[5, 10, 15]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 1 이상 10 이하의 3의 배수는 3, 6, 9 이므로 [3, 6, 9]를 return 합니다.</p>
+</blockquote>
+<p><br /></p>
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 1 이상 15 이하의 5의 배수는 5, 10, 15 이므로 [5, 10, 15]를 return 합니다.</p>
+</blockquote>
+<p><br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">k</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="s">""</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--range--filter-활용하기">solution 1 : range / filter 활용하기</h4>
+
+<p><code class="language-plaintext highlighter-rouge">k</code> 부터 <code class="language-plaintext highlighter-rouge">n</code> 까지 정수 중이면 아래와 같이 작성할 수 있다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="p">(</span><span class="n">k</span><span class="o">...</span><span class="n">n</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+그중 <code class="language-plaintext highlighter-rouge">k</code>의 배수인 요소들만 남겨두어야 하니, <code class="language-plaintext highlighter-rouge">filter</code>를 활용하여 문제를 마무리 하였다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre> <span class="p">(</span><span class="n">k</span><span class="o">...</span><span class="n">n</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="nv">$0</span> <span class="o">%</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">k</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+
+	<span class="nf">return</span> <span class="p">(</span><span class="n">k</span><span class="o">...</span><span class="n">n</span><span class="p">)</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="nv">$0</span> <span class="o">%</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181901">해당문제 풀러가보기</a></p>

@@ -1,0 +1,115 @@
+<h2 id="01-문제--문자-개수-세기">01 문제 : 문자 개수 세기</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>알파벳 대소문자로만 이루어진 문자열 <code class="language-plaintext highlighter-rouge">my_string</code>이 주어질 때, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘A’의 개수, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘B’의 개수,…, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘Z’의 개수, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘a’의 개수, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘b’의 개수,…, <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘z’의 개수를 순서대로 담은 길이 52의 정수 배열을 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 1,000</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“Programmers”</td>
+      <td>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>에서 ‘P’가 1개, ‘a’가 1개, ‘e’가 1개, ‘g’가 1개, ‘m’이 2개, ‘o’가 1개, ‘r’가 3개, ‘s’가 1개 있으므로 [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0]를 return 합니다.</p>
+</blockquote>
+<p><br />
+<br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="s">""</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--아스키-코드--ascilvalue-활용하기">solution 1 : 아스키 코드 / ascilValue 활용하기</h4>
+
+<p>정답을 담을 변수를 생성하는데, 대문자 소문자를 모두 포함한 알파벳의 개수에 맞게 생성해준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">answer</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="nv">repeating</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">count</span><span class="p">:</span> <span class="mi">52</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이후 <code class="language-plaintext highlighter-rouge">my_string</code>에 <code class="language-plaintext highlighter-rouge">forEach</code>문을 활용하여 각 <code class="language-plaintext highlighter-rouge">character</code>의 아스키 넘버에 맞게 생성한 <code class="language-plaintext highlighter-rouge">answer</code> 변수에 += 1 씩 추가해준다.</p>
+
+<p>여기서 대문자일 경우 65 와 소문자일 경우 71을 빼주는 이유는, A의 아스키넘버는 65, a의 아스키 넘버는 97이기 때문이다. 97 에서 71을 빼주게 되면 26의 값을 얻게 되는데,
+<code class="language-plaintext highlighter-rouge">answer[26]</code> 의 위치에 <code class="language-plaintext highlighter-rouge">"a"</code>가 존재할 경우 += 1 씩 추가해주는 개념이다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">answer</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="nv">repeating</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">count</span><span class="p">:</span> <span class="mi">52</span><span class="p">)</span>
+  
+<span class="n">my_string</span><span class="o">.</span><span class="n">forEach</span> <span class="p">{</span> <span class="n">answer</span><span class="p">[</span><span class="kt">Int</span><span class="p">(</span><span class="nv">$0</span><span class="o">.</span><span class="n">asciiValue</span><span class="o">!</span> <span class="o">-</span> <span class="p">(</span><span class="nv">$0</span><span class="o">.</span><span class="n">isUppercase</span> <span class="p">?</span> <span class="mi">65</span> <span class="p">:</span> <span class="mi">71</span><span class="p">))]</span> <span class="o">+=</span> <span class="mi">1</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">answer</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="nv">repeating</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">count</span><span class="p">:</span> <span class="mi">52</span><span class="p">)</span>
+    <span class="n">my_string</span><span class="o">.</span><span class="n">forEach</span> <span class="p">{</span> <span class="n">answer</span><span class="p">[</span><span class="kt">Int</span><span class="p">(</span><span class="nv">$0</span><span class="o">.</span><span class="n">asciiValue</span><span class="o">!</span> <span class="o">-</span> <span class="p">(</span><span class="nv">$0</span><span class="o">.</span><span class="n">isUppercase</span> <span class="p">?</span> <span class="mi">65</span> <span class="p">:</span> <span class="mi">71</span><span class="p">))]</span> <span class="o">+=</span> <span class="mi">1</span> <span class="p">}</span>
+    <span class="k">return</span> <span class="n">answer</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181902">해당문제 풀러가보기</a></p>

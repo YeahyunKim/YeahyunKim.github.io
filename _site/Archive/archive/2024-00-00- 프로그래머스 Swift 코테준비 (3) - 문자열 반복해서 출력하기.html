@@ -1,0 +1,96 @@
+<h2 id="01-문제--문자열-반복해서-출력하기">01 문제 : 문자열 반복해서 출력하기</h2>
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>문자열 <code class="language-plaintext highlighter-rouge">str</code>과 정수 <code class="language-plaintext highlighter-rouge">n</code>이 주어집니다.<br />
+<code class="language-plaintext highlighter-rouge">str</code>이 <code class="language-plaintext highlighter-rouge">n</code>번 반복된 문자열을 만들어 출력하는 코드를 작성해 보세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str</code>의 길이 ≤ 10
+• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 5</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="입출력-예">입출력 예</h4>
+
+<p>입력 #1</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">string</span> <span class="mi">5</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>출력 #1</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">stringstringstringstringstring</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">inp</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
+<span class="k">let</span> <span class="p">(</span><span class="nv">s1</span><span class="p">,</span> <span class="nv">a</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="kt">Int</span><span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">!</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<blockquote class="command-text">
+  <p>제시된 내용을 보면,
+let (s1, b) = (inp[0], Int(inp[1])!) 은 튜플의 구조분해할당으로 인해, 
+현재 변수 <code class="language-plaintext highlighter-rouge">s1</code> 에는 <code class="language-plaintext highlighter-rouge">"string"</code> , <code class="language-plaintext highlighter-rouge">a</code> 에는 <code class="language-plaintext highlighter-rouge">5</code>라는 <code class="language-plaintext highlighter-rouge">number</code> 형태의 의 값이 들어가 있다.</p>
+</blockquote>
+
+<blockquote class="prompt-tip">
+  <p>string을 총 5번 출력하기 위해서는, 제시된 <code class="language-plaintext highlighter-rouge">5</code> 라는 값을 활용 해야한다.
+따라서 for문을 활용하고, 변수 <code class="language-plaintext highlighter-rouge">result</code> 를 생성하여, 해당 변수에 <code class="language-plaintext highlighter-rouge">"string"</code> 을 5번 넣어주면 될 것으로 보인다.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer">💡Answer</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
+
+<span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="s">""</span>
+
+<span class="k">for</span> <span class="n">count</span> <span class="k">in</span> <span class="mi">1</span><span class="o">...</span><span class="n">a</span> <span class="p">{</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">+</span> <span class="n">s1</span>
+<span class="p">}</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="c1">// stringstringstringstringstring</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181950">해당문제 풀러가보기</a></p>

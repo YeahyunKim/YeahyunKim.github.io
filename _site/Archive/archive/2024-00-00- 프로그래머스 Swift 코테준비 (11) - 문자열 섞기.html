@@ -1,0 +1,97 @@
+<h2 id="01-문제--문자열-섞기">01 문제 : 문자열 섞기</h2>
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>길이가 같은 두 문자열 str1과 str2가 주어집니다.
+두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+<blockquote>
+  <p>• 1 ≤ str1의 길이 = str2의 길이 ≤ 10
+    • str1과 str2는 알파벳 소문자로 이루어진 문자열입니다.
+	{: .command-text}</p>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>str1</th>
+      <th>str2</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“aaaaa”</td>
+      <td>“bbbbb”</td>
+      <td>“ababababab”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<blockquote class="prompt-tip">
+  <p>for 문을 통해, 새로운 변수 <code class="language-plaintext highlighter-rouge">result</code> 를 생성해 풀수 있다.
+새로운 변수 <code class="language-plaintext highlighter-rouge">result</code> 를 <code class="language-plaintext highlighter-rouge">Character</code> 타입으로 만들고, 해당 변수 안에 <code class="language-plaintext highlighter-rouge">str1</code> 과 <code class="language-plaintext highlighter-rouge">str2</code> 의 값을 for문을 통해 하나씩 넣어주는 방식을 사용해 보았다.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer">💡Answer</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">str1</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">str2</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]()</span>
+    <span class="k">var</span> <span class="nv">a</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">str1</span><span class="p">)</span>
+    <span class="k">var</span> <span class="nv">b</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">str2</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">str1</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+        <span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="p">}</span>
+
+
+<span class="c1">// "ababababab"</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181942">해당문제 풀러가보기</a></p>
+

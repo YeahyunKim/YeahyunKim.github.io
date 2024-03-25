@@ -1,0 +1,97 @@
+<h2 id="01-문제--문자열-돌리기">01 문제 : 문자열 돌리기</h2>
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>문자열 str이 주어집니다.
+문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str</code>의 길이 ≤ 10</p>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<p>입력 #1</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>abcde
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>출력 #1</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>a
+b
+c
+d
+e
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+<h4 id="for문을-사용하기">for문을 사용하기</h4>
+<blockquote class="prompt-tip">
+  <p>for문을 통하여, 첫번째 index를 <code class="language-plaintext highlighter-rouge">print</code>를 하면 된다!</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer">💡Answer</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
+
+<span class="k">for</span> <span class="n">character</span> <span class="k">in</span> <span class="n">s1</span> <span class="p">{</span>
+	<span class="nf">print</span><span class="p">(</span><span class="n">character</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// a</span>
+<span class="c1">// b</span>
+<span class="c1">// c</span>
+<span class="c1">// d</span>
+<span class="c1">// e</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181945">해당문제 풀러가보기</a></p>
+

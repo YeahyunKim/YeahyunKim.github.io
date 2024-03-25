@@ -1,0 +1,119 @@
+<h2 id="01-문제--문자열의-앞의-n글자">01 문제 : 문자열의 앞의 n글자</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>문자열 <code class="language-plaintext highlighter-rouge">my_string</code>과 정수 <code class="language-plaintext highlighter-rouge">n</code>이 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">my_string</code>의 앞의 <code class="language-plaintext highlighter-rouge">n</code>글자로 이루어진 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• <code class="language-plaintext highlighter-rouge">my_string</code>은 숫자와 알파벳으로 이루어져 있습니다.
+• 1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 1,000
+• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>n</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“ProgrammerS123”</td>
+      <td>11</td>
+      <td>“ProgrammerS”</td>
+    </tr>
+    <tr>
+      <td>“He110W0r1d”</td>
+      <td>5</td>
+      <td>“He110”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>에서 앞의 11글자는 “ProgrammerS”이므로 이 문자열을 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 2번의 <code class="language-plaintext highlighter-rouge">my_string</code>에서 앞의 5글자는 “He110”이므로 이 문자열을 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--prefix-활용하기">solution 1 : prefix 활용하기</h4>
+
+<p>문자열의앞에서 n개의 글자를 가져오기 위해선, 간단하게 <code class="language-plaintext highlighter-rouge">prefix</code>를 활용하면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="nf">prefix</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="nf">prefix</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181907">해당문제 풀러가보기</a></p>

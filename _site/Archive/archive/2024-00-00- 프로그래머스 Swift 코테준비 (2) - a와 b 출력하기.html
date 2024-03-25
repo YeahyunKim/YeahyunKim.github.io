@@ -1,0 +1,93 @@
+<h2 id="01-문제--a-와-b-출력하기">01 문제 : a 와 b 출력하기</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수 <code class="language-plaintext highlighter-rouge">a</code>와 <code class="language-plaintext highlighter-rouge">b</code>가 주어집니다. 각 수를 입력받아 입출력 예와 같은 형식으로 출력하는 코드를 작성해 보세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 100,000 ≤ <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code> ≤ 100,000</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="입출력-예">입출력 예</h4>
+
+<p>입력 #1</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="mi">4</span> <span class="mi">5</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>출력 #1</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">n</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="kt">Int</span><span class="p">(</span><span class="nv">$0</span><span class="p">)</span><span class="o">!</span> <span class="p">}</span>
+<span class="k">let</span> <span class="p">(</span><span class="nv">a</span><span class="p">,</span> <span class="nv">b</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">n</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<blockquote class="command-text">
+  <p>제시된 내용을 보면,
+let (a, b) = (n[0], n[1]) 은 튜플의 구조분해할당으로 인해, 
+현재 변수 <code class="language-plaintext highlighter-rouge">a</code> 에는 <code class="language-plaintext highlighter-rouge">4</code> , <code class="language-plaintext highlighter-rouge">b</code> 에는 <code class="language-plaintext highlighter-rouge">5</code>라는 <code class="language-plaintext highlighter-rouge">numbers</code> 형태의 값이 들어가 있다.</p>
+</blockquote>
+
+<blockquote class="prompt-tip">
+  <p>해당 a값을 <code class="language-plaintext highlighter-rouge">String</code>형태가 아닌, <code class="language-plaintext highlighter-rouge">Number</code> 형태로 출력하기 위해서는,  <code class="language-plaintext highlighter-rouge">\(출력할 값)</code> 을 활용하면 된다.
+따라서, <code class="language-plaintext highlighter-rouge">print("a = \(n[0])\nb = \(n[1])")</code> 혹은 <code class="language-plaintext highlighter-rouge">print("a = \(a)\nb = \(b)")</code>를 입력하면 된다.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer">💡Answer</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">s1</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!</span>
+
+
+<span class="nf">print</span><span class="p">(</span><span class="s">"a = </span><span class="se">\(</span><span class="n">n</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="se">)\n</span><span class="s">b = </span><span class="se">\(</span><span class="n">n</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1">// print("a = \(a)\nb = \(b)")</span>
+
+<span class="c1">// a = 4</span>
+<span class="c1">// b = 5</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181951">해당문제 풀러가보기</a></p>

@@ -1,0 +1,221 @@
+<h2 id="01-문제--부분-문자열-이어-붙여-문자열-만들기">01 문제 : 부분 문자열 이어 붙여 문자열 만들기</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>길이가 같은 문자열 배열 <code class="language-plaintext highlighter-rouge">my_strings</code>와 이차원 정수 배열 <code class="language-plaintext highlighter-rouge">parts</code>가 매개변수로 주어집니다. <br />
+<code class="language-plaintext highlighter-rouge">parts[i]</code>는 [s, e] 형태로, <code class="language-plaintext highlighter-rouge">my_string[i]</code>의 인덱스 s부터 인덱스 e까지의 부분 문자열을 의미합니다. <br />
+각 <code class="language-plaintext highlighter-rouge">my_strings</code>의 원소의 <code class="language-plaintext highlighter-rouge">parts</code>에 해당하는 부분 문자열을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">my_strings</code>의 길이 = <code class="language-plaintext highlighter-rouge">parts</code>의 길이 ≤ 100
+• 1 ≤ <code class="language-plaintext highlighter-rouge">my_strings</code>의 원소의 길이 ≤ 100
+• 10l - 1 ≤ <code class="language-plaintext highlighter-rouge">k</code> &lt; 10l
+• <code class="language-plaintext highlighter-rouge">parts[i]</code>를 [s, e]라 할 때, 다음을 만족합니다.
+	• 0 ≤ s ≤ e &lt; <code class="language-plaintext highlighter-rouge">my_strings[i]</code>의 길이</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>my_strings</th>
+      <th>parts</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[“progressive”, “hamburger”, “hammer”, “ahocorasick”]</td>
+      <td>[[0, 4], [1, 2], [3, 5], [7, 7]]</td>
+      <td>“programmers”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번의 입력을 보기 좋게 표로 나타내면 다음과 같습니다.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>i</th>
+      <th>my_strings[i]</th>
+      <th>parts[i]</th>
+      <th>부분 문자열</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>“progressive”</td>
+      <td>[0, 4]</td>
+      <td>“progr”</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>“hamburger”</td>
+      <td>[1, 2]</td>
+      <td>“am”</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>“hammer”</td>
+      <td>[3, 5]</td>
+      <td>“mer”</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>“ahocorasick”</td>
+      <td>[7, 7]</td>
+      <td>”s”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="s">""</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--map-활용하기">solution 1 : map 활용하기</h4>
+
+<p>먼저, 결괏값을 담을 변수를 하나 생성한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<code class="language-plaintext highlighter-rouge">my_string</code>의 개수 만큼 반복문을 돌려야하고, <code class="language-plaintext highlighter-rouge">parts</code>의 각 요소에 접근하기 위해 <code class="language-plaintext highlighter-rouge">indices</code>를 활용한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]()</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+그후 <code class="language-plaintext highlighter-rouge">my_string</code>의 각 요소를 담을 변수를 하나 추가해 주었다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]()</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span>
+	<span class="k">var</span> <span class="nv">characterArray</span> <span class="o">=</span> <span class="n">my_strings</span><span class="p">[</span><span class="nv">$0</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+마지막으로 처음에 만든 결괏값을 담는 변수 <code class="language-plaintext highlighter-rouge">result</code>에 결괏값들을 <code class="language-plaintext highlighter-rouge">append</code> 처리해주면 된다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]()</span>
+
+<span class="n">my_strings</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span>
+
+	<span class="k">var</span> <span class="nv">characterArray</span> <span class="o">=</span> <span class="n">my_strings</span><span class="p">[</span><span class="nv">$0</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
+
+	<span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="nv">contentsOf</span><span class="p">:</span> <span class="n">characterArray</span><span class="p">[</span><span class="n">parts</span><span class="p">[</span><span class="nv">$0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">...</span><span class="n">parts</span><span class="p">[</span><span class="nv">$0</span><span class="p">][</span><span class="mi">1</span><span class="p">]])</span>
+
+<span class="p">}</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_strings</span><span class="p">:[</span><span class="kt">String</span><span class="p">],</span> <span class="n">_</span> <span class="nv">parts</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Character</span><span class="p">]()</span>
+
+    <span class="n">my_strings</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span>
+    
+        <span class="k">var</span> <span class="nv">characterArray</span> <span class="o">=</span> <span class="n">my_strings</span><span class="p">[</span><span class="nv">$0</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
+    
+        <span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="nv">contentsOf</span><span class="p">:</span> <span class="n">characterArray</span><span class="p">[</span><span class="n">parts</span><span class="p">[</span><span class="nv">$0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">...</span><span class="n">parts</span><span class="p">[</span><span class="nv">$0</span><span class="p">][</span><span class="mi">1</span><span class="p">]])</span>
+    
+    <span class="p">}</span>
+    
+<span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181911">해당문제 풀러가보기</a></p>

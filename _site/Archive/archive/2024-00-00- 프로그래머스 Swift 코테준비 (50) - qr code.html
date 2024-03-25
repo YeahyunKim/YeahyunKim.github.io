@@ -1,0 +1,208 @@
+<h2 id="01-문제--qr-code">01 문제 : qr code</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>두 정수 <code class="language-plaintext highlighter-rouge">q</code>, <code class="language-plaintext highlighter-rouge">r</code>과 문자열 <code class="language-plaintext highlighter-rouge">code</code>가 주어질 때, <code class="language-plaintext highlighter-rouge">code</code>의 각 인덱스를 <code class="language-plaintext highlighter-rouge">q</code>로 나누었을 때 나머지가 <code class="language-plaintext highlighter-rouge">r</code>인 위치의 문자를 앞에서부터 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 0 ≤ <code class="language-plaintext highlighter-rouge">r</code> &lt; <code class="language-plaintext highlighter-rouge">q</code> ≤ 20
+• <code class="language-plaintext highlighter-rouge">r</code> &lt; <code class="language-plaintext highlighter-rouge">code</code>의 길이 ≤ 1,000
+• <code class="language-plaintext highlighter-rouge">code</code>는 영소문자로만 이루어져 있습니다.
+• 1 ≤ <code class="language-plaintext highlighter-rouge">c</code> ≤ <code class="language-plaintext highlighter-rouge">m</code></p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>q</th>
+      <th>r</th>
+      <th>code</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>“qjnwezgrpirldywt”</td>
+      <td>“jerry”</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>“programmers”</td>
+      <td>“programmers”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">q</code>와 <code class="language-plaintext highlighter-rouge">r</code>은 각각 3, 1이고 인덱스와 그 값을 <code class="language-plaintext highlighter-rouge">q</code>로 나눈 나머지가 잘 보이도록 표로 만들면 다음과 같습니다.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th><code class="language-plaintext highlighter-rouge">code</code></th>
+      <th>q</th>
+      <th>j</th>
+      <th>n</th>
+      <th>w</th>
+      <th>e</th>
+      <th>z</th>
+      <th>g</th>
+      <th>r</th>
+      <th>p</th>
+      <th>i</th>
+      <th>r</th>
+      <th>l</th>
+      <th>d</th>
+      <th>y</th>
+      <th>w</th>
+      <th>t</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>index</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">q</code>로 나눈 나머지</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 2번의 <code class="language-plaintext highlighter-rouge">q</code>와 <code class="language-plaintext highlighter-rouge">r</code>은 각각 1, 0이고 인덱스와 그 값을 <code class="language-plaintext highlighter-rouge">q</code>로 나눈 나머지가 잘 보이도록 표로 만들면 다음과 같습니다.</p>
+</blockquote>
+
+<p>|<code class="language-plaintext highlighter-rouge">code</code>|p|r|o|g|r|a|m|m|e|r|s|
+|—|—|—|—|—|—|—|—|—|—|—|—|
+|index|0|1|2|3|4|5|6|7|8|9|10|
+|<code class="language-plaintext highlighter-rouge">q</code>로 나눈 나머지|0|0|0|0|0|0|0|0|0|0|0|
+<br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">q</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">r</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">code</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="s">""</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--map-indices-filter-다같이-사용하기">solution 1 : map, indices, filter 다같이 사용하기</h4>
+
+<p>먼저 코드의 문자 개수만큼 반복문(<code class="language-plaintext highlighter-rouge">map</code>)을 돌려야하고, 해당 문자의 인덱스 값을 <code class="language-plaintext highlighter-rouge">q</code>로 나눈 나머지 값을 구해야하니, <code class="language-plaintext highlighter-rouge">filter</code> 를 사용한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">characterArray</span> <span class="o">=</span> <span class="n">code</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span>
+
+<span class="n">characterArray</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="nv">$0</span> <span class="o">%</span> <span class="n">q</span> <span class="o">==</span> <span class="n">r</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이후 <code class="language-plaintext highlighter-rouge">filter</code> 의 조건문으로 걸러진 요소들을 하나의 문자열로 합쳐야하므로, <code class="language-plaintext highlighter-rouge">joined()</code>를 활용하여 문제를 마무리 했다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">characterArray</span> <span class="o">=</span> <span class="n">code</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span>
+
+<span class="n">characterArray</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="nv">$0</span> <span class="o">%</span> <span class="n">q</span> <span class="o">==</span> <span class="n">r</span> <span class="p">}</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="kt">String</span><span class="p">(</span><span class="n">characterArray</span><span class="p">[</span><span class="nv">$0</span><span class="p">])</span> <span class="p">}</span><span class="o">.</span><span class="nf">joined</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">q</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">r</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">code</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">var</span> <span class="nv">characterArray</span> <span class="o">=</span> <span class="n">code</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">characterArray</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">filter</span><span class="p">{</span> <span class="nv">$0</span> <span class="o">%</span> <span class="n">q</span> <span class="o">==</span> <span class="n">r</span> <span class="p">}</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="kt">String</span><span class="p">(</span><span class="n">characterArray</span><span class="p">[</span><span class="nv">$0</span><span class="p">])</span> <span class="p">}</span><span class="o">.</span><span class="nf">joined</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181903">해당문제 풀러가보기</a></p>

@@ -1,0 +1,117 @@
+<h2 id="01-문제-n-번째-원소까지">01 문제 :n 번째 원소까지</h2>
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수 리스트 <code class="language-plaintext highlighter-rouge">num_list</code>와 정수 <code class="language-plaintext highlighter-rouge">n</code>이 주어질 때, <code class="language-plaintext highlighter-rouge">num_list</code>의 첫 번째 원소부터 <code class="language-plaintext highlighter-rouge">n</code> 번째 원소까지의 모든 원소를 담은 리스트를 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 2 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 길이 ≤ 30
+• 1 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 원소 ≤ 9
+• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 길이 ___</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>num_list</th>
+      <th>n</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[2, 1, 6]</td>
+      <td>1</td>
+      <td>[2]</td>
+    </tr>
+    <tr>
+      <td>[5, 2, 1, 7, 5]</td>
+      <td>3</td>
+      <td>[5, 2, 1]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• [2, 1, 6]의 첫 번째 원소부터 첫 번째 원소까지의 모든 원소는 [2]입니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• [5, 2, 1, 7, 5]의 첫 번째 원소부터 세 번째 원소까지의 모든 원소는 [5, 2, 1]입니다.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+	<span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--range-활용하기">solution 1 : range 활용하기</h4>
+
+<p><code class="language-plaintext highlighter-rouge">num_list</code>의 첫 번째 원소부터 <code class="language-plaintext highlighter-rouge">n</code> 번째 원소까지를 구하기 위해선 범위를 <code class="language-plaintext highlighter-rouge">0...(n-1)</code> 로 잡아주면 된다.
+<code class="language-plaintext highlighter-rouge">n - 1</code> 에서 1을 빼는 이유는 배열의 인덱스값은 0부터 시작하기 때문..!</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kt">Array</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="mi">0</span><span class="o">...</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)])</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p><br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">],</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+
+    <span class="k">return</span> <span class="kt">Array</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="mi">0</span><span class="o">...</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)])</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181889">해당문제 풀러가보기</a></p>

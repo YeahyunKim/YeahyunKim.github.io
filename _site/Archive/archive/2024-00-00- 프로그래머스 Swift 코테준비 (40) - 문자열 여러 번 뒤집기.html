@@ -1,0 +1,170 @@
+<h2 id="01-문제---문자열-여러-번-뒤집기">01 문제 :  문자열 여러 번 뒤집기</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>문자열 <code class="language-plaintext highlighter-rouge">my_string</code>과 이차원 정수 배열 <code class="language-plaintext highlighter-rouge">queries</code>가 매개변수로 주어집니다. <br />
+<code class="language-plaintext highlighter-rouge">queries</code>의 원소는 [s, e] 형태로, <code class="language-plaintext highlighter-rouge">my_string</code>의 인덱스 s부터 인덱스 e까지를 뒤집으라는 의미입니다. <br />
+<code class="language-plaintext highlighter-rouge">my_string</code>에 <code class="language-plaintext highlighter-rouge">queries</code>의 명령을 순서대로 처리한 후의 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• <code class="language-plaintext highlighter-rouge">my_string</code>은 영소문자로만 이루어져 있습니다.
+• 1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 1,000
+• <code class="language-plaintext highlighter-rouge">queries</code>의 원소는 [s, e]의 형태로 0 ≤ s ≤ e &lt; <code class="language-plaintext highlighter-rouge">my_string</code>의 길이를 만족합니다.
+• 1 ≤ <code class="language-plaintext highlighter-rouge">queries</code>의 길이 ≤ 1,000</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>queries</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“rermgorpsam”</td>
+      <td>[[2, 3], [0, 7], [5, 9], [6, 10]]</td>
+      <td>“programmers”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>은 “rermgorpsam”이고 주어진 <code class="language-plaintext highlighter-rouge">queries</code>를 순서대로 처리하면 다음과 같습니다.</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>queries</th>
+      <th>my_string</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>“rermgorpsam”</td>
+    </tr>
+    <tr>
+      <td>[2, 3]</td>
+      <td>“remrgorpsam”</td>
+    </tr>
+    <tr>
+      <td>[0, 7]</td>
+      <td>“progrmersam”</td>
+    </tr>
+    <tr>
+      <td>[5, 9]</td>
+      <td>“prograsremm”</td>
+    </tr>
+    <tr>
+      <td>[6, 10]</td>
+      <td>“programmers”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">queries</span><span class="p">:[[</span><span class="kt">Int</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="s">""</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--reverse-활용하기">solution 1 : reverse() 활용하기</h4>
+
+<p>먼저 결과값을 담을 변수를 생성해 준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<code class="language-plaintext highlighter-rouge">quries</code> 의 개수만큼 <code class="language-plaintext highlighter-rouge">my_string</code>을 업데이트 해야 하므로, <code class="language-plaintext highlighter-rouge">quries.count</code> 로 for문을 돌린다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">queries</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+문제에서 제시한 <code class="language-plaintext highlighter-rouge">queries</code>의 인덱스 값에 맞게 <code class="language-plaintext highlighter-rouge">result</code> 의 문자열들을 뒤집어준다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">queries</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+	<span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">...</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span><span class="o">.</span><span class="nf">reverse</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="kt">Array</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">queries</span><span class="o">.</span><span class="n">count</span> <span class="p">{</span>
+	<span class="n">result</span><span class="p">[</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">...</span><span class="n">queries</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]]</span><span class="o">.</span><span class="nf">reverse</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181913">해당문제 풀러가보기</a></p>

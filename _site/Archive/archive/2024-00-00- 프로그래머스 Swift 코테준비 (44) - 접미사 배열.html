@@ -1,0 +1,181 @@
+<h2 id="01-문제--접미사-배열">01 문제 : 접미사 배열</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>어떤 문자열에 대해서 접미사는 특정 인덱스부터 시작하는 문자열을 의미합니다. 예를 들어, “banana”의 모든 접미사는 “banana”, “anana”, “nana”, “ana”, “na”, “a”입니다. <br />
+문자열 <code class="language-plaintext highlighter-rouge">my_string</code>이 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">my_string</code>의 모든 접미사를 사전순으로 정렬한 문자열 배열을 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• <code class="language-plaintext highlighter-rouge">my_string</code>은 알파벳 소문자로만 이루어져 있습니다.
+• 1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 100
+• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“banana”</td>
+      <td>[“a”, “ana”, “anana”, “banana”, “na”, “nana”]</td>
+    </tr>
+    <tr>
+      <td>“programmers”</td>
+      <td>[“ammers”, “ers”, “grammers”, “mers”, “mmers”, “ogrammers”, “programmers”, “rammers”, “rogrammers”, “rs”, “s”]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>는 “banana”로 모든 접미사는 문제의 설명과 같습니다. 이를 사전순으로 정렬하면 “a”, “ana”, “anana”, “banana”, “na”, “nana”이므로 [“a”, “ana”, “anana”, “banana”, “na”, “nana”]를 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 2번의 <code class="language-plaintext highlighter-rouge">my_string</code>는 “programmers”이고 모든 접미사는 “programmers”, “rogrammers”, “ogrammers”, “grammers”, “rammers”, “ammers”, “mmers”, “mers”, “ers”, “rs”, “s”입니다. <br />
+이를 사전순으로 정렬한 문자열 배열 [“ammers”, “ers”, “grammers”, “mers”, “mmers”, “ogrammers”, “programmers”, “rammers”, “rogrammers”, “rs”, “s”]를 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="s">""</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--dropfirst-활용하기">solution 1 : dropFirst 활용하기</h4>
+
+<p><code class="language-plaintext highlighter-rouge">dropFirst</code>는 dropFirst( _ k: Int) 로 활용할 수 있는데, 문자열의 요소를 앞에서부터 파라미터 값만큼 버려준다. 그럼 여기서 제공된 정수 <code class="language-plaintext highlighter-rouge">n</code>의 값이 11이라고 가정했을때, <code class="language-plaintext highlighter-rouge">전체 문자열 개수 - 11</code> 을 해주면 해당 문제에서 버릴 만큼의 값을 구할 수 있다.</p>
+
+<p>먼저,  <code class="language-plaintext highlighter-rouge">my_string</code>의 문자 개수만큼 반복문을 돌려야 하므로 <code class="language-plaintext highlighter-rouge">map</code> 과 <code class="language-plaintext highlighter-rouge">indices</code>를 활용했고, 결과값을 담을 변수를 하나 추가해 준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이후 문자열을 앞에서부터 하나씩 버려주는 dropFirst를 활용하여 생성한 값을 결괏값 변수 <code class="language-plaintext highlighter-rouge">result</code>에 append 시켜준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+
+	<span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="nf">dropFirst</span><span class="p">(</span><span class="nv">$0</span><span class="p">)))</span>
+
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<code class="language-plaintext highlighter-rouge">result</code> 를 사전순으로 정렬해주기 위해서는 <code class="language-plaintext highlighter-rouge">sort()</code>를 활용하면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+
+	<span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="nf">dropFirst</span><span class="p">(</span><span class="nv">$0</span><span class="p">)))</span>
+
+<span class="p">}</span>
+
+<span class="n">result</span><span class="o">.</span><span class="nf">sort</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+
+	<span class="n">result</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="nf">dropFirst</span><span class="p">(</span><span class="nv">$0</span><span class="p">)))</span>
+
+<span class="p">}</span>
+
+<span class="n">result</span><span class="o">.</span><span class="nf">sort</span><span class="p">()</span>
+
+<span class="k">return</span> <span class="n">result</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181909">해당문제 풀러가보기</a></p>

@@ -1,0 +1,125 @@
+<h2 id="01-문제--n의-배수">01 문제 : n의 배수</h2>
+<hr />
+<h5 id="문제-설명">문제 설명</h5>
+
+<blockquote class="command-text">
+  <p>정수 num과 n이 매개 변수로 주어질 때, num이 n의 배수이면 1을 return n의 배수가 아니라면 0을 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 2 ≤ num ≤ 100
+• 2 ≤ n ≤ 9</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>num</th>
+      <th>n</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>98</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<blockquote class="command-text">
+  <p>입출력 예 #1
+	• 98은 2의 배수이므로 1을 return합니다.</p>
+</blockquote>
+
+<blockquote class="command-text">
+  <p>입출력 예 #2
+	• 32는 3의 배수가 아니므로 0을 return합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">num</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="정수의-배수-찾기">정수의 배수 찾기</h4>
+
+<p>정수의 배수를 찾기 위해서는 <code class="language-plaintext highlighter-rouge">나머지 값</code> <code class="language-plaintext highlighter-rouge">remainder</code>을 활용하여 찾을 수 있다.
+예를 들어, <code class="language-plaintext highlighter-rouge">50은 5의 배수일까?</code> <code class="language-plaintext highlighter-rouge">50은 3의 배수일까?</code> 를 생각해보자.</p>
+
+<ul>
+  <li>50 % 5 = 0  =&gt; 나머지 없음</li>
+  <li>50 % 3 = 2 =&gt; 나머지 있음</li>
+</ul>
+
+<p>여기서 5로 나누었을때는 나머지가 없으니, 50은 5의 배수임을 알 수 있고,
+3으로 나누었을대는 나머지가 있으니, 50은 3의 배수가 아님을 알 수 있다.</p>
+
+<p>위의 방식을 통해 문제를 해결할 수 있었다.</p>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer">💡Answer</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">a</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">b</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="p">}</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181937">해당문제 풀러가보기</a></p>
+

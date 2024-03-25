@@ -1,0 +1,194 @@
+<h2 id="01-문제--간단한-논리-연산">01 문제 : 간단한 논리 연산</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>boolean 변수 <code class="language-plaintext highlighter-rouge">x1</code>, <code class="language-plaintext highlighter-rouge">x2</code>, <code class="language-plaintext highlighter-rouge">x3</code>, <code class="language-plaintext highlighter-rouge">x4</code>가 매개변수로 주어질 때, 다음의 식의 true/false를 return 하는 solution 함수를 작성해 주세요. <br />
+	• (<code class="language-plaintext highlighter-rouge">x1</code> ∨ <code class="language-plaintext highlighter-rouge">x2</code>) ∧ (<code class="language-plaintext highlighter-rouge">x3</code> ∨ <code class="language-plaintext highlighter-rouge">x4</code>)</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 길이 ≤ 100,000
+	• 1 ≤ <code class="language-plaintext highlighter-rouge">arr</code>의 원소 ≤ 100,000</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>x1</th>
+      <th>x2</th>
+      <th>x3</th>
+      <th>x4</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">x1</code>, <code class="language-plaintext highlighter-rouge">x2</code>, <code class="language-plaintext highlighter-rouge">x3</code>, <code class="language-plaintext highlighter-rouge">x4</code>로 식을 계산하면 다음과 같습니다. <br />
+    (<code class="language-plaintext highlighter-rouge">x1</code> ∨ <code class="language-plaintext highlighter-rouge">x2</code>) ∧ (<code class="language-plaintext highlighter-rouge">x3</code> ∨ <code class="language-plaintext highlighter-rouge">x4</code>) ≡ (F ∨ T) ∧ (T ∨ T) ≡ T ∧ T ≡ T <br />
+따라서 true를 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 2번의 <code class="language-plaintext highlighter-rouge">x1</code>, <code class="language-plaintext highlighter-rouge">x2</code>, <code class="language-plaintext highlighter-rouge">x3</code>, <code class="language-plaintext highlighter-rouge">x4</code>로 식을 계산하면 다음과 같습니다. <br />
+    (<code class="language-plaintext highlighter-rouge">x1</code> ∨ <code class="language-plaintext highlighter-rouge">x2</code>) ∧ (<code class="language-plaintext highlighter-rouge">x3</code> ∨ <code class="language-plaintext highlighter-rouge">x4</code>) ≡ (T ∨ F) ∧ (F ∨ F) ≡ T ∧ F ≡ F
+따라서 false return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+<h6 id="과-의-진리표">∨과 ∧의 진리표</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>x</th>
+      <th>y</th>
+      <th>x ∨ y</th>
+      <th>x ∧ y</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>F</td>
+      <td>T</td>
+      <td>F</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>T</td>
+      <td>T</td>
+      <td>F</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>F</td>
+      <td>F</td>
+      <td>F</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">arr</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--논리연산-or--and-활용하기">solution 1 : 논리연산 OR / AND 활용하기</h4>
+
+<p>논리연산에서 AND 와 OR은 아래와 같다.</p>
+
+<p>• a &amp;&amp; b = <code class="language-plaintext highlighter-rouge">a 와 b 모두 true인 경우</code> <br />
+   • a || b = <code class="language-plaintext highlighter-rouge">a 와 b 둘중 하나만 true인 경우</code></p>
+
+<p>그럼 문제에서 제공해준 진리표를 통해 <code class="language-plaintext highlighter-rouge">∨</code> 와 <code class="language-plaintext highlighter-rouge">∧</code> 가 어떤 논리연산자 인지 알 수 있다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="err"></span><span class="n">x</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">y</span> <span class="o">=</span> <span class="kc">false</span>
+
+<span class="n">x</span> <span class="err">∨</span> <span class="n">y</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">x</span> <span class="o">||</span> <span class="n">y</span> <span class="o">=</span> <span class="kc">true</span>
+
+<span class="n">x</span> <span class="err">∧</span> <span class="n">y</span> <span class="o">=</span> <span class="kc">false</span>
+<span class="n">x</span> <span class="o">&amp;&amp;</span> <span class="n">y</span> <span class="o">=</span> <span class="kc">false</span>
+
+<span class="c1">// ∨ = || 연산자</span>
+<span class="c1">// ∧ = &amp;&amp; 연산자</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">x1</span><span class="p">:</span><span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">x2</span><span class="p">:</span><span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">x3</span><span class="p">:</span><span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">x4</span><span class="p">:</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+    <span class="nf">return</span> <span class="p">(</span><span class="n">x1</span> <span class="o">||</span> <span class="n">x2</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">x3</span> <span class="o">||</span> <span class="n">x4</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181917">해당문제 풀러가보기</a></p>

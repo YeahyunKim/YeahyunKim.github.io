@@ -1,0 +1,166 @@
+<h2 id="01-문제--문자열-뒤집기">01 문제 : 문자열 뒤집기</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>문자열 <code class="language-plaintext highlighter-rouge">my_string</code>과 정수 <code class="language-plaintext highlighter-rouge">s</code>, <code class="language-plaintext highlighter-rouge">e</code>가 매개변수로 주어질 때, <code class="language-plaintext highlighter-rouge">my_string</code>에서 인덱스 <code class="language-plaintext highlighter-rouge">s</code>부터 인덱스 <code class="language-plaintext highlighter-rouge">e</code>까지를 뒤집은 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• <code class="language-plaintext highlighter-rouge">my_string</code>은 숫자와 알파벳으로만 이루어져 있습니다.
+• 1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 1,000
+• 0 ≤ <code class="language-plaintext highlighter-rouge">s</code> ≤ <code class="language-plaintext highlighter-rouge">e</code> &lt; <code class="language-plaintext highlighter-rouge">my_string</code>의 길이</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>s</th>
+      <th>e</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“Progra21Sremm3”</td>
+      <td>6</td>
+      <td>12</td>
+      <td>“ProgrammerS123”</td>
+    </tr>
+    <tr>
+      <td>“Stanley1yelnatS”</td>
+      <td>4</td>
+      <td>10</td>
+      <td>“Stanley1yelnatS”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>에서 인덱스 6부터 인덱스 12까지를 뒤집은 문자열은 “ProgrammerS123”이므로 “ProgrammerS123”를 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 2번의 <code class="language-plaintext highlighter-rouge">my_string</code>에서 인덱스 4부터 인덱스 10까지를 뒤집으면 원래 문자열과 같은 “Stanley1yelnatS”이므로 “Stanley1yelnatS”를 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">s</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="s">""</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--reverse-활용하기">solution 1 : reverse() 활용하기</h4>
+
+<p><code class="language-plaintext highlighter-rouge">reversed()</code> 를 사용하지 않고, <code class="language-plaintext highlighter-rouge">reverse()</code> 를 활용해보았다.
+그 이유로는 새로운 배열을 생성하기 보단, 기존에 있는 데이터를 수정해야하는 문제로 보여서 
+<code class="language-plaintext highlighter-rouge">reverse()</code> 가 더 적합해 보였다.</p>
+
+<p>먼저 <code class="language-plaintext highlighter-rouge">reverse()</code> 는 배열에 사용할 수 있어서, <code class="language-plaintext highlighter-rouge">my_string</code>을 Character 배열로 변형해 변수에 담아주었다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">characterArray</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이후 생성한 <code class="language-plaintext highlighter-rouge">characterArray[s...e]</code>로 뒤집을 영역을 선택 한 후, 해당 영역을 <code class="language-plaintext highlighter-rouge">reverse()</code> 처리해 주었다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">prefixArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+    <span class="k">var</span> <span class="nv">characterArray</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span><span class="nv">$0</span><span class="p">}</span>
+    
+    <span class="n">characterArray</span><span class="p">[</span><span class="n">s</span><span class="o">...</span><span class="n">e</span><span class="p">]</span><span class="o">.</span><span class="nf">reverse</span><span class="p">()</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+현재 <code class="language-plaintext highlighter-rouge">characterArray</code> 는 <code class="language-plaintext highlighter-rouge">character</code> 타입이라 이를 <code class="language-plaintext highlighter-rouge">string</code> 타입으로 바꿔주었다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">characterArray</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span><span class="nv">$0</span><span class="p">}</span>
+
+<span class="n">characterArray</span><span class="p">[</span><span class="n">s</span><span class="o">...</span><span class="n">e</span><span class="p">]</span><span class="o">.</span><span class="nf">reverse</span><span class="p">()</span>
+
+<span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">characterArray</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">s</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">e</span><span class="p">:</span><span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+     
+    <span class="k">var</span> <span class="nv">characterArray</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span><span class="nv">$0</span><span class="p">}</span>
+    
+    <span class="n">characterArray</span><span class="p">[</span><span class="n">s</span><span class="o">...</span><span class="n">e</span><span class="p">]</span><span class="o">.</span><span class="nf">reverse</span><span class="p">()</span>
+    
+    <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">characterArray</span><span class="p">)</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181905">해당문제 풀러가보기</a></p>

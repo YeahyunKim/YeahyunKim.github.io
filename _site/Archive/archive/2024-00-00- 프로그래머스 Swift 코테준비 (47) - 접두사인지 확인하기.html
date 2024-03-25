@@ -1,0 +1,200 @@
+<h2 id="01-문제--문자열의-앞의-n글자">01 문제 : 문자열의 앞의 n글자</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>어떤 문자열에 대해서 접두사는 특정 인덱스까지의 문자열을 의미합니다. 예를 들어, “banana”의 모든 접두사는 “b”, “ba”, “ban”, “bana”, “banan”, “banana”입니다. <br />
+문자열 <code class="language-plaintext highlighter-rouge">my_string</code>과 <code class="language-plaintext highlighter-rouge">is_prefix</code>가 주어질 때, <code class="language-plaintext highlighter-rouge">is_prefix</code>가 <code class="language-plaintext highlighter-rouge">my_string</code>의 접두사라면 1을, 아니면 0을 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 100
+• 1 ≤ <code class="language-plaintext highlighter-rouge">is_prefix</code>의 길이 ≤ 100
+• <code class="language-plaintext highlighter-rouge">my_string</code>과 <code class="language-plaintext highlighter-rouge">is_prefix</code>는 영소문자로만 이루어져 있습니다.</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>is_prefix</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“banana”</td>
+      <td>“ban”</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>“banana”</td>
+      <td>“nan”</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>“banana”</td>
+      <td>“abcd”</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>“banana”</td>
+      <td>“bananan”</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번에서 <code class="language-plaintext highlighter-rouge">is_prefix</code>가 <code class="language-plaintext highlighter-rouge">my_string</code>의 접두사이기 때문에 1을 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 2번에서 <code class="language-plaintext highlighter-rouge">is_prefix</code>가 <code class="language-plaintext highlighter-rouge">my_string</code>의 접두사가 아니기 때문에 0을 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-3">입출력 예 #3</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 3번에서 <code class="language-plaintext highlighter-rouge">is_prefix</code>가 <code class="language-plaintext highlighter-rouge">my_string</code>의 접두사가 아니기 때문에 0을 return 합니다.</p>
+</blockquote>
+
+<h6 id="입출력-예-4">입출력 예 #4</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 4번에서 <code class="language-plaintext highlighter-rouge">is_prefix</code>가 <code class="language-plaintext highlighter-rouge">my_string</code>의 접두사가 아니기 때문에 0을 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">is_prefix</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--prefix-contains-활용하기">solution 1 : prefix, contains 활용하기</h4>
+
+<p>먼저 <code class="language-plaintext highlighter-rouge">"banana"</code> 의 모든 접두사를 저장할 변수를 선언해 준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">prefixArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이후 문자열의 개수 만큼 반복문을 돌리기 위해 <code class="language-plaintext highlighter-rouge">my_string</code>에 <code class="language-plaintext highlighter-rouge">indices.map</code> 을 사용했다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">prefixArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+  
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+모든 <code class="language-plaintext highlighter-rouge">"banana"</code> 의 접두사들을 <code class="language-plaintext highlighter-rouge">prefixArray</code>에 append 처리해준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">prefixArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+	<span class="n">prefixArray</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="nf">prefix</span><span class="p">(</span><span class="nv">$0</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)))</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+마지막으로 <code class="language-plaintext highlighter-rouge">prefixArray</code>가 <code class="language-plaintext highlighter-rouge">is_prefix</code> 를 포함하고 있는지 유무에 따라 1 과 0을 return 해준다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="k">var</span> <span class="nv">prefixArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+<span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span><span class="p">{</span>
+	<span class="n">prefixArray</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="nf">prefix</span><span class="p">(</span><span class="nv">$0</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)))</span>
+<span class="p">}</span>
+
+<span class="k">return</span> <span class="n">prefixArray</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="n">is_prefix</span><span class="p">)</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">is_prefix</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">prefixArray</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span><span class="p">]()</span>
+
+    <span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="n">indices</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span>
+
+        <span class="n">prefixArray</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="kt">String</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}</span><span class="o">.</span><span class="nf">prefix</span><span class="p">(</span><span class="nv">$0</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)))</span>
+
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">prefixArray</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="n">is_prefix</span><span class="p">)</span> <span class="p">?</span> <span class="mi">1</span> <span class="p">:</span> <span class="mi">0</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181906">해당문제 풀러가보기</a></p>

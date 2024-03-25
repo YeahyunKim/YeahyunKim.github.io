@@ -1,0 +1,208 @@
+<h2 id="01-문제--수-조작하기-1">01 문제 : 수 조작하기 1</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수 <code class="language-plaintext highlighter-rouge">n</code>과 문자열 <code class="language-plaintext highlighter-rouge">control</code>이 주어집니다. <code class="language-plaintext highlighter-rouge">control</code>은 “w”, “a”, “s”, “d”의 4개의 문자로 이루어져 있으며, <code class="language-plaintext highlighter-rouge">control</code>의 앞에서부터 순서대로 문자에 따라 <code class="language-plaintext highlighter-rouge">n</code>의 값을 바꿉니다. <br />
+	• “w” : <code class="language-plaintext highlighter-rouge">n</code>이 1 커집니다.
+	• “s” : <code class="language-plaintext highlighter-rouge">n</code>이 1 작아집니다.
+	• “d” : <code class="language-plaintext highlighter-rouge">n</code>이 10 커집니다.
+	• “a” : <code class="language-plaintext highlighter-rouge">n</code>이 10 작아집니다.  <br />
+위 규칙에 따라 <code class="language-plaintext highlighter-rouge">n</code>을 바꿨을 때 가장 마지막에 나오는 <code class="language-plaintext highlighter-rouge">n</code>의 값을 return 하는 solution 함수를 완성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 100,000 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 100,000
+• 1 ≤ <code class="language-plaintext highlighter-rouge">control</code>의 길이 ≤ 100,000
+	• <code class="language-plaintext highlighter-rouge">control</code>은 알파벳 소문자 “w”, “a”, “s”, “d”로 이루어진 문자열입니다.</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>n</th>
+      <th>control</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>“wsdawsdassw”</td>
+      <td>-1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 수 <code class="language-plaintext highlighter-rouge">n</code>은 <code class="language-plaintext highlighter-rouge">control</code>에 따라 다음과 같은 순서로 변하게 됩니다.
+• 0 → 1 → 0 → 10 → 0 → 1 → 0 → 10 → 0 → -1 → -2 → -1
+• 따라서 -1을 return 합니다.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">control</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--딕셔너리-dictionary-활용하기">solution 1 : 딕셔너리 (Dictionary) 활용하기</h4>
+
+<p>변수 <code class="language-plaintext highlighter-rouge">control</code>의 앞에서부터 순서대로 w, s, d, a 를 만났을때, 각각 1, -1, 10, -10 의 값을 n 에 추가해주어야 한다. 이럴때는 key(w, s, d, a), value(1, -1, 10, -10)를 활용해보자.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>	<span class="k">var</span> <span class="nv">value</span> <span class="p">:</span> <span class="p">[</span><span class="kt">Character</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"w"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"s"</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">"d"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">"a"</span><span class="p">:</span> <span class="o">-</span><span class="mi">10</span><span class="p">]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이어서, <code class="language-plaintext highlighter-rouge">reduce()</code> 를 활용하여, 생성한 변수 <code class="language-plaintext highlighter-rouge">value</code>의 key 값에 따른 모든 값을 더해주면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>    <span class="k">var</span> <span class="nv">value</span> <span class="p">:</span> <span class="p">[</span><span class="kt">Character</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"w"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"s"</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">"d"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">"a"</span><span class="p">:</span> <span class="o">-</span><span class="mi">10</span><span class="p">]</span>
+	<span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="n">control</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">0</span><span class="p">){</span> <span class="nv">$0</span> <span class="o">+</span> <span class="n">value</span><span class="p">[</span><span class="nv">$1</span><span class="p">]}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h4 id="solution-2--반복문과-조건문-활용하기">solution 2 : 반복문과 조건문 활용하기</h4>
+
+<p>반복문 (for문)을 통해, 변수 <code class="language-plaintext highlighter-rouge">control</code>의 문자열 낱개별로 나누어주고, 조건문을 통하여 각 문자에 맞는 값을 더해준다.</p>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="n">control</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s">"w"</span> <span class="p">{</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s">"s"</span> <span class="p">{</span>
+        <span class="n">result</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s">"d"</span> <span class="p">{</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="mi">10</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s">"a"</span> <span class="p">{</span>
+        <span class="n">result</span> <span class="o">-=</span> <span class="mi">10</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+	<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">control</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+	    <span class="k">var</span> <span class="nv">value</span> <span class="p">:</span> <span class="p">[</span><span class="kt">Character</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"w"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">"s"</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s">"d"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">"a"</span><span class="p">:</span> <span class="o">-</span><span class="mi">10</span><span class="p">]</span>
+		<span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="n">control</span><span class="o">.</span><span class="nf">reduce</span><span class="p">(</span><span class="mi">0</span><span class="p">){</span> <span class="nv">$0</span> <span class="o">+</span> <span class="n">value</span><span class="p">[</span><span class="nv">$1</span><span class="p">]}</span>
+<span class="p">}</span>
+<span class="c1">// -1</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<h2 id="answer-02">💡Answer 02</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">control</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+	<span class="k">var</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">n</span>
+	
+	<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="n">control</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s">"w"</span> <span class="p">{</span>
+			<span class="n">result</span> <span class="o">+=</span> <span class="mi">1</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s">"s"</span> <span class="p">{</span>
+			<span class="n">result</span> <span class="o">-=</span> <span class="mi">1</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s">"d"</span> <span class="p">{</span>
+			<span class="n">result</span> <span class="o">+=</span> <span class="mi">10</span>
+		<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s">"a"</span> <span class="p">{</span>
+			<span class="n">result</span> <span class="o">-=</span> <span class="mi">10</span>
+	    <span class="p">}</span>
+    <span class="p">}</span>
+
+	<span class="k">return</span> <span class="n">result</span>
+<span class="p">}</span>
+
+<span class="c1">// -1</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181926">해당문제 풀러가보기</a></p>

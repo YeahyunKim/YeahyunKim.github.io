@@ -1,0 +1,130 @@
+<h2 id="01-문제---글자-이어-붙여-문자열-만들기">01 문제 :  글자 이어 붙여 문자열 만들기</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>문자열 <code class="language-plaintext highlighter-rouge">my_string</code>과 정수 배열 <code class="language-plaintext highlighter-rouge">index_list</code>가 매개변수로 주어집니다. <br />
+<code class="language-plaintext highlighter-rouge">my_string</code>의 <code class="language-plaintext highlighter-rouge">index_list</code>의 원소들에 해당하는 인덱스의 글자들을 순서대로 이어 붙인 문자열을 return 하는 solution 함수를 작성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">my_string</code>의 길이 ≤ 1,000
+• <code class="language-plaintext highlighter-rouge">my_string</code>의 원소는 영소문자로 이루어져 있습니다.
+• 1 ≤ <code class="language-plaintext highlighter-rouge">index_list</code>의 길이 ≤ 1,000
+• 0 ≤ <code class="language-plaintext highlighter-rouge">index_list</code>의 원소 &lt; <code class="language-plaintext highlighter-rouge">my_string</code>의 길이</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>my_string</th>
+      <th>index_list</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>“cvsgiorszzzmrpaqpe”</td>
+      <td>[16, 6, 5, 3, 12, 14, 11, 11, 17, 12, 7]</td>
+      <td>“programmers”</td>
+    </tr>
+    <tr>
+      <td>“zpiaz”</td>
+      <td>[1, 2, 0, 0, 3]</td>
+      <td>“pizza”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 1번의 <code class="language-plaintext highlighter-rouge">my_string</code>에서 인덱스 3, 5, 6, 11, 12, 14, 16, 17에 해당하는 글자는 각각 g, o, r, m, r, a, p, e이므로 <code class="language-plaintext highlighter-rouge">my_string</code>에서 <code class="language-plaintext highlighter-rouge">index_list</code>에 들어있는 원소에 해당하는 인덱스의 글자들은 각각 순서대로 p, r, o, g, r, a, m, m, e, r, s입니다. 따라서 “programmers”를 return 합니다.</p>
+</blockquote>
+
+<p><br /></p>
+<h6 id="입출력-예-2">입출력 예 #2</h6>
+
+<blockquote class="command-text">
+  <p>• 예제 2번의 <code class="language-plaintext highlighter-rouge">my_string</code>에서 인덱스 0, 1, 2, 3에 해당하는 글자는 각각 z, p, i, a이므로 <code class="language-plaintext highlighter-rouge">my_string</code>에서 <code class="language-plaintext highlighter-rouge">index_list</code>에 들어있는 원소에 해당하는 인덱스의 글자들은 각각 순서대로 p, i, z, z, a입니다. 따라서 “pizza”를 return 합니다.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+
+<p><br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">index_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="s">""</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--map-활용하기">solution 1 : map 활용하기</h4>
+
+<p><code class="language-plaintext highlighter-rouge">index_list</code> 안에 있는 숫자를 순서대로 가져오기 위해서 map을 활용한다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">index_list</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이후, <code class="language-plaintext highlighter-rouge">my_string</code> 을 Character 형식으로 바꾼 후, 위에서 만들어놓은 <code class="language-plaintext highlighter-rouge">index_list</code> 의 숫자 값들을 Character로 바꾼 <code class="language-plaintext highlighter-rouge">my_string</code>에 조합하여 결과 값을 가져온다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">index_list</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}[</span><span class="nv">$0</span><span class="p">]</span> <span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">my_string</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">index_list</span><span class="p">:[</span><span class="kt">Int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+
+    <span class="k">return</span> <span class="kt">String</span><span class="p">(</span><span class="n">index_list</span><span class="o">.</span><span class="n">map</span><span class="p">{</span> <span class="n">my_string</span><span class="o">.</span><span class="n">map</span><span class="p">{</span><span class="nv">$0</span><span class="p">}[</span><span class="nv">$0</span><span class="p">]</span> <span class="p">})</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181915">해당문제 풀러가보기</a></p>

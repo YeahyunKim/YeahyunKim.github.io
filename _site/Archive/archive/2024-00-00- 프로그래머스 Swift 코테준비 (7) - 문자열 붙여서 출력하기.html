@@ -1,0 +1,102 @@
+<h2 id="01-문제---문자열-붙여서-출력하기">01 문제 :  문자열 붙여서 출력하기</h2>
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>두 개의 문자열 <code class="language-plaintext highlighter-rouge">str1</code>, <code class="language-plaintext highlighter-rouge">str2</code>가 공백으로 구분되어 입력으로 주어집니다.<br />
+입출력 예와 같이 <code class="language-plaintext highlighter-rouge">str1</code>과 <code class="language-plaintext highlighter-rouge">str2</code>을 이어서 출력하는 코드를 작성해 보세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+<blockquote class="command-text">
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str1</code>, <code class="language-plaintext highlighter-rouge">str2</code>의 길이 ≤ 10</p>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<p>입력 #1</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>apple pen
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>출력 #1</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>applepen
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>입력 #2</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>hello World!
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>출력 #2</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>HelloWorld!
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">inp</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
+<span class="k">let</span> <span class="p">(</span><span class="nv">s1</span><span class="p">,</span> <span class="nv">s2</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inp</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+<h4 id="두개의-문자열-더해서-붙이기">두개의 문자열 더해서 붙이기</h4>
+<blockquote class="prompt-tip">
+  <p>문자열 + 문자열은 두개의 문자열을 붙여서 출력할 수 있다.
+<code class="language-plaintext highlighter-rouge">"안녕"</code> + <code class="language-plaintext highlighter-rouge">"하세요"</code> = <code class="language-plaintext highlighter-rouge">"안녕하세요"</code></p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="하나의-배열에-넣고-붙이기">하나의 배열에 넣고 붙이기</h4>
+<blockquote class="prompt-tip">
+  <p>[“안녕”, “하세요”]</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer">💡Answer</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">inp</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
+<span class="k">let</span> <span class="p">(</span><span class="nv">s1</span><span class="p">,</span> <span class="nv">s2</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inp</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">s1</span> <span class="o">+</span> <span class="n">s2</span><span class="p">)</span>
+
+<span class="nf">print</span><span class="p">([</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">]</span><span class="o">.</span><span class="nf">joined</span><span class="p">())</span>
+
+<span class="c1">// HelloWorld!</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181946">해당문제 풀러가보기</a></p>
+

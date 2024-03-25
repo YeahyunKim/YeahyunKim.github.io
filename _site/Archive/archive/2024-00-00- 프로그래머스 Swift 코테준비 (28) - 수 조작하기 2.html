@@ -1,0 +1,122 @@
+<h2 id="01-문제--수-조작하기-2">01 문제 : 수 조작하기 2</h2>
+
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>정수 배열 <code class="language-plaintext highlighter-rouge">numLog</code>가 주어집니다. 처음에 <code class="language-plaintext highlighter-rouge">numLog[0]</code>에서 부터 시작해 “w”, “a”, “s”, “d”로 이루어진 문자열을 입력으로 받아 순서대로 다음과 같은 조작을 했다고 합시다. <br />
+	• “w” : 수에 1을 더한다.
+	• “s” : 수에 1을 뺀다.
+	• “d” : 수에 10을 더한다.
+	• “a” : 수에 10을 뺀다. <br />
+그리고 매번 조작을 할 때마다 결괏값을 기록한 정수 배열이 <code class="language-plaintext highlighter-rouge">numLog</code>입니다. 즉, <code class="language-plaintext highlighter-rouge">numLog[i]</code>는 <code class="language-plaintext highlighter-rouge">numLog[0]</code>로부터 총 <code class="language-plaintext highlighter-rouge">i</code>번의 조작을 가한 결과가 저장되어 있습니다. <br />
+주어진 정수 배열 <code class="language-plaintext highlighter-rouge">numLog</code>에 대해 조작을 위해 입력받은 문자열을 return 하는 solution 함수를 완성해 주세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+
+<blockquote class="command-text">
+  <p>•. 2 ≤ <code class="language-plaintext highlighter-rouge">numLog</code>의 길이 ≤ 100,000
+	• -100,000 ≤ <code class="language-plaintext highlighter-rouge">numLog[0]</code> ≤ 100,000
+	• 1 ≤ <code class="language-plaintext highlighter-rouge">i</code> ≤ <code class="language-plaintext highlighter-rouge">numLog</code>의 길이인 모든 <code class="language-plaintext highlighter-rouge">i</code>에 대해 <code class="language-plaintext highlighter-rouge">|numLog[i] - numLog[i - 1]|</code>의 값은 1 또는 10입니다.</p>
+</blockquote>
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>numLog</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[0, 1, 0, 10, 0, 1, 0, 10, 0, -1, -2, -1]</td>
+      <td>“wsdawsdassw”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<h6 id="입출력-예-1">입출력 예 #1</h6>
+
+<blockquote class="command-text">
+  <p>• result인 “wsdawsdassw”를 따라 <code class="language-plaintext highlighter-rouge">numLog[0]</code>에서부터 시작해 조작을 하면 <code class="language-plaintext highlighter-rouge">numLog</code>의 값과 순서대로 일치합니다. 따라서 “wsdawsdassw”를 return 합니다.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">solution</span><span class="p">(</span><span class="n">_</span> <span class="nv">n</span><span class="p">:</span><span class="kt">Int</span><span class="p">,</span> <span class="n">_</span> <span class="nv">control</span><span class="p">:</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    
+    <span class="k">return</span> <span class="mi">0</span>
+    
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<h4 id="solution-1--딕셔너리-dictionary-활용하기">solution 1 : 딕셔너리 (Dictionary) 활용하기</h4>
+
+<p>변수 <code class="language-plaintext highlighter-rouge">control</code>의 앞에서부터 순서대로 w, s, d, a 를 만났을때, 각각 1, -1, 10, -10 의 값을 n 에 추가해주어야 한다. 이럴때는 key(1, -1, 10, -10),  value(w, s, d, a)를 활용해보자.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>	<span class="k">var</span> <span class="nv">log</span> <span class="p">:</span> <span class="p">[</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="p">:</span> <span class="s">"w"</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="s">"s"</span><span class="p">,</span> <span class="mi">10</span> <span class="p">:</span> <span class="s">"d"</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span> <span class="p">:</span> <span class="s">"a"</span><span class="p">]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+이어서, <code class="language-plaintext highlighter-rouge">map</code> 를 활용하여, 생성한 변수 <code class="language-plaintext highlighter-rouge">log</code>의 key 값에 따른 모든 값을 더해주면 된다.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>    <span class="k">var</span> <span class="nv">log</span> <span class="p">:</span> <span class="p">[</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="p">:</span> <span class="s">"w"</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="s">"s"</span><span class="p">,</span> <span class="mi">10</span> <span class="p">:</span> <span class="s">"d"</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span> <span class="p">:</span> <span class="s">"a"</span><span class="p">]</span>
+    
+	<span class="nf">return</span> <span class="p">(</span><span class="mi">1</span><span class="o">..&lt;</span><span class="n">numLog</span><span class="o">.</span><span class="n">count</span><span class="p">)</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">log</span><span class="p">[</span><span class="n">numLog</span><span class="p">[</span><span class="nv">$0</span><span class="p">]</span> <span class="o">-</span> <span class="n">numLog</span><span class="p">[</span><span class="nv">$0</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]]</span><span class="o">!</span><span class="p">}</span><span class="o">.</span><span class="nf">joined</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+<h2 id="answer-01">💡Answer 01</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+	<span class="k">var</span> <span class="nv">log</span> <span class="p">:</span> <span class="p">[</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="p">:</span> <span class="s">"w"</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="p">:</span> <span class="s">"s"</span><span class="p">,</span> <span class="mi">10</span> <span class="p">:</span> <span class="s">"d"</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span> <span class="p">:</span> <span class="s">"a"</span><span class="p">]</span>
+    <span class="nf">return</span> <span class="p">(</span><span class="mi">1</span><span class="o">..&lt;</span><span class="n">numLog</span><span class="o">.</span><span class="n">count</span><span class="p">)</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="n">log</span><span class="p">[</span><span class="n">numLog</span><span class="p">[</span><span class="nv">$0</span><span class="p">]</span> <span class="o">-</span> <span class="n">numLog</span><span class="p">[</span><span class="nv">$0</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]]</span><span class="o">!</span><span class="p">}</span><span class="o">.</span><span class="nf">joined</span><span class="p">()</span>
+<span class="p">}</span>
+<span class="c1">// -1</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181925">해당문제 풀러가보기</a></p>

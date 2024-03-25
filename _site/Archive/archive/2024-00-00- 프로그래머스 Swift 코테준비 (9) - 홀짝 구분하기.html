@@ -1,0 +1,106 @@
+<h2 id="01-문제--홀짝-구분하기">01 문제 : 홀짝 구분하기</h2>
+<hr />
+<h4 id="문제-설명">문제 설명</h4>
+
+<blockquote class="command-text">
+  <p>자연수 <code class="language-plaintext highlighter-rouge">n</code>이 입력으로 주어졌을 때 만약 <code class="language-plaintext highlighter-rouge">n</code>이 짝수이면 “<code class="language-plaintext highlighter-rouge">n</code> is even”을, 홀수이면 “<code class="language-plaintext highlighter-rouge">n</code> is odd”를 출력하는 코드를 작성해 보세요.</p>
+</blockquote>
+
+<p><br /></p>
+<h4 id="제한사항">제한사항</h4>
+<blockquote class="command-text">
+  <ul>
+    <li>1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 1,000</li>
+  </ul>
+</blockquote>
+
+<p><br /></p>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<p>입력 #1</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>100
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>출력 #1</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>100 is even
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>입력 #2</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>1
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>출력 #2</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>1 is odd
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br /></p>
+
+<h4 id="제시-코드">제시 코드</h4>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="k">let</span> <span class="nv">inp</span> <span class="o">=</span> <span class="nf">readLine</span><span class="p">()</span><span class="o">!.</span><span class="nf">components</span><span class="p">(</span><span class="nv">separatedBy</span><span class="p">:</span> <span class="p">[</span><span class="s">" "</span><span class="p">])</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span>
+<span class="k">let</span> <span class="p">(</span><span class="nv">s1</span><span class="p">,</span> <span class="nv">s2</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inp</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h2 id="02-풀이">02 풀이</h2>
+<hr />
+
+<blockquote class="prompt-tip">
+  <p>함수와 나머지를 통해서 풀 수 있다.
+홀수인지 짝수인지를 판단해주는 함수를 하나 작성하고,
+이 함수를 <code class="language-plaintext highlighter-rouge">print(함수)</code> 로 출력할 수 있다.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+
+<h2 id="answer">💡Answer</h2>
+<hr />
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">func</span> <span class="nf">isOddEven</span><span class="p">(</span><span class="n">_</span> <span class="nv">number</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">"even"</span>   
+    <span class="p">}</span>
+    <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">"odd"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\(</span><span class="n">a</span><span class="se">)</span><span class="s"> is </span><span class="se">\(</span><span class="nf">isOddEven</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1">// 1 is odd</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181944">해당문제 풀러가보기</a></p>
+
