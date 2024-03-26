@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (15) - 두 수의 연산값 비교하기.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (16) -  n의 배수.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (15) - 두 수의 연산값 비교하기.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (16) -  n의 배수.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (15) - 두 수의 연산값 비교하기.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (16) -  n의 배수.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (15) - 두 수의 연산값 비교하기.md"
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (16) -  n의 배수.md"
               }
             }
           }
@@ -197,11 +197,14 @@
   },
   "active": "40e24eb77fb888cf",
   "lastOpenFiles": [
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (15) - 두 수의 연산값 비교하기.md",
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (16) -  n의 배수.md",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(16)-n의-배수/index.html",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(16)-n의-배수",
     "_site/posts/프로그래머스-Python-코테준비-기초-(15)-두-수의-연산값-비교하기/index.html",
     "_site/posts/프로그래머스-Python-코테준비-기초-(15)-두-수의-연산값-비교하기",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (14) - 더 크게 합치기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (13) - 문자열 곱하기.md",
-    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (15) - 두 수의 연산값 비교하기.md",
     "_site/posts/프로그래머스-Python-코테준비-기초-(14)-더-크게-합치기/index.html",
     "_site/posts/프로그래머스-Python-코테준비-기초-(14)-더-크게-합치기",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (12) - 문자 리스트를 문자열로 변환하기.md",
@@ -215,9 +218,6 @@
     "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (6) - 덧셈식 출력하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기.md",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(13)-문자열-돌리기/index.html",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(13)-문자열-돌리기",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(12)-문자-리스트를-문자열로-변환하기/index.html",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (1) - 문자열 출력하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기.md",
@@ -232,7 +232,6 @@
     "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (2) - Spring Boot Devtools.md",
     "_posts/Java/2024-00-00- JAVA Install (1) - MacOS 에 JAVA 17설치하기.md",
     "_posts/Java/2024-00-00- JAVA study (8) - Array 배열을 print 했을때 메모리 주소가 나오는 이유.md",
-    "_posts/Java/2024-00-00- JAVA study (7) - String 리터럴, String 객체의 차이.md",
     "_site/무제 파일.canvas",
     "무제 파일.canvas",
     "Pasted image 20240227124417.png",

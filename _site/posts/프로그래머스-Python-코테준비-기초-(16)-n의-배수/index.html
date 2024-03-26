@@ -31,35 +31,29 @@
   
 
   
-    
-
-    
-  
 
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="replacingOccurrences (1) - 문자열 치환" />
+<meta property="og:title" content="프로그래머스 Python 코테준비 기초 (16) - n의 배수" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="[“파라미터를 통해 받은 문자열을 다른 문자열로 대체하고 새 문자열을 반환한다.”]" />
-<meta property="og:description" content="[“파라미터를 통해 받은 문자열을 다른 문자열로 대체하고 새 문자열을 반환한다.”]" />
-<link rel="canonical" href="http://localhost:4000/posts/swift-%EB%A9%94%EC%84%9C%EB%93%9C-replacingOccurances()-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B9%98%ED%99%98/" />
-<meta property="og:url" content="http://localhost:4000/posts/swift-%EB%A9%94%EC%84%9C%EB%93%9C-replacingOccurances()-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B9%98%ED%99%98/" />
+<meta name="description" content="[“max() 와 f-string 활용하기”]" />
+<meta property="og:description" content="[“max() 와 f-string 활용하기”]" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(16)-n%EC%9D%98-%EB%B0%B0%EC%88%98/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(16)-n%EC%9D%98-%EB%B0%B0%EC%88%98/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
-<meta property="og:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-02-14T00:00:00+09:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
-<meta property="twitter:title" content="replacingOccurrences (1) - 문자열 치환" />
+<meta property="article:published_time" content="2024-03-26T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="프로그래머스 Python 코테준비 기초 (16) - n의 배수" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-19T17:09:23+09:00","datePublished":"2024-02-14T00:00:00+09:00","description":"[“파라미터를 통해 받은 문자열을 다른 문자열로 대체하고 새 문자열을 반환한다.”]","headline":"replacingOccurrences (1) - 문자열 치환","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/swift-%EB%A9%94%EC%84%9C%EB%93%9C-replacingOccurances()-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B9%98%ED%99%98/"},"url":"http://localhost:4000/posts/swift-%EB%A9%94%EC%84%9C%EB%93%9C-replacingOccurances()-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B9%98%ED%99%98/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-26T00:00:00+09:00","datePublished":"2024-03-26T00:00:00+09:00","description":"[“max() 와 f-string 활용하기”]","headline":"프로그래머스 Python 코테준비 기초 (16) - n의 배수","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(16)-n%EC%9D%98-%EB%B0%B0%EC%88%98/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(16)-n%EC%9D%98-%EB%B0%B0%EC%88%98/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>replacingOccurrences (1) - 문자열 치환 | Yeahyun Kim
+  <title>프로그래머스 Python 코테준비 기초 (16) - n의 배수 | Yeahyun Kim
   </title>
 
   <!--
@@ -436,7 +430,7 @@
         
           
             
-              <span>replacingOccurrences (1) - 문자열 치환</span>
+              <span>프로그래머스 Python 코테준비 기초 (16) - n의 배수</span>
             
 
           
@@ -504,109 +498,6 @@
 
 
 
-  
-  
-
-  <!-- CDN URL -->
-  
-
-  <!-- Add image path -->
-  
-
-  
-    
-      
-      
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-
-  
-
 
 <!-- Add header for code snippets -->
 
@@ -640,6 +531,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -693,6 +606,72 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -700,6 +679,38 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
 
@@ -712,7 +723,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>replacingOccurrences (1) - 문자열 치환</h1>
+    <h1 data-toc-skip>프로그래머스 Python 코테준비 기초 (16) - n의 배수</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -728,52 +739,20 @@
 
 <time
   
-  data-ts="1707836400"
+  data-ts="1711378800"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Feb 14, 2024
+  Mar 26, 2024
 </time>
 
       </span>
 
       <!-- lastmod date -->
       
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
 
-
-
-
-<time
-  
-  data-ts="1710835763"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Mar 19, 2024
-</time>
-
-        </span>
-      
-
-      
-        
-        
-        
-
-        
-
-        <div class="mt-3 mb-3">
-          <a href="https://ifh.cc/g/wvbwro.png" class="popup img-link preview-img shimmer"><img src="https://ifh.cc/g/wvbwro.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -814,9 +793,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="273 words"
+  title="437 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -825,101 +804,185 @@
   </header>
 
   <div class="content">
-    <h2 id="replacingoccurrencesofwith"><span class="me-2">replacingOccurrences(of:with:)</span><a href="#replacingoccurrencesofwith" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제-n의-배수"><span class="me-2">01 문제 :n의 배수</span><a href="#01-문제-n의-배수" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <hr />
-<h4 id="메소드-설명"><span class="me-2">메소드 설명</span><a href="#메소드-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <blockquote class="command-text">
-  <p>Returns a new string in which all occurrences of a target. string in the receiver are replaced by another given string.
-<strong>파라미터를 통해 받은 문자열을 다른 문자열로 대체하고 새 문자열을 반환한다.</strong>
-<a href="https://developer.apple.com/documentation/foundation/nsstring/1412937-replacingoccurrences">애플 공식 문서</a></p>
+  <p>정수 <code class="language-plaintext highlighter-rouge">num</code>과 <code class="language-plaintext highlighter-rouge">n</code>이 매개 변수로 주어질 때, <code class="language-plaintext highlighter-rouge">num</code>이 <code class="language-plaintext highlighter-rouge">n</code>의 배수이면 1을 return <code class="language-plaintext highlighter-rouge">n</code>의 배수가 아니라면 0을 return하도록 solution 함수를 완성해주세요.</p>
 </blockquote>
 
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+<p><br />
+<br /></p>
+<blockquote>
+  <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<blockquote class="command-text">
+  <p>• 2 ≤ <code class="language-plaintext highlighter-rouge">num</code> ≤ 100
+• 2 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 9</p>
+</blockquote>
+<p><br />
+<br /></p>
+
+<blockquote>
+  <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>num</th>
+      <th>n</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>98</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><br />
+<br /></p>
+
+<blockquote>
+  <h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<h5 id="입출력-예-1"><span class="me-2">입출력 예 #1</span><a href="#입출력-예-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<blockquote class="command-text">
+  <p>98은 2의 배수이므로 1을 return합니다.</p>
+</blockquote>
+
+<h5 id="입출력-예-2"><span class="me-2">입출력 예 #2</span><a href="#입출력-예-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<blockquote class="command-text">
+  <p>32는 3의 배수가 아니므로 0을 return합니다.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><br /></p>
+<blockquote>
+  <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-4
-</pre></td><td class="rouge-code"><pre><span class="kd">func</span> <span class="nf">replacingOccurrences</span><span class="p">(</span>
-    <span class="n">of</span> <span class="nv">target</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-    <span class="n">with</span> <span class="nv">replacement</span><span class="p">:</span> <span class="kt">String</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span>
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+	<span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
+	<span class="k">return</span> <span class="n">anwer</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<p><br /></p>
-<h4 id="사용-예시"><span class="me-2">사용 예시</span><a href="#사용-예시" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<h6 id="예시-1--string-을-바꿀때">예시 1 : <code class="language-plaintext highlighter-rouge">String 을 바꿀때</code></h6>
+<p><br />
+<br />
+<br /></p>
+<h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
 
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+<blockquote>
+  <h4 id="1-내가-푼-방법--삼항연산자와-나머지-연산자"><span class="me-2">1) 내가 푼 방법 -삼항연산자와 나머지 연산자</span><a href="#1-내가-푼-방법--삼항연산자와-나머지-연산자" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<blockquote class="command-text">
+  <p>삼항 연산자를 통해 한줄로 문제를 해결할 수 있었다.<br />
+<code class="language-plaintext highlighter-rouge">n</code>의 배수이기 위해서는 <code class="language-plaintext highlighter-rouge">num</code> 을 <code class="language-plaintext highlighter-rouge">n</code>으로 나누었을때 나머지가 <code class="language-plaintext highlighter-rouge">0</code> 이면 된다.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="mi">1</span> <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">0</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+
+<span class="c1"># 1
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+<blockquote>
+  <h4 id="2-내가-푼-방법--bool---int로-형변환하기"><span class="me-2">2) 내가 푼 방법 -bool -&gt; int로 형변환하기</span><a href="#2-내가-푼-방법--bool---int로-형변환하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<blockquote>
+  <p>이 방법은 내가 심심해서 정답을 활용해 보았다.<br />
+현업에서는 좋은 방법이 아닐 것 같다. <strong>그 이유는 형변환은 데이터의 타입을 변경시키는데 목적이 있지, 형변환을 통한 정답을 도출하는데 있지 않기 때문이다.</strong></p>
+</blockquote>
+
+<blockquote class="command-text">
+  <p>true : 1<br />
+false : 0</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nf">int</span><span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># bool 타입을 int 타입으로 전환
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+
+<p><br />
+<br /></p>
+<h2 id="03-answer"><span class="me-2">03 Answer</span><a href="#03-answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+<blockquote>
+  <h4 id="1-내가-푼-방법--삼항연산자"><span class="me-2">1) 내가 푼 방법 -삼항연산자</span><a href="#1-내가-푼-방법--삼항연산자" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span> 
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    
+    <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">0</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+    
+<span class="c1"># 991
+</span></pre></td></tr></tbody></table></code></div></div>
 
-<span class="k">var</span> <span class="nv">text</span> <span class="o">=</span> <span class="s">"helloMath"</span>
-
-<span class="c1">// hello 가 happy로 바뀜</span>
-<span class="k">var</span> <span class="nv">newText</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="nf">replacingOccurrences</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="s">"hello"</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="s">"happy"</span><span class="p">)</span>
-
-<span class="c1">// bye 가 존재하지 않음으로 기존 text 값을 반환함</span>
-<span class="k">var</span> <span class="nv">newText2</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="nf">replacingOccurrences</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="s">"bye"</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="s">"happy"</span><span class="p">)</span>
-
-<span class="nf">print</span><span class="p">(</span><span class="n">newText</span><span class="p">)</span> <span class="c1">// "happyMath"</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">newText2</span><span class="p">)</span> <span class="c1">// "helloMath"</span>
-</pre></td></tr></tbody></table></code></div></div>
 <p><br /></p>
-<h6 id="예시-2--character를-바꿀때">예시 2 : <code class="language-plaintext highlighter-rouge">Character를 바꿀때</code></h6>
+<blockquote>
+  <h4 id="2-내가-푼-방법---bool-int-형변환"><span class="me-2">2) 내가 푼 방법 - bool-&gt;int 형변환</span><a href="#2-내가-푼-방법---bool-int-형변환" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
-<div class="language-swift highlighter-rouge"><div class="code-header">
-        <span data-label-text="Swift"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
-6
-7
-8
-9
-10
-11
-12
-</pre></td><td class="rouge-code"><pre><span class="kd">import</span> <span class="kt">Foundation</span> 
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    
+    <span class="k">return</span> <span class="nf">int</span><span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+    
+<span class="c1"># 991
+</span></pre></td></tr></tbody></table></code></div></div>
 
-<span class="k">var</span> <span class="nv">text</span> <span class="o">=</span> <span class="s">"helloSwift-"</span>
-
-<span class="c1">//기존 변수 값을 변환</span>
-<span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="nf">replacingOccurrences</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="s">"-"</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="s">"!"</span><span class="p">)</span>
-
-<span class="c1">//새로운 변수에 값을 할당</span>
-<span class="k">var</span> <span class="nv">newText</span> <span class="o">=</span> <span class="n">string</span><span class="o">.</span><span class="nf">replacingOccurrences</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="s">"-"</span><span class="p">,</span> <span class="nv">with</span><span class="p">:</span> <span class="s">"!"</span><span class="p">)</span>
-
-<span class="nf">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="c1">// "helloSwift!"</span>
-<span class="nf">print</span><span class="p">(</span><span class="n">newText</span><span class="p">)</span> <span class="c1">// "helloSwift!"</span>
-</pre></td></tr></tbody></table></code></div></div>
-<p><br /></p>
-
-<h4 id="주의사항"><span class="me-2">주의사항</span><a href="#주의사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<blockquote class="prompt-tip">
-  <p>새 문자열을 반환하기 때문에, 새 문자열의 반환값을 받을 변수 및 함수의 return 에 사용할 수 있다.</p>
-</blockquote>
-
-<p><br /></p>
-
-<p><a href="https://developer.apple.com/documentation/foundation/nsstring/1412937-replacingoccurrences">애플 공식 문서</a></p>
+<p><br />
+<a href="https://school.programmers.co.kr/learn/courses/30/lessons/181937">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -929,8 +992,8 @@
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/swift/">Swift</a>,
-          <a href="/categories/stringmethods/">StringMethods</a>
+          <a href="/categories/programmers/">Programmers</a>,
+          <a href="/categories/%EA%B8%B0%EC%B4%88/">기초</a>
       </div>
     
 
@@ -940,19 +1003,14 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/swift/"
+            href="/tags/algorithm/"
             class="post-tag no-text-decoration"
-          >swift</a>
+          >Algorithm</a>
         
           <a
-            href="/tags/methods/"
+            href="/tags/programmers/"
             class="post-tag no-text-decoration"
-          >methods</a>
-        
-          <a
-            href="/tags/swiftstringmethods/"
-            class="post-tag no-text-decoration"
-          >SwiftStringMethods</a>
+          >Programmers</a>
         
       </div>
     
@@ -980,21 +1038,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=replacingOccurrences%20(1)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%B9%98%ED%99%98%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fswift-%25EB%25A9%2594%25EC%2584%259C%25EB%2593%259C-replacingOccurances%28%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EC%25B9%2598%25ED%2599%2598%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(16)%20-%20n%EC%9D%98%20%EB%B0%B0%EC%88%98%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2816%29-n%25EC%259D%2598-%25EB%25B0%25B0%25EC%2588%2598%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=replacingOccurrences%20(1)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%B9%98%ED%99%98%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fswift-%25EB%25A9%2594%25EC%2584%259C%25EB%2593%259C-replacingOccurances%28%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EC%25B9%2598%25ED%2599%2598%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(16)%20-%20n%EC%9D%98%20%EB%B0%B0%EC%88%98%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2816%29-n%25EC%259D%2598-%25EB%25B0%25B0%25EC%2588%2598%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fswift-%25EB%25A9%2594%25EC%2584%259C%25EB%2593%259C-replacingOccurances%28%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EC%25B9%2598%25ED%2599%2598%2F&text=replacingOccurrences%20(1)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EC%B9%98%ED%99%98%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2816%29-n%25EC%259D%2598-%25EB%25B0%25B0%25EC%2588%2598%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(16)%20-%20n%EC%9D%98%20%EB%B0%B0%EC%88%98%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1467,6 +1525,197 @@
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -1476,6 +1725,232 @@
 
 
 
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1711292400"
+  data-df="ll"
+  
+>
+  Mar 25, 2024
+</time>
+
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (7) - 문자열 붙여서 출력하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  01 문제 :문자열 붙여서 출력하기
+
+
+
+
+  문제 설명
+
+
+
+  두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.
+입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.
+
+
+
+
+
+  제한사항
+
+
+
+  • 1 ≤ str1, str2의 길이 ≤ 10
+
+
+
+
+
+  입출력 예
+
+
+입력 #1
+apple pe...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(8)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1711292400"
+  data-df="ll"
+  
+>
+  Mar 25, 2024
+</time>
+
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (8) - 문자열 돌리기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  01 문제 :문자열 돌리기
+
+
+
+
+  문제 설명
+
+
+
+  문자열 str이 주어집니다.
+문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.
+
+
+
+
+
+  제한사항
+
+
+
+  • 1 ≤ str1, str2의 길이 ≤ 10
+
+
+
+
+
+  입출력 예
+
+
+입력 #1
+abcde
+
+
+출력 #1
+applepen
+
+
+
+
+
+  제시 ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1711292400"
+  data-df="ll"
+  
+>
+  Mar 25, 2024
+</time>
+
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  01 문제 :홀짝 구분하기
+
+
+
+
+  문제 설명
+
+
+
+  자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 “n is even”을, 홀수이면 “n is odd”를 출력하는 코드를 작성해 보세요.
+
+
+
+
+
+  제한사항
+
+
+
+  • 1 ≤ n ≤ 1,000
+
+
+
+
+
+  입출력 예
+
+
+입력 #1
+100
+
+
+출력 #1
+100 is even
+
+
+
+
+
+  ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1488,22 +1963,18 @@
 
   
     <a
-      href="/posts/Jekyll-Chirpy-%ED%85%8C%EB%A7%88-%EA%B9%83-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0(1)/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(15)-%EB%91%90-%EC%88%98%EC%9D%98-%EC%97%B0%EC%82%B0%EA%B0%92-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>깃 블로그 생성하기 (1)</p>
+      <p>프로그래머스 Python 코테준비 기초 (15) - 두 수의 연산값 비교하기</p>
     </a>
   
 
   
-    <a
-      href="/posts/JAVA-study-(1)-%EC%9E%90%EB%B0%94%EB%9E%80/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>JAVA study (1) - 자바란?</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
