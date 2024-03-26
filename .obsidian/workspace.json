@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (18) - 홀짝에 따라 다른 값 반환하기.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (19) - 조건 문자열.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 514.5
+    "width": 433.5
   },
   "right": {
     "id": "450b3379e299ce3a",
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (18) - 홀짝에 따라 다른 값 반환하기.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (19) - 조건 문자열.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (18) - 홀짝에 따라 다른 값 반환하기.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (19) - 조건 문자열.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (18) - 홀짝에 따라 다른 값 반환하기.md"
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (19) - 조건 문자열.md"
               }
             }
           }
@@ -197,28 +197,28 @@
   },
   "active": "40e24eb77fb888cf",
   "lastOpenFiles": [
-    "_site/posts/프로그래머스-Python-코테준비-기초-(18)-홀짝에-따라-다른-값-반환하기/index.html",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(18)-홀짝에-따라-다른-값-반환하기",
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (14) - 더 크게 합치기.md",
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (15) - 두 수의 연산값 비교하기.md",
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (16) -  n의 배수.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (17) - 공배수.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (18) - 홀짝에 따라 다른 값 반환하기.md",
-    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (16) -  n의 배수.md",
-    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (15) - 두 수의 연산값 비교하기.md",
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (19) - 조건 문자열.md",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(19)-조건-문자열/index.html",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(19)-조건-문자열",
+    "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(18)-홀짝에-따라-다른-값-반환하기/index.html",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(18)-홀짝에-따라-다른-값-반환하기",
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (13) - 문자열 곱하기.md",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(18)-조건-문자열/index.html",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(18)-조건-문자열",
+    "Archive/archive/2024-00-00- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md",
+    "_site/Archive/archive/2024-00-00- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.html",
     "_site/posts/프로그래머스-Python-코테준비-기초-(17)-공배수/index.html",
     "_site/posts/프로그래머스-Python-코테준비-기초-(17)-공배수",
     "_site/posts/프로그래머스-Python-코테준비-기초-(16)-n의-배수/index.html",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(16)-n의-배수",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(15)-두-수의-연산값-비교하기/index.html",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(15)-두-수의-연산값-비교하기",
-    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (14) - 더 크게 합치기.md",
-    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (13) - 문자열 곱하기.md",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(14)-더-크게-합치기/index.html",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(14)-더-크게-합치기",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (12) - 문자 리스트를 문자열로 변환하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (3) - 문자열 반복해서 출력하기.md",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(13)-문자열-곱하기/index.html",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (14) - 홀짝 구분하기.md",
-    "_posts/2024-00-00- 프로그래머스 Swift 코테준비 (71) - 조건에 맞게 수열 변환하기 1.md",
-    "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (6) - 덧셈식 출력하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기.md",
@@ -232,7 +232,6 @@
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (4) - 대소문자 바꿔서 출력하기.md",
     "_posts/2024-00-00- swift 메서드 replacingOccurances() - 문자열 치환.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이.md",
-    "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (2) - Spring Boot Devtools.md",
     "_site/무제 파일.canvas",
     "무제 파일.canvas",
     "Pasted image 20240227124417.png",
