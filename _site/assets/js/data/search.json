@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Python 코테준비 기초 (18) - 홀짝에 따라 다른 값 반환하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(18)-%ED%99%80%EC%A7%9D%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-03-26 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 :\b홀짝에 따라 다른 값 반환하기  문제 설명  양의 정수 n이 매개변수로 주어질 때, n이 홀수라면 n 이하의 홀수인 모든 양의 정수의 합을 return 하고 n이 짝수라면 n 이하의 짝수인 모든 양의 정수의 제곱의 합을 return 하는 solution 함수를 작성해 주세요.  제한사항  • 1 ≤ n ≤ 100  입출력 예       ...",
+    "content": "01 문제 :\b홀짝에 따라 다른 값 반환하기  문제 설명  양의 정수 n이 매개변수로 주어질 때, n이 홀수라면 n 이하의 홀수인 모든 양의 정수의 합을 return 하고 n이 짝수라면 n 이하의 짝수인 모든 양의 정수의 제곱의 합을 return 하는 solution 함수를 작성해 주세요.  제한사항  • 1 ≤ n ≤ 100  입출력 예            n      result                  7      16              10      220        입출력 예 설명입출력 예 #1  예제 1번의 n은 7로 홀수입니다. 7 이하의 모든 양의 홀수는 1, 3, 5, 7이고 이들의 합인 1 + 3 + 5 + 7 = 16을 return 합니다.입출력 예 #2  예제 2번의 n은 10으로 짝수입니다. 10 이하의 모든 양의 짝수는 2, 4, 6, 8, 10이고 이들의 제곱의 합인 22 + 42 + 62 + 82 + 102 = 4 + 16 + 36 + 64 + 100 = 220을 return 합니다.  제시 코드def solution(n):    answer = 0    return answer02 풀이  1) 내가 푼 방법 -\bfor문과 조건문 활용하기  지금까지 swift와 java로 문제를 풀어온 나는 아래와 같은 방법으로 문제를 해결하였다.먼저, for문으로 1~n의 숫자를 차례대로 i에 넣어주었다.여기서 range(n+1)에 +1을 해주는 이유는, range()는 인덱스 형식으로 값을 반환해주기 때문에 1부터가 아닌 0부터 시작하기 때문이다.answer = 0for i in range(n + 1) :\tprint(i)\t# 1# 2# 3# 4# 5# 6# 7  이어서, n이 홀수일 경우와 짝수인 경우를 조건문을 통해 나누어 주었다.answer = 0for i in range(n + 1) :\tif n % 2 == 1 :\t\t# n이 홀수인 경우 코드 실행\t\t# i가 1 3 5 7 값이 들어옴\telse :\t\t# n이 짝수인 경우 코드 실행\t\t# i가 2 4 6 8 값이 들어옴  i가 홀수인 경우와 짝수인 경우를 조건문을 통해 한번 더 나누어 주었다.answer = 0for i in range(n + 1) :\tif n % 2 == 1 :\t\t# n이 홀수인 경우 코드 실행\t\tif i % 2 == 1 :\t\t\t# i가 1 3 5 7 값이 들어옴\telse :\t\t# n이 짝수인 경우 코드 실행\t\tif i % 2 == 0 :\t\t\t# i가 2 4 6 값이 들어옴  마지막으로 i와 n이 모두 홀수일 때의 i의 값을 변수 answer에 더해주고,나머지 경우는 i의 제곱값을 answer에 더해주었다.answer = 0for i in range(n+1) :\t\tif n % 2 == 1 :\t\tif i % 2 == 1 :\t\t\tanswer += i\telse :\t\tif i % 2 == 0:\t\t\tanswer += i * i\t\t\treturn answer  2) 다른 사람이 푼 방법 -\bsum()과 range() 활용하기  이 방법은 코드의 가독성이 더 좋아보였고, 변수를 생성하지 않아도 돼서 앞으로 많이 응용할 것 같아 블로그에 기록했다.  sum() : 모든 값을 더해준다. int일 경우에만 사용가능range('시작값', '끝값'\u001d, '간격';) : 파라미터를 활용하여 더 크게 활용가능if n % 2 == 1 :\treturn sum(range(1, n+1, 2))else :\treturn sum([i*i for i in range(2, n+1, 2)])03 Answer  1) 내가 푼 방법 -\bfor문과 조건문 활용하기def solution(n):    answer = 0\tfor i in range(n+1) :\t\t\t\tif n % 2 == 1 :\t\t\tif i % 2 == 1 :\t\t\t\tanswer += i\t\telse :\t\t\tif i % 2 == 0:\t\t\t\tanswer += i * i\t\t\t\t\treturn answer\t# \b220  2) 다른 사람이 푼 방법 -\bsum()과 range() 활용하기def solution(n):\tif n % 2 == 1 :\t\treturn sum(range(1, n+1, 2))\telse :\t\treturn sum([i*i for i in range(2, n+1, 2)])\t\t# \b220해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Python 코테준비 기초 (17) - 공배수",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(17)-%EA%B3%B5%EB%B0%B0%EC%88%98/",
     "categories": "Programmers, 기초",
