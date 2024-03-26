@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Python 코테준비 기초 (13) - 문자열 돌리기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-03-26 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 :\b문자열 돌리기  문제 설명  문자열 str이 주어집니다.문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.  제한사항  • 1 ≤ str의 길이 ≤ 10  입출력 예입력 #1abcde출력 #1abcde  제시 코드str = input()02 풀이  1) 내가 푼 방법 - \bfor문 활용하기  str...",
+    "content": "01 문제 :\b문자열 돌리기  문제 설명  문자열 str이 주어집니다.문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.  제한사항  • 1 ≤ str의 길이 ≤ 10  입출력 예입력 #1abcde출력 #1abcde  제시 코드str = input()02 풀이  1) 내가 푼 방법 - \bfor문 활용하기  str 문자열 요소들을 for문을 통해 하나씩 출력시켜 주었다.for i in str :    print(i)# a# b# c# d# e03 Answer  1) 내가 푼 방법 - \bfor문 활용str = input()for i in str :    print(i)# \babc해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Python 코테준비 기초 (12) - 문자 리스트를 문자열로 변환하기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(12)-%EB%AC%B8%EC%9E%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
