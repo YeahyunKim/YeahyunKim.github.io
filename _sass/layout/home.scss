@@ -43,6 +43,7 @@
       .card-title {
         @extend %text-clip;
 
+        line-height: 1.5;
         color: var(--heading-color) !important;
         font-size: 1.25rem;
       }
@@ -176,8 +177,10 @@
   
   .categroies-wrap {
     // line-height: 0;
+    cursor: pointer;
     padding: 5px 18px;
     margin-right: 5px;
+    margin-bottom: 10px;
     background-color: var(--category-list-bg-color);
     // border: 1px solid var(--category-list-border-color);
     border-radius: 10px;
