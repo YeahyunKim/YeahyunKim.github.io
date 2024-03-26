@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-26T12:12:51+09:00</updated>
+  <updated>2024-03-26T12:47:13+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,91 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>프로그래머스 Python 코테준비 기초 (14) - 더 크게 합치기</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Python 코테준비 기초 (14) - 더 크게 합치기" />
+    <published>2024-03-26T00:00:00+09:00</published>
+  
+    <updated>2024-03-26T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 :문자열 곱하기
+
+
+
+  문제 설명
+
+
+
+  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.
+• 12 ⊕ 3 = 123
+• 3 ⊕ 12 = 312
+양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중
+더 큰 값을 return 하는 solution 함수를 완성해 주세요.
+
+  단, a ⊕ b와 b ⊕ a가 같다면 a ⊕ b를 return 합니다.
+
+
+
+
+
+  제한사항
+
+
+
+  • 1 ≤ a, b &amp;lt; 10,000
+
+
+
+
+
+  입출력 예
+
+
+
+  
+    
+      a
+      b
+      result
+    
+  
+  
+    
+      9
+      91
+      991
+    
+    
+      89
+     ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -351,106 +436,6 @@ def solution(str1, str2)...
   
     
       my_string
- ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기" />
-    <published>2024-03-25T00:00:00+09:00</published>
-  
-    <updated>2024-03-25T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :홀짝 구분하기
-
-
-
-  문제 설명
-
-
-
-  자연수 n이 입력으로 주어졌을 때 만약 n이 짝수이면 “n is even”을, 홀수이면 “n is odd”를 출력하는 코드를 작성해 보세요.
-
-
-
-
-
-  제한사항
-
-
-
-  • 1 ≤ n ≤ 1,000
-
-
-
-
-
-  입출력 예
-
-
-입력 #1
-100
-
-
-출력 #1
-100 is even
-
-
-
-
-
-  제시 코드
-
-
-a = int(input())
-
-
-
-
-
-02 풀이
-
-
-
-  1) 내가 푼 방법 - f-string / 삼항연산자 활용하기
-
-
-
-  삼항 연산자를 통해, n이 짝수면 n is even / n이 홀수면 n is odd를 출력시켰다.
-
-
-print(f"{a} is even" if a % 2 == 0 else f"{a} is odd")
-
-
-
-
-
  ...
     </summary>
   

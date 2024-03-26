@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Python 코테준비 기초 (14) - 더 크게 합치기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-03-26 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 :\b문자열 곱하기  문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.• 12 ⊕ 3 = 123• 3 ⊕ 12 = 312양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중더 큰 값을 return 하는 solution 함수를 완성해 주세요.  단, a ⊕ b와 b ⊕ ...",
+    "content": "01 문제 :\b문자열 곱하기  문제 설명  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.• 12 ⊕ 3 = 123• 3 ⊕ 12 = 312양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중더 큰 값을 return 하는 solution 함수를 완성해 주세요.  단, a ⊕ b와 b ⊕ a가 같다면 a ⊕ b를 return 합니다.  제한사항  • 1 ≤ a, b &lt; 10,000  입출력 예            a      b      result                  9      91      991              89      8      898        입출력 예 설명입출력 예 #1  a ⊕ b = 991 이고, b ⊕ a = 919 입니다. 둘 중 더 큰 값은 991 이므로 991을 return 합니다.입출력 예 #2  a ⊕ b = 898 이고, b ⊕ a = 889 입니다. 둘 중 더 큰 값은 898 이므로 898을 return 합니다.  제시 코드def solution(a, b):\tanswer = 0\treturn answer02 풀이  1) 내가 푼 방법 -\bmax(), 형변환  제시된 예시에 12 ⊕ 3 = 123라는 것은 두개의 숫자를 붙인 것과 같다.그렇다면 문자1 + 문자2 = 문자1문자2 가 되는것을 활용하여 코드를 작성했다.str(a) + str(b)# 123  a ⊕ b 를 작성했으니, 이어서 b ⊕ a 도 작성해 주었다.str(a) + str(b)str(b) + str(a)# 123# 312  이후, 생성한 문자열 두개를 정수로 비교를 해야하니 int()로 형변환을 해주었다.int(str(a) + str(b))int(str(b) + str(a))# 123# 312  마지막으로 두개의 값을 max()를 활용하여 더 큰수를 출력해주면 된다.max(비교할 값 1, 비교할 값 2) 으로 사용할 수 있다.max(int(str(a) + str(b)), int(str(b) + str(a)))# 312  2) 다른 사람이 푼 방법 - \bf-string, max() 활용하기  \b더 가독성이 좋은 방법 같다.. 정말 공부를 더해야함을 느낌..f-string 으로 내가 푼 방법처럼 형변환을 하나씩 해줄 필요가 없다.int(max(f\"{a}{b}\", f\"{b}{a}\"))# 31203 Answer  1) 내가 푼 방법 -\bmax(), 형변환def solution(a, b):    return max(int(str(a) + str(b)), int(str(b) + str(a)))    # \b991  2) 다른 사람이 푼 방법 -\bf-string, max() 활용하기def solution(a, b):    return int(max(f\"{a}{b}\", f\"{b}{a}\"    # \b991해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Python 코테준비 기초 (13) - 문자열 곱하기",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/",
     "categories": "Programmers, 기초",
