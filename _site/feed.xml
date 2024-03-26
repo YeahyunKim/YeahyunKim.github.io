@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-03-25T18:00:01+09:00</updated>
+  <updated>2024-03-26T11:46:30+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,263 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>프로그래머스 Python 코테준비 기초 (12) - 문자 리스트를 문자열로 변환하기</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(12)-%EB%AC%B8%EC%9E%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Python 코테준비 기초 (12) - 문자 리스트를 문자열로 변환하기" />
+    <published>2024-03-26T00:00:00+09:00</published>
+  
+    <updated>2024-03-26T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(12)-%EB%AC%B8%EC%9E%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(12)-%EB%AC%B8%EC%9E%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 :문자 리스트를 문자열로 변환하기
+
+
+
+  문제 설명
+
+
+
+  문자들이 담겨있는 배열 arr가 주어집니다.  
+arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 solution함수를 작성해 주세요.
+
+
+
+
+
+  제한사항
+
+
+
+  • 1 ≤ arr의 길이 ≤ 200
+• arr의 원소는 전부 알파벳 소문자로 이루어진 길이가 1인 문자열입니다.
+
+
+
+
+
+  입출력 예
+
+
+
+  
+    
+      arr
+      result
+    
+  
+  
+    
+      [“a”,”b”,”c”]
+      “abc”
+    
+  
+
+
+
+
+
+
+  제시 코드
+
+
+def solution(arr):
+    answer = ''
+	return answer
+
+
+
+
+
+02 풀이
+
+
+
+  1) 내가 ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기" />
+    <published>2024-03-26T00:00:00+09:00</published>
+  
+    <updated>2024-03-25T18:01:18+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 :문자열 섞기
+
+
+
+  문제 설명
+
+
+
+  길이가 같은 두 문자열 str1과 str2가 주어집니다.
+두 문자열의 각 문자가 앞에서부터 서로 번갈아가면서 한 번씩 등장하는 문자열을 만들어 return 하는 solution 함수를 완성해 주세요.
+
+
+
+
+
+  제한사항
+
+
+
+  • 1 ≤ str1의 길이 = str2의 길이 ≤ 10
+• str1과 str2는 알파벳 소문자로 이루어진 문자열입니다.
+
+
+
+
+
+  입출력 예
+
+
+
+  
+    
+      str1
+      str2
+      result
+    
+  
+  
+    
+      “aaaaa”
+      “bbbbb”
+      “ababababab”
+    
+  
+
+
+
+
+
+
+  제시 코드
+
+
+def solution(str1, str2)...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기</title>
+    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기" />
+    <published>2024-03-26T00:00:00+09:00</published>
+  
+    <updated>2024-03-25T17:59:02+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Programmers" />
+    
+    <category term="기초" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 문제 :문자열 겹쳐쓰기
+
+
+
+  문제 설명
+
+
+
+  문자열 my_string, overwrite_string과 정수 s가 주어집니다. 문자열 my_string의 인덱스 s부터 overwrite_string의 길이만큼을 문자열 overwrite_string으로 바꾼 문자열을 return 하는 solution 함수를 작성해 주세요.
+
+
+
+
+
+  제한사항
+
+
+
+  • my_string와 overwrite_string은 숫자와 알파벳으로 이루어져 있습니다.
+• 1 ≤ overwrite_string의 길이 ≤ my_string의 길이 ≤ 1,000
+• 0 ≤ s ≤ my_string의 길이 - overwrite_string의 길이
+
+
+
+
+
+  입출력 예
+
+
+
+  
+    
+      my_string
+ ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -224,288 +481,6 @@ for i in str :
 str = input()
 
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Python 코테준비 기초 (7) - 문자열 붙여서 출력하기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Python 코테준비 기초 (7) - 문자열 붙여서 출력하기" />
-    <published>2024-03-25T00:00:00+09:00</published>
-  
-    <updated>2024-03-25T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :문자열 붙여서 출력하기
-
-
-
-  문제 설명
-
-
-
-  두 개의 문자열 str1, str2가 공백으로 구분되어 입력으로 주어집니다.
-입출력 예와 같이 str1과 str2을 이어서 출력하는 코드를 작성해 보세요.
-
-
-
-
-
-  제한사항
-
-
-
-  • 1 ≤ str1, str2의 길이 ≤ 10
-
-
-
-
-
-  입출력 예
-
-
-입력 #1
-apple pen
-
-
-출력 #1
-applepen
-
-
-입력 #2
-Hello World!
-
-
-출력 #2
-HelloWorld!
-
-
-
-
-
-  제시 코드
-
-
-str1, str2 = input().strip().split(' ')
-
-
-
-
-
-02 풀이
-
-
-
-  1) 내가 푼 방법 - replace() 활용하기
-
-
-
-  문자열 일부를 다른 문자열로 바꾸고 싶을 때 replace() 함...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Python 코테준비 기초 (6) - 덧셈식 출력하기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(6)-%EB%8D%A7%EC%85%88%EC%8B%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Python 코테준비 기초 (6) - 덧셈식 출력하기" />
-    <published>2024-03-25T00:00:00+09:00</published>
-  
-    <updated>2024-03-25T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(6)-%EB%8D%A7%EC%85%88%EC%8B%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(6)-%EB%8D%A7%EC%85%88%EC%8B%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :덧셈식 출력하기
-
-
-
-  문제 설명
-
-
-
-  두 정수 a, b가 주어질 때 다음과 같은 형태의 계산식을 출력하는 코드를 작성해 보세요.
-
-
-a + b = c
-
-
-
-
-  제한사항
-
-
-
-  • 1 ≤ a, b ≤ 100
-
-
-
-
-
-  입출력 예
-
-
-입력 #1
-4 5
-
-
-출력 #1
-4 + 5 = 9
-
-
-
-
-  제시 코드
-
-
-a, b = map(int, input().strip().split(' '))
-
-
-
-
-
-02 풀이
-
-
-
-  1) 내가 푼 방법 - f-string 활용하기
-
-
-
-  Python 3.6 이상에서는 f-string을 사용하여 문자열 안에 변수를 직접 삽입할 수 있다.
-예를 들어, a = 4일 때, print(f"a = {a}") 와 같이 사용할 수 있다.
-이 방법이 가독성이 더 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Python 코테준비 기초 (5) - 특수문자 출력하기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(5)-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Python 코테준비 기초 (5) - 특수문자 출력하기" />
-    <published>2024-03-25T00:00:00+09:00</published>
-  
-    <updated>2024-03-25T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(5)-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(5)-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 :특수문자 출력하기
-
-
-
-  문제 설명
-
-
-
-  다음과 같이 출력하도록 코드를 작성해 주세요.
-
-
-
-
-
-  출력 예시
-  !@#$%^&amp;amp;*(\'"&amp;lt;&amp;gt;?:;
-  
-
-
-
-
-
-02 풀이
-
-
-
-  1) 내가 푼 방법 - \ 추가하여 출력하기
-
-
-
-  특정한 특수문자를 출력하기 위해선, 해당 특수문자 앞에 \ 를 붙여주어야 한다.
-
-
-
-  • \n  줄바꿈
-• \t  tab
-• \\  백슬래시
-• \"  큰 따옴표
-• \'  작은 따옴표
-
-
-print('!@#$%^&amp;amp;*(\\\'"&amp;lt;&amp;gt;?:;')
-
-
-
-
-
-  2) 다른 사람들의 풀이 - r 이용하기
-
-
-
-  \, ", ' 같이 역슬래시를 많이 이용해야 하는경우는 간편하게 r 을 붙이면 된다.
-처음 알았는데, 가독성...
     </summary>
   
 
