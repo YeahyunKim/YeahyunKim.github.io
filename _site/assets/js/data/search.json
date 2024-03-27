@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Python 코테준비 기초 (20) - flag에 따라 다른 값 반환하기",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(20)-flag%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-03-26 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 :\bflag에 따라 다른 값 반환하기  문제 설명  두 정수 a, b와 boolean 변수 flag가 매개변수로 주어질 때, flag가 true면 a + b를 false면a - b를 return 하는 solution 함수를 작성해 주세요.  제한사항  • 1,000 ≤ a, b ≤ 1,000  입출력 예            a      b ...",
+    "content": "01 문제 :\bflag에 따라 다른 값 반환하기  문제 설명  두 정수 a, b와 boolean 변수 flag가 매개변수로 주어질 때, flag가 true면 a + b를 false면a - b를 return 하는 solution 함수를 작성해 주세요.  제한사항  • 1,000 ≤ a, b ≤ 1,000  입출력 예            a      b      flag      result                  -4      7      true      3              -4      7      false      -11        입출력 예 설명입출력 예 #1  예제 1번에서 flag가 true이므로 a + b = (-4) + 7 = 3을 return 합니다.입출력 예 #2  예제 2번에서 flag가 false이므로 a - b = (-4) - 7 = -11을 return 합니다.  제시 코드def solution(a, b, flag):    answer = 1    return answer02 풀이  1) 내가 푼 방법 -\b\b삼항 연산자  해당 문제는 삼항연산자로, flag가 true면, a + b를, false 면 a - b를 반환하면 된다.a + b if flag else a - b03 Answer  1) 내가 푼 방법 -\b삼항 연산자def solution(a, b, flag):        return a + b if flag else a - b\t# \b3해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Python 코테준비 기초 (19) - 조건 문자열",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(19)-%EC%A1%B0%EA%B1%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/",
     "categories": "Programmers, 기초",
@@ -695,6 +712,23 @@
     
     "snippet": "메이븐(Maven) 이란?01. \b메이븐 정의Maven은 주로 Java 개발에 사용되는 프로젝트 관리 빌드 도구 이다.  Apache Ant의 대안으로 만들어 졌으며, Apache Software Foundation에서 호스팅하는 Maven은 자카르타 프로젝트의 일부로 시작되었다고 한다.02. 메이븐 특징  빌드 절차를 간소화  정형화된 빌드 시스템을...",
     "content": "메이븐(Maven) 이란?01. \b메이븐 정의Maven은 주로 Java 개발에 사용되는 프로젝트 관리 빌드 도구 이다.  Apache Ant의 대안으로 만들어 졌으며, Apache Software Foundation에서 호스팅하는 Maven은 자카르타 프로젝트의 일부로 시작되었다고 한다.02. 메이븐 특징  빌드 절차를 간소화  정형화된 빌드 시스템을 제공  프로젝트 정보를 제공  Pom.xml 파일을 통해 프로젝트를 빌드    03. 메이븐의 LifeCycle  미리 정의하고 있는 빌드 순서를 라이프사이클이라고 한다.각 빌드 단계를 phase라 하며 각 phase들은 서로 의존 단계를 가지고 있는데,메이븐은 프로젝트 생성에 필요한 단계(phase)들을 Build LifeCycle 이라고 하고,default, clean, site 세가지로 표준 정의한다.  clean : 빌드 시 생성되었던 산출물을 삭제          pre-clean : clean 작업 전에 사전작업      clean : 이전 빌드에서 생성된 모든 파일 삭제      post-clean : 사후작업        default : 프로젝트 배포절차, 패키지 타입별로 다르게 정의됌          validate : 프로젝트 상태 점검, 빌드에 필요한 정보 존재유무 체크      initialize : 빌드 상태를 초기화, 속성 설정, 작업 디렉터리 생성      generate-sources : 컴파일에 필요한 소스 생성      process-sources : 소스코드를 처리      generate-resources : 패키지에 포함될 자원 생성      compile : 프로젝트의 소스코드를 컴파일      process-classes : 컴파일 후 후처리      generate-test-source : 테스트를 위한 소스 코드를 생성      process-test-source : 테스트 소스코드를 처리      generate-test-resources : 테스팅을 위한 자원 생성      process-test-resources : 테스트 대상 디렉터리에 자원을 복사하고 가공      test-compile : 테스트 코드를 컴파일      process-test-classes : 컴파일 후 후처리      test : 단위 테스트 프레임워크를 이용해 테스트 수행      prepare-package : 패키지 생성 전 사전작업      package : 개발자가 선택한 war, jar 등의 패키징 수행      pre-integration-test : 통합테스팅 전 사전작업      integration-test : 통합테스트      post-integration : 통합테스팅 후 사후작업      verify : 패키지가 품질 기준에 적합한지 검사      install : 패키지를 로컬 저장소에 설치      deploy : 패키지를 원격 저장소에 배포        site : 프로젝트 문서화 절차          pre-site : 사전작업      site : 사이트문서 생성      post-site : 사후작업 및 배포 전 사전작업      site-deploy : 생성된 문서를 웹 서버에 배포      그래들 (\bGradle) 이란?01. \b그래들의 정의Gradle은 다국어 소프트웨어 개발을 위한 빌드 자동화 도구 이다. 컴파일과 패키징부터 테스트, 배포, 게시까지의 작업에서 개발 프로세스를 제어한다.02. \b그래들의 특징  설정 주입 방식(Configuration Injection)을 사용  오픈소스 기반의 빌드 자동화 시스템으로 Groovy** 기반 DSL(Domain-Specific-Language)로 작성한다.  **Groovy : JVM에서 실행되는 스크립트 언어  src/main/java : 배포할 자바 소스코드 디렉토리  src/main/resources : 배포한 설정 파일 디렉토리  gradle/wrapper 디렉토리 : 내장 task wrapper. 개발자들이 직접 gradle을 설치하지 않아도 빌드가 가능하다.  gradlew : 리눅스 또는 맥 OS 용 실행 쉘 스크립트 파일이다.  gradlew.bat : 윈도우용 실행 배치 스크립트 파일이다.  gradle-wrapper.jar : JAR 형식으로 압축된 wrapper파일이다. gradlew나 gradlew.bat 파일이 프로젝트 안에 설치되는 이 파일을 사용하여 gradle task를 실행한다.  gradle-wrapper.properties : gradle wrapper 설정정보 파일이다. wrapper의 버전등을 확인할 수 있다.  build.gradle : 프로젝트의 라이브러리 의존성, 플러그인, 라이브러리 저장소등을 설정하는 빌드 스크립트 파일이다.  settings.gradle : 프로젝트의 구성 정보 파일. 멀티 프로젝트를 구성하여 프로젝트를 모듈화할 경우, 하위 프로젝트의 구성을 설정할 수 있다."
+  },
+  
+  {
+    "title": "JavaSpring 플러그인 (02) - Spring Boot Devtools",
+    "url": "/posts/JavaSpring-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-(02)-Spring-Boot-Devtools/",
+    "categories": "JavaSpring, Pluginㅤ",
+    "tags": "Java, JavaSpring",
+    "date": "2024-02-27 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "Spring Boot Devtools - 서버 자동 재가동Spring Boot Devtools소스의 변경이 일어날 때마다 스프링부트의 로컬 서버를 매번 재실행 해줘야하는 번거로움이 있었다..  소스 변경  로컬 서버 재실행  웹사이트 새로고침하지만, Spring Boot Devtools 를 사용하면 소스의 변경이 일어났을때 서버를 재시작하지 않아도, ...",
+    "content": "Spring Boot Devtools - 서버 자동 재가동Spring Boot Devtools소스의 변경이 일어날 때마다 스프링부트의 로컬 서버를 매번 재실행 해줘야하는 번거로움이 있었다..  소스 변경  로컬 서버 재실행  웹사이트 새로고침하지만, Spring Boot Devtools 를 사용하면 소스의 변경이 일어났을때 서버를 재시작하지 않아도, 서버가 자동으로 재가동 시켜주는 매우 편리한 플러그인이다.01. build.gradle에 플러그인 추가아래의 코드를 build.gradle 파일에 추가해준다.dependencies {      developmentOnly 'org.springframework.boot:spring-boot-devtools'}02. Intellij 세팅 변경 (Compiler)Settings -&gt; Build, Execution, Deployment -&gt; Compiler인텔리제이의 세팅에서 위의 경로로 이동하여, Build project automatically 를 체크(active) 한다.03. Intellij 세팅 변경 (Advanced Settings)Settings -&gt; Advanced Settings인텔리제이의 세팅에서 위의 경로로 이동하여, Allow auto-make to start even if developed application is currently running.을 체크(active) 한다.04. application.properties파일에 설정 추가  Html Reload 를 위한 코드spring.thymeleaf.cache=false spring.thymeleaf.prefix=file:src/main/resources/templates/  \bCSS, Js Reload 를 위한 코드spring.resources.static-locations=file:src/main/resources/static/05. Chrome 확장자 추가 (LiveReload)크롬에서 LiveReload 라는 확장자 프로그램을 설치한다.06. 마무리하기설치가 완료되면, 인텔리제이에서 html 및 소스코드를 수정했을때 정상적으로 서버가 자동으로 재실행 되어 서버를 수동으로 재가동 시킬 필요가 없어진다. 개발을 할 때 시간을 줄여주는 아주 고마운 플러그인이였다."
   },
   
   {
