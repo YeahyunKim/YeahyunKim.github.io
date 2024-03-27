@@ -35,25 +35,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기" />
+<meta property="og:title" content="프로그래머스 Python 코테준비 기초 (07) - 문자열 붙여서 출력하기" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="[“f-string과 삼항연산자”]" />
-<meta property="og:description" content="[“f-string과 삼항연산자”]" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/" />
+<meta name="description" content="[“f-string, 연산식 활용하기”]" />
+<meta property="og:description" content="[“f-string, 연산식 활용하기”]" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(07)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(07)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-25T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기" />
+<meta property="twitter:title" content="프로그래머스 Python 코테준비 기초 (07) - 문자열 붙여서 출력하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-25T00:00:00+09:00","datePublished":"2024-03-25T00:00:00+09:00","description":"[“f-string과 삼항연산자”]","headline":"프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-25T00:00:00+09:00","datePublished":"2024-03-25T00:00:00+09:00","description":"[“f-string, 연산식 활용하기”]","headline":"프로그래머스 Python 코테준비 기초 (07) - 문자열 붙여서 출력하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(07)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(07)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기 | Yeahyun Kim
+  <title>프로그래머스 Python 코테준비 기초 (07) - 문자열 붙여서 출력하기 | Yeahyun Kim
   </title>
 
   <!--
@@ -430,7 +430,7 @@
         
           
             
-              <span>프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기</span>
+              <span>프로그래머스 Python 코테준비 기초 (07) - 문자열 붙여서 출력하기</span>
             
 
           
@@ -698,6 +698,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -712,7 +734,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기</h1>
+    <h1 data-toc-skip>프로그래머스 Python 코테준비 기초 (07) - 문자열 붙여서 출력하기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -782,7 +804,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="338 words"
+  title="305 words"
 >
   <em>1 min</em> read</span>
 
@@ -793,7 +815,7 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제-홀짝-구분하기"><span class="me-2">01 문제 :홀짝 구분하기</span><a href="#01-문제-홀짝-구분하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제-문자열-붙여서-출력하기"><span class="me-2">01 문제 :문자열 붙여서 출력하기</span><a href="#01-문제-문자열-붙여서-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <hr />
 <blockquote>
@@ -801,7 +823,8 @@
 </blockquote>
 
 <blockquote class="command-text">
-  <p>자연수 <code class="language-plaintext highlighter-rouge">n</code>이 입력으로 주어졌을 때 만약 <code class="language-plaintext highlighter-rouge">n</code>이 짝수이면 “<code class="language-plaintext highlighter-rouge">n</code> is even”을, 홀수이면 “<code class="language-plaintext highlighter-rouge">n</code> is odd”를 출력하는 코드를 작성해 보세요.</p>
+  <p>두 개의 문자열 <code class="language-plaintext highlighter-rouge">str1</code>, <code class="language-plaintext highlighter-rouge">str2</code>가 공백으로 구분되어 입력으로 주어집니다.<br />
+입출력 예와 같이 <code class="language-plaintext highlighter-rouge">str1</code>과 <code class="language-plaintext highlighter-rouge">str2</code>을 이어서 출력하는 코드를 작성해 보세요.</p>
 </blockquote>
 
 <p><br />
@@ -811,7 +834,7 @@
 </blockquote>
 
 <blockquote class="command-text">
-  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">n</code> ≤ 1,000</p>
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str1</code>, <code class="language-plaintext highlighter-rouge">str2</code>의 길이 ≤ 10</p>
 </blockquote>
 <p><br />
 <br /></p>
@@ -824,18 +847,32 @@
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="mi">100</span>
+</pre></td><td class="rouge-code"><pre><span class="n">apple</span> <span class="n">pen</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h5 id="출력-1"><span class="me-2">출력 #1</span><a href="#출력-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="mi">100</span> <span class="ow">is</span> <span class="n">even</span>
+</pre></td><td class="rouge-code"><pre><span class="n">applepen</span>
 </pre></td></tr></tbody></table></code></div></div>
 <p><br /></p>
+<h5 id="입력-2"><span class="me-2">입력 #2</span><a href="#입력-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">Hello</span> <span class="n">World</span><span class="err">!</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p><br /></p>
+<h5 id="출력-2"><span class="me-2">출력 #2</span><a href="#출력-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">HelloWorld</span><span class="err">!</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+<br /></p>
 <blockquote>
   <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
@@ -843,7 +880,7 @@
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">a</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
+</pre></td><td class="rouge-code"><pre><span class="n">str1</span><span class="p">,</span> <span class="n">str2</span> <span class="o">=</span> <span class="nf">input</span><span class="p">().</span><span class="nf">strip</span><span class="p">().</span><span class="nf">split</span><span class="p">(</span><span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">)</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br />
@@ -853,27 +890,12 @@
 <hr />
 
 <blockquote>
-  <h4 id="1-내가-푼-방법---f-string--삼항연산자-활용하기"><span class="me-2">1) 내가 푼 방법 - f-string / 삼항연산자 활용하기</span><a href="#1-내가-푼-방법---f-string--삼항연산자-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+  <h4 id="1-내가-푼-방법---replace-활용하기"><span class="me-2">1) 내가 푼 방법 - replace() 활용하기</span><a href="#1-내가-푼-방법---replace-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
 
 <blockquote class="command-text">
-  <p>삼항 연산자를 통해, <code class="language-plaintext highlighter-rouge">n</code>이 짝수면 <code class="language-plaintext highlighter-rouge">n is even</code> / <code class="language-plaintext highlighter-rouge">n</code>이 홀수면 <code class="language-plaintext highlighter-rouge">n is odd</code>를 출력시켰다.</p>
-</blockquote>
-
-<div class="language-python highlighter-rouge"><div class="code-header">
-        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> is even</span><span class="sh">"</span> <span class="k">if</span> <span class="n">a</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> is odd</span><span class="sh">"</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p><br /></p>
-
-<blockquote>
-  <h4 id="2-내가-푼-방법---조건문과-콤마를-활용하기"><span class="me-2">2) 내가 푼 방법 - 조건문과 콤마를 활용하기</span><a href="#2-내가-푼-방법---조건문과-콤마를-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-</blockquote>
-
-<blockquote class="command-text">
-  <p>조건문을 통해, <code class="language-plaintext highlighter-rouge">n</code>이 짝수면 <code class="language-plaintext highlighter-rouge">n is even</code> / <code class="language-plaintext highlighter-rouge">n</code>이 홀수면 <code class="language-plaintext highlighter-rouge">n is odd</code>를 출력시켰다.</p>
+  <p>문자열 일부를 다른 문자열로 바꾸고 싶을 때 <code class="language-plaintext highlighter-rouge">replace()</code> 함수를 사용할 수 있다.<br />
+특정 문자 또는 문자열을 찾아 다른 문자 또는 문자열로 교체하는 기능을 제공한다.</p>
 </blockquote>
 
 <div class="language-python highlighter-rouge"><div class="code-header">
@@ -881,20 +903,40 @@
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-4
-</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="n">a</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="sh">'</span><span class="s">is even</span><span class="sh">'</span><span class="p">)</span>
-<span class="k">else</span> <span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="sh">'</span><span class="s">is odd</span><span class="sh">'</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></div></div>
+</pre></td><td class="rouge-code"><pre><span class="nf">print</span><span class="p">(</span><span class="n">str1</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="sh">"</span><span class="s"> </span><span class="sh">"</span><span class="p">,</span> <span class="sh">""</span><span class="p">)</span> <span class="o">+</span> <span class="n">str2</span><span class="p">.</span><span class="nf">replace</span><span class="p">(</span><span class="sh">"</span><span class="s"> </span><span class="sh">"</span><span class="p">,</span> <span class="sh">""</span><span class="p">))</span>
+
+<span class="c1"># applepen
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+
+<blockquote>
+  <h4 id="2-더-줄여볼-수-있을까"><span class="me-2">2) 더 줄여볼 수 있을까?</span><a href="#2-더-줄여볼-수-있을까" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<blockquote class="command-text">
+  <p><code class="language-plaintext highlighter-rouge">input()</code> 값 자체에 <code class="language-plaintext highlighter-rouge">replace()</code>를 걸어줄 수도 있더라..</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nf">print</span><span class="p">(</span><span class="nf">input</span><span class="p">().</span><span class="nf">strip</span><span class="p">().</span><span class="nf">replace</span><span class="p">(</span><span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">,</span> <span class="sh">''</span><span class="p">))</span>
+
+<span class="c1"># applepen
+</span></pre></td></tr></tbody></table></code></div></div>
+
 <p><br />
 <br />
 <br /></p>
 
+<p><br /></p>
 <h2 id="03-answer"><span class="me-2">03 Answer</span><a href="#03-answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 <blockquote>
-  <h4 id="1-내가-푼-방법---f-string--삼항연산자-활용하기-1"><span class="me-2">1) 내가 푼 방법 - f-string / 삼항연산자 활용하기</span><a href="#1-내가-푼-방법---f-string--삼항연산자-활용하기-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+  <h4 id="1-내가-푼-방법---replace-활용-정답"><span class="me-2">1) 내가 푼 방법 - replace() 활용 정답</span><a href="#1-내가-푼-방법---replace-활용-정답" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
 
 <div class="language-python highlighter-rouge"><div class="code-header">
@@ -904,16 +946,17 @@
 3
 4
 5
-</pre></td><td class="rouge-code"><pre><span class="n">a</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
+</pre></td><td class="rouge-code"><pre><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="nf">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nf">input</span><span class="p">().</span><span class="nf">strip</span><span class="p">().</span><span class="nf">split</span><span class="p">(</span><span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">))</span>
 
-<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> is even</span><span class="sh">"</span> <span class="k">if</span> <span class="n">a</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> is odd</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s"> + </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s"> = </span><span class="si">{</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
 
-<span class="c1"># 1 is odd
+<span class="c1"># applepen
 </span></pre></td></tr></tbody></table></code></div></div>
 
 <p><br /></p>
+
 <blockquote>
-  <h4 id="2-내가-푼-방법---조건문과-콤마를-활용하기-1"><span class="me-2">2) 내가 푼 방법 - 조건문과 콤마를 활용하기</span><a href="#2-내가-푼-방법---조건문과-콤마를-활용하기-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+  <h4 id="2-내가-푼-방법---더-줄여보기"><span class="me-2">2) 내가 푼 방법 - 더 줄여보기</span><a href="#2-내가-푼-방법---더-줄여보기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
 
 <div class="language-python highlighter-rouge"><div class="code-header">
@@ -921,24 +964,12 @@
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-4
-5
-6
-7
-8
-</pre></td><td class="rouge-code"><pre><span class="n">a</span> <span class="o">=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">input</span><span class="p">())</span>
+</pre></td><td class="rouge-code"><pre><span class="nf">print</span><span class="p">(</span><span class="nf">input</span><span class="p">().</span><span class="nf">strip</span><span class="p">().</span><span class="nf">replace</span><span class="p">(</span><span class="sh">'</span><span class="s"> </span><span class="sh">'</span><span class="p">,</span> <span class="sh">''</span><span class="p">))</span>
 
-<span class="k">if</span> <span class="n">a</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="sh">'</span><span class="s">is even</span><span class="sh">'</span><span class="p">)</span>
-<span class="k">else</span> <span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span> <span class="n">a</span><span class="p">,</span> <span class="sh">'</span><span class="s">is odd</span><span class="sh">'</span><span class="p">)</span>
-
-<span class="c1"># 1 is odd
+<span class="c1"># applepen
 </span></pre></td></tr></tbody></table></code></div></div>
 
-<p><br /></p>
-
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181944" target="_blank">해당문제 풀러가보기</a></p>
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181946" target="_blank">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -994,21 +1025,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(9)%20-%20%ED%99%80%EC%A7%9D%20%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%289%29-%25ED%2599%2580%25EC%25A7%259D-%25EA%25B5%25AC%25EB%25B6%2584%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(07)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B6%99%EC%97%AC%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2807%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B6%2599%25EC%2597%25AC%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(9)%20-%20%ED%99%80%EC%A7%9D%20%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%289%29-%25ED%2599%2580%25EC%25A7%259D-%25EA%25B5%25AC%25EB%25B6%2584%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(07)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B6%99%EC%97%AC%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2807%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B6%2599%25EC%2597%25AC%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%289%29-%25ED%2599%2580%25EC%25A7%259D-%25EA%25B5%25AC%25EB%25B6%2584%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(9)%20-%20%ED%99%80%EC%A7%9D%20%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2807%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%25B6%2599%25EC%2597%25AC%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(07)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%B6%99%EC%97%AC%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1063,21 +1094,28 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(16)-n%EC%9D%98-%EB%B0%B0%EC%88%98/">프로그래머스 Python 코테준비 기초 (16) - n의 배수</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(17)-%EA%B3%B5%EB%B0%B0%EC%88%98/">프로그래머스 Python 코테준비 기초 (17) - 공배수</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(18)-%ED%99%80%EC%A7%9D%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (18) - 홀짝에 따라 다른 값 반환하기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(12)-%EB%AC%B8%EC%9E%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (12) - 문자 리스트를 문자열로 변환하기</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (13) - 문자열 곱하기</a>
         </li>
       
         
@@ -1085,13 +1123,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (14) - 더 크게 합치기</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기</a>
         </li>
       
     </ul>
@@ -1596,31 +1627,31 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -1884,21 +1915,21 @@ arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 soluti
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(8)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(06)-%EB%8D%A7%EC%85%88%EC%8B%9D-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Python 코테준비 기초 (8) - 문자열 돌리기</p>
+      <p>프로그래머스 Python 코테준비 기초 (06) - 덧셈식 출력하기</p>
     </a>
   
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(08)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기</p>
+      <p>프로그래머스 Python 코테준비 기초 (08) - 문자열 돌리기</p>
     </a>
   
 </nav>

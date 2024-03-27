@@ -35,25 +35,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="프로그래머스 Python 코테준비 기초 (8) - 문자열 돌리기" />
+<meta property="og:title" content="프로그래머스 Python 코테준비 기초 (04) - 대소문자 바꿔서 출력하기" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="[“for문으로 출력하기”]" />
-<meta property="og:description" content="[“for문으로 출력하기”]" />
-<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(8)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(8)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/" />
+<meta name="description" content="[“조건문, swapcase()”]" />
+<meta property="og:description" content="[“조건문, swapcase()”]" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(04)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(04)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2024-03-25T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="프로그래머스 Python 코테준비 기초 (8) - 문자열 돌리기" />
+<meta property="twitter:title" content="프로그래머스 Python 코테준비 기초 (04) - 대소문자 바꿔서 출력하기" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-25T00:00:00+09:00","datePublished":"2024-03-25T00:00:00+09:00","description":"[“for문으로 출력하기”]","headline":"프로그래머스 Python 코테준비 기초 (8) - 문자열 돌리기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(8)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(8)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%8F%8C%EB%A6%AC%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-25T00:00:00+09:00","datePublished":"2024-03-25T00:00:00+09:00","description":"[“조건문, swapcase()”]","headline":"프로그래머스 Python 코테준비 기초 (04) - 대소문자 바꿔서 출력하기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(04)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(04)-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EB%B0%94%EA%BF%94%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>프로그래머스 Python 코테준비 기초 (8) - 문자열 돌리기 | Yeahyun Kim
+  <title>프로그래머스 Python 코테준비 기초 (04) - 대소문자 바꿔서 출력하기 | Yeahyun Kim
   </title>
 
   <!--
@@ -430,7 +430,7 @@
         
           
             
-              <span>프로그래머스 Python 코테준비 기초 (8) - 문자열 돌리기</span>
+              <span>프로그래머스 Python 코테준비 기초 (04) - 대소문자 바꿔서 출력하기</span>
             
 
           
@@ -639,6 +639,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -690,7 +712,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>프로그래머스 Python 코테준비 기초 (8) - 문자열 돌리기</h1>
+    <h1 data-toc-skip>프로그래머스 Python 코테준비 기초 (04) - 대소문자 바꿔서 출력하기</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -760,9 +782,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="201 words"
+  title="454 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -771,7 +793,7 @@
   </header>
 
   <div class="content">
-    <h2 id="01-문제-문자열-돌리기"><span class="me-2">01 문제 :문자열 돌리기</span><a href="#01-문제-문자열-돌리기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제-대소문자-바꿔서-출력하기"><span class="me-2">01 문제 :대소문자 바꿔서 출력하기</span><a href="#01-문제-대소문자-바꿔서-출력하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <hr />
 <blockquote>
@@ -779,10 +801,9 @@
 </blockquote>
 
 <blockquote class="command-text">
-  <p>문자열 <code class="language-plaintext highlighter-rouge">str</code>이 주어집니다.<br />
-문자열을 시계방향으로 90도 돌려서 아래 입출력 예와 같이 출력하는 코드를 작성해 보세요.</p>
+  <p>영어 알파벳으로 이루어진 문자열 <code class="language-plaintext highlighter-rouge">str</code>이 주어집니다.<br />
+각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.</p>
 </blockquote>
-
 <p><br />
 <br /></p>
 <blockquote>
@@ -790,7 +811,8 @@
 </blockquote>
 
 <blockquote class="command-text">
-  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str1</code>, <code class="language-plaintext highlighter-rouge">str2</code>의 길이 ≤ 10</p>
+  <p>• 1 ≤ <code class="language-plaintext highlighter-rouge">str</code>의 길이 ≤ 20
+• <code class="language-plaintext highlighter-rouge">str</code>은 알파벳으로 이루어진 문자열입니다.</p>
 </blockquote>
 <p><br />
 <br /></p>
@@ -803,18 +825,17 @@
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">abcde</span>
+</pre></td><td class="rouge-code"><pre><span class="n">aBcDeFg</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <h5 id="출력-1"><span class="me-2">출력 #1</span><a href="#출력-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
 <div class="language-python highlighter-rouge"><div class="code-header">
         <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">applepen</span>
+</pre></td><td class="rouge-code"><pre><span class="n">AbCdEfG</span>
 </pre></td></tr></tbody></table></code></div></div>
-<p><br /></p>
-
-<p><br /></p>
+<p><br />
+<br /></p>
 <blockquote>
   <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
@@ -832,29 +853,11 @@
 <hr />
 
 <blockquote>
-  <h4 id="1-내가-푼-방법---for문-활용하기"><span class="me-2">1) 내가 푼 방법 - for문 활용하기</span><a href="#1-내가-푼-방법---for문-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+  <h4 id="1-내가푼-방법---for문과-조건문-활용하여-풀기"><span class="me-2">1) 내가푼 방법 - for문과 조건문 활용하여 풀기</span><a href="#1-내가푼-방법---for문과-조건문-활용하여-풀기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
 
 <blockquote class="command-text">
-  <p>for문(반복문)을 활용하여, str의 낱개별 문자를 출력하면 된다.</p>
-</blockquote>
-
-<div class="language-python highlighter-rouge"><div class="code-header">
-        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">str</span> <span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<p><br />
-<br />
-<br /></p>
-
-<h2 id="03-answer"><span class="me-2">03 Answer</span><a href="#03-answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<hr />
-<blockquote>
-  <h4 id="1-내가-푼-방법---replace-활용-정답"><span class="me-2">1) 내가 푼 방법 - replace() 활용 정답</span><a href="#1-내가-푼-방법---replace-활용-정답" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+  <p>for문으로 <code class="language-plaintext highlighter-rouge">str</code> 의 각각 문자들을 가져오고, 각 문자별 대문자 / 소문자 케이스를 확인해 새로운 변수에 값을 추가해 주었다.</p>
 </blockquote>
 
 <div class="language-python highlighter-rouge"><div class="code-header">
@@ -869,21 +872,103 @@
 8
 9
 10
+11
+12
 </pre></td><td class="rouge-code"><pre><span class="nb">str</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="sh">""</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">str</span> <span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">i</span><span class="p">.</span><span class="nf">isupper</span><span class="p">()</span> <span class="p">:</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="n">i</span><span class="p">.</span><span class="nf">lower</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="n">i</span><span class="p">.</span><span class="nf">upper</span><span class="p">()</span>
+    
+<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 
-<span class="c1"># a
-# b
-# c
-# d
-# e
+<span class="c1"># AbCdEfG
 </span></pre></td></tr></tbody></table></code></div></div>
 
 <p><br /></p>
 
-<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181945?language=python3" target="_blank">해당문제 풀러가보기</a></p>
+<blockquote>
+  <h4 id="2-다른사람들의-풀이---swapcase"><span class="me-2">2) 다른사람들의 풀이 - swapcase()</span><a href="#2-다른사람들의-풀이---swapcase" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<blockquote class="command-text">
+  <p>swapcase()를 활용하면 대문자는 소문자로, 소문자는 대문자로 알아서 바로 변환해준다..
+파이썬에는 정말 편리한 기능이 많다고 생각이 들었다. <strong>하지만 편하다고 남발해선 안될 것 같다. 편리함에 익숙해지면.. 다른 문제를 풀때 어려움을 느낄 수도 있을 것 같다는 생각</strong>이 들기 때문에..</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nb">str</span><span class="p">.</span><span class="nf">swapcase</span><span class="p">()</span>
+
+<span class="c1"># AbCdEfG
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+<br />
+<br /></p>
+
+<p><br /></p>
+<h2 id="03-answer"><span class="me-2">03 Answer</span><a href="#03-answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+<blockquote>
+  <h4 id="1-내가푼-방법---for문과-조건문"><span class="me-2">1) 내가푼 방법 - for문과 조건문</span><a href="#1-내가푼-방법---for문과-조건문" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="nb">str</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
+<span class="n">result</span> <span class="o">=</span> <span class="sh">""</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">str</span> <span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span><span class="p">.</span><span class="nf">isupper</span><span class="p">()</span> <span class="p">:</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="n">i</span><span class="p">.</span><span class="nf">lower</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="n">i</span><span class="p">.</span><span class="nf">upper</span><span class="p">()</span>
+    
+<span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="c1"># AbCdEfG
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+
+<blockquote>
+  <h4 id="2-다른사람들의-풀이---swapcase-1"><span class="me-2">2) 다른사람들의 풀이 - swapcase()</span><a href="#2-다른사람들의-풀이---swapcase-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="nb">str</span> <span class="o">=</span> <span class="nf">input</span><span class="p">()</span>
+
+<span class="nb">str</span><span class="p">.</span><span class="nf">swapcase</span><span class="p">()</span>
+
+<span class="c1"># AbCdEfG
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p><a href="https://school.programmers.co.kr/learn/courses/30/lessons/181949" target="_blank">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -939,21 +1024,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(8)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%8F%8C%EB%A6%AC%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%288%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%258F%258C%25EB%25A6%25AC%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(04)%20-%20%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90%20%EB%B0%94%EA%BF%94%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2804%29-%25EB%258C%2580%25EC%2586%258C%25EB%25AC%25B8%25EC%259E%2590-%25EB%25B0%2594%25EA%25BF%2594%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(8)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%8F%8C%EB%A6%AC%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%288%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%258F%258C%25EB%25A6%25AC%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(04)%20-%20%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90%20%EB%B0%94%EA%BF%94%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2804%29-%25EB%258C%2580%25EC%2586%258C%25EB%25AC%25B8%25EC%259E%2590-%25EB%25B0%2594%25EA%25BF%2594%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%288%29-%25EB%25AC%25B8%25EC%259E%2590%25EC%2597%25B4-%25EB%258F%258C%25EB%25A6%25AC%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(8)%20-%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%8F%8C%EB%A6%AC%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2804%29-%25EB%258C%2580%25EC%2586%258C%25EB%25AC%25B8%25EC%259E%2590-%25EB%25B0%2594%25EA%25BF%2594%25EC%2584%259C-%25EC%25B6%259C%25EB%25A0%25A5%25ED%2595%2598%25EA%25B8%25B0%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(04)%20-%20%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90%20%EB%B0%94%EA%BF%94%EC%84%9C%20%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1008,21 +1093,28 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(16)-n%EC%9D%98-%EB%B0%B0%EC%88%98/">프로그래머스 Python 코테준비 기초 (16) - n의 배수</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(17)-%EA%B3%B5%EB%B0%B0%EC%88%98/">프로그래머스 Python 코테준비 기초 (17) - 공배수</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(11)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%84%9E%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (11) - 문자열 섞기</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(18)-%ED%99%80%EC%A7%9D%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (18) - 홀짝에 따라 다른 값 반환하기</a>
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(12)-%EB%AC%B8%EC%9E%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%A5%BC-%EB%AC%B8%EC%9E%90%EC%97%B4%EB%A1%9C-%EB%B3%80%ED%99%98%ED%95%98%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (12) - 문자 리스트를 문자열로 변환하기</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(13)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B3%B1%ED%95%98%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (13) - 문자열 곱하기</a>
         </li>
       
         
@@ -1030,13 +1122,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (14) - 더 크게 합치기</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(10)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EA%B2%B9%EC%B3%90%EC%93%B0%EA%B8%B0/">프로그래머스 Python 코테준비 기초 (10) - 문자열 겹쳐쓰기</a>
         </li>
       
     </ul>
@@ -1553,55 +1638,55 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -1829,21 +1914,21 @@ arr의 원소들을 순서대로 이어 붙인 문자열을 return 하는 soluti
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(7)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B6%99%EC%97%AC%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(03)-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B0%98%EB%B3%B5%ED%95%B4%EC%84%9C-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>프로그래머스 Python 코테준비 기초 (7) - 문자열 붙여서 출력하기</p>
+      <p>프로그래머스 Python 코테준비 기초 (03) - 문자열 반복해서 출력하기</p>
     </a>
   
 
   
     <a
-      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(9)-%ED%99%80%EC%A7%9D-%EA%B5%AC%EB%B6%84%ED%95%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(05)-%ED%8A%B9%EC%88%98%EB%AC%B8%EC%9E%90-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>프로그래머스 Python 코테준비 기초 (9) - 홀짝 구분하기</p>
+      <p>프로그래머스 Python 코테준비 기초 (05) - 특수문자 출력하기</p>
     </a>
   
 </nav>
