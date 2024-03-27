@@ -31,35 +31,29 @@
   
 
   
-    
-
-    
-  
 
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="mySQL 문법 (09) - UPDATE 데이터 수정하기" />
+<meta property="og:title" content="프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="💡UPDATE 01. UPDATE" />
-<meta property="og:description" content="💡UPDATE 01. UPDATE" />
-<link rel="canonical" href="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(09)-UPDATE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0/" />
-<meta property="og:url" content="http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(09)-UPDATE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0/" />
+<meta name="description" content="[“set()과 len(), 조건문으로 문제 해결하기”]" />
+<meta property="og:description" content="[“set()과 len(), 조건문으로 문제 해결하기”]" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
-<meta property="og:image" content="https://ifh.cc/g/DMV0va.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-08T00:00:00+09:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://ifh.cc/g/DMV0va.png" />
-<meta property="twitter:title" content="mySQL 문법 (09) - UPDATE 데이터 수정하기" />
+<meta property="article:published_time" content="2024-03-27T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-08T00:00:00+09:00","datePublished":"2024-03-08T00:00:00+09:00","description":"💡UPDATE 01. UPDATE","headline":"mySQL 문법 (09) - UPDATE 데이터 수정하기","image":"https://ifh.cc/g/DMV0va.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(09)-UPDATE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0/"},"url":"http://localhost:4000/posts/mySQL-%EB%AC%B8%EB%B2%95-(09)-UPDATE-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-27T00:00:00+09:00","datePublished":"2024-03-27T00:00:00+09:00","description":"[“set()과 len(), 조건문으로 문제 해결하기”]","headline":"프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>mySQL 문법 (09) - UPDATE 데이터 수정하기 | Yeahyun Kim
+  <title>프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2 | Yeahyun Kim
   </title>
 
   <!--
@@ -436,7 +430,7 @@
         
           
             
-              <span>mySQL 문법 (09) - UPDATE 데이터 수정하기</span>
+              <span>프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2</span>
             
 
           
@@ -503,109 +497,6 @@
 
 
 
-
-  
-  
-
-  <!-- CDN URL -->
-  
-
-  <!-- Add image path -->
-  
-
-  
-    
-      
-      
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-
-  
 
 
 <!-- Add header for code snippets -->
@@ -737,6 +628,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -744,6 +657,49 @@
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
 
@@ -756,7 +712,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>mySQL 문법 (09) - UPDATE 데이터 수정하기</h1>
+    <h1 data-toc-skip>프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -772,13 +728,13 @@
 
 <time
   
-  data-ts="1709823600"
+  data-ts="1711465200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Mar  8, 2024
+  Mar 27, 2024
 </time>
 
       </span>
@@ -786,15 +742,6 @@
       <!-- lastmod date -->
       
 
-      
-        
-        
-        
-
-        
-
-        <div class="mt-3 mb-3">
-          <a href="https://ifh.cc/g/DMV0va.png" class="popup img-link preview-img shimmer"><img src="https://ifh.cc/g/DMV0va.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -835,9 +782,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="253 words"
+  title="853 words"
 >
-  <em>1 min</em> read</span>
+  <em>4 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -846,63 +793,236 @@
   </header>
 
   <div class="content">
-    <h2 id="update"><span class="me-2">💡UPDATE</span><a href="#update" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제--주사위-게임-2"><span class="me-2">01 문제 : 주사위 게임 2</span><a href="#01-문제--주사위-게임-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <hr />
-<h4 id="01-update"><span class="me-2">01. UPDATE</span><a href="#01-update" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <blockquote class="command-text">
-  <p>The <code class="language-plaintext highlighter-rouge">UPDATE</code> statement is used to modify the existing records in a table.</p>
-</blockquote>
-
-<p><code class="language-plaintext highlighter-rouge">UPDATE</code> 는 테이블의 기존 데이터 값을 수정하는데 사용한다.</p>
-
-<h4 id="02-주의사항"><span class="me-2">02. 주의사항</span><a href="#02-주의사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<blockquote class="prompt-danger">
-  <p>반드시 <code class="language-plaintext highlighter-rouge">WHERE</code>절을 사용하여 특정 데이터만 수정하는데 사용하자. 그렇지 않으면 모든 기록이 업데이트 될 수 있기 때문..</p>
+  <p>1부터 6까지 숫자가 적힌 주사위가 세 개 있습니다. 세 주사위를 굴렸을 때 나온 숫자를 각각 <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>, <code class="language-plaintext highlighter-rouge">c</code>라고 했을 때 얻는 점수는 다음과 같습니다.<br />
+<br />
+• 세 숫자가 모두 다르다면 <code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code> + <code class="language-plaintext highlighter-rouge">c</code> 점을 얻습니다.<br />
+• 세 숫자 중 어느 두 숫자는 같고 나머지 다른 숫자는 다르다면 (<code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code> + <code class="language-plaintext highlighter-rouge">c</code>) × (<code class="language-plaintext highlighter-rouge">a</code>2 + <code class="language-plaintext highlighter-rouge">b</code>2 + <code class="language-plaintext highlighter-rouge">c</code>2 )점을 얻습니다.
+• 세 숫자가 모두 같다면 (<code class="language-plaintext highlighter-rouge">a</code> + <code class="language-plaintext highlighter-rouge">b</code> + <code class="language-plaintext highlighter-rouge">c</code>) × (<code class="language-plaintext highlighter-rouge">a</code>2 + <code class="language-plaintext highlighter-rouge">b</code>2 + <code class="language-plaintext highlighter-rouge">c</code>2 ) × (<code class="language-plaintext highlighter-rouge">a</code>3 + <code class="language-plaintext highlighter-rouge">b</code>3 + <code class="language-plaintext highlighter-rouge">c</code>3 )점을 얻습니다.
+<br />
+세 정수 <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>, <code class="language-plaintext highlighter-rouge">c</code>가 매개변수로 주어질 때, 얻는 점수를 return 하는 solution 함수를 작성해 주세요.</p>
 </blockquote>
 
 <p><br />
 <br /></p>
-<h2 id="문법-syntax"><span class="me-2">💡문법 Syntax</span><a href="#문법-syntax" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<hr />
-<h4 id="01-특정한-컬럼의-데이터값을-수정할-때"><span class="me-2">01. 특정한 컬럼의 데이터값을 수정할 때</span><a href="#01-특정한-컬럼의-데이터값을-수정할-때" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">UPDATE</span> <span class="err">테이블명</span> <span class="k">SET</span> <span class="err">컬럼</span><span class="mi">1</span> <span class="o">=</span> <span class="s1">'변경할 값'</span> <span class="k">WHERE</span> <span class="err">조건</span><span class="mi">1</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></div></div>
+<blockquote class="command-text">
+  <p>• <code class="language-plaintext highlighter-rouge">a</code>, <code class="language-plaintext highlighter-rouge">b</code>, <code class="language-plaintext highlighter-rouge">c</code>는 1이상 6이하의 정수입니다.</p>
+</blockquote>
+<p><br />
+<br /></p>
+
+<blockquote>
+  <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>6</td>
+      <td>1</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>3</td>
+      <td>3</td>
+      <td>473</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>4</td>
+      <td>4</td>
+      <td>110592</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><br />
+<br /></p>
+
+<blockquote>
+  <h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<h5 id="입출력-예-1"><span class="me-2">입출력 예 #1</span><a href="#입출력-예-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<blockquote class="command-text">
+  <p>예제 1번에서 세 주사위 숫자가 모두 다르므로 2 + 6 + 1 = 9점을 얻습니다. 따라서 9를 return 합니다.</p>
+</blockquote>
+<p><br /></p>
+<h5 id="입출력-예-2"><span class="me-2">입출력 예 #2</span><a href="#입출력-예-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<blockquote class="command-text">
+  <p>예제 2번에서 두 주사위 숫자만 같으므로 (5 + 3 + 3) × (52 + 32 + 32 ) = 11 × 43 = 473점을 얻습니다. 따라서 473을 return 합니다.</p>
+</blockquote>
 
 <p><br /></p>
-<h4 id="02-여러개-컬럼의-데이터값을-수정할-때"><span class="me-2">02. 여러개 컬럼의 데이터값을 수정할 때</span><a href="#02-여러개-컬럼의-데이터값을-수정할-때" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<h5 id="입출력-예-3"><span class="me-2">입출력 예 #3</span><a href="#입출력-예-3" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<blockquote class="command-text">
+  <p>예제 3번에서 세 주사위 숫자가 모두 같으므로 (4 + 4 + 4) × (42 + 42 + 42 ) × (43 + 43 + 43 ) = 12 × 48 × 192 = 110,592점을 얻습니다. 따라서 110592를 return 합니다.</p>
+</blockquote>
 
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">UPDATE</span> <span class="err">테이블명</span> <span class="k">SET</span> <span class="err">컬럼</span><span class="mi">1</span> <span class="o">=</span> <span class="s1">'변경할 값'</span><span class="p">,</span> <span class="err">컬럼</span><span class="mi">2</span> <span class="o">=</span> <span class="s1">'변경할 값'</span> <span class="k">WHERE</span> <span class="err">조건</span><span class="mi">1</span><span class="p">;</span>
-</pre></td></tr></tbody></table></code></div></div>
-<p><br />
-<br /></p>
+<p><br /></p>
 
-<h2 id="사용예시"><span class="me-2">💡사용예시</span><a href="#사용예시" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<hr />
-<h4 id="01-여러개의-컬럼-데이터-수정하기"><span class="me-2">01. 여러개의 컬럼 데이터 수정하기</span><a href="#01-여러개의-컬럼-데이터-수정하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p><br /></p>
 
-<div class="language-sql highlighter-rouge"><div class="code-header">
-        <span data-label-text="Sql"><i class="fas fa-code fa-fw small"></i></span>
+<p><br /></p>
+<blockquote>
+  <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="rouge-code"><pre><span class="k">UPDATE</span><span class="err"> </span><span class="n">Customers</span>  
-<span class="k">SET</span><span class="err"> </span><span class="n">ContactName</span> <span class="o">=</span><span class="err"> </span><span class="s1">'Alfred Schmidt'</span><span class="p">,</span> <span class="n">City</span> <span class="o">=</span><span class="err"> </span><span class="s1">'Frankfurt'</span>  
-<span class="k">WHERE</span><span class="err"> </span><span class="n">CustomerID</span> <span class="o">=</span><span class="err"> </span><span class="mi">1</span><span class="p">;</span>
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+	<span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
+	<span class="k">return</span> <span class="n">result</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<blockquote class="command-text">
-  <p>• 조건 1 : CustomerID 가 1<br />
-• 해석 : 고객 테이블 고객 아이디가 1인 고객의 이름과 도시명을 조건처럼 바꿔줘</p>
+<p><br />
+<br />
+<br /></p>
+<h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+
+<blockquote>
+  <h4 id="1-내가-푼-방법--set과-len-조건문"><span class="me-2">1) 내가 푼 방법 -set()과 len(), 조건문</span><a href="#1-내가-푼-방법--set과-len-조건문" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
+
+<blockquote class="command-text">
+  <p>이 문제는 복잡해 보였지만 전혀 그렇지 않았다.<br />
+생각해볼 경우의 수는 세가지 밖에 없기 때문이다.<br />
+<strong>• 세 숫자가 모두 다른 경우</strong><br />
+<strong>• 두 숫자만 같을 경우</strong><br />
+<strong>• 세 숫자가 모두 같은 경우</strong></p>
+</blockquote>
+
+<blockquote class="command-text">
+  <p>먼저, <code class="language-plaintext highlighter-rouge">a</code> <code class="language-plaintext highlighter-rouge">b</code> <code class="language-plaintext highlighter-rouge">c</code> 를 배열안에 담아주었다.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="n">dice_number_count</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">]</span>
+
+<span class="c1"># [5, 3, 3]
+</span></pre></td></tr></tbody></table></code></div></div>
+<p><br /></p>
+<blockquote class="command-text">
+  <p>이어서, <code class="language-plaintext highlighter-rouge">set()</code>으로 감싸주어, 같은 숫자를 하나로 묶어주면서, 낮은수 -&gt; 높은수 순으로 정렬해 주었다.<br />
+여기서 낮은 수 -&gt; 높은 수의 정렬은 생각하지 않아도 된다. <strong>같은 숫자를 하나로 묶어주는것이 포인트..!</strong></p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="n">dice_number_count</span> <span class="o">=</span> <span class="nf">set</span><span class="p">([</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">])</span>
+
+<span class="c1"># set([5, 3, 3]) -&gt; [3, 5]
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+<blockquote class="command-text">
+  <p>거기에 <code class="language-plaintext highlighter-rouge">len()</code>으로 감싸주어, 배열 요소의 개수를 구하면 된다.<br />
+배열 요소가 2개로 나올 경우에는, 2개의 숫자가 같고, 1개가 다르다는 뜻이 되기 때문에..!</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="n">dice_number_count</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="nf">set</span><span class="p">([</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">]))</span>
+
+<span class="c1"># set([5, 3, 3]) -&gt; len([3, 5]) -&gt; 2
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+<blockquote class="command-text">
+  <p>마지막으로 제시된 조건들을 코드로 작성하여 문제를 해결하였다.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="n">dice_number_count</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="nf">set</span><span class="p">([</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">]))</span>
+
+	<span class="k">if</span> <span class="n">dice_number_count</span> <span class="o">==</span> <span class="mi">3</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
+        
+    <span class="k">elif</span> <span class="n">dice_number_count</span> <span class="o">==</span> <span class="mi">2</span> <span class="p">:</span>
+        <span class="nf">return </span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    
+    <span class="k">else</span> <span class="p">:</span>
+        <span class="nf">return </span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="n">c</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p><br /></p>
+
+<p><br />
+<br /></p>
+<h2 id="03-answer"><span class="me-2">03 Answer</span><a href="#03-answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+<blockquote>
+  <h4 id="1-내가-푼-방법--set과-len-조건문-1"><span class="me-2">1) 내가 푼 방법 -set()과 len(), 조건문</span><a href="#1-내가-푼-방법--set과-len-조건문-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">included</span><span class="p">):</span>
+	<span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">included</span><span class="p">))</span> <span class="p">:</span>
+        <span class="n">answer</span> <span class="o">+=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">d</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span> <span class="o">*</span> <span class="nf">int</span><span class="p">(</span><span class="n">included</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        
+    <span class="k">return</span> <span class="n">answer</span>
+    
+<span class="c1"># "acbac"
+</span></pre></td></tr></tbody></table></code></div></div>
+<p><br />
+<a href="https://school.programmers.co.kr/learn/courses/30/lessons/181930?language=python3" target="_blank">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -912,8 +1032,8 @@
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/mysql/">mySQL</a>,
-          <a href="/categories/grammar%E3%85%A4/">Grammarㅤ</a>
+          <a href="/categories/programmers/">Programmers</a>,
+          <a href="/categories/%EA%B8%B0%EC%B4%88/">기초</a>
       </div>
     
 
@@ -923,9 +1043,14 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/mysql/"
+            href="/tags/algorithm/"
             class="post-tag no-text-decoration"
-          >mySQL</a>
+          >Algorithm</a>
+        
+          <a
+            href="/tags/programmers/"
+            class="post-tag no-text-decoration"
+          >Programmers</a>
         
       </div>
     
@@ -953,21 +1078,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=mySQL%20%EB%AC%B8%EB%B2%95%20(09)%20-%20UPDATE%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%2809%29-UPDATE-%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0-%25EC%2588%2598%25EC%25A0%2595%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(23)%20-%20%EC%A3%BC%EC%82%AC%EC%9C%84%20%EA%B2%8C%EC%9E%84%202%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2823%29-%25EC%25A3%25BC%25EC%2582%25AC%25EC%259C%2584-%25EA%25B2%258C%25EC%259E%2584-2%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=mySQL%20%EB%AC%B8%EB%B2%95%20(09)%20-%20UPDATE%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%2809%29-UPDATE-%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0-%25EC%2588%2598%25EC%25A0%2595%25ED%2595%2598%25EA%25B8%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(23)%20-%20%EC%A3%BC%EC%82%AC%EC%9C%84%20%EA%B2%8C%EC%9E%84%202%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2823%29-%25EC%25A3%25BC%25EC%2582%25AC%25EC%259C%2584-%25EA%25B2%258C%25EC%259E%2584-2%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FmySQL-%25EB%25AC%25B8%25EB%25B2%2595-%2809%29-UPDATE-%25EB%258D%25B0%25EC%259D%25B4%25ED%2584%25B0-%25EC%2588%2598%25EC%25A0%2595%25ED%2595%2598%25EA%25B8%25B0%2F&text=mySQL%20%EB%AC%B8%EB%B2%95%20(09)%20-%20UPDATE%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A0%95%ED%95%98%EA%B8%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2823%29-%25EC%25A3%25BC%25EC%2582%25AC%25EC%259C%2584-%25EA%25B2%258C%25EC%259E%2584-2%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(23)%20-%20%EC%A3%BC%EC%82%AC%EC%9C%84%20%EA%B2%8C%EC%9E%84%202%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1435,31 +1560,175 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1571,7 +1840,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(02)-WHERE-%EC%A1%B0%EA%B1%B4%EC%97%90-%EB%A7%9E%EB%8A%94-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A7%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0/" class="post-preview card h-100">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(14)-%EB%8D%94-%ED%81%AC%EA%B2%8C-%ED%95%A9%EC%B9%98%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1583,14 +1852,14 @@
 
 <time
   
-  data-ts="1709823600"
+  data-ts="1711378800"
   data-df="ll"
   
 >
-  Mar  8, 2024
+  Mar 26, 2024
 </time>
 
-              <h4 class="pt-0 my-2">mySQL 문법 (02) - WHERE 조건에 맞는 데이터만 가져오기</h4>
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (14) - 더 크게 합치기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1599,17 +1868,22 @@
 
 
 
-                  💡WHERE
+                  01 문제 :문자열 곱하기
 
 
-01. WHERE 절이란
 
 
-  The WHERE clause is used to filter records.
-It is used to extract only those records that fulfill a specified condition.
+  문제 설명
 
 
-WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터를 불러오는데 사용된다....
+
+  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.
+• 12 ⊕ 3 = 123
+• 3 ⊕ 12 = 312
+양의 정수 a와 b가 주어졌을 때, a ⊕ b와 b ⊕ a 중
+더 큰 값을 return 하는 solution 함수를 완성해 주세요.
+
+ ...
                 </p>
               </div>
             </div>
@@ -1617,7 +1891,7 @@ WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터�
         </article>
       
         <article class="col">
-          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(03)-AND,-OR,-NOT-%EB%85%BC%EB%A6%AC%EC%97%B0%EC%82%B0%EC%9E%90/" class="post-preview card h-100">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(15)-%EB%91%90-%EC%88%98%EC%9D%98-%EC%97%B0%EC%82%B0%EA%B0%92-%EB%B9%84%EA%B5%90%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1629,14 +1903,14 @@ WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터�
 
 <time
   
-  data-ts="1709823600"
+  data-ts="1711378800"
   data-df="ll"
   
 >
-  Mar  8, 2024
+  Mar 26, 2024
 </time>
 
-              <h4 class="pt-0 my-2">mySQL 문법 (03) - AND, OR, NOT 연산자</h4>
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (15) - 두 수의 연산값 비교하기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1645,20 +1919,19 @@ WHERE 절은 데이터를 필터링하여 원하는 조건에 맞는 데이터�
 
 
 
-                  💡AND, OR, NOT 논리연산자
+                  01 문제 :두 수의 연산값 비교하기
 
 
-01. AND
 
 
-  The AND operators are used to filter records based on more than one condition:
+  문제 설명
 
 
-AND 연산자는 두개의 조건이 모두 true 인 경우의 데이터를 필터링 합니다.
-AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
 
-
-...
+  연산 ⊕는 두 정수에 대한 연산으로 두 정수를 붙여서 쓴 값을 반환합니다. 예를 들면 다음과 같습니다.
+• 12 ⊕ 3 = 123
+• 3 ⊕ 12 = 312
+양의 정수 a와 b가 주어졌을 때, a ⊕ b와 2 * a * b 중 더 큰 값을 return하는 solution 함수를 완성...
                 </p>
               </div>
             </div>
@@ -1666,7 +1939,7 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
         </article>
       
         <article class="col">
-          <a href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(04)-%EB%B9%84%EA%B5%90%EC%97%B0%EC%82%B0%EC%9E%90-%EC%A2%85%EB%A5%98/" class="post-preview card h-100">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(16)-n%EC%9D%98-%EB%B0%B0%EC%88%98/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1678,14 +1951,14 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
 
 <time
   
-  data-ts="1709823600"
+  data-ts="1711378800"
   data-df="ll"
   
 >
-  Mar  8, 2024
+  Mar 26, 2024
 </time>
 
-              <h4 class="pt-0 my-2">mySQL 문법 (04) - 비교연산자 종류</h4>
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (16) - n의 배수</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1694,13 +1967,39 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
 
 
 
-                  💡비교연산자
+                  01 문제 :n의 배수
 
 
-01. 비교연산자란 - 공식문서
 
 
-  Comparison operations result in a value of 1 (TRUE), 0 (FALSE), or NULL. These operations work for both numbers and strings. Strings are automatically converted to n...
+  문제 설명
+
+
+
+  정수 num과 n이 매개 변수로 주어질 때, num이 n의 배수이면 1을 return n의 배수가 아니라면 0을 return하도록 solution 함수를 완성해주세요.
+
+
+
+
+
+  제한사항
+
+
+
+  • 2 ≤ num ≤ 100
+• 2 ≤ n ≤ 9
+
+
+
+
+
+  입출력 예
+
+
+
+  
+    
+   ...
                 </p>
               </div>
             </div>
@@ -1722,22 +2021,18 @@ AND 연산자는 WHERE절과 조합하여 사용할 수 있습니다.
 
   
     <a
-      href="/posts/mySQL-%EB%AC%B8%EB%B2%95-(08)-Aliases-%EC%BB%AC%EB%9F%BC%EB%AA%85-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(22)-%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98-%ED%8A%B9%EC%A0%95%ED%95%9C-%ED%95%AD%EB%A7%8C-%EB%8D%94%ED%95%98%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>mySQL 문법 (08) - Aliases 컬럼명 변경하기</p>
+      <p>프로그래머스 Python 코테준비 기초 (22) - 등차수열의 특정한 항만 더하기</p>
     </a>
   
 
   
-    <a
-      href="/posts/JAVA-%EB%AC%B8%EB%B2%95-(01)-%EB%B3%80%EC%88%98-Variable/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>JAVA 문법 (01) - 변수 Variable</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
