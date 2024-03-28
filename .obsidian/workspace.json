@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2.md",
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2.md"
+                "file": "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합.md"
               }
             }
           }
@@ -197,8 +197,11 @@
   },
   "active": "40e24eb77fb888cf",
   "lastOpenFiles": [
-    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (22) - 등차수열의 특정한 항만 더하기.md",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(24)-원소들의-곱과-합/index.html",
+    "_site/posts/프로그래머스-Python-코테준비-기초-(24)-원소들의-곱과-합",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2.md",
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합.md",
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (22) - 등차수열의 특정한 항만 더하기.md",
     "_site/posts/프로그래머스-Python-코테준비-기초-(23)-주사위-게임-2/index.html",
     "_site/posts/프로그래머스-Python-코테준비-기초-(23)-주사위-게임-2",
     "_site/posts/프로그래머스-Python-코테준비-기초-(22)-주사위-게임-2/index.html",
@@ -209,7 +212,6 @@
     "_site/posts/프로그래머스-Python-코테준비-기초-(22)-등차수열의-특정한-항만-더하기/index.html",
     "_site/posts/프로그래머스-Python-코테준비-기초-(22)-등차수열의-특정한-항만-더하기",
     "_site/posts/프로그래머스-Python-코테준비-기초-(22)-코드-처리하기-1/index.html",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(22)-코드-처리하기-1",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (08) - 문자열 돌리기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (20) -  flag에 따라 다른 값 반환하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (19) - 조건 문자열.md",
@@ -231,7 +233,6 @@
     "_posts/Java/2024-00-00- JAVA 문법 (02) - 변수 명명 규칙.md",
     "_posts/Java/2024-00-00- JAVA 문법 (01) - 변수 Variable.md",
     "_posts/JavaSpring/2024-00-00- JavaSpring 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
-    "_posts/mySQL/2024-00-00- mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이.md",
     "_site/무제 파일.canvas",
     "무제 파일.canvas",
     "Pasted image 20240227124417.png",
