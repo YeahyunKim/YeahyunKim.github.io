@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (02) - WHERE 조건에 맞는 데이터만 가져오기.md",
+                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (03) -  AND, OR, NOT 논리연산자.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (02) - WHERE 조건에 맞는 데이터만 가져오기.md",
+                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (03) -  AND, OR, NOT 논리연산자.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (02) - WHERE 조건에 맞는 데이터만 가져오기.md",
+                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (03) -  AND, OR, NOT 논리연산자.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (02) - WHERE 조건에 맞는 데이터만 가져오기.md"
+                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (03) -  AND, OR, NOT 논리연산자.md"
               }
             }
           }
@@ -197,6 +197,7 @@
   },
   "active": "40e24eb77fb888cf",
   "lastOpenFiles": [
+    "_posts/mySQL/2024-00-00- mySQL 문법 (02) - WHERE 조건에 맞는 데이터만 가져오기.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (01) - SELECT,  FROM 데이터 조회하기.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (03) -  AND, OR, NOT 논리연산자.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (01) - 문자열 출력하기.md",
@@ -232,7 +233,6 @@
     "_posts/Java/2024-00-00- JAVA Install (01) - MacOS 에 JAVA 17설치하기.md",
     "_posts/Java/2024-00-00- JAVA 문법 (06) - 배열.md",
     "_posts/Java/2024-00-00- JAVA 문법 (05) - for, while, do-while 반복문.md",
-    "_posts/Java/2024-00-00- JAVA 문법 (04) - switch 조건문.md",
     "_site/무제 파일.canvas",
     "무제 파일.canvas",
     "Pasted image 20240227124417.png",

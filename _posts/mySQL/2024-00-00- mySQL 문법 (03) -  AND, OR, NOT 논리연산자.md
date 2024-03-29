@@ -8,6 +8,8 @@ categories:
 tags:
   - mySQL
 image: https://ifh.cc/g/DMV0va.png
+description:
+  - 논리 연산자 사용하기
 ---
 ## 💡AND, OR, NOT 논리연산자
 ---
