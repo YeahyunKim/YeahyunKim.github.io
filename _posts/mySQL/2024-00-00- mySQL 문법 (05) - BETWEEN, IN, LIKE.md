@@ -8,6 +8,8 @@ categories:
 tags:
   - mySQL
 image: https://ifh.cc/g/DMV0va.png
+description:
+  - 범위 내의 데이터 검색하기
 ---
 ## 💡BETWEEN, IN, LIKE
 ---
