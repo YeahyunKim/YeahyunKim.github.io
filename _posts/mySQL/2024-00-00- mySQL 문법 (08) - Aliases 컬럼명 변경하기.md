@@ -8,6 +8,8 @@ categories:
 tags:
   - mySQL
 image: https://ifh.cc/g/DMV0va.png
+description:
+  - 조회할 컬럼에 별칭주기
 ---
 ## 💡Aliases
 ---
