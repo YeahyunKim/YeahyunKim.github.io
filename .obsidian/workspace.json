@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (08) - Aliases 컬럼명 변경하기.md",
+                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (10) - DELETE 데이터 삭제하기.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (08) - Aliases 컬럼명 변경하기.md",
+                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (10) - DELETE 데이터 삭제하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (08) - Aliases 컬럼명 변경하기.md",
+                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (10) - DELETE 데이터 삭제하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (08) - Aliases 컬럼명 변경하기.md"
+                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (10) - DELETE 데이터 삭제하기.md"
               }
             }
           }
@@ -197,6 +197,8 @@
   },
   "active": "40e24eb77fb888cf",
   "lastOpenFiles": [
+    "_posts/mySQL/2024-00-00- mySQL 문법 (09) -   UPDATE 데이터 수정하기.md",
+    "_posts/mySQL/2024-00-00- mySQL 문법 (08) - Aliases 컬럼명 변경하기.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (07) - LIMIT 원하는 데이터 수만큼 조회하기.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (06) - ORDER BY 오름차순,내림차순으로 정렬하기.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (05) - BETWEEN, IN, LIKE.md",
@@ -231,8 +233,6 @@
     "_posts/Java/2024-00-00- JAVA study (06) - 리터럴과 상수의 차이.md",
     "_posts/Java/2024-00-00- JAVA study (05) - 전위,후위 증감 연산자.md",
     "_posts/Java/2024-00-00- JAVA study (04) -  Maven, Gradle 차이점.md",
-    "_posts/Java/2024-00-00- JAVA study (03) - 정적 컨텐츠.md",
-    "_posts/Java/2024-00-00- JAVA study (02) - 변수 타입과 메모리 공간.md",
     "_site/무제 파일.canvas",
     "무제 파일.canvas",
     "Pasted image 20240227124417.png",

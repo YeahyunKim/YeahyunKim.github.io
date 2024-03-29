@@ -8,6 +8,8 @@ categories:
 tags:
   - mySQL
 image: https://ifh.cc/g/DMV0va.png
+description:
+  - 데이터 삭제하기
 ---
 ## 💡DELETE
 ---
