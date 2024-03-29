@@ -8,6 +8,8 @@ categories:
 tags:
   - mySQL
 image: https://ifh.cc/g/DMV0va.png
+description:
+  - 컬럼과 테이블에 접근하여 데이터 가져오기
 ---
 ## SELECT, FROM
 ---
