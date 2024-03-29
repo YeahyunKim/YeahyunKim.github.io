@@ -8,6 +8,8 @@ categories:
 tags:
   - mySQL
 image: https://ifh.cc/g/DMV0va.png
+description:
+  - 오름차순, 내림차순으로 데이터 정렬하기
 ---
 ## 💡ORDER BY
 ---
