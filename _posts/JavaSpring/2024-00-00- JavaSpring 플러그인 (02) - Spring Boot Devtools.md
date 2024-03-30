@@ -9,6 +9,8 @@ tags:
   - Java
   - JavaSpring
 image: https://ifh.cc/g/wvbwro.png
+description:
+  - 로컬서버를 자동으로 재가동 시켜주기
 ---
 ## Spring Boot Devtools - 서버 자동 재가동
 ---

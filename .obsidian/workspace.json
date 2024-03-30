@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (10) - DELETE 데이터 삭제하기.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (10) - DELETE 데이터 삭제하기.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (10) - DELETE 데이터 삭제하기.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/mySQL/2024-00-00- mySQL 문법 (10) - DELETE 데이터 삭제하기.md"
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md"
               }
             }
           }
@@ -197,6 +197,9 @@
   },
   "active": "40e24eb77fb888cf",
   "lastOpenFiles": [
+    "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
+    "_posts/mySQL/2024-00-00- mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이.md",
+    "_posts/mySQL/2024-00-00- mySQL 문법 (10) - DELETE 데이터 삭제하기.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (09) -   UPDATE 데이터 수정하기.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (08) - Aliases 컬럼명 변경하기.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (07) - LIMIT 원하는 데이터 수만큼 조회하기.md",
@@ -210,7 +213,6 @@
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (08) - 문자열 돌리기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (13) - 문자열 곱하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합.md",
-    "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
     "_site/posts/프로그래머스-Python-코테준비-기초-(24)-원소들의-곱과-합/index.html",
     "_site/posts/프로그래머스-Python-코테준비-기초-(24)-원소들의-곱과-합",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2.md",
@@ -231,8 +233,6 @@
     "_posts/Java/2024-00-00- JAVA study (08) - Array 배열을 print 했을때 메모리 주소가 나오는 이유.md",
     "_posts/Java/2024-00-00- JAVA study (07) - String 리터럴, String 객체의 차이.md",
     "_posts/Java/2024-00-00- JAVA study (06) - 리터럴과 상수의 차이.md",
-    "_posts/Java/2024-00-00- JAVA study (05) - 전위,후위 증감 연산자.md",
-    "_posts/Java/2024-00-00- JAVA study (04) -  Maven, Gradle 차이점.md",
     "_site/무제 파일.canvas",
     "무제 파일.canvas",
     "Pasted image 20240227124417.png",
