@@ -9,6 +9,8 @@ tags:
   - JavaSpring
   - Plugin_
 image: https://ifh.cc/g/wvbwro.png
+description:
+  - html 동적 렌더링 하기
 ---
 ## thymeleaf - HTML 동적 렌더링
 ---

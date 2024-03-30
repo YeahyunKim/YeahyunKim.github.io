@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md"
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md"
               }
             }
           }
@@ -195,8 +195,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "40e24eb77fb888cf",
+  "active": "0faec7e2ac89e871",
   "lastOpenFiles": [
+    "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
     "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (11) - GROUP BY 데이터 그룹화하기, WHERE HAVING 차이.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (10) - DELETE 데이터 삭제하기.md",
@@ -228,7 +229,6 @@
     "_site/posts/프로그래머스-Python-코테준비-기초-(22)-등차수열의-특정한-항만-더하기",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (20) -  flag에 따라 다른 값 반환하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (19) - 조건 문자열.md",
-    "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
     "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md",
     "_posts/Java/2024-00-00- JAVA study (08) - Array 배열을 print 했을때 메모리 주소가 나오는 이유.md",
     "_posts/Java/2024-00-00- JAVA study (07) - String 리터럴, String 객체의 차이.md",
