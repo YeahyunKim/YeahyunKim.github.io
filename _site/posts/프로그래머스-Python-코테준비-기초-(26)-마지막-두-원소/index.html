@@ -31,35 +31,29 @@
   
 
   
-    
-
-    
-  
 
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="JAVA study (05) - 전위,후위 증감 연산자" />
+<meta property="og:title" content="프로그래머스 Python 코테준비 기초 (26) - 마지막 두 원소" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="[“변수의 값을 먼저 증가시키거나, 먼저 사용하는 것”]" />
-<meta property="og:description" content="[“변수의 값을 먼저 증가시키거나, 먼저 사용하는 것”]" />
-<link rel="canonical" href="http://localhost:4000/posts/JAVA-study-(05)-%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84-%EC%A6%9D%EA%B0%90-%EC%97%B0%EC%82%B0%EC%9E%90/" />
-<meta property="og:url" content="http://localhost:4000/posts/JAVA-study-(05)-%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84-%EC%A6%9D%EA%B0%90-%EC%97%B0%EC%82%B0%EC%9E%90/" />
+<meta name="description" content="[“배열의 마지막 요소와 그 전 요소”]" />
+<meta property="og:description" content="[“배열의 마지막 요소와 그 전 요소”]" />
+<link rel="canonical" href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(26)-%EB%A7%88%EC%A7%80%EB%A7%89-%EB%91%90-%EC%9B%90%EC%86%8C/" />
+<meta property="og:url" content="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(26)-%EB%A7%88%EC%A7%80%EB%A7%89-%EB%91%90-%EC%9B%90%EC%86%8C/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
-<meta property="og:image" content="https://ifh.cc/g/NhyPJf.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-03-12T00:00:00+09:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://ifh.cc/g/NhyPJf.png" />
-<meta property="twitter:title" content="JAVA study (05) - 전위,후위 증감 연산자" />
+<meta property="article:published_time" content="2024-03-28T00:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="프로그래머스 Python 코테준비 기초 (26) - 마지막 두 원소" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-12T00:00:00+09:00","datePublished":"2024-03-12T00:00:00+09:00","description":"[“변수의 값을 먼저 증가시키거나, 먼저 사용하는 것”]","headline":"JAVA study (05) - 전위,후위 증감 연산자","image":"https://ifh.cc/g/NhyPJf.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JAVA-study-(05)-%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84-%EC%A6%9D%EA%B0%90-%EC%97%B0%EC%82%B0%EC%9E%90/"},"url":"http://localhost:4000/posts/JAVA-study-(05)-%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84-%EC%A6%9D%EA%B0%90-%EC%97%B0%EC%82%B0%EC%9E%90/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-28T00:00:00+09:00","datePublished":"2024-03-28T00:00:00+09:00","description":"[“배열의 마지막 요소와 그 전 요소”]","headline":"프로그래머스 Python 코테준비 기초 (26) - 마지막 두 원소","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(26)-%EB%A7%88%EC%A7%80%EB%A7%89-%EB%91%90-%EC%9B%90%EC%86%8C/"},"url":"http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(26)-%EB%A7%88%EC%A7%80%EB%A7%89-%EB%91%90-%EC%9B%90%EC%86%8C/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>JAVA study (05) - 전위,후위 증감 연산자 | Yeahyun Kim
+  <title>프로그래머스 Python 코테준비 기초 (26) - 마지막 두 원소 | Yeahyun Kim
   </title>
 
   <!--
@@ -436,7 +430,7 @@
         
           
             
-              <span>JAVA study (05) - 전위,후위 증감 연산자</span>
+              <span>프로그래머스 Python 코테준비 기초 (26) - 마지막 두 원소</span>
             
 
           
@@ -504,109 +498,6 @@
 
 
 
-  
-  
-
-  <!-- CDN URL -->
-  
-
-  <!-- Add image path -->
-  
-
-  
-    
-      
-      
-    
-
-    
-    
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-      
-
-      
-    
-
-    <!-- take out classes -->
-    
-
-    
-    
-
-    
-
-    
-      
-    
-
-    <!-- lazy-load images -->
-    
-
-    
-      <!-- make sure the `<img>` is wrapped by `<a>` -->
-      
-
-      
-        <!-- create the image wrapper -->
-        
-
-        
-        
-      
-    
-
-    <!-- combine -->
-    
-  
-
-  
-
 
 <!-- Add header for code snippets -->
 
@@ -640,6 +531,28 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -647,6 +560,98 @@
   
   
 
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -671,54 +676,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
-  
-
-  
-  
-
-  
-    
-    
-
-    
-      
-        
-        
       
 
       
@@ -744,7 +701,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>JAVA study (05) - 전위,후위 증감 연산자</h1>
+    <h1 data-toc-skip>프로그래머스 Python 코테준비 기초 (26) - 마지막 두 원소</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -760,13 +717,13 @@
 
 <time
   
-  data-ts="1710169200"
+  data-ts="1711551600"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Mar 12, 2024
+  Mar 28, 2024
 </time>
 
       </span>
@@ -774,15 +731,6 @@
       <!-- lastmod date -->
       
 
-      
-        
-        
-        
-
-        
-
-        <div class="mt-3 mb-3">
-          <a href="https://ifh.cc/g/NhyPJf.png" class="popup img-link preview-img shimmer"><img src="https://ifh.cc/g/NhyPJf.png"  alt="Preview Image" width="1200" height="630"  loading="lazy"></a></div>
       
 
       <div class="d-flex justify-content-between">
@@ -823,9 +771,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="449 words"
+  title="541 words"
 >
-  <em>2 min</em> read</span>
+  <em>3 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -834,29 +782,104 @@
   </header>
 
   <div class="content">
-    <h2 id="-전위-후위-증감-연산자란"><span class="me-2">🔎 전위, 후위 증감 연산자란?</span><a href="#-전위-후위-증감-연산자란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="01-문제--마지막-두-원소"><span class="me-2">01 문제 : 마지막 두 원소</span><a href="#01-문제--마지막-두-원소" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
 <hr />
-<h4 id="01-전위-증감-연산자"><span class="me-2">01. 전위 증감 연산자</span><a href="#01-전위-증감-연산자" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="문제-설명"><span class="me-2">문제 설명</span><a href="#문제-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
-<p><code class="language-plaintext highlighter-rouge">++a</code> , <code class="language-plaintext highlighter-rouge">--a</code>
-전위 증감 연산자는 연산자가 변수의 앞에 있고,
-<strong>변수의 값을 먼저 증가시키거나 감소</strong>시킨 후 값을 대입해준다.</p>
+<blockquote class="command-text">
+  <p>정수 리스트 <code class="language-plaintext highlighter-rouge">num_list</code>가 주어질 때, 마지막 원소가 그전 원소보다 크면 마지막 원소에서 그전 원소를 뺀 값을 마지막 원소가 그전 원소보다 크지 않다면 마지막 원소를 두 배한 값을 추가하여 return하도록 solution 함수를 완성해주세요.</p>
+</blockquote>
+
+<p><br />
+<br /></p>
+<blockquote>
+  <h4 id="제한사항"><span class="me-2">제한사항</span><a href="#제한사항" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<blockquote class="command-text">
+  <p>• 2 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 길이 ≤ 10<br />
+• 1 ≤ <code class="language-plaintext highlighter-rouge">num_list</code>의 원소 ≤ 9</p>
+</blockquote>
+<p><br />
+<br /></p>
+
+<blockquote>
+  <h4 id="입출력-예"><span class="me-2">입출력 예</span><a href="#입출력-예" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>num_list</th>
+      <th>result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[2, 1, 6]</td>
+      <td>[2, 1, 6, 5]</td>
+    </tr>
+    <tr>
+      <td>[5, 2, 1, 7, 5]</td>
+      <td>[5, 2, 1, 7, 5, 10]</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p><br />
+<br /></p>
+
+<blockquote>
+  <h4 id="입출력-예-설명"><span class="me-2">입출력 예 설명</span><a href="#입출력-예-설명" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<h5 id="입출력-예-1"><span class="me-2">입출력 예 #1</span><a href="#입출력-예-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<blockquote class="command-text">
+  <p>마지막 원소인 6이 그전 원소인 1보다 크기 때문에 6 - 1인 5를 추가해 return합니다.</p>
+</blockquote>
+<p><br /></p>
+<h5 id="입출력-예-2"><span class="me-2">입출력 예 #2</span><a href="#입출력-예-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<blockquote class="command-text">
+  <p>마지막 원소인 5가 그전 원소인 7보다 크지 않기 때문에 5의 두 배인 10을 추가해 return합니다.</p>
+</blockquote>
 
 <p><br /></p>
-<h4 id="02-후위-증감-연산자"><span class="me-2">02. 후위 증감 연산자</span><a href="#02-후위-증감-연산자" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-
-<p><code class="language-plaintext highlighter-rouge">a++</code> , <code class="language-plaintext highlighter-rouge">a--</code>
-후위 증감 연산자는 연산자가 변수의 앞에 있고,
-<strong>변수의 값을 먼저 사용하고, 그 이후 값을 증가시키거나 감소</strong>시킨다.</p>
 
 <p><br /></p>
+<blockquote>
+  <h4 id="제시-코드"><span class="me-2">제시 코드</span><a href="#제시-코드" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
-<h4 id="03-코드-예시"><span class="me-2">03. 코드 예시</span><a href="#03-코드-예시" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">num_list</span><span class="p">):</span>
+	<span class="err"></span><span class="n">answer</span> <span class="o">=</span> <span class="p">[]</span>
+	<span class="k">return</span> <span class="n">answer</span>
+</pre></td></tr></tbody></table></code></div></div>
 
-<h5 id="1-전위-증감-연산자"><span class="me-2">1) 전위 증감 연산자</span><a href="#1-전위-증감-연산자" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<p><br />
+<br />
+<br /></p>
+<h2 id="02-풀이"><span class="me-2">02 풀이</span><a href="#02-풀이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
 
-<div class="language-java highlighter-rouge"><div class="code-header">
-        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+<blockquote>
+  <h4 id="1-내가-푼-방법--음수-index-활용하기"><span class="me-2">1) 내가 푼 방법 -음수 index 활용하기</span><a href="#1-내가-푼-방법--음수-index-활용하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<blockquote class="command-text">
+  <p>파이썬에서 마지막 요소를 선택할 수 있는 방법중 하나가 <code class="language-plaintext highlighter-rouge">[-1]</code> 이다.<br />
+음수의 값으로 배열의 요소를 선택하면 <strong>역순으로 배열의 요소를 가져올 수 있다.</strong></p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -865,29 +888,62 @@
 6
 7
 8
-9
-</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>  
-    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>  
-    <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>  
-  
-    <span class="n">b</span> <span class="o">=</span> <span class="o">++</span><span class="n">a</span><span class="o">;</span> <span class="c1">//a의 값을 먼저 증가시키고, 그 결과를 b에 대입  </span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"a = "</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s">", b = "</span> <span class="o">+</span> <span class="n">b</span><span class="o">);</span>
-    
-    <span class="c1">// a = 2, b = 2</span>
-<span class="o">}</span>
-</pre></td></tr></tbody></table></code></div></div>
+</pre></td><td class="rouge-code"><pre><span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
 
+<span class="c1"># num_list = [2, 1, 6]
+# num_list[-1] = 6 마지막 첫 번째 원소
+# num_list[-2] = 1 마지막 두 번째 원소
+# num_list[-3] = 2 마지막 세 번째 원소
+</span></pre></td></tr></tbody></table></code></div></div>
+<p><br /></p>
 <blockquote class="command-text">
-  <p>위의 코드를 실행시켰을 때, <code class="language-plaintext highlighter-rouge">a = 2, b = 2</code> 라는 값이 출력된다.<br />
-이는 <strong>a의 값에 먼저 1의 값을 증가 시킨 후, 그 값을 b에 대입</strong>해주었기 때문에<br />
-a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
+  <p>그렇다면 문제에서 제시한 방법대로 코드를 작성해 보자.<br />
+<code class="language-plaintext highlighter-rouge">마지막 원소가 그전 원소보다 크면 마지막 원소에서 그전 원소를 뺀 값</code></p>
 </blockquote>
 
-<p><br /></p>
-<h4 id="2-후위-증감-연산자"><span class="me-2">2) 후위 증감 연산자</span><a href="#2-후위-증감-연산자" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
 
-<div class="language-java highlighter-rouge"><div class="code-header">
-        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+<span class="k">if</span> <span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="p">:</span> 
+	<span class="n">answer</span> <span class="o">=</span> <span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br /></p>
+<blockquote class="command-text">
+  <p><code class="language-plaintext highlighter-rouge">마지막 원소가 그전 원소보다 크지 않다면 마지막 원소를 두 배한 값</code></p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="k">if</span> <span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="p">:</span> 
+	<span class="n">num_list</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+<span class="k">else</span> <span class="p">:</span>
+	<span class="n">num_list</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><br />
+<br /></p>
+
+<p><br /></p>
+<h2 id="03-answer"><span class="me-2">03 Answer</span><a href="#03-answer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<hr />
+<blockquote>
+  <h4 id="1-내가-푼-방법--음수-index-활용하기-1"><span class="me-2">1) 내가 푼 방법 -음수 index 활용하기</span><a href="#1-내가-푼-방법--음수-index-활용하기-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="code-header">
+        <span data-label-text="Python"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -895,24 +951,16 @@ a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
 5
 6
 7
-8
-9
-</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>  
-    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>  
-    <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>  
-  
-    <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">++;</span> <span class="c1">//a의 현재 값을 b에 먼저 대입하고, 그 후 a 값을 증가시킨다.</span>
-    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"a = "</span> <span class="o">+</span> <span class="n">a</span> <span class="o">+</span> <span class="s">", b = "</span> <span class="o">+</span> <span class="n">b</span><span class="o">);</span>
-    
-    <span class="c1">// a = 2, b = 1</span>
-<span class="o">}</span>
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">num_list</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="p">:</span> 
+		<span class="n">num_list</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+	<span class="k">else</span> <span class="p">:</span>
+		<span class="n">num_list</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">num_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+		
+	<span class="k">return</span> <span class="n">num_list</span>
 </pre></td></tr></tbody></table></code></div></div>
-
-<blockquote class="command-text">
-  <p>위의 코드를 실행시켰을 때, <code class="language-plaintext highlighter-rouge">a = 2, b = 1</code> 라는 값이 출력된다.<br />
-이는 먼저 <strong>b에 기존 a의 값을 대입해주고 난 후, a에 1을 증가</strong>시키기 때문이다.<br />
-따라서 <code class="language-plaintext highlighter-rouge">a = 2, b = 1</code>의 값이 출력되게 된다.</p>
-</blockquote>
+<p><br />
+<a href="https://school.programmers.co.kr/learn/courses/30/lessons/181927" target="_blank">해당문제 풀러가보기</a></p>
 
   </div>
 
@@ -922,8 +970,8 @@ a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/java/">Java</a>,
-          <a href="/categories/study/">Study</a>
+          <a href="/categories/programmers/">Programmers</a>,
+          <a href="/categories/%EA%B8%B0%EC%B4%88/">기초</a>
       </div>
     
 
@@ -933,14 +981,14 @@ a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/java/"
+            href="/tags/algorithm/"
             class="post-tag no-text-decoration"
-          >Java</a>
+          >Algorithm</a>
         
           <a
-            href="/tags/javaspring/"
+            href="/tags/programmers/"
             class="post-tag no-text-decoration"
-          >JavaSpring</a>
+          >Programmers</a>
         
       </div>
     
@@ -968,21 +1016,21 @@ a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=JAVA%20study%20(05)%20-%20%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84%20%EC%A6%9D%EA%B0%90%20%EC%97%B0%EC%82%B0%EC%9E%90%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2805%29-%25EC%25A0%2584%25EC%259C%2584%2C%25ED%259B%2584%25EC%259C%2584-%25EC%25A6%259D%25EA%25B0%2590-%25EC%2597%25B0%25EC%2582%25B0%25EC%259E%2590%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(26)%20-%20%EB%A7%88%EC%A7%80%EB%A7%89%20%EB%91%90%20%EC%9B%90%EC%86%8C%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2826%29-%25EB%25A7%2588%25EC%25A7%2580%25EB%25A7%2589-%25EB%2591%2590-%25EC%259B%2590%25EC%2586%258C%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=JAVA%20study%20(05)%20-%20%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84%20%EC%A6%9D%EA%B0%90%20%EC%97%B0%EC%82%B0%EC%9E%90%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2805%29-%25EC%25A0%2584%25EC%259C%2584%2C%25ED%259B%2584%25EC%259C%2584-%25EC%25A6%259D%25EA%25B0%2590-%25EC%2597%25B0%25EC%2582%25B0%25EC%259E%2590%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(26)%20-%20%EB%A7%88%EC%A7%80%EB%A7%89%20%EB%91%90%20%EC%9B%90%EC%86%8C%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2826%29-%25EB%25A7%2588%25EC%25A7%2580%25EB%25A7%2589-%25EB%2591%2590-%25EC%259B%2590%25EC%2586%258C%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2805%29-%25EC%25A0%2584%25EC%259C%2584%2C%25ED%259B%2584%25EC%259C%2584-%25EC%25A6%259D%25EA%25B0%2590-%25EC%2597%25B0%25EC%2582%25B0%25EC%259E%2590%2F&text=JAVA%20study%20(05)%20-%20%EC%A0%84%EC%9C%84,%ED%9B%84%EC%9C%84%20%EC%A6%9D%EA%B0%90%20%EC%97%B0%EC%82%B0%EC%9E%90%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2F%25ED%2594%2584%25EB%25A1%259C%25EA%25B7%25B8%25EB%259E%2598%25EB%25A8%25B8%25EC%258A%25A4-Python-%25EC%25BD%2594%25ED%2585%258C%25EC%25A4%2580%25EB%25B9%2584-%25EA%25B8%25B0%25EC%25B4%2588-%2826%29-%25EB%25A7%2588%25EC%25A7%2580%25EB%25A7%2589-%25EB%2591%2590-%25EC%259B%2590%25EC%2586%258C%2F&text=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4%20Python%20%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84%20%EA%B8%B0%EC%B4%88%20(26)%20-%20%EB%A7%88%EC%A7%80%EB%A7%89%20%EB%91%90%20%EC%9B%90%EC%86%8C%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1450,91 +1498,187 @@ a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1670,7 +1814,7 @@ a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/JAVA-study-(06)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/" class="post-preview card h-100">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(17)-%EA%B3%B5%EB%B0%B0%EC%88%98/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1682,14 +1826,14 @@ a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
 
 <time
   
-  data-ts="1710169200"
+  data-ts="1711378800"
   data-df="ll"
   
 >
-  Mar 12, 2024
+  Mar 26, 2024
 </time>
 
-              <h4 class="pt-0 my-2">JAVA study (06) - 리터럴과 상수의 차이</h4>
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (17) - 공배수</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1698,19 +1842,38 @@ a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
 
 
 
-                  🔎 리터럴
-
-01. 리터럴(Literal) 이란?
-
-
-  Literal은 데이터(값) 그 자체, 즉 변수에 넣은 변하지 않는 데이터 즉 문자 그대로의 값이라고 할 수 있다. 리터럴은 변수에 할당될 수 있는 구체적인 값을 직접 표현한 것이다.
+                  01 문제 :n의 배수
 
 
 
-02. 리터럴(Literal)의 종류 및 선언방법
 
-1) 정수 리터럴 
-정수 값을 나타내며, 10진수, ...
+  문제 설명
+
+
+
+  정수 number와 n, m이 주어집니다. number가 n의 배수이면서 m의 배수이면 1을 아니라면 0을 return하도록 solution 함수를 완성해주세요.
+
+
+
+
+
+  제한사항
+
+
+
+  • 10 ≤ number ≤ 100
+• 2 ≤ n, m &amp;lt; 10
+
+
+
+
+
+  입출력 예
+
+
+
+  
+...
                 </p>
               </div>
             </div>
@@ -1718,7 +1881,7 @@ a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
         </article>
       
         <article class="col">
-          <a href="/posts/JAVA-study-(07)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4%EC%9D%98-%EC%B0%A8%EC%9D%B4/" class="post-preview card h-100">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(18)-%ED%99%80%EC%A7%9D%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%8B%A4%EB%A5%B8-%EA%B0%92-%EB%B0%98%ED%99%98%ED%95%98%EA%B8%B0/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1730,14 +1893,14 @@ a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
 
 <time
   
-  data-ts="1710169200"
+  data-ts="1711378800"
   data-df="ll"
   
 >
-  Mar 12, 2024
+  Mar 26, 2024
 </time>
 
-              <h4 class="pt-0 my-2">JAVA study (07) - String 리터럴, String 객체</h4>
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (18) - 홀짝에 따라 다른 값 반환하기</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1746,27 +1909,26 @@ a와 b는 모두 2라는 값을 가지고 출력이 된다.</p>
 
 
 
-                  🔎 문자열 생성
-
-
-Java에서 문자열을 생성하는 과정은 크게 2가지 방법이 있다.
-
-  String literal
-  new String()
-두개는 어떤 차이를 가지고 있을까?
+                  01 문제 :홀짝에 따라 다른 값 반환하기
 
 
 
-01. String Literal
 
-1
-2
-String str1 = &quot;Hello&quot;;
-String str2 = &quot;Hello&quot;;
+  문제 설명
 
 
 
-  String Literal은 문자...
+  양의 정수 n이 매개변수로 주어질 때, n이 홀수라면 n 이하의 홀수인 모든 양의 정수의 합을 return 하고 n이 짝수라면 n 이하의 짝수인 모든 양의 정수의 제곱의 합을 return 하는 solution 함수를 작성해 주세요.
+
+
+
+
+
+  제한사항
+
+
+
+  • 1 ≤ n ...
                 </p>
               </div>
             </div>
@@ -1774,7 +1936,7 @@ String str2 = &quot;Hello&quot;;
         </article>
       
         <article class="col">
-          <a href="/posts/JAVA-study-(04)-Maven,-Gradle-%EC%B0%A8%EC%9D%B4%EC%A0%90/" class="post-preview card h-100">
+          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(19)-%EC%A1%B0%EA%B1%B4-%EB%AC%B8%EC%9E%90%EC%97%B4/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1786,14 +1948,14 @@ String str2 = &quot;Hello&quot;;
 
 <time
   
-  data-ts="1709132400"
+  data-ts="1711378800"
   data-df="ll"
   
 >
-  Feb 29, 2024
+  Mar 26, 2024
 </time>
 
-              <h4 class="pt-0 my-2">JAVA study (04) - Maven, Gradle 차이점</h4>
+              <h4 class="pt-0 my-2">프로그래머스 Python 코테준비 기초 (19) - 조건 문자열</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1802,19 +1964,24 @@ String str2 = &quot;Hello&quot;;
 
 
 
-                  메이븐(Maven) 이란?
+                  01 문제 :조건 문자열
 
 
-01. 메이븐 정의
-
-Maven은 주로 Java 개발에 사용되는 프로젝트 관리 빌드 도구 이다.  Apache Ant의 대안으로 만들어 졌으며, Apache Software Foundation에서 호스팅하는 Maven은 자카르타 프로젝트의 일부로 시작되었다고 한다.
 
 
-02. 메이븐 특징
+  문제 설명
 
 
-  빌드 절차를 간소화
-  ...
+
+  문자열에 따라 다음과 같이 두 수의 크기를 비교하려고 합니다.
+
+• 두 수가 n과 m이라면
+ ⸰ “&amp;gt;”, “=” : n &amp;gt;= m
+ ⸰ “&amp;lt;”, “=” : n &amp;lt;= m
+ ⸰ “&amp;gt;”, “!” : n &amp;gt; m
+ ⸰ “&amp;lt;”, “!” : n &amp;lt; m
+
+두 문자열 i...
                 </p>
               </div>
             </div>
@@ -1836,22 +2003,18 @@ Maven은 주로 Java 개발에 사용되는 프로젝트 관리 빌드 도구 �
 
   
     <a
-      href="/posts/JAVA-%EB%AC%B8%EB%B2%95-(02)-%EB%B3%80%EC%88%98-%EB%AA%85%EB%AA%85-%EA%B7%9C%EC%B9%99/"
+      href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(25)-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%9D%B8-%EC%88%98/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>JAVA 문법 (02) - 변수 명명 규칙</p>
+      <p>프로그래머스 Python 코테준비 기초 (25) - 이어 붙인 수</p>
     </a>
   
 
   
-    <a
-      href="/posts/JAVA-study-(06)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>JAVA study (06) - 리터럴과 상수의 차이</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
