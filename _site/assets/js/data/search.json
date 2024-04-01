@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "프로그래머스 Python 코테준비 기초 (25) - 이어 붙인 수",
+    "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(25)-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%9D%B8-%EC%88%98/",
+    "categories": "Programmers, 기초",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-03-28 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "01 문제 : 원소들의 곱과 합  문제 설명  정수가 담긴 리스트 num_list가 주어집니다. num_list의 홀수만 순서대로 이어 붙인 수와 짝수만 순서대로 이어 붙인 수의 합을 return하도록 solution 함수를 완성해주세요.  제한사항  • 2 ≤ num_list의 길이 ≤ 10• 1 ≤ num_list의 원소 ≤ 9• num_list에...",
+    "content": "01 문제 : 원소들의 곱과 합  문제 설명  정수가 담긴 리스트 num_list가 주어집니다. num_list의 홀수만 순서대로 이어 붙인 수와 짝수만 순서대로 이어 붙인 수의 합을 return하도록 solution 함수를 완성해주세요.  제한사항  • 2 ≤ num_list의 길이 ≤ 10• 1 ≤ num_list의 원소 ≤ 9• num_list에는 적어도 한 개씩의 짝수와 홀수가 있습니다.  입출력 예            num_list      result                  [3, 4, 5, 2, 1]      393              [5, 7, 8, 3]      581        입출력 예 설명입출력 예 #1  홀수만 이어 붙인 수는 351이고 짝수만 이어 붙인 수는 42입니다. 두 수의 합은 393입니다.입출력 예 #2  홀수만 이어 붙인 수는 573이고 짝수만 이어 붙인 수는 8입니다. 두 수의 합은 581입니다.  제시 코드def solution(num_list):\t\banswer = 0\treturn answer02 풀이  1) 내가 푼 방법 -\b\b\bfor문과 나머지 연산자  num_list 안에 숫자들이 배열로 담겨있고, 조건에서 num_list의 요소들 중 홀수 와 짝수 를 각각 string 타입 으로 붙여야 한다.  \b먼저 홀수 와 짝수 를 담을 변수를 생성해 주었다.odd = ''even = ''  이어서, num_list의 낱개 별 배열 요소를 for문을 통해 접근하였다.odd = ''even = ''for i in num_list :# i = 3, 4, 5, 2, 1  조건문을 통하여 각 요소별 홀수 , 짝수 로 나누어 주고, 아까 생성한 변수에 추가해 주었다.odd = ''even = ''for i in num_list :\tif i % 2 == 0 :\t\teven += str(i)\telse : \t\todd += str(i)\t\t# odd = '351'# even = '41'  마지막으로 int 로 형변환을 하고, 두개의 값을 더해주었다.odd = ''even = ''for i in num_list :\tif i % 2 == 0 :\t\teven += str(i)\telse : \t\todd += str(i)\t\treturn int(even) + int(odd)03 Answer  1) 내가 푼 방법 -\bfor문과 나머지 연산자def solution(num_list):    odd = ''    even = ''        for i in num_list :        if i % 2 == 0 :            even += str(i)        else :             odd += str(i)                return int(even) + int(odd)해당문제 풀러가보기"
+  },
+  
+  {
     "title": "프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합",
     "url": "/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/",
     "categories": "Programmers, 기초",
@@ -819,7 +836,7 @@
   {
     "title": "JavaSpring - 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기",
     "url": "/posts/JavaSpring-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%8A%A4%ED%83%80%ED%84%B0-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/",
-    "categories": "JavaSpring, Install　",
+    "categories": "JavaSpring, Install",
     "tags": "Java, JavaSpring",
     "date": "2024-02-26 00:00:00 +0900",
     
