@@ -11,6 +11,7 @@ tags:
 image: https://ifh.cc/g/NhyPJf.png
 description:
   - String Literal 과 new String()은 메모리 저장의 차이가 있다.
+pin: true
 ---
 ## 🔎 문자열 생성
 ---
@@ -21,7 +22,7 @@ Java에서 문자열을 생성하는 과정은 크게 2가지 방법이 있다.
 두개는 어떤 차이를 가지고 있을까?
 <br>
 
-#### 01. String Literal
+>#### 01. String Literal
 
 ```java
 String str1 = "Hello";
@@ -31,9 +32,9 @@ String str2 = "Hello";
 >String Literal은 문자열을 생성하는 가장 간단하고 일반적이 방법이다. 이 방식은 문자열을 큰 따옴표(" ") 로 둘러싸서 표현한다.   
 >String Literal 방식으로 문자열을 생성하면, JAVA Heap 메모리 영역의 문자열 상수 풀(String Constant Pool) 영역에 값이 저장이 된다.
 {: .command-text}
-
 <br>
-#### 02. new String()
+<br>
+>#### 02. new String()
 
 ```java
 String str3 = new String("Hello");
@@ -43,6 +44,7 @@ String str3 = new String("Hello");
 {: .command-text}
 
 
+<br>
 <br>
 <br>
 ## 🔎 메모리 저장의 차이
