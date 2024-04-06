@@ -19,7 +19,7 @@
 ## Features
 
 <details>
-  <summary>Click to expand/close details</summary>
+  <summary>Click to expand/claose details</summary>
   &nbsp;
 
 - Dark / Light Theme Mode
