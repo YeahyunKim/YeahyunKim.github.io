@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md"
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md"
               }
             }
           }
@@ -173,6 +173,7 @@
   },
   "active": "40e24eb77fb888cf",
   "lastOpenFiles": [
+    "_posts/JavaSpring/2024-00-00- JavaSpring 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
     "_posts/Java/2024-00-00- JAVA study (08) - Array 배열을 print 했을때 메모리 주소가 나오는 이유.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (03) -  AND, OR, NOT 논리연산자.md",
     "Archive/archive/2024-00-00- 프로그래머스 Swift 코테준비 (35) - 배열 만들기 4.md",
@@ -194,7 +195,6 @@
     "_site/posts/프로그래머스-Python-코테준비-기초-(25)-이어-붙인-수/index.html",
     "_site/posts/프로그래머스-Python-코테준비-기초-(25)-이어-붙인-수",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합.md",
-    "_posts/JavaSpring/2024-00-00- JavaSpring 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
     "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
     "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md",
     "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
