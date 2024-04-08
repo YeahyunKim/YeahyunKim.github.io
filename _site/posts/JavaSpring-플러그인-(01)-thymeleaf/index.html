@@ -54,7 +54,7 @@
 <meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="twitter:title" content="JavaSpring 플러그인 (01) - thymeleaf" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-30T17:51:09+09:00","datePublished":"2024-02-27T00:00:00+09:00","description":"[“html 동적 렌더링 하기”]","headline":"JavaSpring 플러그인 (01) - thymeleaf","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JavaSpring-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-(01)-thymeleaf/"},"url":"http://localhost:4000/posts/JavaSpring-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-(01)-thymeleaf/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-04-07T22:12:01+09:00","datePublished":"2024-02-27T00:00:00+09:00","description":"[“html 동적 렌더링 하기”]","headline":"JavaSpring 플러그인 (01) - thymeleaf","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JavaSpring-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-(01)-thymeleaf/"},"url":"http://localhost:4000/posts/JavaSpring-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-(01)-thymeleaf/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -827,13 +827,13 @@
 
 <time
   
-  data-ts="1711788669"
+  data-ts="1712495521"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Mar 30, 2024
+  Apr  7, 2024
 </time>
 
         </span>
@@ -901,7 +901,9 @@
   <div class="content">
     <h2 id="thymeleaf---html-동적-렌더링"><span class="me-2">thymeleaf - HTML 동적 렌더링</span><a href="#thymeleaf---html-동적-렌더링" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h4 id="thymeleaf타임리프"><span class="me-2">thymeleaf(타임리프)</span><a href="#thymeleaf타임리프" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="thymeleaf타임리프"><span class="me-2">thymeleaf(타임리프)</span><a href="#thymeleaf타임리프" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <p>타임리프는 백엔드 서버에서 Html을 동적으로 렌더링  <strong>Java Template Engine</strong> 이다.
 해당 플러그인의 주요 목적은 유지 관리가 수월한 템플릿을 작성하도록 지원해주고, 타임리프의 핵심 기능인 Natural Template 을 통해 제공해주는데, 서버 사이드 렌더링을 하는데 필요한 데이터 값이 없더라도, 프로토 타입으로서의 역할을 해줄 수 있는 걸 말한다.</p>
@@ -912,7 +914,9 @@
 
 <p><br /></p>
 
-<h4 id="01-thymeleaf-가-제공해주는-template-6가지"><span class="me-2">01. thymeleaf 가 제공해주는 Template 6가지</span><a href="#01-thymeleaf-가-제공해주는-template-6가지" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="01-thymeleaf-가-제공해주는-template-6가지"><span class="me-2">01. thymeleaf 가 제공해주는 Template 6가지</span><a href="#01-thymeleaf-가-제공해주는-template-6가지" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <ul>
   <li>HTML</li>
@@ -925,7 +929,9 @@
 
 <p><br /></p>
 
-<h4 id="02-thymeleaf-라이브러리-추가"><span class="me-2">02. Thymeleaf 라이브러리 추가</span><a href="#02-thymeleaf-라이브러리-추가" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="02-thymeleaf-라이브러리-추가"><span class="me-2">02. Thymeleaf 라이브러리 추가</span><a href="#02-thymeleaf-라이브러리-추가" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <p><code class="language-plaintext highlighter-rouge">bulid.gradle</code> 파일에서 의존성 라이브러리를 추가해준다.</p>
 
@@ -944,7 +950,9 @@
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br /></p>
-<h4 id="03-thymeleaf-기본-경로"><span class="me-2">03. Thymeleaf 기본 경로</span><a href="#03-thymeleaf-기본-경로" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="03-thymeleaf-기본-경로"><span class="me-2">03. Thymeleaf 기본 경로</span><a href="#03-thymeleaf-기본-경로" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <p>타임리프는 기본적으로 templates 폴더(root) 안에 있는 파일들을 기준으로 타임리프의 기능을 실행시켜주기 때문에,  <strong>templates</strong> 폴더가 없을경우 생성해 주어야하고, 테스트를 위해 폴더 안에 <strong>hello.html</strong> 파일도 생성해 주었다.</p>
 
@@ -1077,6 +1085,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/JavaSpring-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-(01)-thymeleaf/">JavaSpring 플러그인 (01) - thymeleaf</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/JavaSpring-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B6%80%ED%8A%B8-%EC%8A%A4%ED%83%80%ED%84%B0-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%8A%A4%ED%94%84%EB%A7%81-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0/">JavaSpring - 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기</a>
         </li>
       
@@ -1099,13 +1114,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/JAVA-study-(07)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4%EC%9D%98-%EC%B0%A8%EC%9D%B4/">JAVA study (07) - String 리터럴, String 객체</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(25)-%EC%9D%B4%EC%96%B4-%EB%B6%99%EC%9D%B8-%EC%88%98/">프로그래머스 Python 코테준비 기초 (25) - 이어 붙인 수</a>
         </li>
       
     </ul>
