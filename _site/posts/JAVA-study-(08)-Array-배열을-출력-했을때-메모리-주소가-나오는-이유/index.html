@@ -44,8 +44,8 @@
 <meta property="og:locale" content="ko" />
 <meta name="description" content="[“참조값에 대한 기본적인 이해”]" />
 <meta property="og:description" content="[“참조값에 대한 기본적인 이해”]" />
-<link rel="canonical" href="http://localhost:4000/posts/JAVA-study-(08)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-print-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/" />
-<meta property="og:url" content="http://localhost:4000/posts/JAVA-study-(08)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-print-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/" />
+<link rel="canonical" href="http://localhost:4000/posts/JAVA-study-(08)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-%EC%B6%9C%EB%A0%A5-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/" />
+<meta property="og:url" content="http://localhost:4000/posts/JAVA-study-(08)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-%EC%B6%9C%EB%A0%A5-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:image" content="https://ifh.cc/g/NhyPJf.png" />
 <meta property="og:type" content="article" />
@@ -54,7 +54,7 @@
 <meta property="twitter:image" content="https://ifh.cc/g/NhyPJf.png" />
 <meta property="twitter:title" content="JAVA study (08) - Array 배열을 print 했을때 주소값이 나오는 이유" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-19T00:00:00+09:00","datePublished":"2024-03-19T00:00:00+09:00","description":"[“참조값에 대한 기본적인 이해”]","headline":"JAVA study (08) - Array 배열을 print 했을때 주소값이 나오는 이유","image":"https://ifh.cc/g/NhyPJf.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JAVA-study-(08)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-print-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/"},"url":"http://localhost:4000/posts/JAVA-study-(08)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-print-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-19T00:00:00+09:00","datePublished":"2024-03-19T00:00:00+09:00","description":"[“참조값에 대한 기본적인 이해”]","headline":"JAVA study (08) - Array 배열을 print 했을때 주소값이 나오는 이유","image":"https://ifh.cc/g/NhyPJf.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JAVA-study-(08)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-%EC%B6%9C%EB%A0%A5-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/"},"url":"http://localhost:4000/posts/JAVA-study-(08)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-%EC%B6%9C%EB%A0%A5-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -900,21 +900,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=JAVA%20study%20(08)%20-%20Array%20%EB%B0%B0%EC%97%B4%EC%9D%84%20print%20%ED%96%88%EC%9D%84%EB%95%8C%20%EC%A3%BC%EC%86%8C%EA%B0%92%EC%9D%B4%20%EB%82%98%EC%98%A4%EB%8A%94%20%EC%9D%B4%EC%9C%A0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2808%29-Array-%25EB%25B0%25B0%25EC%2597%25B4%25EC%259D%2584-print-%25ED%2596%2588%25EC%259D%2584%25EB%2595%258C-%25EB%25A9%2594%25EB%25AA%25A8%25EB%25A6%25AC-%25EC%25A3%25BC%25EC%2586%258C%25EA%25B0%2580-%25EB%2582%2598%25EC%2598%25A4%25EB%258A%2594-%25EC%259D%25B4%25EC%259C%25A0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=JAVA%20study%20(08)%20-%20Array%20%EB%B0%B0%EC%97%B4%EC%9D%84%20print%20%ED%96%88%EC%9D%84%EB%95%8C%20%EC%A3%BC%EC%86%8C%EA%B0%92%EC%9D%B4%20%EB%82%98%EC%98%A4%EB%8A%94%20%EC%9D%B4%EC%9C%A0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2808%29-Array-%25EB%25B0%25B0%25EC%2597%25B4%25EC%259D%2584-%25EC%25B6%259C%25EB%25A0%25A5-%25ED%2596%2588%25EC%259D%2584%25EB%2595%258C-%25EB%25A9%2594%25EB%25AA%25A8%25EB%25A6%25AC-%25EC%25A3%25BC%25EC%2586%258C%25EA%25B0%2580-%25EB%2582%2598%25EC%2598%25A4%25EB%258A%2594-%25EC%259D%25B4%25EC%259C%25A0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=JAVA%20study%20(08)%20-%20Array%20%EB%B0%B0%EC%97%B4%EC%9D%84%20print%20%ED%96%88%EC%9D%84%EB%95%8C%20%EC%A3%BC%EC%86%8C%EA%B0%92%EC%9D%B4%20%EB%82%98%EC%98%A4%EB%8A%94%20%EC%9D%B4%EC%9C%A0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2808%29-Array-%25EB%25B0%25B0%25EC%2597%25B4%25EC%259D%2584-print-%25ED%2596%2588%25EC%259D%2584%25EB%2595%258C-%25EB%25A9%2594%25EB%25AA%25A8%25EB%25A6%25AC-%25EC%25A3%25BC%25EC%2586%258C%25EA%25B0%2580-%25EB%2582%2598%25EC%2598%25A4%25EB%258A%2594-%25EC%259D%25B4%25EC%259C%25A0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=JAVA%20study%20(08)%20-%20Array%20%EB%B0%B0%EC%97%B4%EC%9D%84%20print%20%ED%96%88%EC%9D%84%EB%95%8C%20%EC%A3%BC%EC%86%8C%EA%B0%92%EC%9D%B4%20%EB%82%98%EC%98%A4%EB%8A%94%20%EC%9D%B4%EC%9C%A0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2808%29-Array-%25EB%25B0%25B0%25EC%2597%25B4%25EC%259D%2584-%25EC%25B6%259C%25EB%25A0%25A5-%25ED%2596%2588%25EC%259D%2584%25EB%2595%258C-%25EB%25A9%2594%25EB%25AA%25A8%25EB%25A6%25AC-%25EC%25A3%25BC%25EC%2586%258C%25EA%25B0%2580-%25EB%2582%2598%25EC%2598%25A4%25EB%258A%2594-%25EC%259D%25B4%25EC%259C%25A0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2808%29-Array-%25EB%25B0%25B0%25EC%2597%25B4%25EC%259D%2584-print-%25ED%2596%2588%25EC%259D%2584%25EB%2595%258C-%25EB%25A9%2594%25EB%25AA%25A8%25EB%25A6%25AC-%25EC%25A3%25BC%25EC%2586%258C%25EA%25B0%2580-%25EB%2582%2598%25EC%2598%25A4%25EB%258A%2594-%25EC%259D%25B4%25EC%259C%25A0%2F&text=JAVA%20study%20(08)%20-%20Array%20%EB%B0%B0%EC%97%B4%EC%9D%84%20print%20%ED%96%88%EC%9D%84%EB%95%8C%20%EC%A3%BC%EC%86%8C%EA%B0%92%EC%9D%B4%20%EB%82%98%EC%98%A4%EB%8A%94%20%EC%9D%B4%EC%9C%A0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2808%29-Array-%25EB%25B0%25B0%25EC%2597%25B4%25EC%259D%2584-%25EC%25B6%259C%25EB%25A0%25A5-%25ED%2596%2588%25EC%259D%2584%25EB%2595%258C-%25EB%25A9%2594%25EB%25AA%25A8%25EB%25A6%25AC-%25EC%25A3%25BC%25EC%2586%258C%25EA%25B0%2580-%25EB%2582%2598%25EC%2598%25A4%25EB%258A%2594-%25EC%259D%25B4%25EC%259C%25A0%2F&text=JAVA%20study%20(08)%20-%20Array%20%EB%B0%B0%EC%97%B4%EC%9D%84%20print%20%ED%96%88%EC%9D%84%EB%95%8C%20%EC%A3%BC%EC%86%8C%EA%B0%92%EC%9D%B4%20%EB%82%98%EC%98%A4%EB%8A%94%20%EC%9D%B4%EC%9C%A0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1378,6 +1378,18 @@
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 

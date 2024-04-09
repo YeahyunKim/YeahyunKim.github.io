@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-04-07T22:29:32+09:00</updated>
+  <updated>2024-04-09T17:37:24+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,66 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>JAVA study (09) - 객체지향(OOP) 프로그램</title>
+    <link href="http://localhost:4000/posts/JAVA-study-(09)-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5(OOP)-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8/" rel="alternate" type="text/html" title="JAVA study (09) - 객체지향(OOP) 프로그램" />
+    <published>2024-04-09T00:00:00+09:00</published>
+  
+    <updated>2024-04-09T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/JAVA-study-(09)-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5(OOP)-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8/</id>
+    <content src="http://localhost:4000/posts/JAVA-study-(09)-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5(OOP)-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Java" />
+    
+    <category term="Study" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      🔎 객체지향 프로그래밍(Object Oriented Programming)
+
+
+  객체지향이란?
+
+
+
+  객체지향은 실제 세계를 모델링
+ 하여 소프트웨어를 개발하는 방법이다. 프로그램을 독립적인 객체들의 모임으로 파악하고, 이 객체들 간의 상호작용을 통해 데이터를 처리하는 방식이다.
+
+
+
+
+  객체지향의 특징
+
+
+1. 추상화(Abstraction)
+
+
+  • 정의 : 복잡한 현실 세계를 단순화하여 필요한 부분만을 프로그램에 반영  
+• 예시 : 차량을 객체로 모델링할 때, 엔진, 바퀴 등의 필수 요소만을 포함시키고, 차량의 색상이나 브랜드는 선택적으로 추가할 수 있음. 이렇게 하여 복잡한 차량이라는 개념을 단순화하여 프로그램 내에서 다룰 수 있음
+
+
+
+  아래의 사진을 보면, 자동차는 Engine과 ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -332,81 +392,6 @@
 
 
   • a, b, c는 1이...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Python 코테준비 기초 (22) - 등차수열의 특정한 항만 더하기</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(22)-%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98-%ED%8A%B9%EC%A0%95%ED%95%9C-%ED%95%AD%EB%A7%8C-%EB%8D%94%ED%95%98%EA%B8%B0/" rel="alternate" type="text/html" title="프로그래머스 Python 코테준비 기초 (22) - 등차수열의 특정한 항만 더하기" />
-    <published>2024-03-27T00:00:00+09:00</published>
-  
-    <updated>2024-03-27T17:27:34+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(22)-%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98-%ED%8A%B9%EC%A0%95%ED%95%9C-%ED%95%AD%EB%A7%8C-%EB%8D%94%ED%95%98%EA%B8%B0/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(22)-%EB%93%B1%EC%B0%A8%EC%88%98%EC%97%B4%EC%9D%98-%ED%8A%B9%EC%A0%95%ED%95%9C-%ED%95%AD%EB%A7%8C-%EB%8D%94%ED%95%98%EA%B8%B0/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 등차수열의 특정한 항만 더하기
-
-
-  문제 설명
-
-
-
-  두 정수 a, d와 길이가 n인 boolean 배열 included가 주어집니다. 첫째항이 a, 공차가 d인 등차수열에서 included[i]가 i + 1항을 의미할 때, 이 등차수열의 1항부터 n항까지 included가 true인 항들만 더한 값을 return 하는 solution 함수를 작성해 주세요.
-
-
-
-
-
-  제한사항
-
-
-
-  • 1 ≤ a ≤ 100
-• 1 ≤ d ≤ 100
-• 1 ≤ included의 길이 ≤ 100
-• included에는 true가 적어도 하나 존재합니다.
-
-
-
-
-
-  입출력 예
-
-
-
-  
-    
-      a
-      d
-      included
-      result
-    
-  
-  
-   ...
     </summary>
   
 
