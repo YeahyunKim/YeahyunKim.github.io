@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Java/2024-00-00- JAVA study (09) -  객체지향(OOP) 프로그램.md",
+                "file": "_posts/Java/2024-00-00- JAVA Install (01) - MacOS 에 JAVA 17설치하기.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Java/2024-00-00- JAVA study (09) -  객체지향(OOP) 프로그램.md",
+                "file": "_posts/Java/2024-00-00- JAVA Install (01) - MacOS 에 JAVA 17설치하기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Java/2024-00-00- JAVA study (09) -  객체지향(OOP) 프로그램.md",
+                "file": "_posts/Java/2024-00-00- JAVA Install (01) - MacOS 에 JAVA 17설치하기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Java/2024-00-00- JAVA study (09) -  객체지향(OOP) 프로그램.md"
+                "file": "_posts/Java/2024-00-00- JAVA Install (01) - MacOS 에 JAVA 17설치하기.md"
               }
             }
           }
@@ -173,10 +173,10 @@
   },
   "active": "40e24eb77fb888cf",
   "lastOpenFiles": [
+    "_posts/Java/2024-00-00- JAVA study (09) -  객체지향(OOP) 프로그램.md",
     "_site/posts/JAVA-study-(09)-객체지향(OOP)-프로그램/index.html",
     "_site/posts/JAVA-study-(09)-객체지향(OOP)-프로그램",
     "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
-    "_posts/Java/2024-00-00- JAVA study (09) -  객체지향(OOP) 프로그램.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (26) - 마지막 두 원소.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합.md",
@@ -208,7 +208,6 @@
     "_posts/Java/2024-00-00- JAVA study (05) - 전위,후위 증감 연산자.md",
     "_site/posts/프로그래머스-Python-코테준비-기초-(26)-마지막-두-원소/index.html",
     "_site/posts/프로그래머스-Python-코테준비-기초-(26)-마지막-두-원소",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(26)-이어-붙인-수-1/index.html",
     "_site/무제 파일.canvas",
     "무제 파일.canvas",
     "Pasted image 20240227124417.png",

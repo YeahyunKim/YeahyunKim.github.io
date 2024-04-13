@@ -14,7 +14,7 @@ description:
 ## MacOS에 JAVA 11설치하기
 
 ---
-#### 01. 터미널을 실행하여 자바 설치 여부 및 버전 확인
+>#### 01. 터미널을 실행하여 자바 설치 여부 및 버전 확인
 
 터미널(terminal)을 열어 `java --version` 이라 입력후 엔터를 치면 나의 맥북에 Java 설치 유무 및 버전 체크가 가능하다.
 ![이미지](https://ifh.cc/g/PKNZKO.png)
@@ -23,7 +23,7 @@ description:
 {: .command-text}
 
 <BR>
-#### 02. oracle의 java downloads 사이트 접속
+>#### 02. oracle의 java downloads 사이트 접속
 
 [다운로드 사이트](https://www.oracle.com/kr/java/technologies/downloads/#jdk21-mac)에 접속해서, `MacOS` 운영체제를 선택해주고, 내가 사용하는 맥북은 ARM 기반이므로,  `ARM64 DMG Installer` 를 다운로드 받았다. 본인에게 적절한 파일을 찾아 다운로드 해도 된다.
 
@@ -32,21 +32,21 @@ description:
 {: .prompt-tip}
 
 <BR>
-#### 03. 자바 설치
+>#### 03. 자바 설치
 
 자기가 설치할 파일 경로를 잘 설정하고, 계속 다음을 눌러 설치완료한다.
 
 ![이미지](https://ifh.cc/g/A2hVmK.png)
 
 <br>
-#### 04. 자바 설치 확인
+>#### 04. 자바 설치 확인
 다시 터미널로 가서, `java --version`을 입력하여 자바가 잘 설치 되었는지 확인한다.
 
 ![이미지](https://ifh.cc/g/SRQ7pT.png)
 
 
 <br>
-#### 05. 환경변수 설정
+>#### 05. 환경변수 설정
 
 간단하게 Java의 경로가 어디있는지 확인할 수 있는 환경변수를 설정하겠다.
 먼저, 본인이 설치한 Java의 경로를 터미널로 열어준다. 만약, 본인이 설정한 경로를 모르겠다 하면,
@@ -73,7 +73,8 @@ description:
 
 
 <br>
-#### 06. 환경변수 설정 확인
+>#### 06. 환경변수 설정 확인
+
 터미널에 `echo $JAVA_HOME` 와 `java -version` 를 입력해보면, 현재 저장되어있는 자바 경로와 버전이 나타나는 걸 볼 수 있다.
 
 ![이미지](https://ifh.cc/g/a47V5a.png)
