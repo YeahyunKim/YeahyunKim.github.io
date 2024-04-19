@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "KPT 회고란?",
+    "url": "/posts/KPT-%ED%9A%8C%EA%B3%A0%EB%9E%80/",
+    "categories": "Project, KPT",
+    "tags": "Algorithm, Programmers",
+    "date": "2024-04-19 00:00:00 +0900",
+    
+
+
+
+
+
+    
+    "snippet": "KPT( Keep, Problem, Try)란?      KPT 회고    KPT 회고는 ‘Keep’, ‘Problem’, ‘Try’의 약자로, 팀 회고 시간에 사용되는 방법론이다. 이 방법은 팀원 모두의 생각을 짧은 시간 안에 공유하고, 다음 회고를 위한 실행 가능하고 측정 가능한 조치를 도출하는 것을 목표로 한다.KPT 회고를 통해 팀의 커뮤니케이...",
+    "content": "KPT( Keep, Problem, Try)란?      KPT 회고    KPT 회고는 ‘Keep’, ‘Problem’, ‘Try’의 약자로, 팀 회고 시간에 사용되는 방법론이다. 이 방법은 팀원 모두의 생각을 짧은 시간 안에 공유하고, 다음 회고를 위한 실행 가능하고 측정 가능한 조치를 도출하는 것을 목표로 한다.KPT 회고를 통해 팀의 커뮤니케이션과 협업을 강화하고, 지속적인 개선을 도모할 수 있다.      KPT 회고의 구성    • Keep : 팀이 계속 유지하고 싶은 점• Problem : 팀이 직면한 문제점들을 공유• Try: 문제점을 해결하기 위해 시도해볼 새로운 방법들을 제안      KPT 회고의 효과    • 팀원 참여 증진 : 모든 팀원이 생각을 공유하고, 팀의 발전을 위한 아이디어를 제시할 수 있음• 문제 해결 : 문제점을 명확히 하고, 구체적인 해결책을 모색함으로써 팀의 문제를 효과적으로 해결할 수 있음• 지속적인 개선 : ‘Try’ 단계를 통해 새로운 시도를 계속함으로써, 팀은 지속적으로 성장하고 개선할 수 있음"
+  },
+  
+  {
     "title": "JAVA study (09) - 객체지향(OOP) 프로그램",
     "url": "/posts/JAVA-study-(09)-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5(OOP)-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8/",
     "categories": "Java, Study",
@@ -523,8 +540,8 @@
 
 
     
-    "snippet": "🔎 조건문 이란  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 아래와 같이 나뉜다.• if 문\t- else if\t- else • switch 문🔎 switch문01. switch 문switch (값) {\tcase 값1 : \t\t실행문1;\t\tbreak;\t\t\tcase 값2 : \t\t실행문2;\t\tbreak;\t\t...",
-    "content": "🔎 조건문 이란  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 아래와 같이 나뉜다.• if 문\t- else if\t- else • switch 문🔎 switch문01. switch 문switch (값) {\tcase 값1 : \t\t실행문1;\t\tbreak;\t\t\tcase 값2 : \t\t실행문2;\t\tbreak;\t\t\tcase 값3 : \t\t실행문3;\t\tbreak;\tdefault :\t\t실행문4;}  조건식에 해당하는 특정 값으로 실행할 코드를 선택한다int grade = 2;int coupon;  int coupon;  switch (grade) {      case 1:          coupon = 1000;          break;      case 2:          coupon = 2000;  //실행        break;  //종료    case 3:          coupon = 3000;          break;        default:          coupon = 500;  }  System.out.println(\"발급받은 쿠폰: \" + coupon);// 발급받을 쿠폰: 2000  grade가 현재 2로 설정이 되어있고,switch문에서 case\b별 적혀있는 값이 변수 grade 값과 동일할 때, 해당 조건식이 실행되고, break;에서 switch문을 종료한다.02. Java 14 이상 switch 문int grade = 2;    int coupon = switch (grade) {      case 1 -&gt; 1000;    case 2 -&gt; 2000;    case 3 -&gt; 3000;    case 4 -&gt; 4000;    default -&gt; 500;};  System.out.println(\"발급받은 쿠폰: \" + coupon);  Java버전이 14이상일 경우, 해당 문법을 사용할 수 있다.case별 break;를 적어주지 않아도 돼서 더욱 간편하게 사용할 수 있다.🔎 switch문 vs if문if문     • 단일 조건을 평가하고, 조건이 참(true)인 경우에만 해당 코드 블록을 실행     • 조건식의 결과에 따라 다양한 조건을 처리, 조건식에 비교 연산자를 사용하여 값의 크기나 동등성을 비교     • 논리적인 조건을 다루는 데 유연성이 있고, 여러 개의 조건을 체인으로 연결하거나 복잡한 조건식을 작성할 수 있음 또한 else문과 else if문을 사용하여 추가적인 조건을 처리할 수 있음     • 범위에 대한 체크, 다양한 조건에 따른 분기, 복잡한 조건 처리switch문     • switch문은 변수나 식의 값을 여러 가지 경우(case)와 비교하여 일치하는 경우 해당 코드 블록을 실행     • s값의 동등성을 비교하는 데 사용, 각 case는 일치하는 값을 가지고 있으며, 해당 case에 해당하는 코드 블록이 실행     • if문보다 특정 값에 대한 다중 분기를 처리하는 데 더 적합. 여러 개의 값을 비교해야 할 때 switch문을 사용하면 코드의 가독성을 높임     • 일치하는 값이 없을 경우에 대비해 default문을 사용하여 기본 동작 정의     • 일치하는 값에 따라 분기를 처리하는 간단한 상황에서 효과적으로 사용"
+    "snippet": "🔎 조건문 이란  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 아래와 같이 나뉜다.• if 문\t- else if\t- else • switch 문🔎 switch문  01. switch 문switch (값) {\tcase 값1 : \t\t실행문1;\t\tbreak;\t\t\tcase 값2 : \t\t실행문2;\t\tbreak;...",
+    "content": "🔎 조건문 이란  개발자가 작성한 코드를 특정 조건에 따라 코드의 실행의 흐름을 제어하는 것이다. 조건문은 크게 아래와 같이 나뉜다.• if 문\t- else if\t- else • switch 문🔎 switch문  01. switch 문switch (값) {\tcase 값1 : \t\t실행문1;\t\tbreak;\t\t\tcase 값2 : \t\t실행문2;\t\tbreak;\t\t\tcase 값3 : \t\t실행문3;\t\tbreak;\tdefault :\t\t실행문4;}  조건식에 해당하는 특정 값으로 실행할 코드를 선택한다int grade = 2;int coupon;  int coupon;  switch (grade) {      case 1:          coupon = 1000;          break;      case 2:          coupon = 2000;  //실행        break;  //종료    case 3:          coupon = 3000;          break;        default:          coupon = 500;  }  System.out.println(\"발급받은 쿠폰: \" + coupon);// 발급받을 쿠폰: 2000  grade가 현재 2로 설정이 되어있고,switch문에서 case\b별 적혀있는 값이 변수 grade 값과 동일할 때, 해당 조건식이 실행되고, break;에서 switch문을 종료한다.  02. Java 14 이상 switch 문int grade = 2;    int coupon = switch (grade) {      case 1 -&gt; 1000;    case 2 -&gt; 2000;    case 3 -&gt; 3000;    case 4 -&gt; 4000;    default -&gt; 500;};  System.out.println(\"발급받은 쿠폰: \" + coupon);  Java버전이 14이상일 경우, 해당 문법을 사용할 수 있다.case별 break;를 적어주지 않아도 돼서 더욱 간편하게 사용할 수 있다.🔎 switch문 vs if문if문     • 단일 조건을 평가하고, 조건이 참(true)인 경우에만 해당 코드 블록을 실행     • 조건식의 결과에 따라 다양한 조건을 처리, 조건식에 비교 연산자를 사용하여 값의 크기나 동등성을 비교     • 논리적인 조건을 다루는 데 유연성이 있고, 여러 개의 조건을 체인으로 연결하거나 복잡한 조건식을 작성할 수 있음 또한 else문과 else if문을 사용하여 추가적인 조건을 처리할 수 있음     • 범위에 대한 체크, 다양한 조건에 따른 분기, 복잡한 조건 처리switch문     • switch문은 변수나 식의 값을 여러 가지 경우(case)와 비교하여 일치하는 경우 해당 코드 블록을 실행     • s값의 동등성을 비교하는 데 사용, 각 case는 일치하는 값을 가지고 있으며, 해당 case에 해당하는 코드 블록이 실행     • if문보다 특정 값에 대한 다중 분기를 처리하는 데 더 적합. 여러 개의 값을 비교해야 할 때 switch문을 사용하면 코드의 가독성을 높임     • 일치하는 값이 없을 경우에 대비해 default문을 사용하여 기본 동작 정의     • 일치하는 값에 따라 분기를 처리하는 간단한 상황에서 효과적으로 사용"
   },
   
   {

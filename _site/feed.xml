@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-04-14T21:04:40+09:00</updated>
+  <updated>2024-04-19T19:12:38+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,79 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>KPT 회고란?</title>
+    <link href="http://localhost:4000/posts/KPT-%ED%9A%8C%EA%B3%A0%EB%9E%80/" rel="alternate" type="text/html" title="KPT 회고란?" />
+    <published>2024-04-19T00:00:00+09:00</published>
+  
+    <updated>2024-04-19T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/KPT-%ED%9A%8C%EA%B3%A0%EB%9E%80/</id>
+    <content src="http://localhost:4000/posts/KPT-%ED%9A%8C%EA%B3%A0%EB%9E%80/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Project" />
+    
+    <category term="KPT" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      KPT( Keep, Problem, Try)란?
+
+
+
+  
+    KPT 회고
+  
+
+
+
+  KPT 회고는 ‘Keep’, ‘Problem’, ‘Try’의 약자로, 팀 회고 시간에 사용되는 방법론이다. 이 방법은 팀원 모두의 생각을 짧은 시간 안에 공유하고, 다음 회고를 위한 실행 가능하고 측정 가능한 조치를 도출하는 것을 목표로 한다.
+KPT 회고를 통해 팀의 커뮤니케이션과 협업을 강화하고, 지속적인 개선을 도모할 수 있다.
+
+
+
+
+
+  
+    KPT 회고의 구성
+  
+
+
+
+  • Keep : 팀이 계속 유지하고 싶은 점
+• Problem : 팀이 직면한 문제점들을 공유
+• Try: 문제점을 해결하기 위해 시도해볼 새로운 방법들을 제안
+
+
+
+
+
+  
+    KPT 회고의 효과
+  
+
+
+
+  • 팀원 ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -332,66 +405,6 @@
 입출력 예 #1
 
   모든 원소의 곱은 120, 합의 제곱은 225이...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/" rel="alternate" type="text/html" title="프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2" />
-    <published>2024-03-27T00:00:00+09:00</published>
-  
-    <updated>2024-03-27T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(23)-%EC%A3%BC%EC%82%AC%EC%9C%84-%EA%B2%8C%EC%9E%84-2/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 주사위 게임 2
-
-
-
-  문제 설명
-
-
-
-  1부터 6까지 숫자가 적힌 주사위가 세 개 있습니다. 세 주사위를 굴렸을 때 나온 숫자를 각각 a, b, c라고 했을 때 얻는 점수는 다음과 같습니다.
-
-• 세 숫자가 모두 다르다면 a + b + c 점을 얻습니다.
-• 세 숫자 중 어느 두 숫자는 같고 나머지 다른 숫자는 다르다면 (a + b + c) × (a2 + b2 + c2 )점을 얻습니다.
-• 세 숫자가 모두 같다면 (a + b + c) × (a2 + b2 + c2 ) × (a3 + b3 + c3 )점을 얻습니다.
-
-세 정수 a, b, c가 매개변수로 주어질 때, 얻는 점수를 return 하는 solution 함수를 작성해 주세요.
-
-
-
-
-
-  제한사항
-
-
-
-  • a, b, c는 1이...
     </summary>
   
 
