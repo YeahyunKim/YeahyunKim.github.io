@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yeahyun Kim</title>
   <subtitle>소소한 개발 일지</subtitle>
-  <updated>2024-04-19T19:12:38+09:00</updated>
+  <updated>2024-04-19T19:51:00+09:00</updated>
   <author>
     <name>Youihyon Kim</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,52 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>[Library Project] - KPT 회고</title>
+    <link href="http://localhost:4000/posts/Library-Project-KPT-%ED%9A%8C%EA%B3%A0/" rel="alternate" type="text/html" title="[Library Project] - KPT 회고" />
+    <published>2024-04-19T00:00:00+09:00</published>
+  
+    <updated>2024-04-19T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Library-Project-KPT-%ED%9A%8C%EA%B3%A0/</id>
+    <content src="http://localhost:4000/posts/Library-Project-KPT-%ED%9A%8C%EA%B3%A0/" />
+    <author>
+      <name>yeahyun</name>
+    </author>
+
+  
+    
+    <category term="Project" />
+    
+    <category term="KPT" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      라이브러리 프로젝트 KPT 회고
+
+
+  이번 프로젝트를 진행하며…
+
+
+내일배움 캠프에서 진행한 미니 프로젝트, Library(라이브러리)를 무사히 마쳤다. 프로젝트 기간은 단 5일, 월요일부터 금요일까지였다. 미니 프로젝트라고는 하지만, 5일이라는 짧은 기간 동안 처음만난 5인으로 구성된 팀에서의 커뮤니케이션, 역할 분담, 그리고 깃허브 관리까지 쉽지 않았다.
+
+운이 좋았는지는 몰라도, 우리 팀은 모두 열정이 넘쳤다. 모두가 각자 맡은 일을 책임감 있게 기한 내에 마무리했고, 이 과정에서 큰 문제는 없었다고 생각했지만, 더 나은 프로젝트를 위해 우리 팀의 프로젝트에 대한 회고를 진행해보기로 했다.
+
+회고를 통해 우리는 프로젝트의 성공적인 부분과 아쉬웠던 부분을 함께 공유하고, 앞으로 어떻게 개선해 나갈...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -52,22 +98,18 @@
 
 
 
-  
-    KPT 회고
-  
+  1. KPT 회고
 
 
 
-  KPT 회고는 ‘Keep’, ‘Problem’, ‘Try’의 약자로, 팀 회고 시간에 사용되는 방법론이다. 이 방법은 팀원 모두의 생각을 짧은 시간 안에 공유하고, 다음 회고를 위한 실행 가능하고 측정 가능한 조치를 도출하는 것을 목표로 한다.
+  KPT 회고는 ‘Keep’, ‘Problem’, ‘Try’의 약자로, 팀 회고 시간에 사용되는 방법론이다. 이 방법은 팀원 모두의 생각을 짧은 시간 안에 공유하고, 다음 회고를 위한 실행 가능하고 정 가능한 조치를 도출하는 것을 목표로 한다.
 KPT 회고를 통해 팀의 커뮤니케이션과 협업을 강화하고, 지속적인 개선을 도모할 수 있다.
 
 
 
 
 
-  
-    KPT 회고의 구성
-  
+  2. KPT 회고의 구성
 
 
 
@@ -79,13 +121,11 @@ KPT 회고를 통해 팀의 커뮤니케이션과 협업을 강화하고, 지속
 
 
 
-  
-    KPT 회고의 효과
-  
+  3. KPT 회고의 효과
 
 
 
-  • 팀원 ...
+  • 팀원 참여 증진 : 모든 팀원이 생...
     </summary>
   
 
@@ -313,98 +353,6 @@ KPT 회고를 통해 팀의 커뮤니케이션과 협업을 강화하고, 지속
 
 
   입...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합</title>
-    <link href="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/" rel="alternate" type="text/html" title="프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합" />
-    <published>2024-03-28T00:00:00+09:00</published>
-  
-    <updated>2024-03-28T00:00:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/</id>
-    <content src="http://localhost:4000/posts/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Python-%EC%BD%94%ED%85%8C%EC%A4%80%EB%B9%84-%EA%B8%B0%EC%B4%88-(24)-%EC%9B%90%EC%86%8C%EB%93%A4%EC%9D%98-%EA%B3%B1%EA%B3%BC-%ED%95%A9/" />
-    <author>
-      <name>yeahyun</name>
-    </author>
-
-  
-    
-    <category term="Programmers" />
-    
-    <category term="기초" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      01 문제 : 원소들의 곱과 합
-
-
-
-  문제 설명
-
-
-
-  정수가 담긴 리스트 num_list가 주어질 때, 모든 원소들의 곱이 모든 원소들의 합의 제곱보다 작으면 1을 크면 0을 return하도록 solution 함수를 완성해주세요.
-
-
-
-
-
-  제한사항
-
-
-
-  • 2 ≤ num_list의 길이 ≤ 10
-• 1 ≤ num_list의 원소 ≤ 9
-
-
-
-
-
-  입출력 예
-
-
-
-  
-    
-      num_list
-      result
-    
-  
-  
-    
-      [3, 4, 5, 2, 1]
-      1
-    
-    
-      [5, 7, 8, 3]
-      0
-    
-  
-
-
-
-
-
-
-  입출력 예 설명
-
-
-입출력 예 #1
-
-  모든 원소의 곱은 120, 합의 제곱은 225이...
     </summary>
   
 

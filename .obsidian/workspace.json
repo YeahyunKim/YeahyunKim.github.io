@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Java/2024-00-00- JAVA 문법 (04) - switch 조건문.md",
+                "file": "_posts/Project/2024-00-00- Library Project - KPT 회고.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Java/2024-00-00- JAVA 문법 (04) - switch 조건문.md",
+                "file": "_posts/Project/2024-00-00- Library Project - KPT 회고.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Java/2024-00-00- JAVA 문법 (04) - switch 조건문.md",
+                "file": "_posts/Project/2024-00-00- Library Project - KPT 회고.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Java/2024-00-00- JAVA 문법 (04) - switch 조건문.md"
+                "file": "_posts/Project/2024-00-00- Library Project - KPT 회고.md"
               }
             }
           }
@@ -173,18 +173,21 @@
   "active": "6b8bcc6d09055f4c",
   "lastOpenFiles": [
     "_posts/Project/2024-00-00- KPT 회고란?.md",
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (21) -  코드 처리하기.md",
+    "_posts/Project/2024-00-00- Library Project - KPT 회고.md",
+    "_site/posts/Library-Project-KPT-회고/index.html",
+    "_site/posts/Library-Project-KPT-회고",
+    "_site/tags/kpt/index.html",
+    "_site/tags/kpt",
+    "_site/tags/project/index.html",
+    "_site/tags/project",
+    "_posts/Java/2024-00-00- JAVA 문법 (04) - switch 조건문.md",
     "_site/posts/KPT-회고란/index.html",
     "_site/posts/KPT-회고란",
     "_site/categories/kpt/index.html",
     "_site/categories/kpt",
-    "_site/categories/project/index.html",
-    "_site/categories/project",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (25) - 이어 붙인 수.md",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(25)-이어-붙인-수-1/index.html",
-    "_site/posts/프로그래머스-Python-코테준비-기초-(25)-이어-붙인-수-1",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (26) - 마지막 두 원소.md",
-    "_posts/Project",
-    "_posts/Java/2024-00-00- JAVA 문법 (04) - switch 조건문.md",
     "_posts/Java/2024-00-00- JAVA study (02) - 변수 타입과 메모리 공간.md",
     "_posts/Java/2024-00-00- JAVA study (01) -  자바란?.md",
     "_posts/Java/2024-00-00- JAVA study (06) - 리터럴과 상수의 차이.md",
@@ -192,11 +195,9 @@
     "_posts/Java/2024-00-00- JAVA study (03) - 정적 컨텐츠.md",
     "_posts/Java/2024-00-00- JAVA Install (01) - MacOS 에 JAVA 17설치하기.md",
     "_posts/Java/2024-00-00- JAVA study (09) -  객체지향(OOP) 프로그램.md",
-    "_site/posts/JAVA-study-(09)-객체지향(OOP)-프로그램/index.html",
     "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합.md",
-    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (21) -  코드 처리하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (22) - 등차수열의 특정한 항만 더하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (14) - 더 크게 합치기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (17) - 공배수.md",
@@ -206,7 +207,6 @@
     "_posts/JavaSpring/2024-00-00- JavaSpring 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (03) -  AND, OR, NOT 논리연산자.md",
     "Archive/archive/2024-00-00- 프로그래머스 Swift 코테준비 (35) - 배열 만들기 4.md",
-    "_posts/Java/2024-00-00- JAVA study (07) - String 리터럴, String 객체의 차이.md",
     "_site/무제 파일.canvas",
     "무제 파일.canvas",
     "Pasted image 20240227124417.png",
