@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Project/2024-00-00- Library Project - KPT 회고.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Project/2024-00-00- Library Project - KPT 회고.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Project/2024-00-00- Library Project - KPT 회고.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Project/2024-00-00- Library Project - KPT 회고.md"
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md"
               }
             }
           }
@@ -172,9 +172,11 @@
   },
   "active": "6b8bcc6d09055f4c",
   "lastOpenFiles": [
+    "_posts/JavaSpring/2024-00-00- JavaSpring 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2.md",
+    "_posts/Project/2024-00-00- Library Project - KPT 회고.md",
     "_posts/Project/2024-00-00- KPT 회고란?.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (21) -  코드 처리하기.md",
-    "_posts/Project/2024-00-00- Library Project - KPT 회고.md",
     "_site/posts/Library-Project-KPT-회고/index.html",
     "_site/posts/Library-Project-KPT-회고",
     "_site/tags/kpt/index.html",
@@ -196,7 +198,6 @@
     "_posts/Java/2024-00-00- JAVA Install (01) - MacOS 에 JAVA 17설치하기.md",
     "_posts/Java/2024-00-00- JAVA study (09) -  객체지향(OOP) 프로그램.md",
     "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
-    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (22) - 등차수열의 특정한 항만 더하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (14) - 더 크게 합치기.md",
@@ -204,7 +205,6 @@
     "_posts/Java/2024-00-00- JAVA study (08) - Array 배열을 출력 했을때 메모리 주소가 나오는 이유.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (03) - 문자열 반복해서 출력하기.md",
     "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md",
-    "_posts/JavaSpring/2024-00-00- JavaSpring 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
     "_posts/mySQL/2024-00-00- mySQL 문법 (03) -  AND, OR, NOT 논리연산자.md",
     "Archive/archive/2024-00-00- 프로그래머스 Swift 코테준비 (35) - 배열 만들기 4.md",
     "_site/무제 파일.canvas",
