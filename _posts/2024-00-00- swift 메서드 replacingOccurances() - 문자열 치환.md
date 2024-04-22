@@ -16,7 +16,7 @@ description:
 ## replacingOccurrences(of:with:) 
 
 ---
-#### 메소드 설명
+>#### 메소드 설명
 
 >Returns a new string in which all occurrences of a target. string in the receiver are replaced by another given string.
 >**파라미터를 통해 받은 문자열을 다른 문자열로 대체하고 새 문자열을 반환한다.**

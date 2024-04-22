@@ -54,7 +54,7 @@
 <meta property="twitter:image" content="https://ifh.cc/g/wvbwro.png" />
 <meta property="twitter:title" content="JavaSpring 플러그인 (02) - Spring Boot Devtools" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-03-30T17:03:25+09:00","datePublished":"2024-02-27T00:00:00+09:00","description":"[“로컬서버를 자동으로 재가동 시켜주기”]","headline":"JavaSpring 플러그인 (02) - Spring Boot Devtools","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JavaSpring-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-(02)-Spring-Boot-Devtools/"},"url":"http://localhost:4000/posts/JavaSpring-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-(02)-Spring-Boot-Devtools/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-04-20T23:19:30+09:00","datePublished":"2024-02-27T00:00:00+09:00","description":"[“로컬서버를 자동으로 재가동 시켜주기”]","headline":"JavaSpring 플러그인 (02) - Spring Boot Devtools","image":"https://ifh.cc/g/wvbwro.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JavaSpring-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-(02)-Spring-Boot-Devtools/"},"url":"http://localhost:4000/posts/JavaSpring-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-(02)-Spring-Boot-Devtools/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -986,13 +986,13 @@
 
 <time
   
-  data-ts="1711785805"
+  data-ts="1713622770"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Mar 30, 2024
+  Apr 20, 2024
 </time>
 
         </span>
@@ -1060,7 +1060,9 @@
   <div class="content">
     <h2 id="spring-boot-devtools---서버-자동-재가동"><span class="me-2">Spring Boot Devtools - 서버 자동 재가동</span><a href="#spring-boot-devtools---서버-자동-재가동" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
-<h4 id="spring-boot-devtools"><span class="me-2">Spring Boot Devtools</span><a href="#spring-boot-devtools" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="spring-boot-devtools"><span class="me-2">Spring Boot Devtools</span><a href="#spring-boot-devtools" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <p>소스의 변경이 일어날 때마다 스프링부트의 로컬 서버를 매번 재실행 해줘야하는 번거로움이 있었다..</p>
 
@@ -1073,7 +1075,9 @@
 <p>하지만, Spring Boot Devtools 를 사용하면 소스의 변경이 일어났을때 <strong>서버를 재시작하지 않아도, 서버가 자동으로 재가동</strong> 시켜주는 매우 편리한 플러그인이다.</p>
 
 <p><br /></p>
-<h4 id="01-buildgradle에-플러그인-추가"><span class="me-2">01. build.gradle에 플러그인 추가</span><a href="#01-buildgradle에-플러그인-추가" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="01-buildgradle에-플러그인-추가"><span class="me-2">01. build.gradle에 플러그인 추가</span><a href="#01-buildgradle에-플러그인-추가" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <p>아래의 코드를 <code class="language-plaintext highlighter-rouge">build.gradle</code> 파일에 추가해준다.</p>
 <div class="language-java highlighter-rouge"><div class="code-header">
@@ -1087,7 +1091,9 @@
 </pre></td></tr></tbody></table></code></div></div>
 
 <p><br /></p>
-<h4 id="02-intellij-세팅-변경-compiler"><span class="me-2">02. Intellij 세팅 변경 (Compiler)</span><a href="#02-intellij-세팅-변경-compiler" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="02-intellij-세팅-변경-compiler"><span class="me-2">02. Intellij 세팅 변경 (Compiler)</span><a href="#02-intellij-세팅-변경-compiler" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <p><code class="language-plaintext highlighter-rouge">Settings -&gt; Build, Execution, Deployment -&gt; Compiler</code></p>
 
@@ -1096,7 +1102,9 @@
 
 <p><br /></p>
 
-<h4 id="03-intellij-세팅-변경-advanced-settings"><span class="me-2">03. Intellij 세팅 변경 (Advanced Settings)</span><a href="#03-intellij-세팅-변경-advanced-settings" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="03-intellij-세팅-변경-advanced-settings"><span class="me-2">03. Intellij 세팅 변경 (Advanced Settings)</span><a href="#03-intellij-세팅-변경-advanced-settings" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <p><code class="language-plaintext highlighter-rouge">Settings -&gt; Advanced Settings</code></p>
 
@@ -1106,7 +1114,9 @@
 <a href="https://ifh.cc/g/m1LPoj.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/m1LPoj.png" alt="이미지" loading="lazy"></a></p>
 
 <p><br /></p>
-<h4 id="04-applicationproperties파일에-설정-추가"><span class="me-2">04. application.properties파일에 설정 추가</span><a href="#04-applicationproperties파일에-설정-추가" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="04-applicationproperties파일에-설정-추가"><span class="me-2">04. application.properties파일에 설정 추가</span><a href="#04-applicationproperties파일에-설정-추가" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <ul>
   <li>Html Reload 를 위한 코드</li>
@@ -1130,12 +1140,16 @@
 
 <p><br /></p>
 
-<h4 id="05-chrome-확장자-추가-livereload"><span class="me-2">05. Chrome 확장자 추가 (LiveReload)</span><a href="#05-chrome-확장자-추가-livereload" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="05-chrome-확장자-추가-livereload"><span class="me-2">05. Chrome 확장자 추가 (LiveReload)</span><a href="#05-chrome-확장자-추가-livereload" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <p>크롬에서 <a href="https://chromewebstore.google.com/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei">LiveReload</a> 라는 확장자 프로그램을 설치한다.
 <a href="https://ifh.cc/g/8K7kWp.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/8K7kWp.png" alt="이미지" loading="lazy"></a></p>
 
-<h4 id="06-마무리하기"><span class="me-2">06. 마무리하기</span><a href="#06-마무리하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<blockquote>
+  <h4 id="06-마무리하기"><span class="me-2">06. 마무리하기</span><a href="#06-마무리하기" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
 
 <p>설치가 완료되면, 인텔리제이에서 html 및 소스코드를 수정했을때 정상적으로 서버가 자동으로 재실행 되어 서버를 수동으로 재가동 시킬 필요가 없어진다. 개발을 할 때 시간을 줄여주는 아주 고마운 플러그인이였다.</p>
 
@@ -1262,6 +1276,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/JavaSpring-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-(02)-Spring-Boot-Devtools/">JavaSpring 플러그인 (02) - Spring Boot Devtools</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/KPT-%ED%9A%8C%EA%B3%A0%EB%9E%80/">KPT 회고란?</a>
         </li>
       
@@ -1284,13 +1305,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/posts/JAVA-study-(01)-%EC%9E%90%EB%B0%94%EB%9E%80/">JAVA study (01) - 자바란?</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/JAVA-study-(03)-%EC%A0%95%EC%A0%81-%EC%BB%A8%ED%85%90%EC%B8%A0/">JAVA study (03) - 정적 컨텐츠</a>
         </li>
       
     </ul>
