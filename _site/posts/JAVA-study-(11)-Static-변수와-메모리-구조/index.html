@@ -35,25 +35,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
-<meta property="og:title" content="[Library Project] - KPT 회고" />
+<meta property="og:title" content="JAVA study (11) - Static 변수와 메모리 구조" />
 <meta name="author" content="Yeahyun Kim" />
 <meta property="og:locale" content="ko" />
-<meta name="description" content="[“\bKPT 회고의 구성과 효과에 대해 알아보자”]" />
-<meta property="og:description" content="[“\bKPT 회고의 구성과 효과에 대해 알아보자”]" />
-<link rel="canonical" href="http://localhost:4000/posts/Library-Project-KPT-%ED%9A%8C%EA%B3%A0/" />
-<meta property="og:url" content="http://localhost:4000/posts/Library-Project-KPT-%ED%9A%8C%EA%B3%A0/" />
+<meta name="description" content="[“static 변수와 instance 변수의 차이점, 그리고 메모리 구조의 차이점에 대해 공부합니다.”]" />
+<meta property="og:description" content="[“static 변수와 instance 변수의 차이점, 그리고 메모리 구조의 차이점에 대해 공부합니다.”]" />
+<link rel="canonical" href="http://localhost:4000/posts/JAVA-study-(11)-Static-%EB%B3%80%EC%88%98%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0/" />
+<meta property="og:url" content="http://localhost:4000/posts/JAVA-study-(11)-Static-%EB%B3%80%EC%88%98%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0/" />
 <meta property="og:site_name" content="Yeahyun Kim" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-04-19T00:00:00+09:00" />
+<meta property="article:published_time" content="2024-04-23T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="[Library Project] - KPT 회고" />
+<meta property="twitter:title" content="JAVA study (11) - Static 변수와 메모리 구조" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-04-19T00:00:00+09:00","datePublished":"2024-04-19T00:00:00+09:00","description":"[“\\bKPT 회고의 구성과 효과에 대해 알아보자”]","headline":"[Library Project] - KPT 회고","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/Library-Project-KPT-%ED%9A%8C%EA%B3%A0/"},"url":"http://localhost:4000/posts/Library-Project-KPT-%ED%9A%8C%EA%B3%A0/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Yeahyun Kim","url":"not_yey"},"dateModified":"2024-04-23T00:00:00+09:00","datePublished":"2024-04-23T00:00:00+09:00","description":"[“static 변수와 instance 변수의 차이점, 그리고 메모리 구조의 차이점에 대해 공부합니다.”]","headline":"JAVA study (11) - Static 변수와 메모리 구조","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/JAVA-study-(11)-Static-%EB%B3%80%EC%88%98%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0/"},"url":"http://localhost:4000/posts/JAVA-study-(11)-Static-%EB%B3%80%EC%88%98%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>[Library Project] - KPT 회고 | Yeahyun Kim
+  <title>JAVA study (11) - Static 변수와 메모리 구조 | Yeahyun Kim
   </title>
 
   <!--
@@ -430,7 +430,7 @@
         
           
             
-              <span>[Library Project] - KPT 회고</span>
+              <span>JAVA study (11) - Static 변수와 메모리 구조</span>
             
 
           
@@ -497,6 +497,148 @@
 
 
 
+
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
 
 
 <!-- Add header for code snippets -->
@@ -595,28 +737,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -636,7 +756,7 @@
 
 <article class="px-1">
   <header>
-    <h1 data-toc-skip>[Library Project] - KPT 회고</h1>
+    <h1 data-toc-skip>JAVA study (11) - Static 변수와 메모리 구조</h1>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -652,13 +772,13 @@
 
 <time
   
-  data-ts="1713452400"
+  data-ts="1713798000"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Apr 19, 2024
+  Apr 23, 2024
 </time>
 
       </span>
@@ -706,9 +826,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1200 words"
+  title="1007 words"
 >
-  <em>6 min</em> read</span>
+  <em>5 min</em> read</span>
 
       </div>
       <!-- .d-flex -->
@@ -717,70 +837,213 @@
   </header>
 
   <div class="content">
-    <h2 id="라이브러리-프로젝트-kpt-회고"><span class="me-2">라이브러리 프로젝트 KPT 회고</span><a href="#라이브러리-프로젝트-kpt-회고" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h2 id="-static-변수"><span class="me-2">🔎 Static 변수</span><a href="#-static-변수" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <hr />
 <blockquote>
-  <h4 id="이번-프로젝트를-진행하며"><span class="me-2">이번 프로젝트를 진행하며…</span><a href="#이번-프로젝트를-진행하며" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-</blockquote>
-
-<p>내일배움 캠프에서 진행한 미니 프로젝트, Library(라이브러리)를 무사히 마쳤다. 프로젝트 기간은 단 5일, 월요일부터 금요일까지였다. 미니 프로젝트라고는 하지만, 5일이라는 짧은 기간 동안 처음만난 5인으로 구성된 팀에서의 커뮤니케이션, 역할 분담, 그리고 깃허브 관리까지 쉽지 않았다.</p>
-
-<p>운이 좋았는지는 몰라도, 우리 팀은 모두 열정이 넘쳤다. 모두가 각자 맡은 일을 책임감 있게 기한 내에 마무리했고, 이 과정에서 큰 문제는 없었다고 생각했지만, 더 나은 프로젝트를 위해 우리 팀의 프로젝트에 대한 회고를 진행해보기로 했다.</p>
-
-<p>회고를 통해 우리는 프로젝트의 성공적인 부분과 아쉬웠던 부분을 함께 공유하고, 앞으로 어떻게 개선해 나갈지에 대해 논의했다. 이런 과정이 우리 팀을 더 단단하게 만들어주고, 다른사람들과 하는  프로젝트에도 긍정적인 영향을 줄 거라는 판단이 들었기 때문이다.</p>
-
-<p><br />
-<br /></p>
-<blockquote>
-  <h4 id="서로-존중과-배려의-자세---keep"><span class="me-2">서로 존중과 배려의 자세 -&gt; KEEP</span><a href="#서로-존중과-배려의-자세---keep" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+  <h4 id="static-변수란"><span class="me-2">Static 변수란?</span><a href="#static-변수란" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
 
 <blockquote class="command-text">
-  <p>팀에서 모두가 중요하게 생각했던건 바로 <strong>서로의 존중과 배려의 자세</strong>였다.<br />
-이것이 자연스럽게 어우러져 편안하고 화기애애한 분위기가 조성 되었다고 생각이 들고, 이런 분위기는 <strong>작업 효율을 높이는 것은 물론, 서로간의 질문과 응답을 자유롭게 할 수 있게 하여 학습과 성장에 큰 박차를 가한다 생각</strong>이 들었다.</p>
+  <p><strong>static</strong> 변수는 클래스 수준에서 선언할 수 있고, 클래스의 모든 인스턴스에서 공유된다. 즉, 하나의 static 변수가 모든 객체에서 사용된다.</p>
+</blockquote>
+<p><br />
+<br /></p>
+
+<p>이게 도대체 무슨말인가.. 바로 코드를 작성해서 알아보았다.</p>
+
+<p><br />
+<br /></p>
+
+<blockquote>
+  <h4 id="static-변수-예시"><span class="me-2">Static 변수 예시</span><a href="#static-변수-예시" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Counter</span> <span class="o">{</span>
+    <span class="c1">// static 변수 선언</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">staticCount</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+    <span class="c1">// 변수 선언</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">Counter</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">staticCount</span><span class="o">++;</span> <span class="c1">// static 변수 count 증가</span>
+        <span class="n">count</span><span class="o">++;</span> <span class="c1">// 일반 변수 count2 증가</span>
+    <span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote class="command-text">
+  <p>먼저, 차이를 한눈에 알아보기 위해 <code class="language-plaintext highlighter-rouge">static</code>으로 선언한 변수 <code class="language-plaintext highlighter-rouge">count</code> 와 <code class="language-plaintext highlighter-rouge">일반 변수</code> <code class="language-plaintext highlighter-rouge">count2</code>를 만들었다.<br />
+<code class="language-plaintext highlighter-rouge">Counter</code> 라는 메서드를 해당 메서드가 호출될 때. 마다 <code class="language-plaintext highlighter-rouge">count</code>. 와. <code class="language-plaintext highlighter-rouge">count2</code>의. 값을 증가 시켜주었다.</p>
+</blockquote>
+
+<p><br /></p>
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Counter</span> <span class="o">{</span>  
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">staticCount</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>  
+  
+    <span class="kd">public</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>  
+  
+    <span class="kd">public</span> <span class="nf">Counter</span><span class="o">()</span> <span class="o">{</span>  
+        <span class="n">staticCount</span><span class="o">++;</span>
+        <span class="n">count</span><span class="o">++;</span>
+    <span class="o">}</span>  
+  
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>  
+        <span class="nc">Counter</span> <span class="n">c1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Counter</span><span class="o">();</span>  
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"staticCount: "</span> <span class="o">+</span> <span class="nc">Counter</span><span class="o">.</span><span class="na">staticCount</span><span class="o">);</span>  
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"count: "</span> <span class="o">+</span> <span class="n">c1</span><span class="o">.</span><span class="na">count</span><span class="o">);</span>  
+		  
+		<span class="nc">Counter</span> <span class="n">c2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Counter</span><span class="o">();</span>  
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"staticCount: "</span> <span class="o">+</span> <span class="nc">Counter</span><span class="o">.</span><span class="na">staticCount</span><span class="o">);</span>  
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"count: "</span> <span class="o">+</span> <span class="n">c2</span><span class="o">.</span><span class="na">count</span><span class="o">);</span>
+    <span class="o">}</span>  
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote class="command-text">
+  <p>이후 메인 메서드 안에 <code class="language-plaintext highlighter-rouge">c1</code>, <code class="language-plaintext highlighter-rouge">c2</code> 객체를 생성해 주는데, 여기서 <code class="language-plaintext highlighter-rouge">c1</code> 과 <code class="language-plaintext highlighter-rouge">c2</code> 는 다른 객체이고 메모리 주소도 완벽하게 다르기 때문에 <code class="language-plaintext highlighter-rouge">count</code>의 값이 각각 <code class="language-plaintext highlighter-rouge">1</code> 이여야 한다. 출력해본 결과값을 확인해 보자.</p>
+</blockquote>
+
+<p><br /></p>
+
+<div class="language-java highlighter-rouge"><div class="code-header">
+        <span data-label-text="Java"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+</pre></td><td class="rouge-code"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Counter</span> <span class="o">{</span>  
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">staticCount</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>  
+  
+    <span class="kd">public</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>  
+  
+    <span class="kd">public</span> <span class="nf">Counter</span><span class="o">()</span> <span class="o">{</span>  
+        <span class="n">staticCount</span><span class="o">++;</span>
+        <span class="n">count</span><span class="o">++;</span>
+    <span class="o">}</span>  
+  
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>  
+        <span class="nc">Counter</span> <span class="n">c1</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Counter</span><span class="o">();</span>  
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"staticCount: "</span> <span class="o">+</span> <span class="nc">Counter</span><span class="o">.</span><span class="na">staticCount</span><span class="o">);</span>  
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"count: "</span> <span class="o">+</span> <span class="n">c1</span><span class="o">.</span><span class="na">count</span><span class="o">);</span>
+		<span class="c1">// staticCount: 1</span>
+        <span class="c1">// count: 1</span>
+		  
+		<span class="nc">Counter</span> <span class="n">c2</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Counter</span><span class="o">();</span>  
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"staticCount: "</span> <span class="o">+</span> <span class="nc">Counter</span><span class="o">.</span><span class="na">staticCount</span><span class="o">);</span>  
+		<span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"count: "</span> <span class="o">+</span> <span class="n">c2</span><span class="o">.</span><span class="na">count</span><span class="o">);</span>
+		<span class="c1">// staticCount: 2</span>
+		<span class="c1">// count: 1</span>
+    <span class="o">}</span>  
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<blockquote class="command-text">
+  <p>출력값을 확인해보면, <code class="language-plaintext highlighter-rouge">c1</code> 과 <code class="language-plaintext highlighter-rouge">c2</code>객체의 <code class="language-plaintext highlighter-rouge">count</code> 값은 동일하게 <code class="language-plaintext highlighter-rouge">1</code> 이 나왔지만,<br />
+<strong><code class="language-plaintext highlighter-rouge">c1</code> 과 <code class="language-plaintext highlighter-rouge">c2</code>객체의 <code class="language-plaintext highlighter-rouge">staticCount</code> 값은 각각 <code class="language-plaintext highlighter-rouge">1</code> 과 <code class="language-plaintext highlighter-rouge">2</code>가 나왔다.</strong>
+왜 이렇게 출력될까?</p>
 </blockquote>
 
 <p><br />
 <br /></p>
+
 <blockquote>
-  <h4 id="코드의-주석---keep"><span class="me-2">코드의 주석 -&gt; KEEP</span><a href="#코드의-주석---keep" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+  <h4 id="메모리-구조-차이"><span class="me-2">메모리 구조 차이</span><a href="#메모리-구조-차이" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+</blockquote>
+
+<p><a href="https://ifh.cc/g/m3LS11.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/m3LS11.png" alt="image" loading="lazy"></a></p>
+<blockquote class="command-text">
+  <p>먼저, 인스턴스 변수의 경우, <strong>객체를 생성할 때 마다 <code class="language-plaintext highlighter-rouge">Counter</code> 인스턴스는 새로 만들어 지고, 그 인스턴스에 포함된 <code class="language-plaintext highlighter-rouge">count</code>변수도 새로 만들어 진다.</strong> 여기서 이 인스턴스는 <code class="language-plaintext highlighter-rouge">메모리 heap</code>dㅕ영역에 따로 저장이 된다. 즉, <code class="language-plaintext highlighter-rouge">c1</code> 과 <code class="language-plaintext highlighter-rouge">c2</code>의 <code class="language-plaintext highlighter-rouge">count</code>는 전혀 다른 변수라는 말이 된다.</p>
+</blockquote>
+
+<p><br />
+<br />
+<a href="https://ifh.cc/g/bVXMB3.png" class="popup img-link  shimmer"><img src="https://ifh.cc/g/bVXMB3.png" alt="image" loading="lazy"></a></p>
+<blockquote class="command-text">
+  <p>static 변수는 메모리의 <code class="language-plaintext highlighter-rouge">method</code> 영역에 값이 저장된다. 그리고 <code class="language-plaintext highlighter-rouge">heap</code>에 <code class="language-plaintext highlighter-rouge">c1</code>과 <code class="language-plaintext highlighter-rouge">c2</code> 객체는 <code class="language-plaintext highlighter-rouge">staticCount</code>의 값을 <code class="language-plaintext highlighter-rouge">method</code> 영역의 하나의 값으로 공유받는다.<br />
+따라서 <code class="language-plaintext highlighter-rouge">c1.staticCount</code> 와 <code class="language-plaintext highlighter-rouge">c2.staticCount</code> 는 동일한 <code class="language-plaintext highlighter-rouge">2</code>의 값이 출력되는 것을 볼 수 있다.</p>
+</blockquote>
+
+<p><br />
+<br />
+그렇다면 이 static 변수를 활용하면 어떤 이점을 얻게 될 수 있고, 주의할점은 있을까?</p>
+
+<p><br />
+<br /></p>
+<blockquote>
+  <h4 id="static-변수의-특징"><span class="me-2">static 변수의 특징</span><a href="#static-변수의-특징" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 </blockquote>
 
 <blockquote class="command-text">
-  <p>코드에 주석이 달려있고 코밋에 어떤작업을 했는지 명시되있어서 어떤일이 일어나고 있는지 이해하기 쉬웠고, 타인의 코드를 읽어내는데 시간이 단축되었다. <strong>코드가 조금 복잡해지면 주석을 통해 타인을 배려해보자.</strong></p>
+  <p>• <strong>메모리 효율성</strong> : Static 변수는 클래스 수준에서 선언되므로 메모리를 효율적으로 사용할 수 있고, 모든 객체가 하나의 static 변수를 공유하기 때문에 메모리 사용량이 줄어든다.<br />
+<br />
+• <strong>초기화</strong> : Static 변수는  <strong>클래스가 로드될 때 자동으로 초기화 된다.</strong> 이때 기본값으로 초기화 되고, 필요에 따라서 명시적으로 초기화할 수 있다.<br />
+<br />
+• <strong>공유</strong> : Static 변수는 모든 인스턴스에서 공유된다. 따라서 한 객체에서 변경한 static 변수의 값은 다른 객체에서도 반영된다.
+<br />
+• <strong>접근성</strong> : Static 변수는 객체 생성 없이도 접근할 수 있다. <strong>클래스 이름으로 직접 접근할 수 있다.</strong></p>
 </blockquote>
 
-<p><br />
-<br /></p>
-<blockquote>
-  <h4 id="각자의-역할을-명확하게-나누자---keep"><span class="me-2">각자의 역할을 명확하게 나누자 -&gt; KEEP</span><a href="#각자의-역할을-명확하게-나누자---keep" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p><br /></p>
+
+<blockquote class="prompt-danger">
+  <p>static 변수는 프로그램 종료 시까지 메모리에 존재하므로, 메모리 누수가 발생할 수 있다.</p>
 </blockquote>
 
-<blockquote class="command-text">
-  <p>이번 프로젝트는 미니 프로젝트였고, 노베이스에 프로젝트 경험이 없는 팀원 많이 있었다.<br />
-따라서 전문적으로 깃허브를 관리하기엔 무리가 있었는데, 이를 팀원들 별로 역할을 확실히 나누고 <code class="language-plaintext highlighter-rouge">main</code> 브랜치에서만 <code class="language-plaintext highlighter-rouge">add</code>, <code class="language-plaintext highlighter-rouge">pull</code>, <code class="language-plaintext highlighter-rouge">push</code>를 진행했다. <strong>전문적으로 깃허브를 활용하지 않았지만 간단하게라도 깃허브를 관리해본것에 모든 팀원들이 만족했고, 이 만족은 바로 명확한 역할 분담이 있어서 가능했다고 생각한다.</strong></p>
-</blockquote>
-
-<p><br />
-<br /></p>
-<blockquote>
-  <h4 id="처음만났는데-서로-잘-알지-못하는-상황에서-작업을-해야하는-상황---problem--try"><span class="me-2">처음만났는데 서로 잘 알지 못하는 상황에서 작업을 해야하는 상황 -&gt; PROBLEM / TRY</span><a href="#처음만났는데-서로-잘-알지-못하는-상황에서-작업을-해야하는-상황---problem--try" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-</blockquote>
-
-<blockquote class="command-text">
-  <p><strong>PROBLEM</strong> : 모두 처음만나고 서로를 잘 알지 못하는 상황에서 바로 작업을 시작하려 하니 어색함과 눈치때문에 프로젝트를 진행하면서 어려움이 있었다. 사람이 그렇듯 처음만나면 당연히 어색하고 상대방에게 나를 숨기는건 매우 자연스러운 일이라고 생각한다. 하지만 이를 조금이나마 개선을 할 수 없을까?</p>
-
-  <p><strong>TRY</strong> : 스몰톡 등을 진행해서 분위기를 매끄럽게 만들어보고, 모두가 겪는 과정이니 쑥쓰러워 하지말고 팀원들과 의사소통을 원활하게 시도해보자. <strong>정도있는 편안한 분위기는 업무 효율을 분명 높일 수 있다고 생각한다.</strong></p>
-</blockquote>
-
-<p><br />
-<br /></p>
-<blockquote>
-  <h4 id="우리의-다짐"><span class="me-2">우리의 다짐</span><a href="#우리의-다짐" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-</blockquote>
-
-<p>KPT를 진행해본 사람은 우리팀에 단 한번도 없었고 팀 분위기가 워낙 좋았기 때문에 과연 PROBLEM으로 적을만한게 있을까? 라는 생각을 하였다. 하지만 모두 진지하게 프로젝트 회고를 진행해보니 프<strong>로젝트에 있어서 중요한 부분과 우리가 개선해 나아가야할것들이 보였다</strong>.
-이번 회고를 통해 우리 팀은 분명 더 단단해 졌고, 앞으로 프로젝트에서도 긍정적인 영향을 줄것이라 생각한다. 다음 프로젝트에서도 회고를 진행해봐야겠다.</p>
 
   </div>
 
@@ -790,8 +1053,8 @@
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/categories/project/">Project</a>,
-          <a href="/categories/kpt/">KPT</a>
+          <a href="/categories/java/">Java</a>,
+          <a href="/categories/study/">Study</a>
       </div>
     
 
@@ -801,14 +1064,9 @@
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/tags/project/"
+            href="/tags/java/"
             class="post-tag no-text-decoration"
-          >Project</a>
-        
-          <a
-            href="/tags/kpt/"
-            class="post-tag no-text-decoration"
-          >KPT</a>
+          >Java</a>
         
       </div>
     
@@ -836,21 +1094,21 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=[Library%20Project]%20-%20KPT%20%ED%9A%8C%EA%B3%A0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FLibrary-Project-KPT-%25ED%259A%258C%25EA%25B3%25A0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=JAVA%20study%20(11)%20-%20Static%20%EB%B3%80%EC%88%98%EC%99%80%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B5%AC%EC%A1%B0%20-%20Yeahyun%20Kim&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2811%29-Static-%25EB%25B3%2580%25EC%2588%2598%25EC%2599%2580-%25EB%25A9%2594%25EB%25AA%25A8%25EB%25A6%25AC-%25EA%25B5%25AC%25EC%25A1%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=[Library%20Project]%20-%20KPT%20%ED%9A%8C%EA%B3%A0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FLibrary-Project-KPT-%25ED%259A%258C%25EA%25B3%25A0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=JAVA%20study%20(11)%20-%20Static%20%EB%B3%80%EC%88%98%EC%99%80%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B5%AC%EC%A1%B0%20-%20Yeahyun%20Kim&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2811%29-Static-%25EB%25B3%2580%25EC%2588%2598%25EC%2599%2580-%25EB%25A9%2594%25EB%25AA%25A8%25EB%25A6%25AC-%25EA%25B5%25AC%25EC%25A1%25B0%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
 
       
 
-      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FLibrary-Project-KPT-%25ED%259A%258C%25EA%25B3%25A0%2F&text=[Library%20Project]%20-%20KPT%20%ED%9A%8C%EA%B3%A0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2FJAVA-study-%2811%29-Static-%25EB%25B3%2580%25EC%2588%2598%25EC%2599%2580-%25EB%25A9%2594%25EB%25AA%25A8%25EB%25A6%25AC-%25EA%25B5%25AC%25EC%25A1%25B0%2F&text=JAVA%20study%20(11)%20-%20Static%20%EB%B3%80%EC%88%98%EC%99%80%20%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B5%AC%EC%A1%B0%20-%20Yeahyun%20Kim" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
       </a>
     
@@ -1383,7 +1641,223 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1411,7 +1885,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/KPT-%ED%9A%8C%EA%B3%A0%EB%9E%80/" class="post-preview card h-100">
+          <a href="/posts/JAVA-study-(06)-%EB%A6%AC%ED%84%B0%EB%9F%B4%EA%B3%BC-%EC%83%81%EC%88%98%EC%9D%98-%EC%B0%A8%EC%9D%B4/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1423,14 +1897,14 @@
 
 <time
   
-  data-ts="1713452400"
+  data-ts="1710169200"
   data-df="ll"
   
 >
-  Apr 19, 2024
+  Mar 12, 2024
 </time>
 
-              <h4 class="pt-0 my-2">KPT 회고란?</h4>
+              <h4 class="pt-0 my-2">JAVA study (06) - 리터럴과 상수의 차이</h4>
               <div class="text-muted">
                 <p>
                   
@@ -1439,17 +1913,128 @@
 
 
 
-                  KPT( Keep, Problem, Try)란?
+                  🔎 리터럴
+
+
+
+  01. 리터럴(Literal) 이란?
+
+
+
+  Literal은 데이터(값) 그 자체, 즉 변수에 넣은 변하지 않는 데이터 즉 문자 그대로의 값이라고 할 수 있다. 리터럴은 변수에 할당될 수 있는 구체적인 값을 직접 표현한 것이다.
 
 
 
 
-  1. KPT 회고
+
+  02. 리터럴(Literal)의 종류 및 선언방법
+
+
+1) 정수 리터럴 
+정수 값을 나타...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/JAVA-study-(07)-String-%EB%A6%AC%ED%84%B0%EB%9F%B4,-String-%EA%B0%9D%EC%B2%B4%EC%9D%98-%EC%B0%A8%EC%9D%B4/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
 
 
 
-  KPT 회고는 ‘Keep’, ‘Problem’, ‘Try’의 약자로, 팀 회고 시간에 사용되는 방법론이다. 이 방법은 팀원 모두의 생각을 짧은 시간 안에 공유하고, 다음 회고를 위한 실행 가능하고 정 가능한 조치를 도출하는 것을 목표로 한다.
-KPT 회고를 통해 팀의...
+
+<time
+  
+  data-ts="1710169200"
+  data-df="ll"
+  
+>
+  Mar 12, 2024
+</time>
+
+              <h4 class="pt-0 my-2">JAVA study (07) - String 리터럴, String 객체</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  🔎 문자열 생성
+
+
+
+Java에서 문자열을 생성하는 과정은 크게 2가지 방법이 있다.
+
+  String literal
+  new String()
+두개는 어떤 차이를 가지고 있을까?
+
+
+
+
+  01. String Literal
+
+
+String str1 = &quot;Hello&quot;;
+String str2 = &quot;Hello&quot;;
+
+
+
+  String Literal은 문...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/posts/JAVA-study-(08)-Array-%EB%B0%B0%EC%97%B4%EC%9D%84-%EC%B6%9C%EB%A0%A5-%ED%96%88%EC%9D%84%EB%95%8C-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%A3%BC%EC%86%8C%EA%B0%80-%EB%82%98%EC%98%A4%EB%8A%94-%EC%9D%B4%EC%9C%A0/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1710774000"
+  data-df="ll"
+  
+>
+  Mar 19, 2024
+</time>
+
+              <h4 class="pt-0 my-2">JAVA study (08) - Array 배열을 print 했을때 주소값이 나오는 이유</h4>
+              <div class="text-muted">
+                <p>
+                  
+
+
+
+
+
+                  🔎 배열을 출력했을때 메모리 주소가 나오는 이유
+
+
+
+int[] arrayValue = new int[5] //배열 생성
+System.out.println(arrayValue) // [I@a09ee92
+
+
+
+  위에는 [1, 2, 3, 4, 5] 의 값을 가지고있는 배열을 생성하였다.
+그리고 해당 변수를 출력해보면 메모리 주소값이 출력이 되는데, [...
                 </p>
               </div>
             </div>
@@ -1471,21 +2056,21 @@ KPT 회고를 통해 팀의...
 
   
     <a
-      href="/posts/KPT-%ED%9A%8C%EA%B3%A0%EB%9E%80/"
+      href="/posts/Library-Project-KPT-%ED%9A%8C%EA%B3%A0/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>KPT 회고란?</p>
+      <p>[Library Project] - KPT 회고</p>
     </a>
   
 
   
     <a
-      href="/posts/JAVA-study-(11)-Static-%EB%B3%80%EC%88%98%EC%99%80-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0/"
+      href="/posts/JAVA-study-(12)-%EB%8B%A4%ED%98%95%EC%84%B1%EA%B3%BC-%EC%BA%90%EC%8A%A4%ED%8C%85-%EC%99%84%EC%A0%84-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>JAVA study (11) - Static 변수와 메모리 구조</p>
+      <p>JAVA study (12) - 다형성과 캐스팅 완전 정복하기</p>
     </a>
   
 </nav>

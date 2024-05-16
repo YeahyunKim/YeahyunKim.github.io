@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/Java/2024-00-00- Static 변수와 메모리 구조.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 519.5
+    "width": 571.5
   },
   "right": {
     "id": "450b3379e299ce3a",
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/Java/2024-00-00- Static 변수와 메모리 구조.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/Java/2024-00-00- Static 변수와 메모리 구조.md",
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/Java/2024-00-00- Static 변수와 메모리 구조.md"
+                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md"
               }
             }
           }
@@ -172,21 +172,26 @@
   },
   "active": "0faec7e2ac89e871",
   "lastOpenFiles": [
+    "_posts/Java/2024-00-00- JAVA study (12) -  다형성과 캐스팅 완전 정복하기.md",
+    "_posts/Java/2024-00-00- JAVA study (11) - Static 변수와 메모리 구조.md",
+    "_posts/Java/2024-00-00- JAVA study (07) - String 리터럴, String 객체의 차이.md",
+    "_posts/Java/2024-00-00- JAVA study (06) - 리터럴과 상수의 차이.md",
+    "_posts/Java/2024-00-00- JAVA study (09) -  객체지향(OOP) 프로그램.md",
+    "_posts/Java/2024-00-00- JAVA study (08) - Array 배열을 출력 했을때 메모리 주소가 나오는 이유.md",
+    "_site/posts/JAVA-study-(12)-다형성과-캐스팅-완전-정복하기/index.html",
+    "_site/posts/JAVA-study-(12)-다형성과-캐스팅-완전-정복하기",
+    "_site/posts/JAVA-study-(12)-자바-제네릭-(Generics)/index.html",
+    "_site/posts/JAVA-study-(12)-자바-제네릭-(Generics)",
+    "_site/posts/JAVA-study-(12)-ENUM/index.html",
+    "_site/posts/JAVA-study-(12)-ENUM",
+    "_site/posts/JAVA-study-(11)-Static-변수와-메모리-구조/index.html",
+    "_site/posts/JAVA-study-(11)-Static-변수와-메모리-구조",
     "_site/posts/Static-변수와-메모리-구조/index.html",
     "_site/posts/Static-변수와-메모리-구조",
-    "_site/page7/index.html",
-    "_site/page7",
-    "_posts/Java/2024-00-00- JAVA study (08) - Array 배열을 출력 했을때 메모리 주소가 나오는 이유.md",
-    "_posts/Java/2024-00-00- JAVA study (09) -  객체지향(OOP) 프로그램.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (25) - 이어 붙인 수.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (23) - 주사위 게임 2.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (24) - 원소들의 곱과 합.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (26) - 마지막 두 원소.md",
-    "_posts/Java/2024-00-00- JAVA study (06) - 리터럴과 상수의 차이.md",
-    "_posts/Java/2024-00-00- JAVA study (07) - String 리터럴, String 객체의 차이.md",
-    "_posts/Java/2024-00-00- Static 변수와 메모리 구조.md",
-    "_site/posts/이동재-병신새끼/index.html",
-    "_site/posts/이동재-병신새끼",
     "_posts/Project/2024-00-00- KPT 회고란?.md",
     "_posts/2024-00-00- swift 메서드 replacingOccurances() - 문자열 치환.md",
     "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
@@ -201,13 +206,7 @@
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (06) - 덧셈식 출력하기.md",
     "_posts/JavaSpring/2024-00-00- JavaSpring 스프링 부트 스타터 사이트로 스프링 프로젝트 생성하기.md",
     "_posts/Project/2024-00-00- Library Project - KPT 회고.md",
-    "_site/posts/Library-Project-KPT-회고/index.html",
-    "_site/posts/Library-Project-KPT-회고",
-    "_site/tags/kpt/index.html",
-    "_site/tags/kpt",
-    "_site/tags/project/index.html",
     "_posts/Java/2024-00-00- JAVA 문법 (04) - switch 조건문.md",
-    "_posts/Java/2024-00-00- JAVA study (02) - 변수 타입과 메모리 공간.md",
     "_site/무제 파일.canvas",
     "무제 파일.canvas",
     "Pasted image 20240227124417.png",

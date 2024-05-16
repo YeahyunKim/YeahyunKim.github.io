@@ -1,7 +1,7 @@
 ---
 title: JavaSpring 플러그인 (02) - Spring Boot Devtools
 author: yeahyun
-date: 2024-02-27
+date: 2024-05-16
 categories:
   - JavaSpring
   - Pluginㅤ
