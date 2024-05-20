@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
+                "file": "_posts/Java/2024-00-00- JAVA study (03) - 정적 컨텐츠.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 571.5
+    "width": 380.5
   },
   "right": {
     "id": "450b3379e299ce3a",
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
+                "file": "_posts/Java/2024-00-00- JAVA study (03) - 정적 컨텐츠.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
+                "file": "_posts/Java/2024-00-00- JAVA study (03) - 정적 컨텐츠.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md"
+                "file": "_posts/Java/2024-00-00- JAVA study (03) - 정적 컨텐츠.md"
               }
             }
           }
@@ -170,8 +170,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "0faec7e2ac89e871",
+  "active": "6b8bcc6d09055f4c",
   "lastOpenFiles": [
+    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (01) - 문자열 출력하기.md",
+    "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md",
+    "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
     "_posts/Java/2024-00-00- JAVA study (12) -  다형성과 캐스팅 완전 정복하기.md",
     "_posts/Java/2024-00-00- JAVA study (11) - Static 변수와 메모리 구조.md",
     "_posts/Java/2024-00-00- JAVA study (07) - String 리터럴, String 객체의 차이.md",
@@ -196,9 +199,6 @@
     "_posts/2024-00-00- swift 메서드 replacingOccurances() - 문자열 치환.md",
     "_posts/2024-00-00- Jekyll Chirpy 테마 깃 블로그 생성하기(1).md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (05) - 특수문자 출력하기.md",
-    "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (01) - 문자열 출력하기.md",
-    "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (02) - Spring Boot Devtools.md",
-    "_posts/JavaSpring/2024-00-00- JavaSpring 플러그인 (01) - thymeleaf.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (16) -  n의 배수.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (20) -  flag에 따라 다른 값 반환하기.md",
     "_posts/2024-00-00- 프로그래머스 Python 코테준비 기초 (21) -  코드 처리하기.md",
